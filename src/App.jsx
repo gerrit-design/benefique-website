@@ -14,16 +14,17 @@ function Nav() {
   
   return (
     <nav className="bg-white border-b border-gray-100 sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-3">
-          <img src="/images/logo-compact.jpg" alt="Benefique" className="h-10 w-auto" />
+          <img src="/images/logo-full.jpg" alt="Benefique Tax & Accounting" className="h-16 md:h-20 w-auto" />
         </Link>
         
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           {[
             ['/services', 'Services'],
-            ['/#how-it-works', 'How It Works'],
+            ['/testimonials', 'Testimonials'],
+            ['/blog', 'Blog'],
             ['/about', 'About'],
           ].map(([path, label]) => (
             <Link
@@ -80,8 +81,8 @@ function Footer() {
             <img src="/images/logo-compact.jpg" alt="Benefique" className="h-8 w-auto brightness-0 invert" />
           </div>
           <div className="flex gap-6 text-sm text-gray-300">
-            <Link to="/terms" className="hover:text-white">Terms of Service</Link>
-            <Link to="/privacy" className="hover:text-white">Privacy Policy</Link>
+            <a href="https://app.benefique.com/terms" target="_blank" rel="noopener noreferrer" className="hover:text-white">Terms of Service</a>
+            <a href="https://app.benefique.com/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-white">Privacy Policy</a>
             <Link to="/contact" className="hover:text-white">Contact</Link>
           </div>
         </div>
@@ -173,9 +174,9 @@ function Home() {
               { emoji: '😩', text: "You're doing your own books nights and weekends — and still behind" },
               { emoji: '😤', text: 'Your bookkeeper keeps making mistakes you have to fix' },
               { emoji: '🤷', text: "You don't actually know if you're profitable until tax time" },
+              { emoji: '💸', text: "The business is showing a profit — but where's the cash?" },
               { emoji: '😰', text: 'Tax season is a scramble every single year' },
               { emoji: '📊', text: "You've outgrown DIY but aren't sure what \"real\" accounting looks like" },
-              { emoji: '⏰', text: "You're spending time on finances instead of growing your business" },
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-4 bg-gray-50 rounded-xl p-4">
                 <span className="text-2xl">{item.emoji}</span>
@@ -403,11 +404,14 @@ function Services() {
               </ul>
               <div className="bg-gray-50 rounded-xl p-6">
                 <div className="text-sm text-benefique-orange uppercase tracking-wide font-semibold mb-2">Featured</div>
-                <h3 className="text-lg font-bold text-benefique-navy mb-2">The Benefique Financial Times</h3>
+                <h3 className="text-lg font-bold text-benefique-navy mb-2">The Benefique Financial Times™</h3>
                 <p className="text-gray-600 text-sm">
-                  Your monthly financial newspaper. We present your numbers so you don't need accounting 
-                  expertise to understand what's happening in your business.
+                  A weekly CFO report about your business — written in owner terms, not accountant-speak. 
+                  See your numbers clearly. Make decisions confidently.
                 </p>
+                <Link to="/demo" className="text-benefique-orange text-sm font-semibold hover:underline mt-2 inline-block">
+                  See a sample report →
+                </Link>
               </div>
             </div>
           </div>
