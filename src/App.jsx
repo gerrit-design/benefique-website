@@ -16,9 +16,9 @@ function Nav() {
     <nav className="bg-white border-b border-gray-100 sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" className="flex flex-col">
-          <span className="text-2xl md:text-3xl font-bold text-benefique-navy tracking-tight">BENEFIQUE</span>
-          <span className="text-xs text-gray-600">Tax & Accounting</span>
-          <span className="text-[10px] md:text-xs text-benefique-orange font-medium mt-0.5">Real-time accounting. Tax-ready any day.</span>
+          <span className="text-2xl md:text-3xl font-black text-benefique-navy tracking-wider" style={{ fontFamily: 'Georgia, Times, serif' }}>BENEFIQUE</span>
+          <span className="text-xs text-gray-500 tracking-wide font-medium">Tax & Accounting</span>
+          <span className="text-[10px] md:text-xs text-benefique-orange font-semibold italic mt-0.5">Real-time accounting. Tax-ready any day.</span>
         </Link>
         
         {/* Desktop Nav */}
@@ -82,9 +82,9 @@ function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-6">
             <div className="flex flex-col">
-              <span className="text-xl font-bold tracking-tight">BENEFIQUE</span>
-              <span className="text-xs text-gray-400">Tax & Accounting</span>
-              <span className="text-[10px] text-orange-400 mt-0.5">Real-time accounting. Tax-ready any day.</span>
+              <span className="text-xl font-black tracking-wider" style={{ fontFamily: 'Georgia, Times, serif' }}>BENEFIQUE</span>
+              <span className="text-xs text-gray-400 tracking-wide">Tax & Accounting</span>
+              <span className="text-[10px] text-orange-400 font-semibold italic mt-0.5">Real-time accounting. Tax-ready any day.</span>
             </div>
             {/* LinkedIn */}
             <a 
