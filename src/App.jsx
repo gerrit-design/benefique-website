@@ -15,11 +15,8 @@ function Nav() {
   return (
     <nav className="bg-white border-b border-gray-100 sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <Link to="/" className="flex flex-col items-start">
-          <img src="/images/logo-full.jpg" alt="Benefique Tax & Accounting" className="h-14 md:h-16 w-auto" />
-          <span className="text-[10px] md:text-xs text-benefique-orange font-medium tracking-wide mt-1">
-            Real-time accounting. Tax-ready any day.
-          </span>
+        <Link to="/" className="flex items-center">
+          <img src="/images/logo-full.jpg" alt="Benefique Tax & Accounting - Real-time accounting. Tax-ready any day." className="h-20 md:h-24 w-auto" />
         </Link>
         
         {/* Desktop Nav */}
@@ -81,11 +78,8 @@ function Footer() {
     <footer className="bg-benefique-navy text-white py-10">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex flex-col items-center md:items-start">
-            <img src="/images/logo-full.jpg" alt="Benefique Tax & Accounting" className="h-12 w-auto brightness-0 invert" />
-            <span className="text-xs text-orange-300 font-medium tracking-wide mt-2">
-              Real-time accounting. Tax-ready any day.
-            </span>
+          <div className="flex items-center">
+            <img src="/images/logo-full.jpg" alt="Benefique Tax & Accounting" className="h-16 w-auto brightness-0 invert" />
           </div>
           <div className="flex gap-6 text-sm text-gray-300">
             <a href="https://app.benefique.com/terms" target="_blank" rel="noopener noreferrer" className="hover:text-white">Terms of Service</a>
