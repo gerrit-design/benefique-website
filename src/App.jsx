@@ -169,7 +169,7 @@ function Home() {
           </p>
           <div className="flex flex-wrap gap-4">
             {[
-              'Books closed by the 10th — every month',
+              'Books closed by the 7th, review call by the 10th',
               '24-hour response guarantee',
               'Healthcare & service business specialists',
             ].map((item) => (
@@ -218,7 +218,7 @@ function Home() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { icon: '📚', title: 'Full Bookkeeping', desc: 'Bank reconciliation, credit cards, all transactions categorized accurately — every month, without fail.' },
-              { icon: '📅', title: 'Monthly Close by the 10th', desc: 'Financial statements ready by the 10th of every month. You always know where you stand.' },
+              { icon: '📅', title: 'Monthly Close by the 7th', desc: 'Books closed by the 7th, review call by the 10th. You always know where you stand.' },
               { icon: '💰', title: 'Payroll Processing', desc: 'Employee and contractor payroll handled. On time, every time, with all the filings done.' },
               { icon: '📋', title: 'AP Management', desc: 'Bills tracked, approved, and paid on schedule. No more missed payments or late fees.' },
               { icon: '📊', title: 'Financial Reporting', desc: 'P&L, Balance Sheet, Cash Flow — clean, accurate, and actually useful for decisions.' },
@@ -290,7 +290,7 @@ function Home() {
               <ul className="space-y-3">
                 {[
                   'Full-service accounting — books, payroll, taxes, all handled',
-                  'Monthly close by the 10th — you always know where you stand',
+                  'Books closed by the 7th, review call by the 10th',
                   'Proactive tax planning — not just compliance, actual savings',
                   'Real-time dashboards — see your numbers anytime, no asking',
                   'One team, one relationship — no handoffs, no runaround',
@@ -680,7 +680,7 @@ function About() {
             <h2 className="text-2xl font-bold text-benefique-navy mb-6">What Makes Us Different</h2>
             <div className="grid md:grid-cols-2 gap-4">
               {[
-                { title: '7th Business Day Close', desc: 'Your books are closed and reviewed by the 7th of every month. No waiting.' },
+                { title: 'Books Closed by the 7th', desc: 'Your books are closed by the 7th, review call by the 10th. No waiting.' },
                 { title: '24-Hour Response', desc: 'Questions get answers within one business day. Always.' },
                 { title: 'Decision-Ready Dashboards', desc: 'Not just numbers—insights you can act on immediately.' },
                 { title: 'Proactive Planning', desc: 'We find opportunities before they become emergencies.' },
