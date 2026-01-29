@@ -14,9 +14,12 @@ function Nav() {
   
   return (
     <nav className="bg-white border-b border-gray-100 sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-        <Link to="/" className="flex items-center gap-3">
-          <img src="/images/logo-full.jpg" alt="Benefique Tax & Accounting" className="h-16 md:h-20 w-auto" />
+      <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <Link to="/" className="flex flex-col items-start">
+          <img src="/images/logo-full.jpg" alt="Benefique Tax & Accounting" className="h-14 md:h-16 w-auto" />
+          <span className="text-[10px] md:text-xs text-benefique-orange font-medium tracking-wide mt-1">
+            Real-time accounting. Tax-ready any day.
+          </span>
         </Link>
         
         {/* Desktop Nav */}
@@ -74,11 +77,14 @@ function Nav() {
 // Footer Component
 function Footer() {
   return (
-    <footer className="bg-benefique-navy text-white py-8">
+    <footer className="bg-benefique-navy text-white py-10">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex items-center gap-3">
-            <img src="/images/logo-compact.jpg" alt="Benefique" className="h-8 w-auto brightness-0 invert" />
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="flex flex-col items-center md:items-start">
+            <img src="/images/logo-full.jpg" alt="Benefique Tax & Accounting" className="h-12 w-auto brightness-0 invert" />
+            <span className="text-xs text-orange-300 font-medium tracking-wide mt-2">
+              Real-time accounting. Tax-ready any day.
+            </span>
           </div>
           <div className="flex gap-6 text-sm text-gray-300">
             <a href="https://app.benefique.com/terms" target="_blank" rel="noopener noreferrer" className="hover:text-white">Terms of Service</a>
@@ -86,7 +92,7 @@ function Footer() {
             <Link to="/contact" className="hover:text-white">Contact</Link>
           </div>
         </div>
-        <div className="text-center text-sm text-gray-400 mt-6">
+        <div className="text-center text-sm text-gray-400 mt-8">
           © {new Date().getFullYear()} Benefique Capital LLC. All rights reserved. | Davie, Florida
         </div>
       </div>
