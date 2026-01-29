@@ -2,51 +2,70 @@ import React from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
 
 // ============================================================
-// BENEFIQUE WEBSITE
-// Built: 2026-01-28
+// BENEFIQUE WEBSITE - Davie Design Style
+// Built: 2026-01-28 | Restyled: 2026-01-29
 // ============================================================
 
 // Navigation Component
 function Nav() {
   const location = useLocation();
   const isActive = (path) => location.pathname === path;
+  const [mobileOpen, setMobileOpen] = React.useState(false);
   
   return (
-    <nav className="bg-white shadow-sm sticky top-0 z-50">
+    <nav className="bg-white border-b border-gray-100 sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <Link to="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-benefique-blue rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-xl">B</span>
-          </div>
-          <span className="text-xl font-bold text-benefique-blue">Benefique</span>
+        <Link to="/" className="flex items-center gap-3">
+          <img src="/images/logo-compact.jpg" alt="Benefique" className="h-10 w-auto" />
         </Link>
-        <div className="hidden md:flex gap-6">
+        
+        {/* Desktop Nav */}
+        <div className="hidden md:flex items-center gap-8">
           {[
-            ['/', 'Home'],
             ['/services', 'Services'],
+            ['/#how-it-works', 'How It Works'],
             ['/about', 'About'],
-            ['/testimonials', 'Testimonials'],
-            ['/blog', 'Blog'],
-            ['/contact', 'Contact'],
           ].map(([path, label]) => (
             <Link
               key={path}
               to={path}
               className={`text-sm font-medium transition-colors ${
-                isActive(path) ? 'text-benefique-blue' : 'text-gray-600 hover:text-benefique-blue'
+                isActive(path) ? 'text-benefique-navy' : 'text-gray-600 hover:text-benefique-navy'
               }`}
             >
               {label}
             </Link>
           ))}
+          <Link
+            to="/contact"
+            className="bg-benefique-orange text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-orange-600 transition"
+          >
+            Apply to Work With Us
+          </Link>
         </div>
-        <Link
-          to="/contact"
-          className="bg-benefique-blue text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-opacity-90 transition"
+
+        {/* Mobile Menu Button */}
+        <button 
+          className="md:hidden text-gray-600"
+          onClick={() => setMobileOpen(!mobileOpen)}
         >
-          Get Started
-        </Link>
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
       </div>
+      
+      {/* Mobile Menu */}
+      {mobileOpen && (
+        <div className="md:hidden bg-white border-t px-4 py-4 space-y-4">
+          <Link to="/services" className="block text-gray-600">Services</Link>
+          <Link to="/about" className="block text-gray-600">About</Link>
+          <Link to="/testimonials" className="block text-gray-600">Testimonials</Link>
+          <Link to="/contact" className="block bg-benefique-orange text-white px-4 py-2 rounded-lg text-center font-semibold">
+            Apply to Work With Us
+          </Link>
+        </div>
+      )}
     </nav>
   );
 }
@@ -54,47 +73,20 @@ function Nav() {
 // Footer Component
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-benefique-navy text-white py-8">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8">
-          <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-benefique-blue font-bold">B</span>
-              </div>
-              <span className="font-bold">Benefique</span>
-            </div>
-            <p className="text-gray-400 text-sm">
-              History matters, but preparation wins.
-            </p>
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex items-center gap-3">
+            <img src="/images/logo-compact.jpg" alt="Benefique" className="h-8 w-auto brightness-0 invert" />
           </div>
-          <div>
-            <h4 className="font-semibold mb-4">Services</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li><Link to="/services" className="hover:text-white">Fractional CFO</Link></li>
-              <li><Link to="/services" className="hover:text-white">Full-Service Accounting</Link></li>
-              <li><Link to="/services" className="hover:text-white">Tax Planning</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-4">Company</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li><Link to="/about" className="hover:text-white">About</Link></li>
-              <li><Link to="/testimonials" className="hover:text-white">Testimonials</Link></li>
-              <li><Link to="/blog" className="hover:text-white">Blog</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-4">Contact</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li>Davie, Florida</li>
-              <li>info@benefique.com</li>
-              <li>(954) 903-1AX</li>
-            </ul>
+          <div className="flex gap-6 text-sm text-gray-300">
+            <Link to="/terms" className="hover:text-white">Terms of Service</Link>
+            <Link to="/privacy" className="hover:text-white">Privacy Policy</Link>
+            <Link to="/contact" className="hover:text-white">Contact</Link>
           </div>
         </div>
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-          © {new Date().getFullYear()} Benefique Tax & Accounting. All rights reserved.
+        <div className="text-center text-sm text-gray-400 mt-6">
+          © {new Date().getFullYear()} Benefique Capital LLC. All rights reserved. | Davie, Florida
         </div>
       </div>
     </footer>
@@ -108,98 +100,259 @@ function Home() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-benefique-blue to-blue-900 text-white py-20">
+      <section className="bg-white py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              You didn't go into business to become an accountant.
+          <div className="max-w-2xl">
+            {/* Location Badge */}
+            <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
+              <span>📍</span> Serving South Florida
+            </div>
+            
+            <h1 className="text-4xl md:text-5xl font-bold text-benefique-navy leading-tight mb-6">
+              Stop Drowning in<br />Your Own Books
             </h1>
-            <p className="text-xl text-blue-100 mb-8">
-              We handle your books, taxes, and financial strategy so you can focus on what you do best. 
-              Real-time insights. Proactive planning. Results you can see.
+            <p className="text-lg text-gray-600 mb-4">
+              Full-service accounting for businesses that want to grow — not drown in spreadsheets.
             </p>
-            <div className="flex gap-4">
+            <p className="text-gray-600 mb-8">
+              You didn't go into business to become an accountant. We take over your entire accounting 
+              function — books, taxes, payroll, reporting — so you can focus on what actually makes you money.
+            </p>
+            
+            <div className="flex flex-wrap gap-4 mb-6">
               <Link
                 to="/contact"
-                className="bg-white text-benefique-blue px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
+                className="bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition inline-flex items-center gap-2"
               >
-                Schedule a Call
+                See If We're a Fit <span>→</span>
               </Link>
               <Link
                 to="/services"
-                className="border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-benefique-blue transition"
+                className="border-2 border-benefique-navy text-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-benefique-navy hover:text-white transition"
               >
-                Our Services
+                See What's Included
               </Link>
             </div>
+            
+            <p className="text-sm text-gray-500">
+              No obligation. We'll tell you honestly if we're the right fit.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="py-12 bg-gray-50">
+      {/* Why Choose Us */}
+      <section className="bg-gray-50 py-8">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">
+            Why businesses choose Benefique
+          </p>
+          <div className="flex flex-wrap gap-4">
             {[
-              ['30+', 'Active Clients'],
-              ['17', 'Fractional CFO Engagements'],
-              ['7th', 'Business Day Close'],
-              ['24hr', 'Response Time'],
-            ].map(([stat, label]) => (
-              <div key={label}>
-                <div className="text-3xl font-bold text-benefique-blue">{stat}</div>
-                <div className="text-gray-600 text-sm">{label}</div>
+              'Books closed by the 10th — every month',
+              '24-hour response guarantee',
+              'Healthcare & service business specialists',
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-4 py-2 rounded-full text-sm font-medium">
+                <span className="w-2 h-2 bg-benefique-orange rounded-full"></span>
+                {item}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Services Preview */}
-      <section className="py-16">
+      {/* Sound Familiar? */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-benefique-navy mb-4">Sound Familiar?</h2>
+          <p className="text-gray-600 mb-10">Most business owners we talk to are dealing with at least one of these:</p>
+          
+          <div className="grid md:grid-cols-2 gap-6 text-left">
+            {[
+              { emoji: '😩', text: "You're doing your own books nights and weekends — and still behind" },
+              { emoji: '😤', text: 'Your bookkeeper keeps making mistakes you have to fix' },
+              { emoji: '🤷', text: "You don't actually know if you're profitable until tax time" },
+              { emoji: '😰', text: 'Tax season is a scramble every single year' },
+              { emoji: '📊', text: "You've outgrown DIY but aren't sure what \"real\" accounting looks like" },
+              { emoji: '⏰', text: "You're spending time on finances instead of growing your business" },
+            ].map((item, i) => (
+              <div key={i} className="flex items-start gap-4 bg-gray-50 rounded-xl p-4">
+                <span className="text-2xl">{item.emoji}</span>
+                <span className="text-gray-700">{item.text}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services Grid */}
+      <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">How We Help</h2>
+          <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide text-center mb-2">What You Get</p>
+          <h2 className="text-3xl font-bold text-benefique-navy text-center mb-4">A Complete Accounting Department</h2>
+          <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+            Not just a bookkeeper. Not just a tax preparer. A full team handling everything — so you never have to think about it.
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { icon: '📚', title: 'Full Bookkeeping', desc: 'Bank reconciliation, credit cards, all transactions categorized accurately — every month, without fail.' },
+              { icon: '📅', title: 'Monthly Close by the 10th', desc: 'Financial statements ready by the 10th of every month. You always know where you stand.' },
+              { icon: '💰', title: 'Payroll Processing', desc: 'Employee and contractor payroll handled. On time, every time, with all the filings done.' },
+              { icon: '📋', title: 'AP Management', desc: 'Bills tracked, approved, and paid on schedule. No more missed payments or late fees.' },
+              { icon: '📊', title: 'Financial Reporting', desc: 'P&L, Balance Sheet, Cash Flow — clean, accurate, and actually useful for decisions.' },
+              { icon: '🎯', title: 'Tax Preparation & Planning', desc: 'Not just filing — proactive planning throughout the year to minimize what you owe.' },
+              { icon: '📱', title: 'Real-Time Dashboard', desc: 'See your numbers anytime you want. No waiting. No asking. Just log in and know.' },
+              { icon: '📞', title: 'Monthly Review Call', desc: 'Walk through your numbers together. Ask questions. Get advice. Stay informed.' },
+              { icon: '✅', title: 'Sales Tax & 1099s', desc: 'All compliance handled. Sales tax filed. 1099s sent. No surprises, no penalties.' },
+            ].map((service) => (
+              <div key={service.title} className="bg-white rounded-xl p-6 border border-gray-100">
+                <div className="text-3xl mb-3">{service.icon}</div>
+                <h3 className="text-lg font-bold text-benefique-navy mb-2">{service.title}</h3>
+                <p className="text-gray-600 text-sm">{service.desc}</p>
+              </div>
+            ))}
+          </div>
+          
+          <p className="text-center text-benefique-navy font-semibold mt-10">
+            This is what a real accounting department looks like.
+          </p>
+          <div className="text-center mt-6">
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 text-benefique-orange font-semibold hover:underline"
+            >
+              See If We're a Fit <span>→</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section id="how-it-works" className="py-16 bg-benefique-navy text-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <p className="text-sm font-semibold text-orange-300 uppercase tracking-wide text-center mb-2">How It Works</p>
+          <h2 className="text-3xl font-bold text-center mb-4">Simple Process. No Runaround.</h2>
+          <p className="text-blue-100 text-center mb-12 max-w-2xl mx-auto">
+            We make it easy to get started. No lengthy sales pitches. No pressure. Just a straightforward conversation to see if we're the right fit.
+          </p>
+          
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              {
-                icon: '📊',
-                title: 'Fractional CFO',
-                desc: 'Strategic financial leadership without the full-time cost. Monthly closes, cash flow forecasting, and decision-ready dashboards.',
-              },
-              {
-                icon: '📚',
-                title: 'Full-Service Accounting',
-                desc: 'Real-time books, not year-old history. We manage your day-to-day accounting so you always know where you stand.',
-              },
-              {
-                icon: '🎯',
-                title: 'Proactive Tax Planning',
-                desc: 'Why wait until April? Year-round strategies to minimize tax burden and maximize opportunities.',
-              },
-            ].map((service) => (
-              <div key={service.title} className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition">
-                <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-                <p className="text-gray-600">{service.desc}</p>
+              { num: '1', title: 'Quick Application', desc: 'Fill out the short form below. Takes 60 seconds. Tells us about your business and what you\'re dealing with.' },
+              { num: '2', title: 'Discovery Call', desc: 'We\'ll schedule a 20-minute call. You\'ll tell us about your situation. We\'ll tell you honestly if we can help — and how.' },
+              { num: '3', title: 'Custom Proposal', desc: 'If we\'re a fit, you\'ll get a clear proposal with exactly what\'s included. No surprises. No hidden fees. Decide on your timeline.' },
+            ].map((step) => (
+              <div key={step.num} className="text-center">
+                <div className="w-16 h-16 bg-benefique-orange rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                  {step.num}
+                </div>
+                <h3 className="text-xl font-bold mb-2">{step.title}</h3>
+                <p className="text-blue-100 text-sm">{step.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-16 bg-benefique-blue text-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to see what's possible?</h2>
-          <p className="text-blue-100 mb-8">
-            Let's talk about your business and how we can help you gain clarity, control, and confidence in your finances.
-          </p>
-          <Link
-            to="/contact"
-            className="inline-block bg-white text-benefique-blue px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
-          >
-            Schedule Your Free Consultation
-          </Link>
+      {/* CTA / Application */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            <div>
+              <h2 className="text-3xl font-bold text-benefique-navy mb-6">Let's See If We're the Right Fit</h2>
+              <p className="text-gray-600 mb-6">
+                We're not the cheapest option — and we're not trying to be. We work with established businesses 
+                that want reliable, proactive accounting without the headaches.
+              </p>
+              
+              <ul className="space-y-3">
+                {[
+                  'Full-service accounting — books, payroll, taxes, all handled',
+                  'Monthly close by the 10th — you always know where you stand',
+                  'Proactive tax planning — not just compliance, actual savings',
+                  'Real-time dashboards — see your numbers anytime, no asking',
+                  'One team, one relationship — no handoffs, no runaround',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <span className="text-benefique-orange">●</span>
+                    <span className="text-gray-700">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            
+            <div className="bg-gray-50 rounded-xl p-8">
+              <h3 className="text-xl font-bold text-benefique-navy mb-2">Quick Application</h3>
+              <p className="text-gray-600 text-sm mb-6">Takes 60 seconds. We'll reach out within 24 hours.</p>
+              
+              <form className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                  <input
+                    type="text"
+                    placeholder="John Smith"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                  <input
+                    type="email"
+                    placeholder="john@company.com"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Business Name</label>
+                  <input
+                    type="text"
+                    placeholder="Acme Medical Group"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Annual Revenue</label>
+                  <select className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent text-gray-600">
+                    <option>Select range...</option>
+                    <option>Under $500K</option>
+                    <option>$500K - $1M</option>
+                    <option>$1M - $5M</option>
+                    <option>$5M - $10M</option>
+                    <option>$10M+</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Current Accounting Situation</label>
+                  <select className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent text-gray-600">
+                    <option>Select one...</option>
+                    <option>Doing it myself</option>
+                    <option>Have a bookkeeper</option>
+                    <option>Have an accountant/CPA</option>
+                    <option>Nothing in place</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Biggest Financial Headache Right Now?</label>
+                  <textarea
+                    rows={3}
+                    placeholder="What's keeping you up at night?"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-benefique-orange text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
+                >
+                  Submit Application
+                </button>
+                <p className="text-xs text-gray-500 text-center">
+                  No spam. No sales pressure. Just an honest conversation.
+                </p>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -212,140 +365,138 @@ function Home() {
 function Services() {
   return (
     <div>
-      <section className="bg-benefique-blue text-white py-16">
+      <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-4">Our Services</h1>
-          <p className="text-xl text-blue-100">Comprehensive financial solutions for growing businesses</p>
+          <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
+            <span>📋</span> Our Services
+          </div>
+          <h1 className="text-4xl font-bold text-benefique-navy mb-4">Everything Your Business Needs</h1>
+          <p className="text-xl text-gray-600 max-w-2xl">Comprehensive financial solutions for healthcare and service-based businesses</p>
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 space-y-16">
           {/* Fractional CFO */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <div className="text-5xl mb-4">📊</div>
-              <h2 className="text-2xl font-bold mb-4">Fractional CFO Services</h2>
-              <p className="text-gray-600 mb-4">
-                Get C-suite financial expertise at a fraction of the cost. Our CFO services include:
-              </p>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600">✓</span>
-                  Monthly financial closes by the 7th business day
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600">✓</span>
-                  Custom CFO dashboards with real-time metrics
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600">✓</span>
-                  Cash flow forecasting and management
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600">✓</span>
-                  Strategic planning and budgeting
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600">✓</span>
-                  Bank and investor relations support
-                </li>
-              </ul>
+          <div className="bg-white rounded-2xl p-8 border border-gray-100">
+            <div className="flex items-start gap-4 mb-6">
+              <div className="text-4xl">📊</div>
+              <div>
+                <h2 className="text-2xl font-bold text-benefique-navy">Fractional CFO Services</h2>
+                <p className="text-gray-600">C-suite financial leadership at a fraction of the cost</p>
+              </div>
             </div>
-            <div className="bg-gray-100 rounded-xl p-8">
-              <div className="text-sm text-gray-500 uppercase tracking-wide mb-2">Featured</div>
-              <h3 className="text-xl font-bold mb-4">The Benefique Financial Times</h3>
-              <p className="text-gray-600 mb-4">
-                Your monthly financial newspaper. We present your numbers so you don't need accounting 
-                expertise to understand what's happening in your business.
-              </p>
-              <Link to="/contact" className="text-benefique-blue font-semibold hover:underline">
-                See a Demo →
-              </Link>
+            <div className="grid md:grid-cols-2 gap-8">
+              <ul className="space-y-3">
+                {[
+                  'Monthly financial closes by the 7th business day',
+                  'Custom CFO dashboards with real-time metrics',
+                  'Cash flow forecasting and management',
+                  'Strategic planning and budgeting',
+                  'Bank and investor relations support',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-2">
+                    <span className="text-benefique-orange">✓</span>
+                    <span className="text-gray-700">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="bg-gray-50 rounded-xl p-6">
+                <div className="text-sm text-benefique-orange uppercase tracking-wide font-semibold mb-2">Featured</div>
+                <h3 className="text-lg font-bold text-benefique-navy mb-2">The Benefique Financial Times</h3>
+                <p className="text-gray-600 text-sm">
+                  Your monthly financial newspaper. We present your numbers so you don't need accounting 
+                  expertise to understand what's happening in your business.
+                </p>
+              </div>
             </div>
           </div>
 
           {/* Full-Service Accounting */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="md:order-2">
-              <div className="text-5xl mb-4">📚</div>
-              <h2 className="text-2xl font-bold mb-4">Full-Service Accounting</h2>
-              <p className="text-gray-600 mb-4">
-                Real-time books, not year-old history. We handle everything:
-              </p>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600">✓</span>
-                  Bookkeeping and transaction coding
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600">✓</span>
-                  Accounts payable management
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600">✓</span>
-                  Payroll processing and compliance
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600">✓</span>
-                  Bank and credit card reconciliations
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600">✓</span>
-                  Month-end and year-end close
-                </li>
-              </ul>
+          <div className="bg-white rounded-2xl p-8 border border-gray-100">
+            <div className="flex items-start gap-4 mb-6">
+              <div className="text-4xl">📚</div>
+              <div>
+                <h2 className="text-2xl font-bold text-benefique-navy">Full-Service Accounting</h2>
+                <p className="text-gray-600">Real-time books, not year-old history</p>
+              </div>
             </div>
-            <div className="md:order-1 bg-gray-100 rounded-xl p-8">
-              <div className="text-sm text-gray-500 uppercase tracking-wide mb-2">Our Promise</div>
-              <h3 className="text-xl font-bold mb-4">24-Hour Response Time</h3>
-              <p className="text-gray-600">
-                Questions don't wait. Neither do we. Every client inquiry gets a response 
-                within one business day, guaranteed.
-              </p>
+            <div className="grid md:grid-cols-2 gap-8">
+              <ul className="space-y-3">
+                {[
+                  'Bookkeeping and transaction coding',
+                  'Accounts payable management',
+                  'Payroll processing and compliance',
+                  'Bank and credit card reconciliations',
+                  'Month-end and year-end close',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-2">
+                    <span className="text-benefique-orange">✓</span>
+                    <span className="text-gray-700">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="bg-gray-50 rounded-xl p-6">
+                <div className="text-sm text-benefique-orange uppercase tracking-wide font-semibold mb-2">Our Promise</div>
+                <h3 className="text-lg font-bold text-benefique-navy mb-2">24-Hour Response Time</h3>
+                <p className="text-gray-600 text-sm">
+                  Questions don't wait. Neither do we. Every client inquiry gets a response 
+                  within one business day, guaranteed.
+                </p>
+              </div>
             </div>
           </div>
 
           {/* Tax Planning */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <div className="text-5xl mb-4">🎯</div>
-              <h2 className="text-2xl font-bold mb-4">Proactive Tax Planning</h2>
-              <p className="text-gray-600 mb-4">
-                Year-round strategies, not April surprises:
-              </p>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600">✓</span>
-                  Entity structure optimization
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600">✓</span>
-                  R&D tax credit identification
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600">✓</span>
-                  Retirement and benefit planning
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600">✓</span>
-                  State and local tax compliance
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600">✓</span>
-                  Quarterly estimates and projections
-                </li>
-              </ul>
+          <div className="bg-white rounded-2xl p-8 border border-gray-100">
+            <div className="flex items-start gap-4 mb-6">
+              <div className="text-4xl">🎯</div>
+              <div>
+                <h2 className="text-2xl font-bold text-benefique-navy">Proactive Tax Planning</h2>
+                <p className="text-gray-600">Year-round strategies, not April surprises</p>
+              </div>
             </div>
-            <div className="bg-gray-100 rounded-xl p-8">
-              <div className="text-sm text-gray-500 uppercase tracking-wide mb-2">Focus Areas</div>
-              <h3 className="text-xl font-bold mb-4">Healthcare & Service SMBs</h3>
-              <p className="text-gray-600">
-                We specialize in healthcare practices, professional services, and service-based 
-                businesses. We understand your industry's unique challenges.
-              </p>
+            <div className="grid md:grid-cols-2 gap-8">
+              <ul className="space-y-3">
+                {[
+                  'Entity structure optimization',
+                  'R&D tax credit identification',
+                  'Retirement and benefit planning',
+                  'State and local tax compliance',
+                  'Quarterly estimates and projections',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-2">
+                    <span className="text-benefique-orange">✓</span>
+                    <span className="text-gray-700">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="bg-gray-50 rounded-xl p-6">
+                <div className="text-sm text-benefique-orange uppercase tracking-wide font-semibold mb-2">Focus Areas</div>
+                <h3 className="text-lg font-bold text-benefique-navy mb-2">Healthcare & Service SMBs</h3>
+                <p className="text-gray-600 text-sm">
+                  We specialize in healthcare practices, professional services, and service-based 
+                  businesses. We understand your industry's unique challenges.
+                </p>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-benefique-navy text-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4">Ready to get started?</h2>
+          <p className="text-blue-100 mb-8">
+            Let's talk about your business and see if we're the right fit.
+          </p>
+          <Link
+            to="/contact"
+            className="inline-block bg-benefique-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
+          >
+            Apply to Work With Us
+          </Link>
         </div>
       </section>
     </div>
@@ -357,88 +508,45 @@ function Services() {
 // ============================================================
 function Testimonials() {
   const testimonials = [
-    {
-      name: 'Mark',
-      industry: 'Multi-Location Radiology',
-      quote: 'Benefique gives us visibility across all our locations. We finally know which centers are performing and which need attention.',
-      category: 'Healthcare',
-    },
-    {
-      name: 'Daryl',
-      industry: 'Diagnostic Imaging',
-      quote: 'They showed us the levers we could pull to improve profitability. Not just reports—actionable insights.',
-      category: 'Healthcare',
-    },
-    {
-      name: 'Humberto',
-      industry: 'Radiology Operations',
-      quote: 'The monthly CFO dashboard changed how we run the business. We make decisions based on data now, not gut feel.',
-      category: 'Healthcare',
-    },
-    {
-      name: 'Flavio',
-      industry: 'Remote Radiology',
-      quote: 'As a remote practice, having a team that truly understands healthcare billing was crucial. Benefique delivers.',
-      category: 'Healthcare',
-    },
-    {
-      name: 'Brandon',
-      industry: 'Veterinary',
-      quote: 'They handle everything—books, taxes, payroll. I can focus on my patients instead of spreadsheets.',
-      category: 'Healthcare',
-    },
-    {
-      name: 'Eddie',
-      industry: 'Dental Brokerage',
-      quote: 'Complex multi-entity structure, and they keep it all organized. Tax planning alone has saved us significantly.',
-      category: 'Professional Services',
-    },
-    {
-      name: 'Jamel',
-      industry: 'IT Services',
-      quote: 'Fast, responsive, and actually understands tech businesses. The monthly close is always on time.',
-      category: 'Professional Services',
-    },
-    {
-      name: 'Kobus',
-      industry: 'Marine HVAC',
-      quote: 'We went from chaos to clarity. Now I know exactly where we stand financially at any moment.',
-      category: 'Marine',
-    },
-    {
-      name: 'Natasha',
-      industry: 'Restaurant Group',
-      quote: 'Multiple locations, different concepts, one clear financial picture. That\'s what Benefique built for us.',
-      category: 'Food Service',
-    },
+    { name: 'Mark', industry: 'Multi-Location Radiology', quote: 'Benefique gives us visibility across all our locations. We finally know which centers are performing and which need attention.', category: 'Healthcare' },
+    { name: 'Daryl', industry: 'Diagnostic Imaging', quote: 'They showed us the levers we could pull to improve profitability. Not just reports—actionable insights.', category: 'Healthcare' },
+    { name: 'Humberto', industry: 'Radiology Operations', quote: 'The monthly CFO dashboard changed how we run the business. We make decisions based on data now, not gut feel.', category: 'Healthcare' },
+    { name: 'Flavio', industry: 'Remote Radiology', quote: 'As a remote practice, having a team that truly understands healthcare billing was crucial. Benefique delivers.', category: 'Healthcare' },
+    { name: 'Brandon', industry: 'Veterinary', quote: 'They handle everything—books, taxes, payroll. I can focus on my patients instead of spreadsheets.', category: 'Healthcare' },
+    { name: 'Eddie', industry: 'Dental Brokerage', quote: 'Complex multi-entity structure, and they keep it all organized. Tax planning alone has saved us significantly.', category: 'Professional Services' },
+    { name: 'Jamel', industry: 'IT Services', quote: 'Fast, responsive, and actually understands tech businesses. The monthly close is always on time.', category: 'Professional Services' },
+    { name: 'Kobus', industry: 'Marine HVAC', quote: 'We went from chaos to clarity. Now I know exactly where we stand financially at any moment.', category: 'Marine' },
+    { name: 'Natasha', industry: 'Restaurant Group', quote: "Multiple locations, different concepts, one clear financial picture. That's what Benefique built for us.", category: 'Food Service' },
   ];
 
   const categories = ['All', 'Healthcare', 'Professional Services', 'Marine', 'Food Service'];
   const [filter, setFilter] = React.useState('All');
-  
   const filtered = filter === 'All' ? testimonials : testimonials.filter(t => t.category === filter);
 
   return (
     <div>
-      <section className="bg-benefique-blue text-white py-16">
+      <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-4">Client Testimonials</h1>
-          <p className="text-xl text-blue-100">Hear from the businesses we serve</p>
+          <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
+            <span>⭐</span> Testimonials
+          </div>
+          <h1 className="text-4xl font-bold text-benefique-navy mb-4">What Our Clients Say</h1>
+          <p className="text-xl text-gray-600">Hear from the businesses we serve</p>
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           {/* Filter */}
-          <div className="flex flex-wrap gap-2 mb-8 justify-center">
+          <div className="flex flex-wrap gap-2 mb-10 justify-center">
             {categories.map(cat => (
               <button
                 key={cat}
                 onClick={() => setFilter(cat)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition ${
                   filter === cat
-                    ? 'bg-benefique-blue text-white'
-                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                    ? 'bg-benefique-orange text-white'
+                    : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200'
                 }`}
               >
                 {cat}
@@ -449,11 +557,11 @@ function Testimonials() {
           {/* Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filtered.map((t, i) => (
-              <div key={i} className="bg-white border border-gray-200 rounded-xl p-6">
-                <div className="text-4xl mb-4">"</div>
-                <p className="text-gray-700 mb-4">{t.quote}</p>
-                <div className="border-t pt-4">
-                  <div className="font-semibold">{t.name}</div>
+              <div key={i} className="bg-white rounded-xl p-6 border border-gray-100">
+                <div className="text-benefique-orange text-4xl mb-4">"</div>
+                <p className="text-gray-700 mb-6">{t.quote}</p>
+                <div className="border-t border-gray-100 pt-4">
+                  <div className="font-semibold text-benefique-navy">{t.name}</div>
                   <div className="text-sm text-gray-500">{t.industry}</div>
                 </div>
               </div>
@@ -462,19 +570,18 @@ function Testimonials() {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-16 bg-gray-50">
+      {/* CTA */}
+      <section className="py-16 bg-benefique-navy text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold mb-4">The Team Behind the Numbers</h2>
-          <p className="text-gray-600 mb-8">
-            Our team combines Big 4 experience with entrepreneurial agility. We've worked with 
-            businesses from startups to $50M+ enterprises, and we bring that expertise to every client.
+          <h2 className="text-2xl font-bold mb-4">Ready to join them?</h2>
+          <p className="text-blue-100 mb-8">
+            Let's talk about your business and see how we can help.
           </p>
           <Link
-            to="/about"
-            className="inline-block bg-benefique-blue text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition"
+            to="/contact"
+            className="inline-block bg-benefique-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
           >
-            Meet the Team
+            Apply to Work With Us
           </Link>
         </div>
       </section>
@@ -488,48 +595,55 @@ function Testimonials() {
 function About() {
   return (
     <div>
-      <section className="bg-benefique-blue text-white py-16">
+      <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-4">About Benefique</h1>
-          <p className="text-xl text-blue-100">History matters, but preparation wins.</p>
+          <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
+            <span>👋</span> About Us
+          </div>
+          <h1 className="text-4xl font-bold text-benefique-navy mb-4">About Benefique</h1>
+          <p className="text-xl text-gray-600">History matters, but preparation wins.</p>
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="text-2xl font-bold mb-4">Our Philosophy</h2>
-            <p className="text-gray-600 mb-6">
+          <div className="bg-white rounded-2xl p-8 border border-gray-100 mb-8">
+            <h2 className="text-2xl font-bold text-benefique-navy mb-4">Our Philosophy</h2>
+            <p className="text-gray-600 mb-4">
               Most accounting firms look backward. They tell you what happened last year, last quarter, 
               last month. That's history. Important, but not enough.
             </p>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 mb-4">
               At Benefique, we believe financial data should drive decisions, not just document them. 
               Real-time books. Monthly closes by the 7th. Dashboards that answer questions before you ask them.
             </p>
-            <p className="text-gray-600 mb-8">
+            <p className="text-gray-600">
               We specialize in healthcare and service-based SMBs because we understand the unique 
               challenges—complex billing, multi-location operations, seasonal fluctuations, regulatory requirements.
             </p>
+          </div>
 
-            <h2 className="text-2xl font-bold mb-4">What Makes Us Different</h2>
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="bg-white rounded-2xl p-8 border border-gray-100 mb-8">
+            <h2 className="text-2xl font-bold text-benefique-navy mb-6">What Makes Us Different</h2>
+            <div className="grid md:grid-cols-2 gap-4">
               {[
                 { title: '7th Business Day Close', desc: 'Your books are closed and reviewed by the 7th of every month. No waiting.' },
                 { title: '24-Hour Response', desc: 'Questions get answers within one business day. Always.' },
                 { title: 'Decision-Ready Dashboards', desc: 'Not just numbers—insights you can act on immediately.' },
                 { title: 'Proactive Planning', desc: 'We find opportunities before they become emergencies.' },
               ].map(item => (
-                <div key={item.title} className="bg-gray-50 rounded-lg p-4">
-                  <h3 className="font-semibold mb-2">{item.title}</h3>
+                <div key={item.title} className="bg-gray-50 rounded-xl p-4">
+                  <h3 className="font-semibold text-benefique-navy mb-2">{item.title}</h3>
                   <p className="text-gray-600 text-sm">{item.desc}</p>
                 </div>
               ))}
             </div>
+          </div>
 
-            <h2 className="text-2xl font-bold mb-4">Location</h2>
+          <div className="bg-white rounded-2xl p-8 border border-gray-100">
+            <h2 className="text-2xl font-bold text-benefique-navy mb-4">Location</h2>
             <p className="text-gray-600">
-              Based in Davie, Florida, we serve clients throughout South Florida and beyond. 
+              Based in <strong>Davie, Florida</strong>, we serve clients throughout South Florida and beyond. 
               Our technology-forward approach means location is never a barrier to great service.
             </p>
           </div>
@@ -544,58 +658,36 @@ function About() {
 // ============================================================
 function Blog() {
   const posts = [
-    {
-      title: 'December Financials: What to Review Before Year-End',
-      excerpt: 'Key financial checkpoints every business owner should review before closing the books on the year.',
-      date: '2025-12-15',
-      slug: 'december-financials',
-    },
-    {
-      title: 'S-Corp Election: Is It Right for Your Business?',
-      excerpt: 'Understanding the tax implications and benefits of S-Corp status for small business owners.',
-      date: '2025-11-20',
-      slug: 's-corp-election',
-    },
-    {
-      title: 'R&D Tax Credits: Hidden Money for Healthcare Practices',
-      excerpt: 'Many healthcare businesses miss out on significant R&D credits. Here\'s how to identify and claim them.',
-      date: '2025-10-15',
-      slug: 'rd-tax-credits',
-    },
-    {
-      title: 'Cash Flow Forecasting 101',
-      excerpt: 'A practical guide to predicting and managing your business cash flow.',
-      date: '2025-09-10',
-      slug: 'cash-flow-forecasting',
-    },
-    {
-      title: 'Multi-Location Financial Management',
-      excerpt: 'Best practices for businesses operating across multiple locations or entities.',
-      date: '2025-08-05',
-      slug: 'multi-location-management',
-    },
+    { title: 'December Financials: What to Review Before Year-End', excerpt: 'Key financial checkpoints every business owner should review before closing the books on the year.', date: '2025-12-15', slug: 'december-financials' },
+    { title: 'S-Corp Election: Is It Right for Your Business?', excerpt: 'Understanding the tax implications and benefits of S-Corp status for small business owners.', date: '2025-11-20', slug: 's-corp-election' },
+    { title: 'R&D Tax Credits: Hidden Money for Healthcare Practices', excerpt: "Many healthcare businesses miss out on significant R&D credits. Here's how to identify and claim them.", date: '2025-10-15', slug: 'rd-tax-credits' },
+    { title: 'Cash Flow Forecasting 101', excerpt: 'A practical guide to predicting and managing your business cash flow.', date: '2025-09-10', slug: 'cash-flow-forecasting' },
+    { title: 'Multi-Location Financial Management', excerpt: 'Best practices for businesses operating across multiple locations or entities.', date: '2025-08-05', slug: 'multi-location-management' },
   ];
 
   return (
     <div>
-      <section className="bg-benefique-blue text-white py-16">
+      <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-4">Blog</h1>
-          <p className="text-xl text-blue-100">Insights on accounting, tax, and financial strategy</p>
+          <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
+            <span>📝</span> Blog
+          </div>
+          <h1 className="text-4xl font-bold text-benefique-navy mb-4">Insights & Resources</h1>
+          <p className="text-xl text-gray-600">Practical advice on accounting, tax, and financial strategy</p>
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4">
-          <div className="space-y-8">
+          <div className="space-y-6">
             {posts.map(post => (
-              <article key={post.slug} className="border-b border-gray-200 pb-8">
+              <article key={post.slug} className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-lg transition">
                 <div className="text-sm text-gray-500 mb-2">{post.date}</div>
-                <h2 className="text-xl font-bold mb-2 hover:text-benefique-blue cursor-pointer">
+                <h2 className="text-xl font-bold text-benefique-navy mb-2 hover:text-benefique-orange cursor-pointer transition">
                   {post.title}
                 </h2>
                 <p className="text-gray-600 mb-4">{post.excerpt}</p>
-                <span className="text-benefique-blue font-medium hover:underline cursor-pointer">
+                <span className="text-benefique-orange font-medium hover:underline cursor-pointer">
                   Read more →
                 </span>
               </article>
@@ -613,85 +705,89 @@ function Blog() {
 function Contact() {
   return (
     <div>
-      <section className="bg-benefique-blue text-white py-16">
+      <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
-          <p className="text-xl text-blue-100">Let's talk about your business</p>
+          <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
+            <span>✉️</span> Contact
+          </div>
+          <h1 className="text-4xl font-bold text-benefique-navy mb-4">Let's Talk</h1>
+          <p className="text-xl text-gray-600">See if we're the right fit for your business</p>
         </div>
       </section>
 
-      <section className="py-16">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12">
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="text-2xl font-bold mb-4">Get in Touch</h2>
-              <p className="text-gray-600 mb-6">
-                Ready to gain clarity in your finances? Schedule a free consultation and let's 
-                discuss how we can help your business thrive.
+              <h2 className="text-2xl font-bold text-benefique-navy mb-6">Get in Touch</h2>
+              <p className="text-gray-600 mb-8">
+                Ready to gain clarity in your finances? Fill out the application and we'll 
+                reach out within 24 hours to schedule a discovery call.
               </p>
               
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">📍</span>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-benefique-orange/10 rounded-lg flex items-center justify-center text-2xl">📍</div>
                   <div>
-                    <div className="font-semibold">Location</div>
+                    <div className="font-semibold text-benefique-navy">Location</div>
                     <div className="text-gray-600">Davie, Florida</div>
                   </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">📧</span>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-benefique-orange/10 rounded-lg flex items-center justify-center text-2xl">📧</div>
                   <div>
-                    <div className="font-semibold">Email</div>
-                    <div className="text-gray-600">info@benefique.com</div>
+                    <div className="font-semibold text-benefique-navy">Email</div>
+                    <div className="text-gray-600">hello@benefique.com</div>
                   </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">🌐</span>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-benefique-orange/10 rounded-lg flex items-center justify-center text-2xl">🌐</div>
                   <div>
-                    <div className="font-semibold">Website</div>
+                    <div className="font-semibold text-benefique-navy">Website</div>
                     <div className="text-gray-600">www.benefique.com</div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gray-50 rounded-xl p-6">
-              <h3 className="text-xl font-bold mb-4">Send a Message</h3>
+            <div className="bg-white rounded-xl p-8 border border-gray-100">
+              <h3 className="text-xl font-bold text-benefique-navy mb-2">Quick Application</h3>
+              <p className="text-gray-600 text-sm mb-6">Takes 60 seconds. We'll reach out within 24 hours.</p>
+              
               <form className="space-y-4">
                 <div>
-                  <label className="block text-sm font-medium mb-1">Name</label>
-                  <input
-                    type="text"
-                    className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-benefique-blue"
-                  />
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                  <input type="text" placeholder="John Smith" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-1">Email</label>
-                  <input
-                    type="email"
-                    className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-benefique-blue"
-                  />
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                  <input type="email" placeholder="john@company.com" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-1">Company</label>
-                  <input
-                    type="text"
-                    className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-benefique-blue"
-                  />
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Business Name</label>
+                  <input type="text" placeholder="Acme Medical Group" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-1">Message</label>
-                  <textarea
-                    rows={4}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-benefique-blue"
-                  />
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Annual Revenue</label>
+                  <select className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent text-gray-600">
+                    <option>Select range...</option>
+                    <option>Under $500K</option>
+                    <option>$500K - $1M</option>
+                    <option>$1M - $5M</option>
+                    <option>$5M - $10M</option>
+                    <option>$10M+</option>
+                  </select>
                 </div>
-                <button
-                  type="submit"
-                  className="w-full bg-benefique-blue text-white py-3 rounded-lg font-semibold hover:bg-opacity-90 transition"
-                >
-                  Send Message
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Biggest Financial Headache Right Now?</label>
+                  <textarea rows={3} placeholder="What's keeping you up at night?" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
+                </div>
+                <button type="submit" className="w-full bg-benefique-orange text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition">
+                  Submit Application
                 </button>
+                <p className="text-xs text-gray-500 text-center">
+                  No spam. No sales pressure. Just an honest conversation.
+                </p>
               </form>
             </div>
           </div>
@@ -706,7 +802,7 @@ function Contact() {
 // ============================================================
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-white">
       <Nav />
       <main className="flex-1">
         <Routes>

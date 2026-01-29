@@ -4,9 +4,9 @@ export default {
     extend: {
       colors: {
         benefique: {
-          blue: '#1e3a5f',
-          gold: '#d4af37',
-          green: '#166534',
+          navy: '#1B365D',
+          orange: '#F97316',
+          gray: '#F8FAFC',
         }
       }
     },
