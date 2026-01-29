@@ -79,7 +79,8 @@ function Footer() {
   return (
     <footer className="bg-benefique-navy text-white py-10">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+        {/* Main Footer Row */}
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6 pb-8 border-b border-white/10">
           <div className="flex items-center gap-6">
             <div className="flex flex-col">
               <span className="text-xl font-black tracking-wider" style={{ fontFamily: 'Georgia, Times, serif' }}>BENEFIQUE</span>
@@ -105,7 +106,38 @@ function Footer() {
             <Link to="/contact" className="hover:text-white">Contact</Link>
           </div>
         </div>
-        <div className="text-center text-sm text-gray-400 mt-8">
+        
+        {/* SEO Links Section */}
+        <div className="py-6 grid md:grid-cols-2 gap-6 text-sm border-b border-white/10">
+          {/* Locations */}
+          <div>
+            <span className="text-gray-500 text-xs uppercase tracking-wider">Locations</span>
+            <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1">
+              <Link to="/davie-accounting" className="text-gray-400 hover:text-white transition">Davie</Link>
+              <Link to="/fort-lauderdale-accounting" className="text-gray-400 hover:text-white transition">Fort Lauderdale</Link>
+              <Link to="/weston-accounting" className="text-gray-400 hover:text-white transition">Weston</Link>
+              <Link to="/plantation-accounting" className="text-gray-400 hover:text-white transition">Plantation</Link>
+              <Link to="/miramar-accounting" className="text-gray-400 hover:text-white transition">Miramar</Link>
+              <Link to="/hollywood-accounting" className="text-gray-400 hover:text-white transition">Hollywood</Link>
+              <Link to="/aventura-accounting" className="text-gray-400 hover:text-white transition">Aventura</Link>
+            </div>
+          </div>
+          
+          {/* Industries */}
+          <div>
+            <span className="text-gray-500 text-xs uppercase tracking-wider">Industries</span>
+            <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1">
+              <Link to="/industries/radiology" className="text-gray-400 hover:text-white transition">Radiology</Link>
+              <Link to="/industries/dental" className="text-gray-400 hover:text-white transition">Dental</Link>
+              <Link to="/industries/veterinary" className="text-gray-400 hover:text-white transition">Veterinary</Link>
+              <Link to="/industries/marine-services" className="text-gray-400 hover:text-white transition">Marine Services</Link>
+              <Link to="/services/real-time-accounting" className="text-gray-400 hover:text-white transition">Real-Time Accounting</Link>
+            </div>
+          </div>
+        </div>
+        
+        {/* Copyright */}
+        <div className="text-center text-sm text-gray-400 pt-6">
           © {new Date().getFullYear()} Benefique Capital LLC. All rights reserved. | Davie, Florida
         </div>
       </div>
