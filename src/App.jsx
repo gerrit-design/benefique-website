@@ -26,8 +26,8 @@ function Nav() {
         <div className="hidden md:flex items-center gap-8">
           {[
             ['/services', 'Services'],
+            ['/demo', 'Sample Reports'],
             ['/testimonials', 'Testimonials'],
-            ['/blog', 'Blog'],
             ['/about', 'About'],
           ].map(([path, label]) => (
             <Link
@@ -63,8 +63,9 @@ function Nav() {
       {mobileOpen && (
         <div className="md:hidden bg-white border-t px-4 py-4 space-y-4">
           <Link to="/services" className="block text-gray-600">Services</Link>
-          <Link to="/about" className="block text-gray-600">About</Link>
+          <Link to="/demo" className="block text-gray-600">Sample Reports</Link>
           <Link to="/testimonials" className="block text-gray-600">Testimonials</Link>
+          <Link to="/about" className="block text-gray-600">About</Link>
           <Link to="/contact" className="block bg-benefique-orange text-white px-4 py-2 rounded-lg text-center font-semibold">
             Apply to Work With Us
           </Link>
@@ -514,69 +515,96 @@ function Services() {
 }
 
 // ============================================================
-// TESTIMONIALS PAGE
+// TESTIMONIALS PAGE - Grouped by Healthcare & Services
 // ============================================================
 function Testimonials() {
-  const testimonials = [
-    { name: 'Mark', industry: 'Multi-Location Radiology', quote: 'Benefique gives us visibility across all our locations. We finally know which centers are performing and which need attention.', category: 'Healthcare' },
-    { name: 'Daryl', industry: 'Diagnostic Imaging', quote: 'They showed us the levers we could pull to improve profitability. Not just reports—actionable insights.', category: 'Healthcare' },
-    { name: 'Humberto', industry: 'Radiology Operations', quote: 'The monthly CFO dashboard changed how we run the business. We make decisions based on data now, not gut feel.', category: 'Healthcare' },
-    { name: 'Flavio', industry: 'Remote Radiology', quote: 'As a remote practice, having a team that truly understands healthcare billing was crucial. Benefique delivers.', category: 'Healthcare' },
-    { name: 'Brandon', industry: 'Veterinary', quote: 'They handle everything—books, taxes, payroll. I can focus on my patients instead of spreadsheets.', category: 'Healthcare' },
-    { name: 'Eddie', industry: 'Dental Brokerage', quote: 'Complex multi-entity structure, and they keep it all organized. Tax planning alone has saved us significantly.', category: 'Professional Services' },
-    { name: 'Jamel', industry: 'IT Services', quote: 'Fast, responsive, and actually understands tech businesses. The monthly close is always on time.', category: 'Professional Services' },
-    { name: 'Kobus', industry: 'Marine HVAC', quote: 'We went from chaos to clarity. Now I know exactly where we stand financially at any moment.', category: 'Marine' },
-    { name: 'Natasha', industry: 'Restaurant Group', quote: "Multiple locations, different concepts, one clear financial picture. That's what Benefique built for us.", category: 'Food Service' },
+  const healthcareTestimonials = [
+    { name: 'Mark', industry: 'Multi-Location Radiology', quote: 'Benefique gives us visibility across all our locations. We finally know which centers are performing and which need attention.' },
+    { name: 'Daryl', industry: 'Diagnostic Imaging', quote: 'They showed us the levers we could pull to improve profitability. Not just reports—actionable insights.' },
+    { name: 'Humberto', industry: 'Radiology Operations', quote: 'The monthly CFO dashboard changed how we run the business. We make decisions based on data now, not gut feel.' },
+    { name: 'Flavio', industry: 'Remote Radiology', quote: 'As a remote practice, having a team that truly understands healthcare billing was crucial. Benefique delivers.' },
+    { name: 'Brandon', industry: 'Veterinary Practice', quote: 'They handle everything—books, taxes, payroll. I can focus on my patients instead of spreadsheets.' },
+    { name: 'Eddie', industry: 'Dental Brokerage', quote: 'Complex multi-entity structure, and they keep it all organized. Tax planning alone has saved us significantly.' },
   ];
 
-  const categories = ['All', 'Healthcare', 'Professional Services', 'Marine', 'Food Service'];
-  const [filter, setFilter] = React.useState('All');
-  const filtered = filter === 'All' ? testimonials : testimonials.filter(t => t.category === filter);
+  const servicesTestimonials = [
+    { name: 'Jamel', industry: 'IT Services', quote: 'Fast, responsive, and actually understands tech businesses. The monthly close is always on time.' },
+    { name: 'Kobus', industry: 'Marine Services', quote: 'We went from chaos to clarity. Now I know exactly where we stand financially at any moment.' },
+    { name: 'Natasha', industry: 'Restaurant Group', quote: "Multiple locations, different concepts, one clear financial picture. That's what Benefique built for us." },
+  ];
+
+  const TestimonialCard = ({ t }) => (
+    <div className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-lg transition">
+      <div className="text-benefique-orange text-4xl mb-4">"</div>
+      <p className="text-gray-700 mb-6 leading-relaxed">{t.quote}</p>
+      <div className="border-t border-gray-100 pt-4">
+        <div className="font-semibold text-benefique-navy">{t.name}</div>
+        <div className="text-sm text-gray-500">{t.industry}</div>
+      </div>
+    </div>
+  );
 
   return (
     <div>
+      {/* Header */}
       <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-4">
           <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
-            <span>⭐</span> Testimonials
+            <span>⭐</span> Client Success Stories
           </div>
           <h1 className="text-4xl font-bold text-benefique-navy mb-4">What Our Clients Say</h1>
-          <p className="text-xl text-gray-600">Hear from the businesses we serve</p>
+          <p className="text-xl text-gray-600 max-w-2xl">
+            We specialize in <strong>healthcare practices</strong> and <strong>service-based businesses</strong>. 
+            Here's what they say about working with us.
+          </p>
         </div>
       </section>
 
+      {/* Healthcare Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
-          {/* Filter */}
-          <div className="flex flex-wrap gap-2 mb-10 justify-center">
-            {categories.map(cat => (
-              <button
-                key={cat}
-                onClick={() => setFilter(cat)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition ${
-                  filter === cat
-                    ? 'bg-benefique-orange text-white'
-                    : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200'
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
+          <div className="flex items-center gap-3 mb-8">
+            <span className="text-3xl">🏥</span>
+            <div>
+              <h2 className="text-2xl font-bold text-benefique-navy">Healthcare Practices</h2>
+              <p className="text-gray-600">Radiology, dental, veterinary, and medical practices</p>
+            </div>
           </div>
-
-          {/* Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filtered.map((t, i) => (
-              <div key={i} className="bg-white rounded-xl p-6 border border-gray-100">
-                <div className="text-benefique-orange text-4xl mb-4">"</div>
-                <p className="text-gray-700 mb-6">{t.quote}</p>
-                <div className="border-t border-gray-100 pt-4">
-                  <div className="font-semibold text-benefique-navy">{t.name}</div>
-                  <div className="text-sm text-gray-500">{t.industry}</div>
-                </div>
-              </div>
-            ))}
+            {healthcareTestimonials.map((t, i) => <TestimonialCard key={i} t={t} />)}
           </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="flex items-center gap-3 mb-8">
+            <span className="text-3xl">🏢</span>
+            <div>
+              <h2 className="text-2xl font-bold text-benefique-navy">Service-Based Businesses</h2>
+              <p className="text-gray-600">IT, marine, hospitality, and professional services</p>
+            </div>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {servicesTestimonials.map((t, i) => <TestimonialCard key={i} t={t} />)}
+          </div>
+        </div>
+      </section>
+
+      {/* See Our Reports CTA */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h3 className="text-xl font-bold text-benefique-navy mb-4">See the reports our clients love</h3>
+          <p className="text-gray-600 mb-6">
+            Our CFO dashboards and Benefique Financial Times™ give owners clarity they've never had before.
+          </p>
+          <Link
+            to="/demo"
+            className="inline-flex items-center gap-2 bg-white text-benefique-navy border-2 border-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-benefique-navy hover:text-white transition"
+          >
+            📊 View Sample Reports
+          </Link>
         </div>
       </section>
 
@@ -600,11 +628,12 @@ function Testimonials() {
 }
 
 // ============================================================
-// ABOUT PAGE
+// ABOUT PAGE - With Dashboard Links
 // ============================================================
 function About() {
   return (
     <div>
+      {/* Header */}
       <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-4">
           <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
@@ -617,6 +646,7 @@ function About() {
 
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4">
+          {/* Philosophy */}
           <div className="bg-white rounded-2xl p-8 border border-gray-100 mb-8">
             <h2 className="text-2xl font-bold text-benefique-navy mb-4">Our Philosophy</h2>
             <p className="text-gray-600 mb-4">
@@ -628,11 +658,12 @@ function About() {
               Real-time books. Monthly closes by the 7th. Dashboards that answer questions before you ask them.
             </p>
             <p className="text-gray-600">
-              We specialize in healthcare and service-based SMBs because we understand the unique 
-              challenges—complex billing, multi-location operations, seasonal fluctuations, regulatory requirements.
+              We specialize in <Link to="/testimonials" className="text-benefique-orange hover:underline font-medium">healthcare and service-based SMBs</Link> because 
+              we understand the unique challenges—complex billing, multi-location operations, seasonal fluctuations, regulatory requirements.
             </p>
           </div>
 
+          {/* What Makes Us Different */}
           <div className="bg-white rounded-2xl p-8 border border-gray-100 mb-8">
             <h2 className="text-2xl font-bold text-benefique-navy mb-6">What Makes Us Different</h2>
             <div className="grid md:grid-cols-2 gap-4">
@@ -650,12 +681,118 @@ function About() {
             </div>
           </div>
 
+          {/* Decision-Ready Dashboards Section - NEW */}
+          <div className="bg-gradient-to-br from-benefique-navy to-slate-800 rounded-2xl p-8 mb-8 text-white">
+            <h2 className="text-2xl font-bold mb-4">📊 Decision-Ready Dashboards</h2>
+            <p className="text-blue-100 mb-6">
+              Every Fractional CFO client receives custom financial reports that make complex data simple. 
+              See your business health at a glance, understand trends, and know exactly what actions to take.
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-4 mb-6">
+              <div className="bg-white/10 rounded-xl p-5 hover:bg-white/20 transition">
+                <div className="text-2xl mb-2">📊</div>
+                <h3 className="font-bold text-lg mb-2">CFO Report</h3>
+                <p className="text-blue-100 text-sm mb-3">
+                  Visual dashboard showing cash health, revenue trends, profitability metrics, and debt coverage. 
+                  Everything you need to know in one view.
+                </p>
+                <Link to="/demo" className="text-benefique-orange font-semibold text-sm hover:underline">
+                  View Sample →
+                </Link>
+              </div>
+              
+              <div className="bg-white/10 rounded-xl p-5 hover:bg-white/20 transition">
+                <div className="text-2xl mb-2">📰</div>
+                <h3 className="font-bold text-lg mb-2">The Benefique Financial Times™</h3>
+                <p className="text-blue-100 text-sm mb-3">
+                  A newspaper-style report that tells your financial story. Lead articles, trend analysis, 
+                  and action items written in owner terms.
+                </p>
+                <Link to="/demo" className="text-benefique-orange font-semibold text-sm hover:underline">
+                  View Sample →
+                </Link>
+              </div>
+            </div>
+            
+            <div className="text-center">
+              <Link
+                to="/demo"
+                className="inline-flex items-center gap-2 bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
+              >
+                See All Sample Reports
+              </Link>
+            </div>
+          </div>
+
+          {/* Who We Serve */}
+          <div className="bg-white rounded-2xl p-8 border border-gray-100 mb-8">
+            <h2 className="text-2xl font-bold text-benefique-navy mb-4">Who We Serve</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h3 className="font-semibold text-benefique-navy mb-2 flex items-center gap-2">
+                  <span>🏥</span> Healthcare Practices
+                </h3>
+                <ul className="text-gray-600 text-sm space-y-1 ml-6">
+                  <li>• Radiology & diagnostic imaging</li>
+                  <li>• Dental practices & DSOs</li>
+                  <li>• Veterinary clinics</li>
+                  <li>• Medical practices</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold text-benefique-navy mb-2 flex items-center gap-2">
+                  <span>🏢</span> Service-Based Businesses
+                </h3>
+                <ul className="text-gray-600 text-sm space-y-1 ml-6">
+                  <li>• IT & technology services</li>
+                  <li>• Marine & industrial services</li>
+                  <li>• Restaurant & hospitality groups</li>
+                  <li>• Professional services firms</li>
+                </ul>
+              </div>
+            </div>
+            <div className="mt-4 pt-4 border-t border-gray-100">
+              <Link to="/testimonials" className="text-benefique-orange font-semibold hover:underline">
+                Read what our clients say →
+              </Link>
+            </div>
+          </div>
+
+          {/* Location */}
           <div className="bg-white rounded-2xl p-8 border border-gray-100">
             <h2 className="text-2xl font-bold text-benefique-navy mb-4">Location</h2>
-            <p className="text-gray-600">
+            <p className="text-gray-600 mb-4">
               Based in <strong>Davie, Florida</strong>, we serve clients throughout South Florida and beyond. 
               Our technology-forward approach means location is never a barrier to great service.
             </p>
+            <Link to="/contact" className="text-benefique-orange font-semibold hover:underline">
+              Get in touch →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-benefique-navy text-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-2xl font-bold mb-4">Ready to see what we can do for you?</h2>
+          <p className="text-blue-100 mb-8">
+            Let's talk about your business and see if we're the right fit.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              to="/demo"
+              className="inline-flex items-center gap-2 bg-white text-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
+            >
+              📊 View Sample Reports
+            </Link>
+            <Link
+              to="/contact"
+              className="inline-block bg-benefique-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
+            >
+              Apply to Work With Us
+            </Link>
           </div>
         </div>
       </section>
