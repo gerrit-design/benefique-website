@@ -60,7 +60,7 @@ Depreciation, amortization—they reduce profit but don't touch cash.
 Loan principal payments, owner draws, equipment purchases—they drain cash but don't show as expenses.
 
 **4. Accounts Receivable & Payable**  
-You might have $50K in AR (which counts as revenue) but $0 in the bank. Learn more about [managing accounts receivable effectively](#).
+You might have $50K in AR (which counts as revenue) but $0 in the bank. Learn more about **managing accounts receivable effectively**.
 
 **Example:**
 
@@ -255,14 +255,14 @@ You don't need fancy software. A spreadsheet works fine.
 
 **Best for:** Small businesses, simple cash flow
 
-**Want our template?** We've built a plug-and-play 13-week cash flow forecast specifically for service businesses. [Download it free here](#) or email hello@benefique.com with "TEMPLATE" in the subject line.
+**Want our template?** We've built a plug-and-play 13-week cash flow forecast specifically for service businesses. **Download it free here** or email hello@benefique.com with "TEMPLATE" in the subject line.
 
 ### Option 2: QuickBooks Cash Flow Planner (Included with QBO)
 
 **Pros:** Pulls directly from your books, automatic AR/AP, decent forecasting  
 **Cons:** Not super flexible, sometimes buggy
 
-**Best for:** QBO users who want automation. Need help with [QuickBooks setup](#)? We can help.
+**Best for:** QBO users who want automation. Need help with [QuickBooks setup](/services)? We can help.
 
 ### Option 3: Float, Pulse, Dryrun (Paid Tools)
 
@@ -276,7 +276,7 @@ You don't need fancy software. A spreadsheet works fine.
 **Pros:** Expert guidance, customized to your business, accountability  
 **Cons:** Costs money (but ROI is usually positive)
 
-**Best for:** Businesses that want strategic help, not just a tool. Learn more about our [fractional CFO services](#).
+**Best for:** Businesses that want strategic help, not just a tool. Learn more about our [fractional CFO services](/services).
 
 ---
 
@@ -296,7 +296,7 @@ You don't need fancy software. A spreadsheet works fine.
 
 **Reality:** Surprise cash crunch.
 
-**Fix:** Keep a list of annual/quarterly expenses and add them to the right weeks/months. Check out our guide on [quarterly tax planning](#).
+**Fix:** Keep a list of annual/quarterly expenses and add them to the right weeks/months. Check out our guide on [quarterly tax planning](/services).
 
 ### Mistake #3: Not Updating the Forecast
 
@@ -347,7 +347,7 @@ You don't need fancy software. A spreadsheet works fine.
 - No more credit card reliance
 - Owner could finally sleep at night
 
-**Cost of solution:** 2 hours/month updating forecast + our [CFO advisory](#) fee
+**Cost of solution:** 2 hours/month updating forecast + our [CFO advisory](/services) fee
 
 **Value:** Avoided $8K in credit card interest, eliminated stress, enabled confident decision-making
 
@@ -366,7 +366,7 @@ You don't need fancy software. A spreadsheet works fine.
 
 **Make it a habit.** Same time every week. Non-negotiable.
 
-**Delegate it:** Your bookkeeper or accountant can do the updating. You just review and make decisions. Need [bookkeeping support](#)? We offer real-time bookkeeping services.
+**Delegate it:** Your bookkeeper or accountant can do the updating. You just review and make decisions. Need [bookkeeping support](/services)? We offer real-time bookkeeping services.
 
 ---
 
@@ -410,7 +410,7 @@ Most business owners get to this point and think one of two things:
 1. **"This makes sense, but I know I won't actually do it every week."**
 2. **"I'll do this for a month, then life gets busy and it falls apart."**
 
-If that's you, we get it. That's exactly why our [fractional CFO service](#) exists.
+If that's you, we get it. That's exactly why our [fractional CFO service](/services) exists.
 
 **Here's what we do:**
 - Build your custom 13-week forecast (one-time setup)
@@ -423,7 +423,7 @@ If that's you, we get it. That's exactly why our [fractional CFO service](#) exi
 **Cost:** Included in our fractional CFO packages starting at $1,500/month.  
 **ROI:** Typical client avoids $5K-$15K annually in interest, overdraft fees, and rushed decisions.
 
-**Next step:** [Tell us about your business](#) (2-minute form) or email hello@benefique.com to schedule a 20-minute fit call.
+**Next step:** [Tell us about your business](/apply) (2-minute form) or email hello@benefique.com to schedule a 20-minute fit call.
 
 ---
 
@@ -465,12 +465,12 @@ That's what we do at Benefique.
 
 📧 **Email:** hello@benefique.com  
 🔗 **Apply:** [www.benefique.com/apply](https://www.benefique.com/apply)  
-📞 **Call:** Schedule a [20-minute cash flow consultation](#)
+📞 **Call:** Schedule a [20-minute cash flow consultation](/apply)
 
 ---
 
 **About Benefique Tax & Accounting**
 
-We provide [full-service accounting](#) and [fractional CFO services](#) to healthcare practices, professional services, and multi-location businesses across South Florida. Our clients get real-time financials, [proactive tax planning](#), and strategic guidance—not just tax returns in April.
+We provide [full-service accounting](/services) and [fractional CFO services](/services) to healthcare practices, professional services, and multi-location businesses across South Florida. Our clients get real-time financials, [proactive tax planning](/services), and strategic guidance—not just tax returns in April.
 
 Davie | Fort Lauderdale | Weston | Plantation | Serving South Florida since 2002

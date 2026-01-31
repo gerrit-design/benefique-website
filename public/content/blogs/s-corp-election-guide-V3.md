@@ -41,7 +41,7 @@ Here's everything you need to know to make an informed decision—including when
 
 **Bottom line:** S-Corp solves ONE problem—self-employment tax on distributions. That's it. Income tax stays the same. Not simpler. Not for everyone.
 
-**Want the full analysis?** Keep reading. **Ready to see if it makes sense for you?** [Book a call](#).
+**Want the full analysis?** Keep reading. **Ready to see if it makes sense for you?** [Book a call](/apply).
 
 ---
 
@@ -80,7 +80,7 @@ That's it. It doesn't:
 
 **It's a specialized tool for one specific tax situation.** Don't elect S-Corp because "successful businesses are S-Corps." Elect because the math works for your specific situation.
 
-Learn more about [tax planning strategies](#) for small business owners.
+Learn more about [tax planning strategies](/services) for small business owners.
 
 ---
 
@@ -129,13 +129,13 @@ Still worth it? Maybe. Not the $6,246 you thought? Definitely not. **This is why
 Below $100K, the administrative costs ($7,000-8,000/year) often outweigh the tax savings. Between $100K-$120K, it's breakeven territory—worth considering if you expect growth. Above $120K, it starts making clear financial sense.
 
 **2. You're in a service-based business with simple structure**  
-Consultants, [healthcare providers](#), attorneys, accountants, designers, coaches—anyone selling expertise from a single operating entity.
+Consultants, **healthcare providers**, attorneys, accountants, designers, coaches—anyone selling expertise from a single operating entity.
 
 **3. You're already profitable and expect to stay that way**  
 S-Corp doesn't make sense for startups burning cash or businesses with highly variable income.
 
 **4. You're willing to run payroll consistently**  
-You'll need to pay yourself via W-2 every month, which means [payroll setup](#), quarterly 941s, and year-end W-2s. No skipping months.
+You'll need to pay yourself via W-2 every month, which means [payroll setup](/services), quarterly 941s, and year-end W-2s. No skipping months.
 
 **5. You understand you're only saving SE tax**  
 If you think S-Corp will cut your total tax bill in half, pump the brakes. Income tax stays the same. You're only saving 15.3% on distributions.
@@ -253,7 +253,7 @@ If you operate several LLCs (common in real estate, multi-location practices, or
 
 We'll help you model which entities (if any) should elect S-Corp status. Sometimes the answer is "none of them." Sometimes it's "just one." Rarely is it "all of them."
 
-Learn more about our [multi-location accounting services](#).
+Learn more about our [multi-location accounting services](/services).
 
 ---
 
@@ -283,7 +283,7 @@ So what's "reasonable"?
 
 We've helped dozens of South Florida clients navigate IRS audits on reasonable compensation. With proper documentation, it's rarely an issue.
 
-**Not sure what's reasonable for your situation?** We'll run your numbers in 15 minutes. [Book a free S-Corp consultation →](#)
+**Not sure what's reasonable for your situation?** We'll run your numbers in 15 minutes. [Book a free S-Corp consultation →](/apply)
 
 ---
 
@@ -304,7 +304,7 @@ Let's be completely transparent about what this actually costs:
 ### Ongoing Annual Costs (The Reality)
 
 **Payroll:**
-- [Payroll service](#) (Gusto, ADP, etc.): $600-$1,200/year
+- **Payroll service** (Gusto, ADP, etc.): $600-$1,200/year
 - Quarterly 941 filings: Usually included in payroll service
 
 **Tax Preparation:**
@@ -313,7 +313,7 @@ Let's be completely transparent about what this actually costs:
 - Requires someone experienced with S-Corps
 
 **Accounting & Bookkeeping:**
-- Proper [bookkeeping](#) (separating salary vs. distributions, maintaining basis, tracking shareholder loans): $500-$1,000/year
+- Proper [bookkeeping](/services) (separating salary vs. distributions, maintaining basis, tracking shareholder loans): $500-$1,000/year
 - Monthly reconciliation: $200-$500/year
 - Year-end compliance: $500-$1,000
 
@@ -456,11 +456,11 @@ Assuming you've answered "yes" to the readiness checklist, here's the actual pro
 ### Step 3: Set Up Payroll
 
 You're now an employee. You need:
-- Payroll service (Gusto, ADP, [QuickBooks Payroll](#))
+- Payroll service (Gusto, ADP, **QuickBooks Payroll**)
 - State unemployment insurance registration
 - Workers' comp (if required in Florida)
 
-Need help with [payroll setup](#)? We handle everything.
+Need help with [payroll setup](/services)? We handle everything.
 
 ### Step 4: Update Your Accounting
 
@@ -470,7 +470,7 @@ Separate tracking for:
 - Shareholder loans (if applicable)
 - Basis tracking (critical for distributions)
 
-Your EA can set this up. We include this in our [S-Corp setup package](#).
+Your EA can set this up. We include this in our [S-Corp setup package](/apply).
 
 ### Step 5: File Quarterly Payroll Taxes
 
@@ -493,7 +493,7 @@ Quick comparison:
 
 **Bottom line:** Unless you're raising venture capital or planning to go public, S-Corp is better than C-Corp for most small business owners. But it's more complex than staying an LLC.
 
-Read our complete guide: [Choosing the Right Business Entity](#)
+Read our complete guide: **Choosing the Right Business Entity**
 
 ---
 
@@ -619,13 +619,13 @@ That's what we do at Benefique.
 
 📧 **Email:** hello@benefique.com  
 🔗 **Apply:** [www.benefique.com/apply](https://www.benefique.com/apply)  
-📞 **Schedule:** [30-minute S-Corp analysis call](#)
+📞 **Schedule:** [30-minute S-Corp analysis call](/apply)
 
 ---
 
 **About Benefique Tax & Accounting**
 
-We provide [full-service accounting](#) and [fractional CFO services](#) to healthcare practices, professional services, and multi-location businesses across South Florida. Our clients get real-time financials, [proactive tax planning](#), and strategic guidance—not just tax returns in April.
+We provide [full-service accounting](/services) and [fractional CFO services](/services) to healthcare practices, professional services, and multi-location businesses across South Florida. Our clients get real-time financials, [proactive tax planning](/services), and strategic guidance—not just tax returns in April.
 
 We specialize in multi-entity structures and will tell you when S-Corp does NOT make sense—not just when it does.
 
