@@ -1130,7 +1130,7 @@ function Demo() {
 }
 
 // ============================================================
-// TERMS OF SERVICE PAGE
+// TERMS OF SERVICE PAGE (for Benefique Client Monitor / QBO API)
 // ============================================================
 function Terms() {
   return (
@@ -1138,73 +1138,113 @@ function Terms() {
       <section className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl font-bold text-benefique-navy mb-4">Terms of Service</h1>
-          <p className="text-gray-600 mb-8">Last updated: January 31, 2026</p>
+          <h2 className="text-xl text-gray-600 mb-2">Benefique Client Monitor</h2>
+          <p className="text-gray-600 mb-8">Effective Date: January 23, 2026</p>
           
-          <div className="prose prose-lg max-w-none">
-            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">1. Agreement to Terms</h2>
-            <p className="text-gray-700 mb-4">
-              By accessing or using Benefique Tax & Accounting services, you agree to be bound by these Terms of Service. 
-              If you disagree with any part of the terms, you may not access our services.
+          <div className="prose prose-lg max-w-none text-gray-700">
+            <p className="mb-6">
+              These Terms of Service ("Terms") govern access to and use of <strong>Benefique Client Monitor</strong> (the "Service"), 
+              operated by <strong>Benefique Capital LLC</strong> ("Benefique," "we," "us," or "our").
+            </p>
+            <p className="mb-8">
+              By accessing or using the Service, you agree to these Terms.
             </p>
 
-            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">2. Services</h2>
-            <p className="text-gray-700 mb-4">
-              Benefique provides accounting, bookkeeping, tax preparation, fractional CFO services, and related financial services 
-              to businesses. Services are provided pursuant to individual engagement letters that supplement these Terms.
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">1. Intended users</h2>
+            <p className="mb-6">
+              The Service is intended <strong>solely for existing clients of Benefique</strong> and authorized users designated by those clients. 
+              You represent that you have the authority to connect your organization's QuickBooks Online account and to permit Benefique 
+              to access and use the data as described in these Terms and the Privacy Policy.
             </p>
 
-            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">3. Client Responsibilities</h2>
-            <p className="text-gray-700 mb-4">
-              Clients agree to:
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">2. Description of the Service</h2>
+            <p className="mb-4">
+              The Service provides <strong>read-only monitoring, reporting, and analytics</strong> based on data retrieved from 
+              <strong> QuickBooks Online ("QBO")</strong> and other data sources you authorize.
             </p>
-            <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
-              <li>Provide accurate, complete, and timely financial information</li>
-              <li>Maintain proper documentation and records</li>
-              <li>Respond to requests for information in a timely manner</li>
-              <li>Review and approve financial statements and reports</li>
-              <li>Make payments according to agreed terms</li>
+            <p className="mb-6">
+              The Service does <strong>not</strong> create, modify, or delete transactions in QBO, initiate payments, or perform any write-back actions.
+            </p>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">3. Client responsibilities</h2>
+            <p className="mb-2">You agree to:</p>
+            <ul className="list-disc pl-6 mb-6 space-y-2">
+              <li>Use the Service only for lawful business purposes</li>
+              <li>Ensure you have the right to provide and authorize access to connected data</li>
+              <li>Review outputs and reports for accuracy and appropriateness for your business</li>
+              <li>Maintain appropriate internal controls over who is authorized to view the Service</li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">4. Fees and Payment</h2>
-            <p className="text-gray-700 mb-4">
-              Fees are outlined in individual engagement letters. Payment terms are typically monthly and due upon receipt of invoice. 
-              Late payments may incur interest charges and may result in suspension of services.
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">4. No professional advice through the Service</h2>
+            <p className="mb-6">
+              Information displayed in the Service is provided for <strong>informational and monitoring purposes only</strong>. 
+              While Benefique may provide accounting, tax, or advisory services under separate engagement agreements, 
+              the Service itself does not constitute professional advice or replace formal reports, filings, or consultations.
             </p>
 
-            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">5. Confidentiality</h2>
-            <p className="text-gray-700 mb-4">
-              We maintain strict confidentiality of all client information in accordance with professional standards and applicable law. 
-              We will not disclose client information without consent except as required by law or professional standards.
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">5. Availability and changes</h2>
+            <p className="mb-6">
+              We may modify, suspend, or discontinue the Service (in whole or in part) at any time. 
+              We do not guarantee uninterrupted or error-free availability.
             </p>
 
-            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">6. Limitation of Liability</h2>
-            <p className="text-gray-700 mb-4">
-              Our liability for any claim arising out of our services is limited to the fees paid for those specific services. 
-              We are not liable for indirect, consequential, or punitive damages.
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">6. Data handling and security</h2>
+            <p className="mb-6">
+              We use reasonable safeguards to protect data handled through the Service. Details regarding data collection, storage, 
+              and retention are described in the Privacy Policy.
             </p>
 
-            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">7. Professional Standards</h2>
-            <p className="text-gray-700 mb-4">
-              Our services are performed in accordance with applicable professional standards. We are not responsible for 
-              decisions made by clients based on our advice or reports.
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">7. Intellectual property</h2>
+            <p className="mb-6">
+              All rights, title, and interest in the Service (excluding client data) are owned by Benefique or its licensors. 
+              You are granted a limited, revocable, non-transferable right to use the Service solely as permitted under these Terms.
             </p>
 
             <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">8. Termination</h2>
-            <p className="text-gray-700 mb-4">
-              Either party may terminate the engagement with written notice. Client remains responsible for fees for services 
-              performed through the termination date.
+            <p className="mb-2">Access to the Service may be suspended or terminated if:</p>
+            <ul className="list-disc pl-6 mb-4 space-y-2">
+              <li>You are no longer an active Benefique client</li>
+              <li>These Terms are violated</li>
+              <li>Continued access poses legal, security, or operational risk</li>
+            </ul>
+            <p className="mb-6">
+              Upon termination, access may be removed and data handling will follow the Privacy Policy.
             </p>
 
-            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">9. Changes to Terms</h2>
-            <p className="text-gray-700 mb-4">
-              We reserve the right to modify these terms at any time. Changes will be effective upon posting to our website. 
-              Continued use of our services constitutes acceptance of modified terms.
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">9. Disclaimers</h2>
+            <p className="mb-6">
+              THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE." TO THE MAXIMUM EXTENT PERMITTED BY LAW, BENEFIQUE DISCLAIMS 
+              ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, 
+              AND NON-INFRINGEMENT.
             </p>
 
-            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">10. Contact</h2>
-            <p className="text-gray-700 mb-4">
-              Questions about these Terms? Contact us at hello@benefique.com.
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">10. Limitation of liability</h2>
+            <p className="mb-4">
+              TO THE MAXIMUM EXTENT PERMITTED BY LAW, BENEFIQUE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, 
+              SPECIAL, OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF PROFITS, REVENUE, DATA, OR BUSINESS INTERRUPTION ARISING OUT OF OR 
+              RELATING TO THE SERVICE.
             </p>
+            <p className="mb-6">
+              BENEFIQUE'S TOTAL LIABILITY FOR ANY CLAIM RELATING TO THE SERVICE SHALL NOT EXCEED THE FEES PAID FOR THE SERVICE 
+              DURING THE <strong>THREE (3) MONTHS</strong> PRECEDING THE EVENT GIVING RISE TO THE CLAIM.
+            </p>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">11. Third-party services</h2>
+            <p className="mb-6">
+              The Service integrates with third-party platforms, including QuickBooks Online. Such platforms are governed by their own 
+              terms and policies, and Benefique is not responsible for third-party services.
+            </p>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">12. Governing law</h2>
+            <p className="mb-6">
+              These Terms are governed by the laws of the State of Florida, without regard to conflict-of-law principles. 
+              Venue shall lie in Florida courts with appropriate jurisdiction.
+            </p>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">13. Contact</h2>
+            <p className="mb-4">Questions regarding these Terms may be directed to:</p>
+            <p className="mb-2"><strong>Benefique Capital LLC</strong></p>
+            <p className="mb-6">Email: <a href="mailto:hello@benefique.com" className="text-benefique-orange hover:underline">hello@benefique.com</a></p>
           </div>
         </div>
       </section>
@@ -1213,7 +1253,7 @@ function Terms() {
 }
 
 // ============================================================
-// PRIVACY POLICY PAGE
+// PRIVACY POLICY PAGE (for Benefique Client Monitor / QBO API)
 // ============================================================
 function Privacy() {
   return (
@@ -1221,98 +1261,121 @@ function Privacy() {
       <section className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-4xl font-bold text-benefique-navy mb-4">Privacy Policy</h1>
-          <p className="text-gray-600 mb-8">Last updated: January 31, 2026</p>
+          <h2 className="text-xl text-gray-600 mb-2">Benefique Client Monitor</h2>
+          <p className="text-gray-600 mb-8">Effective Date: January 23, 2026</p>
           
-          <div className="prose prose-lg max-w-none">
-            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">1. Information We Collect</h2>
-            <p className="text-gray-700 mb-4">
-              We collect information necessary to provide accounting and financial services, including:
+          <div className="prose prose-lg max-w-none text-gray-700">
+            <p className="mb-6">
+              This Privacy Policy explains how <strong>Benefique Capital LLC</strong> ("Benefique," "we," "us," or "our") 
+              collects, uses, stores, and protects information in connection with <strong>Benefique Client Monitor</strong> (the "Service").
             </p>
-            <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
-              <li>Business contact information (name, email, phone, address)</li>
-              <li>Financial data (bank statements, invoices, receipts, payroll records)</li>
-              <li>Tax identification numbers and related tax documents</li>
-              <li>Business operational data as needed for services</li>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">1. Scope</h2>
+            <p className="mb-6">
+              This Policy applies to the Service and related web pages. It does not apply to third-party platforms you connect, 
+              including QuickBooks Online, which are governed by their own privacy policies.
+            </p>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">2. Information we collect</h2>
+            
+            <h3 className="text-xl font-semibold text-benefique-navy mt-6 mb-3">A. QuickBooks Online data</h3>
+            <p className="mb-3">
+              With your authorization, the Service accesses <strong>read-only</strong> data from QBO, which may include:
+            </p>
+            <ul className="list-disc pl-6 mb-6 space-y-2">
+              <li>Company and account metadata</li>
+              <li>Chart of accounts</li>
+              <li>Transaction data and summaries (e.g., invoices, bills, payments, deposits, journal entries)</li>
+              <li>Customer and vendor information</li>
+              <li>Financial reports (e.g., Profit & Loss, Balance Sheet, A/R and A/P aging)</li>
+            </ul>
+            <p className="mb-6">
+              We access only data necessary to provide monitoring, reporting, and analytics.
+            </p>
+
+            <h3 className="text-xl font-semibold text-benefique-navy mt-6 mb-3">B. User-provided information</h3>
+            <p className="mb-6">
+              We may collect contact and account information such as name, email address, role, and configuration settings 
+              related to your use of the Service.
+            </p>
+
+            <h3 className="text-xl font-semibold text-benefique-navy mt-6 mb-3">C. Technical information</h3>
+            <p className="mb-6">
+              We may collect limited technical data (e.g., IP address, device type, usage logs) for security, diagnostics, 
+              and performance optimization.
+            </p>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">3. How information is used</h2>
+            <p className="mb-2">Information is used to:</p>
+            <ul className="list-disc pl-6 mb-6 space-y-2">
+              <li>Provide dashboards, reports, and analytics</li>
+              <li>Maintain and improve Service reliability and performance</li>
+              <li>Support client service and troubleshooting</li>
+              <li>Comply with legal and regulatory obligations</li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">2. How We Use Your Information</h2>
-            <p className="text-gray-700 mb-4">
-              We use your information solely to:
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">4. Data storage and retention</h2>
+            <p className="mb-3">
+              Certain QBO data may be <strong>stored in a database</strong> to support:
             </p>
-            <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
-              <li>Provide accounting, tax, and financial services</li>
-              <li>Prepare financial statements and reports</li>
-              <li>File tax returns and compliance documents</li>
-              <li>Communicate about your account and services</li>
-              <li>Comply with legal and professional obligations</li>
+            <ul className="list-disc pl-6 mb-4 space-y-2">
+              <li>Historical trend analysis</li>
+              <li>Performance optimization and reliability</li>
+              <li>Consistency of reporting outputs</li>
+            </ul>
+            <p className="mb-6">
+              Data is retained only as long as reasonably necessary to provide the Service, meet client support needs, 
+              or comply with legal or operational requirements.
+            </p>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">5. Data sharing</h2>
+            <p className="mb-4">
+              Benefique does <strong>not</strong> sell client data or personal information.
+            </p>
+            <p className="mb-2">Data may be shared only with:</p>
+            <ul className="list-disc pl-6 mb-6 space-y-2">
+              <li>Service providers acting on our behalf under confidentiality obligations</li>
+              <li>Authorized users within your organization</li>
+              <li>Legal or regulatory authorities when required by law</li>
+              <li>Other parties with your explicit instruction or consent</li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">3. Information Sharing</h2>
-            <p className="text-gray-700 mb-4">
-              We do not sell, rent, or share your information except:
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">6. Security</h2>
+            <p className="mb-6">
+              We employ reasonable administrative, technical, and organizational safeguards to protect information. 
+              No system can guarantee absolute security.
             </p>
-            <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
-              <li>With your explicit consent</li>
-              <li>As required by law or regulatory authority</li>
-              <li>With service providers bound by confidentiality (e.g., software vendors)</li>
-              <li>As necessary to perform services (e.g., filing tax returns with the IRS)</li>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">7. Your rights and choices</h2>
+            <p className="mb-2">You may request:</p>
+            <ul className="list-disc pl-6 mb-6 space-y-2">
+              <li>Information about data associated with your account</li>
+              <li>Deletion of stored data associated with your organization, subject to legal or operational retention requirements</li>
             </ul>
-
-            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">4. Data Security</h2>
-            <p className="text-gray-700 mb-4">
-              We implement industry-standard security measures to protect your information, including:
-            </p>
-            <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
-              <li>Encrypted data transmission and storage</li>
-              <li>Secure cloud-based systems with access controls</li>
-              <li>Regular security audits and updates</li>
-              <li>Employee training on confidentiality and data protection</li>
-            </ul>
-
-            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">5. Data Retention</h2>
-            <p className="text-gray-700 mb-4">
-              We retain client information as required by professional standards and applicable law, typically a minimum of 
-              seven years. After this period, data is securely destroyed unless continued retention is necessary.
+            <p className="mb-6">
+              Requests can be made by contacting <a href="mailto:hello@benefique.com" className="text-benefique-orange hover:underline">hello@benefique.com</a>.
             </p>
 
-            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">6. Your Rights</h2>
-            <p className="text-gray-700 mb-4">
-              You have the right to:
-            </p>
-            <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
-              <li>Access your information we hold</li>
-              <li>Request corrections to inaccurate information</li>
-              <li>Request copies of your records</li>
-              <li>Understand how your information is used</li>
-            </ul>
-
-            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">7. Cookies and Website Data</h2>
-            <p className="text-gray-700 mb-4">
-              Our website may use cookies and analytics tools to improve user experience. We do not use these for 
-              targeted advertising. You can disable cookies in your browser settings.
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">8. Disconnecting QuickBooks Online</h2>
+            <p className="mb-6">
+              If QBO access is disconnected, the Service will stop retrieving new data. Previously stored data may remain 
+              for the retention period described above unless deletion is requested.
             </p>
 
-            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">8. Third-Party Services</h2>
-            <p className="text-gray-700 mb-4">
-              We use secure third-party services (e.g., QuickBooks Online, cloud storage, payment processors). 
-              These providers have their own privacy policies and security measures.
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">9. Children's privacy</h2>
+            <p className="mb-6">
+              The Service is not intended for children under the age of 13.
             </p>
 
-            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">9. Changes to Policy</h2>
-            <p className="text-gray-700 mb-4">
-              We may update this Privacy Policy periodically. Changes will be posted on our website with an updated 
-              effective date.
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">10. Updates to this Policy</h2>
+            <p className="mb-6">
+              We may update this Policy periodically. The "Effective Date" reflects the most current version.
             </p>
 
-            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">10. Contact Us</h2>
-            <p className="text-gray-700 mb-4">
-              Questions or concerns about privacy? Contact us at:
-            </p>
-            <p className="text-gray-700 mb-2">
-              <strong>Benefique Tax & Accounting</strong><br />
-              Email: hello@benefique.com<br />
-              Davie, Florida
-            </p>
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">11. Contact</h2>
+            <p className="mb-2">Privacy questions or requests:</p>
+            <p className="mb-2"><strong>Benefique Capital LLC</strong></p>
+            <p className="mb-6">Email: <a href="mailto:hello@benefique.com" className="text-benefique-orange hover:underline">hello@benefique.com</a></p>
           </div>
         </div>
       </section>
