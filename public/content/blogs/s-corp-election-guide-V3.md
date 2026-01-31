@@ -424,7 +424,7 @@ Assuming you've answered "yes" to the readiness checklist, here's the actual pro
 **Critical deadline:** March 15th for current-year election.  
 **Pro tip:** File in January/February. The IRS loses forms filed close to deadlines.
 
-**→ [Want us to file it for you? Click here.](https://www.benefique.com/apply)**
+**→ [Want us to file it for you? Click here.](/contact)**
 
 ---
 
@@ -458,7 +458,7 @@ Assuming you've answered "yes" to the readiness checklist, here's the actual pro
 
 **We help clients with late elections regularly.** It's fixable. Just don't wait years—file within 12 months for best results.
 
-**Missed the deadline?** [Contact us](https://www.benefique.com/apply) and we'll help you file late election relief.
+**Missed the deadline?** [Contact us](/contact) and we'll help you file late election relief.
 
 ---
 
@@ -572,7 +572,7 @@ Here's what happens when you work with Benefique:
 - Monthly check-ins to ensure compliance
 - Annual review to make sure S-Corp still makes sense
 
-**→ [Book Your S-Corp Analysis Call](https://www.benefique.com/apply)** (30 min, we'll run your actual numbers and give you a straight answer)
+**→ [Book Your S-Corp Analysis Call](/contact)** (30 min, we'll run your actual numbers and give you a straight answer)
 
 Or email hello@benefique.com if you have specific questions.
 
@@ -627,7 +627,7 @@ S-Corp election is a powerful tool for the right business at the right profit le
 That's what we do at Benefique.
 
 📧 **Email:** hello@benefique.com  
-🔗 **Apply:** [www.benefique.com/apply](https://www.benefique.com/apply)  
+🔗 **Apply:** [www.benefique.com/apply](/contact)  
 📞 **Schedule:** [30-minute S-Corp analysis call](/contact)
 
 ---

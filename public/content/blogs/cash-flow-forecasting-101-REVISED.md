@@ -470,7 +470,7 @@ Track both.
 That's what we do at Benefique.
 
 📧 **Email:** hello@benefique.com  
-🔗 **Apply:** [www.benefique.com/apply](https://www.benefique.com/apply)  
+🔗 **Apply:** [www.benefique.com/apply](/contact)  
 📞 **Call:** Schedule a [20-minute cash flow consultation](/contact)
 
 ---
