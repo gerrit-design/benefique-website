@@ -3,22 +3,26 @@
   "outputDirectory": "dist",
   "cleanUrls": false,
   "trailingSlash": false,
-  "redirects": [
+  "routes": [
     {
-      "source": "/terms",
-      "destination": "/terms.html",
-      "permanent": false
+      "src": "/terms.html",
+      "dest": "/terms.html"
     },
     {
-      "source": "/privacy",
-      "destination": "/privacy.html",
-      "permanent": false
-    }
-  ],
-  "rewrites": [
+      "src": "/privacy.html",
+      "dest": "/privacy.html"
+    },
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "/terms",
+      "dest": "/terms.html"
+    },
+    {
+      "src": "/privacy",
+      "dest": "/privacy.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
