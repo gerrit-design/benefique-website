@@ -88,6 +88,9 @@ Learn more about [tax planning strategies](/services) for small business owners.
 
 Let's use real numbers—including costs.
 
+![Financial calculator and tax documents](https://images.unsplash.com/photo-1554224311-beee4ece91fa?w=1200&h=600&fit=crop&q=80)
+*Understanding S-Corp tax savings requires looking at the complete financial picture*
+
 ### Scenario: LLC Taxed as Sole Proprietor
 
 **Net profit:** $120,000  
@@ -141,6 +144,9 @@ You'll need to pay yourself via W-2 every month, which means [payroll setup](/se
 If you think S-Corp will cut your total tax bill in half, pump the brakes. Income tax stays the same. You're only saving 15.3% on distributions.
 
 ---
+
+![Business professionals reviewing financial documents](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop&q=80)
+*The right business structure depends on your specific situation*
 
 ## When S-Corp Is NOT the Answer
 
@@ -197,6 +203,9 @@ Solo 401(k) contribution limits can be better as a sole prop in some cases. Run 
 
 If it's the latter, let's run your actual numbers first.
 
+
+![Complex organizational chart](https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=600&fit=crop&q=80)
+*Multi-entity structures add significant complexity to S-Corp elections*
 ---
 
 ## Multi-Entity Structures: When S-Corp Gets Complicated

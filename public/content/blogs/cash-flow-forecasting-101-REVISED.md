@@ -24,6 +24,9 @@ Profit is accounting. Cash is survival. And if you can't forecast cash, you're f
 
 The good news? **Cash flow forecasting** isn't complicated—it's just discipline. And I'm about to show you exactly how to do it, step by step, starting with why most business owners get this wrong.
 
+![Business owner reviewing cash flow charts](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop&q=80)
+*Cash flow forecasting transforms financial uncertainty into actionable insights*
+
 ---
 
 ## Why Cash Flow Forecasting Matters
@@ -90,6 +93,9 @@ The most practical tool for small businesses is a **13-week rolling cash flow fo
 ---
 
 ## How to Build Your Cash Flow Forecast (Step-by-Step)
+
+![Financial charts and graphs on desk](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop&q=80)
+*Building your forecast step-by-step removes the guesswork from cash management*
 
 ### Step 1: Start with Cash on Hand
 
