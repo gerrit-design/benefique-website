@@ -1,0 +1,60 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#003057;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0052A3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#FF6B35;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#grad1)"/>
+  
+  <!-- Accent overlay -->
+  <rect width="1200" height="630" fill="url(#grad2)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="1050" cy="120" r="180" fill="#FF6B35" opacity="0.1"/>
+  <circle cx="150" cy="500" r="150" fill="#FF6B35" opacity="0.1"/>
+  
+  <!-- Chart/Graph visualization -->
+  <g transform="translate(80, 150)">
+    <!-- Bar chart representation -->
+    <rect x="0" y="180" width="40" height="120" rx="5" fill="#FFFFFF" opacity="0.2"/>
+    <rect x="60" y="140" width="40" height="160" rx="5" fill="#FFFFFF" opacity="0.3"/>
+    <rect x="120" y="100" width="40" height="200" rx="5" fill="#FF6B35" opacity="0.8"/>
+    <rect x="180" y="160" width="40" height="140" rx="5" fill="#FFFFFF" opacity="0.2"/>
+    <rect x="240" y="120" width="40" height="180" rx="5" fill="#FFFFFF" opacity="0.25"/>
+    
+    <!-- Trend line -->
+    <polyline points="20,200 80,170 140,120 200,180 260,140" 
+              stroke="#FF6B35" stroke-width="4" fill="none" opacity="0.8"/>
+    <circle cx="140" cy="120" r="8" fill="#FF6B35"/>
+    
+    <!-- Dollar signs -->
+    <text x="20" y="80" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#FF6B35" opacity="0.6">$</text>
+    <text x="220" y="60" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#FF6B35" opacity="0.4">$</text>
+  </g>
+  
+  <!-- Text content -->
+  <text x="420" y="240" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="#FFFFFF">
+    Cash Flow
+  </text>
+  <text x="420" y="300" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="#FFFFFF">
+    Forecasting 101
+  </text>
+  <text x="420" y="370" font-family="Arial, sans-serif" font-size="28" fill="#B3D4FF">
+    Predict and manage your business cash flow
+  </text>
+  <text x="420" y="410" font-family="Arial, sans-serif" font-size="28" fill="#B3D4FF">
+    with confidence
+  </text>
+  
+  <!-- Benefique branding -->
+  <text x="420" y="540" font-family="Arial, sans-serif" font-size="20" font-weight="600" fill="#FF6B35">
+    BENEFIQUE TAX & ACCOUNTING
+  </text>
+</svg>
