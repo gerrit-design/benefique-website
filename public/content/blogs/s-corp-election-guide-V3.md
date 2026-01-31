@@ -41,7 +41,7 @@ Here's everything you need to know to make an informed decision—including when
 
 **Bottom line:** S-Corp solves ONE problem—self-employment tax on distributions. That's it. Income tax stays the same. Not simpler. Not for everyone.
 
-**Want the full analysis?** Keep reading. **Ready to see if it makes sense for you?** [Book a call](/apply).
+**Want the full analysis?** Keep reading. **Ready to see if it makes sense for you?** [Book a call](/contact).
 
 ---
 
@@ -283,7 +283,7 @@ So what's "reasonable"?
 
 We've helped dozens of South Florida clients navigate IRS audits on reasonable compensation. With proper documentation, it's rarely an issue.
 
-**Not sure what's reasonable for your situation?** We'll run your numbers in 15 minutes. [Book a free S-Corp consultation →](/apply)
+**Not sure what's reasonable for your situation?** We'll run your numbers in 15 minutes. [Book a free S-Corp consultation →](/contact)
 
 ---
 
@@ -470,7 +470,7 @@ Separate tracking for:
 - Shareholder loans (if applicable)
 - Basis tracking (critical for distributions)
 
-Your EA can set this up. We include this in our [S-Corp setup package](/apply).
+Your EA can set this up. We include this in our [S-Corp setup package](/contact).
 
 ### Step 5: File Quarterly Payroll Taxes
 
@@ -619,7 +619,7 @@ That's what we do at Benefique.
 
 📧 **Email:** hello@benefique.com  
 🔗 **Apply:** [www.benefique.com/apply](https://www.benefique.com/apply)  
-📞 **Schedule:** [30-minute S-Corp analysis call](/apply)
+📞 **Schedule:** [30-minute S-Corp analysis call](/contact)
 
 ---
 

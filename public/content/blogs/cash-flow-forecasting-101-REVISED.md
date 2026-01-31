@@ -423,7 +423,7 @@ If that's you, we get it. That's exactly why our [fractional CFO service](/servi
 **Cost:** Included in our fractional CFO packages starting at $1,500/month.  
 **ROI:** Typical client avoids $5K-$15K annually in interest, overdraft fees, and rushed decisions.
 
-**Next step:** [Tell us about your business](/apply) (2-minute form) or email hello@benefique.com to schedule a 20-minute fit call.
+**Next step:** [Tell us about your business](/contact) (2-minute form) or email hello@benefique.com to schedule a 20-minute fit call.
 
 ---
 
@@ -465,7 +465,7 @@ That's what we do at Benefique.
 
 📧 **Email:** hello@benefique.com  
 🔗 **Apply:** [www.benefique.com/apply](https://www.benefique.com/apply)  
-📞 **Call:** Schedule a [20-minute cash flow consultation](/apply)
+📞 **Call:** Schedule a [20-minute cash flow consultation](/contact)
 
 ---
 
