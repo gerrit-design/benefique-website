@@ -102,8 +102,8 @@ function Footer() {
             </a>
           </div>
           <div className="flex gap-6 text-sm text-gray-300">
-            <a href="https://app.benefique.com/terms" target="_blank" rel="noopener noreferrer" className="hover:text-white">Terms of Service</a>
-            <a href="https://app.benefique.com/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-white">Privacy Policy</a>
+            <Link to="/terms" className="hover:text-white">Terms of Service</Link>
+            <Link to="/privacy" className="hover:text-white">Privacy Policy</Link>
             <Link to="/contact" className="hover:text-white">Contact</Link>
           </div>
         </div>
@@ -1130,6 +1130,197 @@ function Demo() {
 }
 
 // ============================================================
+// TERMS OF SERVICE PAGE
+// ============================================================
+function Terms() {
+  return (
+    <div>
+      <section className="bg-white py-16">
+        <div className="max-w-4xl mx-auto px-4">
+          <h1 className="text-4xl font-bold text-benefique-navy mb-4">Terms of Service</h1>
+          <p className="text-gray-600 mb-8">Last updated: January 31, 2026</p>
+          
+          <div className="prose prose-lg max-w-none">
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">1. Agreement to Terms</h2>
+            <p className="text-gray-700 mb-4">
+              By accessing or using Benefique Tax & Accounting services, you agree to be bound by these Terms of Service. 
+              If you disagree with any part of the terms, you may not access our services.
+            </p>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">2. Services</h2>
+            <p className="text-gray-700 mb-4">
+              Benefique provides accounting, bookkeeping, tax preparation, fractional CFO services, and related financial services 
+              to businesses. Services are provided pursuant to individual engagement letters that supplement these Terms.
+            </p>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">3. Client Responsibilities</h2>
+            <p className="text-gray-700 mb-4">
+              Clients agree to:
+            </p>
+            <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
+              <li>Provide accurate, complete, and timely financial information</li>
+              <li>Maintain proper documentation and records</li>
+              <li>Respond to requests for information in a timely manner</li>
+              <li>Review and approve financial statements and reports</li>
+              <li>Make payments according to agreed terms</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">4. Fees and Payment</h2>
+            <p className="text-gray-700 mb-4">
+              Fees are outlined in individual engagement letters. Payment terms are typically monthly and due upon receipt of invoice. 
+              Late payments may incur interest charges and may result in suspension of services.
+            </p>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">5. Confidentiality</h2>
+            <p className="text-gray-700 mb-4">
+              We maintain strict confidentiality of all client information in accordance with professional standards and applicable law. 
+              We will not disclose client information without consent except as required by law or professional standards.
+            </p>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">6. Limitation of Liability</h2>
+            <p className="text-gray-700 mb-4">
+              Our liability for any claim arising out of our services is limited to the fees paid for those specific services. 
+              We are not liable for indirect, consequential, or punitive damages.
+            </p>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">7. Professional Standards</h2>
+            <p className="text-gray-700 mb-4">
+              Our services are performed in accordance with applicable professional standards. We are not responsible for 
+              decisions made by clients based on our advice or reports.
+            </p>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">8. Termination</h2>
+            <p className="text-gray-700 mb-4">
+              Either party may terminate the engagement with written notice. Client remains responsible for fees for services 
+              performed through the termination date.
+            </p>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">9. Changes to Terms</h2>
+            <p className="text-gray-700 mb-4">
+              We reserve the right to modify these terms at any time. Changes will be effective upon posting to our website. 
+              Continued use of our services constitutes acceptance of modified terms.
+            </p>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">10. Contact</h2>
+            <p className="text-gray-700 mb-4">
+              Questions about these Terms? Contact us at hello@benefique.com.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+// ============================================================
+// PRIVACY POLICY PAGE
+// ============================================================
+function Privacy() {
+  return (
+    <div>
+      <section className="bg-white py-16">
+        <div className="max-w-4xl mx-auto px-4">
+          <h1 className="text-4xl font-bold text-benefique-navy mb-4">Privacy Policy</h1>
+          <p className="text-gray-600 mb-8">Last updated: January 31, 2026</p>
+          
+          <div className="prose prose-lg max-w-none">
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">1. Information We Collect</h2>
+            <p className="text-gray-700 mb-4">
+              We collect information necessary to provide accounting and financial services, including:
+            </p>
+            <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
+              <li>Business contact information (name, email, phone, address)</li>
+              <li>Financial data (bank statements, invoices, receipts, payroll records)</li>
+              <li>Tax identification numbers and related tax documents</li>
+              <li>Business operational data as needed for services</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">2. How We Use Your Information</h2>
+            <p className="text-gray-700 mb-4">
+              We use your information solely to:
+            </p>
+            <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
+              <li>Provide accounting, tax, and financial services</li>
+              <li>Prepare financial statements and reports</li>
+              <li>File tax returns and compliance documents</li>
+              <li>Communicate about your account and services</li>
+              <li>Comply with legal and professional obligations</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">3. Information Sharing</h2>
+            <p className="text-gray-700 mb-4">
+              We do not sell, rent, or share your information except:
+            </p>
+            <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
+              <li>With your explicit consent</li>
+              <li>As required by law or regulatory authority</li>
+              <li>With service providers bound by confidentiality (e.g., software vendors)</li>
+              <li>As necessary to perform services (e.g., filing tax returns with the IRS)</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">4. Data Security</h2>
+            <p className="text-gray-700 mb-4">
+              We implement industry-standard security measures to protect your information, including:
+            </p>
+            <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
+              <li>Encrypted data transmission and storage</li>
+              <li>Secure cloud-based systems with access controls</li>
+              <li>Regular security audits and updates</li>
+              <li>Employee training on confidentiality and data protection</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">5. Data Retention</h2>
+            <p className="text-gray-700 mb-4">
+              We retain client information as required by professional standards and applicable law, typically a minimum of 
+              seven years. After this period, data is securely destroyed unless continued retention is necessary.
+            </p>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">6. Your Rights</h2>
+            <p className="text-gray-700 mb-4">
+              You have the right to:
+            </p>
+            <ul className="list-disc pl-6 text-gray-700 mb-4 space-y-2">
+              <li>Access your information we hold</li>
+              <li>Request corrections to inaccurate information</li>
+              <li>Request copies of your records</li>
+              <li>Understand how your information is used</li>
+            </ul>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">7. Cookies and Website Data</h2>
+            <p className="text-gray-700 mb-4">
+              Our website may use cookies and analytics tools to improve user experience. We do not use these for 
+              targeted advertising. You can disable cookies in your browser settings.
+            </p>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">8. Third-Party Services</h2>
+            <p className="text-gray-700 mb-4">
+              We use secure third-party services (e.g., QuickBooks Online, cloud storage, payment processors). 
+              These providers have their own privacy policies and security measures.
+            </p>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">9. Changes to Policy</h2>
+            <p className="text-gray-700 mb-4">
+              We may update this Privacy Policy periodically. Changes will be posted on our website with an updated 
+              effective date.
+            </p>
+
+            <h2 className="text-2xl font-bold text-benefique-navy mt-8 mb-4">10. Contact Us</h2>
+            <p className="text-gray-700 mb-4">
+              Questions or concerns about privacy? Contact us at:
+            </p>
+            <p className="text-gray-700 mb-2">
+              <strong>Benefique Tax & Accounting</strong><br />
+              Email: hello@benefique.com<br />
+              Davie, Florida
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+// ============================================================
 // LOCATION PAGE COMPONENT - SEO Optimized (Jesse Cunningham Style)
 // ============================================================
 function LocationPage({ city, nearby, zipCodes, description }) {
@@ -1789,6 +1980,8 @@ export default function App() {
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/demo" element={<Demo />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy" element={<Privacy />} />
           
           {/* Location Pages */}
           <Route path="/davie-accounting" element={<LocationPage {...locations.davie} />} />
