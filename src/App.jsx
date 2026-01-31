@@ -850,8 +850,8 @@ function About() {
 // ============================================================
 function Blog() {
   const posts = [
-    { title: 'S-Corp Election: Is It Right for Your Florida Business?', excerpt: 'S-Corp election can save Florida business owners $5K-$20K yearly in self-employment taxes—but only if your profit exceeds $100K. Learn when it makes sense and when it doesn\'t.', date: '2026-01-30', slug: 's-corp-election', published: true },
-    { title: 'Cash Flow Forecasting 101', excerpt: 'Learn cash flow forecasting for your small business with this practical guide. Get step-by-step instructions, free templates, and expert CFO guidance to predict and manage your cash flow.', date: '2026-01-30', slug: 'cash-flow-forecasting', published: true },
+    { title: 'S-Corp Election: Is It Right for Your Florida Business?', excerpt: 'S-Corp election can save Florida business owners $5K-$20K yearly in self-employment taxes—but only if your profit exceeds $100K. Learn when it makes sense and when it doesn\'t.', date: '2026-01-30', slug: 's-corp-election', published: false },
+    { title: 'Cash Flow Forecasting 101', excerpt: 'Learn cash flow forecasting for your small business with this practical guide. Get step-by-step instructions, free templates, and expert CFO guidance to predict and manage your cash flow.', date: '2026-01-30', slug: 'cash-flow-forecasting', published: false },
     { title: 'R&D Tax Credits: Hidden Money for Healthcare Practices', excerpt: "Many healthcare businesses miss out on significant R&D credits. Here's how to identify and claim them.", date: '2025-10-15', slug: 'rd-tax-credits', published: false },
     { title: 'Multi-Location Financial Management', excerpt: 'Best practices for businesses operating across multiple locations or entities.', date: '2025-08-05', slug: 'multi-location-management', published: false },
     { title: 'December Financials: What to Review Before Year-End', excerpt: 'Key financial checkpoints every business owner should review before closing the books on the year.', date: '2025-12-15', slug: 'december-financials', published: false },
