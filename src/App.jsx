@@ -1130,6 +1130,76 @@ function Demo() {
 }
 
 // ============================================================
+// OAUTH CALLBACK PAGE (QuickBooks Authorization)
+// ============================================================
+function OAuthCallback() {
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const code = params.get('code');
+  const realmId = params.get('realmId');
+  const state = params.get('state');
+  const error = params.get('error');
+
+  return (
+    <div>
+      <section className="bg-white py-16 min-h-screen">
+        <div className="max-w-4xl mx-auto px-4">
+          <h1 className="text-4xl font-bold text-benefique-navy mb-4">QuickBooks Authorization</h1>
+          
+          {error ? (
+            <div className="bg-red-50 border border-red-200 rounded-lg p-6 mb-8">
+              <h2 className="text-xl font-bold text-red-800 mb-2">❌ Authorization Failed</h2>
+              <p className="text-red-700">Error: {error}</p>
+              <p className="text-red-600 mt-2">Please contact support@benefique.com</p>
+            </div>
+          ) : code && realmId ? (
+            <div className="bg-green-50 border border-green-200 rounded-lg p-6 mb-8">
+              <h2 className="text-xl font-bold text-green-800 mb-4">✅ Authorization Successful!</h2>
+              <p className="text-green-700 mb-6">
+                QuickBooks has authorized Benefique Client Monitor to access your company data.
+              </p>
+              
+              <div className="bg-white border border-gray-200 rounded-lg p-4 mb-6">
+                <h3 className="text-lg font-bold text-benefique-navy mb-3">📋 Copy These Values:</h3>
+                
+                <div className="mb-4">
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">Authorization Code:</label>
+                  <div className="bg-gray-50 border border-gray-300 rounded p-3 font-mono text-sm break-all">
+                    {code}
+                  </div>
+                </div>
+                
+                <div className="mb-4">
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">Realm ID (Company ID):</label>
+                  <div className="bg-gray-50 border border-gray-300 rounded p-3 font-mono text-sm break-all">
+                    {realmId}
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                <h3 className="text-lg font-bold text-blue-800 mb-2">🔧 Next Steps:</h3>
+                <p className="text-blue-700 mb-3">
+                  Send the code and realm ID to your Benefique contact. They will complete the setup.
+                </p>
+                <p className="text-sm text-blue-600">
+                  You can close this window once you've copied the values above.
+                </p>
+              </div>
+            </div>
+          ) : (
+            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+              <h2 className="text-xl font-bold text-yellow-800 mb-2">⚠️ Invalid Callback</h2>
+              <p className="text-yellow-700">Missing authorization parameters.</p>
+            </div>
+          )}
+        </div>
+      </section>
+    </div>
+  );
+}
+
+// ============================================================
 // TERMS OF SERVICE PAGE (for Benefique Client Monitor / QBO API)
 // ============================================================
 function Terms() {
@@ -2043,6 +2113,7 @@ export default function App() {
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/demo" element={<Demo />} />
+          <Route path="/oauth/callback" element={<OAuthCallback />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
           
