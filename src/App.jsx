@@ -27,6 +27,7 @@ function Nav() {
           {[
             ['/services', 'Services'],
             ['/demo', 'Sample Reports'],
+            ['/blog', 'Blog'],
             ['/testimonials', 'Testimonials'],
             ['/about', 'About'],
           ].map(([path, label]) => (
@@ -64,6 +65,7 @@ function Nav() {
         <div className="md:hidden bg-white border-t px-4 py-4 space-y-4">
           <Link to="/services" className="block text-gray-600">Services</Link>
           <Link to="/demo" className="block text-gray-600">Sample Reports</Link>
+          <Link to="/blog" className="block text-gray-600">Blog</Link>
           <Link to="/testimonials" className="block text-gray-600">Testimonials</Link>
           <Link to="/about" className="block text-gray-600">About</Link>
           <Link to="/contact" className="block bg-benefique-orange text-white px-4 py-2 rounded-lg text-center font-semibold">
