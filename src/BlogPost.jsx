@@ -34,6 +34,16 @@ const blogPosts = {
     categories: ['Best Practices', 'CFO Services', 'Financial Reporting'],
     readTime: '18 min read',
     featuredImage: '/images/blog/dashboard-design-best-practices.jpg'
+  },
+  'rd-tax-credits-healthcare': {
+    file: '/content/blogs/rd-tax-credits-healthcare.md',
+    title: 'R&D Tax Credits: Hidden Money for Healthcare Practices',
+    date: '2026-02-05',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Many healthcare businesses miss out on significant R&D credits. Here\'s how to identify and claim them.',
+    categories: ['Tax Credits', 'Healthcare', 'Tax Strategy'],
+    readTime: '16 min read',
+    featuredImage: '/images/blog/rd-tax-credits-hero.jpg'
   }
 };
 
