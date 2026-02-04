@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Link, useLocation } from 'react-router-dom';
+import { Routes, Route, Link, useLocation, Navigate } from 'react-router-dom';
 import BlogPost from './BlogPost';
 
 // ============================================================
@@ -2115,6 +2115,7 @@ export default function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/apply" element={<Navigate to="/contact" replace />} />
           <Route path="/demo" element={<Demo />} />
           <Route path="/oauth/callback" element={<OAuthCallback />} />
           <Route path="/terms" element={<Terms />} />
