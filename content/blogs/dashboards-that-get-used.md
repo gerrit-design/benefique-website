@@ -9,8 +9,6 @@ featured: true
 imageUrl: "/images/blog/dashboard-design-best-practices.jpg"
 ---
 
-# Real-Time Dashboards That Actually Get Used
-
 Here's a dirty secret about financial reports: **most business owners don't look at them.**
 
 Sure, they receive them. Maybe they even skim the P&L once a month. But deep analysis? Actually using the data to make decisions? Rarely.
@@ -90,6 +88,9 @@ Humans process visuals faster than tables of numbers. Dashboards should **show, 
 
 A well-designed dashboard lets you understand the story in **30 seconds or less**.
 
+![Interactive Dashboard Example](https://bft-demo-seven.vercel.app/preview.png)
+*Example: Our interactive dashboard showing real-time KPIs and trend analysis*
+
 ### 3. Real-Time (or Near Real-Time)
 
 If your dashboard shows last month's data, it's already outdated. Modern dashboards pull from live or near-live data sources.
@@ -145,6 +146,9 @@ You don't need all the detail all the time—but when you need it, it should be 
 
 Here are three dashboards we've built—and how they're used.
 
+**[→ View Live Demo Dashboard (Interactive Report)](https://bft-demo-seven.vercel.app/)**  
+**[→ View Newspaper-Style Financial Report](https://bft-newspaper-demo.vercel.app/)**
+
 ### Example 1: Multi-Location Radiology Practice
 
 **Key Metrics Shown:**
@@ -153,6 +157,9 @@ Here are three dashboards we've built—and how they're used.
 - Collections rate by insurance carrier (identify slow payers)
 - A/R aging with visual heat map (red = overdue, green = current)
 - Location-level profitability comparison (EBITDA margin %)
+
+![Radiology Practice Dashboard](https://bft-demo-seven.vercel.app/preview.png)
+*Real dashboard showing multi-location performance metrics - [View Live Demo →](https://bft-demo-seven.vercel.app/)*
 
 **How It's Used:**
 - CFO checks daily before morning coffee (5-minute ritual)
@@ -172,6 +179,9 @@ Here are three dashboards we've built—and how they're used.
 - Overhead % by location (benchmark against industry standards)
 - Cash flow summary (cash in, cash out, net change)
 - Debt service coverage ratio (critical for lenders)
+
+![Newspaper-Style Financial Report](https://bft-newspaper-demo.vercel.app/preview.png)
+*Narrative-driven financial report designed for stakeholder communication - [View Live Demo →](https://bft-newspaper-demo.vercel.app/)*
 
 **How It's Used:**
 - CEO checks Sunday evenings (weekly planning ritual)
@@ -275,6 +285,10 @@ If you're still relying on monthly PDF reports and occasional QuickBooks logins 
 - Spreadsheet chaos vs. one-screen clarity
 
 **Want to see what a custom dashboard could look like for your business?**
+
+**Explore Our Live Dashboard Demos:**
+- **[Interactive Real-Time Dashboard →](https://bft-demo-seven.vercel.app/)** - Click around, explore the data visualizations
+- **[Newspaper-Style Financial Report →](https://bft-newspaper-demo.vercel.app/)** - See financial storytelling in action
 
 **[Schedule a free dashboard consultation →](#contact)**
 

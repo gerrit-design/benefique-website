@@ -7,8 +7,6 @@ categories: ["Financial Management", "Multi-Location", "Growth"]
 featured: true
 ---
 
-# Multi-Location Financial Management
-
 You opened a second location. Congratulations—you're growing!
 
 Then the questions start:
@@ -296,6 +294,9 @@ If Location 1 generates 33% of revenue, it gets 33% of overhead.
 
 Beyond P&L, track these metrics per location:
 
+![Multi-Location Dashboard](https://bft-demo-seven.vercel.app/preview.png)
+*Example: Real-time multi-location performance dashboard - [View Interactive Demo →](https://bft-demo-seven.vercel.app/)*
+
 ### Financial KPIs
 
 - **Revenue per location**
@@ -364,6 +365,9 @@ Compare locations to each other:
 - Shifted marketing budget toward Location 1 and 3 (better ROI)
 - Improved overall margins by 12%
 - Month-end close: 3 weeks → 1 day
+
+![Financial Reporting Dashboard](https://bft-newspaper-demo.vercel.app/preview.png)
+*Our narrative-style financial reports make complex multi-location data easy to understand - [View Demo →](https://bft-newspaper-demo.vercel.app/)*
 
 **Cost of solution:** Monthly CFO advisory + dashboard setup  
 **Value:** $50K+ in identified savings + confident decision-making
