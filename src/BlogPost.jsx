@@ -398,7 +398,7 @@ function BlogPost() {
               <div className="inline-flex items-center gap-2 bg-benefique-orange/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium mb-6 border border-white/20">
                 {post.categories[0]}
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight drop-shadow-lg">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight drop-shadow-lg">
                 {post.title}
               </h1>
               <p className="text-xl text-blue-100 mb-6 drop-shadow">{post.excerpt}</p>
