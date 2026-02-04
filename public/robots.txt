@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://app.benefique.com/sitemap.xml
+Sitemap: https://www.benefique.com/sitemap.xml

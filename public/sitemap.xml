@@ -2,87 +2,107 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Main Pages -->
   <url>
-    <loc>https://app.benefique.com/</loc>
-    <lastmod>2026-01-29</lastmod>
+    <loc>https://www.benefique.com/</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://app.benefique.com/services</loc>
+    <loc>https://www.benefique.com/services</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.benefique.com/demo</loc>
+    <lastmod>2026-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.benefique.com/testimonials</loc>
+    <lastmod>2026-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.benefique.com/about</loc>
+    <lastmod>2026-01-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.benefique.com/contact</loc>
     <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://app.benefique.com/demo</loc>
-    <lastmod>2026-01-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://app.benefique.com/testimonials</loc>
-    <lastmod>2026-01-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://app.benefique.com/about</loc>
-    <lastmod>2026-01-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://app.benefique.com/contact</loc>
-    <lastmod>2026-01-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://app.benefique.com/blog</loc>
-    <lastmod>2026-01-29</lastmod>
+    <loc>https://www.benefique.com/blog</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://www.benefique.com/blog/dashboards-that-get-used</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.benefique.com/blog/s-corp-election</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.benefique.com/blog/cash-flow-forecasting</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
   <!-- Location Pages -->
   <url>
-    <loc>https://app.benefique.com/davie-accounting</loc>
+    <loc>https://www.benefique.com/davie-accounting</loc>
     <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://app.benefique.com/plantation-accounting</loc>
+    <loc>https://www.benefique.com/plantation-accounting</loc>
     <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://app.benefique.com/weston-accounting</loc>
+    <loc>https://www.benefique.com/weston-accounting</loc>
     <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://app.benefique.com/miramar-accounting</loc>
+    <loc>https://www.benefique.com/miramar-accounting</loc>
     <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://app.benefique.com/fort-lauderdale-accounting</loc>
+    <loc>https://www.benefique.com/fort-lauderdale-accounting</loc>
     <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://app.benefique.com/aventura-accounting</loc>
+    <loc>https://www.benefique.com/aventura-accounting</loc>
     <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://app.benefique.com/hollywood-accounting</loc>
+    <loc>https://www.benefique.com/hollywood-accounting</loc>
     <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -90,25 +110,25 @@
   
   <!-- Industry Pages -->
   <url>
-    <loc>https://app.benefique.com/industries/radiology</loc>
+    <loc>https://www.benefique.com/industries/radiology</loc>
     <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://app.benefique.com/industries/dental</loc>
+    <loc>https://www.benefique.com/industries/dental</loc>
     <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://app.benefique.com/industries/veterinary</loc>
+    <loc>https://www.benefique.com/industries/veterinary</loc>
     <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://app.benefique.com/industries/marine-services</loc>
+    <loc>https://www.benefique.com/industries/marine-services</loc>
     <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -116,13 +136,13 @@
   
   <!-- Service Pages -->
   <url>
-    <loc>https://app.benefique.com/services/real-time-accounting</loc>
+    <loc>https://www.benefique.com/services/real-time-accounting</loc>
     <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://app.benefique.com/services/fractional-cfo</loc>
+    <loc>https://www.benefique.com/services/fractional-cfo</loc>
     <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
