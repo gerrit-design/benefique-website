@@ -9,8 +9,6 @@ featured: true
 imageUrl: "/images/blog/dashboard-design-best-practices.jpg"
 ---
 
-# Real-Time Dashboards That Actually Get Used
-
 Here's a dirty secret about financial reports: **most business owners don't look at them.**
 
 Sure, they receive them. Maybe they even skim the P&L once a month. But deep analysis? Actually using the data to make decisions? Rarely.
@@ -145,6 +143,10 @@ You don't need all the detail all the time—but when you need it, it should be 
 
 Here are three dashboards we've built—and how they're used.
 
+**Explore our live demos:**
+- **[Interactive Real-Time Dashboard →](https://bft-demo-seven.vercel.app/)** - Click around, see the data visualizations in action
+- **[Newspaper-Style Financial Report →](https://bft-newspaper-demo.vercel.app/)** - Financial storytelling for stakeholders
+
 ### Example 1: Multi-Location Radiology Practice
 
 **Key Metrics Shown:**
@@ -276,12 +278,12 @@ If you're still relying on monthly PDF reports and occasional QuickBooks logins 
 
 **Want to see what a custom dashboard could look like for your business?**
 
-**[Schedule a free dashboard consultation →](#contact)**
+**[Schedule a free dashboard consultation →](/contact)**
 
 Or explore related resources:
-- [How a Multi-Location Radiology Practice Got Real-Time Financial Visibility](#)
-- [From Chaos to Clarity: Scaling Accounting for a Growing Dental Group](#)
-- [The Dashboard Every Business Owner Should Check Daily](#)
+- [How a Multi-Location Radiology Practice Got Real-Time Financial Visibility](/blog/radiology-practice-real-time-visibility)
+- [From Chaos to Clarity: Scaling Accounting for a Growing Dental Group](/blog/dental-group-scaling-accounting)
+- [Multi-Location Financial Management: Best Practices for Growing Businesses](/blog/multi-location-financial-management)
 
 ---
 
@@ -291,4 +293,4 @@ We build financial systems that business owners actually use. Real-time dashboar
 
 *History matters. But preparation wins.*
 
-📞 **Ready to stop guessing and start knowing?** [Let's talk →](#contact)
+📞 **Ready to stop guessing and start knowing?** [Let's talk →](/contact)
