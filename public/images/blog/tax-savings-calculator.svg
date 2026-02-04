@@ -1,0 +1,34 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f0f4f8"/>
+  
+  <!-- Calculator Display -->
+  <rect x="150" y="60" width="500" height="280" fill="white" stroke="#003d5c" stroke-width="3" rx="15"/>
+  
+  <!-- Screen -->
+  <rect x="180" y="90" width="440" height="100" fill="#003d5c" rx="8"/>
+  <text x="400" y="155" font-family="monospace" font-size="48" font-weight="bold" fill="#4ade80" text-anchor="middle">
+    $91,400
+  </text>
+  
+  <!-- Label -->
+  <text x="400" y="230" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="#003d5c" text-anchor="middle">
+    R&amp;D Tax Credit Recovered
+  </text>
+  
+  <!-- Calculation Breakdown -->
+  <g transform="translate(180, 260)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" fill="#4a5568">
+      Qualified Expenses: $457,000
+    </text>
+    <text x="0" y="25" font-family="Arial, sans-serif" font-size="16" fill="#4a5568">
+      Credit Rate: 20%
+    </text>
+  </g>
+  
+  <!-- Arrow with Checkmark -->
+  <g transform="translate(680, 160)">
+    <circle cx="0" cy="0" r="35" fill="#28a745"/>
+    <path d="M -12 0 L -5 8 L 12 -10" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

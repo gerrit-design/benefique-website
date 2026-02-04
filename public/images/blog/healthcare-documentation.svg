@@ -1,0 +1,47 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f7fafc"/>
+  
+  <!-- Document/Clipboard -->
+  <rect x="200" y="80" width="400" height="340" fill="white" stroke="#003d5c" stroke-width="3" rx="10"/>
+  <rect x="200" y="80" width="400" height="60" fill="#003d5c" rx="10"/>
+  <text x="400" y="120" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">
+    R&amp;D Documentation
+  </text>
+  
+  <!-- Checklist Items -->
+  <g transform="translate(250, 180)">
+    <!-- Item 1 -->
+    <circle cx="15" cy="15" r="12" fill="#28a745" stroke="#1e7e34" stroke-width="2"/>
+    <path d="M 10 15 L 13 18 L 20 11" stroke="white" stroke-width="2" fill="none"/>
+    <text x="40" y="22" font-family="Arial, sans-serif" font-size="18" fill="#2d3748">
+      New diagnostic protocols
+    </text>
+    
+    <!-- Item 2 -->
+    <circle cx="15" cy="65" r="12" fill="#28a745" stroke="#1e7e34" stroke-width="2"/>
+    <path d="M 10 65 L 13 68 L 20 61" stroke="white" stroke-width="2" fill="none"/>
+    <text x="40" y="72" font-family="Arial, sans-serif" font-size="18" fill="#2d3748">
+      Software customization
+    </text>
+    
+    <!-- Item 3 -->
+    <circle cx="15" cy="115" r="12" fill="#28a745" stroke="#1e7e34" stroke-width="2"/>
+    <path d="M 10 115 L 13 118 L 20 111" stroke="white" stroke-width="2" fill="none"/>
+    <text x="40" y="122" font-family="Arial, sans-serif" font-size="18" fill="#2d3748">
+      Process improvements
+    </text>
+    
+    <!-- Item 4 -->
+    <circle cx="15" cy="165" r="12" fill="#ffc107" stroke="#e0a800" stroke-width="2"/>
+    <text x="40" y="172" font-family="Arial, sans-serif" font-size="18" fill="#2d3748">
+      Equipment optimization
+    </text>
+  </g>
+  
+  <!-- Amount Badge -->
+  <rect x="550" y="340" width="180" height="50" fill="#ff6b35" rx="25"/>
+  <text x="640" y="372" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">
+    $40K-$120K
+  </text>
+</svg>

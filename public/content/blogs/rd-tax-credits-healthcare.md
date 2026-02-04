@@ -106,6 +106,9 @@ Healthcare practices do this ALL THE TIME. They just don't document it.
 - Experimenting with practice management software integrations
 - Optimizing clinical workflows to reduce wait times or improve outcomes
 
+![Healthcare R&D Documentation Checklist](/images/blog/healthcare-documentation.svg)
+*Common R&D activities in healthcare practices that qualify for tax credits*
+
 ---
 
 ## The 4-Part Test: Does Your Activity Qualify?
@@ -308,6 +311,9 @@ You can amend returns for the past 3 years to claim missed credits.
 **Net benefit:** $79,400
 
 That paid for a new MRI down payment.
+
+![R&D Tax Credit Calculator Example](/images/blog/tax-savings-calculator.svg)
+*Real example: $457K in qualified expenses = $91.4K tax credit recovered*
 
 ---
 
