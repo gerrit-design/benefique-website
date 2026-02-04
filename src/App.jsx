@@ -1152,7 +1152,7 @@ function OAuthCallback() {
             <div className="bg-red-50 border border-red-200 rounded-lg p-6 mb-8">
               <h2 className="text-xl font-bold text-red-800 mb-2">❌ Authorization Failed</h2>
               <p className="text-red-700">Error: {error}</p>
-              <p className="text-red-600 mt-2">Please contact support@benefique.com</p>
+              <p className="text-red-600 mt-2">Please contact hello@benefique.com</p>
             </div>
           ) : code && realmId ? (
             <div className="bg-green-50 border border-green-200 rounded-lg p-6 mb-8">

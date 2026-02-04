@@ -411,7 +411,7 @@ As part of our fractional CFO services, we build and maintain cash flow forecast
 - Make hiring/investment decisions confidently
 - Sleep better knowing they have visibility
 
-**Interested?** [Apply to work with us](https://www.benefique.com/apply) or email gerrit@benefique.com.
+**Interested?** [Apply to work with us](https://www.benefique.com/apply) or email hello@benefique.com.
 
 ---
 
@@ -432,7 +432,7 @@ Track both.
 
 That's what we do at Benefique.
 
-📧 Questions? Email gerrit@benefique.com or [apply here](https://www.benefique.com/apply).
+📧 Questions? Email hello@benefique.com or [apply here](https://www.benefique.com/apply).
 
 ---
 

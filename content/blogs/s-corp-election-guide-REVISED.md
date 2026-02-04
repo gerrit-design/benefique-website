@@ -381,7 +381,7 @@ Here's what happens when you work with Benefique:
 
 **→ [Book Your S-Corp Strategy Call](https://www.benefique.com/apply)** (15 min, free, we'll calculate your exact savings)
 
-Or email gerrit@benefique.com if you have specific questions.
+Or email hello@benefique.com if you have specific questions.
 
 **Don't wait until March 14th.** Spots are limited—we close our calendar February 28th to ensure everyone gets filed on time.
 
@@ -423,7 +423,7 @@ S-Corp election isn't right for everyone. But if you're a profitable small busin
 
 That's what we do at Benefique.
 
-📧 **Email:** gerrit@benefique.com  
+📧 **Email:** hello@benefique.com  
 🔗 **Apply:** [www.benefique.com/apply](https://www.benefique.com/apply)  
 📞 **Schedule:** [Free 15-minute S-Corp consultation](#)
 

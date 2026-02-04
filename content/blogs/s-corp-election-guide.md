@@ -372,7 +372,7 @@ S-Corp election isn't right for everyone. But if you're a profitable small busin
 
 That's what we do at Benefique.
 
-📧 Questions? Email gerrit@benefique.com or [apply to work with us](https://www.benefique.com/apply).
+📧 Questions? Email hello@benefique.com or [apply to work with us](https://www.benefique.com/apply).
 
 ---
 

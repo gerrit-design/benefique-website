@@ -494,7 +494,7 @@ Our clients include:
 - Strategic CFO guidance
 - Expansion feasibility analysis
 
-**Interested?** [Apply to work with us](https://www.benefique.com/apply) or email gerrit@benefique.com.
+**Interested?** [Apply to work with us](https://www.benefique.com/apply) or email hello@benefique.com.
 
 ---
 
@@ -514,7 +514,7 @@ That's what we help businesses do.
 
 That's what we do at Benefique.
 
-📧 Questions? Email gerrit@benefique.com or [apply here](https://www.benefique.com/apply).
+📧 Questions? Email hello@benefique.com or [apply here](https://www.benefique.com/apply).
 
 ---
 

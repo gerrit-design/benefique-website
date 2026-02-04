@@ -423,7 +423,7 @@ At Benefique, we work with radiology practices, dental groups, veterinary clinic
 
 **Typical ROI:** 5:1 to 10:1. For every dollar you spend on the R&D study, you get $5-$10 back in credits.
 
-**Interested?** [Apply to work with us](https://www.benefique.com/apply) or email gerrit@benefique.com.
+**Interested?** [Apply to work with us](https://www.benefique.com/apply) or email hello@benefique.com.
 
 ---
 
@@ -443,7 +443,7 @@ Don't leave it with the IRS.
 
 That's what we do at Benefique.
 
-📧 Questions? Email gerrit@benefique.com or [apply here](https://www.benefique.com/apply).
+📧 Questions? Email hello@benefique.com or [apply here](https://www.benefique.com/apply).
 
 ---
 

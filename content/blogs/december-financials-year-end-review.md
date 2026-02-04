@@ -198,7 +198,7 @@ December financials aren't just about taxes. They're about starting 2026 with cl
 
 **Real-time accounting. Tax-ready any day.**
 
-📧 [Apply to work with us](https://www.benefique.com/apply) or email gerrit@benefique.com
+📧 [Apply to work with us](https://www.benefique.com/apply) or email hello@benefique.com
 
 ---
 
