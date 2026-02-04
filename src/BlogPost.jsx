@@ -30,7 +30,7 @@ const blogPosts = {
     title: 'Real-Time Dashboards That Actually Get Used',
     date: '2026-01-31',
     author: 'Benefique Tax & Accounting',
-    excerpt: 'Most business owners ignore their financial reports because they're boring PDFs full of numbers. Here's how we designed dashboards that clients check daily—and why it matters.',
+    excerpt: 'Most business owners ignore their financial reports because they\'re boring PDFs full of numbers. Here\'s how we designed dashboards that clients check daily—and why it matters.',
     categories: ['Best Practices', 'CFO Services', 'Financial Reporting'],
     readTime: '18 min read',
     featuredImage: '/images/blog/dashboard-design-best-practices.jpg'
