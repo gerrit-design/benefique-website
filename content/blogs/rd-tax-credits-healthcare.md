@@ -1,7 +1,7 @@
 ---
 title: "R&D Tax Credits: Hidden Money for Healthcare Practices"
 date: "2025-10-15"
-author: "Gerrit Disbergen, CPA"
+author: "Gerrit Disbergen, EA"
 excerpt: "Many healthcare businesses miss out on significant R&D credits. Here's how to identify and claim them."
 categories: ["Tax Credits", "Healthcare", "Tax Strategy"]
 featured: true

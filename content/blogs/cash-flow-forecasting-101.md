@@ -1,7 +1,7 @@
 ---
 title: "Cash Flow Forecasting 101: A Practical Guide for Business Owners"
 date: "2025-09-10"
-author: "Gerrit Disbergen, CPA"
+author: "Gerrit Disbergen, EA"
 excerpt: "A practical guide to predicting and managing your business cash flow."
 categories: ["Cash Flow", "Financial Management", "Planning"]
 featured: true

@@ -1,7 +1,7 @@
 ---
 title: "S-Corp Election: Is It Right for Your Business?"
 date: "2025-11-20"
-author: "Gerrit Disbergen, CPA"
+author: "Gerrit Disbergen, EA"
 excerpt: "Understanding the tax implications and benefits of S-Corp status for small business owners."
 categories: ["Tax Planning", "Entity Structure", "S-Corporation"]
 featured: true

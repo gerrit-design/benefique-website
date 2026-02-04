@@ -1,7 +1,7 @@
 ---
 title: "Multi-Location Financial Management: Best Practices for Growing Businesses"
 date: "2025-08-05"
-author: "Gerrit Disbergen, CPA"
+author: "Gerrit Disbergen, EA"
 excerpt: "Best practices for businesses operating across multiple locations or entities."
 categories: ["Financial Management", "Multi-Location", "Growth"]
 featured: true

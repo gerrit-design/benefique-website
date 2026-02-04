@@ -1,7 +1,7 @@
 ---
 title: "December Financials: What to Review Before Year-End"
 date: "2025-12-15"
-author: "Gerrit Disbergen, CPA"
+author: "Gerrit Disbergen, EA"
 excerpt: "Key financial checkpoints every business owner should review before closing the books on the year."
 categories: ["Tax Planning", "Financial Management", "Year-End"]
 featured: true
