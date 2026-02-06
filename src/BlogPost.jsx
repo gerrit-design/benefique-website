@@ -44,6 +44,16 @@ const blogPosts = {
     categories: ['Tax Credits', 'Healthcare', 'Tax Strategy'],
     readTime: '16 min read',
     featuredImage: '/images/blog/rd-tax-credits-hero.jpg'
+  },
+  'multi-location-financial-management': {
+    file: '/content/blogs/multi-location-financial-management.md',
+    title: 'Multi-Location Financial Management: Best Practices for Growing Businesses',
+    date: '2026-02-05',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Get location-level visibility for your multi-location business. Learn entity structure, overhead allocation, P&L setup, and real-world examples.',
+    categories: ['Financial Management', 'Multi-Location', 'Growth', 'CFO Services'],
+    readTime: '20 min read',
+    featuredImage: '/images/blog/multi-location-hero.svg'
   }
 };
 
