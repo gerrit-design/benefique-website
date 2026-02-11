@@ -54,16 +54,6 @@ const blogPosts = {
     categories: ['Financial Management', 'Multi-Location', 'Growth', 'CFO Services'],
     readTime: '20 min read',
     featuredImage: '/images/blog/multi-location-hero.svg'
-  },
-  'davie-accounting-services': {
-    file: '/content/blogs/davie-accounting-services.md',
-    title: 'Davie Accounting Services for Healthcare & Business Owners',
-    date: '2026-02-11',
-    author: 'Benefique Tax & Accounting',
-    excerpt: 'Expert accounting services in Davie, FL for healthcare practices and small businesses. Real-time reporting, monthly closes, 24-hour response.',
-    categories: ['Accounting Services', 'Local Business', 'Healthcare'],
-    readTime: '12 min read',
-    featuredImage: '/images/blog/davie-accounting-hero.jpg'
   }
 };
 
