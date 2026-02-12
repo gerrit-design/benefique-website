@@ -5,6 +5,16 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  'davie-accounting-services': {
+    file: '/content/blogs/davie-accounting-services.md',
+    title: 'Davie Accounting Services for Healthcare Practices & Service-Based Businesses',
+    date: '2026-02-12',
+    author: 'Benefique Tax & Accounting',
+    excerpt: 'Expert accounting services in Davie, FL for healthcare practices (radiology, surgery, dental, vet, pain clinics) and service businesses (law, marine, IT). Real-time reporting, monthly closes, 24-hour response. Tax planning + bookkeeping.',
+    categories: ['Accounting Services', 'Local Business', 'Tax Planning'],
+    readTime: '14 min read',
+    featuredImage: '/images/blog/davie-accounting-hero.jpg'
+  },
   's-corp-election': {
     file: '/content/blogs/s-corp-election-guide-V3.md',
     title: 'S-Corp Election: Is It Right for Your Florida Business?',
