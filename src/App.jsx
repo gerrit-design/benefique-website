@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route, Link, useLocation, Navigate } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import BlogPost from './BlogPost';
 
 // ============================================================
@@ -2104,44 +2105,46 @@ const industries = {
 // ============================================================
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-white">
-      <Nav />
-      <main className="flex-1">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<BlogPost />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/apply" element={<Navigate to="/contact" replace />} />
-          <Route path="/demo" element={<Demo />} />
-          <Route path="/oauth/callback" element={<OAuthCallback />} />
-          <Route path="/terms" element={<Terms />} />
-          <Route path="/privacy" element={<Privacy />} />
-          
-          {/* Location Pages */}
-          <Route path="/davie-accounting" element={<LocationPage {...locations.davie} />} />
-          <Route path="/plantation-accounting" element={<LocationPage {...locations.plantation} />} />
-          <Route path="/weston-accounting" element={<LocationPage {...locations.weston} />} />
-          <Route path="/miramar-accounting" element={<LocationPage {...locations.miramar} />} />
-          <Route path="/fort-lauderdale-accounting" element={<LocationPage {...locations['fort-lauderdale']} />} />
-          <Route path="/aventura-accounting" element={<LocationPage {...locations.aventura} />} />
-          <Route path="/hollywood-accounting" element={<LocationPage {...locations.hollywood} />} />
-          
-          {/* Industry Pages */}
-          <Route path="/industries/radiology" element={<IndustryPage {...industries.radiology} />} />
-          <Route path="/industries/dental" element={<IndustryPage {...industries.dental} />} />
-          <Route path="/industries/veterinary" element={<IndustryPage {...industries.veterinary} />} />
-          <Route path="/industries/marine-services" element={<IndustryPage {...industries['marine-services']} />} />
-          
-          {/* Service Pages */}
-          <Route path="/services/real-time-accounting" element={<RealTimeAccountingPage />} />
-          <Route path="/services/fractional-cfo" element={<Services />} />
-        </Routes>
-      </main>
-      <Footer />
-    </div>
+    <HelmetProvider>
+      <div className="min-h-screen flex flex-col bg-white">
+        <Nav />
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/apply" element={<Navigate to="/contact" replace />} />
+            <Route path="/demo" element={<Demo />} />
+            <Route path="/oauth/callback" element={<OAuthCallback />} />
+            <Route path="/terms" element={<Terms />} />
+            <Route path="/privacy" element={<Privacy />} />
+            
+            {/* Location Pages */}
+            <Route path="/davie-accounting" element={<LocationPage {...locations.davie} />} />
+            <Route path="/plantation-accounting" element={<LocationPage {...locations.plantation} />} />
+            <Route path="/weston-accounting" element={<LocationPage {...locations.weston} />} />
+            <Route path="/miramar-accounting" element={<LocationPage {...locations.miramar} />} />
+            <Route path="/fort-lauderdale-accounting" element={<LocationPage {...locations['fort-lauderdale']} />} />
+            <Route path="/aventura-accounting" element={<LocationPage {...locations.aventura} />} />
+            <Route path="/hollywood-accounting" element={<LocationPage {...locations.hollywood} />} />
+            
+            {/* Industry Pages */}
+            <Route path="/industries/radiology" element={<IndustryPage {...industries.radiology} />} />
+            <Route path="/industries/dental" element={<IndustryPage {...industries.dental} />} />
+            <Route path="/industries/veterinary" element={<IndustryPage {...industries.veterinary} />} />
+            <Route path="/industries/marine-services" element={<IndustryPage {...industries['marine-services']} />} />
+            
+            {/* Service Pages */}
+            <Route path="/services/real-time-accounting" element={<RealTimeAccountingPage />} />
+            <Route path="/services/fractional-cfo" element={<Services />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </HelmetProvider>
   );
 }

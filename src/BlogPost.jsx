@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
@@ -328,44 +329,34 @@ function BlogPost() {
       });
   }, [slug, post]);
 
-  // Update page title and meta tags
-  useEffect(() => {
-    if (post) {
-      document.title = `${post.title} | Benefique Tax & Accounting`;
-      
-      // Update meta description
-      const metaDesc = document.querySelector('meta[name="description"]');
-      if (metaDesc) {
-        metaDesc.setAttribute('content', post.excerpt);
-      } else {
-        const meta = document.createElement('meta');
-        meta.name = 'description';
-        meta.content = post.excerpt;
-        document.head.appendChild(meta);
+  // Schema markup for SEO/GEO
+  const articleSchema = post ? {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    'headline': post.title,
+    'description': post.excerpt,
+    'author': {
+      '@type': 'Organization',
+      'name': 'Benefique Tax & Accounting',
+      'url': 'https://www.benefique.com'
+    },
+    'datePublished': post.date,
+    'dateModified': post.date,
+    'publisher': {
+      '@type': 'Organization',
+      'name': 'Benefique Tax & Accounting',
+      'logo': {
+        '@type': 'ImageObject',
+        'url': 'https://www.benefique.com/images/logo-full.jpg'
       }
-
-      // Add structured data for SEO
-      const script = document.createElement('script');
-      script.type = 'application/ld+json';
-      script.text = JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'BlogPosting',
-        headline: post.title,
-        author: {
-          '@type': 'Person',
-          name: post.author
-        },
-        datePublished: post.date,
-        description: post.excerpt,
-        keywords: post.categories.join(', ')
-      });
-      document.head.appendChild(script);
-
-      return () => {
-        document.head.removeChild(script);
-      };
-    }
-  }, [post]);
+    },
+    'image': `https://www.benefique.com${post.featuredImage}`,
+    'mainEntityOfPage': {
+      '@type': 'WebPage',
+      '@id': `https://www.benefique.com/blog/${slug}`
+    },
+    'keywords': post.categories.join(', ')
+  } : null;
 
   if (!post) {
     return <Navigate to="/blog" replace />;
@@ -399,9 +390,36 @@ function BlogPost() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Breadcrumbs for SEO */}
-      <div className="bg-white border-b border-gray-100">
+    <>
+      {/* Dynamic Meta Tags for SEO/GEO */}
+      <Helmet>
+        <title>{post.title} - Benefique Tax & Accounting</title>
+        <meta name="description" content={post.excerpt} />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.excerpt} />
+        <meta property="og:url" content={`https://www.benefique.com/blog/${slug}`} />
+        <meta property="og:image" content={`https://www.benefique.com${post.featuredImage}`} />
+        <meta property="og:type" content="article" />
+        <meta property="article:published_time" content={post.date} />
+        <meta property="article:author" content={post.author} />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={post.title} />
+        <meta name="twitter:description" content={post.excerpt} />
+        <meta name="twitter:image" content={`https://www.benefique.com${post.featuredImage}`} />
+        
+        {/* Article Schema (JSON-LD) */}
+        <script type="application/ld+json">
+          {JSON.stringify(articleSchema)}
+        </script>
+      </Helmet>
+
+      <div className="min-h-screen bg-gray-50">
+        {/* Breadcrumbs for SEO */}
+        <div className="bg-white border-b border-gray-100">
         <div className="max-w-4xl mx-auto px-4 py-3">
           <nav className="text-sm text-gray-600">
             <a href="/" className="hover:text-benefique-orange transition">Home</a>
@@ -539,6 +557,7 @@ function BlogPost() {
         </div>
       </article>
     </div>
+    </>
   );
 }
 
