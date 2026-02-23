@@ -249,7 +249,7 @@ If your business is growing but your financial visibility isn't keeping pace, we
 
 **Schedule a free consultation:** [Contact Benefique](https://app.benefique.com/contact)  
 **See our CFO services:** [Fractional CFO for Growing Businesses](https://app.benefique.com/services/fractional-cfo)  
-**Read more case studies:** [Client Success Stories](https://app.benefique.com/case-studies)
+**Read more case studies:** [Blog](https://app.benefique.com/blog)
 
 ---
 
