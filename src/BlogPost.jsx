@@ -36,6 +36,16 @@ const blogPosts = {
     readTime: '12 min read',
     featuredImage: '/images/blog/cash-flow-hero.svg'
   },
+  'radiology-collections-dashboard-case-study': {
+    file: '/content/blogs/radiology-collections-dashboard-case-study.md',
+    title: 'Case Study: Real-Time Collections Intelligence System for Multi-Center Radiology Group',
+    date: '2026-02-23',
+    author: 'Benefique Tax & Accounting',
+    excerpt: 'How we built interactive dashboards that identified a 30% revenue decline, eliminated the \'seasonality excuse,\' and quantified a multi-million dollar A/R crisis for a six-center diagnostic imaging group.',
+    categories: ['Case Studies', 'CFO Services', 'Healthcare'],
+    readTime: '14 min read',
+    featuredImage: '/images/blog/radiology-dashboard-case-study.jpg'
+  },
   'dashboards-that-get-used': {
     file: '/content/blogs/dashboards-that-get-used.md',
     title: 'Real-Time Dashboards That Actually Get Used',
