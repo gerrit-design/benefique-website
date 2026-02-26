@@ -95,6 +95,16 @@ const blogPosts = {
     categories: ['Tax Planning', 'Healthcare Finance'],
     readTime: '26 min read',
     featuredImage: '/images/blog/2026-tax-law-changes-healthcare.jpg'
+  },
+  '1099-vs-w2-worker-classification-healthcare-service-businesses-broward-county': {
+    file: '/content/blogs/1099-vs-w2-worker-classification-healthcare-service-businesses-broward-county.md',
+    title: '1099 vs. W-2 in Your Healthcare or Service Practice: The Classification Mistake That Could Cost You $50,000+',
+    date: '2026-02-26',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'The IRS and DOL are cracking down on worker misclassification in healthcare and professional services. Dental hygienists, associate physicians, therapists, IT contractors—if you\'re paying them on a 1099, you might owe back taxes, penalties, and benefits.',
+    categories: ['Tax Compliance', 'Healthcare Finance', 'Employment Tax'],
+    readTime: '24 min read',
+    featuredImage: '/images/blog/worker-classification-hero.jpg'
   }
 };
 
