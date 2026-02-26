@@ -135,15 +135,15 @@ Full fractional CFO-level cash management: 12-month rolling forecasts, scenario 
 
 ## The Math That Makes This a No-Brainer
 
-**For a medical practice:**
-You're a $2 million practice in Plantation with AR days running at 52. Your daily revenue is about $5,480. If we reduce your AR days from 52 to 35, that's 17 days of freed-up cash:
+**Example: A medical practice**
+Imagine a $1.8 million healthcare practice in Broward County with AR days running at 52. Daily revenue is about $4,932. Reducing AR days from 52 to 35 means 17 days of freed-up cash:
 
-**17 days x $5,480 = $93,160 in working capital you didn't have before.**
+**17 days x $4,932 = $83,844 in working capital that wasn't available before.**
 
-**For a professional services firm:**
-You're a $1.2 million consulting firm in Fort Lauderdale with DSO of 58 days. Your daily revenue is $3,288. If we reduce DSO from 58 to 38 days:
+**Example: A professional services firm**
+Consider a $1.3 million marketing agency with DSO of 58 days. Daily revenue is $3,562. Reducing DSO from 58 to 38 days:
 
-**20 days x $3,288 = $65,760 freed up.**
+**20 days x $3,562 = $71,240 freed up.**
 
 That's not theoretical money. That's cash in your bank account that you can use for payroll, equipment, hiring, or simply sleeping at night knowing you have a cushion.
 
