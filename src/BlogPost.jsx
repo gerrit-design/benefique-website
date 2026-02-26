@@ -105,6 +105,16 @@ const blogPosts = {
     categories: ['Tax Compliance', 'Healthcare Finance', 'Employment Tax'],
     readTime: '24 min read',
     featuredImage: '/images/blog/worker-classification-hero.jpg'
+  },
+  'missed-tax-deductions-healthcare-service-businesses-broward-county': {
+    file: '/content/blogs/missed-tax-deductions-healthcare-service-businesses-broward-county.md',
+    title: '7 Tax Deductions Your Broward County Practice Is Probably Missing (And the Dollar Amount of Each)',
+    date: '2026-02-26',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'The average medical practice overpays $15,000-$50,000 annually in taxes from missed deductions. From accountable plans to the Augusta Rule to retirement plan stacking—here are 7 deductions most Broward County practice owners don\'t know about.',
+    categories: ['Tax Planning', 'Healthcare Finance', 'Professional Services'],
+    readTime: '22 min read',
+    featuredImage: '/images/blog/tax-deductions-hero.jpg'
   }
 };
 
