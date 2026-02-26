@@ -75,6 +75,16 @@ const blogPosts = {
     categories: ['Financial Management', 'Multi-Location', 'Growth', 'CFO Services'],
     readTime: '20 min read',
     featuredImage: '/images/blog/multi-location-hero.svg'
+  },
+  'cash-flow-management-healthcare-service-businesses-broward-county': {
+    file: '/content/blogs/cash-flow-management-healthcare-service-businesses-broward-county.md',
+    title: 'Why Your Broward County Practice Is Profitable on Paper but Can\'t Make Payroll',
+    date: '2026-02-26',
+    author: 'Gerrit Disbergen, Benefique Tax & Accounting',
+    excerpt: 'Medical practices wait 30-90 days for insurance reimbursement. Service firms chase invoices for months. Learn how Davie-based Benefique helps healthcare and professional services businesses across Broward County fix cash flow, collect faster, and stop running out of money.',
+    categories: ['Cash Flow Advisory', 'Healthcare Finance', 'Professional Services'],
+    readTime: '22 min read',
+    featuredImage: '/images/blog/cash-flow-broward-county-healthcare.jpg'
   }
 };
 
