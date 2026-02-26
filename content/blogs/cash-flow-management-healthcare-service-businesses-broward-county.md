@@ -47,6 +47,8 @@ Broward County is in the middle of a healthcare boom. Baptist Health just broke 
 
 More healthcare means more practices, more patients, more revenue -- and more cash flow headaches. The same is true for the professional services firms that support this growing economy.
 
+![Healthcare practices in Broward County face unique cash flow challenges from insurance reimbursement delays](/images/blog/cash-flow-medical-office.jpg)
+
 Here's how cash flow breaks differently for each:
 
 ### Medical Practices: The Insurance Reimbursement Trap
@@ -148,6 +150,8 @@ Consider a $1.3 million marketing agency with DSO of 58 days. Daily revenue is $
 That's not theoretical money. That's cash in your bank account that you can use for payroll, equipment, hiring, or simply sleeping at night knowing you have a cushion.
 
 And the data backs this up: **companies with automated AR workflows reduce DSO by 20-35%**. Sending invoices within 24 hours reduces DSO by 5-8 days on its own. **73% of microbusinesses say improved cash flow is the number one reason they adopt faster payment systems.** Getting paid in 30 days versus 60 days means a **66% improvement in cash flow**. The practices and firms that act on this are pulling ahead.
+
+![Automated accounts receivable management helps healthcare practices and service firms collect faster](/images/blog/cash-flow-accounts-receivable.jpg)
 
 ## Frequently Asked Questions
 
