@@ -85,6 +85,16 @@ const blogPosts = {
     categories: ['Cash Flow Advisory', 'Healthcare Finance', 'Professional Services'],
     readTime: '22 min read',
     featuredImage: '/images/blog/cash-flow-broward-county-healthcare.jpg'
+  },
+  '2026-tax-law-changes-broward-county-healthcare-service-businesses': {
+    file: '/content/blogs/2026-tax-law-changes-broward-county-healthcare-service-businesses.md',
+    title: '2026 Tax Law Changes: What Every Broward County Practice Owner Needs to Know',
+    date: '2026-02-26',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'The One Big Beautiful Bill Act changed everything: 100% bonus depreciation is back, Section 179 jumped to $2.56M, QBI is permanent, and the dependent care FSA doubled to $7,500. Here\'s what Broward County practice owners and service business operators need to do before year-end.',
+    categories: ['Tax Planning', 'Healthcare Finance'],
+    readTime: '26 min read',
+    featuredImage: '/images/blog/2026-tax-law-changes-healthcare.jpg'
   }
 };
 
