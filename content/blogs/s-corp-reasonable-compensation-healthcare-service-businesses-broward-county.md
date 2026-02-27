@@ -1,11 +1,6 @@
 # S-Corp Reasonable Compensation: How Much Should You Pay Yourself (And Why Getting It Wrong Costs More Than You Think)
 
-**Meta Title:** S-Corp Reasonable Compensation for Healthcare & Service Businesses | Benefique
-**Meta Description:** 73% of S-Corp audits focus on reasonable compensation. Pay yourself too little and the IRS reclassifies your distributions as wages -- plus penalties and interest. Pay yourself too much and you're overpaying FICA by thousands. Here's how to find the number that's actually right for your practice.
-**Slug:** /blog/s-corp-reasonable-compensation-healthcare-service-businesses-broward-county
-**Target Keywords:** S-corp reasonable compensation physician, reasonable salary dentist S-corp, S-corp salary healthcare practice owner, reasonable compensation CPA Fort Lauderdale, S-corp audit IRS reasonable salary, S-corp salary vs distribution, reasonable compensation attorney S-corp, S-corp payroll tax savings medical practice, S-corp salary QBI deduction, reasonable compensation Broward County
-**Author:** Gerrit Disbergen, EA
-**Category:** Tax Planning, S-Corp Strategy, Healthcare Finance
+
 
 ---
 
