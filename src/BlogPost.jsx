@@ -115,6 +115,16 @@ const blogPosts = {
     categories: ['Tax Planning', 'Healthcare Finance', 'Professional Services'],
     readTime: '22 min read',
     featuredImage: '/images/blog/tax-deductions-hero.jpg'
+  },
+  's-corp-reasonable-compensation-healthcare-service-businesses-broward-county': {
+    file: '/content/blogs/s-corp-reasonable-compensation-healthcare-service-businesses-broward-county.md',
+    title: 'S-Corp Reasonable Compensation: How Much Should You Pay Yourself (And Why Getting It Wrong Costs More Than You Think)',
+    date: '2026-02-27',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: '73% of S-Corp audits focus on reasonable compensation. Pay yourself too little and the IRS reclassifies your distributions as wages. Pay yourself too much and you\'re overpaying FICA by thousands. Here\'s the definitive guide to finding your optimal salary.',
+    categories: ['Tax Planning', 'S-Corp Strategy'],
+    readTime: '59 min read',
+    featuredImage: '/images/blog/s-corp-reasonable-compensation-featured.jpg'
   }
 };
 
