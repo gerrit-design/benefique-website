@@ -10,6 +10,10 @@ The sweet spot—the number that saves you the most money while keeping you audi
 
 Here's how to find your number.
 
+![Business owner reviewing financial strategy](/images/blog/business-owner-desk.jpg)
+*Strategic salary planning requires analyzing market data, not guesswork*
+
+
 ## Why the IRS Cares About Your Salary
 
 The entire tax benefit of an S-Corp flows through one mechanism: **salary is subject to FICA taxes; distributions are not.**
@@ -29,6 +33,10 @@ David Watson, an experienced CPA in Iowa, was the sole shareholder of his S-Corp
 The IRS challenged it. Watson argued that $24,000 was fair for "administrative" work. The court disagreed. An expert witness used AICPA salary survey data to calculate that a CPA of Watson's experience performing his duties would command at least **$91,044** in the market. 
 
 **The result:** The court reclassified $67,044 in distributions as wages and assessed back payroll taxes plus interest.
+
+![IRS tax audit and compliance](/images/blog/irs-audit-documents.jpg)
+*The Watson case: When the IRS challenges your reasonable compensation*
+
 
 > 💡 **The Lesson:** You can't pay yourself what you want. You have to pay yourself what the market would pay someone else to do your job.
 
@@ -143,6 +151,10 @@ These ranges reflect market-rate compensation for owner-operators who are active
 
 > ⚠️ **Critical note:** These are starting points, not answers. Your specific number depends on your hours, your role, your geography, your experience, and your business complexity.
 
+![Professional financial consultation](/images/blog/business-consultation-professional.jpg)
+*Broward County salary benchmarks are starting points—your specific number requires detailed analysis*
+
+
 ## The Salary-QBI Interaction: Where It Gets Complicated
 
 If you read our [2026 tax law changes post](/blog/2026-tax-law-changes-broward-county-healthcare-service-businesses), you know that the QBI deduction is now permanent at 20%—but it phases out for SSTBs (which includes most healthcare and professional services businesses) above ~$199,200 (single) or ~$398,400 (MFJ) in taxable income.
@@ -178,6 +190,10 @@ If your practice or firm has multiple owners, reasonable compensation gets more 
 **QBI thresholds are individual.** Each partner's taxable income (including income from other sources, their spouse's income if filing jointly, and their specific deductions) determines their QBI eligibility independently.
 
 > 📝 **Document the differences:** If two partners in the same firm receive different salaries, you need written documentation explaining why: different roles, different hours, different specialties, different client-facing responsibilities. Without documentation, the IRS will assume the lower-paid partner is underpaid.
+
+
+![Financial analysis and planning](/images/blog/financial-analysis.jpg)
+*Following a structured process ensures your salary is defensible and optimized*
 
 ## How to Set Your Salary: The 5-Step Process
 
@@ -283,6 +299,10 @@ The IRS determines reasonable compensation is $280,000. They reclassify $200,000
 | **Total assessment** | **~$45,084** |
 
 *Partially capped at Social Security wage base
+
+![Financial analysis and salary calculation](/images/blog/s-corp-salary-calculation.jpg)
+*Understanding the true cost of an IRS reasonable compensation audit*
+
 
 > ⚠️ **And that's one year.** The IRS typically looks back three years. Triple that exposure if your salary has been too low for multiple years.
 
