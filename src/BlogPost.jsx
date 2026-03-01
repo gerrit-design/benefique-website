@@ -56,6 +56,16 @@ const blogPosts = {
     readTime: '18 min read',
     featuredImage: '/images/blog/dashboard-design-best-practices.jpg'
   },
+  'ai-powered-cash-flow-intelligence': {
+    file: '/content/blogs/ai-powered-cash-flow-intelligence.md',
+    title: 'AI-Powered Cash Flow Intelligence: How Real-Time Data Fixes Your Biggest Business Problem',
+    date: '2026-03-01',
+    author: 'Benefique Tax & Accounting',
+    excerpt: 'Your biggest business problem isn\'t profit. It\'s cash flow. Discover how AI-powered data synthesis and real-time financial intelligence give SMB owners Fortune 500-level visibility into cash conversion cycles, working capital, and the metrics that actually control their cash position.',
+    categories: ['Cash Flow Advisory', 'AI Accounting', 'Financial Intelligence'],
+    readTime: '22 min read',
+    featuredImage: '/images/blog/ai-cash-flow-intelligence-hero.jpg'
+  },
   'rd-tax-credits-healthcare': {
     file: '/content/blogs/rd-tax-credits-healthcare.md',
     title: 'R&D Tax Credits: Hidden Money for Healthcare Practices',
