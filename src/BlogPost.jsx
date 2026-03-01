@@ -64,7 +64,7 @@ const blogPosts = {
     excerpt: 'Your biggest business problem isn\'t profit. It\'s cash flow. Discover how AI-powered data synthesis and real-time financial intelligence give SMB owners Fortune 500-level visibility into cash conversion cycles, working capital, and the metrics that actually control their cash position.',
     categories: ['Cash Flow Advisory', 'AI Accounting', 'Financial Intelligence'],
     readTime: '22 min read',
-    featuredImage: '/images/blog/ai-cash-flow-intelligence-hero.jpg'
+    featuredImage: '/images/blog/cash-flow-accounts-receivable.jpg'
   },
   'rd-tax-credits-healthcare': {
     file: '/content/blogs/rd-tax-credits-healthcare.md',

@@ -5,7 +5,7 @@ author: "Benefique Tax & Accounting"
 excerpt: "Your biggest business problem isn't profit. It's cash flow. Discover how AI-powered data synthesis and real-time financial intelligence give SMB owners Fortune 500-level visibility into cash conversion cycles, working capital, and the metrics that actually control their cash position."
 categories: ["Cash Flow Advisory", "AI Accounting", "Financial Intelligence"]
 readTime: "22 min read"
-featuredImage: "/images/blog/ai-cash-flow-intelligence-hero.jpg"
+featuredImage: "/images/blog/cash-flow-accounts-receivable.jpg"
 slug: "ai-powered-cash-flow-intelligence"
 metaTitle: "AI-Powered Cash Flow Intelligence for SMBs | Real-Time Financial Data | Benefique Tax & Accounting"
 metaDescription: "Learn how AI and real-time data synthesis help SMB owners optimize cash conversion cycles, improve collections, and achieve Fortune 500-level cash flow control without Fortune 500 budgets."
@@ -24,7 +24,7 @@ Here's the number that should alarm you: **over half of U.S. small businesses ar
 
 That's money you already earned sitting in someone else's bank account -- money you can't use for payroll, hiring, or growth.
 
-![SMB owners struggle with cash flow while their revenue grows](/images/blog/cash-flow-problem.jpg)
+![SMB owners struggle with cash flow while their revenue grows](/images/blog/cash-flow-broward-county-healthcare.jpg)
 
 ## The Hidden Number Your Accountant Probably Isn't Showing You
 
@@ -44,7 +44,7 @@ A healthy DSO for a professional services firm is **30 to 45 days**. Average fir
 
 Now imagine cutting that to 35 days. You just freed up **$55,000 in working capital** -- without borrowing, without a line of credit, without giving up equity. Just by collecting faster and managing your timing better.
 
-![Your cash conversion cycle determines how much working capital you need](/images/blog/cash-cycle-breakdown.jpg)
+![Your cash conversion cycle determines how much working capital you need](/images/blog/cash-flow-hero.svg)
 
 For larger operations, a 10-day CCC improvement can free up hundreds of thousands of dollars.
 
@@ -105,7 +105,7 @@ You look at one screen and know: "My DSO is trending up (bad), my DPO is stable 
 
 **That's actionable.** That's how Fortune 500 CFOs operate.
 
-![Real-time dashboards show you the metrics that matter most](/images/blog/dashboard-metrics.jpg)
+![Real-time dashboards show you the metrics that matter most](/images/blog/cash-flow-accounts-receivable.jpg)
 
 ## Why This Doesn't Exist Elsewhere (And Why That Matters)
 
