@@ -66,6 +66,16 @@ const blogPosts = {
     readTime: '22 min read',
     featuredImage: '/images/blog/cash-flow-accounts-receivable.jpg'
   },
+  'why-monthly-reports-too-late': {
+    file: '/content/blogs/why-monthly-reports-too-late.md',
+    title: 'Why Monthly Reports Are Too Late for Cash Decisions',
+    date: '2026-03-03',
+    author: 'Benefique Tax & Accounting',
+    excerpt: 'Your monthly P&L arrives 3-4 weeks after the month ends. By then, you\'ve already made the decisions it should have informed. Here\'s what real-time visibility looks like.',
+    categories: ['Cash Flow Advisory', 'Financial Intelligence'],
+    readTime: '10 min read',
+    featuredImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=630&fit=crop'
+  },
   'rd-tax-credits-healthcare': {
     file: '/content/blogs/rd-tax-credits-healthcare.md',
     title: 'R&D Tax Credits: Hidden Money for Healthcare Practices',
