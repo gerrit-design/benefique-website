@@ -69,7 +69,7 @@ const blogPosts = {
   'improve-dso-without-sacrificing-relationships': {
     file: '/content/blogs/improve-dso-without-sacrificing-relationships.md',
     title: '5 Ways to Improve Your DSO Without Sacrificing Relationships',
-    date: '2026-03-10',
+    date: '2026-03-03',
     author: 'Benefique Tax & Accounting',
     excerpt: 'The average small business has $84,000 in unpaid invoices. Here are 5 proven strategies to collect faster without damaging client relationships -- from clear terms to smart segmentation.',
     categories: ['Cash Flow Advisory', 'Accounts Receivable'],
