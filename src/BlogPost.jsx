@@ -76,6 +76,16 @@ const blogPosts = {
     readTime: '10 min read',
     featuredImage: '/images/blog/dso-unpaid-invoices.jpg'
   },
+  'ai-cash-flow-forecasting-small-business': {
+    file: '/content/blogs/ai-cash-flow-forecasting-small-business.md',
+    title: 'How AI Cash Flow Forecasting Helps Small Businesses Stay 30 Days Ahead',
+    date: '2026-03-17',
+    author: 'Benefique Tax & Accounting',
+    excerpt: 'AI cash flow forecasting uses machine learning to analyze your transaction data, client payment patterns, and expenses to project your cash position 30-60 days forward. Here\'s how it works and why your accountant matters more than the software.',
+    categories: ['Cash Flow Advisory', 'AI Accounting', 'Financial Intelligence'],
+    readTime: '12 min read',
+    featuredImage: '/images/blog/ai-cash-flow-forecasting-dashboard.jpg'
+  },
   'why-monthly-reports-too-late': {
     file: '/content/blogs/why-monthly-reports-too-late.md',
     title: 'Why Monthly Reports Are Too Late for Cash Decisions',
