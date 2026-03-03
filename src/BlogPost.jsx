@@ -66,6 +66,16 @@ const blogPosts = {
     readTime: '22 min read',
     featuredImage: '/images/blog/cash-flow-accounts-receivable.jpg'
   },
+  'improve-dso-without-sacrificing-relationships': {
+    file: '/content/blogs/improve-dso-without-sacrificing-relationships.md',
+    title: '5 Ways to Improve Your DSO Without Sacrificing Relationships',
+    date: '2026-03-10',
+    author: 'Benefique Tax & Accounting',
+    excerpt: 'The average small business has $84,000 in unpaid invoices. Here are 5 proven strategies to collect faster without damaging client relationships -- from clear terms to smart segmentation.',
+    categories: ['Cash Flow Advisory', 'Accounts Receivable'],
+    readTime: '10 min read',
+    featuredImage: '/images/blog/dso-unpaid-invoices.jpg'
+  },
   'why-monthly-reports-too-late': {
     file: '/content/blogs/why-monthly-reports-too-late.md',
     title: 'Why Monthly Reports Are Too Late for Cash Decisions',
