@@ -39,12 +39,18 @@
   </url>
   <url>
     <loc>https://www.benefique.com/blog</loc>
-    <lastmod>2026-03-03</lastmod>
+    <lastmod>2026-03-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <!-- Blog Posts -->
+  <url>
+    <loc>https://www.benefique.com/blog/improve-dso-without-sacrificing-relationships</loc>
+    <lastmod>2026-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://www.benefique.com/blog/why-monthly-reports-too-late</loc>
     <lastmod>2026-03-03</lastmod>
