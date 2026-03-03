@@ -1,6 +1,6 @@
 ---
 title: "How AI Cash Flow Forecasting Helps Small Businesses Stay 30 Days Ahead"
-date: "2026-03-17"
+date: "2026-03-04"
 author: "Benefique Tax & Accounting"
 excerpt: "AI cash flow forecasting uses machine learning to analyze your transaction data, client payment patterns, and expenses to project your cash position 30-60 days forward. Here's how it works and why your accountant matters more than the software."
 categories: ["Cash Flow Advisory", "AI Accounting", "Financial Intelligence"]
