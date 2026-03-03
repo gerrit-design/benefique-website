@@ -208,5 +208,5 @@ Cash flow timing matters more for smaller businesses, not less. A $1.5M healthca
 
 *Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary -- consult a qualified tax professional for advice specific to your circumstances.*
 
-*Last updated: March 17, 2026 | Benefique Tax & Accounting | Davie, FL*
+*Last updated: March 4, 2026 | Benefique Tax & Accounting | Davie, FL*
 *Serving healthcare practices and service businesses across South Florida*
