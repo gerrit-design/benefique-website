@@ -6,6 +6,16 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  'stop-doing-your-own-books': {
+    file: '/content/blogs/stop-doing-your-own-books.md',
+    title: 'Stop Doing Your Own Books: The Real Cost of DIY Bookkeeping',
+    date: '2026-03-04',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'DIY bookkeeping looks free until you count your time, missed deductions, and IRS penalties. Here\'s the real math for SE Florida business owners \u2014 and when it makes sense to hand it off.',
+    categories: ['Bookkeeping', 'Tax Planning', 'Small Business'],
+    readTime: '7 min read',
+    featuredImage: '/images/blog/stop-doing-your-own-books.jpg'
+  },
   'davie-accounting-services': {
     file: '/content/blogs/davie-accounting-services.md',
     title: 'Davie Accounting Services for Healthcare Practices & Service-Based Businesses',
