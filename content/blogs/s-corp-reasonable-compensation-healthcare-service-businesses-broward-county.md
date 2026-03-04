@@ -191,6 +191,7 @@ If your practice or firm has multiple owners, reasonable compensation gets more 
 
 > 📝 **Document the differences:** If two partners in the same firm receive different salaries, you need written documentation explaining why: different roles, different hours, different specialties, different client-facing responsibilities. Without documentation, the IRS will assume the lower-paid partner is underpaid.
 
+If your practice also uses independent contractors, worker classification adds another layer of complexity. See our guide on [1099 vs. W-2 worker classification for healthcare and service businesses](/blog/1099-vs-w2-worker-classification-healthcare-service-businesses-broward-county) to make sure you're not creating additional IRS exposure.
 
 ![Financial analysis and planning](/images/blog/financial-analysis.jpg)
 *Following a structured process ensures your salary is defensible and optimized*

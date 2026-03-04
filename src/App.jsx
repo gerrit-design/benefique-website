@@ -467,6 +467,10 @@ function Services() {
                 <Link to="/demo" className="text-benefique-orange text-sm font-semibold hover:underline mt-2 inline-block">
                   See a sample report →
                 </Link>
+                <br />
+                <Link to="/blog/multi-location-financial-management" className="text-gray-500 text-sm hover:text-benefique-orange hover:underline mt-1 inline-block">
+                  Read: Managing Finances Across Multiple Locations →
+                </Link>
               </div>
             </div>
           </div>
@@ -1580,6 +1584,19 @@ function LocationPage({ city, nearby, zipCodes, description }) {
           </div>
         </div>
       </section>
+
+      {/* Featured Blog Post - Davie Only */}
+      {city === 'Davie' && (
+        <section className="py-12 bg-gray-50 border-t border-gray-200">
+          <div className="max-w-4xl mx-auto px-4 text-center">
+            <h2 className="text-2xl font-bold text-benefique-navy mb-3">From Our Blog</h2>
+            <p className="text-gray-600 mb-4">Learn more about accounting services in Davie, FL</p>
+            <Link to="/blog/davie-accounting-services" className="text-benefique-orange font-semibold hover:underline">
+              Davie Accounting Services: What Local Businesses Need to Know →
+            </Link>
+          </div>
+        </section>
+      )}
 
       {/* FAQ Section with Schema-Ready Structure */}
       <section className="py-16 bg-gray-50">
