@@ -14,7 +14,7 @@ const blogPosts = {
     excerpt: 'DIY bookkeeping looks free until you count your time, missed deductions, and IRS penalties. Here\'s the real math for SE Florida business owners \u2014 and when it makes sense to hand it off.',
     categories: ['Bookkeeping', 'Tax Planning', 'Small Business'],
     readTime: '7 min read',
-    featuredImage: '/images/blog/stop-doing-your-own-books.jpg'
+    featuredImage: '/images/blog/business-owner-late-night-bookkeeping.jpg'
   },
   'davie-accounting-services': {
     file: '/content/blogs/davie-accounting-services.md',

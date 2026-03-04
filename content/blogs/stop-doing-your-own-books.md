@@ -6,7 +6,7 @@ author: "Gerrit Disbergen"
 excerpt: "DIY bookkeeping looks free until you count your time, missed deductions, and IRS penalties. Here\\'s the real math for SE Florida business owners — and when it makes sense to hand it off."
 categories: "Bookkeeping"
 readTime: "7 min read"
-featuredImage: "/images/blog/stop-doing-your-own-books.jpg"
+featuredImage: "/images/blog/business-owner-late-night-bookkeeping.jpg"
 schema:
   type: "Article"
   faq: true
@@ -23,6 +23,8 @@ But here you are. It's 11 PM, you're toggling between QuickBooks and your bank f
 You're not alone. Recent industry data shows 89% of small business owners say bookkeeping is complex and time-consuming. Meanwhile, those same owners can't find qualified people to delegate to — [89% who tried to hire in late 2025](https://cbs12.com/news/nation-world/this-could-be-the-biggest-challenge-for-small-business-owners-in-2026-economy-bank-of-america-labor) reported few or no qualified applications.
 
 So the books keep sliding. And that's where the real damage starts.
+
+![Small business owner working late at night on DIY bookkeeping instead of growing their South Florida business](/images/blog/business-owner-late-night-bookkeeping.jpg)
 
 ## The Hidden Price Tag of "Doing It Yourself"
 
@@ -62,6 +64,8 @@ This isn't theoretical. We see it every tax season — SE Florida business owner
 
 **If you're wondering whether your quarterly estimates are on track, [book a quick review with our team](/contact) — it takes 15 minutes and could save you thousands.**
 
+![Calculator and tax forms representing the hidden cost of DIY bookkeeping mistakes for small businesses](/images/blog/tax-calculator-receipts-bookkeeping.jpg)
+
 ## Cash Flow Blindness in a Brutal Market
 
 Three out of four small businesses say cash flow management is their number-one challenge heading into 2026, according to a [national survey by Revenued](https://www.prnewswire.com/news-releases/revenued-releases-new-report-revealing-how-tariffs-and-rising-costs-are-squeezing-small-businesses-heading-into-2026-302615717.html). For SE Florida, it's even worse.
@@ -97,6 +101,8 @@ Every one of those decisions requires accurate financial data. When your books a
 We've seen SE Florida business owners delay raises they could afford, avoid expansion they should have pursued, and continue pricing below their true breakeven — all because their financial reports told a story that wasn't true.
 
 Bad data doesn't just cost you money. It costs you opportunities.
+
+![Professional accountant consulting with a South Florida business owner about outsourced bookkeeping services](/images/blog/professional-bookkeeping-consultation.jpg)
 
 ## What Outsourced Bookkeeping Looks Like in 2026
 
