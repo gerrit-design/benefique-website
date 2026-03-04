@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, Link, useLocation, Navigate } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import BlogPost from './BlogPost';
 
 // ============================================================
@@ -421,6 +421,11 @@ function Home() {
 function Services() {
   return (
     <div>
+      <Helmet>
+        <title>Fractional CFO, Tax Planning & Bookkeeping for Healthcare Practices | Benefique</title>
+        <meta name="description" content="Fractional CFO services, tax planning, and real-time bookkeeping for healthcare practices and service businesses in South Florida. Based in Davie, FL." />
+        <link rel="canonical" href="https://www.benefique.com/services" />
+      </Helmet>
       <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-4">
           <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
@@ -570,6 +575,13 @@ function Services() {
 // TESTIMONIALS PAGE - Grouped by Healthcare & Services
 // ============================================================
 function Testimonials() {
+  const helmet = (
+    <Helmet>
+      <title>Client Testimonials | Healthcare & Service Business Owners | Benefique</title>
+      <meta name="description" content="See what healthcare practice owners and service business operators say about working with Benefique Tax & Accounting in Davie, FL." />
+      <link rel="canonical" href="https://www.benefique.com/testimonials" />
+    </Helmet>
+  );
   const healthcareTestimonials = [
     { name: 'Mark', industry: 'Multi-Location Radiology', quote: 'Benefique gives us visibility across all our locations. We finally know which centers are performing and which need attention.' },
     { name: 'Daryl', industry: 'Diagnostic Imaging', quote: 'They showed us the levers we could pull to improve profitability. Not just reports—actionable insights.' },
@@ -598,6 +610,7 @@ function Testimonials() {
 
   return (
     <div>
+      {helmet}
       {/* Header */}
       <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-4">
@@ -685,6 +698,11 @@ function Testimonials() {
 function About() {
   return (
     <div>
+      <Helmet>
+        <title>About Gerrit Disbergen, EA | Benefique Tax & Accounting | Davie, FL</title>
+        <meta name="description" content="Meet Gerrit Disbergen, Enrolled Agent and founder of Benefique Tax & Accounting. Serving healthcare practices and service businesses across Broward County." />
+        <link rel="canonical" href="https://www.benefique.com/about" />
+      </Helmet>
       {/* Header */}
       <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-4">
@@ -879,6 +897,11 @@ function Blog() {
 
   return (
     <div>
+      <Helmet>
+        <title>Blog | Tax Tips & Financial Insights for South Florida Businesses | Benefique</title>
+        <meta name="description" content="Practical tax planning, bookkeeping, and financial strategy advice for healthcare practices and service businesses in Broward County and South Florida." />
+        <link rel="canonical" href="https://www.benefique.com/blog" />
+      </Helmet>
       <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-4">
           <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
@@ -919,6 +942,11 @@ function Blog() {
 function Contact() {
   return (
     <div>
+      <Helmet>
+        <title>Schedule a Consultation | Benefique Tax & Accounting | Davie, FL</title>
+        <meta name="description" content="Ready to get clarity on your finances? Schedule a free consultation with Benefique Tax & Accounting in Davie, FL. Serving Broward, Miami-Dade, and Palm Beach." />
+        <link rel="canonical" href="https://www.benefique.com/contact" />
+      </Helmet>
       <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-4">
           <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
@@ -1016,9 +1044,14 @@ function Contact() {
 // ============================================================
 function Demo() {
   const [activeTab, setActiveTab] = React.useState('cfo');
-  
+
   return (
     <div>
+      <Helmet>
+        <title>Sample CFO Reports & Financial Dashboards | Benefique Tax & Accounting</title>
+        <meta name="description" content="See real examples of Benefique's fractional CFO reports and financial dashboards. Clear insights in owner terms, not accountant-speak." />
+        <link rel="canonical" href="https://www.benefique.com/demo" />
+      </Helmet>
       {/* Hero */}
       <section className="bg-white py-12">
         <div className="max-w-6xl mx-auto px-4">
