@@ -76,6 +76,16 @@ const blogPosts = {
     readTime: '10 min read',
     featuredImage: '/images/blog/dso-unpaid-invoices.jpg'
   },
+  'how-to-calculate-cash-conversion-cycle': {
+    file: '/content/blogs/how-to-calculate-cash-conversion-cycle.md',
+    title: 'How to Calculate Your Cash Conversion Cycle (Service Business & Healthcare Guide)',
+    date: '2026-03-04',
+    author: 'Benefique Tax & Accounting',
+    excerpt: 'The Cash Conversion Cycle measures how many days it takes to turn money you spend into cash you collect. For service businesses with no inventory, it simplifies to CCC = DSO - DPO. Lower is better.',
+    categories: ['Cash Flow Advisory', 'Financial Intelligence'],
+    readTime: '9 min read',
+    featuredImage: '/images/blog/cash-conversion-cycle-calculation.jpg'
+  },
   'ai-cash-flow-forecasting-small-business': {
     file: '/content/blogs/ai-cash-flow-forecasting-small-business.md',
     title: 'How AI Cash Flow Forecasting Helps Small Businesses Stay 30 Days Ahead',
