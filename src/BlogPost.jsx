@@ -76,6 +76,16 @@ const blogPosts = {
     readTime: '10 min read',
     featuredImage: '/images/blog/dso-unpaid-invoices.jpg'
   },
+  'real-time-financial-dashboards-healthcare-practices': {
+    file: '/content/blogs/real-time-financial-dashboards-healthcare-practices.md',
+    title: 'Real-Time Financial Dashboards for Healthcare Practices',
+    date: '2026-03-05',
+    author: 'Benefique Tax & Accounting',
+    excerpt: 'A real-time financial dashboard gives healthcare practice owners instant visibility into collection rates, AR aging, overhead ratio, DSO, and cash runway. Here are the 10 KPIs every practice should track, with benchmarks by specialty.',
+    categories: ['Cash Flow Advisory', 'Healthcare Finance', 'Financial Intelligence'],
+    readTime: '11 min read',
+    featuredImage: '/images/blog/proactive-cash-flow-monitoring.jpg'
+  },
   'how-to-calculate-cash-conversion-cycle': {
     file: '/content/blogs/how-to-calculate-cash-conversion-cycle.md',
     title: 'How to Calculate Your Cash Conversion Cycle (Service Business & Healthcare Guide)',
