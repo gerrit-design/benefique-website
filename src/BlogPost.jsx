@@ -448,7 +448,7 @@ function BlogPost() {
       })
       .then(text => {
         // Remove frontmatter (everything between --- and ---)
-        const withoutFrontmatter = text.replace(/^---[\s\S]*?---\n/, '');
+        const withoutFrontmatter = text.replace(/^---[\s\S]*?---\r?\n/, '');
         setContent(withoutFrontmatter);
         setLoading(false);
       })
