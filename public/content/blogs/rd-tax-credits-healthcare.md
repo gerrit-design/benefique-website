@@ -6,6 +6,7 @@ excerpt: "Many healthcare businesses miss out on significant R&D credits. Here's
 categories: ["Tax Credits", "Healthcare", "Tax Strategy"]
 featured: true
 featuredImage: "/images/blog/rd-tax-credits-hero.jpg"
+slug: "rd-tax-credits-healthcare"
 ---
 
 When you hear "R&D tax credits," you probably think of tech startups and pharmaceutical companies.

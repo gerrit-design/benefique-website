@@ -10,6 +10,7 @@ featuredImage: "/images/blog/business-owner-late-night-bookkeeping.jpg"
 schema:
   type: "Article"
   faq: true
+slug: "stop-doing-your-own-books"
 ---
 
 # Stop Doing Your Own Books: The Real Cost of DIY Bookkeeping for SE Florida Business Owners

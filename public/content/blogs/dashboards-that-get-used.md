@@ -7,6 +7,7 @@ category: "Best Practices"
 tags: ["Dashboards", "CFO Services", "Financial Reporting", "Business Intelligence", "Automation"]
 featured: true
 imageUrl: "/images/blog/dashboard-design-best-practices.jpg"
+slug: "dashboards-that-get-used"
 ---
 
 Here's a dirty secret about financial reports: **most business owners don't look at them.**

@@ -7,6 +7,7 @@ categories: ["Case Studies", "CFO Services", "Healthcare"]
 readTime: "14 min read"
 featuredImage: "/images/blog/radiology-dashboard-case-study.jpg"
 keywords: ["fractional cfo case study", "healthcare financial dashboard", "radiology practice cfo", "collections intelligence", "medical practice analytics", "diagnostic imaging financials"]
+slug: "radiology-collections-dashboard-case-study"
 ---
 
 # Case Study: Real-Time Collections Intelligence System for Multi-Center Radiology Group

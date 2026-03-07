@@ -1,3 +1,12 @@
+---
+title: "S-Corp Reasonable Compensation: How Much Should You Pay Yourself (And Why Getting It Wrong Costs More Than You Think)"
+date: "2026-02-27"
+author: "Gerrit Disbergen, EA"
+excerpt: "73% of S-Corp audits focus on reasonable compensation. Pay yourself too little and the IRS reclassifies your distributions as wages. Pay yourself too much and you're overpaying FICA by thousands."
+categories: ["Tax Planning", "S-Corp Strategy"]
+slug: "s-corp-reasonable-compensation-healthcare-service-businesses-broward-county"
+---
+
 # S-Corp Reasonable Compensation: How Much Should You Pay Yourself (And Why Getting It Wrong Costs More Than You Think)
 
 You elected S-Corp status to save on self-employment taxes. Smart move. But now comes the question that determines whether that election actually works: **How much do you pay yourself?**

@@ -8,6 +8,7 @@ categories: ["Cash Flow", "Financial Management", "Planning"]
 featured: true
 focus_keyword: "cash flow forecasting"
 location: "South Florida, Florida"
+slug: "cash-flow-forecasting"
 ---
 
 # Cash Flow Forecasting 101

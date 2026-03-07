@@ -17,13 +17,15 @@
  */
 
 import { readFileSync, writeFileSync, readdirSync, statSync } from 'fs';
-import { join, resolve } from 'path';
+import { join, resolve, dirname } from 'path';
+import { fileURLToPath } from 'url';
 import matter from 'gray-matter';
 
 const SITE = 'https://www.benefique.com';
-const ROOT = resolve(import.meta.url.replace('file://', ''), '../../');
-const BLOGS_DIR = join(ROOT, 'public/content/blogs');
-const OUTPUT_FILE = join(ROOT, 'public/sitemap.xml');
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const ROOT = resolve(__dirname, '..');
+const BLOGS_DIR = join(ROOT, 'public', 'content', 'blogs');
+const OUTPUT_FILE = join(ROOT, 'public', 'sitemap.xml');
 
 /**
  * Static routes (non-blog pages)
@@ -61,12 +63,14 @@ const staticRoutes = [
 /**
  * Parse blog post metadata from frontmatter
  */
-function parseBlogPost(filePath) {
+function parseBlogPost(filePath, file) {
   try {
     const content = readFileSync(filePath, 'utf-8');
     const { data, content: body } = matter(content);
     
-    if (!data.slug) {
+    // Derive slug from frontmatter or filename
+    const slug = data.slug || file.replace(/\.md$/, '');
+    if (!slug) {
       console.warn(`⚠️  No slug in ${filePath}, skipping`);
       return null;
     }
@@ -76,8 +80,8 @@ function parseBlogPost(filePath) {
     const lastmod = data.date ? new Date(data.date) : new Date(fileStats.mtime);
     
     return {
-      slug: data.slug,
-      path: `/blog/${data.slug}`,
+      slug: slug,
+      path: `/blog/${slug}`,
       lastmod,
       priority: 0.8,
       changefreq: 'monthly',
@@ -132,7 +136,7 @@ function generateSitemap() {
     
     for (const file of blogFiles) {
       const filePath = join(BLOGS_DIR, file);
-      const post = parseBlogPost(filePath);
+      const post = parseBlogPost(filePath, file);
       
       if (post) {
         entries.push(buildUrlEntry(post.path, post.lastmod, post.changefreq, post.priority));

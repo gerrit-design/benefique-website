@@ -8,6 +8,7 @@ categories: ["Tax Planning", "Entity Structure", "S-Corporation"]
 featured: true
 focus_keyword: "s corp election"
 location: "South Florida, Florida"
+slug: "s-corp-election"
 ---
 
 # S-Corp Election: Is It Right for Your Business?
