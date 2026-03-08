@@ -186,6 +186,81 @@ const blogPosts = {
     readTime: '22 min read',
     featuredImage: '/images/blog/tax-deductions-hero.jpg'
   },
+  'concierge-medicine-income-south-florida': {
+    file: '/content/blogs/concierge-medicine-income-south-florida.md',
+    title: 'How Much Does a Concierge Medical Practice Make in South Florida?',
+    date: '2026-03-07',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Concierge physicians in South Florida earn $500K-$1M+ while seeing fewer patients and working fewer hours. Here\'s the complete revenue model, income comparison, overhead analysis, and tax strategy breakdown for Broward County practices.',
+    categories: ['Concierge Medicine', 'Physician Finance', 'Tax Strategy'],
+    readTime: '18 min read',
+    featuredImage: '/images/blog/concierge-medicine-income-south-florida.svg',
+    faqs: [
+      { q: 'How much does a concierge doctor make in Florida?', a: 'Concierge physicians in South Florida typically earn $500,000 to $1,000,000+ in net income, compared to $200,000-$400,000 for insurance-based primary care physicians. Income depends on membership fee ($2,000-$15,000/year), patient panel size (200-500), and overhead structure.' },
+      { q: 'What is the average membership fee for concierge medicine?', a: 'Concierge medicine membership fees typically range from $2,000 to $15,000 per year. In affluent South Florida communities like Weston and Parkland, fees of $5,000-$10,000 are common. Direct Primary Care (DPC) uses lower monthly fees of $75-$200.' },
+      { q: 'Is concierge medicine profitable?', a: 'Yes. Concierge practices typically achieve 40-55% overhead ratios compared to 60-70% for insurance-based practices. A solo concierge physician with 350 patients at $5,000/year generates $1.75M in revenue with approximately $980,000 in net income.' }
+    ]
+  },
+  'cost-starting-concierge-medical-practice': {
+    file: '/content/blogs/cost-starting-concierge-medical-practice.md',
+    title: 'The Real Cost of Starting a Concierge Medical Practice',
+    date: '2026-03-07',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A concierge practice can launch for $100K-$175K in Broward County. Here\'s every startup cost, monthly recurring expense, South Florida lease benchmark, entity structure decision, and pre-launch checklist you need.',
+    categories: ['Concierge Medicine', 'Practice Startup', 'Tax Planning'],
+    readTime: '20 min read',
+    featuredImage: '/images/blog/cost-starting-concierge-practice.svg',
+    faqs: [
+      { q: 'How much does it cost to start a concierge medical practice?', a: 'Most solo concierge practices in Broward County launch for $100,000-$175,000 in total startup capital, including entity formation, office buildout, equipment, EHR, marketing, and 3-6 months of operating reserves. Physicians converting an existing practice spend significantly less.' },
+      { q: 'What entity structure should a concierge physician use?', a: 'Most concierge physicians should form a Florida PLLC with S-Corp tax election. At $500,000+ in net income, the S-Corp election saves $15,000-$25,000 per year in self-employment taxes. The election must be filed within 75 days of entity formation or by March 15.' },
+      { q: 'How long does it take for a concierge practice to break even?', a: 'Converting an existing practice takes 6-12 months to break even and 12-24 months to reach target income. Starting a new concierge practice with no patient base takes 12-18 months to break even. Joining an established network like MDVIP can reach breakeven in 3-6 months.' }
+    ]
+  },
+  'concierge-medicine-vs-insurance-practice-financial-comparison': {
+    file: '/content/blogs/concierge-medicine-vs-insurance-practice-financial-comparison.md',
+    title: 'Concierge Medicine vs Insurance-Based Practice: A Financial Comparison',
+    date: '2026-03-07',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Side-by-side financial comparison of traditional, concierge, DPC, and hybrid practice models. Revenue, overhead, take-home pay, quality of life metrics, and transition planning for South Florida physicians.',
+    categories: ['Concierge Medicine', 'Physician Finance', 'Practice Models'],
+    readTime: '22 min read',
+    featuredImage: '/images/blog/concierge-vs-insurance-comparison.svg',
+    faqs: [
+      { q: 'What is the difference between concierge medicine and insurance-based practice?', a: 'Insurance-based practices see 2,000-2,500 patients, bill insurance carriers, and earn $240K-$400K after 60-70% overhead. Concierge practices charge $2,000-$15,000 annual membership fees, limit panels to 200-500 patients, achieve 40-55% overhead, and net $550K-$1.2M.' },
+      { q: 'How much overhead does a concierge practice save compared to traditional?', a: 'Concierge practices save $232,000-$452,000 per year in overhead compared to insurance-based practices. The biggest savings come from eliminating billing staff ($65K-$160K), claims processing ($12K-$27K), and denials/write-offs ($70K-$200K).' },
+      { q: 'What is the burnout rate for concierge physicians vs traditional?', a: 'Concierge physicians report burnout rates under 15%, compared to over 50% for insurance-based physicians. Concierge doctors work 1,400-2,000 hours per year versus 2,200-2,600, see 6-12 patients daily versus 20-30, and take 4-6 weeks vacation versus 2-3.' }
+    ]
+  },
+  'tax-strategies-concierge-physicians': {
+    file: '/content/blogs/tax-strategies-concierge-physicians.md',
+    title: 'Tax Strategies for Concierge Physicians',
+    date: '2026-03-07',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Eight tax strategies that save concierge physicians $50K-$150K per year: S-Corp optimization, retirement plan stacking, accountable plans, Augusta Rule, Section 179, family employment, entity structuring, and QBI planning.',
+    categories: ['Tax Strategy', 'Concierge Medicine', 'Physician Finance'],
+    readTime: '24 min read',
+    featuredImage: '/images/blog/tax-strategies-concierge-physicians.svg',
+    faqs: [
+      { q: 'How can concierge physicians reduce their taxes?', a: 'Concierge physicians can save $50,000-$150,000 per year through 8 strategies: S-Corp election ($10K-$42K savings), retirement plan stacking with Cash Balance Plans ($80K-$155K shelter), accountable plans ($6K-$20K), Augusta Rule ($18K-$36K tax-free), Section 179 deductions, family employment, multi-entity structuring, and QBI deduction planning.' },
+      { q: 'What is a Cash Balance Plan for physicians?', a: 'A Cash Balance Plan is a defined benefit retirement plan allowing contributions of $150,000-$400,000+ per year (depending on age), far exceeding 401(k) limits. A 50-year-old physician can shelter approximately $345,000 annually when combined with a 401(k), saving $127,650 in federal taxes at the 37% bracket.' },
+      { q: 'Should a concierge physician form an S-Corp?', a: 'Yes, for most concierge physicians earning $400K+. An S-Corp with properly set reasonable compensation ($200K-$300K for physicians) saves $10,400-$42,300 per year in self-employment taxes compared to operating as an LLC. The S-Corp election is filed on IRS Form 2553.' }
+    ]
+  },
+  'concierge-physicians-build-wealth-beyond-practice': {
+    file: '/content/blogs/concierge-physicians-build-wealth-beyond-practice.md',
+    title: 'How Concierge Physicians Can Build Wealth Beyond Their Practice',
+    date: '2026-03-07',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A concierge physician earning $600K/year can accumulate $15-25M over 20 years with disciplined deployment across retirement plans, real estate, practice equity, and tax-efficient investments. Here\'s the complete wealth-building framework.',
+    categories: ['Wealth Building', 'Concierge Medicine', 'Physician Finance'],
+    readTime: '22 min read',
+    featuredImage: '/images/blog/concierge-physicians-build-wealth.svg',
+    faqs: [
+      { q: 'How much wealth can a concierge physician accumulate?', a: 'A concierge physician earning $600,000/year who deploys capital across retirement plans, real estate, practice equity, and tax-efficient investments can realistically accumulate $15-25 million over a 20-year career, compared to $3-5 million without structured wealth-building strategies.' },
+      { q: 'What is the best retirement plan for high-income physicians?', a: 'The optimal structure is a stacked retirement plan: 401(k) employee deferral ($23,500) + employer match (up to $46,000) + Cash Balance Plan ($150,000-$350,000+). This shelters $219,500-$419,500 annually, saving $81,000-$155,000 in federal taxes at the 37% bracket.' },
+      { q: 'How do physicians build wealth through real estate?', a: 'Physicians build real estate wealth by owning their office space, investing in rental properties, or participating in commercial syndications. Cost segregation studies accelerate depreciation deductions ($74K-$130K in Year 1 tax savings on a $1.5M property). 1031 exchanges defer capital gains indefinitely when reinvesting proceeds.' }
+    ]
+  },
   's-corp-reasonable-compensation-healthcare-service-businesses-broward-county': {
     file: '/content/blogs/s-corp-reasonable-compensation-healthcare-service-businesses-broward-county.md',
     title: 'S-Corp Reasonable Compensation: How Much Should You Pay Yourself (And Why Getting It Wrong Costs More Than You Think)',
@@ -488,6 +563,20 @@ function BlogPost() {
     'keywords': post.categories.join(', ')
   } : null;
 
+  // FAQ Schema for AEO (AI Engine Optimization)
+  const faqSchema = post?.faqs?.length ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': post.faqs.map(faq => ({
+      '@type': 'Question',
+      'name': faq.q,
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': faq.a
+      }
+    }))
+  } : null;
+
   if (!post) {
     return <Navigate to="/blog" replace />;
   }
@@ -545,6 +634,13 @@ function BlogPost() {
         <script type="application/ld+json">
           {JSON.stringify(articleSchema)}
         </script>
+
+        {/* FAQ Schema for AEO */}
+        {faqSchema && (
+          <script type="application/ld+json">
+            {JSON.stringify(faqSchema)}
+          </script>
+        )}
       </Helmet>
 
       <div className="min-h-screen bg-gray-50">

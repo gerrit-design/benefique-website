@@ -1,0 +1,35 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#003057;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0052A3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#FF6B35;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grad1)"/>
+  <rect width="1200" height="630" fill="url(#grad2)"/>
+  <circle cx="80" cy="80" r="140" fill="#FF6B35" opacity="0.08"/>
+  <circle cx="1120" cy="550" r="180" fill="#FF6B35" opacity="0.08"/>
+  <g transform="translate(80, 160)">
+    <rect x="0" y="0" width="220" height="280" rx="12" fill="#FFFFFF" opacity="0.12"/>
+    <line x1="30" y1="250" x2="30" y2="30" stroke="#FFFFFF" stroke-width="2" opacity="0.3"/>
+    <line x1="30" y1="250" x2="200" y2="250" stroke="#FFFFFF" stroke-width="2" opacity="0.3"/>
+    <polyline points="40,230 70,210 100,180 130,140 160,80 190,30" stroke="#FF6B35" stroke-width="3" fill="none" opacity="0.8"/>
+    <circle cx="40" cy="230" r="4" fill="#FF6B35" opacity="0.8"/>
+    <circle cx="70" cy="210" r="4" fill="#FF6B35" opacity="0.8"/>
+    <circle cx="100" cy="180" r="4" fill="#FF6B35" opacity="0.8"/>
+    <circle cx="130" cy="140" r="4" fill="#FF6B35" opacity="0.8"/>
+    <circle cx="160" cy="80" r="4" fill="#FF6B35" opacity="0.8"/>
+    <circle cx="190" cy="30" r="6" fill="#FF6B35"/>
+    <text x="110" y="275" font-family="Arial, sans-serif" font-size="14" fill="#B3D4FF" text-anchor="middle">20-YEAR WEALTH GROWTH</text>
+  </g>
+  <text x="370" y="230" font-family="Arial, sans-serif" font-size="46" font-weight="bold" fill="#FFFFFF">Build Wealth Beyond</text>
+  <text x="370" y="290" font-family="Arial, sans-serif" font-size="46" font-weight="bold" fill="#FFFFFF">Your Practice</text>
+  <text x="370" y="350" font-family="Arial, sans-serif" font-size="26" fill="#B3D4FF">5-pillar wealth framework for</text>
+  <text x="370" y="385" font-family="Arial, sans-serif" font-size="26" fill="#B3D4FF">concierge physicians</text>
+  <text x="370" y="540" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#FF6B35">BENEFIQUE TAX &amp; ACCOUNTING</text>
+  <text x="370" y="565" font-family="Arial, sans-serif" font-size="14" fill="#B3D4FF">Davie, FL | Broward County</text>
+</svg>
