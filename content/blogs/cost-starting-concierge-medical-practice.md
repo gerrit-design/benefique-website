@@ -1,3 +1,8 @@
+---
+slug: "cost-starting-concierge-medical-practice"
+date: "2026-03-08"
+---
+
 # The Real Cost of Starting a Concierge Medical Practice
 
 The number one barrier physicians cite when considering concierge medicine is startup cost. The fear is understandable — you are leaving a paycheck, taking on risk, and building something from scratch. (If you are still evaluating the income potential, start with our [concierge medicine income guide](/blog/concierge-medicine-income-south-florida).)

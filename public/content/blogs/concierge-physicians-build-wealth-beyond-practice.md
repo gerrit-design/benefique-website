@@ -1,3 +1,8 @@
+---
+slug: "concierge-physicians-build-wealth-beyond-practice"
+date: "2026-03-11"
+---
+
 # How Concierge Physicians Can Build Wealth Beyond Their Practice
 
 A concierge physician earning $700,000 a year is not automatically wealthy.

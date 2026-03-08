@@ -1,3 +1,8 @@
+---
+slug: "concierge-medicine-vs-insurance-practice-financial-comparison"
+date: "2026-03-09"
+---
+
 # Concierge Medicine vs Insurance-Based Practice: A Financial Comparison
 
 At some point, every primary care physician doing the math reaches the same conclusion: the insurance-based model is broken.

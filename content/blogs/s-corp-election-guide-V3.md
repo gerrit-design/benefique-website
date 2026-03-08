@@ -1,5 +1,6 @@
 ---
 title: "S-Corp Election: Is It Right for Your Florida Business?"
+slug: "s-corp-election"
 date: "2026-01-30"
 author: "Gerrit Disbergen, EA"
 excerpt: "S-Corp election can save Florida business owners $5K-$20K yearly in self-employment taxes—but only if your profit exceeds $100K. Learn when it makes sense and when it doesn't."
@@ -8,7 +9,6 @@ categories: ["Tax Planning", "Entity Structure", "S-Corporation"]
 featured: true
 focus_keyword: "s corp election"
 location: "South Florida, Florida"
-slug: "s-corp-election"
 ---
 
 # S-Corp Election: Is It Right for Your Business?

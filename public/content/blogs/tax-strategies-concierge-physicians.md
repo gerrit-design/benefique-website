@@ -1,3 +1,8 @@
+---
+slug: "tax-strategies-concierge-physicians"
+date: "2026-03-10"
+---
+
 # Tax Strategies for Concierge Physicians
 
 Most concierge physicians are significantly overtaxed — not because the tax code is unfair, but because their accountant treats them like every other small business.

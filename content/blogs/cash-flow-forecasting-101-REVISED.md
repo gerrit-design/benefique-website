@@ -1,5 +1,6 @@
 ---
 title: "Cash Flow Forecasting 101: A Practical Guide for Business Owners"
+slug: "cash-flow-forecasting"
 date: "2026-01-30"
 author: "Gerrit Disbergen, EA"
 excerpt: "Learn cash flow forecasting for your small business with this practical guide. Get step-by-step instructions, free templates, and expert CFO guidance to predict and manage your cash flow."
@@ -8,7 +9,6 @@ categories: ["Cash Flow", "Financial Management", "Planning"]
 featured: true
 focus_keyword: "cash flow forecasting"
 location: "South Florida, Florida"
-slug: "cash-flow-forecasting"
 ---
 
 # Cash Flow Forecasting 101

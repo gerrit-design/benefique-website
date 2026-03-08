@@ -1,3 +1,8 @@
+---
+slug: "concierge-medicine-income-south-florida"
+date: "2026-03-07"
+---
+
 # How Much Does a Concierge Medical Practice Make in South Florida?
 
 Every physician considering the switch to concierge medicine asks the same question first: *What will I actually make?*
