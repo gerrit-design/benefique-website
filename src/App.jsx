@@ -153,8 +153,64 @@ function Footer() {
 // HOME PAGE
 // ============================================================
 function Home() {
+  const localBusinessSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfessionalService',
+    'name': 'Benefique Tax & Accounting',
+    'description': 'Full-service accounting, tax planning, and fractional CFO services for healthcare practices and service businesses in South Florida.',
+    'url': 'https://www.benefique.com',
+    'logo': 'https://www.benefique.com/images/logo-full.jpg',
+    'image': 'https://www.benefique.com/images/logo-full.jpg',
+    'email': 'hello@benefique.com',
+    'address': {
+      '@type': 'PostalAddress',
+      'addressLocality': 'Davie',
+      'addressRegion': 'FL',
+      'postalCode': '33328',
+      'addressCountry': 'US'
+    },
+    'geo': {
+      '@type': 'GeoCoordinates',
+      'latitude': 26.0629,
+      'longitude': -80.2331
+    },
+    'areaServed': [
+      { '@type': 'City', 'name': 'Davie' },
+      { '@type': 'City', 'name': 'Fort Lauderdale' },
+      { '@type': 'City', 'name': 'Weston' },
+      { '@type': 'City', 'name': 'Plantation' },
+      { '@type': 'City', 'name': 'Miramar' },
+      { '@type': 'City', 'name': 'Hollywood' },
+      { '@type': 'City', 'name': 'Aventura' }
+    ],
+    'priceRange': '$$',
+    'openingHoursSpecification': {
+      '@type': 'OpeningHoursSpecification',
+      'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      'opens': '09:00',
+      'closes': '17:00'
+    },
+    'sameAs': [
+      'https://www.linkedin.com/company/benefique-tax-accounting/'
+    ],
+    'hasOfferCatalog': {
+      '@type': 'OfferCatalog',
+      'name': 'Accounting Services',
+      'itemListElement': [
+        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Full-Service Bookkeeping' } },
+        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Tax Preparation & Planning' } },
+        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Fractional CFO Services' } },
+        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Payroll Processing' } },
+        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': 'Real-Time Financial Dashboards' } }
+      ]
+    }
+  };
+
   return (
     <div>
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
+      </Helmet>
       {/* Hero */}
       <section className="bg-white py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4">
@@ -874,33 +930,53 @@ function About() {
 // BLOG PAGE
 // ============================================================
 function Blog() {
+  const [activeCategory, setActiveCategory] = React.useState('All');
+
   const posts = [
-    { title: 'How Concierge Physicians Can Build Wealth Beyond Their Practice', excerpt: 'A concierge physician earning $600K/year can accumulate $15-25M over 20 years with disciplined deployment across retirement plans, real estate, practice equity, and tax-efficient investments. Here\'s the complete wealth-building framework.', date: '2026-03-11', slug: 'concierge-physicians-build-wealth-beyond-practice', published: true },
-    { title: 'Tax Strategies for Concierge Physicians', excerpt: 'Eight tax strategies that save concierge physicians $50K-$150K per year: S-Corp optimization, retirement plan stacking, accountable plans, Augusta Rule, Section 179, family employment, entity structuring, and QBI planning.', date: '2026-03-10', slug: 'tax-strategies-concierge-physicians', published: true },
-    { title: 'Concierge Medicine vs Insurance-Based Practice: A Financial Comparison', excerpt: 'Side-by-side financial comparison of traditional, concierge, DPC, and hybrid practice models. Revenue, overhead, take-home pay, quality of life metrics, and transition planning for South Florida physicians.', date: '2026-03-09', slug: 'concierge-medicine-vs-insurance-practice-financial-comparison', published: true },
-    { title: 'The Real Cost of Starting a Concierge Medical Practice', excerpt: 'A concierge practice can launch for $100K-$175K in Broward County. Here\'s every startup cost, monthly recurring expense, South Florida lease benchmark, entity structure decision, and pre-launch checklist you need.', date: '2026-03-08', slug: 'cost-starting-concierge-medical-practice', published: true },
-    { title: 'How Much Does a Concierge Medical Practice Make in South Florida?', excerpt: 'Concierge physicians in South Florida earn $500K-$1M+ while seeing fewer patients and working fewer hours. Here\'s the complete revenue model, income comparison, overhead analysis, and tax strategy breakdown for Broward County practices.', date: '2026-03-07', slug: 'concierge-medicine-income-south-florida', published: true },
-    { title: '1099 vs. W-2 in Your Healthcare or Service Practice: The Classification Mistake That Could Cost You $50,000+', excerpt: 'The IRS and DOL are cracking down on worker misclassification in healthcare and professional services. Dental hygienists, associate physicians, therapists, IT contractors—if you\'re paying them on a 1099, you might owe back taxes, penalties, and benefits.', date: '2026-03-06', slug: '1099-vs-w2-worker-classification-healthcare-service-businesses-broward-county', published: true },
-    { title: 'Stop Doing Your Own Books: The Real Cost of DIY Bookkeeping', excerpt: 'DIY bookkeeping looks free until you count your time, missed deductions, and IRS penalties. Here\'s the real math for SE Florida business owners \u2014 and when it makes sense to hand it off.', date: '2026-03-04', slug: 'stop-doing-your-own-books', published: true },
-    { title: 'Real-Time Financial Dashboards for Healthcare Practices', excerpt: 'A real-time financial dashboard gives healthcare practice owners instant visibility into collection rates, AR aging, overhead ratio, DSO, and cash runway. Here are the 10 KPIs every practice should track, with benchmarks by specialty.', date: '2026-03-05', slug: 'real-time-financial-dashboards-healthcare-practices', published: true },
-    { title: 'How to Calculate Your Cash Conversion Cycle (Service Business & Healthcare Guide)', excerpt: 'The Cash Conversion Cycle measures how many days it takes to turn money you spend into cash you collect. For service businesses with no inventory, it simplifies to CCC = DSO - DPO. Lower is better.', date: '2026-03-04', slug: 'how-to-calculate-cash-conversion-cycle', published: true },
-    { title: 'How AI Cash Flow Forecasting Helps Small Businesses Stay 30 Days Ahead', excerpt: 'AI cash flow forecasting uses machine learning to analyze your transaction data, client payment patterns, and expenses to project your cash position 30-60 days forward. Here\'s how it works and why your accountant matters more than the software.', date: '2026-03-04', slug: 'ai-cash-flow-forecasting-small-business', published: true },
-    { title: '5 Ways to Improve Your DSO Without Sacrificing Relationships', excerpt: 'The average small business has $84,000 in unpaid invoices. Here are 5 proven strategies to collect faster without damaging client relationships -- from clear terms to smart segmentation.', date: '2026-03-03', slug: 'improve-dso-without-sacrificing-relationships', published: true },
-    { title: 'Why Monthly Reports Are Too Late for Cash Decisions', excerpt: 'Your monthly P&L arrives 3-4 weeks after the month ends. By then, you\'ve already made the decisions it should have informed. Here\'s what real-time visibility looks like.', date: '2026-03-03', slug: 'why-monthly-reports-too-late', published: true },
-    { title: 'AI-Powered Cash Flow Intelligence: How Real-Time Data Fixes Your Biggest Business Problem', excerpt: 'Your biggest business problem isn\'t profit. It\'s cash flow. Discover how AI-powered data synthesis and real-time financial intelligence give SMB owners Fortune 500-level visibility into cash conversion cycles, working capital, and the metrics that actually control their cash position.', date: '2026-03-01', slug: 'ai-powered-cash-flow-intelligence', published: true },
-    { title: 'S-Corp Reasonable Compensation: How Much Should You Pay Yourself (And Why Getting It Wrong Costs More Than You Think)', excerpt: '73% of S-Corp audits focus on reasonable compensation. Pay yourself too little and the IRS reclassifies your distributions as wages. Pay yourself too much and you\'re overpaying FICA by thousands. Here\'s the definitive guide to finding your optimal salary.', date: '2026-02-27', slug: 's-corp-reasonable-compensation-healthcare-service-businesses-broward-county', published: true },
-    { title: '7 Tax Deductions Your Broward County Practice Is Probably Missing (And the Dollar Amount of Each)', excerpt: 'The average medical practice overpays $15,000-$50,000 annually in taxes from missed deductions. From accountable plans to the Augusta Rule to retirement plan stacking—here are 7 deductions most Broward County practice owners don\'t know about.', date: '2026-02-26', slug: 'missed-tax-deductions-healthcare-service-businesses-broward-county', published: true },
-    { title: '2026 Tax Law Changes: What Every Broward County Practice Owner Needs to Know', excerpt: 'The One Big Beautiful Bill Act changed everything: 100% bonus depreciation is back, Section 179 jumped to $2.56M, QBI is permanent, and the dependent care FSA doubled to $7,500. Here\'s what Broward County practice owners and service business operators need to do before year-end.', date: '2026-02-26', slug: '2026-tax-law-changes-broward-county-healthcare-service-businesses', published: true },
-    { title: 'Why Your Broward County Practice Is Profitable on Paper but Can\'t Make Payroll', excerpt: 'Medical practices wait 30-90 days for insurance reimbursement. Service firms chase invoices for months. Learn how Davie-based Benefique helps healthcare and professional services businesses across Broward County fix cash flow, collect faster, and stop running out of money.', date: '2026-02-26', slug: 'cash-flow-management-healthcare-service-businesses-broward-county', published: true },
-    { title: 'Case Study: Real-Time Collections Intelligence System for Multi-Center Radiology Group', excerpt: 'How we built interactive dashboards that identified a 30% revenue decline, eliminated the \'seasonality excuse,\' and quantified a multi-million dollar A/R crisis for a six-center diagnostic imaging group.', date: '2026-02-23', slug: 'radiology-collections-dashboard-case-study', published: true },
-    { title: 'Davie Accounting Services for Healthcare Practices & Service-Based Businesses', excerpt: 'Expert accounting services in Davie, FL for healthcare practices (radiology, surgery, dental, vet, pain clinics) and service businesses (law, marine, IT). Real-time reporting, monthly closes, 24-hour response.', date: '2026-02-12', slug: 'davie-accounting-services', published: true },
-    { title: 'R&D Tax Credits: Hidden Money for Healthcare Practices', excerpt: "Many healthcare businesses miss out on significant R&D credits. Here's how to identify and claim them.", date: '2026-02-05', slug: 'rd-tax-credits-healthcare', published: true },
-    { title: 'Real-Time Dashboards That Actually Get Used', excerpt: 'Most business owners ignore their financial reports because they\'re boring PDFs full of numbers. Here\'s how we designed dashboards that clients check daily—and why it matters.', date: '2026-01-31', slug: 'dashboards-that-get-used', published: true },
-    { title: 'S-Corp Election: Is It Right for Your Florida Business?', excerpt: 'S-Corp election can save Florida business owners $5K-$20K yearly in self-employment taxes—but only if your profit exceeds $100K. Learn when it makes sense and when it doesn\'t.', date: '2026-01-30', slug: 's-corp-election', published: true },
-    { title: 'Cash Flow Forecasting 101', excerpt: 'Learn cash flow forecasting for your small business with this practical guide. Get step-by-step instructions, free templates, and expert CFO guidance to predict and manage your cash flow.', date: '2026-01-30', slug: 'cash-flow-forecasting', published: true },
-    { title: 'December Financials: What to Review Before Year-End', excerpt: 'Key financial checkpoints every business owner should review before closing the books on the year.', date: '2026-10-15', slug: 'december-financials', published: false },
-    { title: 'Multi-Location Financial Management', excerpt: 'Best practices for businesses operating across multiple locations or entities.', date: '2025-08-05', slug: 'multi-location-management', published: false },
+    { title: 'How Concierge Physicians Can Build Wealth Beyond Their Practice', excerpt: 'A concierge physician earning $600K/year can accumulate $15-25M over 20 years with disciplined deployment across retirement plans, real estate, practice equity, and tax-efficient investments. Here\'s the complete wealth-building framework.', date: '2026-03-11', slug: 'concierge-physicians-build-wealth-beyond-practice', published: true, category: 'Concierge Medicine', readTime: '16 min' },
+    { title: 'Tax Strategies for Concierge Physicians', excerpt: 'Eight tax strategies that save concierge physicians $50K-$150K per year: S-Corp optimization, retirement plan stacking, accountable plans, Augusta Rule, Section 179, family employment, entity structuring, and QBI planning.', date: '2026-03-10', slug: 'tax-strategies-concierge-physicians', published: true, category: 'Tax Strategy', readTime: '20 min' },
+    { title: 'Concierge Medicine vs Insurance-Based Practice: A Financial Comparison', excerpt: 'Side-by-side financial comparison of traditional, concierge, DPC, and hybrid practice models. Revenue, overhead, take-home pay, quality of life metrics, and transition planning for South Florida physicians.', date: '2026-03-09', slug: 'concierge-medicine-vs-insurance-practice-financial-comparison', published: true, category: 'Concierge Medicine', readTime: '17 min' },
+    { title: 'The Real Cost of Starting a Concierge Medical Practice', excerpt: 'A concierge practice can launch for $100K-$175K in Broward County. Here\'s every startup cost, monthly recurring expense, South Florida lease benchmark, entity structure decision, and pre-launch checklist you need.', date: '2026-03-08', slug: 'cost-starting-concierge-medical-practice', published: true, category: 'Concierge Medicine', readTime: '16 min' },
+    { title: 'How Much Does a Concierge Medical Practice Make in South Florida?', excerpt: 'Concierge physicians in South Florida earn $500K-$1M+ while seeing fewer patients and working fewer hours. Here\'s the complete revenue model, income comparison, overhead analysis, and tax strategy breakdown for Broward County practices.', date: '2026-03-07', slug: 'concierge-medicine-income-south-florida', published: true, category: 'Concierge Medicine', readTime: '18 min' },
+    { title: '1099 vs. W-2 in Your Healthcare or Service Practice: The Classification Mistake That Could Cost You $50,000+', excerpt: 'The IRS and DOL are cracking down on worker misclassification in healthcare and professional services. Dental hygienists, associate physicians, therapists, IT contractors\u2014if you\'re paying them on a 1099, you might owe back taxes, penalties, and benefits.', date: '2026-03-06', slug: '1099-vs-w2-worker-classification-healthcare-service-businesses-broward-county', published: true, category: 'Tax Strategy', readTime: '24 min' },
+    { title: 'Stop Doing Your Own Books: The Real Cost of DIY Bookkeeping', excerpt: 'DIY bookkeeping looks free until you count your time, missed deductions, and IRS penalties. Here\'s the real math for SE Florida business owners \u2014 and when it makes sense to hand it off.', date: '2026-03-04', slug: 'stop-doing-your-own-books', published: true, category: 'Accounting', readTime: '10 min' },
+    { title: 'Real-Time Financial Dashboards for Healthcare Practices', excerpt: 'A real-time financial dashboard gives healthcare practice owners instant visibility into collection rates, AR aging, overhead ratio, DSO, and cash runway. Here are the 10 KPIs every practice should track, with benchmarks by specialty.', date: '2026-03-05', slug: 'real-time-financial-dashboards-healthcare-practices', published: true, category: 'Healthcare Finance', readTime: '15 min' },
+    { title: 'How to Calculate Your Cash Conversion Cycle (Service Business & Healthcare Guide)', excerpt: 'The Cash Conversion Cycle measures how many days it takes to turn money you spend into cash you collect. For service businesses with no inventory, it simplifies to CCC = DSO - DPO. Lower is better.', date: '2026-03-04', slug: 'how-to-calculate-cash-conversion-cycle', published: true, category: 'Cash Flow', readTime: '12 min' },
+    { title: 'How AI Cash Flow Forecasting Helps Small Businesses Stay 30 Days Ahead', excerpt: 'AI cash flow forecasting uses machine learning to analyze your transaction data, client payment patterns, and expenses to project your cash position 30-60 days forward. Here\'s how it works and why your accountant matters more than the software.', date: '2026-03-04', slug: 'ai-cash-flow-forecasting-small-business', published: true, category: 'Cash Flow', readTime: '14 min' },
+    { title: '5 Ways to Improve Your DSO Without Sacrificing Relationships', excerpt: 'The average small business has $84,000 in unpaid invoices. Here are 5 proven strategies to collect faster without damaging client relationships -- from clear terms to smart segmentation.', date: '2026-03-03', slug: 'improve-dso-without-sacrificing-relationships', published: true, category: 'Cash Flow', readTime: '10 min' },
+    { title: 'Why Monthly Reports Are Too Late for Cash Decisions', excerpt: 'Your monthly P&L arrives 3-4 weeks after the month ends. By then, you\'ve already made the decisions it should have informed. Here\'s what real-time visibility looks like.', date: '2026-03-03', slug: 'why-monthly-reports-too-late', published: true, category: 'Accounting', readTime: '8 min' },
+    { title: 'AI-Powered Cash Flow Intelligence: How Real-Time Data Fixes Your Biggest Business Problem', excerpt: 'Your biggest business problem isn\'t profit. It\'s cash flow. Discover how AI-powered data synthesis and real-time financial intelligence give SMB owners Fortune 500-level visibility into cash conversion cycles, working capital, and the metrics that actually control their cash position.', date: '2026-03-01', slug: 'ai-powered-cash-flow-intelligence', published: true, category: 'Cash Flow', readTime: '12 min' },
+    { title: 'S-Corp Reasonable Compensation: How Much Should You Pay Yourself (And Why Getting It Wrong Costs More Than You Think)', excerpt: '73% of S-Corp audits focus on reasonable compensation. Pay yourself too little and the IRS reclassifies your distributions as wages. Pay yourself too much and you\'re overpaying FICA by thousands. Here\'s the definitive guide to finding your optimal salary.', date: '2026-02-27', slug: 's-corp-reasonable-compensation-healthcare-service-businesses-broward-county', published: true, category: 'Tax Strategy', readTime: '18 min' },
+    { title: '7 Tax Deductions Your Broward County Practice Is Probably Missing (And the Dollar Amount of Each)', excerpt: 'The average medical practice overpays $15,000-$50,000 annually in taxes from missed deductions. From accountable plans to the Augusta Rule to retirement plan stacking\u2014here are 7 deductions most Broward County practice owners don\'t know about.', date: '2026-02-26', slug: 'missed-tax-deductions-healthcare-service-businesses-broward-county', published: true, category: 'Tax Strategy', readTime: '22 min' },
+    { title: '2026 Tax Law Changes: What Every Broward County Practice Owner Needs to Know', excerpt: 'The One Big Beautiful Bill Act changed everything: 100% bonus depreciation is back, Section 179 jumped to $2.56M, QBI is permanent, and the dependent care FSA doubled to $7,500. Here\'s what Broward County practice owners and service business operators need to do before year-end.', date: '2026-02-26', slug: '2026-tax-law-changes-broward-county-healthcare-service-businesses', published: true, category: 'Tax Strategy', readTime: '26 min' },
+    { title: 'Why Your Broward County Practice Is Profitable on Paper but Can\'t Make Payroll', excerpt: 'Medical practices wait 30-90 days for insurance reimbursement. Service firms chase invoices for months. Learn how Davie-based Benefique helps healthcare and professional services businesses across Broward County fix cash flow, collect faster, and stop running out of money.', date: '2026-02-26', slug: 'cash-flow-management-healthcare-service-businesses-broward-county', published: true, category: 'Healthcare Finance', readTime: '22 min' },
+    { title: 'Case Study: Real-Time Collections Intelligence System for Multi-Center Radiology Group', excerpt: 'How we built interactive dashboards that identified a 30% revenue decline, eliminated the \'seasonality excuse,\' and quantified a multi-million dollar A/R crisis for a six-center diagnostic imaging group.', date: '2026-02-23', slug: 'radiology-collections-dashboard-case-study', published: true, category: 'Healthcare Finance', readTime: '15 min' },
+    { title: 'Davie Accounting Services for Healthcare Practices & Service-Based Businesses', excerpt: 'Expert accounting services in Davie, FL for healthcare practices (radiology, surgery, dental, vet, pain clinics) and service businesses (law, marine, IT). Real-time reporting, monthly closes, 24-hour response.', date: '2026-02-12', slug: 'davie-accounting-services', published: true, category: 'Accounting', readTime: '12 min' },
+    { title: 'R&D Tax Credits: Hidden Money for Healthcare Practices', excerpt: "Many healthcare businesses miss out on significant R&D credits. Here's how to identify and claim them.", date: '2026-02-05', slug: 'rd-tax-credits-healthcare', published: true, category: 'Tax Strategy', readTime: '10 min' },
+    { title: 'Real-Time Dashboards That Actually Get Used', excerpt: 'Most business owners ignore their financial reports because they\'re boring PDFs full of numbers. Here\'s how we designed dashboards that clients check daily\u2014and why it matters.', date: '2026-01-31', slug: 'dashboards-that-get-used', published: true, category: 'Accounting', readTime: '10 min' },
+    { title: 'S-Corp Election: Is It Right for Your Florida Business?', excerpt: 'S-Corp election can save Florida business owners $5K-$20K yearly in self-employment taxes\u2014but only if your profit exceeds $100K. Learn when it makes sense and when it doesn\'t.', date: '2026-01-30', slug: 's-corp-election', published: true, category: 'Tax Strategy', readTime: '15 min' },
+    { title: 'Cash Flow Forecasting 101', excerpt: 'Learn cash flow forecasting for your small business with this practical guide. Get step-by-step instructions, free templates, and expert CFO guidance to predict and manage your cash flow.', date: '2026-01-30', slug: 'cash-flow-forecasting', published: true, category: 'Cash Flow', readTime: '12 min' },
+    { title: 'December Financials: What to Review Before Year-End', excerpt: 'Key financial checkpoints every business owner should review before closing the books on the year.', date: '2026-10-15', slug: 'december-financials', published: false, category: 'Accounting', readTime: '8 min' },
+    { title: 'Multi-Location Financial Management', excerpt: 'Best practices for businesses operating across multiple locations or entities.', date: '2025-08-05', slug: 'multi-location-management', published: false, category: 'Accounting', readTime: '10 min' },
   ];
+
+  const publishedPosts = posts.filter(post => post.published);
+  const categories = ['All', ...Array.from(new Set(publishedPosts.map(p => p.category)))];
+  const filteredPosts = activeCategory === 'All' ? publishedPosts : publishedPosts.filter(p => p.category === activeCategory);
+  const [heroPost, ...remainingPosts] = filteredPosts;
+
+  const categoryColors = {
+    'Concierge Medicine': 'bg-purple-100 text-purple-700',
+    'Tax Strategy': 'bg-emerald-100 text-emerald-700',
+    'Cash Flow': 'bg-blue-100 text-blue-700',
+    'Healthcare Finance': 'bg-rose-100 text-rose-700',
+    'Accounting': 'bg-amber-100 text-amber-700',
+  };
+
+  const formatDate = (dateStr) => {
+    const d = new Date(dateStr + 'T00:00:00');
+    return d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+  };
 
   return (
     <div>
@@ -909,33 +985,103 @@ function Blog() {
         <meta name="description" content="Practical tax planning, bookkeeping, and financial strategy advice for healthcare practices and service businesses in Broward County and South Florida." />
         <link rel="canonical" href="https://www.benefique.com/blog" />
       </Helmet>
-      <section className="bg-white py-16">
+
+      {/* Header */}
+      <section className="bg-white py-12 md:py-16">
         <div className="max-w-6xl mx-auto px-4">
           <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
-            <span>📝</span> Blog
+            Blog
           </div>
-          <h1 className="text-4xl font-bold text-benefique-navy mb-4">Insights & Resources</h1>
-          <p className="text-xl text-gray-600">Practical advice on accounting, tax, and financial strategy</p>
+          <h1 className="text-4xl font-bold text-benefique-navy mb-3">Insights & Resources</h1>
+          <p className="text-xl text-gray-600 mb-8">Practical advice on tax strategy, cash flow, and healthcare finance for South Florida business owners.</p>
+
+          {/* Category Filters */}
+          <div className="flex flex-wrap gap-2">
+            {categories.map(cat => (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition ${
+                  activeCategory === cat
+                    ? 'bg-benefique-navy text-white'
+                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                }`}
+              >
+                {cat}{cat !== 'All' && ` (${publishedPosts.filter(p => p.category === cat).length})`}
+              </button>
+            ))}
+          </div>
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="space-y-6">
-            {posts.filter(post => post.published).map(post => (
-              <Link key={post.slug} to={`/blog/${post.slug}`} className="block">
-                <article className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-lg transition">
-                  <div className="text-sm text-gray-500 mb-2">{post.date}</div>
-                  <h2 className="text-xl font-bold text-benefique-navy mb-2 hover:text-benefique-orange transition">
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4">
+          {/* Hero Post */}
+          {heroPost && (
+            <Link to={`/blog/${heroPost.slug}`} className="block mb-10 group">
+              <article className="bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-xl transition md:flex">
+                <div className="md:w-2/5 bg-benefique-navy/5 flex items-center justify-center p-8 md:p-12">
+                  <div className="text-center">
+                    <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold mb-3 ${categoryColors[heroPost.category] || 'bg-gray-100 text-gray-700'}`}>
+                      {heroPost.category}
+                    </span>
+                    <div className="text-5xl md:text-6xl font-bold text-benefique-navy/10">
+                      {heroPost.readTime}
+                    </div>
+                    <div className="text-sm text-gray-400 mt-1">read</div>
+                  </div>
+                </div>
+                <div className="md:w-3/5 p-6 md:p-10 flex flex-col justify-center">
+                  <div className="flex items-center gap-3 text-sm text-gray-500 mb-3">
+                    <span>{formatDate(heroPost.date)}</span>
+                    <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
+                    <span>{heroPost.readTime} read</span>
+                  </div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-benefique-navy mb-4 group-hover:text-benefique-orange transition">
+                    {heroPost.title}
+                  </h2>
+                  <p className="text-gray-600 mb-6 line-clamp-3">{heroPost.excerpt}</p>
+                  <span className="text-benefique-orange font-semibold group-hover:underline">
+                    Read article →
+                  </span>
+                </div>
+              </article>
+            </Link>
+          )}
+
+          {/* Remaining Posts Grid */}
+          <div className="grid md:grid-cols-2 gap-6">
+            {remainingPosts.map(post => (
+              <Link key={post.slug} to={`/blog/${post.slug}`} className="block group">
+                <article className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-lg transition h-full flex flex-col">
+                  <div className="flex items-center justify-between mb-3">
+                    <span className={`inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold ${categoryColors[post.category] || 'bg-gray-100 text-gray-700'}`}>
+                      {post.category}
+                    </span>
+                    <span className="text-xs text-gray-400">{post.readTime} read</span>
+                  </div>
+                  <h2 className="text-lg font-bold text-benefique-navy mb-2 group-hover:text-benefique-orange transition leading-snug">
                     {post.title}
                   </h2>
-                  <p className="text-gray-600 mb-4">{post.excerpt}</p>
-                  <span className="text-benefique-orange font-medium hover:underline">
-                    Read more →
-                  </span>
+                  <p className="text-gray-600 text-sm mb-4 flex-1 line-clamp-3">{post.excerpt}</p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-gray-400">{formatDate(post.date)}</span>
+                    <span className="text-benefique-orange font-medium text-sm group-hover:underline">
+                      Read →
+                    </span>
+                  </div>
                 </article>
               </Link>
             ))}
+          </div>
+
+          {/* CTA */}
+          <div className="mt-12 text-center bg-white rounded-2xl p-8 border border-gray-100">
+            <h3 className="text-xl font-bold text-benefique-navy mb-2">Want advice specific to your business?</h3>
+            <p className="text-gray-600 mb-4">We help healthcare practices and service businesses across Broward County with tax strategy, cash flow, and financial clarity.</p>
+            <Link to="/contact" className="inline-block bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition">
+              Schedule a Consultation →
+            </Link>
           </div>
         </div>
       </section>
