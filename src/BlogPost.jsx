@@ -204,7 +204,7 @@ const blogPosts = {
   'cost-starting-concierge-medical-practice': {
     file: '/content/blogs/cost-starting-concierge-medical-practice.md',
     title: 'The Real Cost of Starting a Concierge Medical Practice',
-    date: '2026-03-07',
+    date: '2026-03-08',
     author: 'Gerrit Disbergen, EA',
     excerpt: 'A concierge practice can launch for $100K-$175K in Broward County. Here\'s every startup cost, monthly recurring expense, South Florida lease benchmark, entity structure decision, and pre-launch checklist you need.',
     categories: ['Concierge Medicine', 'Practice Startup', 'Tax Planning'],
@@ -219,7 +219,7 @@ const blogPosts = {
   'concierge-medicine-vs-insurance-practice-financial-comparison': {
     file: '/content/blogs/concierge-medicine-vs-insurance-practice-financial-comparison.md',
     title: 'Concierge Medicine vs Insurance-Based Practice: A Financial Comparison',
-    date: '2026-03-07',
+    date: '2026-03-09',
     author: 'Gerrit Disbergen, EA',
     excerpt: 'Side-by-side financial comparison of traditional, concierge, DPC, and hybrid practice models. Revenue, overhead, take-home pay, quality of life metrics, and transition planning for South Florida physicians.',
     categories: ['Concierge Medicine', 'Physician Finance', 'Practice Models'],
@@ -234,7 +234,7 @@ const blogPosts = {
   'tax-strategies-concierge-physicians': {
     file: '/content/blogs/tax-strategies-concierge-physicians.md',
     title: 'Tax Strategies for Concierge Physicians',
-    date: '2026-03-07',
+    date: '2026-03-10',
     author: 'Gerrit Disbergen, EA',
     excerpt: 'Eight tax strategies that save concierge physicians $50K-$150K per year: S-Corp optimization, retirement plan stacking, accountable plans, Augusta Rule, Section 179, family employment, entity structuring, and QBI planning.',
     categories: ['Tax Strategy', 'Concierge Medicine', 'Physician Finance'],
@@ -249,7 +249,7 @@ const blogPosts = {
   'concierge-physicians-build-wealth-beyond-practice': {
     file: '/content/blogs/concierge-physicians-build-wealth-beyond-practice.md',
     title: 'How Concierge Physicians Can Build Wealth Beyond Their Practice',
-    date: '2026-03-07',
+    date: '2026-03-11',
     author: 'Gerrit Disbergen, EA',
     excerpt: 'A concierge physician earning $600K/year can accumulate $15-25M over 20 years with disciplined deployment across retirement plans, real estate, practice equity, and tax-efficient investments. Here\'s the complete wealth-building framework.',
     categories: ['Wealth Building', 'Concierge Medicine', 'Physician Finance'],

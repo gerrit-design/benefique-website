@@ -1,36 +1,54 @@
 <svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#003057;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0052A3;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:0.15" />
-      <stop offset="100%" style="stop-color:#FF6B35;stop-opacity:0" />
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A4F4F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0D6B6B;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#grad1)"/>
-  <rect width="1200" height="630" fill="url(#grad2)"/>
-  <circle cx="80" cy="80" r="140" fill="#FF6B35" opacity="0.08"/>
-  <circle cx="1120" cy="550" r="180" fill="#FF6B35" opacity="0.08"/>
-  <g transform="translate(80, 160)">
-    <rect x="0" y="0" width="220" height="280" rx="12" fill="#FFFFFF" opacity="0.12"/>
-    <rect x="25" y="25" width="170" height="12" rx="4" fill="#FF6B35" opacity="0.7"/>
-    <rect x="25" y="55" width="80" height="40" rx="6" fill="#FFFFFF" opacity="0.15"/>
-    <text x="65" y="82" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle" opacity="0.7">LLC</text>
-    <rect x="115" y="55" width="80" height="40" rx="6" fill="#FFFFFF" opacity="0.15"/>
-    <text x="155" y="82" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle" opacity="0.7">EHR</text>
-    <rect x="25" y="110" width="170" height="8" rx="4" fill="#FFFFFF" opacity="0.25"/>
-    <rect x="25" y="130" width="130" height="8" rx="4" fill="#FFFFFF" opacity="0.25"/>
-    <rect x="25" y="160" width="170" height="50" rx="8" fill="#FF6B35" opacity="0.2"/>
-    <text x="110" y="192" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#FF6B35" text-anchor="middle">$100K-$175K</text>
-    <rect x="25" y="225" width="80" height="35" rx="6" fill="#FFFFFF" opacity="0.1"/>
-    <rect x="115" y="225" width="80" height="35" rx="6" fill="#FFFFFF" opacity="0.1"/>
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+  <!-- Accent stripe -->
+  <rect x="0" y="0" width="1200" height="6" fill="#2DD4A8"/>
+  <circle cx="1000" cy="100" r="250" fill="#2DD4A8" opacity="0.04"/>
+  <circle cx="150" cy="500" r="150" fill="#2DD4A8" opacity="0.04"/>
+  <!-- Checklist illustration -->
+  <g transform="translate(70, 120)">
+    <rect x="0" y="0" width="250" height="370" rx="16" fill="#FFFFFF" opacity="0.08"/>
+    <!-- Clipboard top -->
+    <rect x="80" y="-12" width="90" height="24" rx="8" fill="#2DD4A8" opacity="0.6"/>
+    <!-- Checklist items -->
+    <rect x="30" y="40" width="22" height="22" rx="4" fill="#2DD4A8" opacity="0.7"/>
+    <text x="41" y="57" font-family="Arial, sans-serif" font-size="16" fill="#FFFFFF" text-anchor="middle">&#10003;</text>
+    <rect x="65" y="44" width="140" height="10" rx="4" fill="#FFFFFF" opacity="0.25"/>
+    <text x="66" y="53" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF" opacity="0.5">Entity Formation</text>
+
+    <rect x="30" y="85" width="22" height="22" rx="4" fill="#2DD4A8" opacity="0.7"/>
+    <text x="41" y="102" font-family="Arial, sans-serif" font-size="16" fill="#FFFFFF" text-anchor="middle">&#10003;</text>
+    <rect x="65" y="89" width="120" height="10" rx="4" fill="#FFFFFF" opacity="0.25"/>
+    <text x="66" y="98" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF" opacity="0.5">Office Buildout</text>
+
+    <rect x="30" y="130" width="22" height="22" rx="4" fill="#2DD4A8" opacity="0.7"/>
+    <text x="41" y="147" font-family="Arial, sans-serif" font-size="16" fill="#FFFFFF" text-anchor="middle">&#10003;</text>
+    <rect x="65" y="134" width="150" height="10" rx="4" fill="#FFFFFF" opacity="0.25"/>
+    <text x="66" y="143" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF" opacity="0.5">EHR &amp; Technology</text>
+
+    <rect x="30" y="175" width="22" height="22" rx="4" fill="#FFFFFF" opacity="0.15"/>
+    <rect x="65" y="179" width="130" height="10" rx="4" fill="#FFFFFF" opacity="0.15"/>
+
+    <rect x="30" y="220" width="22" height="22" rx="4" fill="#FFFFFF" opacity="0.15"/>
+    <rect x="65" y="224" width="110" height="10" rx="4" fill="#FFFFFF" opacity="0.15"/>
+
+    <!-- Total badge -->
+    <rect x="25" y="275" width="200" height="60" rx="12" fill="#2DD4A8" opacity="0.15"/>
+    <text x="125" y="303" font-family="Arial, sans-serif" font-size="14" fill="#2DD4A8" text-anchor="middle">TOTAL STARTUP</text>
+    <text x="125" y="325" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2DD4A8" text-anchor="middle">$100K - $175K</text>
   </g>
-  <text x="370" y="230" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#FFFFFF">Startup Cost Guide:</text>
-  <text x="370" y="290" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#FFFFFF">Concierge Practice</text>
-  <text x="370" y="350" font-family="Arial, sans-serif" font-size="26" fill="#B3D4FF">Every cost, benchmark, and checklist</text>
-  <text x="370" y="385" font-family="Arial, sans-serif" font-size="26" fill="#B3D4FF">for launching in South Florida</text>
-  <text x="370" y="540" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#FF6B35">BENEFIQUE TAX &amp; ACCOUNTING</text>
-  <text x="370" y="565" font-family="Arial, sans-serif" font-size="14" fill="#B3D4FF">Davie, FL | Broward County</text>
+  <!-- Text -->
+  <text x="390" y="210" font-family="Georgia, serif" font-size="50" font-weight="bold" fill="#FFFFFF">Startup Cost Guide</text>
+  <text x="390" y="275" font-family="Georgia, serif" font-size="42" font-weight="bold" fill="#2DD4A8">Concierge Practice</text>
+  <text x="390" y="340" font-family="Arial, sans-serif" font-size="24" fill="#8CC5B8">Every cost, lease benchmark,</text>
+  <text x="390" y="373" font-family="Arial, sans-serif" font-size="24" fill="#8CC5B8">and pre-launch checklist for</text>
+  <text x="390" y="406" font-family="Arial, sans-serif" font-size="24" fill="#8CC5B8">Broward County physicians</text>
+  <!-- Branding -->
+  <text x="390" y="540" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#2DD4A8">BENEFIQUE TAX &amp; ACCOUNTING</text>
+  <text x="390" y="565" font-family="Arial, sans-serif" font-size="14" fill="#8CC5B8">Davie, FL | Broward County</text>
 </svg>

@@ -1,33 +1,45 @@
 <svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#003057;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0052A3;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:0.15" />
-      <stop offset="100%" style="stop-color:#FF6B35;stop-opacity:0" />
+      <stop offset="100%" style="stop-color:#00426E;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#grad1)"/>
-  <rect width="1200" height="630" fill="url(#grad2)"/>
-  <circle cx="80" cy="80" r="140" fill="#FF6B35" opacity="0.08"/>
-  <circle cx="1120" cy="550" r="180" fill="#FF6B35" opacity="0.08"/>
-  <g transform="translate(80, 160)">
-    <rect x="0" y="0" width="220" height="280" rx="12" fill="#FFFFFF" opacity="0.12"/>
-    <text x="110" y="80" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#FF6B35" text-anchor="middle" opacity="0.9">$</text>
-    <rect x="30" y="110" width="160" height="8" rx="4" fill="#FFFFFF" opacity="0.3"/>
-    <rect x="30" y="130" width="120" height="8" rx="4" fill="#FFFFFF" opacity="0.3"/>
-    <rect x="30" y="150" width="140" height="8" rx="4" fill="#FFFFFF" opacity="0.3"/>
-    <rect x="30" y="185" width="70" height="30" rx="6" fill="#FF6B35" opacity="0.7"/>
-    <rect x="110" y="185" width="70" height="30" rx="6" fill="#FFFFFF" opacity="0.15"/>
-    <rect x="30" y="230" width="70" height="30" rx="6" fill="#FFFFFF" opacity="0.15"/>
-    <rect x="110" y="230" width="70" height="30" rx="6" fill="#FF6B35" opacity="0.5"/>
+  <rect width="1200" height="630" fill="url(#bg1)"/>
+  <!-- Gold accent band -->
+  <rect x="0" y="580" width="1200" height="50" fill="#C9912B" opacity="0.15"/>
+  <rect x="0" y="0" width="8" height="630" fill="#C9912B" opacity="0.6"/>
+  <!-- Decorative circles -->
+  <circle cx="950" cy="120" r="200" fill="#C9912B" opacity="0.06"/>
+  <circle cx="1050" cy="450" r="120" fill="#C9912B" opacity="0.04"/>
+  <!-- Revenue chart illustration -->
+  <g transform="translate(70, 130)">
+    <rect x="0" y="0" width="260" height="340" rx="16" fill="#FFFFFF" opacity="0.08"/>
+    <!-- Chart axes -->
+    <line x1="40" y1="290" x2="240" y2="290" stroke="#FFFFFF" stroke-width="2" opacity="0.25"/>
+    <line x1="40" y1="50" x2="40" y2="290" stroke="#FFFFFF" stroke-width="2" opacity="0.25"/>
+    <!-- Bar chart -->
+    <rect x="60" y="200" width="35" height="90" rx="4" fill="#FFFFFF" opacity="0.2"/>
+    <text x="77" y="195" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF" text-anchor="middle" opacity="0.5">$280K</text>
+    <rect x="110" y="120" width="35" height="170" rx="4" fill="#C9912B" opacity="0.5"/>
+    <text x="127" y="115" font-family="Arial, sans-serif" font-size="11" fill="#C9912B" text-anchor="middle">$600K</text>
+    <rect x="160" y="70" width="35" height="220" rx="4" fill="#C9912B" opacity="0.8"/>
+    <text x="177" y="65" font-family="Arial, sans-serif" font-size="11" fill="#C9912B" text-anchor="middle">$1M+</text>
+    <!-- Labels -->
+    <text x="77" y="310" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF" text-anchor="middle" opacity="0.5">Trad.</text>
+    <text x="127" y="310" font-family="Arial, sans-serif" font-size="10" fill="#C9912B" text-anchor="middle">DPC</text>
+    <text x="177" y="310" font-family="Arial, sans-serif" font-size="10" fill="#C9912B" text-anchor="middle">Concierge</text>
+    <!-- Dollar badge -->
+    <circle cx="220" cy="50" r="28" fill="#C9912B" opacity="0.9"/>
+    <text x="220" y="58" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF" text-anchor="middle">$</text>
   </g>
-  <text x="370" y="230" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#FFFFFF">Concierge Medicine</text>
-  <text x="370" y="290" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#FFFFFF">Income Guide</text>
-  <text x="370" y="350" font-family="Arial, sans-serif" font-size="26" fill="#B3D4FF">How much do concierge physicians</text>
-  <text x="370" y="385" font-family="Arial, sans-serif" font-size="26" fill="#B3D4FF">make in South Florida?</text>
-  <text x="370" y="540" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#FF6B35">BENEFIQUE TAX &amp; ACCOUNTING</text>
-  <text x="370" y="565" font-family="Arial, sans-serif" font-size="14" fill="#B3D4FF">Davie, FL | Broward County</text>
+  <!-- Text -->
+  <text x="400" y="220" font-family="Georgia, serif" font-size="52" font-weight="bold" fill="#FFFFFF">Concierge Medicine</text>
+  <text x="400" y="285" font-family="Georgia, serif" font-size="52" font-weight="bold" fill="#C9912B">Income Guide</text>
+  <text x="400" y="345" font-family="Arial, sans-serif" font-size="24" fill="#8BADC9">Revenue models, tax strategy,</text>
+  <text x="400" y="378" font-family="Arial, sans-serif" font-size="24" fill="#8BADC9">and income benchmarks for</text>
+  <text x="400" y="411" font-family="Arial, sans-serif" font-size="24" fill="#8BADC9">South Florida physicians</text>
+  <!-- Branding -->
+  <text x="400" y="540" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#C9912B">BENEFIQUE TAX &amp; ACCOUNTING</text>
+  <text x="400" y="565" font-family="Arial, sans-serif" font-size="14" fill="#8BADC9">Davie, FL | Broward County</text>
 </svg>

@@ -1,37 +1,40 @@
 <svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#003057;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0052A3;stop-opacity:1" />
-    </linearGradient>
-    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:0.15" />
-      <stop offset="100%" style="stop-color:#FF6B35;stop-opacity:0" />
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B0A3C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2D1B69;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#grad1)"/>
-  <rect width="1200" height="630" fill="url(#grad2)"/>
-  <circle cx="80" cy="80" r="140" fill="#FF6B35" opacity="0.08"/>
-  <circle cx="1120" cy="550" r="180" fill="#FF6B35" opacity="0.08"/>
-  <g transform="translate(80, 160)">
-    <rect x="0" y="0" width="220" height="280" rx="12" fill="#FFFFFF" opacity="0.12"/>
-    <rect x="20" y="20" width="180" height="14" rx="4" fill="#FF6B35" opacity="0.7"/>
-    <rect x="20" y="50" width="80" height="50" rx="8" fill="#FFFFFF" opacity="0.12"/>
-    <text x="60" y="82" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle" opacity="0.6">S-Corp</text>
-    <rect x="110" y="50" width="90" height="50" rx="8" fill="#FFFFFF" opacity="0.12"/>
-    <text x="155" y="82" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle" opacity="0.6">401k</text>
-    <rect x="20" y="115" width="80" height="50" rx="8" fill="#FFFFFF" opacity="0.12"/>
-    <text x="60" y="147" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle" opacity="0.6">QBI</text>
-    <rect x="110" y="115" width="90" height="50" rx="8" fill="#FF6B35" opacity="0.3"/>
-    <text x="155" y="147" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle" opacity="0.8">CBP</text>
-    <rect x="20" y="185" width="180" height="70" rx="8" fill="#FF6B35" opacity="0.15"/>
-    <text x="110" y="215" font-family="Arial, sans-serif" font-size="16" fill="#B3D4FF" text-anchor="middle">SAVINGS</text>
-    <text x="110" y="242" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FF6B35" text-anchor="middle">$50K-$150K/yr</text>
+  <rect width="1200" height="630" fill="url(#bg4)"/>
+  <!-- Accent elements -->
+  <rect x="0" y="620" width="1200" height="10" fill="#A855F7" opacity="0.3"/>
+  <circle cx="1050" cy="150" r="180" fill="#A855F7" opacity="0.04"/>
+  <circle cx="100" cy="550" r="120" fill="#A855F7" opacity="0.04"/>
+  <!-- Shield / Tax protection illustration -->
+  <g transform="translate(80, 120)">
+    <!-- Shield shape -->
+    <path d="M120,0 L240,50 L240,180 C240,260 120,340 120,340 C120,340 0,260 0,180 L0,50 Z" fill="#A855F7" opacity="0.12" stroke="#A855F7" stroke-width="2" opacity="0.3"/>
+    <!-- Inner strategies -->
+    <rect x="35" y="70" width="170" height="32" rx="6" fill="#A855F7" opacity="0.2"/>
+    <text x="120" y="92" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle" opacity="0.8">S-Corp Election</text>
+    <rect x="35" y="115" width="170" height="32" rx="6" fill="#A855F7" opacity="0.2"/>
+    <text x="120" y="137" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle" opacity="0.8">Cash Balance Plan</text>
+    <rect x="35" y="160" width="170" height="32" rx="6" fill="#A855F7" opacity="0.2"/>
+    <text x="120" y="182" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle" opacity="0.8">Augusta Rule</text>
+    <rect x="35" y="205" width="170" height="32" rx="6" fill="#A855F7" opacity="0.2"/>
+    <text x="120" y="227" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle" opacity="0.8">Section 179</text>
+    <!-- Savings callout -->
+    <rect x="20" y="270" width="200" height="50" rx="10" fill="#A855F7" opacity="0.3"/>
+    <text x="120" y="295" font-family="Arial, sans-serif" font-size="14" fill="#E9D5FF" text-anchor="middle">SAVE</text>
+    <text x="120" y="315" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#A855F7" text-anchor="middle">$50K-$150K/yr</text>
   </g>
-  <text x="370" y="230" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#FFFFFF">Tax Strategies for</text>
-  <text x="370" y="290" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#FFFFFF">Concierge Physicians</text>
-  <text x="370" y="350" font-family="Arial, sans-serif" font-size="26" fill="#B3D4FF">8 strategies that save $50K-$150K</text>
-  <text x="370" y="385" font-family="Arial, sans-serif" font-size="26" fill="#B3D4FF">per year in taxes</text>
-  <text x="370" y="540" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#FF6B35">BENEFIQUE TAX &amp; ACCOUNTING</text>
-  <text x="370" y="565" font-family="Arial, sans-serif" font-size="14" fill="#B3D4FF">Davie, FL | Broward County</text>
+  <!-- Text -->
+  <text x="400" y="220" font-family="Georgia, serif" font-size="50" font-weight="bold" fill="#FFFFFF">Tax Strategies</text>
+  <text x="400" y="285" font-family="Georgia, serif" font-size="42" font-weight="bold" fill="#A855F7">for Concierge</text>
+  <text x="400" y="340" font-family="Georgia, serif" font-size="42" font-weight="bold" fill="#A855F7">Physicians</text>
+  <text x="400" y="400" font-family="Arial, sans-serif" font-size="24" fill="#B8A5D4">8 proven strategies to reduce</text>
+  <text x="400" y="433" font-family="Arial, sans-serif" font-size="24" fill="#B8A5D4">your tax burden by six figures</text>
+  <!-- Branding -->
+  <text x="400" y="540" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#A855F7">BENEFIQUE TAX &amp; ACCOUNTING</text>
+  <text x="400" y="565" font-family="Arial, sans-serif" font-size="14" fill="#B8A5D4">Davie, FL | Broward County</text>
 </svg>
