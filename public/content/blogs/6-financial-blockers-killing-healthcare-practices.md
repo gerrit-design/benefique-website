@@ -212,3 +212,4 @@ Look for someone who combines three things: tax expertise (so cash decisions con
 ---
 
 *Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances. All practice examples are anonymized composites based on real client data; identifying details have been changed.*
+
