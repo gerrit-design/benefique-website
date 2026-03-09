@@ -6,6 +6,22 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  '5-cash-leaks-service-business': {
+    file: '/content/blogs/5-cash-leaks-service-business.md',
+    title: 'The 5 Cash Leaks Hiding in Every Service Business',
+    date: '2026-03-08',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'We analyzed a multi-entity service business doing $6.4M/year. Profitable by every measure. But $370K was trapped in five places the owners never thought to look. Here are the five leaks \u2014 and how to plug each one in 90 days.',
+    categories: ['Cash Flow', 'CFO Services'],
+    readTime: '12 min read',
+    featuredImage: '/images/blog/5-cash-leaks-service-business.jpg',
+    faqs: [
+      { q: 'How do I know if my business has cash leaks?', a: 'If your P&L shows a profit but your bank balance feels tight, you have cash leaks. Compare your net income to actual cash from operations \u2014 if cash from operations is significantly lower, money is trapped in receivables, inventory, intercompany balances, or distributions that exceed cash generation.' },
+      { q: 'Which cash leak should I fix first?', a: 'Start with past-due receivables \u2014 implementing automated reminders costs nothing, requires no partner negotiations, and can produce collections within weeks. Intercompany settlements are often the second-fastest win.' },
+      { q: 'How long does it take to see results from plugging cash leaks?', a: 'Receivables and intercompany settlements can show results within 30 days. Inventory reduction takes 60-90 days. Most businesses see meaningful cash improvement within the first 60 days if they commit to the process.' },
+      { q: 'Do these problems only affect large businesses?', a: 'No. A $50K cash leak in a $2M business is 2.5% of revenue \u2014 the difference between making payroll comfortably and sweating every Friday. Smaller businesses are more vulnerable because they have less margin for error.' }
+    ]
+  },
   '6-financial-blockers-killing-healthcare-practices': {
     file: '/content/blogs/6-financial-blockers-killing-healthcare-practices.md',
     title: 'The 6 Financial Blockers Killing Healthcare Practices',
@@ -34,6 +50,40 @@ const blogPosts = {
       { q: 'How long does it take to move from one financial phase to the next?', a: 'A Phase 1 practice with clean revenue and messy books can reach Phase 2 in 60-90 days. A Phase 2 practice with compounding expense and debt issues may take 12-18 months to reach Phase 3. Practices with continuous financial visibility typically advance 2-3x faster.' },
       { q: 'How much cash reserves should a healthcare practice maintain?', a: 'The minimum target is 60-90 days of operating expenses. Phase 3 practices typically hold 3-6 months. The right answer depends on revenue volatility, payer mix, and debt obligations.' },
       { q: 'Why do multi-location practices often struggle financially despite high revenue?', a: 'Multi-location expansion multiplies fixed costs while revenue at new locations takes 6-18 months to mature. Without per-location P&L tracking, profitable locations subsidize unprofitable ones invisibly, masking problems for quarters until cash flow deteriorates.' }
+    ]
+  },
+  'pl-says-profitable-bank-account-empty': {
+    file: '/content/blogs/pl-says-profitable-bank-account-empty.md',
+    title: 'Your P&L Says You\'re Profitable \u2014 So Why Is Your Bank Account Empty?',
+    date: '2026-03-08',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A $6.4M service business showed $454K in EBITDA. Healthy, right? But the owners were pulling $402K in distributions and paying $199K in debt service. That\'s $601K in obligations against $454K in earnings \u2014 a $147K annual cash deficit hidden behind a profitable P&L.',
+    categories: ['Cash Flow', 'CFO Services'],
+    readTime: '12 min read',
+    featuredImage: '/images/blog/pl-profitable-bank-account-empty.jpg',
+    faqs: [
+      { q: 'Why is my business profitable but I have no cash?', a: 'Because profit is an accounting measurement and cash is a bank balance. They diverge because of four things the P&L doesn\'t capture: working capital changes, loan principal payments, owner draws/distributions, and capital expenditures.' },
+      { q: 'What is the EBITDA-to-cash waterfall?', a: 'It\'s a bridge that starts with your EBITDA and subtracts every non-P&L cash outflow \u2014 working capital changes, debt service, distributions, taxes paid, and CapEx \u2014 to arrive at your actual ending cash position.' },
+      { q: 'How much should business owners take in distributions?', a: 'The safe threshold is 60% of trailing twelve-month cash from operations. Not 60% of profit \u2014 60% of actual operating cash flow. This leaves a 40% buffer for debt service, CapEx, working capital fluctuations, and reserves.' },
+      { q: 'What is a healthy Cash Conversion Cycle for service businesses?', a: 'For service businesses in the $2M-$15M range, a healthy CCC is 45 to 75 days. Distribution businesses should target 60 to 90 days. If your CCC exceeds 100 days, you\'re financing your customers\' cash flow at your own expense.' },
+      { q: 'Should I look at net income or cash flow to evaluate my business?', a: 'Both, but never net income alone. Net income tells you whether your pricing and cost structure work. Cash flow tells you whether you can sustain operations, service debt, and compensate owners.' }
+    ]
+  },
+  'hidden-cost-not-tracking-wip': {
+    file: '/content/blogs/hidden-cost-not-tracking-wip.md',
+    title: 'The Hidden Cost of Not Tracking Work-in-Progress',
+    date: '2026-03-08',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A service business bills $80K/month. But $45K in labor and materials sits unbilled and invisible \u2014 not on the P&L, not on the balance sheet. Without WIP tracking, your financials are fiction.',
+    categories: ['Accounting'],
+    readTime: '10 min read',
+    featuredImage: '/images/blog/wip-tracking-service-business.jpg',
+    faqs: [
+      { q: 'What types of businesses need WIP tracking?', a: 'Any business where work is performed before invoicing \u2014 engineering firms, architects, IT consultancies, marketing agencies, construction, healthcare staffing, legal practices, and accounting firms. If your billing cycle is longer than a week and project values exceed $10K, WIP tracking will meaningfully improve your financial accuracy.' },
+      { q: 'Does WIP tracking require special software?', a: 'No. A well-structured spreadsheet updated weekly works for businesses under $5M in revenue with fewer than 20 active projects. Above that, job costing modules in QuickBooks Online, Xero, or dedicated tools like Knowify or BigTime make it more efficient.' },
+      { q: 'How does WIP affect my taxes?', a: 'For long-term contracts, IRC Section 460 generally requires the percentage-of-completion method for tax reporting. Even for shorter contracts, the IRS expects consistent revenue recognition. Under ASC 606, GAAP requires revenue recognition when performance obligations are satisfied, not when invoices are sent.' },
+      { q: 'How often should WIP be updated?', a: 'Weekly is ideal. Monthly is the minimum. At the weekly level, you can catch cost overruns on active projects before they compound. If your average project length is under 30 days, monthly updates may be adequate. Over 30 days, weekly is strongly recommended.' },
+      { q: 'What is the difference between WIP and accounts receivable?', a: 'Accounts receivable is work that has been billed but not yet paid. WIP is work that has been performed but not yet billed. They are sequential: work moves from WIP (unbilled) to AR (billed, awaiting payment) to cash (collected).' }
     ]
   },
   'stop-doing-your-own-books': {
