@@ -756,54 +756,108 @@ function About() {
     <div>
       <Helmet>
         <title>About Gerrit Disbergen, EA | Benefique Tax & Accounting | Davie, FL</title>
-        <meta name="description" content="Meet Gerrit Disbergen, Enrolled Agent and founder of Benefique Tax & Accounting. Serving healthcare practices and service businesses across Broward County." />
+        <meta name="description" content="Institutional-grade financial intelligence for SMBs. Founded by Gerrit Disbergen, EA — Ernst & Young and Merrill Lynch alumni — Benefique combines AI-powered analysis with hands-on tax and CFO advisory." />
         <link rel="canonical" href="https://www.benefique.com/about" />
       </Helmet>
       {/* Header */}
       <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-4">
           <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
-            <span>👋</span> About Us
+            About Us
           </div>
-          <h1 className="text-4xl font-bold text-benefique-navy mb-4">About Benefique</h1>
-          <p className="text-xl text-gray-600">History matters, but preparation wins.</p>
+          <h1 className="text-4xl font-bold text-benefique-navy mb-4">Institutional-Grade Financial Intelligence. Built for SMBs.</h1>
+          <p className="text-xl text-gray-600 max-w-3xl">We don't just record what happened. We show you what's happening, what it means, and what to do about it — in real time.</p>
         </div>
       </section>
 
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4">
-          {/* Philosophy */}
+          {/* The Founder */}
           <div className="bg-white rounded-2xl p-8 border border-gray-100 mb-8">
-            <h2 className="text-2xl font-bold text-benefique-navy mb-4">Our Philosophy</h2>
+            <h2 className="text-2xl font-bold text-benefique-navy mb-4">The Founder</h2>
             <p className="text-gray-600 mb-4">
-              Most accounting firms look backward. They tell you what happened last year, last quarter, 
-              last month. That's history. Important, but not enough.
+              <strong className="text-benefique-navy">Gerrit Disbergen, EA</strong> spent the early part of his career at
+              Ernst & Young and Merrill Lynch before founding a public financial services company that executed
+              technology IPOs, mergers, and acquisitions. That world — institutional finance, capital markets,
+              complex deal structures — shaped how he thinks about business numbers.
             </p>
             <p className="text-gray-600 mb-4">
-              At Benefique, we believe financial data should drive decisions, not just document them. 
-              Real-time books. Monthly closes by the 7th. Dashboards that answer questions before you ask them.
+              After emigrating to the United States, Gerrit made a deliberate choice: apply that institutional-grade
+              financial expertise to the businesses that need it most but have never had access to it — small and
+              mid-sized companies run by founders who wear every hat.
+            </p>
+            <p className="text-gray-600 mb-4">
+              The financial function is always one of the most important — and always the most neglected.
+              Founders build the product, close the deals, manage the team. The books fall behind. Tax strategy
+              becomes an afterthought. Cash decisions get made on gut feel because the data arrives weeks too late.
             </p>
             <p className="text-gray-600">
-              We specialize in <Link to="/testimonials" className="text-benefique-orange hover:underline font-medium">healthcare and service-based SMBs</Link> because 
-              we understand the unique challenges—complex billing, multi-location operations, seasonal fluctuations, regulatory requirements.
+              Benefique was built to fix that.
             </p>
           </div>
 
-          {/* What Makes Us Different */}
+          {/* The Problem We Saw */}
           <div className="bg-white rounded-2xl p-8 border border-gray-100 mb-8">
-            <h2 className="text-2xl font-bold text-benefique-navy mb-6">What Makes Us Different</h2>
-            <div className="grid md:grid-cols-2 gap-4">
-              {[
-                { title: 'Books Closed by the 7th', desc: 'Your books are closed by the 7th, review call by the 10th. No waiting.' },
-                { title: '24-Hour Response', desc: 'Questions get answers within one business day. Always.' },
-                { title: 'Decision-Ready Dashboards', desc: 'Not just numbers—insights you can act on immediately.' },
-                { title: 'Proactive Planning', desc: 'We find opportunities before they become emergencies.' },
-              ].map(item => (
-                <div key={item.title} className="bg-gray-50 rounded-xl p-4">
-                  <h3 className="font-semibold text-benefique-navy mb-2">{item.title}</h3>
-                  <p className="text-gray-600 text-sm">{item.desc}</p>
-                </div>
-              ))}
+            <h2 className="text-2xl font-bold text-benefique-navy mb-4">The Problem We Saw</h2>
+            <p className="text-gray-600 mb-4">
+              Traditional accounting firms that serve SMBs are volume-driven. They manage hundreds of clients.
+              Your monthly P&L arrives 3-4 weeks after the month ends. Tax "strategy" is a sentence in a cover letter.
+              The relationship is transactional: you send documents, they file returns, you hear from them next year.
+            </p>
+            <p className="text-gray-600 mb-4">
+              That model made sense when financial data was hard to access, slow to process, and expensive to analyze.
+              It doesn't make sense anymore.
+            </p>
+            <p className="text-gray-600">
+              AI and direct API integration have changed what's possible. The same depth of financial analysis
+              that a Fortune 500 company gets from a dedicated FP&A department — trailing twelve-month ratios,
+              breakeven modeling, expense benchmarking, cash flow forecasting, balance sheet trend analysis — is
+              now possible for a practice doing $1.5M in revenue. Benefique was designed from the ground up
+              around this shift.
+            </p>
+          </div>
+
+          {/* How We're Different */}
+          <div className="bg-white rounded-2xl p-8 border border-gray-100 mb-8">
+            <h2 className="text-2xl font-bold text-benefique-navy mb-6">How We're Different</h2>
+            <div className="space-y-6">
+              <div className="border-l-4 border-benefique-orange pl-6">
+                <h3 className="font-bold text-benefique-navy text-lg mb-2">We analyze, not just record</h3>
+                <p className="text-gray-600 text-sm">
+                  We pull your data directly from QuickBooks via API, run AI-powered analysis across
+                  multiple dimensions — profitability, cash flow, cost structure, benchmarking — and deliver
+                  CFO-level intelligence through interactive dashboards. Not PDFs. Not spreadsheets.
+                  Real-time visibility into what's actually driving your business.
+                </p>
+              </div>
+              <div className="border-l-4 border-benefique-orange pl-6">
+                <h3 className="font-bold text-benefique-navy text-lg mb-2">Tax + cash flow under one roof</h3>
+                <p className="text-gray-600 text-sm">
+                  Most fractional CFOs don't do tax. Most tax professionals don't build real-time dashboards.
+                  We do both — which means every cash decision considers the tax consequence, and every tax
+                  strategy considers whether you actually have the cash to execute it. "Should you fund that
+                  solo 401(k) before year-end?" depends on both your tax position and your cash runway. We see
+                  both sides simultaneously.
+                </p>
+              </div>
+              <div className="border-l-4 border-benefique-orange pl-6">
+                <h3 className="font-bold text-benefique-navy text-lg mb-2">AI does the monitoring. Humans do the interpreting.</h3>
+                <p className="text-gray-600 text-sm">
+                  AI spots that your marketing spend is running at 9% of revenue. The human knows the industry
+                  benchmark is 3-5% and that $256K in annual savings is sitting in a vendor audit. AI calculates
+                  a 3.8% operating margin on $7M in revenue. The human knows that means the owner earned nothing
+                  despite a seven-figure capital investment. The machine monitors continuously. The Enrolled Agent
+                  interprets and acts. Neither works alone.
+                </p>
+              </div>
+              <div className="border-l-4 border-benefique-orange pl-6">
+                <h3 className="font-bold text-benefique-navy text-lg mb-2">Continuous communication, not annual check-ins</h3>
+                <p className="text-gray-600 text-sm">
+                  Your books are closed by the 7th. Review calls by the 10th. Questions answered within 24 hours.
+                  Always. Our client churn is near zero — not because we lock anyone in, but because when your
+                  financial team is always available and always ahead of the problem, you don't look for a replacement.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -854,27 +908,28 @@ function About() {
           {/* Who We Serve */}
           <div className="bg-white rounded-2xl p-8 border border-gray-100 mb-8">
             <h2 className="text-2xl font-bold text-benefique-navy mb-4">Who We Serve</h2>
+            <p className="text-gray-600 mb-6">
+              We work with founders and practice owners who have outgrown their bookkeeper but aren't ready
+              for a full-time CFO. Most of our clients are in the $1M-$10M revenue range, growing, and making
+              financial decisions that deserve better data than a quarterly P&L.
+            </p>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <h3 className="font-semibold text-benefique-navy mb-2 flex items-center gap-2">
-                  <span>🏥</span> Healthcare Practices
-                </h3>
-                <ul className="text-gray-600 text-sm space-y-1 ml-6">
-                  <li>• Radiology & diagnostic imaging</li>
-                  <li>• Dental practices & DSOs</li>
-                  <li>• Veterinary clinics</li>
-                  <li>• Medical practices</li>
+                <h3 className="font-semibold text-benefique-navy mb-2">Healthcare Practices</h3>
+                <ul className="text-gray-600 text-sm space-y-1 ml-4">
+                  <li>- Radiology & diagnostic imaging</li>
+                  <li>- Dental practices & DSOs</li>
+                  <li>- Veterinary clinics</li>
+                  <li>- Medical practices & concierge medicine</li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-semibold text-benefique-navy mb-2 flex items-center gap-2">
-                  <span>🏢</span> Service-Based Businesses
-                </h3>
-                <ul className="text-gray-600 text-sm space-y-1 ml-6">
-                  <li>• IT & technology services</li>
-                  <li>• Marine & industrial services</li>
-                  <li>• Restaurant & hospitality groups</li>
-                  <li>• Professional services firms</li>
+                <h3 className="font-semibold text-benefique-navy mb-2">Service-Based Businesses</h3>
+                <ul className="text-gray-600 text-sm space-y-1 ml-4">
+                  <li>- IT & technology services</li>
+                  <li>- Marine & industrial services</li>
+                  <li>- Restaurant & hospitality groups</li>
+                  <li>- Professional services firms</li>
                 </ul>
               </div>
             </div>
@@ -887,10 +942,11 @@ function About() {
 
           {/* Location */}
           <div className="bg-white rounded-2xl p-8 border border-gray-100">
-            <h2 className="text-2xl font-bold text-benefique-navy mb-4">Location</h2>
+            <h2 className="text-2xl font-bold text-benefique-navy mb-4">Based in Davie, FL. Built for Anywhere.</h2>
             <p className="text-gray-600 mb-4">
-              Based in <strong>Davie, Florida</strong>, we serve clients throughout South Florida and beyond. 
-              Our technology-forward approach means location is never a barrier to great service.
+              Our office is in Davie, Florida, and we serve clients throughout South Florida and across the country.
+              Because our system is built on direct API integration and real-time dashboards, geography
+              is never a barrier. Your data is where we are — always.
             </p>
             <Link to="/contact" className="text-benefique-orange font-semibold hover:underline">
               Get in touch →
@@ -902,19 +958,19 @@ function About() {
       {/* CTA */}
       <section className="py-16 bg-benefique-navy text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold mb-4">Ready to see what we can do for you?</h2>
+          <h2 className="text-2xl font-bold mb-4">See the difference before you commit.</h2>
           <p className="text-blue-100 mb-8">
-            Let's talk about your business and see if we're the right fit.
+            Explore our sample reports to see what institutional-grade analysis looks like — or apply to start a conversation about your business.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               to="/demo"
               className="inline-flex items-center gap-2 bg-white text-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
             >
-              📊 View Sample Reports
+              View Sample Reports
             </Link>
             <Link
-              to="/contact"
+              to="/apply"
               className="inline-block bg-benefique-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
             >
               Apply to Work With Us
