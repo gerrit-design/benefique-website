@@ -6,6 +6,36 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  '6-financial-blockers-killing-healthcare-practices': {
+    file: '/content/blogs/6-financial-blockers-killing-healthcare-practices.md',
+    title: 'The 6 Financial Blockers Killing Healthcare Practices',
+    date: '2026-03-08',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A radiology group doing $7.36M in gross revenue generated zero real profit. A veterinary practice doing $1.75M had a 34% margin and zero debt. Same industry. Wildly different outcomes. The difference comes down to six financial blockers.',
+    categories: ['Healthcare Finance', 'CFO Services'],
+    readTime: '18 min read',
+    featuredImage: '/images/blog/6-financial-blockers-healthcare.svg',
+    faqs: [
+      { q: 'Why is my healthcare practice profitable on paper but has no cash?', a: 'Profitability on your P&L and cash in your bank account are two different things. The most common causes are owner draws exceeding actual profit, debt service consuming operating income, accounts receivable taking 45-90 days to collect while expenses hit immediately, and lump-sum bookings that distort monthly visibility.' },
+      { q: 'What is a healthy operating margin for a healthcare practice?', a: 'Operating margins vary by specialty: general medical 10-18%, dental 15-25%, veterinary 12-20%, radiology/imaging 8-15%. However, operating margin alone is misleading \u2014 always look at free cash flow after debt service, not just operating margin.' },
+      { q: 'Can a practice doing millions in revenue really generate zero profit?', a: 'Yes. A $7M practice with a 3.8% operating margin and $370K in annual debt service is functionally unprofitable. Revenue alone means nothing \u2014 what matters is the spread between revenue and the combined cost of operations, debt service, and owner compensation.' }
+    ]
+  },
+  'which-financial-phase-healthcare-business': {
+    file: '/content/blogs/which-financial-phase-healthcare-business.md',
+    title: 'Which Financial Phase Is Your Healthcare Business In?',
+    date: '2026-03-08',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A startup with 23 days of cash. A radiology group doing $7M but losing money. A vet practice with $651K in reserves and zero debt. These are three different financial phases \u2014 and the advice each one needs is completely different.',
+    categories: ['Healthcare Finance', 'CFO Services', 'Business Strategy'],
+    readTime: '20 min read',
+    featuredImage: '/images/blog/healthcare-practice-financial-phases.svg',
+    faqs: [
+      { q: 'How long does it take to move from one financial phase to the next?', a: 'A Phase 1 practice with clean revenue and messy books can reach Phase 2 in 60-90 days. A Phase 2 practice with compounding expense and debt issues may take 12-18 months to reach Phase 3. Practices with continuous financial visibility typically advance 2-3x faster.' },
+      { q: 'How much cash reserves should a healthcare practice maintain?', a: 'The minimum target is 60-90 days of operating expenses. Phase 3 practices typically hold 3-6 months. The right answer depends on revenue volatility, payer mix, and debt obligations.' },
+      { q: 'Why do multi-location practices often struggle financially despite high revenue?', a: 'Multi-location expansion multiplies fixed costs while revenue at new locations takes 6-18 months to mature. Without per-location P&L tracking, profitable locations subsidize unprofitable ones invisibly, masking problems for quarters until cash flow deteriorates.' }
+    ]
+  },
   'stop-doing-your-own-books': {
     file: '/content/blogs/stop-doing-your-own-books.md',
     title: 'Stop Doing Your Own Books: The Real Cost of DIY Bookkeeping',

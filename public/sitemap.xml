@@ -133,6 +133,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.benefique.com/blog/6-financial-blockers-killing-healthcare-practices</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.benefique.com/blog/ai-cash-flow-forecasting-small-business</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
@@ -255,6 +261,12 @@
   <url>
     <loc>https://www.benefique.com/blog/tax-strategies-concierge-physicians</loc>
     <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.benefique.com/blog/which-financial-phase-healthcare-business</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
