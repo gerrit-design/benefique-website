@@ -759,17 +759,7 @@ function BlogPost() {
         <meta name="twitter:description" content={post.excerpt} />
         <meta name="twitter:image" content={`https://www.benefique.com${post.featuredImage}`} />
         
-        {/* Article Schema (JSON-LD) */}
-        <script type="application/ld+json">
-          {JSON.stringify(articleSchema)}
-        </script>
-
-        {/* FAQ Schema for AEO */}
-        {faqSchema && (
-          <script type="application/ld+json">
-            {JSON.stringify(faqSchema)}
-          </script>
-        )}
+        {/* Schema (Article + FAQ) is handled by prerender.js to avoid duplicates */}
       </Helmet>
 
       <div className="min-h-screen bg-gray-50">

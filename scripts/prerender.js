@@ -59,9 +59,9 @@ while ((m = slugRegex.exec(blogPostsBlock)) !== null) {
 
 // Also extract the blogPosts metadata for each slug
 function extractBlogMeta(slug) {
-  // Find the block for this slug
+  // Find the block for this slug — match up to the next top-level slug key or end of blogPosts
   const blockRegex = new RegExp(
-    `'${slug}':\\s*\\{([\\s\\S]*?)\\n\\s*\\}`,
+    `'${slug}':\\s*\\{([\\s\\S]*?)\\n  \\}`,
     'm'
   );
   const match = blogPostJsx.match(blockRegex);
@@ -74,6 +74,23 @@ function extractBlogMeta(slug) {
     return m ? m[1].replace(/\\'/g, "'") : '';
   };
 
+  // Extract categories array: categories: ['Cat1', 'Cat2']
+  const catMatch = block.match(/categories:\s*\[([^\]]*)\]/);
+  const categories = catMatch
+    ? catMatch[1].match(/'([^']*)'/g)?.map(s => s.replace(/'/g, '')) || []
+    : [];
+
+  // Extract faqs array from BlogPost.jsx (source of truth for FAQ schema)
+  const faqs = [];
+  const faqRegex = /\{\s*q:\s*'([^']*(?:\\.[^']*)*)'\s*,\s*a:\s*'([^']*(?:\\.[^']*)*)'\s*\}/g;
+  let faqMatch;
+  while ((faqMatch = faqRegex.exec(block)) !== null) {
+    faqs.push({
+      q: faqMatch[1].replace(/\\'/g, "'"),
+      a: faqMatch[2].replace(/\\'/g, "'"),
+    });
+  }
+
   return {
     file: get('file'),
     title: get('title'),
@@ -82,6 +99,8 @@ function extractBlogMeta(slug) {
     excerpt: get('excerpt'),
     readTime: get('readTime'),
     featuredImage: get('featuredImage'),
+    categories: categories.join(', '),
+    faqs,
   };
 }
 
@@ -285,8 +304,8 @@ for (const slug of blogSlugs) {
     || frontmatter.description
     || meta.excerpt;
 
-  // Parse FAQ from markdown
-  const faqs = parseFAQ(raw);
+  // Use FAQs from BlogPost.jsx (source of truth), fallback to markdown parsing
+  const faqs = meta.faqs && meta.faqs.length > 0 ? meta.faqs : parseFAQ(raw);
 
   // Convert markdown to HTML for pre-rendering
   const articleHtml = marked.parse(mdContent);
