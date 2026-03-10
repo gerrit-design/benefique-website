@@ -6,6 +6,55 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  'low-payroll-owner-working-free': {
+    file: '/content/blogs/low-payroll-owner-working-free.md',
+    title: 'Low Payroll Isn\'t a Win \u2014 It\'s You Working for Free',
+    date: '2026-03-10',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A veterinary practice doing $1.6M showed payroll at 27% \u2014 well below the 40-45% benchmark. That 13-point gap isn\'t efficiency. It\'s the owner doing $25/hour work when her surgical time is worth $300-$500/hour.',
+    categories: ['Healthcare Finance'],
+    readTime: '12 min read',
+    featuredImage: '/images/blog/low-payroll-owner-working-free.jpg',
+    faqs: [
+      { q: 'What is a healthy payroll percentage for a veterinary practice?', a: 'AAHA and VHMA benchmarks put total payroll (including owner compensation, all staff wages, payroll taxes, and benefits) at 40-45% of revenue for a general veterinary practice. If your number is significantly below that and you\'re a solo practitioner, the gap is almost always unpaid owner labor \u2014 not efficiency.' },
+      { q: 'How much does a veterinary practice manager cost in South Florida?', a: 'In Broward, Miami-Dade, and Palm Beach counties, a full-time practice manager typically runs $45,000-$65,000 per year including benefits. Part-time office managers start at $25,000-$35,000. The role pays for itself if it frees even 8-10 hours per week of clinician time for billable procedures.' },
+      { q: 'How do I know if I\'m doing too much non-clinical work?', a: 'Track your time for one week. Write down every task that isn\'t a patient exam, procedure, or surgery. If non-clinical tasks exceed 15 hours per week, you have a delegation problem \u2014 regardless of what your P&L says about payroll.' },
+      { q: 'Will hiring a manager actually increase my revenue?', a: 'In every solo practice we\'ve analyzed where the owner freed 15+ hours per week of non-clinical time, procedure volume increased within 60 days. The increase ranges from 10-25% depending on current appointment utilization and local demand.' }
+    ]
+  },
+  'december-financials-lying': {
+    file: '/content/blogs/december-financials-lying.md',
+    title: 'Why Your December Financials Are Lying to You',
+    date: '2026-03-11',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A veterinary practice showed consistent monthly profits of $17K-$74K \u2014 until December hit negative $110,000. The loss was entirely a bookkeeping artifact: $190K in annual expenses dumped into one month.',
+    categories: ['Healthcare Finance'],
+    readTime: '10 min read',
+    featuredImage: '/images/blog/december-financials-lying.jpg',
+    faqs: [
+      { q: 'Is it wrong to book expenses as annual lump sums?', a: 'It\'s not illegal and it doesn\'t affect your annual tax return. The annual totals are the same either way. But it makes your monthly financial statements unreliable for operational decision-making.' },
+      { q: 'What\'s the difference between cash basis and accrual basis for monthly reporting?', a: 'Cash basis records income and expenses when cash changes hands. Accrual basis records them when they\'re earned or incurred, regardless of when cash moves. For monthly reporting, accrual basis with proper monthly entries gives a much more accurate picture.' },
+      { q: 'How do I know if my accountant is booking catch-up entries?', a: 'Look at your December P&L. If any expense category is dramatically larger in December than in other months \u2014 especially rent, officer salary, depreciation, or insurance \u2014 it\'s likely a catch-up entry.' },
+      { q: 'Will fixing this change my tax liability?', a: 'No. The annual totals remain identical. Switching from annual lump-sum entries to monthly recurring entries is purely an internal reporting change. Your taxable income for the year is the same.' }
+    ]
+  },
+  'idle-cash-costing-practice': {
+    file: '/content/blogs/idle-cash-costing-practice.md',
+    title: 'The $29,000 Your Practice Loses Every Year to Idle Cash',
+    date: '2026-03-12',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A veterinary practice had $737K in cash \u2014 10.5 months of operating expenses \u2014 sitting in a checking account earning $50/year. Inflation was silently eroding $29,000/year in purchasing power. One phone call and a high-yield money market fixes most of it.',
+    categories: ['Cash Flow'],
+    readTime: '10 min read',
+    featuredImage: '/images/blog/idle-cash-costing-practice.jpg',
+    faqs: [
+      { q: 'How much cash should a healthcare practice keep in checking?', a: 'Two to three months of operating expenses is the standard guideline. For a practice spending $70,000/month in total operating costs, that\'s $140,000\u2013$210,000 in liquid checking. Everything above that should be earning a return.' },
+      { q: 'Are high-yield money market accounts safe for business funds?', a: 'Yes. Money market accounts at major brokerages invest in government securities and are extremely low-risk. Bank money market accounts are FDIC-insured up to $250,000 per depositor.' },
+      { q: 'What is a cash balance retirement plan?', a: 'A cash balance plan is a type of defined benefit retirement plan that allows high-earning business owners to contribute \u2014 and deduct \u2014 $100,000\u2013$300,000+ per year, depending on age and plan design.' },
+      { q: 'Will moving cash out of checking affect my ability to cover expenses?', a: 'Not if you maintain an adequate operating buffer. Two months of operating expenses in checking provides a cushion for normal cash flow variability. The high-yield money market serves as a secondary buffer accessible within 1\u20132 business days.' },
+      { q: 'How much interest can I realistically earn on idle practice cash?', a: 'At March 2026 rates, a high-yield money market or short-term Treasury pays 4.0\u20135.0% annually. On $500,000, that\'s $20,000\u2013$25,000/year.' }
+    ]
+  },
   '5-cash-leaks-service-business': {
     file: '/content/blogs/5-cash-leaks-service-business.md',
     title: 'The 5 Cash Leaks Hiding in Every Service Business',
