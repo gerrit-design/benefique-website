@@ -714,49 +714,6 @@ function BlogPost() {
       });
   }, [slug, post]);
 
-  // Schema markup for SEO/GEO
-  const articleSchema = post ? {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    'headline': post.title,
-    'description': post.excerpt,
-    'author': {
-      '@type': 'Organization',
-      'name': 'Benefique Tax & Accounting',
-      'url': 'https://www.benefique.com'
-    },
-    'datePublished': post.date,
-    'dateModified': post.date,
-    'publisher': {
-      '@type': 'Organization',
-      'name': 'Benefique Tax & Accounting',
-      'logo': {
-        '@type': 'ImageObject',
-        'url': 'https://www.benefique.com/images/logo-full.jpg'
-      }
-    },
-    'image': `https://www.benefique.com${post.featuredImage}`,
-    'mainEntityOfPage': {
-      '@type': 'WebPage',
-      '@id': `https://www.benefique.com/blog/${slug}`
-    },
-    'keywords': post.categories.join(', ')
-  } : null;
-
-  // FAQ Schema for AEO (AI Engine Optimization)
-  const faqSchema = post?.faqs?.length ? {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    'mainEntity': post.faqs.map(faq => ({
-      '@type': 'Question',
-      'name': faq.q,
-      'acceptedAnswer': {
-        '@type': 'Answer',
-        'text': faq.a
-      }
-    }))
-  } : null;
-
   if (!post) {
     return <Navigate to="/blog" replace />;
   }
