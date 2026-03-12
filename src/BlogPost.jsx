@@ -6,6 +6,57 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  's-corp-tax-trap-service-business': {
+    file: '/content/blogs/s-corp-tax-trap-service-business.md',
+    title: 'The S-Corp Tax Trap: Why Your Service Business Makes Money But You\'re Always Broke',
+    date: '2026-03-12',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A $4M service business showed $250K in profit. The owner had $49K in the bank and a $75K personal tax bill she didn\'t know about. The S-Corp flow-through that saves you SE taxes can also drain your cash if you don\'t provision for it monthly.',
+    categories: ['Tax Strategy'],
+    readTime: '12 min read',
+    featuredImage: '/images/blog/s-corp-tax-trap-service-business.jpg',
+    faqs: [
+      { q: 'Do I owe taxes on S-Corp profits I didn\'t take out of the business?', a: 'Yes. Under IRC Section 1366, your share of S-Corp income is reported on your personal return regardless of distributions. If the company earns $250K in profit and you take $0 out, you still owe income tax on $250K.' },
+      { q: 'How much should I set aside monthly for S-Corp taxes?', a: 'For federal taxes, 25-30% of your net profit is the safe range for most service business owners in the $100K-$400K income bracket. If you\'re in Florida, that covers it. If you\'re in a state with income tax, add your state marginal rate.' },
+      { q: 'What happens if I don\'t pay estimated taxes?', a: 'The IRS assesses an underpayment penalty under IRC Section 6654 at approximately 8% annualized. Continued non-payment results in CP notices escalating to intent-to-levy warnings, federal tax liens, and bank account levies.' },
+      { q: 'Can I deduct my IRS installment agreement interest?', a: 'No. Interest paid on personal federal income tax debt is classified as personal interest and is not deductible under IRC Section 163(h).' },
+      { q: 'Should I revoke my S-Corp election to avoid this problem?', a: 'In most cases, no. The 15.3% SE tax savings on distributions typically outweigh the administrative burden. The issue isn\'t the structure — it\'s the lack of a monthly tax provision system.' }
+    ]
+  },
+  'fleet-replacement-vs-repair-service-business': {
+    file: '/content/blogs/fleet-replacement-vs-repair-service-business.md',
+    title: 'When Fixing Your Fleet Costs More Than Replacing It',
+    date: '2026-03-12',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A service business spent $122K on truck repairs in two months on a fully depreciated fleet \u2014 zero tax benefit, unpredictable costs, rising downtime. A new truck at $1,500/month with a full Section 179 deduction would have been cheaper. Here\'s how to do the math for your fleet.',
+    categories: ['Business Strategy'],
+    readTime: '12 min read',
+    featuredImage: '/images/blog/fleet-replacement-vs-repair-service-business.jpg',
+    faqs: [
+      { q: 'Should I lease or buy fleet vehicles?', a: 'For most service businesses, buying is the stronger move. You own the asset, qualify for the full Section 179 deduction in Year 1, and face no mileage restrictions. Leasing makes sense only for 3-to-4-year rotation cycles.' },
+      { q: 'Can I deduct the full price of a truck in one year?', a: 'Yes \u2014 if the vehicle has a GVWR over 6,000 pounds and is used more than 50% for business. Section 179 plus bonus depreciation allows a 100% first-year deduction under 2026 rules.' },
+      { q: 'What is the best financing for fleet vehicles?', a: 'SBA 7(a) loans offer competitive rates. Equipment financing through dealers or banks typically runs 5-8% APR with 3-7 year terms. Have your accountant model the after-tax cost of each option.' },
+      { q: 'How do I convince my partner or spouse to approve a new truck purchase?', a: 'Show them the per-vehicle tracking spreadsheet. When the data shows $8,000/month in repairs vs. $1,500/month in payments \u2014 plus a $75,000 tax deduction \u2014 the decision makes itself.' },
+      { q: 'When is the best time of year to buy fleet vehicles?', a: 'The vehicle must be purchased and placed in service before December 31 to qualify for that year\'s deduction. Q4 tends to offer the best dealer pricing, but don\'t wait if your trucks are failing now.' }
+    ]
+  },
+  'competing-on-value-not-price-service-business': {
+    file: '/content/blogs/competing-on-value-not-price-service-business.md',
+    title: 'They Undercut Your Price and Stole Your Client. Here\'s Why You Win Them Back.',
+    date: '2026-03-12',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A 35-year service company lost a major institutional client to a fly-by-night operator quoting 30% below market. She held her pricing. Eighteen months later, the contracts came back. Here\'s the playbook for when lowball competitors steal your clients \u2014 and why the math is on your side.',
+    categories: ['Business Strategy'],
+    readTime: '12 min read',
+    featuredImage: '/images/blog/competing-on-value-not-price-service-business.jpg',
+    faqs: [
+      { q: 'Should I ever lower my prices to keep a client?', a: 'Only if you can identify a specific cost reduction that justifies it \u2014 bundling services, reducing scope, or shifting schedules. Never lower price just to match a competitor pricing below profitability.' },
+      { q: 'How long until lowball competitors go out of business?', a: 'Typically 6-18 months for undercapitalized operators. BLS data confirms that establishment survival rates drop sharply in the first two years for new entrants in trade services.' },
+      { q: 'What if the client never comes back?', a: 'Some won\'t. Replace lost revenue with higher-quality clients on service contracts. A $10K/month client on a 3-year contract is worth more than a $15K/month client who price-shops every quarter.' },
+      { q: 'How do I know if my pricing is right?', a: 'Compare your gross margin to industry benchmarks. If you\'re at or above the median (34-42% for most trades), your pricing is defensible. Below 30% means you may be undercharging.' },
+      { q: 'What\'s the best way to compete with lowball contractors?', a: 'Compete on response time, insurance coverage, equipment quality, track record, and financial stability. When you make the value tangible, you take price out of the conversation.' }
+    ]
+  },
   'low-payroll-owner-working-free': {
     file: '/content/blogs/low-payroll-owner-working-free.md',
     title: 'Low Payroll Isn\'t a Win \u2014 It\'s You Working for Free',

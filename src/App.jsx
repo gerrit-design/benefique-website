@@ -989,6 +989,9 @@ function Blog() {
   const [activeCategory, setActiveCategory] = React.useState('All');
 
   const posts = [
+    { title: 'The S-Corp Tax Trap: Why Your Service Business Makes Money But You\'re Always Broke', excerpt: 'A $4M service business showed $250K in profit. The owner had $49K in the bank and a $75K personal tax bill she didn\'t know about. The S-Corp flow-through that saves you SE taxes can also drain your cash if you don\'t provision for it monthly.', date: '2026-03-12', slug: 's-corp-tax-trap-service-business', published: true, category: 'Tax Strategy', readTime: '12 min' },
+    { title: 'When Fixing Your Fleet Costs More Than Replacing It', excerpt: 'A service business spent $122K on truck repairs in two months on a fully depreciated fleet \u2014 zero tax benefit, unpredictable costs, rising downtime. A new truck at $1,500/month with a full Section 179 deduction would have been cheaper.', date: '2026-03-12', slug: 'fleet-replacement-vs-repair-service-business', published: true, category: 'Business Strategy', readTime: '12 min' },
+    { title: 'They Undercut Your Price and Stole Your Client. Here\'s Why You Win Them Back.', excerpt: 'A 35-year service company lost a major institutional client to a fly-by-night operator quoting 30% below market. She held her pricing. Eighteen months later, the contracts came back. Here\'s the playbook for when lowball competitors steal your clients.', date: '2026-03-12', slug: 'competing-on-value-not-price-service-business', published: true, category: 'Business Strategy', readTime: '12 min' },
     { title: 'The $29,000 Your Practice Loses Every Year to Idle Cash', excerpt: 'A veterinary practice had $737K in cash \u2014 10.5 months of operating expenses \u2014 sitting in a checking account earning $50/year. Inflation was silently eroding $29,000/year in purchasing power. One phone call and a high-yield money market fixes most of it.', date: '2026-03-12', slug: 'idle-cash-costing-practice', published: true, category: 'Cash Flow', readTime: '10 min' },
     { title: 'Why Your December Financials Are Lying to You', excerpt: 'A veterinary practice showed consistent monthly profits of $17K-$74K \u2014 until December hit negative $110,000. The loss was entirely a bookkeeping artifact: $190K in annual expenses dumped into one month.', date: '2026-03-11', slug: 'december-financials-lying', published: true, category: 'Healthcare Finance', readTime: '10 min' },
     { title: 'Low Payroll Isn\'t a Win \u2014 It\'s You Working for Free', excerpt: 'A veterinary practice doing $1.6M showed payroll at 27% \u2014 well below the 40-45% benchmark. That 13-point gap isn\'t efficiency. It\'s the owner doing $25/hour work when her surgical time is worth $300-$500/hour.', date: '2026-03-10', slug: 'low-payroll-owner-working-free', published: true, category: 'Healthcare Finance', readTime: '12 min' },
@@ -1035,6 +1038,7 @@ function Blog() {
     'Cash Flow': 'bg-blue-100 text-blue-700',
     'Healthcare Finance': 'bg-rose-100 text-rose-700',
     'Accounting': 'bg-amber-100 text-amber-700',
+    'Business Strategy': 'bg-indigo-100 text-indigo-700',
   };
 
   const formatDate = (dateStr) => {
