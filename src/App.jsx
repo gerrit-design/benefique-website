@@ -503,14 +503,19 @@ function Services() {
                 <p className="text-gray-600">C-suite financial leadership at a fraction of the cost</p>
               </div>
             </div>
+            <p className="text-gray-700 mb-6">
+              Most small businesses generate enough data in QuickBooks to make Fortune 500-level financial decisions — they just don't have anyone mining it. Our fractional CFO service uses AI-assisted analysis to turn your existing accounting data into cash flow forecasts, working capital insights, and actionable financial intelligence. We close your books by the 7th, deliver a CFO-grade report by the 10th, and meet with you to discuss what the numbers mean for your business. Clients typically discover $20K-$350K in trapped cash, tax savings, or operational improvements within the first 90 days.
+            </p>
             <div className="grid md:grid-cols-2 gap-8">
               <ul className="space-y-3">
                 {[
                   'Monthly financial closes by the 7th business day',
                   'Custom CFO dashboards with real-time metrics',
-                  'Cash flow forecasting and management',
+                  'AI-assisted cash flow forecasting and management',
                   'Strategic planning and budgeting',
                   'Bank and investor relations support',
+                  'DSO tracking and accounts receivable optimization',
+                  'Owner draw sustainability analysis',
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-2">
                     <span className="text-benefique-orange">✓</span>
@@ -522,15 +527,15 @@ function Services() {
                 <div className="text-sm text-benefique-orange uppercase tracking-wide font-semibold mb-2">Featured</div>
                 <h3 className="text-lg font-bold text-benefique-navy mb-2">The Benefique Financial Times™</h3>
                 <p className="text-gray-600 text-sm">
-                  A weekly CFO report about your business — written in owner terms, not accountant-speak. 
+                  A weekly CFO report about your business — written in owner terms, not accountant-speak.
                   See your numbers clearly. Make decisions confidently.
                 </p>
                 <Link to="/demo" className="text-benefique-orange text-sm font-semibold hover:underline mt-2 inline-block">
                   See a sample report →
                 </Link>
                 <br />
-                <Link to="/blog/multi-location-financial-management" className="text-gray-500 text-sm hover:text-benefique-orange hover:underline mt-1 inline-block">
-                  Read: Managing Finances Across Multiple Locations →
+                <Link to="/blog/ai-cfo-analysis" className="text-gray-500 text-sm hover:text-benefique-orange hover:underline mt-1 inline-block">
+                  Read: What AI-Assisted CFO Analysis Actually Looks Like →
                 </Link>
               </div>
             </div>
@@ -545,14 +550,19 @@ function Services() {
                 <p className="text-gray-600">Real-time books, not year-old history</p>
               </div>
             </div>
+            <p className="text-gray-700 mb-6">
+              Your books should tell you what's happening in your business right now — not what happened six months ago. We handle everything from daily transaction coding and bank reconciliations to payroll processing and month-end close. Every client gets books closed by the 7th business day of the following month, with a 24-hour response guarantee on all questions. We work inside QuickBooks Online so your data is always accessible, always current, and always tax-ready. No more scrambling at year-end. No more surprises from your tax preparer.
+            </p>
             <div className="grid md:grid-cols-2 gap-8">
               <ul className="space-y-3">
                 {[
                   'Bookkeeping and transaction coding',
-                  'Accounts payable management',
+                  'Accounts payable and receivable management',
                   'Payroll processing and compliance',
                   'Bank and credit card reconciliations',
                   'Month-end and year-end close',
+                  'Financial statement preparation',
+                  '1099 preparation and vendor compliance',
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-2">
                     <span className="text-benefique-orange">✓</span>
@@ -564,9 +574,12 @@ function Services() {
                 <div className="text-sm text-benefique-orange uppercase tracking-wide font-semibold mb-2">Our Promise</div>
                 <h3 className="text-lg font-bold text-benefique-navy mb-2">24-Hour Response Time</h3>
                 <p className="text-gray-600 text-sm">
-                  Questions don't wait. Neither do we. Every client inquiry gets a response 
+                  Questions don't wait. Neither do we. Every client inquiry gets a response
                   within one business day, guaranteed.
                 </p>
+                <Link to="/blog/stop-doing-your-own-books" className="text-gray-500 text-sm hover:text-benefique-orange hover:underline mt-2 inline-block">
+                  Read: The Real Cost of DIY Bookkeeping →
+                </Link>
               </div>
             </div>
           </div>
@@ -580,14 +593,19 @@ function Services() {
                 <p className="text-gray-600">Year-round strategies, not April surprises</p>
               </div>
             </div>
+            <p className="text-gray-700 mb-6">
+              The average small business overpays $15,000-$50,000 in taxes annually because their accountant is reactive instead of proactive. We build tax strategy into your monthly financial rhythm — not as a once-a-year scramble. That means entity structure reviews (S-Corp election timing alone can save $5K-$20K/year), R&D tax credit identification for healthcare and tech businesses, retirement plan optimization that can shelter $200K+ annually, and quarterly estimate projections so you never face a surprise tax bill. Because we do your books, we see the tax implications in real time — not after the year is over.
+            </p>
             <div className="grid md:grid-cols-2 gap-8">
               <ul className="space-y-3">
                 {[
-                  'Entity structure optimization',
-                  'R&D tax credit identification',
-                  'Retirement and benefit planning',
+                  'Entity structure optimization (S-Corp, LLC, partnership)',
+                  'R&D tax credit identification and documentation',
+                  'Retirement plan stacking (401k + Cash Balance)',
                   'State and local tax compliance',
                   'Quarterly estimates and projections',
+                  'Year-end tax planning and acceleration strategies',
+                  'Multi-entity tax coordination',
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-2">
                     <span className="text-benefique-orange">✓</span>
@@ -599,9 +617,12 @@ function Services() {
                 <div className="text-sm text-benefique-orange uppercase tracking-wide font-semibold mb-2">Focus Areas</div>
                 <h3 className="text-lg font-bold text-benefique-navy mb-2">Healthcare & Service SMBs</h3>
                 <p className="text-gray-600 text-sm">
-                  We specialize in healthcare practices, professional services, and service-based 
-                  businesses. We understand your industry's unique challenges.
+                  We specialize in healthcare practices, professional services, and service-based
+                  businesses. We understand your industry's unique tax challenges — from physician compensation structuring to R&D credits for clinical workflows.
                 </p>
+                <Link to="/blog/s-corp-election" className="text-gray-500 text-sm hover:text-benefique-orange hover:underline mt-2 inline-block">
+                  Read: Is S-Corp Election Right for Your Business? →
+                </Link>
               </div>
             </div>
           </div>
