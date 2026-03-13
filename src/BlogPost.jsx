@@ -441,6 +441,94 @@ const blogPosts = {
       { q: 'How do physicians build wealth through real estate?', a: 'Physicians build real estate wealth by owning their office space, investing in rental properties, or participating in commercial syndications. Cost segregation studies accelerate depreciation deductions ($74K-$130K in Year 1 tax savings on a $1.5M property). 1031 exchanges defer capital gains indefinitely when reinvesting proceeds.' }
     ]
   },
+  'ai-cfo-analysis': {
+    file: '/content/blogs/ai-cfo-analysis.md',
+    title: 'What AI-Assisted CFO Analysis Actually Looks Like',
+    date: '2026-03-12',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Most people think AI financial analysis means plugging data into ChatGPT. It doesn\'t. Here\'s what actually happens when an AI-assisted CFO engagement turns 7 months of QuickBooks data into a 28-page report with 14 charts — and finds $353K in trapped cash nobody knew about.',
+    categories: ['Technology & Automation'],
+    readTime: '12 min read',
+    featuredImage: '/images/blog/ai-cfo-analysis.jpg',
+    faqs: [
+      { q: 'What is AI cash flow forecasting, exactly?', a: 'AI cash flow forecasting uses machine learning and pattern analysis to examine historical transaction data and project future cash positions. It takes the data already in QuickBooks and answers questions like "Will we have enough cash to cover payroll in 60 days?" The AI accelerates the analysis; a practitioner interprets it and makes it actionable.' },
+      { q: 'How is this different from the reports QuickBooks generates?', a: 'QuickBooks generates reports. AI-assisted CFO analysis generates insight. A QBO cash flow statement shows what happened. It won\'t tell you that your $1.4M bank balance includes $903K in trust funds you can\'t touch, or calculate your draw coverage ratio, or flag a 6x labor anomaly.' },
+      { q: 'Is my financial data safe if you\'re using AI?', a: 'Yes. The AI analysis layer receives aggregate financial data — revenue totals, expense categories, AR aging — not client names, case files, or privileged information. Anthropic\'s enterprise API is SOC 2 Type II certified and does not train on submitted data. The most sensitive processing steps run locally on our systems.' },
+      { q: 'Do I need to change anything in QuickBooks to get this analysis?', a: 'In most cases, no. The extraction scripts connect directly to your existing QBO account via API. Part of what we do is identify data quality issues as a byproduct of the analysis itself. You may need a QBO account in good standing and a brief authorization step.' },
+      { q: 'How long does an AI-assisted CFO engagement take?', a: 'For a typical small business with 12 months or less of QBO history, data extraction and AI analysis runs in hours. A first engagement typically runs 3-5 business days. Subsequent monthly reports deliver faster once the baseline is established.' },
+      { q: 'What size business is this designed for?', a: 'Our CFO analysis clients typically run between $500K and $10M in annual revenue. The sweet spot is the established small business generating real revenue and making real financial decisions — but without a finance team to support those decisions with data.' }
+    ]
+  },
+  'ai-found-353k-trapped-cash': {
+    file: '/content/blogs/ai-found-353k-trapped-cash.md',
+    title: 'How AI Found $353,000 in Trapped Cash — Using Data Already in QuickBooks',
+    date: '2026-03-12',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A professional services firm had $353,000 trapped in slow-paying receivables, a bank balance that overstated actual cash by $900K, and partner draws that exceeded a $1.58M windfall. All of this was sitting in their QuickBooks data. Nobody had mined it until AI did.',
+    categories: ['Cash Flow'],
+    readTime: '11 min read',
+    featuredImage: '/images/blog/ai-found-353k-trapped-cash.jpg',
+    faqs: [
+      { q: 'What is "trapped cash" and how do I know if my business has it?', a: 'Trapped cash is money your business has earned but cannot access or deploy. The most common forms are uncollected receivables, cash held in restricted accounts, inventory that isn\'t turning, and prepaid expenses. A DSO above your industry benchmark, a cash conversion ratio below 50%, or a gap between your bank balance and your actual operating account are all signs.' },
+      { q: 'Can AI actually find things in QuickBooks that a CPA would miss?', a: 'Yes — not because AI is smarter than a CPA, but because it runs different calculations. A CPA prepares financial statements or tax returns. AI configured for cash flow analysis calculates DSO trends, draw coverage ratios, and cash conversion efficiency automatically, across all periods, every time.' },
+      { q: 'How long does it take for AI to analyze a QuickBooks file?', a: 'With direct API access to QuickBooks Online, an AI-assisted analysis can pull and process months of transaction data in minutes. The output — ratios, trends, anomaly flags, ranked cash traps — is available almost immediately.' },
+      { q: 'Is this the kind of analysis that only works for large businesses?', a: 'No. It\'s more valuable for smaller businesses because they have less margin for error. A business doing $2M in revenue with 1.3 months of cash runway is in a more dangerous position than a larger firm — and small business owners have far less visibility into their own data.' },
+      { q: 'What does it cost to get this kind of analysis done?', a: 'A one-time engagement can range from a few hundred to a few thousand dollars depending on scope. An ongoing monthly CFO service typically runs $500 to $2,500 per month for a small to mid-market business. The more relevant question is what it costs not to have it.' },
+      { q: 'What if my QuickBooks records are not perfectly clean?', a: 'They don\'t need to be perfect. They need to be reasonably accurate. AI analysis can flag inconsistencies, identify outliers, and note data quality issues as part of the output. Messy data doesn\'t make analysis impossible — it makes the anomaly detection more valuable.' }
+    ]
+  },
+  'dso-350k-number-business-owners': {
+    file: '/content/blogs/dso-350k-number-business-owners.md',
+    title: 'DSO: The $350,000 Number Most Business Owners Have Never Heard Of',
+    date: '2026-03-12',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Days Sales Outstanding measures how long clients take to pay after you invoice them. One firm\'s AI-assisted analysis showed that reducing DSO by just 15 days would free $353,000 in cash — without earning a single new dollar. Here\'s the formula, the benchmarks, and 5 ways to cut your DSO this quarter.',
+    categories: ['Cash Flow'],
+    readTime: '12 min read',
+    featuredImage: '/images/blog/dso-350k-number-business-owners.jpg',
+    faqs: [
+      { q: 'What is a good DSO for a small business?', a: 'Your DSO should be no more than one-third higher than your stated payment terms. If your terms are Net 30, a DSO of 35-40 days is healthy. A DSO of 60+ days on Net 30 terms means a significant portion of your clients are paying late. Best-in-class professional services firms target 30-45 days.' },
+      { q: 'How do I calculate my DSO?', a: 'Pull two numbers from QuickBooks: your current accounts receivable balance and your revenue for the most recent full month. Then: DSO = (Accounts Receivable / Monthly Revenue) x 28. Run it monthly to track whether you\'re improving or drifting.' },
+      { q: 'What causes DSO to increase?', a: 'The most common causes are: clients taking longer to pay, looser payment terms offered without realizing it, invoices going out later in the billing cycle, disputes or errors that delay payment, and simply no system to follow up on aging invoices. DSO tends to creep up gradually until it\'s suddenly 20 days higher than a year ago.' },
+      { q: 'How does DSO relate to cash flow?', a: 'DSO is the most direct driver of operating cash flow for service businesses. Every day in the gap between earning revenue and collecting cash is a day your business is funding operations without the cash to show for it. Reducing DSO doesn\'t increase revenue but dramatically improves available cash.' },
+      { q: 'Can AI help reduce DSO?', a: 'AI spots the pattern before you do. In this case, AI-assisted QuickBooks analysis flagged the 61-day DSO, the 32% AR growth rate, and the $353K cash impact in a routine monthly review. The owner had the data the whole time — there was just no system routinely mining QBO for that signal.' }
+    ]
+  },
+  'bank-balance-lying-trust-accounts': {
+    file: '/content/blogs/bank-balance-lying-trust-accounts.md',
+    title: 'Why Your Business Bank Balance Is Lying to You',
+    date: '2026-03-12',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A professional services firm thought they had $1.4 million in the bank. AI-assisted analysis revealed that $903K was client trust funds — not their money. Actual available cash: $493K. Here\'s how to calculate your real cash position and why most business owners overstate theirs by 40-65%.',
+    categories: ['Cash Flow'],
+    readTime: '10 min read',
+    featuredImage: '/images/blog/bank-balance-lying-trust-accounts.jpg',
+    faqs: [
+      { q: 'How much cash does my business actually have?', a: 'Start with your total bank balance across all accounts. Subtract any trust, escrow, or restricted account balances. Subtract uncleared checks and pending payments. The result is your available cash. For businesses with trust accounts or restricted funds, the difference is often 40 to 65 percent.' },
+      { q: 'What is an IOTA trust account?', a: 'IOTA stands for Interest on Trust Accounts. It\'s a type of client trust account required by state bar rules for law firms. Client funds must be deposited into a separate, segregated IOTA account rather than the firm\'s operating account. The principal belongs to clients and cannot be used for firm operating expenses.' },
+      { q: 'Should I include my trust account in cash flow analysis?', a: 'No. Trust account balances should be excluded from any operating cash flow analysis. Including trust account activity will distort every metric: your cash conversion cycle, your days cash on hand, your runway calculation.' },
+      { q: 'How do I separate firm cash from client funds in QuickBooks?', a: 'Create a separate bank account for the trust and a corresponding Trust Liability account on the balance sheet. When client funds are received, debit the trust bank account and credit Trust Liability. Running a balance sheet should show these netting to zero.' },
+      { q: 'What is a healthy cash position for a small business?', a: 'The standard benchmark is three to six months of operating expenses in readily accessible, unrestricted cash. For a business with $100,000/month in operating costs, that means $300,000 to $600,000 in available operating cash — not trust funds, not restricted reserves, not uncollected AR.' },
+      { q: 'Why does my bank balance look fine but I still feel cash-strapped?', a: 'Your subconscious may be tracking available cash more accurately than your conscious mind. If you have trust accounts or restricted funds, the bank balance is the fiction. Do the available cash calculation — in almost every case, the subjective sense of tightness is real.' }
+    ]
+  },
+  'monthly-cash-review-20-minutes': {
+    file: '/content/blogs/monthly-cash-review-20-minutes.md',
+    title: 'The 20-Minute Monthly Cash Review That Changes Everything',
+    date: '2026-03-12',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Most business owners skip monthly financial reviews because they take too long and cover too much. This one takes 20 minutes, tracks 5 metrics, and catches cash flow problems before they become crises. Print the dashboard. Tape it to your monitor. Use it Monday.',
+    categories: ['Cash Flow'],
+    readTime: '9 min read',
+    featuredImage: '/images/blog/monthly-cash-review-20-minutes.jpg',
+    faqs: [
+      { q: 'What financial metrics should I track monthly?', a: 'Track five metrics: available cash (total bank minus restricted funds), days sales outstanding (DSO), accounts receivable over 60 days, owner draw coverage ratio, and revenue compared to your trailing six-month average. Everything else belongs in quarterly or annual reviews.' },
+      { q: 'How often should a business owner review cash flow?', a: 'Monthly at minimum using a structured format. Businesses with tight cash positions, high AR balances, or seasonal volatility should add a weekly 10-minute check. Daily cash monitoring is warranted during a cash crisis or when a line of credit is drawn above 50% capacity.' },
+      { q: 'What is draw coverage ratio and why does it matter?', a: 'Draw coverage ratio is your cash from operations divided by total owner draws for the month. A ratio below 1.0x means your distributions exceed the cash your business is generating — you\'re paying yourself from reserves rather than operational cash flow. It\'s one of the most reliable early indicators of a coming cash shortfall.' },
+      { q: 'How do I know if my business has a cash flow problem?', a: 'The early warning signs: DSO trending upward, AR over 60 days growing as a percentage of total receivables, available cash declining even when revenue is flat or growing, and draw coverage falling below 1.0x. Two or more occurring simultaneously is a cash flow problem.' },
+      { q: 'Can I do this review myself without an accountant?', a: 'Yes. The five metrics can all be pulled from QuickBooks Online in under 15 minutes if your books are current. Where an accountant or CFO advisor adds value is in interpreting anomalies and connecting the monthly picture to tax implications and annual planning.' }
+    ]
+  },
   's-corp-reasonable-compensation-healthcare-service-businesses-broward-county': {
     file: '/content/blogs/s-corp-reasonable-compensation-healthcare-service-businesses-broward-county.md',
     title: 'S-Corp Reasonable Compensation: How Much Should You Pay Yourself (And Why Getting It Wrong Costs More Than You Think)',
