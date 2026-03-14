@@ -6,6 +6,42 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  'what-your-banker-sees-that-you-dont': {
+    file: '/content/blogs/what-your-banker-sees-that-you-dont.md',
+    title: 'What Your Banker Sees That You Don\'t \u2014 From the Accountant Who Builds the Package',
+    date: '2026-03-13',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Banks don\'t just review your P&L. They review three financial pictures \u2014 your business, your personal balance sheet, and a normalized version they rebuild themselves. Most owners only prepare for one.',
+    categories: ['Cash Flow Advisory', 'Business Strategy', 'Financial Intelligence'],
+    readTime: '14 min read',
+    featuredImage: '/images/blog/what-your-banker-sees.jpg',
+    faqs: [
+      { q: 'What financial statements do I need for an SBA 7(a) loan?', a: 'At minimum: three years of business tax returns, year-to-date profit and loss statement, balance sheet, accounts receivable and payable aging reports, debt schedule listing all existing loans, and a personal financial statement for each owner with 20%+ ownership.' },
+      { q: 'How do I calculate DSCR for my small business?', a: 'DSCR = Net Operating Income / Total Annual Debt Service. Net Operating Income is typically EBITDA. Total Annual Debt Service includes principal and interest payments on all business loans, equipment leases, and the proposed new facility. A DSCR of 1.25x is the typical minimum.' },
+      { q: 'What is a good debt service coverage ratio for a small business loan?', a: 'Most banks require a minimum DSCR of 1.25x for conventional business loans and SBA 7(a) loans. A DSCR of 1.50x or higher gives you comfortable margin and may qualify you for better rates. Below 1.0x means approval is extremely unlikely.' },
+      { q: 'Why does the bank ask for my personal tax return for a business loan?', a: 'The bank evaluates the owner as a credit risk to the business. Personal tax returns reveal total income sources, estimated tax obligations that may consume business cash, personal debt load that creates pressure to extract cash from the business, and whether owner draws align with reported personal income.' },
+      { q: 'What is a cash flow waterfall and why does my banker care?', a: 'A cash flow waterfall starts with your operating earnings (EBITDA) and subtracts each cash obligation in sequence: owner draws, debt service, taxes, and working capital needs. The final bar shows your net free cash. Bankers care because a profitable business can still be cash-negative if draws and debt service exceed operating earnings.' },
+      { q: 'What bank loan covenants should I expect?', a: 'Common covenants include: minimum DSCR tested quarterly (typically 1.25x), maximum leverage ratio (debt-to-EBITDA under 3.0x), minimum cash balance requirements, distribution restrictions, borrowing base limitations for lines of credit, and annual reviewed financial statement delivery requirements.' },
+      { q: 'Should I hire a fractional CFO to help me get a bank loan?', a: 'If your business generates over $1M in revenue and you\'re seeking $250K+ in financing, a fractional CFO calculates your actual DSCR, builds your cash flow waterfall, normalizes your earnings, identifies issues the bank will flag, and prepares the complete banking package.' }
+    ]
+  },
+  'cash-flow-waterfall-why-profit-doesnt-equal-cash': {
+    file: '/content/blogs/cash-flow-waterfall-why-profit-doesnt-equal-cash.md',
+    title: 'The Cash Flow Waterfall: Why $454K in Profit Left a Business With a $147K Cash Deficit',
+    date: '2026-03-13',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A $6M business earned $454K in operating profit. After partner draws, debt service, and working capital, they were $147K in the hole. The P&L never showed it. The waterfall did.',
+    categories: ['Cash Flow Advisory', 'Financial Intelligence'],
+    readTime: '10 min read',
+    featuredImage: '/images/blog/cash-flow-waterfall.jpg',
+    faqs: [
+      { q: 'What is a cash flow waterfall?', a: 'A cash flow waterfall is a sequential chart that starts with operating profit (EBITDA) and subtracts each major cash obligation \u2014 owner draws, debt service, taxes, and working capital changes \u2014 to show the net free cash remaining.' },
+      { q: 'Why does my P&L show profit but my bank account is empty?', a: 'Three common reasons: owner draws reduce cash but don\'t appear as expenses on the P&L, loan principal payments reduce cash but only interest shows on the P&L, and growth in accounts receivable and inventory consumes cash that the P&L already counted as revenue.' },
+      { q: 'What percentage of EBITDA should owner draws be?', a: 'Draws below 50-60% of EBITDA leave adequate room for debt service, working capital needs, and reinvestment. Draws above 80% of EBITDA typically indicate the business is funding owner lifestyle rather than building capacity.' },
+      { q: 'How do I improve my cash flow waterfall?', a: 'Four levers in order of speed: reduce DSO by tightening collections, reduce inventory to industry-normal levels, restructure owner draws to a sustainable percentage of EBITDA, and refinance or consolidate debt to reduce monthly payments.' },
+      { q: 'What is the difference between EBITDA and free cash flow?', a: 'EBITDA measures operating earnings before financing adjustments. Free cash flow starts with EBITDA and subtracts everything that actually consumes cash: interest, taxes, capital expenditures, loan principal, working capital changes, and owner distributions.' }
+    ]
+  },
   's-corp-tax-trap-service-business': {
     file: '/content/blogs/s-corp-tax-trap-service-business.md',
     title: 'The S-Corp Tax Trap: Why Your Service Business Makes Money But You\'re Always Broke',
