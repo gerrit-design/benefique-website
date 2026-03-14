@@ -1,14 +1,14 @@
 ---
-title: "How AI Cash Flow Forecasting Helps Small Businesses Stay 30 Days Ahead"
+title: "AI Cash Flow Forecasting: Predict Your Cash Position 30 Days Out"
 date: "2026-03-04"
 author: "Benefique Tax & Accounting"
-excerpt: "AI cash flow forecasting uses machine learning to analyze your transaction data, client payment patterns, and expenses to project your cash position 30-60 days forward. Here's how it works and why your accountant matters more than the software."
+excerpt: "AI analyzes your QuickBooks data to predict cash shortfalls 30-60 days before they hit. One analysis found $353K trapped in receivables. Here's how it works — and why your accountant matters more than the software."
 categories: ["Cash Flow Advisory", "AI Accounting", "Financial Intelligence"]
 readTime: "12 min read"
 featuredImage: "/images/blog/ai-cash-flow-forecasting-dashboard.jpg"
 slug: "ai-cash-flow-forecasting-small-business"
-metaTitle: "How AI Cash Flow Forecasting Helps Small Businesses Stay 30 Days Ahead | Benefique"
-metaDescription: "AI cash flow forecasting projects your cash position 30-60 days ahead using real payment data. Learn how accountants use AI to prevent cash shortfalls."
+metaTitle: "AI Cash Flow Forecasting: Predict Your Cash 30 Days Out"
+metaDescription: "AI analyzes your QuickBooks data to predict cash shortfalls 30-60 days out. One analysis found $353K in trapped cash. See how AI forecasting actually works."
 keywords: "AI cash flow forecasting small business, AI cash flow forecasting, how accountants use AI, predictive cash flow analysis, proactive cash flow management, AI-powered accounting small business"
 ---
 

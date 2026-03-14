@@ -1,14 +1,14 @@
 ---
-title: "How to Calculate Your Cash Conversion Cycle (Service Business & Healthcare Guide)"
+title: "Cash Conversion Cycle: How to Calculate CCC for Service Businesses"
 date: "2026-03-04"
 author: "Benefique Tax & Accounting"
-excerpt: "The Cash Conversion Cycle measures how many days it takes to turn money you spend into cash you collect. For service businesses with no inventory, it simplifies to CCC = DSO - DPO. Lower is better."
+excerpt: "The Cash Conversion Cycle tells you how many days cash is trapped between paying expenses and collecting revenue. For service businesses: CCC = DSO - DPO. Calculate yours in 5 minutes from QuickBooks."
 categories: ["Cash Flow Advisory", "Financial Intelligence"]
 readTime: "9 min read"
 featuredImage: "/images/blog/cash-conversion-cycle-calculation.jpg"
 slug: "how-to-calculate-cash-conversion-cycle"
-metaTitle: "How to Calculate Your Cash Conversion Cycle (Service Business & Healthcare Guide) | Benefique"
-metaDescription: "Learn to calculate your Cash Conversion Cycle with service business and healthcare examples. CCC = DSO - DPO. Find your numbers in QuickBooks in 5 minutes."
+metaTitle: "Cash Conversion Cycle: Calculate CCC for Service Businesses"
+metaDescription: "Calculate your Cash Conversion Cycle in 5 minutes from QuickBooks. Service business formula: CCC = DSO - DPO. Includes healthcare and professional services benchmarks."
 keywords: "cash conversion cycle service business, cash conversion cycle healthcare practice, cash conversion cycle formula, how to calculate CCC, DSO DPO DIO, CCC for professional services"
 ---
 

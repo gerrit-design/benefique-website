@@ -1,14 +1,14 @@
 ---
-title: "5 Ways to Improve Your DSO Without Sacrificing Relationships"
+title: "Reduce Your DSO in 30 Days: 5 Strategies That Won't Lose Clients"
 date: "2026-03-03"
 author: "Benefique Tax & Accounting"
-excerpt: "The average small business has $84,000 in unpaid invoices. Here are 5 proven strategies to collect faster without damaging client relationships -- from clear terms to smart segmentation."
+excerpt: "The average small business has $84,000 in unpaid invoices. These 5 strategies cut collection time without damaging relationships — most see results within 30 days."
 categories: ["Cash Flow Advisory", "Accounts Receivable"]
 readTime: "10 min read"
 featuredImage: "/images/blog/dso-unpaid-invoices.jpg"
 slug: "improve-dso-without-sacrificing-relationships"
-metaTitle: "5 Ways to Improve Your DSO Without Sacrificing Relationships | Benefique"
-metaDescription: "The average small business has $84,000 in unpaid invoices. 5 proven strategies to collect faster without damaging client relationships."
+metaTitle: "Reduce Your DSO in 30 Days: 5 Strategies That Won't Lose Clients"
+metaDescription: "The average small business has $84K in unpaid invoices. 5 proven strategies to collect faster without losing clients. Most see results in 30 days."
 keywords: "improve DSO without losing clients, speed up customer payments, reduce DSO healthcare, collections strategy small business, accounts receivable management, days sales outstanding reduction"
 ---
 

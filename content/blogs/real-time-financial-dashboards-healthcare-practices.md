@@ -1,14 +1,14 @@
 ---
-title: "Real-Time Financial Dashboards for Healthcare Practices"
+title: "10 KPIs Every Healthcare Practice Should Track in Real Time"
 date: "2026-03-05"
 author: "Benefique Tax & Accounting"
-excerpt: "A real-time financial dashboard gives healthcare practice owners instant visibility into collection rates, AR aging, overhead ratio, DSO, and cash runway. Here are the 10 KPIs every practice should track, with benchmarks by specialty."
+excerpt: "Collection rates, AR aging, overhead ratio, DSO, cash runway — these 10 KPIs should update daily, not monthly. Includes benchmarks for dental, radiology, and physician practices."
 categories: ["Cash Flow Advisory", "Healthcare Finance", "Financial Intelligence"]
 readTime: "11 min read"
 featuredImage: "/images/blog/proactive-cash-flow-monitoring.jpg"
 slug: "real-time-financial-dashboards-healthcare-practices"
-metaTitle: "Real-Time Financial Dashboards for Healthcare Practices | Benefique"
-metaDescription: "10 KPIs every healthcare practice should track on a real-time financial dashboard, with benchmarks for dental, radiology, and physician practices."
+metaTitle: "10 KPIs Every Healthcare Practice Should Track in Real Time"
+metaDescription: "Collection rates, AR aging, overhead ratio, DSO, cash runway — with benchmarks for dental, radiology, and physician practices. Free KPI checklist inside."
 keywords: "real-time financial dashboards healthcare practices, physician practice financial dashboards, dental practice financial dashboard, radiology practice management financial, healthcare practice dashboard, healthcare CFO tools"
 ---
 
