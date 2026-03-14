@@ -6,6 +6,24 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  'why-banker-asks-personal-tax-return': {
+    file: '/content/blogs/why-banker-asks-personal-tax-return.md',
+    title: 'Why Your Banker Asked for Your Personal Tax Return (And What They\'re Really Looking For)',
+    date: '2026-03-13',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'You applied for a business loan. The bank asked for your personal tax return, your personal financial statement, and two years of K-1s. Here\'s what they\'re actually evaluating \u2014 and the three personal risks that kill business loan applications.',
+    categories: ['Cash Flow Advisory', 'Business Strategy', 'Financial Intelligence'],
+    readTime: '11 min read',
+    featuredImage: '/images/blog/why-banker-asks-personal-tax-return.jpg',
+    faqs: [
+      { q: 'Why does the bank need my personal tax return for a business loan?', a: 'The bank evaluates the owner as a credit risk to the business. Your personal tax return reveals your total income sources, estimated tax obligations that may consume business cash, whether your draws align with reported income, and your personal debt load.' },
+      { q: 'What does a bank look for on a personal financial statement?', a: 'Banks evaluate four things: total personal debt load and monthly obligations, net worth (assets minus liabilities), income sources beyond the business, and the gap between documented income and actual expenses.' },
+      { q: 'Can my personal debt affect my business loan application?', a: 'Yes. High personal debt creates extraction risk \u2014 the bank\'s concern that you\'ll pull excess cash from the business to service personal obligations rather than using loan proceeds for business growth. A personal debt-to-income ratio above 43% is a red flag.' },
+      { q: 'Do I need a personal guarantee for an SBA loan?', a: 'Yes. The SBA requires personal guarantees from any individual owning 20% or more of the business. The guarantee means your personal assets serve as secondary collateral if the business defaults.' },
+      { q: 'What are unrecorded liabilities in a loan application?', a: 'Unrecorded liabilities are obligations not on the business balance sheet but that will consume cash. The most common: estimated tax obligations from K-1 pass-through income, personal guarantees on other entities\' debts, pending legal settlements, and IRS installment agreements.' },
+      { q: 'How do I prepare my personal finances before applying for a business loan?', a: 'Start 30-60 days before: pull your credit report and dispute errors, complete a personal financial statement (SBA Form 413), calculate and fund your estimated tax obligation, document all income sources, and align your draws to a consistent monthly pattern.' }
+    ]
+  },
   'what-your-banker-sees-that-you-dont': {
     file: '/content/blogs/what-your-banker-sees-that-you-dont.md',
     title: 'What Your Banker Sees That You Don\'t \u2014 From the Accountant Who Builds the Package',

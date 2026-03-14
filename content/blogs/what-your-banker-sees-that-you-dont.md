@@ -55,7 +55,7 @@ But even if these numbers pass, the bank isn't done. Not even close.
 
 ### Review 2: Your Personal Balance Sheet (The One That Blindsides You)
 
-Here's what most owners don't expect: the bank is going to ask for your personal financial statement and your last two years of personal tax returns.
+Here's what most owners don't expect: the bank is going to ask for your personal financial statement and your last two years of personal tax returns. (We wrote a [complete deep dive on why they ask for your personal tax return](/blog/why-banker-asks-personal-tax-return) — read that for the full preparation checklist.)
 
 Why? Because the bank knows something that accountants see every month — **the owner is the biggest risk to the business.**
 
