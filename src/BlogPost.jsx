@@ -343,12 +343,23 @@ const blogPosts = {
   'ai-cash-flow-forecasting-small-business': {
     file: '/content/blogs/ai-cash-flow-forecasting-small-business.md',
     title: 'AI Cash Flow Forecasting: Predict Your Cash Position 30 Days Out',
-    date: '2026-03-04',
-    author: 'Benefique Tax & Accounting',
-    excerpt: 'AI analyzes your QuickBooks data to predict cash shortfalls 30-60 days before they hit. One analysis found $353K trapped in receivables. Here\'s how it works — and why your accountant matters more than the software.',
+    date: '2026-03-14',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'AI analyzes your QuickBooks data to predict cash shortfalls 30-60 days before they hit. One analysis found $353K trapped in receivables — another revealed a $147K cash deficit hidden behind a profitable P&L. Here\'s how it actually works.',
     categories: ['Cash Flow Advisory', 'AI Accounting', 'Financial Intelligence'],
-    readTime: '12 min read',
-    featuredImage: '/images/blog/ai-cash-flow-forecasting-dashboard.jpg'
+    readTime: '18 min read',
+    featuredImage: '/images/blog/ai-cash-flow-forecasting-dashboard.jpg',
+    faqs: [
+      { q: 'What is AI cash flow forecasting?', a: 'AI cash flow forecasting uses machine learning to analyze your historical financial data — transaction patterns, client payment behavior, seasonal trends, and recurring expenses — and project your future cash position 30, 60, or 90 days ahead. Unlike spreadsheet forecasts that rely on assumptions, AI models learn from actual patterns in your data and update continuously.' },
+      { q: 'How accurate is AI cash flow forecasting compared to spreadsheets?', a: 'AI reduces cash flow forecasting errors by 20-50% compared to manual spreadsheet methods, according to DataRobot research. AI processes hundreds of variables simultaneously, updates continuously rather than monthly, and learns from actual payment behavior patterns rather than stated terms.' },
+      { q: 'Do I need to buy AI software to get cash flow forecasting?', a: 'No. A growing number of accounting firms use AI-powered tools as part of their advisory service. Your accountant runs the analysis on your existing QuickBooks or Xero data and delivers insights through dashboards and proactive alerts. You don\'t need to purchase, learn, or maintain any software.' },
+      { q: 'Can AI predict a cash shortfall before it happens?', a: 'Yes. AI cash flow forecasting can typically identify potential shortfalls 2-4 weeks before they hit, based on the gap between projected inflows and committed outflows. This early warning gives business owners time to accelerate collections, delay discretionary spending, or arrange a credit line.' },
+      { q: 'How do accountants use AI for cash flow management?', a: 'Accountants use AI to monitor financial data continuously rather than reviewing it once a month. The AI handles data processing — pulling transactions, analyzing payment patterns, projecting cash positions, and flagging anomalies. The accountant interprets results, adds business context, and advises on specific actions.' },
+      { q: 'Is AI cash flow forecasting worth it for a small business under $2 million in revenue?', a: 'Cash flow timing matters more for smaller businesses, not less. A $1.5M healthcare practice with a 60-day DSO has roughly $247,000 locked in receivables at any time. A single client paying 30 days late can create a payroll crisis. If you\'ve ever been surprised by a cash shortfall, AI forecasting addresses exactly that problem.' },
+      { q: 'What QuickBooks reports does AI cash flow forecasting use?', a: 'AI pulls directly from QuickBooks Online via API — Profit & Loss, Balance Sheet, AR Aging, AP Aging, and General Ledger transaction detail. It processes all of this simultaneously to build a complete picture of your cash cycle. You don\'t need to export or prepare anything.' },
+      { q: 'How is AI cash flow forecasting different from QuickBooks cash flow reports?', a: 'QuickBooks generates a Statement of Cash Flows showing what already happened. AI cash flow forecasting looks forward — using patterns in your historical data to project where your cash position is heading 30, 60, and 90 days from now, and flags specific risks before they become problems.' },
+      { q: 'Can a South Florida small business get AI cash flow forecasting without enterprise software?', a: 'Yes. Enterprise AI tools from Oracle, SAP, and Kyriba are built for corporations with six-figure software budgets. Small businesses across Broward County can access the same analytical capability through an accounting firm that uses AI-powered tools as part of its advisory service. No software to buy, no dashboards to learn.' }
+    ]
   },
   'why-monthly-reports-too-late': {
     file: '/content/blogs/why-monthly-reports-too-late.md',
