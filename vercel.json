@@ -4,9 +4,9 @@
   "trailingSlash": false,
   "redirects": [
     { "source": "/blog/real-time-accounting-dashboards--essential-tools-for-professional-practices", "destination": "/blog/real-time-financial-dashboards-healthcare-practices", "statusCode": 301 },
-    { "source": "/blog/proactive-tax-planning-for-healthcare-smbs--maximizing-returns-and-minimizing-risks", "destination": "/blog", "statusCode": 301 },
-    { "source": "/blog/fl-entity-structure-s-corp-tax-savings-500k", "destination": "/blog/s-corp-election-guide", "statusCode": 301 },
-    { "source": "/blog/davie-business-owners--are-you-leaving-six-figures-on-the-table--the-real-cost-of-skipping-strategic-tax-planning", "destination": "/blog", "statusCode": 301 }
+    { "source": "/blog/proactive-tax-planning-for-healthcare-smbs--maximizing-returns-and-minimizing-risks", "destination": "/blog/missed-tax-deductions-healthcare-service-businesses-broward-county", "statusCode": 301 },
+    { "source": "/blog/fl-entity-structure-s-corp-tax-savings-500k", "destination": "/blog/s-corp-election", "statusCode": 301 },
+    { "source": "/blog/davie-business-owners--are-you-leaving-six-figures-on-the-table--the-real-cost-of-skipping-strategic-tax-planning", "destination": "/blog/missed-tax-deductions-healthcare-service-businesses-broward-county", "statusCode": 301 }
   ],
   "rewrites": [
     { "source": "/terms", "destination": "/api/terms" },
