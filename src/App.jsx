@@ -399,11 +399,15 @@ function Home() {
               <h3 className="text-xl font-bold text-benefique-navy mb-2">Quick Application</h3>
               <p className="text-gray-600 text-sm mb-6">Takes 60 seconds. We'll reach out within 24 hours.</p>
               
-              <form className="space-y-4">
+              <form action="https://formspree.io/f/mzdjjprp" method="POST" className="space-y-4">
+                <input type="hidden" name="_subject" value="New Benefique Application" />
+                <input type="text" name="_gotcha" style={{display: 'none'}} />
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
                   <input
                     type="text"
+                    name="name"
+                    required
                     placeholder="John Smith"
                     className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent"
                   />
@@ -412,6 +416,8 @@ function Home() {
                   <label className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
                   <input
                     type="email"
+                    name="email"
+                    required
                     placeholder="john@company.com"
                     className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent"
                   />
@@ -420,13 +426,15 @@ function Home() {
                   <label className="block text-sm font-medium text-gray-700 mb-1">Business Name</label>
                   <input
                     type="text"
+                    name="business"
+                    required
                     placeholder="Acme Medical Group"
                     className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent"
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Annual Revenue</label>
-                  <select className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent text-gray-600">
+                  <select name="revenue" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent text-gray-600">
                     <option>Select range...</option>
                     <option>Under $500K</option>
                     <option>$500K - $1M</option>
@@ -437,7 +445,7 @@ function Home() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Current Accounting Situation</label>
-                  <select className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent text-gray-600">
+                  <select name="current_situation" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent text-gray-600">
                     <option>Select one...</option>
                     <option>Doing it myself</option>
                     <option>Have a bookkeeper</option>
@@ -449,6 +457,7 @@ function Home() {
                   <label className="block text-sm font-medium text-gray-700 mb-1">Biggest Financial Headache Right Now?</label>
                   <textarea
                     rows={3}
+                    name="headache"
                     placeholder="What's keeping you up at night?"
                     className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent"
                   />
@@ -1246,22 +1255,24 @@ function Contact() {
               <h3 className="text-xl font-bold text-benefique-navy mb-2">Quick Application</h3>
               <p className="text-gray-600 text-sm mb-6">Takes 60 seconds. We'll reach out within 24 hours.</p>
               
-              <form className="space-y-4">
+              <form action="https://formspree.io/f/mzdjjprp" method="POST" className="space-y-4">
+                <input type="hidden" name="_subject" value="New Benefique Contact Application" />
+                <input type="text" name="_gotcha" style={{display: 'none'}} />
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
-                  <input type="text" placeholder="John Smith" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
+                  <input type="text" name="name" required placeholder="John Smith" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-                  <input type="email" placeholder="john@company.com" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
+                  <input type="email" name="email" required placeholder="john@company.com" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Business Name</label>
-                  <input type="text" placeholder="Acme Medical Group" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
+                  <input type="text" name="business" required placeholder="Acme Medical Group" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Annual Revenue</label>
-                  <select className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent text-gray-600">
+                  <select name="revenue" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent text-gray-600">
                     <option>Select range...</option>
                     <option>Under $500K</option>
                     <option>$500K - $1M</option>
@@ -1272,7 +1283,7 @@ function Contact() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Biggest Financial Headache Right Now?</label>
-                  <textarea rows={3} placeholder="What's keeping you up at night?" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
+                  <textarea rows={3} name="headache" placeholder="What's keeping you up at night?" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
                 </div>
                 <button type="submit" className="w-full bg-benefique-orange text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition">
                   Submit Application
