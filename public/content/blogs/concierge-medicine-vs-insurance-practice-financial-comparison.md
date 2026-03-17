@@ -238,8 +238,10 @@ Converting an existing practice with a patient base takes 6-12 months to financi
 
 ## Related Articles
 
+- [Are Concierge Medical Fees Tax Deductible? What Patients and Physicians Need to Know](/blog/concierge-medical-fees-tax-deductible)
+- [How to Start a Concierge Medical Practice: The Complete 2026 Guide](/blog/how-to-start-concierge-medical-practice)
 - [How Much Does a Concierge Medical Practice Make in South Florida?](/blog/concierge-medicine-income-south-florida)
-- [The Real Cost of Starting a Concierge Medical Practice](/blog/cost-starting-concierge-medical-practice)
+- [Concierge Medical Practice Startup Costs: Full 2026 Breakdown](/blog/cost-starting-concierge-medical-practice)
 - [Tax Strategies for Concierge Physicians](/blog/tax-strategies-concierge-physicians)
 - [How Concierge Physicians Can Build Wealth Beyond Their Practice](/blog/concierge-physicians-build-wealth-beyond-practice)
 - [S-Corp Reasonable Compensation: How Much Should You Pay Yourself?](/blog/s-corp-reasonable-compensation-healthcare-service-businesses-broward-county)

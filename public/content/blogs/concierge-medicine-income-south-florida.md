@@ -119,7 +119,7 @@ Marketing costs are typically higher in the first two years as you build your pa
 
 ## Tax Implications Unique to Concierge Practices
 
-This is where most physicians leave significant money on the table. Concierge practices have tax characteristics that differ from employed physicians or traditional practices, and the right structure can save $50,000 to $150,000 per year. For a deeper dive, see our guide to [tax strategies for concierge physicians](/blog/tax-strategies-concierge-physicians).
+This is where most physicians leave significant money on the table. Concierge practices have tax characteristics that differ from employed physicians or traditional practices, and the right structure can save $50,000 to $150,000 per year. For a deeper dive, see our guide to [tax strategies for concierge physicians](/blog/tax-strategies-concierge-physicians). And if your patients are asking whether their membership fees are deductible, see our guide on [whether concierge medical fees are tax deductible](/blog/concierge-medical-fees-tax-deductible) — understanding the rules helps you structure your membership agreements to maximize patient benefit.
 
 ### [S-Corp Election](/blog/s-corp-election)
 
@@ -269,7 +269,9 @@ If you are considering concierge medicine, already running a practice, or planni
 
 ## Related Articles
 
-- [The Real Cost of Starting a Concierge Medical Practice](/blog/cost-starting-concierge-medical-practice)
+- [How to Start a Concierge Medical Practice: The Complete 2026 Guide](/blog/how-to-start-concierge-medical-practice)
+- [Concierge Medical Practice Startup Costs: Full 2026 Breakdown](/blog/cost-starting-concierge-medical-practice)
+- [Are Concierge Medical Fees Tax Deductible? What Patients and Physicians Need to Know](/blog/concierge-medical-fees-tax-deductible)
 - [Concierge Medicine vs Insurance-Based Practice: A Financial Comparison](/blog/concierge-medicine-vs-insurance-practice-financial-comparison)
 - [Tax Strategies for Concierge Physicians](/blog/tax-strategies-concierge-physicians)
 - [How Concierge Physicians Can Build Wealth Beyond Their Practice](/blog/concierge-physicians-build-wealth-beyond-practice)

@@ -6,6 +6,38 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  'concierge-medical-fees-tax-deductible': {
+    file: '/content/blogs/concierge-medical-fees-tax-deductible.md',
+    title: 'Are Concierge Medical Fees Tax Deductible? What Patients and Physicians Need to Know',
+    date: '2026-03-17',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'The IRS treats concierge medicine fees differently depending on what the fee covers. We break down the rules for patients, self-employed individuals, and employers \u2014 including HSA eligibility, the 7.5% AGI floor, and the corporate concierge opportunity most physicians miss.',
+    categories: ['Concierge Medicine', 'Tax Planning', 'Healthcare Finance'],
+    readTime: '14 min read',
+    featuredImage: '/images/blog/cost-starting-concierge-practice.svg',
+    faqs: [
+      { q: 'Are concierge doctor fees tax deductible?', a: 'Partially. The portion of a concierge retainer allocable to actual medical services (annual physical, screenings, specific visits) qualifies as a medical expense under IRC Section 213(d). Access and convenience fees (shorter wait times, 24/7 phone access) do not qualify. The deduction is subject to the 7.5% AGI floor and requires itemizing.' },
+      { q: 'Can I use my HSA to pay for concierge medicine?', a: 'Only for the portion covering actual medical services. The membership/access fee component is not HSA-eligible. Additionally, if IRS proposed regulations (REG-109755-19) are finalized, DPC/concierge arrangements may disqualify you from HSA contributions entirely.' },
+      { q: 'Can an employer deduct concierge medicine as a business expense?', a: 'Yes. Employer payments for employee concierge medicine qualify as business expenses under Section 162. When structured through a Section 105 MERP or HRA, the benefit is tax-free to employees and fully deductible to the employer. Small employers can use a QSEHRA within annual limits.' },
+      { q: 'Are concierge fees deductible for self-employed individuals?', a: 'Concierge retainer fees are NOT insurance premiums and do not qualify for the self-employed health insurance deduction under Section 162(l). They are only deductible as an itemized medical expense on Schedule A, subject to the 7.5% AGI floor.' }
+    ]
+  },
+  'how-to-start-concierge-medical-practice': {
+    file: '/content/blogs/how-to-start-concierge-medical-practice.md',
+    title: 'How to Start a Concierge Medical Practice: The Complete 2026 Guide',
+    date: '2026-03-17',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A step-by-step financial roadmap for launching a concierge medical practice \u2014 from entity formation and S-Corp election to panel building and the corporate B2B play most physicians miss. Written from the center of the concierge medicine ecosystem in South Florida.',
+    categories: ['Concierge Medicine', 'Practice Startup', 'Healthcare Finance'],
+    readTime: '24 min read',
+    featuredImage: '/images/blog/concierge-medicine-income-south-florida.svg',
+    faqs: [
+      { q: 'How do I start a concierge medical practice?', a: 'Start with these steps: choose your model (concierge vs DPC vs hybrid), form a Florida PLLC with S-Corp election, set up financial infrastructure (QBO, payroll, retirement plan), secure office space, choose your technology stack, staff your practice, and build your patient panel. Most solo practices launch for $100K-$175K in South Florida.' },
+      { q: 'How much does it cost to start a concierge medical practice?', a: 'Total startup costs range from $75,000 to $200,000 depending on whether you are converting an existing practice or building from scratch. This includes entity formation, office buildout, equipment, EHR, marketing, and 3-6 months of operating reserves.' },
+      { q: 'How long does it take to build a concierge patient panel?', a: 'Converting an existing practice: 6-12 months to breakeven, 12-24 months to target income. Starting from scratch: 12-18 months to breakeven. Joining an established network like MDVIP: 3-6 months. Corporate B2B contracts can accelerate panel fill significantly.' },
+      { q: 'What is the best entity structure for a concierge medical practice?', a: 'A Florida PLLC with S-Corp tax election is optimal for most concierge physicians. At $500K+ in net income, the S-Corp saves $15K-$25K per year in self-employment taxes. File IRS Form 2553 within 75 days of formation or by March 15.' }
+    ]
+  },
   'why-banker-asks-personal-tax-return': {
     file: '/content/blogs/why-banker-asks-personal-tax-return.md',
     title: 'Why Your Banker Asked for Your Personal Tax Return (And What They\'re Really Looking For)',
@@ -448,17 +480,21 @@ const blogPosts = {
   },
   'cost-starting-concierge-medical-practice': {
     file: '/content/blogs/cost-starting-concierge-medical-practice.md',
-    title: 'Cost to Start a Concierge Practice: $75K-$200K Breakdown (2026)',
+    title: 'Concierge Medical Practice Startup Costs: Full 2026 Breakdown',
     date: '2026-03-08',
     author: 'Gerrit Disbergen, EA',
-    excerpt: 'Launch a concierge medical practice for $75K-$200K. Full startup cost breakdown, monthly overhead, South Florida lease benchmarks, entity structure, and pre-launch checklist.',
+    excerpt: 'What does it really cost to launch a concierge medical practice? We break down startup costs from $75K to $200K \u2014 entity structure, staffing, technology, South Florida lease benchmarks, and the financial mistakes that cost physicians more than the buildout.',
     categories: ['Concierge Medicine', 'Practice Startup', 'Tax Planning'],
-    readTime: '20 min read',
+    readTime: '22 min read',
     featuredImage: '/images/blog/cost-starting-concierge-practice.svg',
     faqs: [
       { q: 'How much does it cost to start a concierge medical practice?', a: 'Most solo concierge practices in Broward County launch for $100,000-$175,000 in total startup capital, including entity formation, office buildout, equipment, EHR, marketing, and 3-6 months of operating reserves. Physicians converting an existing practice spend significantly less.' },
       { q: 'What entity structure should a concierge physician use?', a: 'Most concierge physicians should form a Florida PLLC with S-Corp tax election. At $500,000+ in net income, the S-Corp election saves $15,000-$25,000 per year in self-employment taxes. The election must be filed within 75 days of entity formation or by March 15.' },
-      { q: 'How long does it take for a concierge practice to break even?', a: 'Converting an existing practice takes 6-12 months to break even and 12-24 months to reach target income. Starting a new concierge practice with no patient base takes 12-18 months to break even. Joining an established network like MDVIP can reach breakeven in 3-6 months.' }
+      { q: 'How long does it take for a concierge practice to break even?', a: 'Converting an existing practice takes 6-12 months to break even and 12-24 months to reach target income. Starting a new concierge practice with no patient base takes 12-18 months to break even. Joining an established network like MDVIP can reach breakeven in 3-6 months.' },
+      { q: 'How much does concierge medical practice setup cost with consulting services?', a: 'Consulting services for concierge practice setup typically cost $5,000-$25,000 depending on scope. This includes business plan development, financial modeling, entity formation guidance, payer contract exit strategy, and marketing launch support. Many physicians skip this and make structural mistakes that cost far more over time.' },
+      { q: 'What is the typical ROI for a concierge medicine practice in the first year?', a: 'First-year ROI depends on your starting point. Physicians converting an existing panel can reach profitability in 6-12 months with ROI of 50-100% on startup investment by year two. New practices without an existing patient base typically break even in 12-18 months, with positive ROI by month 18-24.' },
+      { q: 'Are concierge medical fees tax deductible?', a: 'Partially. The portion of a concierge retainer that pays for actual medical services (annual physical, screenings, specific visits) qualifies as a medical expense under IRC Section 213. Access or convenience fees do not. The deduction is subject to the 7.5% AGI floor and requires itemizing. See our detailed guide on concierge medicine tax deductibility.' },
+      { q: 'Can a company offer concierge medicine as an employee benefit?', a: 'Yes. Employers can deduct concierge medicine costs as a business expense under Section 162. When structured through a Section 105 Medical Expense Reimbursement Plan or HRA, the benefit is tax-free to employees and deductible to the employer. Companies like Amazon, Apple, and Microsoft already offer corporate concierge health programs.' }
     ]
   },
   'concierge-medicine-vs-insurance-practice-financial-comparison': {

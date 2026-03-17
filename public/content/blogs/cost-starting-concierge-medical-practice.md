@@ -219,6 +219,60 @@ We work with physician practices across Broward County. Concierge physicians are
 
 If you are planning your launch, [schedule a consultation](/contact) and we will build a financial model for your specific situation — before you make the structural decisions that will affect your practice for years.
 
+## Why South Florida Is the Concierge Medicine Capital
+
+If you are reading this from South Florida, you are already in the right place. The modern concierge medicine movement was born here.
+
+MDVIP was founded in Boca Raton in 2000 by Dr. Robert Colton, Dr. Edward Goldman, and Dr. Bernard Kaminetsky. They took the ultra-luxury concierge model (which started in Seattle at $13,200/year) and made it accessible at $1,500/year. Twenty-five years later, MDVIP has 1,400+ physicians and 430,000+ members across 45 states — and they still operate from their new 49,000 SF headquarters in Boca Raton.
+
+The tri-county area (Broward, Palm Beach, Miami-Dade) has one of the highest concentrations of concierge practices in the country. Baptist Health South Florida, UHealth Premier at the University of Miami, and dozens of independent practices serve a population that expects premium healthcare access. The national concierge medicine market is now valued at $7.35 billion and growing at over 10% annually, with Florida leading alongside California and Pennsylvania in total concierge physicians.
+
+For physicians launching a concierge practice in South Florida, this density is an advantage. The patient base already understands the model. The referral networks exist. The infrastructure — from concierge-friendly office spaces to medical support staffing agencies — is built around this ecosystem.
+
+At Benefique Tax & Accounting, we work from Davie, FL — in the center of this ecosystem. We see the financials of physician practices across Broward County. That proximity to the data is why the cost benchmarks, staffing ranges, and lease figures in this article reflect actual South Florida market conditions, not national averages.
+
+## Are Concierge Medical Fees Tax Deductible?
+
+This is one of the most common questions we hear from both physicians (advising their patients) and patients themselves. The short answer: **partially, and it depends on what the fee covers.**
+
+For a complete breakdown of the tax treatment — including HSA/FSA eligibility, employer deductions, and the proposed IRS regulations that could change the rules — read our dedicated guide: [Are Concierge Medical Fees Tax Deductible? What Patients and Physicians Need to Know](/blog/concierge-medical-fees-tax-deductible).
+
+The key points:
+
+- **Deductible portion:** The part of a concierge retainer that pays for actual medical services (annual physical, preventive screenings, specific visits) qualifies as a medical expense under [IRC Section 213(d)](https://www.law.cornell.edu/uscode/text/26/213).
+- **Non-deductible portion:** Fees paid solely for access, availability, shorter wait times, or 24/7 phone access are considered convenience fees and do not qualify.
+- **7.5% AGI floor:** Even deductible medical expenses only benefit taxpayers whose total medical expenses exceed 7.5% of adjusted gross income — and who itemize deductions.
+- **The employer angle:** Companies can deduct concierge medicine as a business expense when offering it as an employee benefit. When properly structured through a Section 105 plan, it is tax-free to employees and deductible to the employer.
+
+**For concierge physicians:** Understanding the tax treatment helps you advise patients and structure your membership agreements. Practices that provide detailed annual allocation statements (separating medical services from access fees) make it easier for patients to claim legitimate deductions — which makes your membership more attractive.
+
+## The Corporate Concierge Opportunity: A Revenue Strategy Most Physicians Miss
+
+Most concierge physicians think exclusively about individual patient enrollment. But there is a B2B model that can dramatically accelerate panel fill and stabilize revenue: corporate concierge medicine.
+
+Companies are increasingly offering concierge health programs as executive benefits and employee wellness programs. The business case is straightforward — healthier executives mean fewer lost workdays, lower health claims, and better retention of key talent.
+
+### Who Is Already Doing This
+
+- **MDVIP** runs a dedicated employer program where Fortune 500 companies offer MDVIP memberships as covered or partially covered employee benefits. They report 20% fewer health claims and 45% fewer lost workdays per enrolled executive.
+- **Crossover Health** operates private on-campus health centers for Apple, Microsoft, Meta, and Amazon. In January 2026, Crossover merged with Premise Health to create a combined organization serving 400+ organizations with nearly 900 wellness centers.
+- **Amazon's acquisition of One Medical** gave them 8,000 clinicians and 8,500 existing employer relationships, signaling that the corporate healthcare model is scaling.
+
+### What This Means for a Solo Concierge Physician
+
+You do not need to be MDVIP or Crossover Health. A solo concierge physician in Broward County can approach mid-size employers (50-500 employees) with a simple proposition:
+
+**"Offer your top 10-20 executives a concierge physician membership as a covered benefit. The company deducts the cost. The executive receives tax-free healthcare. Your retention of key people improves."**
+
+At $5,000/member/year, one corporate contract with 20 executives fills 20 patient slots and generates $100,000 in predictable annual revenue — without any individual marketing spend.
+
+**The tax structure works for everyone:**
+- The employer deducts the cost as a business expense under [Section 162](https://www.law.cornell.edu/uscode/text/26/162)
+- When structured through a Section 105 Medical Expense Reimbursement Plan, the benefit is excludable from the employee's income
+- The physician receives predictable, contracted revenue with zero patient acquisition cost
+
+This is the kind of financial strategy that emerges when your accountant understands both the physician's practice economics and the employer's tax position. It is not something you will find in a generic startup guide.
+
 ## Frequently Asked Questions
 
 ### How much does it cost to start a concierge medical practice?
@@ -237,10 +291,27 @@ Converting an existing practice takes 6-12 months to break even and 12-24 months
 
 Monthly overhead typically ranges from $11,800-$24,200, including office lease ($2,000-$5,000), staff ($6,000-$8,300), technology ($300-$800), malpractice ($500-$1,000), and other expenses. This translates to annual overhead of $141,600-$290,400, or roughly 35-55% of revenue.
 
+### How much does concierge medical practice setup cost with consulting services?
+
+Consulting services for concierge practice setup typically cost $5,000-$25,000 depending on scope. This includes business plan development, financial modeling, entity formation guidance, payer contract exit strategy, and marketing launch support. Many physicians skip consulting and make structural mistakes — wrong entity type, missed S-Corp election, undercapitalization — that cost far more over the life of the practice than the consulting fee.
+
+### What is the typical return on investment for a concierge medicine practice in the first year?
+
+First-year ROI depends heavily on your starting point. Physicians converting an existing patient panel can reach profitability in 6-12 months, with 50-100% ROI on startup investment by year two. New practices building a panel from scratch typically break even in 12-18 months, with positive ROI by month 18-24. Joining an established network like MDVIP can accelerate this to 3-6 months.
+
+### Can a company offer concierge medicine as an employee benefit?
+
+Yes, and it is one of the most tax-efficient executive benefits available. The employer deducts the cost under Section 162. When structured through a Section 105 Medical Expense Reimbursement Plan or HRA, the benefit is tax-free to employees and fully deductible to the employer. Companies like Amazon (One Medical), Apple, and Microsoft (Crossover Health) already offer corporate concierge health programs. Small employers can use a QSEHRA to reimburse concierge fees within annual limits.
+
+### Are concierge doctor fees tax deductible for patients?
+
+The portion of a concierge fee allocable to actual medical services (annual physical, preventive screenings, specific visits) qualifies as a medical expense deduction under IRC Section 213. Access and convenience fees do not qualify. The deduction is subject to the 7.5% AGI floor and requires the taxpayer to itemize. Practices that issue detailed allocation statements make it easier for patients to claim legitimate deductions. Read our full guide: [Are Concierge Medical Fees Tax Deductible?](/blog/concierge-medical-fees-tax-deductible)
+
 ---
 
 ## Related Articles
 
+- [Are Concierge Medical Fees Tax Deductible? What Patients and Physicians Need to Know](/blog/concierge-medical-fees-tax-deductible)
 - [How Much Does a Concierge Medical Practice Make in South Florida?](/blog/concierge-medicine-income-south-florida)
 - [Concierge Medicine vs Insurance-Based Practice: A Financial Comparison](/blog/concierge-medicine-vs-insurance-practice-financial-comparison)
 - [Tax Strategies for Concierge Physicians](/blog/tax-strategies-concierge-physicians)
