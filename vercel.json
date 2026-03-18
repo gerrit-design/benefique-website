@@ -1,19 +1,9 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "headers": [
-    {
-      "source": "/content/blogs/(.*).md",
-      "headers": [
-        { "key": "Content-Type", "value": "text/markdown; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=3600" }
-      ]
-    }
-  ],
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/terms", "dest": "/api/terms" },
-    { "src": "/privacy", "dest": "/api/privacy" },
-    { "src": "/(.*)", "dest": "/index.html" }
+  "rewrites": [
+    { "source": "/terms", "destination": "/api/terms" },
+    { "source": "/privacy", "destination": "/api/privacy" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
