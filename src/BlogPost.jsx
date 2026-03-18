@@ -692,6 +692,23 @@ const blogPosts = {
       { question: 'How often should this analysis be done?', answer: 'Monthly for the full CFO report. The top 3 actions should be revisited quarterly — once an action is implemented and numbers shift, the priorities change.' },
       { question: 'What does this cost?', answer: 'At Benefique, CFO analysis is part of the advisory engagement — not a separate fee. AI automation means we deliver this at a fraction of what traditional advisory firms charge.' }
     ]
+  },
+  'stealth-debt-balance-sheet-hidden': {
+    file: '/content/blogs/stealth-debt-balance-sheet-hidden.md',
+    title: 'The Debt That Doesn\'t Look Like Debt: How AI Found $961K Your Balance Sheet Hid',
+    date: '2026-03-18',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A $4.7M imaging center showed $399K in debt on the balance sheet. Our AI pulled 12 months of snapshots and found $961K more \u2014 vendor credit and credit cards quietly replacing formal loans while nobody noticed.',
+    categories: ['Cash Flow', 'Healthcare Finance'],
+    readTime: '11 min read',
+    featuredImage: '/images/blog/stealth-debt-balance-sheet-hidden.jpg',
+    faqs: [
+      { question: 'Is accounts payable considered debt?', answer: 'Technically, AP is classified as a current liability, not long-term debt. But from a cash flow perspective, it functions identically \u2014 it is money you owe that must be paid from future cash flow. When AP grows beyond normal trade terms, it becomes de facto financing.' },
+      { question: 'How can AI detect hidden debt on a balance sheet?', answer: 'AI compares multiple balance sheet snapshots over time \u2014 typically quarterly for the past 12 months. It calculates growth rates for each liability category, identifies substitution patterns (formal debt declining while informal liabilities grow), and scores the sustainability of the financing structure.' },
+      { question: 'What is a safe level of accounts payable for a small business?', answer: 'AP should generally stay within 30-45 days of cost of goods sold. Calculate: AP divided by monthly COGS equals months of AP outstanding. If this exceeds 2 months, you are stretching payments beyond normal trade terms.' },
+      { question: 'Can stretching AP actually hurt my business?', answer: 'Yes. Vendor credit tightening can cascade: supply holds stop revenue, COD demands drain cash reserves, and negative payment data shared through credit bureaus causes other vendors to tighten simultaneously.' },
+      { question: 'How is this different from cash flow waterfall analysis?', answer: 'The cash flow waterfall shows where your EBITDA went. This hidden debt analysis shows how the resulting cash gap is being filled. The waterfall says you consumed more cash than you generated. The liability analysis says here is where you quietly borrowed to cover the difference.' }
+    ]
   }
 };
 
