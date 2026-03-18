@@ -480,10 +480,10 @@ const blogPosts = {
   },
   'cost-starting-concierge-medical-practice': {
     file: '/content/blogs/cost-starting-concierge-medical-practice.md',
-    title: 'Concierge Medical Practice Startup Costs: Full 2026 Breakdown',
+    title: 'How Much Does It Cost to Start a Concierge Medical Practice? (2026)',
     date: '2026-03-08',
     author: 'Gerrit Disbergen, EA',
-    excerpt: 'What does it really cost to launch a concierge medical practice? We break down startup costs from $75K to $200K \u2014 entity structure, staffing, technology, South Florida lease benchmarks, and the financial mistakes that cost physicians more than the buildout.',
+    excerpt: 'Concierge medicine startup costs range from $75K to $200K depending on conversion vs. new practice. Full breakdown: entity setup, buildout, EHR, staffing, marketing, and the mistakes that cost more than the buildout.',
     categories: ['Concierge Medicine', 'Practice Startup', 'Tax Planning'],
     readTime: '22 min read',
     featuredImage: '/images/blog/cost-starting-concierge-practice.svg',
