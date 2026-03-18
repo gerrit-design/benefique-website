@@ -853,9 +853,9 @@ function About() {
                 <h3 className="text-xl font-bold text-benefique-navy mb-2">ROI Center</h3>
                 <p className="text-gray-600 text-sm mb-4">
                   This is where it gets interesting. AI analyzes the operational data already sitting in your QuickBooks
-                  that you don\'t have time to mine. We find cash trapped in receivables, identify where profit disappears
-                  between the P&L and the bank account, and surface insights that directly improve operations and profitability.
-                  The accounting function isn\'t just paying for itself — it\'s generating returns.
+                  that you don&apos;t have time to mine. We find cash trapped in receivables, identify where profit disappears
+                  between the P&amp;L and the bank account, and surface insights that directly improve operations and profitability.
+                  The accounting function isn&apos;t just paying for itself — it&apos;s generating returns.
                 </p>
                 <div className="bg-gray-50 rounded-lg p-4">
                   <p className="text-xs text-gray-500 font-semibold uppercase tracking-wide mb-2">Real findings from client engagements</p>
@@ -880,10 +880,10 @@ function About() {
             <div className="border-l-4 border-benefique-orange pl-6">
               <h3 className="font-bold text-benefique-navy text-lg mb-2">Real-time books = proactive tax planning</h3>
               <p className="text-gray-600 text-sm">
-                Our accounting base is exceptionally strong — and that\'s by design. When your books are clean and
+                Our accounting base is exceptionally strong — and that&apos;s by design. When your books are clean and
                 current every day, not just at quarter-end, tax planning becomes proactive instead of reactive.
-                We don\'t wait for year-end to find deductions. We see them as they happen.
-                That\'s why our motto is "Real-time accounting. Tax-ready any day."
+                We don&apos;t wait for year-end to find deductions. We see them as they happen.
+                That&apos;s why our motto is &quot;Real-time accounting. Tax-ready any day.&quot;
               </p>
             </div>
             <div className="border-l-4 border-benefique-orange pl-6">
@@ -899,7 +899,7 @@ function About() {
             <div className="border-l-4 border-benefique-orange pl-6">
               <h3 className="font-bold text-benefique-navy text-lg mb-2">Tax + cash flow under one roof</h3>
               <p className="text-gray-600 text-sm">
-                Most fractional CFOs don\'t do tax. Most tax professionals don\'t build cash flow models.
+                Most fractional CFOs don&apos;t do tax. Most tax professionals don&apos;t build cash flow models.
                 We do both — which means every cash decision considers the tax consequence, and every tax
                 strategy considers whether you actually have the cash to execute it. That dual lens is how
                 accounting stops being a cost and starts generating ROI.
@@ -923,7 +923,7 @@ function About() {
           <div className="bg-white rounded-2xl p-8 border border-gray-100">
             <h2 className="text-2xl font-bold text-benefique-navy mb-3">We build in public. Proof over promise.</h2>
             <p className="text-gray-600 mb-6">
-              We don\'t ask you to take our word for it. We publish exactly what our AI finds, how we analyze it,
+              We don&apos;t ask you to take our word for it. We publish exactly what our AI finds, how we analyze it,
               and the dollar impact it has — using real client data (anonymized). These are the case studies:
             </p>
             <div className="grid md:grid-cols-2 gap-4">
@@ -1024,7 +1024,7 @@ function About() {
           <div className="bg-white rounded-2xl p-8 border border-gray-100 mb-8">
             <h2 className="text-2xl font-bold text-benefique-navy mb-4">Who We Serve</h2>
             <p className="text-gray-600 mb-6">
-              Established businesses doing $500K-$10M+ in revenue who have outgrown their bookkeeper but aren\'t
+              Established businesses doing $500K-$10M+ in revenue who have outgrown their bookkeeper but aren&apos;t
               ready for a full-time CFO. Owners who are tired of backward-looking reports and want financial
               intelligence that actually moves the needle.
             </p>
