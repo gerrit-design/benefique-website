@@ -18,8 +18,8 @@ const routes = [
   },
   {
     path: '/about',
-    title: 'About Benefique Tax & Accounting | Davie FL',
-    description: 'Meet Gerrit Disbergen, EA — founder of Benefique Tax & Accounting. Fractional CFO services and real-time accounting for healthcare practices and service businesses across South Florida.',
+    title: 'Your Accounting Should Pay for Itself | Benefique Tax & Accounting | Davie, FL',
+    description: 'Benefique turns accounting from a cost center into an ROI center. AI-powered cash flow analysis and proactive tax planning for healthcare practices and service businesses. Real-time accounting. Tax-ready any day.',
   },
   {
     path: '/blog',
