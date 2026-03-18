@@ -639,6 +639,59 @@ const blogPosts = {
     categories: ['Tax Planning', 'S-Corp Strategy'],
     readTime: '59 min read',
     featuredImage: '/images/blog/s-corp-reasonable-compensation-featured.jpg'
+  },
+  'ai-cash-flow-waterfall-explained': {
+    file: '/content/blogs/ai-cash-flow-waterfall-explained.md',
+    title: 'How AI Found That $1M in Profit Left Zero Cash in the Bank',
+    date: '2026-03-18',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A $5M imaging center earned $1.07M in EBITDA but its bank account shrank by $41K. Here is exactly where that million dollars went — broken down by the AI that found it.',
+    categories: ['Cash Flow', 'Healthcare Finance'],
+    readTime: '12 min read',
+    featuredImage: '/images/blog/ai-cash-flow-waterfall-explained.jpg',
+    faqs: [
+      { question: 'Why am I profitable but have no cash?', answer: 'Because profit is an accounting measure on the P&L. Cash flow includes debt payments, owner distributions, and working capital changes that don\'t appear on the income statement. A business can show $1M in profit while its bank account declines.' },
+      { question: 'What is a cash flow waterfall?', answer: 'A visual chart that starts with operating earnings (EBITDA) and steps down through each category of cash outflow — distributions, debt service, intercompany financing, working capital — until reaching the actual net cash change.' },
+      { question: 'What percentage of EBITDA should owner distributions be?', answer: 'For pass-through entities (S-Corps, partnerships), 50-60% of EBITDA is generally sustainable. The owner needs enough for personal tax liability plus reasonable income. Above 60%, the business retains too little cash.' },
+      { question: 'What is the difference between P&L break-even and cash flow break-even?', answer: 'P&L break-even covers operating expenses on the income statement. Cash flow break-even adds debt payments, owner distributions, and tax obligations. The gap is the invisible cost the P&L never shows.' },
+      { question: 'Can AI really analyze my QuickBooks data this way?', answer: 'Yes. AI connects to QuickBooks Online via API, pulls 8 reports simultaneously, decomposes the Statement of Cash Flows line by line, and builds the waterfall automatically in about 30 seconds.' },
+      { question: 'How often should I review my cash flow waterfall?', answer: 'Monthly for businesses with tight cash positions (less than 30 days cash on hand). Quarterly for businesses with comfortable reserves. Always before major decisions like taking on debt or changing distribution levels.' }
+    ]
+  },
+  'bonus-depreciation-hiding-net-worth': {
+    file: '/content/blogs/bonus-depreciation-hiding-net-worth.md',
+    title: 'How Bonus Depreciation Is Hiding Your Real Net Worth',
+    date: '2026-03-18',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A business with $1.46M in equipment loans showed equity of just $150K and a debt-to-equity ratio of 9.8x. The real equity was $930K. Bonus depreciation was hiding it.',
+    categories: ['Cash Flow', 'Tax Strategy'],
+    readTime: '10 min read',
+    featuredImage: '/images/blog/bonus-depreciation-hiding-net-worth.jpg',
+    faqs: [
+      { question: 'Does bonus depreciation actually reduce my net worth?', answer: 'No. Bonus depreciation reduces book value for accounting purposes. The equipment still has real market value. Your economic net worth is unchanged, but your balance sheet shows lower equity.' },
+      { question: 'How does a low debt-to-equity ratio affect my ability to get a loan?', answer: 'Banks use D/E as a primary screening metric. Most require D/E below 2.0x. A D/E of 9.8x from bonus depreciation will flag your application for denial even if cash flow is strong. An equipment appraisal provides documentation for the adjusted D/E.' },
+      { question: 'How much does an equipment appraisal cost?', answer: 'For most small to mid-size businesses, $3,000-$5,000. The appraiser inspects equipment, researches comparable sales, and issues a formal report stating fair market value.' },
+      { question: 'Should I reverse bonus depreciation on my books?', answer: 'No. The depreciation is correct for tax purposes. The FMV adjustment is presented as a supplemental schedule or adjusted balance sheet — not a change to your books.' },
+      { question: 'What types of businesses are most affected?', answer: 'Equipment-intensive businesses: medical/dental practices, construction companies, manufacturing, transportation, IT infrastructure, restaurants. Any business that made significant equipment purchases when 100% bonus depreciation was available.' }
+    ]
+  },
+  'ai-cfo-three-actions': {
+    file: '/content/blogs/ai-cfo-three-actions.md',
+    title: 'If We Were the CEO: How AI Turns a CFO Report Into 3 Actions Worth $500K',
+    date: '2026-03-18',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Your CFO report has 40 metrics and 13 sections. Here are the 3 actions that actually move the needle — each with a calculation table, a dollar impact, and a timeline. Combined: +$337K/year.',
+    categories: ['Cash Flow', 'Healthcare Finance'],
+    readTime: '14 min read',
+    featuredImage: '/images/blog/ai-cfo-three-actions.jpg',
+    faqs: [
+      { question: 'What is a fractional CFO and how is this different?', answer: 'A fractional CFO provides part-time financial leadership. The If We Were the CEO approach goes further: instead of just monitoring metrics, we distill the analysis into 3 specific, quantified actions with calculation tables tracing every number to QuickBooks.' },
+      { question: 'How do you pick only 3 actions when there might be 10 things to fix?', answer: 'The constraint forces prioritization. We rank by dollar impact, implementation speed, cost, and number of scorecard grades improved. Three actions backed by math get implemented. Ten recommendations get filed and forgotten.' },
+      { question: 'What if I disagree with one of the 3 actions?', answer: 'Good — the calculation tables are transparent by design. Every number has a source, every assumption is stated. Change the assumption, recalculate the outcome. The framework invites challenge.' },
+      { question: 'Can AI really do this from QuickBooks data alone?', answer: 'For most small businesses, yes. AI pulls P&L, Balance Sheet, Cash Flow, and AR/AP Aging from QBO, decomposes every line item, cross-references across timeframes, and identifies the highest-impact levers.' },
+      { question: 'How often should this analysis be done?', answer: 'Monthly for the full CFO report. The top 3 actions should be revisited quarterly — once an action is implemented and numbers shift, the priorities change.' },
+      { question: 'What does this cost?', answer: 'At Benefique, CFO analysis is part of the advisory engagement — not a separate fee. AI automation means we deliver this at a fraction of what traditional advisory firms charge.' }
+    ]
   }
 };
 
