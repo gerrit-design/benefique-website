@@ -1,16 +1,19 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "redirects": [
-    { "source": "/services/", "destination": "/services", "statusCode": 301 },
-    { "source": "/blog/real-time-accounting-dashboards--essential-tools-for-professional-practices", "destination": "/blog/real-time-financial-dashboards-healthcare-practices", "statusCode": 301 },
-    { "source": "/blog/proactive-tax-planning-for-healthcare-smbs--maximizing-returns-and-minimizing-risks", "destination": "/blog/missed-tax-deductions-healthcare-service-businesses-broward-county", "statusCode": 301 },
-    { "source": "/blog/fl-entity-structure-s-corp-tax-savings-500k", "destination": "/blog/s-corp-election", "statusCode": 301 },
-    { "source": "/blog/davie-business-owners--are-you-leaving-six-figures-on-the-table--the-real-cost-of-skipping-strategic-tax-planning", "destination": "/blog/davie-accounting-services", "statusCode": 301 }
+  "headers": [
+    {
+      "source": "/content/blogs/(.*).md",
+      "headers": [
+        { "key": "Content-Type", "value": "text/markdown; charset=utf-8" }
+      ]
+    }
   ],
   "rewrites": [
     { "source": "/terms", "destination": "/api/terms" },
     { "source": "/privacy", "destination": "/api/privacy" },
+    { "source": "/content/:path*", "destination": "/content/:path*" },
+    { "source": "/images/:path*", "destination": "/images/:path*" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
