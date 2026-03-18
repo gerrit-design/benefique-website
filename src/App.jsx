@@ -785,163 +785,248 @@ function About() {
   return (
     <div>
       <Helmet>
-        <title>About Gerrit Disbergen, EA | Benefique Tax & Accounting | Davie, FL</title>
-        <meta name="description" content="Institutional-grade financial intelligence for SMBs. Founded by Gerrit Disbergen, EA — Ernst & Young and Merrill Lynch alumni — Benefique combines AI-powered analysis with hands-on tax and CFO advisory." />
+        <title>Your Accounting Should Pay for Itself | Benefique Tax & Accounting | Davie, FL</title>
+        <meta name="description" content="Benefique turns accounting from a cost center into an ROI center. AI-powered cash flow analysis and proactive tax planning for healthcare practices and service businesses. Real-time accounting. Tax-ready any day." />
         <link rel="canonical" href="https://www.benefique.com/about" />
       </Helmet>
-      {/* Header */}
+
+      {/* Hero — Pain + Promise */}
       <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-4">
           <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
-            About Us
+            About Benefique
           </div>
-          <h1 className="text-4xl font-bold text-benefique-navy mb-4">Institutional-Grade Financial Intelligence. Built for SMBs.</h1>
-          <p className="text-xl text-gray-600 max-w-3xl">We don't just record what happened. We show you what's happening, what it means, and what to do about it — in real time.</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-benefique-navy mb-6">Your accounting should pay for itself.</h1>
+          <p className="text-xl text-gray-600 max-w-3xl mb-4">
+            Most business owners see accounting as a necessary expense. We built Benefique to make it the most
+            profitable function in your company.
+          </p>
+          <p className="text-lg text-gray-500 max-w-3xl">
+            Real-time accounting. Tax-ready any day.
+          </p>
         </div>
       </section>
 
+      {/* The Progression — Cost Center → Break-Even → ROI Center */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4">
-          {/* The Founder */}
-          <div className="bg-white rounded-2xl p-8 border border-gray-100 mb-8">
-            <h2 className="text-2xl font-bold text-benefique-navy mb-4">The Founder</h2>
-            <p className="text-gray-600 mb-4">
-              <strong className="text-benefique-navy">Gerrit Disbergen, EA</strong> spent the early part of his career at
-              Ernst & Young and Merrill Lynch before founding a public financial services company that executed
-              technology IPOs, mergers, and acquisitions. That world — institutional finance, capital markets,
-              complex deal structures — shaped how he thinks about business numbers.
-            </p>
-            <p className="text-gray-600 mb-4">
-              After emigrating to the United States, Gerrit made a deliberate choice: apply that institutional-grade
-              financial expertise to the businesses that need it most but have never had access to it — small and
-              mid-sized companies run by founders who wear every hat.
-            </p>
-            <p className="text-gray-600 mb-4">
-              The financial function is always one of the most important — and always the most neglected.
-              Founders build the product, close the deals, manage the team. The books fall behind. Tax strategy
-              becomes an afterthought. Cash decisions get made on gut feel because the data arrives weeks too late.
-            </p>
-            <p className="text-gray-600">
-              Benefique was built to fix that.
-            </p>
-          </div>
+          <h2 className="text-2xl font-bold text-benefique-navy mb-3 text-center">The Accounting Evolution</h2>
+          <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+            Every business goes through three stages with their accounting function. Most never get past stage one.
+          </p>
 
-          {/* The Problem We Saw */}
-          <div className="bg-white rounded-2xl p-8 border border-gray-100 mb-8">
-            <h2 className="text-2xl font-bold text-benefique-navy mb-4">The Problem We Saw</h2>
-            <p className="text-gray-600 mb-4">
-              Traditional accounting firms that serve SMBs are volume-driven. They manage hundreds of clients.
-              Your monthly P&L arrives 3-4 weeks after the month ends. Tax "strategy" is a sentence in a cover letter.
-              The relationship is transactional: you send documents, they file returns, you hear from them next year.
-            </p>
-            <p className="text-gray-600 mb-4">
-              That model made sense when financial data was hard to access, slow to process, and expensive to analyze.
-              It doesn't make sense anymore.
-            </p>
-            <p className="text-gray-600">
-              AI and direct API integration have changed what's possible. The same depth of financial analysis
-              that a Fortune 500 company gets from a dedicated FP&A department — trailing twelve-month ratios,
-              breakeven modeling, expense benchmarking, cash flow forecasting, balance sheet trend analysis — is
-              now possible for a practice doing $1.5M in revenue. Benefique was designed from the ground up
-              around this shift.
-            </p>
-          </div>
-
-          {/* How We're Different */}
-          <div className="bg-white rounded-2xl p-8 border border-gray-100 mb-8">
-            <h2 className="text-2xl font-bold text-benefique-navy mb-6">How We're Different</h2>
-            <div className="space-y-6">
-              <div className="border-l-4 border-benefique-orange pl-6">
-                <h3 className="font-bold text-benefique-navy text-lg mb-2">We analyze, not just record</h3>
+          <div className="space-y-0">
+            {/* Stage 1 */}
+            <div className="relative pl-12 pb-12 border-l-2 border-gray-200 ml-4">
+              <div className="absolute -left-4 top-0 w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center text-white font-bold text-sm">1</div>
+              <div className="bg-white rounded-2xl p-6 border border-gray-100">
+                <div className="inline-block bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-semibold mb-3 uppercase tracking-wide">Before Benefique</div>
+                <h3 className="text-xl font-bold text-benefique-navy mb-2">Cost Center</h3>
                 <p className="text-gray-600 text-sm">
-                  We pull your data directly from QuickBooks via API, run AI-powered analysis across
-                  multiple dimensions — profitability, cash flow, cost structure, benchmarking — and deliver
-                  CFO-level intelligence through interactive dashboards. Not PDFs. Not spreadsheets.
-                  Real-time visibility into what's actually driving your business.
-                </p>
-              </div>
-              <div className="border-l-4 border-benefique-orange pl-6">
-                <h3 className="font-bold text-benefique-navy text-lg mb-2">Tax + cash flow under one roof</h3>
-                <p className="text-gray-600 text-sm">
-                  Most fractional CFOs don't do tax. Most tax professionals don't build real-time dashboards.
-                  We do both — which means every cash decision considers the tax consequence, and every tax
-                  strategy considers whether you actually have the cash to execute it. "Should you fund that
-                  solo 401(k) before year-end?" depends on both your tax position and your cash runway. We see
-                  both sides simultaneously.
-                </p>
-              </div>
-              <div className="border-l-4 border-benefique-orange pl-6">
-                <h3 className="font-bold text-benefique-navy text-lg mb-2">AI does the monitoring. Humans do the interpreting.</h3>
-                <p className="text-gray-600 text-sm">
-                  AI spots that your marketing spend is running at 9% of revenue. The human knows the industry
-                  benchmark is 3-5% and that $256K in annual savings is sitting in a vendor audit. AI calculates
-                  a 3.8% operating margin on $7M in revenue. The human knows that means the owner earned nothing
-                  despite a seven-figure capital investment. The machine monitors continuously. The Enrolled Agent
-                  interprets and acts. Neither works alone.
-                </p>
-              </div>
-              <div className="border-l-4 border-benefique-orange pl-6">
-                <h3 className="font-bold text-benefique-navy text-lg mb-2">Continuous communication, not annual check-ins</h3>
-                <p className="text-gray-600 text-sm">
-                  Your books are closed by the 7th. Review calls by the 10th. Questions answered within 24 hours.
-                  Always. Our client churn is near zero — not because we lock anyone in, but because when your
-                  financial team is always available and always ahead of the problem, you don't look for a replacement.
+                  You pay someone to record what already happened. Your P&L arrives 3-4 weeks after the month ends.
+                  Tax strategy is a sentence in a cover letter. You make cash decisions on gut feel because the data
+                  arrives too late. Accounting feels like a bill you pay to stay compliant.
                 </p>
               </div>
             </div>
-          </div>
 
-          {/* Decision-Ready Dashboards Section - NEW */}
-          <div className="bg-gradient-to-br from-benefique-navy to-slate-800 rounded-2xl p-8 mb-8 text-white">
-            <h2 className="text-2xl font-bold mb-4">📊 Decision-Ready Dashboards</h2>
-            <p className="text-blue-100 mb-6">
-              Every Fractional CFO client receives custom financial reports that make complex data simple. 
-              See your business health at a glance, understand trends, and know exactly what actions to take.
+            {/* Stage 2 */}
+            <div className="relative pl-12 pb-12 border-l-2 border-benefique-orange/30 ml-4">
+              <div className="absolute -left-4 top-0 w-8 h-8 rounded-full bg-benefique-orange/60 flex items-center justify-center text-white font-bold text-sm">2</div>
+              <div className="bg-white rounded-2xl p-6 border border-gray-100">
+                <div className="inline-block bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-xs font-semibold mb-3 uppercase tracking-wide">Month 1-3</div>
+                <h3 className="text-xl font-bold text-benefique-navy mb-2">Break-Even Center</h3>
+                <p className="text-gray-600 text-sm">
+                  We take over the accounting function and build a real-time foundation. Books closed by the 7th.
+                  Review calls by the 10th. Your QuickBooks data flows through our AI analysis engine via direct API
+                  integration. Proactive tax planning begins immediately — because when your books are clean in real time,
+                  tax savings become visible any day of the year. The tax savings alone offset the cost of the engagement.
+                </p>
+              </div>
+            </div>
+
+            {/* Stage 3 */}
+            <div className="relative pl-12 ml-4">
+              <div className="absolute -left-4 top-0 w-8 h-8 rounded-full bg-benefique-orange flex items-center justify-center text-white font-bold text-sm">3</div>
+              <div className="bg-white rounded-2xl p-6 border-2 border-benefique-orange/30 shadow-sm">
+                <div className="inline-block bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs font-semibold mb-3 uppercase tracking-wide">Ongoing</div>
+                <h3 className="text-xl font-bold text-benefique-navy mb-2">ROI Center</h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  This is where it gets interesting. AI analyzes the operational data already sitting in your QuickBooks
+                  that you don\'t have time to mine. We find cash trapped in receivables, identify where profit disappears
+                  between the P&L and the bank account, and surface insights that directly improve operations and profitability.
+                  The accounting function isn\'t just paying for itself — it\'s generating returns.
+                </p>
+                <div className="bg-gray-50 rounded-lg p-4">
+                  <p className="text-xs text-gray-500 font-semibold uppercase tracking-wide mb-2">Real findings from client engagements</p>
+                  <ul className="text-sm text-gray-600 space-y-1.5">
+                    <li className="flex items-start gap-2"><span className="text-benefique-orange font-bold mt-0.5">-</span> $353K in cash trapped in slow-paying receivables — freeable by reducing DSO 15 days</li>
+                    <li className="flex items-start gap-2"><span className="text-benefique-orange font-bold mt-0.5">-</span> $900K bank balance that was actually trust funds, not firm cash — real cash was $493K</li>
+                    <li className="flex items-start gap-2"><span className="text-benefique-orange font-bold mt-0.5">-</span> $1M in EBITDA that left zero cash in the bank — the waterfall showed exactly where it went</li>
+                    <li className="flex items-start gap-2"><span className="text-benefique-orange font-bold mt-0.5">-</span> 30% revenue decline masked as "seasonality" — collections dashboard exposed the real trend</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How We Do It */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-benefique-navy mb-8">How it works</h2>
+          <div className="space-y-6">
+            <div className="border-l-4 border-benefique-orange pl-6">
+              <h3 className="font-bold text-benefique-navy text-lg mb-2">Real-time books = proactive tax planning</h3>
+              <p className="text-gray-600 text-sm">
+                Our accounting base is exceptionally strong — and that\'s by design. When your books are clean and
+                current every day, not just at quarter-end, tax planning becomes proactive instead of reactive.
+                We don\'t wait for year-end to find deductions. We see them as they happen.
+                That\'s why our motto is "Real-time accounting. Tax-ready any day."
+              </p>
+            </div>
+            <div className="border-l-4 border-benefique-orange pl-6">
+              <h3 className="font-bold text-benefique-navy text-lg mb-2">AI does the monitoring. Humans do the interpreting.</h3>
+              <p className="text-gray-600 text-sm">
+                AI spots that your cash position dropped 22% while revenue grew 8%. The Enrolled Agent
+                knows that means your collections process broke down and $353K is recoverable.
+                AI calculates a 3.8% operating margin on $7M in revenue. The human knows that means the owner
+                earned nothing despite a seven-figure capital investment. The machine monitors continuously.
+                The human interprets and acts.
+              </p>
+            </div>
+            <div className="border-l-4 border-benefique-orange pl-6">
+              <h3 className="font-bold text-benefique-navy text-lg mb-2">Tax + cash flow under one roof</h3>
+              <p className="text-gray-600 text-sm">
+                Most fractional CFOs don\'t do tax. Most tax professionals don\'t build cash flow models.
+                We do both — which means every cash decision considers the tax consequence, and every tax
+                strategy considers whether you actually have the cash to execute it. That dual lens is how
+                accounting stops being a cost and starts generating ROI.
+              </p>
+            </div>
+            <div className="border-l-4 border-benefique-orange pl-6">
+              <h3 className="font-bold text-benefique-navy text-lg mb-2">Books closed by the 7th. Review calls by the 10th.</h3>
+              <p className="text-gray-600 text-sm">
+                Questions answered within 24 hours. Always. Our client churn is near zero — not because
+                we lock anyone in, but because when your financial team is always available and always ahead
+                of the problem, you stop looking for alternatives.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Building in Public */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-white rounded-2xl p-8 border border-gray-100">
+            <h2 className="text-2xl font-bold text-benefique-navy mb-3">We build in public. Proof over promise.</h2>
+            <p className="text-gray-600 mb-6">
+              We don\'t ask you to take our word for it. We publish exactly what our AI finds, how we analyze it,
+              and the dollar impact it has — using real client data (anonymized). These are the case studies:
             </p>
-            
+            <div className="grid md:grid-cols-2 gap-4">
+              <Link to="/blog/ai-found-353k-trapped-cash" className="block bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
+                <p className="text-xs text-benefique-orange font-semibold uppercase tracking-wide mb-2">Case Study</p>
+                <h3 className="font-bold text-benefique-navy text-sm mb-1">AI Found $353K in Trapped Cash</h3>
+                <p className="text-gray-500 text-xs">A professional services firm had $353K stuck in receivables and a bank balance that overstated real cash by $900K. All found in QuickBooks data.</p>
+              </Link>
+              <Link to="/blog/ai-cash-flow-waterfall-explained" className="block bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
+                <p className="text-xs text-benefique-orange font-semibold uppercase tracking-wide mb-2">Case Study</p>
+                <h3 className="font-bold text-benefique-navy text-sm mb-1">$1M Profit, Zero Cash</h3>
+                <p className="text-gray-500 text-xs">A $5M imaging center earned $1.07M in EBITDA but its bank account shrank. The AI-powered waterfall showed exactly where every dollar went.</p>
+              </Link>
+              <Link to="/blog/cash-flow-waterfall-why-profit-doesnt-equal-cash" className="block bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
+                <p className="text-xs text-benefique-orange font-semibold uppercase tracking-wide mb-2">Case Study</p>
+                <h3 className="font-bold text-benefique-navy text-sm mb-1">$454K Profit, $147K Cash Deficit</h3>
+                <p className="text-gray-500 text-xs">After partner draws, debt service, and working capital, a $6M business was $147K in the hole. The P&L never showed it.</p>
+              </Link>
+              <Link to="/blog/radiology-collections-dashboard-case-study" className="block bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
+                <p className="text-xs text-benefique-orange font-semibold uppercase tracking-wide mb-2">Case Study</p>
+                <h3 className="font-bold text-benefique-navy text-sm mb-1">30% Revenue Decline Unmasked</h3>
+                <p className="text-gray-500 text-xs">Real-time collections dashboards exposed a multi-million dollar A/R crisis that was being dismissed as seasonality across a 6-center imaging group.</p>
+              </Link>
+            </div>
+            <div className="mt-6 text-center">
+              <Link to="/blog" className="text-benefique-orange font-semibold hover:underline">
+                Read all insights on our blog →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Decision-Ready Dashboards */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-gradient-to-br from-benefique-navy to-slate-800 rounded-2xl p-8 text-white">
+            <h2 className="text-2xl font-bold mb-4">Decision-Ready Dashboards</h2>
+            <p className="text-blue-100 mb-6">
+              Every Fractional CFO client receives reports that make complex data simple.
+              See your business health at a glance, understand trends, and know exactly what to do next.
+            </p>
             <div className="grid md:grid-cols-2 gap-4 mb-6">
               <div className="bg-white/10 rounded-xl p-5 hover:bg-white/20 transition">
-                <div className="text-2xl mb-2">📊</div>
                 <h3 className="font-bold text-lg mb-2">CFO Report</h3>
                 <p className="text-blue-100 text-sm mb-3">
-                  Visual dashboard showing cash health, revenue trends, profitability metrics, and debt coverage. 
-                  Everything you need to know in one view.
+                  Cash health, revenue trends, profitability metrics, cash waterfall, and action items with dollar impact.
+                  Written in owner terms, not accountant-speak.
                 </p>
                 <Link to="/demo" className="text-benefique-orange font-semibold text-sm hover:underline">
                   View Sample →
                 </Link>
               </div>
-              
               <div className="bg-white/10 rounded-xl p-5 hover:bg-white/20 transition">
-                <div className="text-2xl mb-2">📰</div>
-                <h3 className="font-bold text-lg mb-2">The Benefique Financial Times™</h3>
+                <h3 className="font-bold text-lg mb-2">The Benefique Financial Times&trade;</h3>
                 <p className="text-blue-100 text-sm mb-3">
-                  A newspaper-style report that tells your financial story. Lead articles, trend analysis, 
-                  and action items written in owner terms.
+                  A newspaper-style report that tells your financial story. Lead articles, trend analysis,
+                  and action items — because numbers without narrative are just noise.
                 </p>
                 <Link to="/demo" className="text-benefique-orange font-semibold text-sm hover:underline">
                   View Sample →
                 </Link>
               </div>
             </div>
-            
             <div className="text-center">
-              <Link
-                to="/demo"
-                className="inline-flex items-center gap-2 bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
-              >
+              <Link to="/demo" className="inline-flex items-center gap-2 bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition">
                 See All Sample Reports
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Founder — Credibility (shorter) */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-white rounded-2xl p-8 border border-gray-100 mb-8">
+            <h2 className="text-2xl font-bold text-benefique-navy mb-4">The Founder</h2>
+            <p className="text-gray-600 mb-4">
+              <strong className="text-benefique-navy">Gerrit Disbergen, EA</strong> started his career at
+              Ernst & Young and Merrill Lynch, then founded a public financial services company that executed
+              technology IPOs and M&A transactions. That world — institutional finance, capital markets,
+              complex deal structures — shaped how he reads business numbers.
+            </p>
+            <p className="text-gray-600 mb-4">
+              After emigrating to the United States, Gerrit made a deliberate choice: apply institutional-grade
+              financial expertise to the businesses that need it most — small and mid-sized companies where
+              the founder wears every hat and the financial function is always the most neglected.
+            </p>
+            <p className="text-gray-600">
+              Benefique was built on a simple belief: accounting should take pain away, not create it.
+              When your books are strong and your data flows in real time, proactive tax planning pays for
+              the entire engagement — and the insights that come out of it improve operations well beyond the books.
+            </p>
           </div>
 
           {/* Who We Serve */}
           <div className="bg-white rounded-2xl p-8 border border-gray-100 mb-8">
             <h2 className="text-2xl font-bold text-benefique-navy mb-4">Who We Serve</h2>
             <p className="text-gray-600 mb-6">
-              We work with founders and practice owners who have outgrown their bookkeeper but aren't ready
-              for a full-time CFO. Most of our clients are in the $1M-$10M revenue range, growing, and making
-              financial decisions that deserve better data than a quarterly P&L.
+              Established businesses doing $500K-$10M+ in revenue who have outgrown their bookkeeper but aren\'t
+              ready for a full-time CFO. Owners who are tired of backward-looking reports and want financial
+              intelligence that actually moves the needle.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
@@ -956,10 +1041,10 @@ function About() {
               <div>
                 <h3 className="font-semibold text-benefique-navy mb-2">Service-Based Businesses</h3>
                 <ul className="text-gray-600 text-sm space-y-1 ml-4">
-                  <li>- IT & technology services</li>
+                  <li>- Professional services & law firms</li>
                   <li>- Marine & industrial services</li>
-                  <li>- Restaurant & hospitality groups</li>
-                  <li>- Professional services firms</li>
+                  <li>- Construction & contractors</li>
+                  <li>- IT & technology services</li>
                 </ul>
               </div>
             </div>
@@ -988,9 +1073,9 @@ function About() {
       {/* CTA */}
       <section className="py-16 bg-benefique-navy text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold mb-4">See the difference before you commit.</h2>
+          <h2 className="text-2xl font-bold mb-4">See what we find in your data.</h2>
           <p className="text-blue-100 mb-8">
-            Explore our sample reports to see what institutional-grade analysis looks like — or apply to start a conversation about your business.
+            Explore our sample reports to see what this looks like in practice — or start a conversation about your business.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
@@ -1000,10 +1085,10 @@ function About() {
               View Sample Reports
             </Link>
             <Link
-              to="/apply"
+              to="/contact"
               className="inline-block bg-benefique-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
             >
-              Apply to Work With Us
+              Start a Conversation
             </Link>
           </div>
         </div>
