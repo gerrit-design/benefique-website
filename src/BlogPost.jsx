@@ -816,6 +816,16 @@ const blogPosts = {
       { question: 'Can stretching AP actually hurt my business?', answer: 'Yes. Vendor credit tightening can cascade: supply holds stop revenue, COD demands drain cash reserves, and negative payment data shared through credit bureaus causes other vendors to tighten simultaneously.' },
       { question: 'How is this different from cash flow waterfall analysis?', answer: 'The cash flow waterfall shows where your EBITDA went. This hidden debt analysis shows how the resulting cash gap is being filled. The waterfall says you consumed more cash than you generated. The liability analysis says here is where you quietly borrowed to cover the difference.' }
     ]
+  },
+  'fixed-cost-breakeven-volume-problem': {
+    file: '/content/blogs/fixed-cost-breakeven-volume-problem.md',
+    title: 'Your Practice Doesn\'t Have a Profit Problem — It Has a Volume Problem',
+    date: '2026-03-21',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Most accountants tell you \'you lost money this month.\' We tell you \'you need 70 more patients to never lose money again.\' Here\'s the fixed-cost breakeven analysis that changes how you think about profitability.',
+    categories: ['Cash Flow Advisory', 'Healthcare Finance', 'Financial Intelligence'],
+    readTime: '14 min read',
+    featuredImage: '/images/blog/breakeven-volume-analysis.jpg'
   }
 };
 

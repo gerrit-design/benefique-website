@@ -101,6 +101,8 @@ Theory is easy. Here's what AI cash flow forecasting actually does for two types
 
 Neither of these situations would have been visible in a monthly report. The payer drift was too gradual. The recurring cash dip was too brief. But the AI saw both because it processes every data point, every day, without getting tired or distracted.
 
+For radiology and imaging practices specifically, AI monitoring also tracks volume against [fixed-cost breakeven thresholds](/blog/fixed-cost-breakeven-volume-problem) — because in a high-fixed-cost business, the difference between 590 and 731 monthly patients can mean a $17K swing from loss to profit.
+
 ### Scenario: Professional Services Firm, $6.4M Annual Revenue
 
 **The situation:** A multi-entity service business in South Florida with two partners, a dozen employees, and a $6.4 million top line. The P&L showed $454K in operating profit. On paper, everything looked healthy. The owners checked their bank balance weekly and saw a comfortable number.
@@ -246,6 +248,7 @@ Yes. Enterprise AI tools from companies like Oracle, SAP, and Kyriba are built f
 - **Part 3: AI Cash Flow Forecasting: Predict Your Cash Position 30 Days Out** (You are here)
 - [Part 4: Cash Conversion Cycle: How to Calculate CCC for Service Businesses](/blog/how-to-calculate-cash-conversion-cycle)
 - [Part 5: 10 KPIs Every Healthcare Practice Should Track in Real Time](/blog/real-time-financial-dashboards-healthcare-practices)
+- [Part 6: Your Practice Doesn't Have a Profit Problem — It Has a Volume Problem](/blog/fixed-cost-breakeven-volume-problem)
 
 ### Related: Banking Readiness Series
 
