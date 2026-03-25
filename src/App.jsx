@@ -496,8 +496,36 @@ function Services() {
           <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
             <span>📋</span> Our Services
           </div>
-          <h1 className="text-4xl font-bold text-benefique-navy mb-4">Everything Your Business Needs</h1>
-          <p className="text-xl text-gray-600 max-w-2xl">Comprehensive financial solutions for healthcare and service-based businesses</p>
+          <h1 className="text-4xl font-bold text-benefique-navy mb-4">From Cost Center to ROI Center</h1>
+          <p className="text-xl text-gray-600 max-w-2xl">
+            Comprehensive financial solutions for healthcare and service-based businesses — designed to work together
+            as a single data intelligence system.
+          </p>
+        </div>
+      </section>
+
+      {/* How They Connect */}
+      <section className="py-10 bg-white border-b border-gray-100">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-3 text-center">
+            <div className="bg-gray-100 rounded-lg px-5 py-3">
+              <div className="text-xs text-gray-500 uppercase tracking-wide font-semibold">Foundation</div>
+              <div className="font-bold text-benefique-navy text-sm">Real-Time Accounting</div>
+            </div>
+            <div className="text-gray-300 text-xl hidden md:block">&rarr;</div>
+            <div className="bg-gray-100 rounded-lg px-5 py-3">
+              <div className="text-xs text-gray-500 uppercase tracking-wide font-semibold">Multiplier</div>
+              <div className="font-bold text-benefique-navy text-sm">Proactive Tax Planning</div>
+            </div>
+            <div className="text-gray-300 text-xl hidden md:block">&rarr;</div>
+            <div className="bg-benefique-navy rounded-lg px-5 py-3">
+              <div className="text-xs text-benefique-orange uppercase tracking-wide font-semibold">Intelligence</div>
+              <div className="font-bold text-white text-sm">Fractional CFO</div>
+            </div>
+          </div>
+          <p className="text-gray-500 text-sm text-center mt-4 max-w-xl mx-auto">
+            Each layer feeds the next. Clean real-time books enable proactive tax strategy. Tax-ready data powers AI-driven financial intelligence. The result: an accounting function that pays for itself — and then some.
+          </p>
         </div>
       </section>
 
@@ -533,18 +561,27 @@ function Services() {
                 ))}
               </ul>
               <div className="bg-gray-50 rounded-xl p-6">
-                <div className="text-sm text-benefique-orange uppercase tracking-wide font-semibold mb-2">Featured</div>
-                <h3 className="text-lg font-bold text-benefique-navy mb-2">The Benefique Financial Times™</h3>
-                <p className="text-gray-600 text-sm">
-                  A weekly CFO report about your business — written in owner terms, not accountant-speak.
-                  See your numbers clearly. Make decisions confidently.
-                </p>
-                <Link to="/demo" className="text-benefique-orange text-sm font-semibold hover:underline mt-2 inline-block">
-                  See a sample report →
+                <div className="text-sm text-benefique-orange uppercase tracking-wide font-semibold mb-2">Every CFO Client Gets</div>
+                <div className="space-y-3 mb-3">
+                  <div>
+                    <h3 className="text-sm font-bold text-benefique-navy">CFO Deep Dive</h3>
+                    <p className="text-gray-500 text-xs">Monthly/quarterly — 13-section analysis with cash waterfall, 3-lens framework, and prescriptive actions.</p>
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-bold text-benefique-navy">CFO Weekly Pulse</h3>
+                    <p className="text-gray-500 text-xs">Every Monday — key metrics, alerts, and trends at a glance.</p>
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-bold text-benefique-navy">The Benefique Financial Times&trade;</h3>
+                    <p className="text-gray-500 text-xs">Monthly — your financial story told as news, in owner terms.</p>
+                  </div>
+                </div>
+                <Link to="/demo" className="text-benefique-orange text-sm font-semibold hover:underline inline-block">
+                  See all three sample reports →
                 </Link>
                 <br />
-                <Link to="/blog/ai-cfo-analysis" className="text-gray-500 text-sm hover:text-benefique-orange hover:underline mt-1 inline-block">
-                  Read: What AI-Assisted CFO Analysis Actually Looks Like →
+                <Link to="/blog/accountant-cost-center-roi-center" className="text-gray-500 text-sm hover:text-benefique-orange hover:underline mt-1 inline-block">
+                  Read: Cost Center vs. ROI Center →
                 </Link>
               </div>
             </div>
@@ -629,10 +666,36 @@ function Services() {
                   We specialize in healthcare practices, professional services, and service-based
                   businesses. We understand your industry's unique tax challenges — from physician compensation structuring to R&D credits for clinical workflows.
                 </p>
-                <Link to="/blog/s-corp-election" className="text-gray-500 text-sm hover:text-benefique-orange hover:underline mt-2 inline-block">
+                <Link to="/blog/s-corp-election-guide-V3" className="text-gray-500 text-sm hover:text-benefique-orange hover:underline mt-2 inline-block">
                   Read: Is S-Corp Election Right for Your Business? →
                 </Link>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Result */}
+      <section className="py-12 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="bg-gradient-to-br from-benefique-navy to-slate-800 rounded-2xl p-8 text-white">
+            <h2 className="text-2xl font-bold mb-4">The Result: Financial Intelligence, Not Just Financial Reporting</h2>
+            <p className="text-blue-100 mb-4">
+              Most accounting firms deliver compliance — books closed, taxes filed. That&apos;s necessary work. But when your books are real-time, your tax strategy is proactive, and AI is mining the operational data in your QuickBooks, your accounting function stops being a cost center and starts generating ROI.
+            </p>
+            <p className="text-blue-100 mb-6">
+              Our clients typically discover $20K–$350K in trapped cash, tax savings, or operational improvements within the first 90 days. Not because the data wasn&apos;t there — because nobody was looking.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link to="/about" className="bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition inline-flex items-center gap-2">
+                Read our story &rarr;
+              </Link>
+              <Link to="/blog/three-views-one-business" className="bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition inline-flex items-center gap-2">
+                Same data, three verdicts &rarr;
+              </Link>
+              <Link to="/demo" className="bg-benefique-orange hover:bg-orange-600 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition inline-flex items-center gap-2">
+                See sample reports &rarr;
+              </Link>
             </div>
           </div>
         </div>
@@ -643,7 +706,7 @@ function Services() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to get started?</h2>
           <p className="text-blue-100 mb-8">
-            Let's talk about your business and see if we're the right fit.
+            Let&apos;s talk about your business and see if we&apos;re the right fit.
           </p>
           <Link
             to="/contact"
@@ -785,8 +848,8 @@ function About() {
   return (
     <div>
       <Helmet>
-        <title>Your Accounting Should Pay for Itself | Benefique Tax & Accounting | Davie, FL</title>
-        <meta name="description" content="Benefique turns accounting from a cost center into an ROI center. AI-powered cash flow analysis and proactive tax planning for healthcare practices and service businesses. Real-time accounting. Tax-ready any day." />
+        <title>From Tax Returns to Data Intelligence | About Benefique Tax & Accounting</title>
+        <meta name="description" content="We started with your tax return. Then we built real-time accounting, AI-powered cash flow intelligence, and a data platform that turns your accounting function from a cost center into an ROI center." />
         <link rel="canonical" href="https://www.benefique.com/about" />
       </Helmet>
 
@@ -796,13 +859,14 @@ function About() {
           <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
             About Benefique
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-benefique-navy mb-6">Your accounting should pay for itself.</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-benefique-navy mb-4">We didn&apos;t set out to become a data intelligence firm.</h1>
           <p className="text-xl text-gray-600 max-w-3xl mb-4">
-            Most business owners see accounting as a necessary expense. We built Benefique to make it the most
-            profitable function in your company.
+            We just kept solving the next problem.
           </p>
           <p className="text-lg text-gray-500 max-w-3xl">
-            Real-time accounting. Tax-ready any day.
+            Every business runs on five phases: marketing, selling, operations, financial reporting, and taxes.
+            Most accounting firms sit at the end of that chain — reporting on history and filing returns. They never leave.
+            We started there too. But we kept walking forward.
           </p>
         </div>
       </section>
@@ -812,7 +876,8 @@ function About() {
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-benefique-navy mb-3 text-center">The Accounting Evolution</h2>
           <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-            Every business goes through three stages with their accounting function. Most never get past stage one.
+            We started at the end of the business — taxes — and worked backward through financial reporting,
+            into operations, and all the way to the decisions owners make every day. Most accounting firms never leave Stage 1.
           </p>
 
           <div className="space-y-0">
@@ -846,7 +911,7 @@ function About() {
             </div>
 
             {/* Stage 3 */}
-            <div className="relative pl-12 ml-4">
+            <div className="relative pl-12 pb-12 border-l-2 border-benefique-orange/60 ml-4">
               <div className="absolute -left-4 top-0 w-8 h-8 rounded-full bg-benefique-orange flex items-center justify-center text-white font-bold text-sm">3</div>
               <div className="bg-white rounded-2xl p-6 border-2 border-benefique-orange/30 shadow-sm">
                 <div className="inline-block bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs font-semibold mb-3 uppercase tracking-wide">Ongoing</div>
@@ -866,6 +931,25 @@ function About() {
                     <li className="flex items-start gap-2"><span className="text-benefique-orange font-bold mt-0.5">-</span> 30% revenue decline masked as "seasonality" — collections dashboard exposed the real trend</li>
                   </ul>
                 </div>
+              </div>
+            </div>
+
+            {/* Stage 4 */}
+            <div className="relative pl-12 ml-4">
+              <div className="absolute -left-4 top-0 w-8 h-8 rounded-full bg-benefique-navy flex items-center justify-center text-white font-bold text-sm">4</div>
+              <div className="bg-gradient-to-br from-benefique-navy to-slate-800 rounded-2xl p-6 text-white">
+                <div className="inline-block bg-white/20 text-white px-3 py-1 rounded-full text-xs font-semibold mb-3 uppercase tracking-wide">Where We Are Now</div>
+                <h3 className="text-xl font-bold mb-2">Data Intelligence Center</h3>
+                <p className="text-blue-100 text-sm mb-4">
+                  Accounting is our entry point. Intelligence is our product. We followed the cash forward — past financial
+                  reporting, into operations, volume, payer mix, distribution habits, breakeven gaps, and collection cycles.
+                  We pointed AI at the front of the business and found what no one else was looking for: the operational
+                  decisions that create &mdash; or destroy &mdash; enterprise value.
+                </p>
+                <p className="text-white font-medium text-sm">
+                  We&apos;ve become a data intelligence center for SMBs. To our knowledge, this does not exist
+                  in the accounting space &mdash; and especially not for small and mid-sized businesses.
+                </p>
               </div>
             </div>
           </div>
@@ -927,25 +1011,35 @@ function About() {
               and the dollar impact it has — using real client data (anonymized). These are the case studies:
             </p>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link to="/blog/ai-found-353k-trapped-cash" className="block bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
-                <p className="text-xs text-benefique-orange font-semibold uppercase tracking-wide mb-2">Case Study</p>
-                <h3 className="font-bold text-benefique-navy text-sm mb-1">AI Found $353K in Trapped Cash</h3>
-                <p className="text-gray-500 text-xs">A professional services firm had $353K stuck in receivables and a bank balance that overstated real cash by $900K. All found in QuickBooks data.</p>
+              <Link to="/blog/accountant-cost-center-roi-center" className="block bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
+                <p className="text-xs text-benefique-orange font-semibold uppercase tracking-wide mb-2">The Full Arc</p>
+                <h3 className="font-bold text-benefique-navy text-sm mb-1">Cost Center vs. ROI Center</h3>
+                <p className="text-gray-500 text-xs">We found $1.5M in actionable findings across a multi-location healthcare group — from the same QuickBooks data their previous accountant had for years.</p>
+              </Link>
+              <Link to="/blog/three-views-one-business" className="block bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
+                <p className="text-xs text-benefique-orange font-semibold uppercase tracking-wide mb-2">Three Lenses</p>
+                <h3 className="font-bold text-benefique-navy text-sm mb-1">Same Business, Three Verdicts</h3>
+                <p className="text-gray-500 text-xs">A $3.8M practice was &quot;doing fine&quot; to the operator, &quot;fragile&quot; to a banker, and a &quot;distressed asset&quot; to a PE buyer. Same data, three conclusions.</p>
+              </Link>
+              <Link to="/blog/fixer-upper-or-walk-in-ready" className="block bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
+                <p className="text-xs text-benefique-orange font-semibold uppercase tracking-wide mb-2">Exit Readiness</p>
+                <h3 className="font-bold text-benefique-navy text-sm mb-1">Fixer Upper or Walk-In Ready?</h3>
+                <p className="text-gray-500 text-xs">A $5.2M offer became $1.8M after due diligence. We show clients the buyer&apos;s inspection report before the buyer does.</p>
               </Link>
               <Link to="/blog/ai-cash-flow-waterfall-explained" className="block bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
                 <p className="text-xs text-benefique-orange font-semibold uppercase tracking-wide mb-2">Case Study</p>
                 <h3 className="font-bold text-benefique-navy text-sm mb-1">$1M Profit, Zero Cash</h3>
                 <p className="text-gray-500 text-xs">A $5M imaging center earned $1.07M in EBITDA but its bank account shrank. The AI-powered waterfall showed exactly where every dollar went.</p>
               </Link>
-              <Link to="/blog/cash-flow-waterfall-why-profit-doesnt-equal-cash" className="block bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
+              <Link to="/blog/ai-found-353k-trapped-cash" className="block bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
                 <p className="text-xs text-benefique-orange font-semibold uppercase tracking-wide mb-2">Case Study</p>
-                <h3 className="font-bold text-benefique-navy text-sm mb-1">$454K Profit, $147K Cash Deficit</h3>
-                <p className="text-gray-500 text-xs">After partner draws, debt service, and working capital, a $6M business was $147K in the hole. The P&L never showed it.</p>
+                <h3 className="font-bold text-benefique-navy text-sm mb-1">AI Found $353K in Trapped Cash</h3>
+                <p className="text-gray-500 text-xs">A professional services firm had $353K stuck in receivables and a bank balance that overstated real cash by $900K. All found in QuickBooks data.</p>
               </Link>
-              <Link to="/blog/radiology-collections-dashboard-case-study" className="block bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
+              <Link to="/blog/stealth-debt-balance-sheet-hidden" className="block bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
                 <p className="text-xs text-benefique-orange font-semibold uppercase tracking-wide mb-2">Case Study</p>
-                <h3 className="font-bold text-benefique-navy text-sm mb-1">30% Revenue Decline Unmasked</h3>
-                <p className="text-gray-500 text-xs">Real-time collections dashboards exposed a multi-million dollar A/R crisis that was being dismissed as seasonality across a 6-center imaging group.</p>
+                <h3 className="font-bold text-benefique-navy text-sm mb-1">$961K in Hidden Debt</h3>
+                <p className="text-gray-500 text-xs">The balance sheet showed $399K in debt. Our AI pulled 12 months of snapshots and found $961K more — vendor credit quietly replacing formal loans.</p>
               </Link>
             </div>
             <div className="mt-6 text-center">
@@ -1073,9 +1167,9 @@ function About() {
       {/* CTA */}
       <section className="py-16 bg-benefique-navy text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold mb-4">See what we find in your data.</h2>
+          <h2 className="text-2xl font-bold mb-4">Your accounting should do more than document history.</h2>
           <p className="text-blue-100 mb-8">
-            Explore our sample reports to see what this looks like in practice — or start a conversation about your business.
+            Let&apos;s talk about turning yours into an ROI center.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
@@ -1104,6 +1198,12 @@ function Blog() {
   const [activeCategory, setActiveCategory] = React.useState('All');
 
   const posts = [
+    { title: 'Your Practice Is Profitable — So Why Do You Need 922 Patients Just to Break Even on Cash?', excerpt: 'An imaging center earned over $1M in EBITDA. P&L break-even: 702 claims. Cash flow break-even: 922 claims. The 220-claim gap is where the money vanishes — consumed by debt service and distributions that never appear on the income statement.', date: '2026-03-24', slug: 'cash-flow-breakeven-per-patient-activity-units', published: true, category: 'Cash Flow', readTime: '14 min read' },
+    { title: 'Same Owner, Same Industry, 3x Cost Difference — What the P&L Can\'t Tell You', excerpt: 'Three imaging centers. Same owner. Same industry. One costs $109 per scan. Another costs $309. Their P&L couldn\'t explain the difference. A per-unit analysis exposed the gap in 20 minutes.', date: '2026-03-24', slug: 'per-unit-pnl-multi-location-cost-analysis', published: true, category: 'Healthcare Finance', readTime: '16 min' },
+    { title: 'Your Practice Doesn\'t Have a Profit Problem — It Has a Volume Problem', excerpt: 'Your accountant said you lost money. We said you need 70 more patients to never lose money again. Same QuickBooks data — different analysis. Here\'s how marrying financial and operational data reveals the exact volume threshold between loss and profit.', date: '2026-03-24', slug: 'fixed-cost-breakeven-volume-problem', published: true, category: 'Healthcare Finance', readTime: '14 min' },
+    { title: 'Same Business, Three Verdicts: What Operators, Bankers, and Buyers See in Your Financials', excerpt: 'A $3.8M imaging center was \'doing fine\' to the operator, \'fragile\' to a banker, and a \'distressed asset\' to a PE buyer. Same QuickBooks data, three verdicts.', date: '2026-03-22', slug: 'three-views-one-business', published: true, category: 'Cash Flow Advisory', readTime: '15 min read' },
+    { title: 'Your Accountant Is a Cost Center. Here\'s What an ROI Center Looks Like.', excerpt: 'We analyzed a multi-location healthcare group. Every location was extracting more cash than it could sustain. Two were \'profitable.\' All were bleeding cash.', date: '2026-03-22', slug: 'accountant-cost-center-roi-center', published: true, category: 'Cash Flow Advisory', readTime: '16 min read' },
+    { title: 'Fixer Upper or Walk-In Ready? How to Prepare Your Business for Sale', excerpt: 'Every business owner thinks their company is walk-in ready. Then the buyer shows up with a home inspector. Here\'s what they find — and how a $5M asking price becomes a $1.5M offer.', date: '2026-03-22', slug: 'fixer-upper-or-walk-in-ready', published: true, category: 'Cash Flow Advisory', readTime: '14 min read' },
     { title: 'The Debt That Doesn\'t Look Like Debt: How AI Found $961K Your Balance Sheet Hid', excerpt: 'A $4.7M imaging center showed $399K in debt on the balance sheet. Our AI pulled 12 months of snapshots and found $961K more \u2014 vendor credit and credit cards quietly replacing formal loans while nobody noticed.', date: '2026-03-18', slug: 'stealth-debt-balance-sheet-hidden', published: true, category: 'Cash Flow', readTime: '11 min' },
     { title: 'If We Were the CEO: How AI Turns a CFO Report Into 3 Actions Worth $500K', excerpt: 'Your CFO report has 40 metrics and 13 sections. Here are the 3 actions that actually move the needle \u2014 each with a calculation table, a dollar impact, and a timeline. Combined: +$337K/year.', date: '2026-03-18', slug: 'ai-cfo-three-actions', published: true, category: 'Cash Flow', readTime: '14 min' },
     { title: 'How Bonus Depreciation Is Hiding Your Real Net Worth', excerpt: 'A business with $1.46M in equipment loans showed equity of just $150K and a debt-to-equity ratio of 9.8x. The real equity was $930K. Bonus depreciation was hiding it.', date: '2026-03-18', slug: 'bonus-depreciation-hiding-net-worth', published: true, category: 'Cash Flow', readTime: '10 min' },
@@ -1395,52 +1495,81 @@ function Contact() {
 // DEMO PAGE - CFO Report & BFT Samples
 // ============================================================
 function Demo() {
-  const [activeTab, setActiveTab] = React.useState('cfo');
+  const [activeTab, setActiveTab] = React.useState('deepdive');
+
+  const reports = {
+    deepdive: {
+      name: 'CFO Deep Dive',
+      icon: '📊',
+      frequency: 'Monthly / Quarterly',
+      tagline: 'The full financial analysis — 13 sections, cash waterfall, 3-lens framework, scorecard, and prescriptive actions with dollar values.',
+      description: 'This is the flagship report. Your entire business through three lenses: what the operator sees, what a banker sees, and what a buyer sees. Includes cash flow waterfall, collections intelligence, balance sheet analysis with FMV adjustments, trend analysis, and an "If We Were the CEO" section with three quantified actions. Real data from QBO, analyzed by AI, interpreted by an Enrolled Agent.',
+      src: '/sample-cfo-report.html',
+      openLabel: 'Open full 13-section report in new tab',
+    },
+    pulse: {
+      name: 'CFO Weekly Pulse',
+      icon: '⚡',
+      frequency: 'Weekly',
+      tagline: 'The dashboard check-in — key metrics, alerts, and trends at a glance. Designed to be scanned in 2 minutes.',
+      description: 'Every Monday morning, this lands in your inbox. Cash position, revenue vs. target, margin alerts, and anything that moved more than 5% since last week. No 13-page analysis needed mid-week — just the vital signs. If something is off, the Deep Dive investigates why.',
+      src: 'https://bft-demo-seven.vercel.app',
+      openLabel: 'Open weekly pulse in new tab',
+    },
+    bft: {
+      name: 'The Benefique Financial Times\u2122',
+      icon: '📰',
+      frequency: 'Monthly',
+      tagline: 'Your financial story told as news — lead articles, trend analysis, and action items written in owner terms.',
+      description: 'Numbers without narrative are noise. This newspaper-style report translates your financial data into stories your team can understand: what happened, why it matters, and what to do about it. Lead articles, financial tables, and trend analysis — written like a CFO briefing, not an accounting report.',
+      src: 'https://bft-newspaper-demo.vercel.app',
+      openLabel: 'Open Financial Times in new tab',
+    },
+  };
+
+  const report = reports[activeTab];
 
   return (
     <div>
       <Helmet>
-        <title>Sample CFO Reports & Financial Dashboards | Benefique Tax & Accounting</title>
-        <meta name="description" content="See real examples of Benefique's fractional CFO reports and financial dashboards. Clear insights in owner terms, not accountant-speak." />
+        <title>Sample Reports | CFO Deep Dive, Weekly Pulse, Financial Times | Benefique</title>
+        <meta name="description" content="See what Benefique delivers: a quarterly CFO Deep Dive with cash waterfall and prescriptive actions, a weekly dashboard pulse, and a monthly Financial Times narrative. All from your QuickBooks data." />
         <link rel="canonical" href="https://www.benefique.com/demo" />
       </Helmet>
+
       {/* Hero */}
       <section className="bg-white py-12">
         <div className="max-w-6xl mx-auto px-4">
           <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
-            <span>📊</span> Sample Reports
+            Sample Reports
           </div>
-          <h1 className="text-4xl font-bold text-benefique-navy mb-4">See What You'll Get</h1>
-          <p className="text-xl text-gray-600 max-w-2xl">
-            Every Fractional CFO client receives custom financial reports — clear insights in owner terms, not accountant-speak.
+          <h1 className="text-4xl font-bold text-benefique-navy mb-4">Three Reports. One Data Source. Complete Visibility.</h1>
+          <p className="text-xl text-gray-600 max-w-3xl">
+            Every Fractional CFO client receives all three: a deep quarterly analysis, a weekly dashboard, and a monthly financial narrative. All generated from the same QuickBooks connection.
           </p>
         </div>
       </section>
 
-      {/* Report Selector */}
+      {/* Report Selector — 3 Tabs */}
       <section className="bg-gray-50 border-y border-gray-200">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="flex gap-4 py-4">
-            <button
-              onClick={() => setActiveTab('cfo')}
-              className={`px-6 py-3 rounded-lg font-semibold transition ${
-                activeTab === 'cfo'
-                  ? 'bg-benefique-navy text-white'
-                  : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200'
-              }`}
-            >
-              📊 CFO Report
-            </button>
-            <button
-              onClick={() => setActiveTab('bft')}
-              className={`px-6 py-3 rounded-lg font-semibold transition ${
-                activeTab === 'bft'
-                  ? 'bg-benefique-navy text-white'
-                  : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200'
-              }`}
-            >
-              📰 The Benefique Financial Times™
-            </button>
+          <div className="flex flex-wrap gap-3 py-4">
+            {Object.entries(reports).map(([key, r]) => (
+              <button
+                key={key}
+                onClick={() => setActiveTab(key)}
+                className={`px-5 py-3 rounded-lg font-semibold transition text-sm ${
+                  activeTab === key
+                    ? 'bg-benefique-navy text-white'
+                    : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200'
+                }`}
+              >
+                <span className="mr-1.5">{r.icon}</span> {r.name}
+                <span className={`ml-2 text-xs font-normal ${activeTab === key ? 'text-blue-200' : 'text-gray-400'}`}>
+                  {r.frequency}
+                </span>
+              </button>
+            ))}
           </div>
         </div>
       </section>
@@ -1448,29 +1577,17 @@ function Demo() {
       {/* Report Description */}
       <section className="bg-white py-8">
         <div className="max-w-6xl mx-auto px-4">
-          {activeTab === 'cfo' ? (
-            <div className="flex items-start gap-6">
-              <div className="text-4xl">📊</div>
-              <div>
-                <h2 className="text-2xl font-bold text-benefique-navy mb-2">CFO Report</h2>
-                <p className="text-gray-600">
-                  A visual dashboard showing your business health at a glance. Cash position, revenue trends, 
-                  profitability metrics, debt coverage, and action items — all in one place. Updated weekly.
-                </p>
+          <div className="flex items-start gap-6">
+            <div className="text-4xl hidden sm:block">{report.icon}</div>
+            <div>
+              <div className="flex items-center gap-3 mb-2">
+                <h2 className="text-2xl font-bold text-benefique-navy">{report.name}</h2>
+                <span className="bg-benefique-orange/10 text-benefique-orange px-2.5 py-0.5 rounded-full text-xs font-semibold">{report.frequency}</span>
               </div>
+              <p className="text-gray-800 font-medium mb-2">{report.tagline}</p>
+              <p className="text-gray-600 text-sm">{report.description}</p>
             </div>
-          ) : (
-            <div className="flex items-start gap-6">
-              <div className="text-4xl">📰</div>
-              <div>
-                <h2 className="text-2xl font-bold text-benefique-navy mb-2">The Benefique Financial Times™</h2>
-                <p className="text-gray-600">
-                  A newspaper-style report that tells the story of your business. Lead articles explain what's happening 
-                  and why it matters. Financial tables, trend analysis, and action items — written like a CFO briefing.
-                </p>
-              </div>
-            </div>
-          )}
+          </div>
         </div>
       </section>
 
@@ -1481,35 +1598,56 @@ function Demo() {
             {/* Demo Notice */}
             <div className="bg-amber-50 border-b border-amber-200 px-4 py-2 text-center">
               <p className="text-sm text-amber-800">
-                <span className="font-semibold">📋 Demo Report</span> — Sample data shown. Your reports will reflect your actual business.
+                <span className="font-semibold">Sample Report</span> — Anonymized client data. Your reports reflect your actual business.
               </p>
             </div>
-            
+
             {/* Iframe */}
             <div className="relative" style={{ height: '800px' }}>
               <iframe
-                src={activeTab === 'cfo' 
-                  ? 'https://bft-demo-seven.vercel.app' 
-                  : 'https://bft-newspaper-demo.vercel.app'
-                }
+                src={report.src}
                 className="w-full h-full border-0"
-                title={activeTab === 'cfo' ? 'CFO Report Demo' : 'Benefique Financial Times Demo'}
+                title={report.name + ' Sample'}
               />
             </div>
-            
+
             {/* Open in New Tab */}
             <div className="bg-gray-50 border-t border-gray-200 px-4 py-3 text-center">
               <a
-                href={activeTab === 'cfo' 
-                  ? 'https://bft-demo-seven.vercel.app' 
-                  : 'https://bft-newspaper-demo.vercel.app'
-                }
+                href={report.src}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-benefique-orange font-semibold hover:underline inline-flex items-center gap-2"
               >
-                Open full report in new tab <span>↗</span>
+                {report.openLabel} <span>&#8599;</span>
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What You Get Summary */}
+      <section className="py-12 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-benefique-navy mb-6 text-center">Every CFO Client Receives All Three</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="text-center p-6 rounded-xl border border-gray-100 bg-gray-50">
+              <div className="text-3xl mb-3">📊</div>
+              <h3 className="font-bold text-benefique-navy mb-1">CFO Deep Dive</h3>
+              <p className="text-xs text-benefique-orange font-semibold mb-2">Monthly / Quarterly</p>
+              <p className="text-gray-600 text-sm">The strategy document. Cash waterfall, 3-lens analysis, scorecard, and prescriptive actions with dollar values.</p>
+            </div>
+            <div className="text-center p-6 rounded-xl border border-gray-100 bg-gray-50">
+              <div className="text-3xl mb-3">&#9889;</div>
+              <h3 className="font-bold text-benefique-navy mb-1">CFO Weekly Pulse</h3>
+              <p className="text-xs text-benefique-orange font-semibold mb-2">Every Monday</p>
+              <p className="text-gray-600 text-sm">The vital signs check. Key metrics, alerts, and trends — scanned in 2 minutes.</p>
+            </div>
+            <div className="text-center p-6 rounded-xl border border-gray-100 bg-gray-50">
+              <div className="text-3xl mb-3">📰</div>
+              <h3 className="font-bold text-benefique-navy mb-1">Financial Times&trade;</h3>
+              <p className="text-xs text-benefique-orange font-semibold mb-2">Monthly</p>
+              <p className="text-gray-600 text-sm">The narrative layer. Your financial story told as news — for you and your team.</p>
             </div>
           </div>
         </div>
@@ -1520,7 +1658,7 @@ function Demo() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Want reports like this for your business?</h2>
           <p className="text-blue-100 mb-8">
-            Every Fractional CFO client gets custom weekly reports. Let's talk about what insights would help you most.
+            All three reports are included with every Fractional CFO engagement. Same QuickBooks data. Three formats. Complete financial visibility.
           </p>
           <Link
             to="/contact"
@@ -1984,6 +2122,75 @@ function LocationPage({ city, nearby, zipCodes, description }) {
         </section>
       )}
 
+      {/* Weston-Specific Content */}
+      {city === 'Weston' && (
+        <section className="py-12 bg-gray-50 border-t border-gray-200">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-2xl font-bold text-benefique-navy mb-6">Why Weston Businesses Choose Benefique</h2>
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-white rounded-xl p-6 border border-gray-100">
+                <h3 className="font-bold text-benefique-navy mb-2">Healthcare Hub</h3>
+                <p className="text-gray-600 text-sm">
+                  Weston is home to Cleveland Clinic Florida, dozens of specialist practices, and a concentration
+                  of healthcare professionals who need accounting that understands payer mix, collections cycles,
+                  and multi-provider compensation. We serve radiology, dental, veterinary, and concierge medicine
+                  practices across Weston.
+                </p>
+              </div>
+              <div className="bg-white rounded-xl p-6 border border-gray-100">
+                <h3 className="font-bold text-benefique-navy mb-2">15 Minutes from Our Office</h3>
+                <p className="text-gray-600 text-sm">
+                  Our Davie headquarters is a short drive from Weston via I-75 or Weston Road. Close enough
+                  for in-person meetings when you need them, with real-time digital dashboards so you never
+                  have to wait for a report.
+                </p>
+              </div>
+              <div className="bg-white rounded-xl p-6 border border-gray-100">
+                <h3 className="font-bold text-benefique-navy mb-2">Not Just Bookkeeping</h3>
+                <p className="text-gray-600 text-sm">
+                  Weston businesses generating $500K-$10M+ in revenue have outgrown basic bookkeeping.
+                  We provide a complete accounting department: real-time books, proactive tax planning, payroll,
+                  and AI-powered financial intelligence that turns your QuickBooks data into an ROI center.
+                </p>
+              </div>
+              <div className="bg-white rounded-xl p-6 border border-gray-100">
+                <h3 className="font-bold text-benefique-navy mb-2">Cash Flow Intelligence</h3>
+                <p className="text-gray-600 text-sm">
+                  Our AI-powered cash flow analysis finds what your P&amp;L is hiding. Clients typically discover
+                  $20K-$350K in trapped cash, tax savings, or operational improvements within the first 90 days.
+                </p>
+                <Link to="/blog/accountant-cost-center-roi-center" className="text-benefique-orange text-sm font-semibold hover:underline mt-2 inline-block">
+                  See a real case study &rarr;
+                </Link>
+              </div>
+            </div>
+            <div className="bg-white rounded-xl p-6 border border-gray-100">
+              <h3 className="font-bold text-benefique-navy mb-3">Weston ZIP Codes We Serve</h3>
+              <div className="flex flex-wrap gap-2">
+                {['33326', '33327', '33331', '33332'].map(z => (
+                  <span key={z} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">{z}</span>
+                ))}
+              </div>
+              <p className="text-gray-500 text-xs mt-2">Including Weston Town Center, Weston Hills, The Ridges, Savanna, and all Weston communities.</p>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ZIP Codes for non-Weston cities that have them */}
+      {city !== 'Weston' && zipCodes && zipCodes.length > 0 && (
+        <section className="py-8 bg-gray-50 border-t border-gray-200">
+          <div className="max-w-4xl mx-auto px-4 text-center">
+            <h3 className="font-bold text-benefique-navy mb-3">{city} ZIP Codes We Serve</h3>
+            <div className="flex flex-wrap justify-center gap-2">
+              {zipCodes.map(z => (
+                <span key={z} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">{z}</span>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* FAQ Section with Schema-Ready Structure */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4">
@@ -2433,7 +2640,7 @@ function RealTimeAccountingPage() {
 const locations = {
   davie: { city: 'Davie', nearby: ['Plantation', 'Weston', 'Fort Lauderdale', 'Hollywood'], description: 'Benefique is headquartered in Davie, FL — providing accounting and CFO services to local healthcare practices and service businesses.' },
   plantation: { city: 'Plantation', nearby: ['Davie', 'Fort Lauderdale', 'Weston', 'Sunrise'], description: 'Full-service accounting for Plantation businesses — from medical practices to professional services firms.' },
-  weston: { city: 'Weston', nearby: ['Davie', 'Plantation', 'Miramar', 'Southwest Ranches'], description: 'Accounting and fractional CFO services for Weston\'s growing healthcare and service business community.' },
+  weston: { city: 'Weston', nearby: ['Davie', 'Plantation', 'Miramar', 'Southwest Ranches', 'Pembroke Pines'], zipCodes: ['33326', '33327', '33331', '33332'], description: 'Weston is home to a concentration of healthcare practices, professional services firms, and high-growth service businesses. We serve Weston business owners who have outgrown their bookkeeper but aren\'t ready for a full-time CFO — providing real-time books, proactive tax planning, and AI-powered cash flow intelligence from our office 15 minutes away in Davie.' },
   miramar: { city: 'Miramar', nearby: ['Hollywood', 'Pembroke Pines', 'Weston', 'Miami Gardens'], description: 'Real-time accounting and tax planning for Miramar businesses — healthcare, marine services, and more.' },
   'fort-lauderdale': { city: 'Fort Lauderdale', nearby: ['Davie', 'Plantation', 'Hollywood', 'Oakland Park'], description: 'Fort Lauderdale\'s trusted accounting firm for healthcare practices, marine services, and professional services.' },
   aventura: { city: 'Aventura', nearby: ['North Miami Beach', 'Sunny Isles', 'Hallandale', 'Miami'], description: 'Accounting and CFO services for Aventura businesses — medical practices, professional services, and hospitality.' },

@@ -6,6 +6,96 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  'per-unit-pnl-multi-location-cost-analysis': {
+    file: '/content/blogs/per-unit-pnl-multi-location-cost-analysis.md',
+    title: 'Same Owner, Same Industry, 3x Cost Difference — What the P&L Can\'t Tell You',
+    date: '2026-03-24',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Three imaging centers. Same owner. Same industry. One costs $109 per scan to operate. Another costs $309. Their P&L couldn\'t explain the difference. A per-unit analysis — dividing every cost category by every claim — exposed the gap in 20 minutes.',
+    categories: ['Cash Flow Advisory', 'Healthcare Finance', 'Financial Intelligence'],
+    readTime: '16 min read',
+    featuredImage: '/images/blog/per-unit-pnl-multi-location-cost-analysis.jpg',
+    faqs: [
+      { q: 'What is a per-unit P&L analysis?', a: 'A per-unit P&L divides every cost category (payroll, marketing, maintenance, supplies, insurance) by every unit of output (patient visits, scans, claims, cases) at each location or service line. Instead of seeing total dollars, you see cost per claim — which normalizes for volume differences and reveals efficiency gaps between locations.' },
+      { q: 'Why can\'t my standard P&L show per-unit costs?', a: 'Your P&L reports total dollars per entity. It doesn\'t connect to your operational data — how many patients you saw or claims you processed. That activity data lives in a separate system. Per-unit analysis requires connecting financial and operational databases, which is why most accounting firms don\'t perform it.' },
+      { q: 'How is this different from breakeven analysis?', a: 'Breakeven analysis tells you the volume threshold where you cross from loss to profit. Per-unit analysis tells you what each unit of output actually costs to produce — broken down by cost category, compared across locations, and trended over time. They\'re complementary: breakeven tells you the target, per-unit tells you what\'s keeping you from hitting it.' },
+      { q: 'What data do I need to run a per-unit analysis?', a: 'Two data sources: your financial data from QuickBooks (P&L by cost category, by location, by month) and your activity data from your practice management system (claims, visits, or cases per location per month). The analysis connects the two.' },
+      { q: 'How often should I review per-unit costs?', a: 'Monthly. Per-unit costs shift as volume fluctuates, staff changes, and payer mix evolves. AI-powered monitoring can track these continuously and alert you when a cost category moves outside its normal range.' },
+      { q: 'Can this work for a single-location practice?', a: 'Yes, but multiple locations amplify the power because you generate your own internal benchmark. Same owner, same systems, different results — the per-unit analysis pinpoints exactly where the gaps are.' }
+    ]
+  },
+  'fixed-cost-breakeven-volume-problem': {
+    file: '/content/blogs/fixed-cost-breakeven-volume-problem.md',
+    title: 'Your Practice Doesn\'t Have a Profit Problem — It Has a Volume Problem',
+    date: '2026-03-24',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Your accountant said you lost money. We said you need 70 more patients to never lose money again. Same QuickBooks data — different analysis. Here\'s how marrying financial and operational data reveals the exact volume threshold between loss and profit, and why cash flow breakeven is the number that actually matters.',
+    categories: ['Cash Flow Advisory', 'Healthcare Finance', 'Financial Intelligence'],
+    readTime: '14 min read',
+    featuredImage: '/images/blog/breakeven-volume-analysis.jpg',
+    faqs: [
+      { q: 'What is fixed-cost breakeven analysis?', a: 'Fixed-cost breakeven analysis calculates the specific volume of patients, cases, or units your business needs to cover all fixed costs (rent, staff, equipment, insurance) for the month. Below this volume, you lose money regardless of how efficiently you operate. Above it, every additional unit contributes directly to profit at your full contribution margin.' },
+      { q: 'What\'s the difference between P&L breakeven and cash flow breakeven?', a: 'P&L breakeven is the volume where revenue equals expenses on your income statement. Cash flow breakeven is the volume where cash inflows actually cover all cash outflows — including loan principal, owner draws, equipment payments, and the timing lag from accounts receivable. Cash flow breakeven is almost always higher.' },
+      { q: 'Why is volume more effective than cost-cutting for profitability?', a: 'In a fixed-cost business, cutting $10,000 in costs reduces your breakeven by about 25 units. But adding 25 units generates $10,000 in additional contribution margin — the same financial impact — while preserving your capacity to grow further. Cost-cutting has a floor and often takes months. Volume growth can begin immediately.' },
+      { q: 'How do I calculate breakeven for my medical practice?', a: 'Pull 6 months of P&L data from QuickBooks. Separate fixed costs from variable costs. Calculate your average revenue per patient visit and subtract the average variable cost to get your contribution margin. Divide total monthly fixed costs by the contribution margin. For cash flow breakeven, add loan principal payments and owner draws before dividing.' },
+      { q: 'How often should I recalculate my breakeven point?', a: 'Monthly. Your breakeven number shifts as fixed costs change, variable costs shift, and revenue per unit moves. A breakeven number calculated in January can be 30-50 units off by July. AI-powered monitoring recalculates continuously against live data.' },
+      { q: 'What utilization rate do I need to reach breakeven?', a: 'Most healthcare practices break even at 60-70% utilization of their existing capacity. If your staff and equipment can handle 1,000 patients per month and your breakeven is 661, you need 66% utilization — and you\'re already paying for 100% of the capacity.' }
+    ]
+  },
+  'three-views-one-business': {
+    file: '/content/blogs/three-views-one-business.md',
+    title: 'Same Business, Three Verdicts: What Operators, Bankers, and Buyers See in Your Financials',
+    date: '2026-03-22',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A $3.8M imaging center was \'doing fine\' to the operator, \'fragile\' to a banker, and a \'distressed asset\' to a PE buyer. Same QuickBooks data, three verdicts. Here\'s what each lens reveals — and why most business owners only see one.',
+    categories: ['Cash Flow Advisory', 'Fractional CFO', 'Financial Intelligence'],
+    readTime: '15 min read',
+    featuredImage: '/images/blog/three-views-one-business.jpg',
+    faqs: [
+      { q: 'What is the Rule of 40 and why do buyers use it?', a: 'The Rule of 40 combines your revenue growth rate and your EBITDA margin into a single score. A fast-growing company can afford thin margins, and a high-margin company can afford slower growth — but the sum should be at least 40. PE firms use it as a quick screening tool. A negative score is a red flag.' },
+      { q: 'Can a business be profitable and still have negative equity?', a: 'Yes — negative equity means total liabilities exceed total assets on the balance sheet. In healthcare and equipment-heavy businesses, this is often driven by accelerated depreciation (Section 179, bonus depreciation) that reduces book value below actual market value. The business is operationally sound, but the balance sheet looks distressed.' },
+      { q: 'What is the difference between DSCR and profitability?', a: 'Profitability (net income) includes non-cash charges like depreciation. DSCR uses EBITDA — which strips those out — because lenders care about cash, not accounting profits. A business can be unprofitable on the P&L while having excellent debt service coverage, as in our case study: ($13K) net loss but 3.32x DSCR.' },
+      { q: 'Why does TTM vs run rate matter so much in valuations?', a: 'TTM reflects what actually happened over 12 months. Run rate annualizes recent performance. In a turnaround, TTM includes bad months and depresses valuation. Run rate reflects current trajectory. The difference can mean $1M+ in sale price — depending on which story the seller tells and the buyer believes.' },
+      { q: 'Do I need all three financial views if I am not selling my business?', a: 'Yes. The banker\'s view tells you what to fix before you need financing. The buyer\'s view tells you what your business is worth right now, informing decisions about investment, growth, and succession. Knowing your Rule of 40 and DSCR goes beyond "am I profitable?" to "is my business structurally healthy?"' },
+      { q: 'How often should operator banker and buyer views be updated?', a: 'We recommend quarterly for all three views. The operator dashboard should be monitored weekly or monthly. The banker\'s view matters most before financing events. The buyer\'s view is most valuable when tracked over 12-24 months, because buyers want to see trends, not snapshots.' }
+    ]
+  },
+  'accountant-cost-center-roi-center': {
+    file: '/content/blogs/accountant-cost-center-roi-center.md',
+    title: 'Your Accountant Is a Cost Center. Here\'s What an ROI Center Looks Like.',
+    date: '2026-03-22',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'We analyzed a multi-location healthcare group. Every location was extracting more cash than it could sustain. Two were \'profitable.\' All were bleeding cash. Here\'s what we found — and what we told them to do about it.',
+    categories: ['Cash Flow Advisory', 'Fractional CFO', 'Financial Intelligence'],
+    readTime: '16 min read',
+    featuredImage: '/images/blog/accountant-cost-center-roi-center.jpg',
+    faqs: [
+      { q: 'What is the difference between a fractional CFO and a regular accountant?', a: 'A regular accountant handles compliance: tax returns, bookkeeping, financial statements. A fractional CFO adds a prescriptive layer: analyzing the same data to find actionable insights with dollar values. The accountant tells you what happened. The fractional CFO tells you what to do about it — and what it\'s worth.' },
+      { q: 'How do I know if my business needs prescriptive financial intelligence?', a: 'If you\'ve ever been surprised by a cash shortfall, declined for a loan despite being profitable, or unsure what your business is worth — your current financial setup is descriptive, not prescriptive. Businesses above $500K in revenue with debt, multiple owners, or growth ambitions typically benefit.' },
+      { q: 'Can my current accountant provide all three financial views?', a: 'Most accounting firms are structured for compliance work at scale. The three-view framework (operator, banker, buyer) requires deeper engagement: understanding your payer mix, vendor relationships, debt covenants, and growth trajectory. Ask the three questions in this article — their answers will tell you.' },
+      { q: 'What is the distribution trap and how do I know if I am in it?', a: 'The distribution trap occurs when owner draws exceed sustainable operating cash flow. It doesn\'t show on the P&L because distributions are a balance sheet transaction. Compare your 12-month distributions to 12-month operating cash flow. If distributions exceed OCF, you\'re in the trap.' },
+      { q: 'Is the purchaser view useful even if I never plan to sell?', a: 'Yes. The purchaser view measures whether you\'re building or destroying enterprise value. A declining Rule of 40 score means your business is worth less this year than last — regardless of whether you sell. Tracking this quarterly tells you if your decisions are creating wealth or consuming it.' },
+      { q: 'How does AI factor into prescriptive financial analysis?', a: 'AI processes the data — pulling reports simultaneously, calculating metrics in seconds, flagging anomalies. What AI cannot do is interpret context: knowing that negative equity is driven by tax depreciation strategy, or that revenue decline is in one payer category while another grows. AI does the math. The accountant does the thinking.' }
+    ]
+  },
+  'fixer-upper-or-walk-in-ready': {
+    file: '/content/blogs/fixer-upper-or-walk-in-ready.md',
+    title: 'Fixer Upper or Walk-In Ready? How to Prepare Your Business for Sale',
+    date: '2026-03-22',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Every business owner thinks their company is walk-in ready. Then the buyer shows up with a home inspector. Here\'s what they find — and how a $5M asking price becomes a $1.5M offer.',
+    categories: ['Cash Flow Advisory', 'Fractional CFO', 'Business Strategy'],
+    readTime: '14 min read',
+    featuredImage: '/images/blog/fixer-upper-or-walk-in-ready.jpg',
+    faqs: [
+      { q: 'How long does it take to prepare a business for sale?', a: 'Most financial defects take 6-12 months to fix and show up in trailing financials. DSCR improvements from debt restructuring appear in 90 days. Revenue trend improvements need 3+ consecutive quarters. Start at least 18 months before you want to go to market.' },
+      { q: 'What EBITDA multiple should I expect for my business?', a: 'Healthcare services businesses typically sell at 3-6x EBITDA, depending on size, growth trajectory, payer mix, and owner dependency. Walk-in ready businesses with growing revenue and clean balance sheets command the top of the range. Fixer uppers get the bottom or earn-out structures.' },
+      { q: 'What is the difference between an earn-out and cash at close?', a: 'Cash at close means the buyer pays full amount at closing. An earn-out means a portion is contingent on future performance, typically 12-24 months. Buyers use earn-outs when they see risk: declining revenue, owner dependency, or unproven trends.' },
+      { q: 'Can I improve my business valuation without growing revenue?', a: 'Yes. Improving EBITDA margin, capping distributions to build reserves, cleaning up the balance sheet with an FMV asset schedule, and demonstrating trend stability all increase valuation independent of top-line growth.' },
+      { q: 'What is the Rule of 40 and why do buyers use it?', a: 'The Rule of 40 combines revenue growth rate and EBITDA margin into a single score. Above 40 signals a healthy business. Below 20 is a yellow flag. Below zero is a red flag. PE firms use it as a screening tool — many won\'t look deeper at a business scoring below 20.' },
+      { q: 'Should I hire a fractional CFO to prepare for exit?', a: 'If your current accountant can show you operator, banker, and buyer views with prescriptive action plans, you may not need one. If they can\'t answer what a banker would see in your balance sheet or name three changes worth specific dollars, the valuation gap is likely costing more than a CFO engagement.' }
+    ]
+  },
   'concierge-medical-fees-tax-deductible': {
     file: '/content/blogs/concierge-medical-fees-tax-deductible.md',
     title: 'Are Concierge Medical Fees Tax Deductible? What Patients and Physicians Need to Know',
@@ -73,6 +163,23 @@ const blogPosts = {
       { q: 'What is a cash flow waterfall and why does my banker care?', a: 'A cash flow waterfall starts with your operating earnings (EBITDA) and subtracts each cash obligation in sequence: owner draws, debt service, taxes, and working capital needs. The final bar shows your net free cash. Bankers care because a profitable business can still be cash-negative if draws and debt service exceed operating earnings.' },
       { q: 'What bank loan covenants should I expect?', a: 'Common covenants include: minimum DSCR tested quarterly (typically 1.25x), maximum leverage ratio (debt-to-EBITDA under 3.0x), minimum cash balance requirements, distribution restrictions, borrowing base limitations for lines of credit, and annual reviewed financial statement delivery requirements.' },
       { q: 'Should I hire a fractional CFO to help me get a bank loan?', a: 'If your business generates over $1M in revenue and you\'re seeking $250K+ in financing, a fractional CFO calculates your actual DSCR, builds your cash flow waterfall, normalizes your earnings, identifies issues the bank will flag, and prepares the complete banking package.' }
+    ]
+  },
+  'cash-flow-breakeven-per-patient-activity-units': {
+    file: '/content/blogs/cash-flow-breakeven-per-patient-activity-units.md',
+    title: 'Your Practice Is Profitable — So Why Do You Need 922 Patients Just to Break Even on Cash?',
+    date: '2026-03-24',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'An imaging center earned over $1M in EBITDA. P\'L break-even: 702 claims. Cash flow break-even: 922 claims. The 220-claim gap is where the money vanishes — consumed by debt service and distributions that never appear on the income statement. This analysis used to cost $15,000-$50,000. AI changed the math.',
+    categories: ['Cash Flow Advisory', 'Healthcare Finance', 'Financial Intelligence'],
+    readTime: '14 min read',
+    featuredImage: '/images/blog/cash-flow-breakeven-per-patient.jpg',
+    faqs: [
+      { q: 'What is cash flow break-even vs. P&L break-even?', a: 'P&L break-even is the patient volume where revenue covers operating expenses — rent, payroll, supplies, insurance. Cash flow break-even adds debt payments, owner draws, estimated tax payments, and working capital needs. It\'s the volume where your bank account actually starts growing. For most practices with debt and distributions, cash flow break-even is 15-40% higher than P&L break-even.' },
+      { q: 'How do I calculate my break-even in patients (not dollars)?', a: 'Divide your monthly fixed costs by your contribution per patient. Contribution per patient equals average revenue per patient minus variable cost per patient. For P&L break-even, the numerator is fixed operating expenses. For cash flow break-even, add debt service and average monthly distributions to the numerator.' },
+      { q: 'Why is my practice profitable but my bank account isn\'t growing?', a: 'Because profit and cash are not the same thing. Debt service principal, owner distributions, estimated tax payments, and growing accounts receivable all consume cash without appearing on the income statement. If your volume is between your P&L break-even and your cash flow break-even, you\'re profitable AND losing cash simultaneously.' },
+      { q: 'How much does a cash flow break-even analysis cost?', a: 'Traditional consulting engagements for this level of per-unit financial modeling run $15,000-$50,000 and take 4-8 weeks to deliver. AI-powered analysis using live QBO data produces the same analytical depth in minutes at a fraction of the cost.' },
+      { q: 'What data do I need to calculate my break-even in activity units?', a: 'Two data sources: monthly revenue and expenses from your accounting system going back at least 12 months, and a count of your activity units — patients seen, claims billed, procedures performed — from your practice management or billing system.' }
     ]
   },
   'cash-flow-waterfall-why-profit-doesnt-equal-cash': {
