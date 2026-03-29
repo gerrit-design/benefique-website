@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route, Link, useLocation, Navigate } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import BlogPost from './BlogPost';
+import ConciergeSimulator from './components/ConciergeSimulator';
 
 // ============================================================
 // BENEFIQUE WEBSITE - Davie Design Style
@@ -214,60 +215,59 @@ function Home() {
       {/* Hero */}
       <section className="bg-white py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="max-w-2xl">
+          <div className="max-w-3xl">
             {/* Location Badge */}
             <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
               <span>📍</span> Serving South Florida
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl font-bold text-benefique-navy leading-tight mb-6">
-              Stop Drowning in<br />Your Own Books
+              Your Accounting Should Tell You<br />What to Do &mdash; Not Just What Happened
             </h1>
             <p className="text-lg text-gray-600 mb-4">
-              Full-service accounting for businesses that want to grow — not drown in spreadsheets.
+              We turn your accounting function from a cost center into an ROI center. Clean books are the foundation. AI-powered financial intelligence is the product.
             </p>
             <p className="text-gray-600 mb-8">
-              You didn't go into business to become an accountant. We take over your entire accounting 
-              function — books, taxes, payroll, reporting — so you can focus on what actually makes you money.
+              One client had $1M in profit and zero cash growth. Another had $353K trapped in receivables nobody was tracking. A third had $961K in hidden debt the balance sheet never showed. All of it was sitting in their QuickBooks. Nobody was mining it.
             </p>
-            
+
             <div className="flex flex-wrap gap-4 mb-6">
               <Link
                 to="/contact"
                 className="bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition inline-flex items-center gap-2"
               >
-                See If We're a Fit <span>→</span>
+                See What Your Data Is Hiding <span>→</span>
               </Link>
               <Link
-                to="/services"
+                to="/demo"
                 className="border-2 border-benefique-navy text-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-benefique-navy hover:text-white transition"
               >
-                See What's Included
+                View Sample Reports
               </Link>
             </div>
-            
+
             <p className="text-sm text-gray-500">
-              No obligation. We'll tell you honestly if we're the right fit.
+              No obligation. We&apos;ll tell you honestly if we can help &mdash; and how.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Why Choose Us */}
+      {/* Proof Strip — Real Findings */}
       <section className="bg-gray-50 py-8">
         <div className="max-w-6xl mx-auto px-4">
           <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">
-            Why businesses choose Benefique
+            Real findings from client engagements
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="grid md:grid-cols-3 gap-4">
             {[
-              'Books closed by the 7th, review call by the 10th',
-              '24-hour response guarantee',
-              'Healthcare & service business specialists',
+              { number: '$353K', finding: 'in trapped cash freed by reducing collections from 61 to 46 days' },
+              { number: '$337K/yr', finding: 'in retained cash flow from 3 actions that cost $3K to implement' },
+              { number: '$961K', finding: 'in hidden debt the balance sheet never showed — found by comparing 12 months of snapshots' },
             ].map((item) => (
-              <div key={item} className="flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-4 py-2 rounded-full text-sm font-medium">
-                <span className="w-2 h-2 bg-benefique-orange rounded-full"></span>
-                {item}
+              <div key={item.number} className="bg-white rounded-xl p-5 border border-gray-100">
+                <div className="text-2xl font-bold text-benefique-orange mb-1">{item.number}</div>
+                <p className="text-gray-600 text-sm">{item.finding}</p>
               </div>
             ))}
           </div>
@@ -278,16 +278,16 @@ function Home() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-benefique-navy mb-4">Sound Familiar?</h2>
-          <p className="text-gray-600 mb-10">Most business owners we talk to are dealing with at least one of these:</p>
-          
+          <p className="text-gray-600 mb-10">Most business owners we work with are dealing with at least one of these:</p>
+
           <div className="grid md:grid-cols-2 gap-6 text-left">
             {[
-              { emoji: '😩', text: "You're doing your own books nights and weekends — and still behind" },
-              { emoji: '😤', text: 'Your bookkeeper keeps making mistakes you have to fix' },
-              { emoji: '🤷', text: "You don't actually know if you're profitable until tax time" },
-              { emoji: '💸', text: "The business is showing a profit — but where's the cash?" },
-              { emoji: '😰', text: 'Tax season is a scramble every single year' },
-              { emoji: '📊', text: "You've outgrown DIY but aren't sure what \"real\" accounting looks like" },
+              { emoji: '💸', text: "Your P&L shows profit — but the bank account doesn't agree" },
+              { emoji: '📊', text: "Your accountant sends reports. Nobody tells you what to do about them" },
+              { emoji: '😰', text: "You found out what you owed in taxes in April — not in January" },
+              { emoji: '🤷', text: "You've never seen a cash flow waterfall of your own business" },
+              { emoji: '🏦', text: "Your banker sees a different business than you do — and you don't know why" },
+              { emoji: '📉', text: "Revenue is growing but cash keeps getting tighter" },
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-4 bg-gray-50 rounded-xl p-4">
                 <span className="text-2xl">{item.emoji}</span>
@@ -298,26 +298,100 @@ function Home() {
         </div>
       </section>
 
-      {/* Services Grid */}
+      {/* The Shift — Cost Center → ROI Center */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide text-center mb-2">The Benefique Difference</p>
+          <h2 className="text-3xl font-bold text-benefique-navy text-center mb-4">From Cost Center to ROI Center</h2>
+          <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+            Most accounting firms sit at the end of the business &mdash; reporting on history, filing returns. We start there too. Then we keep going.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-2xl p-6 border border-gray-200">
+              <div className="inline-block bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-semibold mb-4 uppercase tracking-wide">What you have now</div>
+              <h3 className="text-xl font-bold text-gray-400 mb-4">Cost Center</h3>
+              <ul className="space-y-3 text-gray-500 text-sm">
+                <li className="flex items-start gap-2"><span>&mdash;</span> P&amp;L arrives 3-4 weeks after month-end</li>
+                <li className="flex items-start gap-2"><span>&mdash;</span> Tax strategy is a sentence in a cover letter</li>
+                <li className="flex items-start gap-2"><span>&mdash;</span> Cash decisions made on gut feel</li>
+                <li className="flex items-start gap-2"><span>&mdash;</span> Accounting feels like a bill you pay to stay compliant</li>
+                <li className="flex items-start gap-2"><span>&mdash;</span> Reports describe what happened &mdash; never what to do</li>
+              </ul>
+            </div>
+
+            <div className="bg-gradient-to-br from-benefique-navy to-slate-800 rounded-2xl p-6 text-white">
+              <div className="inline-block bg-benefique-orange/20 text-benefique-orange px-3 py-1 rounded-full text-xs font-semibold mb-4 uppercase tracking-wide">What we build</div>
+              <h3 className="text-xl font-bold mb-4">ROI Center</h3>
+              <ul className="space-y-3 text-blue-100 text-sm">
+                <li className="flex items-start gap-2"><span className="text-benefique-orange">✓</span> Books closed by the 7th, review call by the 10th</li>
+                <li className="flex items-start gap-2"><span className="text-benefique-orange">✓</span> Tax savings found proactively &mdash; not at year-end</li>
+                <li className="flex items-start gap-2"><span className="text-benefique-orange">✓</span> AI mines your QuickBooks for cash insights you didn&apos;t know existed</li>
+                <li className="flex items-start gap-2"><span className="text-benefique-orange">✓</span> Every report comes with 3 prescriptive actions, backed by math</li>
+                <li className="flex items-start gap-2"><span className="text-benefique-orange">✓</span> Accounting pays for itself &mdash; and then some</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="text-center mt-8">
+            <Link to="/about" className="text-benefique-orange font-semibold hover:underline">
+              Read how we got here →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Proof — Case Studies */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-benefique-navy mb-8 text-center">We publish exactly what our AI finds. Proof over promise.</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <Link to="/blog/ai-cash-flow-waterfall-explained" className="block bg-gray-50 rounded-xl p-6 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
+              <p className="text-2xl font-bold text-benefique-orange mb-2">$1M → $0</p>
+              <h3 className="font-bold text-benefique-navy mb-2">$1M Profit, Zero Cash Growth</h3>
+              <p className="text-gray-500 text-sm">Distributions + debt consumed 100.9% of EBITDA. The owner didn&apos;t know until we built the waterfall.</p>
+            </Link>
+            <Link to="/blog/ai-cfo-three-actions" className="block bg-gray-50 rounded-xl p-6 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
+              <p className="text-2xl font-bold text-benefique-orange mb-2">+$337K/yr</p>
+              <h3 className="font-bold text-benefique-navy mb-2">3 Actions, $3K to Implement</h3>
+              <p className="text-gray-500 text-sm">An appraisal, a payroll decomposition, and a distribution cap turned -$41K into +$294K retained.</p>
+            </Link>
+            <Link to="/blog/stealth-debt-balance-sheet-hidden" className="block bg-gray-50 rounded-xl p-6 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
+              <p className="text-2xl font-bold text-benefique-orange mb-2">$961K Hidden</p>
+              <h3 className="font-bold text-benefique-navy mb-2">The Debt That Didn&apos;t Look Like Debt</h3>
+              <p className="text-gray-500 text-sm">Formal debt shrank. AP and credit cards exploded. Total leverage grew $410K while the balance sheet said it shrank.</p>
+            </Link>
+            <Link to="/blog/three-views-one-business" className="block bg-gray-50 rounded-xl p-6 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
+              <p className="text-2xl font-bold text-benefique-orange mb-2">3 Verdicts</p>
+              <h3 className="font-bold text-benefique-navy mb-2">Same Business, Three Answers</h3>
+              <p className="text-gray-500 text-sm">&quot;Doing fine&quot; to the operator. &quot;Fragile&quot; to a banker. &quot;Distressed asset&quot; to a buyer. Same data.</p>
+            </Link>
+          </div>
+          <div className="text-center mt-8">
+            <Link to="/blog" className="text-benefique-orange font-semibold hover:underline">
+              Read all case studies on our blog →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* The Foundation */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
-          <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide text-center mb-2">What You Get</p>
+          <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide text-center mb-2">The Foundation That Makes It Possible</p>
           <h2 className="text-3xl font-bold text-benefique-navy text-center mb-4">A Complete Accounting Department</h2>
           <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-            Not just a bookkeeper. Not just a tax preparer. A full team handling everything — so you never have to think about it.
+            Intelligence requires clean data. That starts with bulletproof accounting &mdash; books, taxes, payroll, all handled, so the AI has something real to analyze.
           </p>
-          
+
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { icon: '📚', title: 'Full Bookkeeping', desc: 'Bank reconciliation, credit cards, all transactions categorized accurately — every month, without fail.' },
-              { icon: '📅', title: 'Monthly Close by the 7th', desc: 'Books closed by the 7th, review call by the 10th. You always know where you stand.' },
-              { icon: '💰', title: 'Payroll Processing', desc: 'Employee and contractor payroll handled. On time, every time, with all the filings done.' },
-              { icon: '📋', title: 'AP Management', desc: 'Bills tracked, approved, and paid on schedule. No more missed payments or late fees.' },
-              { icon: '📊', title: 'Financial Reporting', desc: 'P&L, Balance Sheet, Cash Flow — clean, accurate, and actually useful for decisions.' },
-              { icon: '🎯', title: 'Tax Preparation & Planning', desc: 'Not just filing — proactive planning throughout the year to minimize what you owe.' },
-              { icon: '📱', title: 'Real-Time Dashboard', desc: 'See your numbers anytime you want. No waiting. No asking. Just log in and know.' },
-              { icon: '📞', title: 'Monthly Review Call', desc: 'Walk through your numbers together. Ask questions. Get advice. Stay informed.' },
-              { icon: '✅', title: 'Sales Tax & 1099s', desc: 'All compliance handled. Sales tax filed. 1099s sent. No surprises, no penalties.' },
+              { icon: '📚', title: 'Real-Time Bookkeeping', desc: 'Every transaction categorized. Bank recs done. Books closed by the 7th — not the 30th.' },
+              { icon: '🎯', title: 'Proactive Tax Planning', desc: 'Year-round strategy, not April surprises. S-Corp timing, R&D credits, retirement plan stacking.' },
+              { icon: '💰', title: 'Payroll & Compliance', desc: 'Employee and contractor payroll, 1099s, sales tax — on time, every time, no exceptions.' },
+              { icon: '📊', title: 'CFO-Grade Reporting', desc: 'Cash flow waterfalls, per-unit economics, and prescriptive actions — not just P&Ls.' },
+              { icon: '📱', title: 'Real-Time Dashboard', desc: 'See your numbers anytime. No waiting. No asking. Just log in and know.' },
+              { icon: '📞', title: '24-Hour Response', desc: 'Questions answered within one business day. Always. Our client churn is near zero.' },
             ].map((service) => (
               <div key={service.title} className="bg-white rounded-xl p-6 border border-gray-100">
                 <div className="text-3xl mb-3">{service.icon}</div>
@@ -325,18 +399,6 @@ function Home() {
                 <p className="text-gray-600 text-sm">{service.desc}</p>
               </div>
             ))}
-          </div>
-          
-          <p className="text-center text-benefique-navy font-semibold mt-10">
-            This is what a real accounting department looks like.
-          </p>
-          <div className="text-center mt-6">
-            <Link
-              to="/contact"
-              className="inline-flex items-center gap-2 text-benefique-orange font-semibold hover:underline"
-            >
-              See If We're a Fit <span>→</span>
-            </Link>
           </div>
         </div>
       </section>
@@ -373,18 +435,17 @@ function Home() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="text-3xl font-bold text-benefique-navy mb-6">Let's See If We're the Right Fit</h2>
+              <h2 className="text-3xl font-bold text-benefique-navy mb-6">Let&apos;s See What Your Numbers Are Hiding</h2>
               <p className="text-gray-600 mb-6">
-                We're not the cheapest option — and we're not trying to be. We work with established businesses 
-                that want reliable, proactive accounting without the headaches.
+                We work with established businesses doing $500K-$10M+ in revenue &mdash; owners who are tired of backward-looking reports and want financial intelligence that actually moves the needle.
               </p>
-              
-              <ul className="space-y-3">
+
+              <ul className="space-y-3 mb-8">
                 {[
-                  'Full-service accounting — books, payroll, taxes, all handled',
-                  'Books closed by the 7th, review call by the 10th',
-                  'Proactive tax planning — not just compliance, actual savings',
-                  'Real-time dashboards — see your numbers anytime, no asking',
+                  'Books, payroll, taxes — the entire accounting function, handled',
+                  'AI-powered cash flow intelligence from your existing QuickBooks data',
+                  'Proactive tax planning that finds savings before year-end',
+                  '"If We Were the CEO" — 3 actions, backed by math, every quarter',
                   'One team, one relationship — no handoffs, no runaround',
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
@@ -393,6 +454,15 @@ function Home() {
                   </li>
                 ))}
               </ul>
+
+              <div className="bg-gray-50 rounded-xl p-6 border border-gray-100">
+                <p className="text-sm text-gray-500 font-semibold uppercase tracking-wide mb-3">What clients typically discover in the first 90 days</p>
+                <div className="space-y-2 text-sm text-gray-600">
+                  <p>→ $20K-$350K in trapped cash, tax savings, or operational improvements</p>
+                  <p>→ The gap between their P&amp;L break-even and their cash flow break-even</p>
+                  <p>→ What their banker sees &mdash; before they sit down across from them</p>
+                </div>
+              </div>
             </div>
             
             <div className="bg-gray-50 rounded-xl p-8">
@@ -454,11 +524,11 @@ function Home() {
                   </select>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Biggest Financial Headache Right Now?</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">What would change if you knew exactly where your cash is going?</label>
                   <textarea
                     rows={3}
                     name="headache"
-                    placeholder="What's keeping you up at night?"
+                    placeholder="Tell us what you'd do differently..."
                     className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent"
                   />
                 </div>
@@ -469,7 +539,7 @@ function Home() {
                   Submit Application
                 </button>
                 <p className="text-xs text-gray-500 text-center">
-                  No spam. No sales pressure. Just an honest conversation.
+                  No spam. No sales pressure. Just an honest conversation about your numbers.
                 </p>
               </form>
             </div>
@@ -1198,6 +1268,7 @@ function Blog() {
   const [activeCategory, setActiveCategory] = React.useState('All');
 
   const posts = [
+    { title: 'Concierge Medicine Financial Model: P&L vs Cash Flow as You Grow', excerpt: 'A 200-member concierge practice shows $253K in net income. The bank account tells a different story. We built an interactive simulator that shows exactly where the money goes — and why you need 143 members to break even on cash, not 134.', date: '2026-03-26', slug: 'concierge-medicine-financial-model', published: true, category: 'Concierge Medicine', readTime: '14 min read' },
     { title: 'Your Practice Is Profitable — So Why Do You Need 922 Patients Just to Break Even on Cash?', excerpt: 'An imaging center earned over $1M in EBITDA. P&L break-even: 702 claims. Cash flow break-even: 922 claims. The 220-claim gap is where the money vanishes — consumed by debt service and distributions that never appear on the income statement.', date: '2026-03-24', slug: 'cash-flow-breakeven-per-patient-activity-units', published: true, category: 'Cash Flow', readTime: '14 min read' },
     { title: 'Same Owner, Same Industry, 3x Cost Difference — What the P&L Can\'t Tell You', excerpt: 'Three imaging centers. Same owner. Same industry. One costs $109 per scan. Another costs $309. Their P&L couldn\'t explain the difference. A per-unit analysis exposed the gap in 20 minutes.', date: '2026-03-24', slug: 'per-unit-pnl-multi-location-cost-analysis', published: true, category: 'Healthcare Finance', readTime: '16 min' },
     { title: 'Your Practice Doesn\'t Have a Profit Problem — It Has a Volume Problem', excerpt: 'Your accountant said you lost money. We said you need 70 more patients to never lose money again. Same QuickBooks data — different analysis. Here\'s how marrying financial and operational data reveals the exact volume threshold between loss and profit.', date: '2026-03-24', slug: 'fixed-cost-breakeven-volume-problem', published: true, category: 'Healthcare Finance', readTime: '14 min' },
@@ -1208,7 +1279,7 @@ function Blog() {
     { title: 'If We Were the CEO: How AI Turns a CFO Report Into 3 Actions Worth $500K', excerpt: 'Your CFO report has 40 metrics and 13 sections. Here are the 3 actions that actually move the needle \u2014 each with a calculation table, a dollar impact, and a timeline. Combined: +$337K/year.', date: '2026-03-18', slug: 'ai-cfo-three-actions', published: true, category: 'Cash Flow', readTime: '14 min' },
     { title: 'How Bonus Depreciation Is Hiding Your Real Net Worth', excerpt: 'A business with $1.46M in equipment loans showed equity of just $150K and a debt-to-equity ratio of 9.8x. The real equity was $930K. Bonus depreciation was hiding it.', date: '2026-03-18', slug: 'bonus-depreciation-hiding-net-worth', published: true, category: 'Cash Flow', readTime: '10 min' },
     { title: 'How AI Found That $1M in Profit Left Zero Cash in the Bank', excerpt: 'A $5M imaging center earned $1.07M in EBITDA but its bank account shrank by $41K. Here is exactly where that million dollars went \u2014 broken down by the AI that found it.', date: '2026-03-18', slug: 'ai-cash-flow-waterfall-explained', published: true, category: 'Cash Flow', readTime: '12 min' },
-    { title: 'Are Concierge Medical Fees Tax Deductible? What Patients and Physicians Need to Know', excerpt: 'The IRS treats concierge medicine fees differently depending on what the fee covers. We break down the rules for patients, self-employed individuals, and employers \u2014 including HSA eligibility, the 7.5% AGI floor, and the corporate concierge opportunity most physicians miss.', date: '2026-03-17', slug: 'concierge-medical-fees-tax-deductible', published: true, category: 'Tax Strategy', readTime: '14 min' },
+    { title: 'Are Concierge Medical Fees Tax Deductible? 2026 IRS Rules (MDVIP, DPC)', excerpt: 'The IRS treats concierge medicine fees differently depending on what the fee covers. We break down the rules for patients, self-employed individuals, and employers \u2014 including HSA eligibility, the 7.5% AGI floor, and the corporate concierge opportunity most physicians miss.', date: '2026-03-17', slug: 'concierge-medical-fees-tax-deductible', published: true, category: 'Tax Strategy', readTime: '14 min' },
     { title: 'How to Start a Concierge Medical Practice: The Complete 2026 Guide', excerpt: 'A step-by-step financial roadmap for launching a concierge medical practice \u2014 from entity formation and S-Corp election to panel building and the corporate B2B play most physicians miss. Written from the center of the concierge medicine ecosystem in South Florida.', date: '2026-03-17', slug: 'how-to-start-concierge-medical-practice', published: true, category: 'Concierge Medicine', readTime: '24 min' },
     { title: 'Why Your Banker Asked for Your Personal Tax Return (And What They\'re Really Looking For)', excerpt: 'You applied for a business loan. The bank asked for your personal tax return, your personal financial statement, and two years of K-1s. Here\'s what they\'re actually evaluating \u2014 and the three personal risks that kill business loan applications.', date: '2026-03-13', slug: 'why-banker-asks-personal-tax-return', published: true, category: 'Cash Flow', readTime: '11 min' },
     { title: 'What Your Banker Sees That You Don\'t \u2014 From the Accountant Who Builds the Package', excerpt: 'Banks don\'t just review your P&L. They review three financial pictures \u2014 your business, your personal balance sheet, and a normalized version they rebuild themselves. Most owners only prepare for one.', date: '2026-03-13', slug: 'what-your-banker-sees-that-you-dont', published: true, category: 'Cash Flow', readTime: '14 min' },
@@ -1231,8 +1302,8 @@ function Blog() {
     { title: 'How Concierge Physicians Can Build Wealth Beyond Their Practice', excerpt: 'A concierge physician earning $600K/year can accumulate $15-25M over 20 years with disciplined deployment across retirement plans, real estate, practice equity, and tax-efficient investments. Here\'s the complete wealth-building framework.', date: '2026-03-11', slug: 'concierge-physicians-build-wealth-beyond-practice', published: true, category: 'Concierge Medicine', readTime: '16 min' },
     { title: 'Tax Strategies for Concierge Physicians', excerpt: 'Eight tax strategies that save concierge physicians $50K-$150K per year: S-Corp optimization, retirement plan stacking, accountable plans, Augusta Rule, Section 179, family employment, entity structuring, and QBI planning.', date: '2026-03-10', slug: 'tax-strategies-concierge-physicians', published: true, category: 'Tax Strategy', readTime: '20 min' },
     { title: 'Concierge Medicine vs Insurance-Based Practice: A Financial Comparison', excerpt: 'Side-by-side financial comparison of traditional, concierge, DPC, and hybrid practice models. Revenue, overhead, take-home pay, quality of life metrics, and transition planning for South Florida physicians.', date: '2026-03-09', slug: 'concierge-medicine-vs-insurance-practice-financial-comparison', published: true, category: 'Concierge Medicine', readTime: '17 min' },
-    { title: 'How Much Does It Cost to Start a Concierge Medical Practice? (2026)', excerpt: 'Concierge medicine startup costs range from $75K to $200K depending on conversion vs. new practice. Full breakdown: entity setup, buildout, EHR, staffing, marketing, and the mistakes that cost more than the buildout.', date: '2026-03-08', slug: 'cost-starting-concierge-medical-practice', published: true, category: 'Concierge Medicine', readTime: '22 min' },
-    { title: 'Concierge Medicine Income: $500K-$1M+ in South Florida (2026)', excerpt: 'Concierge physicians in South Florida earn $500K-$1M+ while seeing fewer patients and working fewer hours. Complete revenue model, overhead analysis, and tax strategy for Broward County practices.', date: '2026-03-07', slug: 'concierge-medicine-income-south-florida', published: true, category: 'Concierge Medicine', readTime: '18 min' },
+    { title: 'Cost to Start a Concierge Practice in 2026: $75K-$200K Breakdown', excerpt: 'Concierge medicine startup costs range from $75K to $200K. Full breakdown of every dollar: entity setup ($2K-$5K), office buildout ($15K-$50K), EHR ($5K-$15K), staffing, marketing, and the $19,750/mo fixed costs most consultants don\'t mention.', date: '2026-03-08', slug: 'cost-starting-concierge-medical-practice', published: true, category: 'Concierge Medicine', readTime: '22 min' },
+    { title: 'Concierge Medicine Income: What South Florida Doctors Actually Earn (2026)', excerpt: 'Concierge physicians in South Florida earn $500K-$1M+ with 200-400 patients instead of 2,500. We break down the actual revenue model, overhead percentages, and S-Corp tax savings for Broward County practices.', date: '2026-03-07', slug: 'concierge-medicine-income-south-florida', published: true, category: 'Concierge Medicine', readTime: '18 min' },
     { title: '1099 vs. W-2 in Your Healthcare or Service Practice: The Classification Mistake That Could Cost You $50,000+', excerpt: 'The IRS and DOL are cracking down on worker misclassification in healthcare and professional services. Dental hygienists, associate physicians, therapists, IT contractors\u2014if you\'re paying them on a 1099, you might owe back taxes, penalties, and benefits.', date: '2026-03-06', slug: '1099-vs-w2-worker-classification-healthcare-service-businesses-broward-county', published: true, category: 'Tax Strategy', readTime: '24 min' },
     { title: 'The Hidden Cost of Not Tracking Work-in-Progress', excerpt: 'A service business bills $80K/month. But $45K in labor and materials sits unbilled and invisible \u2014 not on the P&L, not on the balance sheet. Without WIP tracking, your financials are fiction.', date: '2026-03-08', slug: 'hidden-cost-not-tracking-wip', published: true, category: 'Accounting', readTime: '10 min' },
     { title: 'Stop Doing Your Own Books: The Real Cost of DIY Bookkeeping', excerpt: 'DIY bookkeeping looks free until you count your time, missed deductions, and IRS penalties. Here\'s the real math for SE Florida business owners \u2014 and when it makes sense to hand it off.', date: '2026-03-04', slug: 'stop-doing-your-own-books', published: true, category: 'Accounting', readTime: '10 min' },
@@ -1308,6 +1379,22 @@ function Blog() {
               </button>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Featured Tool */}
+      <section className="bg-gradient-to-r from-[#1B365D] to-[#2D4A6F] py-6">
+        <div className="max-w-6xl mx-auto px-4">
+          <Link to="/tools/concierge-simulator" className="flex flex-col md:flex-row items-center justify-between gap-4 group">
+            <div className="text-white">
+              <span className="inline-block bg-emerald-500/20 text-emerald-300 text-xs font-semibold px-2 py-0.5 rounded mb-2">INTERACTIVE TOOL</span>
+              <h2 className="text-xl font-bold group-hover:text-blue-200 transition">Concierge Medicine Financial Simulator</h2>
+              <p className="text-blue-200 text-sm">Slide to see how your P&L and cash flow change as you grow your patient panel. Three views: Absolute $, % Revenue, $ per Member.</p>
+            </div>
+            <span className="bg-white text-[#1B365D] font-semibold px-6 py-2.5 rounded-lg whitespace-nowrap hover:bg-blue-50 transition text-sm">
+              Try the Simulator &rarr;
+            </span>
+          </Link>
         </div>
       </section>
 
@@ -1480,7 +1567,7 @@ function Contact() {
                   Submit Application
                 </button>
                 <p className="text-xs text-gray-500 text-center">
-                  No spam. No sales pressure. Just an honest conversation.
+                  No spam. No sales pressure. Just an honest conversation about your numbers.
                 </p>
               </form>
             </div>
@@ -1649,6 +1736,18 @@ function Demo() {
               <p className="text-xs text-benefique-orange font-semibold mb-2">Monthly</p>
               <p className="text-gray-600 text-sm">The narrative layer. Your financial story told as news — for you and your team.</p>
             </div>
+          </div>
+
+          {/* Interactive Tool */}
+          <div className="mt-10 bg-gradient-to-r from-[#1B365D] to-[#2D4A6F] rounded-xl p-6 text-center">
+            <span className="inline-block bg-emerald-500/20 text-emerald-300 text-xs font-semibold px-2 py-0.5 rounded mb-2">INTERACTIVE TOOL</span>
+            <h3 className="text-xl font-bold text-white mb-2">Concierge Medicine Financial Simulator</h3>
+            <p className="text-blue-200 text-sm mb-4 max-w-lg mx-auto">
+              Model a concierge practice from scratch. Adjust membership fees, staff costs, and physician salary — see P&L and cash flow waterfalls update in real time.
+            </p>
+            <Link to="/tools/concierge-simulator" className="inline-block bg-white text-[#1B365D] font-semibold px-6 py-2.5 rounded-lg hover:bg-blue-50 transition text-sm">
+              Try the Simulator &rarr;
+            </Link>
           </div>
         </div>
       </section>
@@ -2762,6 +2861,7 @@ export default function App() {
             {/* Service Pages */}
             <Route path="/services/real-time-accounting" element={<RealTimeAccountingPage />} />
             <Route path="/services/fractional-cfo" element={<Services />} />
+            <Route path="/tools/concierge-simulator" element={<ConciergeSimulator />} />
           </Routes>
         </main>
         <Footer />

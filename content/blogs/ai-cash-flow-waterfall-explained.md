@@ -98,6 +98,8 @@ The combined outflows for distributions and debt service exceed 100% of what the
 
 This is why the bank account shrank. Not because the business was unprofitable. Not because of bad operations. Because the combination of owner draws and lender payments consumed everything the business produced.
 
+> **See it for yourself:** We built an [interactive financial simulator](/tools/concierge-simulator) that shows how P&L profitability and cash flow diverge as a practice grows — with real-time waterfalls for both. Slide a bar from 0 to 600 patients and watch the gap appear.
+
 ---
 
 ## The Break-Even Nobody Talks About
@@ -216,6 +218,8 @@ The cash flow waterfall is also the foundation for other analyses that matter. [
 
 ## What You Can Do About It Monday Morning
 
+> **Want to model your own numbers?** Our [Concierge Medicine Financial Simulator](/tools/concierge-simulator) lets you adjust membership fees, salary, and loan payments — and see exactly where P&L break-even and cash flow break-even diverge. Or [talk to us directly](/contact) about running this analysis on your actual QuickBooks data.
+
 You do not need AI to start. Here are three things you can do this week:
 
 ### 1. Run Your Own Waterfall
@@ -239,6 +243,14 @@ Now compare it to your actual revenue. The gap between actual revenue and CF bre
 If you operate a pass-through entity (S-Corp, partnership, multi-member LLC), cap owner distributions at 50-60% of trailing twelve-month EBITDA. This still covers personal tax liability on flow-through income and provides reasonable owner compensation above W-2 salary — but it leaves cash in the business to service debt, fund growth, and build equity.
 
 Write the policy down. Share it with your partners if you have them. Revisit it quarterly. The IRS provides guidance on reasonable compensation and distribution practices in [Publication 538](https://www.irs.gov/publications/p538), and the FASB's ASC 230 (Statement of Cash Flows) is the authoritative standard for how cash flow reporting works under GAAP. You do not need to read either one — but your accountant should be familiar with both.
+
+---
+
+## What Monday Morning Looks Like After This Analysis
+
+Three weeks after this analysis, the owner stopped checking his bank balance every morning. Not because he stopped caring — because he stopped guessing. He knew exactly how much cash the business would generate that month, how much the distributions would consume, and what would be left. When his equipment vendor offered early-pay terms for a 2% discount, he didn't call his accountant to ask if he could afford it. He already knew. That is the difference between having financial statements and having financial clarity. One sits in a drawer. The other changes how you run your Monday.
+
+This is what happens when accounting stops looking backward and starts looking forward. Your accountant has this data. The question is whether anyone is mining it.
 
 ---
 

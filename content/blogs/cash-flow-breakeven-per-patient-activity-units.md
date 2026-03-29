@@ -67,6 +67,12 @@ The owner saw a **25% margin of safety** on the P&L. In reality, they were **43 
 
 Both statements were true. Simultaneously.
 
+---
+
+> **Interactive Tool:** Want to model your own numbers? Our [Concierge Medicine Financial Simulator](/tools/concierge-simulator) lets you adjust membership fees, patient volume, and costs — and see your P&L and cash flow waterfall update in real time.
+
+---
+
 This isn't an edge case. It's the default state for any practice with meaningful debt, a pass-through entity structure, or an owner who takes distributions. Which is to say: nearly every private practice in America.
 
 ---
@@ -264,6 +270,14 @@ For practices that want to go deeper into the fixed-cost dynamics driving their 
 ---
 
 Most accounting firms see a profitable P&L and move on. At Benefique, we ask the next question: profitable on paper, but is the bank account actually growing? And if not, how many patients does it take before a single dollar reaches the bank? That question requires merging financial data with operational data — QBO with your billing system — and running per-unit economics across every cost category. It's the kind of analysis that used to require a $25,000 consulting engagement and a 6-week wait. We deliver it as part of our ongoing advisory — with live data, not a static PDF.
+
+---
+
+## What Changed After He Saw the Number 922
+
+The doctor who saw these numbers for the first time went quiet for about ten seconds. Then he said: "So every patient after 922 is actually putting cash in the bank. And every patient between 702 and 922 is just feeding the debt and the draws." Exactly. That one sentence changed how he thinks about his schedule. He stopped obsessing over monthly revenue — a number that always looked fine — and started watching volume against 922. When his scheduler asked about blocking Friday afternoons, he could answer with math instead of instinct. When his partner proposed increasing draws by $3K/month, he could show exactly how many additional claims that would cost in break-even coverage. The practice didn't change. His decision-making did. And that started the Monday morning after he saw one number he had never been shown before.
+
+This is what happens when your accounting function stops reporting history and starts informing decisions. The data was already in QuickBooks. It just needed someone to translate it into the language owners actually use.
 
 ---
 
