@@ -6,6 +6,75 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  'high-cost-procedure-economics-medical-practice': {
+    file: '/content/blogs/high-cost-procedure-economics-medical-practice.md',
+    title: '$2,940 Out the Door Before You Know If You\'ll Get Paid',
+    date: '2026-03-29',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'We analyzed 418 high-cost procedures across five imaging centers. The drug costs $2,940 per dose. One payer reimbursed 239% of that. Another reimbursed 26%. Same drug, same scan, same staff. Twenty-one percent of paid encounters still lost money.',
+    categories: ['Healthcare Finance', 'Cash Flow Advisory', 'Financial Intelligence'],
+    readTime: '9 min read',
+    featuredImage: '/images/blog/high-cost-procedure-economics-medical-practice.jpg',
+    faqs: [
+      { q: 'Does this only apply to imaging centers?', a: 'No. Any practice or business that commits significant capital to inputs before knowing the reimbursement amount faces this exact dynamic. Infusion centers buying biologics, surgery centers purchasing implants, dental practices doing full-arch restorations, specialty pharmacies, even veterinary orthopedic practices — the math is identical.' },
+      { q: 'Can we just stop accepting patients from low-paying payers?', a: 'Possibly, but it\'s rarely that simple. Contract obligations, network participation requirements, and referral relationships all factor in. The better approach is awareness: know your per-encounter margin by payer, manage your mix intentionally, and make scheduling decisions with full economic visibility.' },
+      { q: 'What data do we need to run this analysis?', a: 'You likely already have it. You need procedure-level billing data with CPT codes, payer, and payment amounts; your input cost per procedure (drug cost, implant cost, supply cost); and your overhead allocation per encounter. Most practice management and billing systems contain the first two.' },
+      { q: 'How often should we review per-encounter profitability?', a: 'Monthly at minimum, weekly if your specialty procedure volume exceeds 20 encounters per week. Payer contracts change. Drug costs shift. A payer that was profitable at last year\'s drug cost may not be profitable at this year\'s.' },
+      { q: 'Is this something our current accountant should be doing?', a: 'Most accounting firms report revenue and expenses in aggregate. Per-encounter profitability analysis requires connecting billing data, supply costs, and overhead allocation at the procedure level — a different skill set than traditional bookkeeping or tax preparation.' }
+    ]
+  },
+  'assembly-line-thinking-medical-practice-profitability': {
+    file: '/content/blogs/assembly-line-thinking-medical-practice-profitability.md',
+    title: 'The Factory That Didn\'t Know It Was Losing Money',
+    date: '2026-03-29',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'We put a sign on the dashboard: Days Since Last Money-Losing Procedure. The number was 1. They had been warned 31 days earlier. Here is the framework we built to make it impossible to hide.',
+    categories: ['Healthcare Finance', 'Cash Flow Advisory'],
+    readTime: '7 min read',
+    featuredImage: '/images/blog/assembly-line-thinking-medical-practice-profitability.jpg',
+    faqs: [
+      { q: 'What does assembly line thinking mean for a medical practice?', a: 'It means treating every procedure as a manufactured product with a known input cost, a known selling price (by payer), and a known margin. Just like a factory tracks cost of goods sold and margin per unit, your practice should track cost per encounter and net revenue per payer.' },
+      { q: 'What is the difference between an operations scorecard and a collections scorecard?', a: 'Operations controls what goes on the assembly line — which procedures to perform, which payers to accept, which contracts to sign. Collections controls how fast the finished product comes off — claim submission speed, denial management, follow-up cadence. Both need separate grades.' },
+      { q: 'What is a good DSO for a medical practice?', a: 'MGMA benchmarks suggest 30-40 days for most specialties. Best-in-class practices achieve 18-25 days. Every day of DSO improvement frees working capital equal to your daily procedure input cost.' },
+      { q: 'How do you grade a medical practice A through F?', a: 'We score four dimensions for each team. Collections: DSO, clean claim rate, stale claim percentage, and collection yield. Operations: toxic payer rate, post-warning compliance, revenue per procedure, and volume. Each dimension is weighted and scored out of 100.' },
+      { q: 'What is a Days Since Last Accident sign for healthcare?', a: 'Borrowed from manufacturing safety culture, it\'s a single visible number showing how many days since the practice last performed a procedure that lost money. When it resets to zero, everyone knows what happened. It creates accountability that reports buried in spreadsheets never achieve.' }
+    ]
+  },
+  'toxic-payers-losing-money-medical-practice': {
+    file: '/content/blogs/toxic-payers-losing-money-medical-practice.md',
+    title: '7 Payers, 41 Procedures, $80,593 Lost',
+    date: '2026-03-29',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'We graded every insurance payer A through F. Seven got F. They had been paid on 41 procedures and lost money on every single one. Your practice probably has the same problem — you just have not looked.',
+    categories: ['Healthcare Finance', 'Cash Flow Advisory'],
+    readTime: '6 min read',
+    featuredImage: '/images/blog/toxic-payers-losing-money-medical-practice.jpg',
+    faqs: [
+      { q: 'How do I identify toxic payers in my practice?', a: 'Pull encounter-level data for the last 6-12 months. For each paid encounter, subtract your input cost from the amount collected. Any payer where the average net per encounter is below negative $500 is toxic — you\'re losing significant money every time you serve their patients.' },
+      { q: 'Should I drop unprofitable insurance payers?', a: 'Not necessarily. First try renegotiating the contract with data showing the gap between your cost and their reimbursement. If renegotiation fails, consider limiting volume for expensive procedures rather than dropping the payer entirely. For commodity procedures where input costs are low, the same payer may still be profitable.' },
+      { q: 'What is payer mix optimization?', a: 'It\'s the process of intentionally managing which insurance payers make up your patient volume. Rather than accepting all comers equally, you route scheduling and marketing toward payers that reimburse above your cost threshold and limit exposure to those that don\'t.' },
+      { q: 'Can collections fix a bad payer contract?', a: 'No. If the contracted reimbursement rate is below your input cost, collecting 100% of the contracted amount still results in a loss. Collections can speed up payment and reduce denials, but it cannot change the underlying contract economics. That\'s an operations and contract negotiation problem.' },
+      { q: 'How much does payer mix really affect profitability?', a: 'In our analysis, the spread between the best and worst payer was 9:1 on the same procedure. The best payer generated $4,082 in margin per encounter. The worst generated a $2,164 loss. That\'s a $6,246 swing on the same scan, same staff, same day.' }
+    ]
+  },
+  'concierge-medicine-financial-model': {
+    file: '/content/blogs/concierge-medicine-financial-model.md',
+    title: 'Concierge Medicine Financial Model: P&L vs Cash Flow as You Grow',
+    date: '2026-03-26',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A 200-member concierge practice shows $253K in net income. The bank account tells a different story. We built an interactive simulator that shows exactly where the money goes — and why you need 143 members to break even on cash, not 134.',
+    categories: ['Concierge Medicine', 'Cash Flow Advisory', 'Financial Intelligence'],
+    readTime: '14 min read',
+    featuredImage: '/images/blog/concierge-medicine-financial-model.jpg',
+    faqs: [
+      { q: 'How many patients do I need to break even in a concierge practice?', a: 'At a $350/month membership fee with South Florida operating costs ($19,750/month fixed), you need approximately 134 members to break even on the P&L and 143 members to break even on cash flow. These numbers change based on your fee, location, and physician salary.' },
+      { q: 'What is the difference between P&L break-even and cash flow break-even?', a: 'P&L break-even is when revenue covers all operating expenses and physician salary. Cash flow break-even adds estimated taxes and debt service. A practice can be profitable on the income statement while the bank account is still shrinking.' },
+      { q: 'How much does a concierge physician make in South Florida?', a: 'Total physician compensation in a South Florida concierge practice ranges from $430,000 to over $1,000,000 depending on fee structure and panel size. At the standard model (250 members, $350/month), total compensation is approximately $576,000 per year.' },
+      { q: 'What are realistic operating costs for a concierge practice in 2026?', a: 'Our model uses $19,750/month in fixed operating costs for a South Florida concierge practice, including $4,500 for office lease, $8,200 for staff, $3,000 for outsourced accounting/tax/CFO services, and $2,100 for technology and marketing.' },
+      { q: 'Should I choose DPC or traditional concierge?', a: 'DPC ($150-$200/month) requires a larger patient panel (288+ members) to break even because the contribution margin per member is lower. Traditional concierge ($350-$650/month) breaks even faster with fewer patients but targets a smaller market.' },
+      { q: 'What is the contribution margin in concierge medicine?', a: 'At $350/month, the contribution margin is approximately $317 per member per month — meaning 90% of each additional membership dollar flows to the bottom line after variable costs.' }
+    ]
+  },
   'per-unit-pnl-multi-location-cost-analysis': {
     file: '/content/blogs/per-unit-pnl-multi-location-cost-analysis.md',
     title: 'Same Owner, Same Industry, 3x Cost Difference — What the P&L Can\'t Tell You',
@@ -98,7 +167,7 @@ const blogPosts = {
   },
   'concierge-medical-fees-tax-deductible': {
     file: '/content/blogs/concierge-medical-fees-tax-deductible.md',
-    title: 'Are Concierge Medical Fees Tax Deductible? What Patients and Physicians Need to Know',
+    title: 'Are Concierge Medical Fees Tax Deductible? 2026 IRS Rules (MDVIP, DPC)',
     date: '2026-03-17',
     author: 'Gerrit Disbergen, EA',
     excerpt: 'The IRS treats concierge medicine fees differently depending on what the fee covers. We break down the rules for patients, self-employed individuals, and employers \u2014 including HSA eligibility, the 7.5% AGI floor, and the corporate concierge opportunity most physicians miss.',
@@ -400,7 +469,7 @@ const blogPosts = {
     featuredImage: '/images/blog/davie-accounting-hero.jpg'
   },
   's-corp-election': {
-    file: '/content/blogs/s-corp-election-guide-V3.md',
+    file: '/content/blogs/s-corp-election.md',
     title: 'S-Corp Election: Is It Right for Your Florida Business?',
     date: '2026-01-30',
     author: 'Gerrit Disbergen, EA',
@@ -410,7 +479,7 @@ const blogPosts = {
     featuredImage: '/images/blog/s-corp-hero.svg'
   },
   'cash-flow-forecasting': {
-    file: '/content/blogs/cash-flow-forecasting-101-REVISED.md',
+    file: '/content/blogs/cash-flow-forecasting.md',
     title: 'Cash Flow Forecasting 101: A Practical Guide for Business Owners',
     date: '2026-01-30',
     author: 'Gerrit Disbergen, EA',
@@ -572,10 +641,10 @@ const blogPosts = {
   },
   'concierge-medicine-income-south-florida': {
     file: '/content/blogs/concierge-medicine-income-south-florida.md',
-    title: 'Concierge Medicine Income: $500K-$1M+ in South Florida (2026)',
+    title: 'Concierge Medicine Income: What South Florida Doctors Actually Earn (2026)',
     date: '2026-03-07',
     author: 'Gerrit Disbergen, EA',
-    excerpt: 'Concierge physicians in South Florida earn $500K-$1M+ while seeing fewer patients and working fewer hours. Complete revenue model, overhead analysis, and tax strategy for Broward County practices.',
+    excerpt: 'Concierge physicians in South Florida earn $500K-$1M+ with 200-400 patients instead of 2,500. We break down the actual revenue model, overhead percentages, and S-Corp tax savings for Broward County practices.',
     categories: ['Concierge Medicine', 'Physician Finance', 'Tax Strategy'],
     readTime: '18 min read',
     featuredImage: '/images/blog/concierge-medicine-income-south-florida.svg',
@@ -587,10 +656,10 @@ const blogPosts = {
   },
   'cost-starting-concierge-medical-practice': {
     file: '/content/blogs/cost-starting-concierge-medical-practice.md',
-    title: 'How Much Does It Cost to Start a Concierge Medical Practice? (2026)',
+    title: 'Cost to Start a Concierge Practice in 2026: $75K-$200K Breakdown',
     date: '2026-03-08',
     author: 'Gerrit Disbergen, EA',
-    excerpt: 'Concierge medicine startup costs range from $75K to $200K depending on conversion vs. new practice. Full breakdown: entity setup, buildout, EHR, staffing, marketing, and the mistakes that cost more than the buildout.',
+    excerpt: 'Concierge medicine startup costs range from $75K to $200K. Full breakdown of every dollar: entity setup ($2K-$5K), office buildout ($15K-$50K), EHR ($5K-$15K), staffing, marketing, and the $19,750/mo fixed costs most consultants don\'t mention.',
     categories: ['Concierge Medicine', 'Practice Startup', 'Tax Planning'],
     readTime: '22 min read',
     featuredImage: '/images/blog/cost-starting-concierge-practice.svg',
