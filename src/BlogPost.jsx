@@ -641,17 +641,19 @@ const blogPosts = {
   },
   'concierge-medicine-income-south-florida': {
     file: '/content/blogs/concierge-medicine-income-south-florida.md',
-    title: 'Concierge Medicine Income: What South Florida Doctors Actually Earn (2026)',
+    title: 'How Much Do Concierge Doctors Make in South Florida?',
     date: '2026-03-07',
     author: 'Gerrit Disbergen, EA',
-    excerpt: 'Concierge physicians in South Florida earn $500K-$1M+ with 200-400 patients instead of 2,500. We break down the actual revenue model, overhead percentages, and S-Corp tax savings for Broward County practices.',
+    excerpt: 'Concierge physicians in South Florida net $500K\u2013$1M+ with 200\u2013500 patients instead of 2,500. Revenue models, overhead breakdown, S-Corp savings of $17K\u2013$35K/year, and Cash Balance Plans sheltering $200K\u2013$400K annually \u2014 all with verified 2026 numbers.',
     categories: ['Concierge Medicine', 'Physician Finance', 'Tax Strategy'],
-    readTime: '18 min read',
+    readTime: '16 min read',
     featuredImage: '/images/blog/concierge-medicine-income-south-florida.svg',
     faqs: [
-      { q: 'How much does a concierge doctor make in Florida?', a: 'Concierge physicians in South Florida typically earn $500,000 to $1,000,000+ in net income, compared to $200,000-$400,000 for insurance-based primary care physicians. Income depends on membership fee ($2,000-$15,000/year), patient panel size (200-500), and overhead structure.' },
-      { q: 'What is the average membership fee for concierge medicine?', a: 'Concierge medicine membership fees typically range from $2,000 to $15,000 per year. In affluent South Florida communities like Weston and Parkland, fees of $5,000-$10,000 are common. Direct Primary Care (DPC) uses lower monthly fees of $75-$200.' },
-      { q: 'Is concierge medicine profitable?', a: 'Yes. Concierge practices typically achieve 40-55% overhead ratios compared to 60-70% for insurance-based practices. A solo concierge physician with 350 patients at $5,000/year generates $1.75M in revenue with approximately $980,000 in net income.' }
+      { q: 'How much does a concierge doctor make in Florida?', a: 'Concierge physicians in South Florida typically earn $500,000 to $1,000,000+ in net income, compared to $280,000\u2013$300,000 for insurance-based primary care (Medscape 2025). Income depends on membership fee ($2,000\u2013$15,000/year), panel size (200\u2013500 patients), and overhead structure.' },
+      { q: 'What is the average membership fee for concierge medicine?', a: 'Concierge fees typically range from $2,000 to $15,000 per year. In Weston and Parkland, $5,000\u2013$10,000 is common. MDVIP practices charge $2,400\u2013$4,800/year. DPC practices use lower monthly fees of $75\u2013$200 but do not bill insurance.' },
+      { q: 'Is concierge medicine profitable?', a: 'Yes. Concierge practices achieve 40%\u201355% overhead ratios compared to 60%\u201370% for insurance-based practices. A solo physician with 350 patients at $5,000/year generates $1.75M in revenue with approximately $980,000 in net income.' },
+      { q: 'What are the tax advantages of a concierge practice?', a: 'S-Corp election saves $17,000\u2013$35,000/year in self-employment taxes. Retirement plan stacking with a Cash Balance Plan can shelter $200,000\u2013$400,000 annually. Combined with proper entity structuring, effective tax rates drop from 37% to under 25%.' },
+      { q: 'How long does it take to build a concierge patient panel?', a: 'Converting an existing practice: 6\u201312 months to breakeven, 12\u201324 months to target income. Starting from scratch: 12\u201318 months to breakeven. Joining MDVIP or similar network: 3\u20136 months.' }
     ]
   },
   'cost-starting-concierge-medical-practice': {
@@ -675,17 +677,19 @@ const blogPosts = {
   },
   'concierge-medicine-vs-insurance-practice-financial-comparison': {
     file: '/content/blogs/concierge-medicine-vs-insurance-practice-financial-comparison.md',
-    title: 'Concierge Medicine vs Insurance-Based Practice: A Financial Comparison',
+    title: 'Concierge Medicine vs Insurance Practice: The Full Financial Comparison',
     date: '2026-03-09',
     author: 'Gerrit Disbergen, EA',
-    excerpt: 'Side-by-side financial comparison of traditional, concierge, DPC, and hybrid practice models. Revenue, overhead, take-home pay, quality of life metrics, and transition planning for South Florida physicians.',
+    excerpt: 'A solo concierge physician nets $550K\u2013$1.2M while seeing 6\u201312 patients daily. Insurance-based: $240K\u2013$400K while seeing 20\u201330. Side-by-side comparison of revenue, overhead, quality of life, transition costs, and tax implications for all four practice models.',
     categories: ['Concierge Medicine', 'Physician Finance', 'Practice Models'],
-    readTime: '22 min read',
+    readTime: '18 min read',
     featuredImage: '/images/blog/concierge-vs-insurance-comparison.svg',
     faqs: [
-      { q: 'What is the difference between concierge medicine and insurance-based practice?', a: 'Insurance-based practices see 2,000-2,500 patients, bill insurance carriers, and earn $240K-$400K after 60-70% overhead. Concierge practices charge $2,000-$15,000 annual membership fees, limit panels to 200-500 patients, achieve 40-55% overhead, and net $550K-$1.2M.' },
-      { q: 'How much overhead does a concierge practice save compared to traditional?', a: 'Concierge practices save $232,000-$452,000 per year in overhead compared to insurance-based practices. The biggest savings come from eliminating billing staff ($65K-$160K), claims processing ($12K-$27K), and denials/write-offs ($70K-$200K).' },
-      { q: 'What is the burnout rate for concierge physicians vs traditional?', a: 'Concierge physicians report burnout rates under 15%, compared to over 50% for insurance-based physicians. Concierge doctors work 1,400-2,000 hours per year versus 2,200-2,600, see 6-12 patients daily versus 20-30, and take 4-6 weeks vacation versus 2-3.' }
+      { q: 'What is the income difference between concierge and insurance-based practice?', a: 'Insurance-based primary care nets $240,000\u2013$400,000 after 60\u201370% overhead. Concierge practices net $550,000\u2013$1.2M after 40\u201355% overhead. The difference comes from higher per-patient revenue, lower billing costs, and a smaller, more predictable patient panel.' },
+      { q: 'How much does a concierge practice save on overhead?', a: '$232,000\u2013$452,000 per year. The biggest savings come from eliminating billing staff ($65K\u2013$160K), claims processing ($12K\u2013$27K), and denials/write-offs ($70K\u2013$200K). Traditional practices spend $180,000\u2013$400,000 annually on billing infrastructure that concierge practices eliminate.' },
+      { q: 'What is the burnout rate for concierge vs traditional physicians?', a: 'Insurance-based physicians report burnout at 43\u201349% (AMA 2024; Medscape 2024). Concierge physicians report rates under 15%. Concierge doctors work 1,400\u20132,000 hours per year versus 2,200\u20132,600, see 6\u201312 patients daily versus 20\u201330, and take 4\u20136 weeks vacation versus 2\u20133.' },
+      { q: 'How long does the transition from insurance to concierge take?', a: 'Converting an existing practice: 6\u201312 months to breakeven, 12\u201324 months to target income. Starting fresh: 12\u201318 months. Plan for $150,000\u2013$540,000 in reserves. Joining MDVIP or similar network accelerates to 3\u20136 months.' },
+      { q: 'Is concierge medicine sustainable long-term?', a: 'The model has grown consistently for 20+ years. Demand is structural \u2014 aging population, dissatisfaction with insurance-based care, willingness to pay for access. Retention rates of 90\u201395% indicate patients who join tend to stay.' }
     ]
   },
   'tax-strategies-concierge-physicians': {
