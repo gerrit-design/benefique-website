@@ -338,7 +338,7 @@ Compare locations to each other:
 
 ## Real Client Example: 3-Location Radiology Practice
 
-**Client:** Insite Radiology (anonymized), 3 locations, $8M annual revenue
+**Client:** A multi-location radiology group, 3 locations, $8M annual revenue
 
 **Problem:**
 - Combined financials looked fine
@@ -363,7 +363,7 @@ Compare locations to each other:
 - Marketing split by patient volume
 
 **Results:**
-- Discovered Location 2 (Coconut Creek) was underperforming due to higher rent and lower patient volume
+- Discovered their lowest-performing center was underperforming due to higher rent and lower patient volume
 - Renegotiated lease, saving $18K/year
 - Shifted marketing budget toward Location 1 and 3 (better ROI)
 - Improved overall margins by 12%
@@ -514,16 +514,4 @@ That's what we help businesses do.
 
 ---
 
-**Real-time accounting. Location-level clarity. Strategic growth.**
-
-That's what we do at Benefique.
-
-📧 Questions? Email hello@benefique.com or [apply here](https://www.benefique.com/apply).
-
----
-
-**About Benefique Tax & Accounting**
-
-We provide full-service accounting and fractional CFO services to healthcare practices, professional services, and multi-location businesses across South Florida. Our clients get real-time financials, proactive tax planning, and strategic guidance—not just tax returns in April.
-
-Davie | Fort Lauderdale | Weston | Plantation | Serving South Florida since 2002
+*Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances.*

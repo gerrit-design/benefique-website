@@ -280,6 +280,8 @@ Build transferable value by documenting SOPs, training associate physicians, cre
 
 ---
 
+*Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances.*
+
 ## Related Articles
 
 - [Are Concierge Medical Fees Tax Deductible? What Patients and Physicians Need to Know](/blog/concierge-medical-fees-tax-deductible)

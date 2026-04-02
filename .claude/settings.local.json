@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls \"C:\\\\Users\\\\Gerrit Disbergen\\\\Dropbox \\(Personal\\)\\\\Apps\\\\GBrain-Sync/Benefique\")",
+      "Bash(ls \"C:\\\\Users\\\\Gerrit Disbergen\\\\Dropbox \\(Personal\\)\\\\Apps\\\\GBrain-Sync/Claude\")",
+      "Bash(ls \"C:\\\\Users\\\\Gerrit Disbergen\\\\Dropbox \\(Personal\\)\\\\Apps\\\\GBrain-Sync/Clawd\")",
+      "Bash(ls \"C:\\\\Users\\\\Gerrit Disbergen\\\\Dropbox \\(Personal\\)\\\\Apps\\\\GBrain-Sync/System\")",
+      "Bash(ls \"C:\\\\Users\\\\Gerrit Disbergen\\\\Dropbox \\(Personal\\)\\\\Apps\\\\GBrain-Sync/journal\")",
+      "Bash(ls \"C:\\\\Users\\\\Gerrit Disbergen\\\\Dropbox \\(Personal\\)\\\\Apps\\\\GBrain-Sync/memory\")",
+      "Bash(ls \"C:\\\\Users\\\\Gerrit Disbergen\\\\Dropbox \\(Personal\\)\\\\Apps\\\\GBrain-Sync/templates\")",
+      "Bash(ls \"C:\\\\Users\\\\Gerrit Disbergen\\\\Dropbox \\(Personal\\)\\\\Apps\\\\GBrain-Sync/skills\")",
+      "Bash(ls \"C:\\\\Users\\\\Gerrit Disbergen\\\\Dropbox \\(Personal\\)\\\\Apps\\\\GBrain-Sync/scripts\")",
+      "Bash(ls 'C:\\\\Users\\\\Gerrit Disbergen\\\\Dropbox \\(Personal\\)\\\\Apps\\\\GBrain-Sync/Benefique/Clients')",
+      "Bash(ls \"C:\\\\Users\\\\Gerrit Disbergen\\\\Dropbox \\(Personal\\)\\\\Apps\\\\GBrain-Sync/Benefique/sops\")",
+      "Bash(ls \"C:\\\\Users\\\\Gerrit Disbergen\\\\Dropbox \\(Personal\\)\\\\Apps\\\\GBrain-Sync/Benefique/marketing\")",
+      "Bash(ls \"C:\\\\Users\\\\Gerrit Disbergen\\\\Dropbox \\(Personal\\)\\\\Apps\\\\GBrain-Sync/Benefique/sales\")",
+      "Bash(ls 'C:\\\\Users\\\\Gerrit Disbergen\\\\Dropbox \\(Personal\\)\\\\Apps\\\\GBrain-Sync/blog-drafts')",
+      "Read(//c/Users/Gerrit Disbergen/Documents/Benefique-Tools/ga-coach/scripts/**)",
+      "Bash(node ga4-pull.js --compare --json-file \"../data/snapshots/ga4-2026-03-27.json\")",
+      "Bash(node gsc-pull.js --json-file \"../data/snapshots/gsc-2026-03-27.json\")",
+      "Bash(npm run:*)"
+    ]
+  }
+}

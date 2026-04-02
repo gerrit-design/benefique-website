@@ -407,3 +407,7 @@ Or email hello@benefique.com with "worker classification" in the subject.
 Davie, FL | Serving Healthcare Practices & Service Businesses Across Broward County and South Florida
 
 *Gerrit Disbergen, EA, is the founder of Benefique Tax & Accounting in Davie, FL. Benefique provides full-service accounting, tax planning, and advisory services to healthcare practices and professional services firms across South Florida. This post is educational and does not constitute legal advice. Worker classification involves both tax and employment law -- consult with qualified professionals for your specific situation.*
+
+---
+
+*Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances.*

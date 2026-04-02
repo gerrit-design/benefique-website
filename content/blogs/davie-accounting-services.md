@@ -325,12 +325,14 @@ No sales pitch. Just conversation about what's possible for your business.
 
 ---
 
+*Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances.*
+
 ## Related Articles
 
-- [S-Corp Election for Medical Practices & Law Firms: Real Strategy](/)
-- [How to Reduce Business Taxes Legally](/)
-- [Quarterly Tax Planning: Why It Beats Annual Catch-Up](/)
-- [Healthcare Deductions You're Probably Missing](/)
-- [Service Business Profitability: Beyond Revenue](/)
-- [Multi-Location Operations: Real-Time Visibility](/)
-- [Partner Compensation Planning: Maximize Everyone's Take-Home](/)‍
+- [S-Corp Election for Medical Practices & Law Firms: Real Strategy](/blog/s-corp-tax-trap-service-business)
+- [How to Reduce Business Taxes Legally](/blog/tax-strategies-concierge-physicians)
+- [Quarterly Tax Planning: Why It Beats Annual Catch-Up](/blog/tax-strategies-concierge-physicians)
+- [Healthcare Deductions You're Probably Missing](/blog/missed-tax-deductions-healthcare-service-businesses-broward-county)
+- [Service Business Profitability: Beyond Revenue](/blog/pl-says-profitable-bank-account-empty)
+- [Multi-Location Operations: Real-Time Visibility](/blog/multi-location-financial-management)
+- Partner Compensation Planning: Maximize Everyone's Take-Home

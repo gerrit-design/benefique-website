@@ -94,6 +94,12 @@ Here is where the tax math gets genuinely compelling. When concierge medicine is
 
 **For the employee:** The benefit is excludable from income under Sections 105 and 106 when properly structured through a Medical Expense Reimbursement Plan (MERP) or Health Reimbursement Arrangement (HRA). Tax-free to the employee, deductible to the employer.
 
+---
+
+> **Try the Simulator:** See exactly how your P&L and cash flow change as you grow your patient panel. Our [Concierge Medicine Financial Simulator](/tools/concierge-simulator) lets you adjust membership fees, costs, and physician salary — three views: Absolute $, % Revenue, and $ per Member.
+
+---
+
 ### How to Structure It by Entity Type
 
 | Entity Type | Tax Treatment | Notes |
@@ -161,6 +167,10 @@ You can use HSA funds for the medical services portion of a concierge fee. Membe
 ### What is the employer concierge medicine tax deduction?
 
 When an employer pays for concierge medicine as an employee benefit, the cost is deductible under Section 162 as an ordinary business expense. The employee receives the benefit tax-free under Sections 105 and 106 when structured through a MERP or HRA. C-Corporations get the cleanest treatment. S-Corp shareholders with 2%+ ownership have the benefit included in W-2 wages. Small employers under 50 employees can use a QSEHRA with annual limits of $6,350 (individual) and $12,800 (family) for 2026.
+
+---
+
+*Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances.*
 
 ## Related Articles
 

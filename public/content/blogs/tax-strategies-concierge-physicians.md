@@ -68,6 +68,12 @@ A Cash Balance Plan is a defined benefit plan that allows contributions far exce
 
 > A 50-year-old concierge physician earning $900,000 who implements a 401(k) plus Cash Balance Plan can shelter approximately $345,000 per year. At a 37% federal rate, that is $127,650 in annual tax savings — without changing a single thing about how the practice operates.
 
+---
+
+> **Try the Simulator:** See exactly how your P&L and cash flow change as you grow your patient panel. Our [Concierge Medicine Financial Simulator](/tools/concierge-simulator) lets you adjust membership fees, costs, and physician salary — three views: Absolute $, % Revenue, and $ per Member.
+
+---
+
 ### Setup Timing
 
 Cash Balance Plans must be established before the end of the tax year (December 31) but contributions can be made until the tax filing deadline (including extensions). The plan design requires an actuary, and setup takes 4-8 weeks. Planning should begin no later than October.
@@ -220,7 +226,7 @@ Florida also provides strong protections for:
 
 ## Common Tax Mistakes Concierge Physicians Make
 
-### Mistake 1: Using a Basic CPA Who Prepares Returns but Does Not Plan
+### Mistake 1: Using a Basic Tax Preparer Who Files Returns but Does Not Plan
 
 The most expensive mistake is invisible. If your accountant contacts you in March to collect documents and files your return in April, you have missed 12 months of planning opportunities. Every strategy in this article must be implemented during the tax year, not after it closes.
 
@@ -250,7 +256,7 @@ Most accounting firms that serve physicians fall into a gap:
 
 | Firm Type | Approach | Result |
 |-----------|----------|--------|
-| Local CPA | Annual tax prep, basic bookkeeping | Strategies identified too late to implement |
+| Local tax preparer | Annual tax prep, basic bookkeeping | Strategies identified too late to implement |
 | Large advisory firm | Full-service, proactive planning | Priced for $10M+ businesses, not $1M-$3M practices |
 
 At Benefique Tax & Accounting in Davie, FL, we fill that gap. We function as the **outsourced finance department** for physician-owned practices — providing continuous accounting, real-time financial reporting, and proactive tax strategy implementation throughout the year.
@@ -297,3 +303,7 @@ Section 280A allows a homeowner to rent their home for up to 14 days per year wi
 - [S-Corp Election: Is It Right for Your Florida Business?](/blog/s-corp-election)
 - [S-Corp Reasonable Compensation: How Much Should You Pay Yourself?](/blog/s-corp-reasonable-compensation-healthcare-service-businesses-broward-county)
 - [7 Tax Deductions Your Broward County Practice Is Probably Missing](/blog/missed-tax-deductions-healthcare-service-businesses-broward-county)
+
+---
+
+*Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances.*

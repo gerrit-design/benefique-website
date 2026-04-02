@@ -1,12 +1,16 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
+  "trailingSlash": false,
   "redirects": [
-    { "source": "/services/", "destination": "/services", "statusCode": 301 },
-    { "source": "/blog/real-time-accounting-dashboards--essential-tools-for-professional-practices", "destination": "/blog/real-time-financial-dashboards-healthcare-practices", "statusCode": 301 },
-    { "source": "/blog/proactive-tax-planning-for-healthcare-smbs--maximizing-returns-and-minimizing-risks", "destination": "/blog/missed-tax-deductions-healthcare-service-businesses-broward-county", "statusCode": 301 },
-    { "source": "/blog/fl-entity-structure-s-corp-tax-savings-500k", "destination": "/blog/s-corp-election", "statusCode": 301 },
-    { "source": "/blog/davie-business-owners--are-you-leaving-six-figures-on-the-table--the-real-cost-of-skipping-strategic-tax-planning", "destination": "/blog/davie-accounting-services", "statusCode": 301 }
+    { "source": "/go/simulator", "destination": "/tools/concierge-simulator?utm_source=linkedin&utm_medium=social&utm_campaign=concierge-simulator", "statusCode": 302 },
+    { "source": "/go/waterfall", "destination": "/blog/ai-cash-flow-waterfall-explained?utm_source=linkedin&utm_medium=social&utm_campaign=waterfall", "statusCode": 302 },
+    { "source": "/go/financial-model", "destination": "/blog/concierge-medicine-financial-model?utm_source=linkedin&utm_medium=social&utm_campaign=financial-model", "statusCode": 302 },
+    { "source": "/go/three-views", "destination": "/blog/three-views-one-business?utm_source=linkedin&utm_medium=social&utm_campaign=three-views", "statusCode": 302 },
+    { "source": "/go/cost-center", "destination": "/blog/accountant-cost-center-roi-center?utm_source=linkedin&utm_medium=social&utm_campaign=cost-center", "statusCode": 302 },
+    { "source": "/go/fixer-upper", "destination": "/blog/fixer-upper-or-walk-in-ready?utm_source=linkedin&utm_medium=social&utm_campaign=fixer-upper", "statusCode": 302 },
+    { "source": "/go/breakeven", "destination": "/blog/fixed-cost-breakeven-volume-problem?utm_source=linkedin&utm_medium=social&utm_campaign=breakeven", "statusCode": 302 },
+    { "source": "/go/per-unit", "destination": "/blog/per-unit-pnl-multi-location-cost-analysis?utm_source=linkedin&utm_medium=social&utm_campaign=per-unit", "statusCode": 302 }
   ],
   "rewrites": [
     { "source": "/terms", "destination": "/api/terms" },

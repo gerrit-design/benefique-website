@@ -153,6 +153,13 @@ Your staffing model is the single largest variable cost. Here are the most commo
 - [ ] Secure malpractice insurance quotes
 - [ ] Begin commercial lease negotiations
 - [ ] Develop financial projections (12-month cash flow forecast)
+
+---
+
+> **Try the Simulator:** See exactly how your P&L and cash flow change as you grow your patient panel. Our [Concierge Medicine Financial Simulator](/tools/concierge-simulator) lets you adjust membership fees, costs, and physician salary — three views: Absolute $, % Revenue, and $ per Member.
+
+---
+
 - [ ] Establish personal savings reserve (6 months of personal expenses)
 
 ### Three Months Before Launch
@@ -308,6 +315,8 @@ Yes, and it is one of the most tax-efficient executive benefits available. The e
 The portion of a concierge fee allocable to actual medical services (annual physical, preventive screenings, specific visits) qualifies as a medical expense deduction under IRC Section 213. Access and convenience fees do not qualify. The deduction is subject to the 7.5% AGI floor and requires the taxpayer to itemize. Practices that issue detailed allocation statements make it easier for patients to claim legitimate deductions. Read our full guide: [Are Concierge Medical Fees Tax Deductible?](/blog/concierge-medical-fees-tax-deductible)
 
 ---
+
+*Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances.*
 
 ## Related Articles
 

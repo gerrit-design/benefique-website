@@ -11,7 +11,7 @@ featured: true
 
 If you're a profitable small business owner still operating as a sole proprietor or standard LLC, you're probably paying too much in taxes.
 
-Not because you're doing anything wrong. Not because your CPA is incompetent. Simply because your entity structure isn't optimized for your income level.
+Not because you're doing anything wrong. Not because your tax professional is incompetent. Simply because your entity structure isn't optimized for your income level.
 
 Let me be direct: **If your net profit is over $60,000 per year, S-Corp election will likely save you $10,000-$30,000 annually in self-employment taxes.**
 
@@ -212,7 +212,7 @@ Separate accounts for:
 - Distributions (from retained earnings)
 - Shareholder loans (if applicable)
 
-Your bookkeeper or CPA can help set this up.
+Your bookkeeper or tax professional can help set this up.
 
 ### Step 5: File Quarterly Payroll Taxes
 
@@ -343,10 +343,10 @@ Look at your last full-year tax return. What was your Schedule C net profit (or 
 **3. Compare to costs**  
 If savings > $5,000/year, it's probably worth it.
 
-**4. Talk to your CPA**  
+**4. Talk to your tax professional**  
 If they haven't brought up S-Corp and you're profitable, ask why not.
 
-### Don't Have a Proactive CPA?
+### Don't Have a Proactive Tax Advisor?
 
 **We specialize in tax strategy, not just compliance.**
 
@@ -370,14 +370,6 @@ S-Corp election isn't right for everyone. But if you're a profitable small busin
 
 **Real-time accounting. Tax-ready any day. Strategies that save you money.**
 
-That's what we do at Benefique.
-
-📧 Questions? Email hello@benefique.com or [apply to work with us](https://www.benefique.com/apply).
-
 ---
 
-**About Benefique Tax & Accounting**
-
-We provide full-service accounting and fractional CFO services to healthcare practices, professional services, and multi-location businesses across South Florida. Our clients get real-time financials, proactive tax planning, and strategic guidance—not just tax returns in April.
-
-Davie | Fort Lauderdale | Weston | Plantation | Serving South Florida since 2002
+*Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances.*

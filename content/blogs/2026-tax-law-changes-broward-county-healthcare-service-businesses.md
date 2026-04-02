@@ -335,3 +335,7 @@ Or email hello@benefique.com with "2026 tax planning" in the subject.
 Davie, FL | Serving Healthcare Practices & Service Businesses Across Broward County and South Florida
 
 *Gerrit Disbergen, EA, is the founder of Benefique Tax & Accounting in Davie, FL. Benefique provides full-service accounting, tax planning, and fractional CFO services to healthcare practices and professional services firms across South Florida. We specialize in the intersection of tax strategy and cash flow reality -- because a deduction you can't afford isn't a deduction at all.*
+
+---
+
+*Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances.*

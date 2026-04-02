@@ -37,6 +37,12 @@ The business earns $454K but needs $601K just for draws and debt service — bef
 
 This is the most important chart in our CFO reports. And until we started including it, every one of these owners thought the P&L told the full story.
 
+---
+
+> **Interactive Tool:** Want to model your own numbers? Our [Concierge Medicine Financial Simulator](/tools/concierge-simulator) lets you adjust membership fees, patient volume, and costs — and see your P&L and cash flow waterfall update in real time.
+
+---
+
 It doesn't. Here's why.
 
 ## Why Your P&L Lies About Cash

@@ -193,3 +193,7 @@ Then your problem isn't revenue. **It's cash flow. And it's fixable.**
 ---
 
 *Benefique Tax & Accounting helps healthcare practices, consulting firms, and service-based SMBs across the U.S. achieve Fortune 500-level cash flow management and real-time financial intelligence. If you wait to get paid, we can help.*
+
+---
+
+*Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances.*

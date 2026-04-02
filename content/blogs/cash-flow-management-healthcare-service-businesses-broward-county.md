@@ -201,3 +201,7 @@ Then your problem isn't revenue. It's cash flow. And it's fixable.
 ---
 
 *Gerrit Disbergen is the founder of Benefique Tax & Accounting in Davie, FL, providing tax preparation, accounting, and cash flow advisory services to healthcare practices and professional services firms across Broward County and South Florida. Benefique specializes in helping practice owners and service business operators understand not just what they owe in taxes, but where their cash is and how to keep more of it.*
+
+---
+
+*Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances.*

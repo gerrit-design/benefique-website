@@ -58,6 +58,9 @@ const staticRoutes = [
   // Service pages
   { path: '/services/real-time-accounting', priority: 0.9, changefreq: 'monthly', lastmod: new Date() },
   { path: '/services/fractional-cfo', priority: 0.9, changefreq: 'monthly', lastmod: new Date() },
+
+  // Tool pages
+  { path: '/tools/concierge-simulator', priority: 0.9, changefreq: 'monthly', lastmod: new Date() },
 ];
 
 /**
@@ -128,22 +131,28 @@ function generateSitemap() {
     entries.push(buildUrlEntry(route.path, route.lastmod, route.changefreq, route.priority));
   }
   
-  // 2. Scan blog posts directory
+  // 2. Scan blog posts directory (with deduplication by slug)
   let blogCount = 0;
+  const seenSlugs = new Set();
   try {
     const blogFiles = readdirSync(BLOGS_DIR).filter(f => f.endsWith('.md'));
     console.log(`[sitemap] Found ${blogFiles.length} blog post files`);
-    
+
     for (const file of blogFiles) {
       const filePath = join(BLOGS_DIR, file);
       const post = parseBlogPost(filePath, file);
-      
+
       if (post) {
+        if (seenSlugs.has(post.slug)) {
+          console.warn(`⚠️  Duplicate slug "${post.slug}" from ${file}, skipping`);
+          continue;
+        }
+        seenSlugs.add(post.slug);
         entries.push(buildUrlEntry(post.path, post.lastmod, post.changefreq, post.priority));
         blogCount++;
       }
     }
-    
+
     console.log(`[sitemap] Added ${blogCount} blog posts`);
   } catch (err) {
     console.error(`❌ Error scanning blog directory: ${err.message}`);

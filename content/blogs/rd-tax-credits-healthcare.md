@@ -262,7 +262,7 @@ The IRS wants **contemporaneous documentation**. This means documentation create
 
 ### Step 3: Calculate Qualified Expenses
 
-Work with your CPA or an R&D credit specialist to:
+Work with your EA, CPA, or an R&D credit specialist to:
 - Identify employee time spent on qualifying activities
 - Calculate wage expenses (salary + benefits × time %)
 - Add supply costs and contractor fees
@@ -342,7 +342,7 @@ Most healthcare practices leave $40K-$120K on the table every year. Our team has
 
 ### "Our accountant never mentioned it."
 
-**Common.** Many CPAs focus on compliance, not credits. R&D credits require specialized knowledge and extra work. If your CPA isn't bringing it up, ask why.
+**Common.** Many tax professionals focus on compliance, not credits. R&D credits require specialized knowledge and extra work. If your EA or CPA isn't bringing it up, ask why.
 
 ### "We already filed our taxes."
 
@@ -368,7 +368,7 @@ Most healthcare practices leave $40K-$120K on the table every year. Our team has
 
 **The problem:** R&D credit calculations are complex. Errors lead to missed money or IRS issues.
 
-**The fix:** Work with a CPA or specialist who has healthcare R&D experience.
+**The fix:** Work with a qualified tax professional who has healthcare R&D experience.
 
 ### Mistake #4: Not Documenting Prospectively
 
@@ -401,7 +401,7 @@ Most healthcare practices leave $40K-$120K on the table every year. Our team has
 - Results and improvements (after)
 
 **5. Quarterly review**
-- Every 3 months, review projects with your CPA
+- Every 3 months, review projects with your tax professional
 - Identify what might qualify
 - Adjust documentation as needed
 
@@ -420,7 +420,7 @@ Ask: "What have we developed, tested, or optimized?"
 **3. Gather documentation**  
 Project notes, emails, timelines—anything that shows experimentation.
 
-**4. Talk to your CPA**  
+**4. Talk to your tax professional**  
 Ask: "Have you evaluated us for R&D credits?"
 
 If the answer is "no" or "you don't qualify," get a second opinion.
@@ -462,16 +462,4 @@ Don't leave it with the IRS.
 
 ---
 
-**Real-time accounting. Proactive tax planning. Credits you didn't know existed.**
-
-That's what we do at Benefique.
-
-📧 Questions? Email hello@benefique.com or [apply here](https://www.benefique.com/apply).
-
----
-
-**About Benefique Tax & Accounting**
-
-We provide full-service accounting and fractional CFO services to healthcare practices, professional services, and multi-location businesses across South Florida. Our clients get real-time financials, proactive tax planning, and strategic guidance—not just tax returns in April.
-
-Davie | Fort Lauderdale | Weston | Plantation | Serving South Florida since 2002
+*Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances.*

@@ -403,3 +403,7 @@ Or email hello@benefique.com with "reasonable compensation" in the subject.
 Davie, FL | Serving Healthcare Practices & Service Businesses Across Broward County and South Florida
 
 *Gerrit Disbergen, EA, is the founder of Benefique Tax & Accounting in Davie, FL. Benefique provides full-service accounting, tax planning, and S-Corp advisory services to healthcare practices and professional services firms across Broward County and South Florida. We don't guess at reasonable compensation—we build the analysis, document the position, and optimize the number against your entire tax picture.*
+
+---
+
+*Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances.*

@@ -1,23 +1,17 @@
 ---
-title: "S-Corp Election: Is It Right for Your Florida Business?"
-date: "2026-01-30"
+title: "S-Corp Election: Is It Right for Your Business?"
+date: "2025-11-20"
 author: "Gerrit Disbergen, EA"
-excerpt: "S-Corp election can save Florida small business owners $10K-$30K yearly in taxes. Learn when to elect, how to file, and if it's right for your business."
-description: "S-Corp election can save Florida small business owners $10K-$30K yearly in taxes. Learn when to elect, how to file, and if it's right for your business."
+excerpt: "Understanding the tax implications and benefits of S-Corp status for small business owners."
 categories: ["Tax Planning", "Entity Structure", "S-Corporation"]
 featured: true
-focus_keyword: "s corp election"
-location: "South Florida, Florida"
 ---
 
 # S-Corp Election: Is It Right for Your Business?
 
-Last year, you made $150K as a consultant.  
-This year, you'll pay $22,950 in self-employment taxes.
+If you're a profitable small business owner still operating as a sole proprietor or standard LLC, you're probably paying too much in taxes.
 
-What if I told you that number could be $10,710 instead—*legally, permanently, and starting next month*?
-
-If you're still operating as a sole proprietor or standard LLC, you're leaving $10K-$30K on the table every single year. Here's how to stop.
+Not because you're doing anything wrong. Not because your tax professional is incompetent. Simply because your entity structure isn't optimized for your income level.
 
 Let me be direct: **If your net profit is over $60,000 per year, S-Corp election will likely save you $10,000-$30,000 annually in self-employment taxes.**
 
@@ -27,7 +21,7 @@ Here's everything you need to know to make an informed decision.
 
 ---
 
-## What Is S-Corp Election? Understanding S-Corporation Tax Status
+## What Is an S-Corp (and What It Isn't)
 
 First, let's clear up confusion:
 
@@ -48,16 +42,16 @@ That last bullet is where the magic happens.
 
 ---
 
-## S-Corp Tax Savings: How Much Can You Save?
+## The Tax Math: Why S-Corps Save Money
 
 Let's use real numbers.
 
 ### Scenario: LLC Taxed as Sole Proprietor
 
 **Net profit:** $120,000  
-**Self-employment tax (15.3%):** $16,956  
+**Self-employment tax (15.3%):** $18,130  
 **Federal income tax (24% bracket):** ~$17,000  
-**Total taxes:** ~$33,956
+**Total taxes:** ~$35,130
 
 ### Scenario: Same Business, S-Corp Election
 
@@ -69,15 +63,13 @@ Let's use real numbers.
 **Payroll taxes on distributions:** $0  
 **Total taxes:** ~$27,710
 
-**Savings: $6,246/year**
+**Savings: $7,420/year**
 
 And that's conservative. Higher profits = higher savings.
 
-Learn more about [tax planning strategies](#) for small business owners.
-
 ---
 
-## When Does S-Corp Election Make Sense?
+## When Does S-Corp Make Sense?
 
 ### ✅ You're a Good Candidate If:
 
@@ -85,13 +77,13 @@ Learn more about [tax planning strategies](#) for small business owners.
 Below $60K, the administrative costs and complexity often outweigh the tax savings.
 
 **2. You're in a service-based business**  
-Consultants, [healthcare providers](#), attorneys, accountants, designers, coaches—anyone selling expertise.
+Consultants, healthcare providers, attorneys, accountants, designers, coaches—anyone selling expertise.
 
 **3. You're already profitable and expect to stay that way**  
 S-Corp doesn't make sense for startups burning cash or businesses with inconsistent income.
 
 **4. You're willing to run payroll**  
-You'll need to pay yourself via W-2, which means [payroll setup](#), quarterly 941s, and year-end W-2s.
+You'll need to pay yourself via W-2, which means payroll setup, quarterly 941s, and year-end W-2s.
 
 **5. You want to reinvest profits or take distributions flexibly**  
 S-Corps give you more control over how and when you take money out.
@@ -137,11 +129,9 @@ So what's "reasonable"?
 - **$70K-$100K** if you're the primary revenue generator and profit is $200K+
 - **$40K-$60K** if you have other team members doing the work and you're more of an owner/manager
 
-**Quick test:** Could you hire someone to do your job for this salary? If yes, it's probably reasonable.
+**The test:** Could you hire someone to do your job for this salary? If yes, it's probably reasonable.
 
-We've helped dozens of South Florida clients navigate IRS audits on reasonable compensation. With proper documentation, it's rarely an issue.
-
-**Not sure what's reasonable for your situation?** We'll run your numbers in 15 minutes. [Book a free S-Corp consultation →](#)
+We've helped dozens of clients navigate IRS audits on reasonable compensation. With proper documentation, it's rarely an issue.
 
 ---
 
@@ -156,13 +146,13 @@ Let's be transparent about what this actually costs:
 - State filings (varies): $0-$500
 
 **With Professional Help:**
-- EA or attorney setup: $500-$1,500
+- CPA or attorney setup: $500-$1,500
 - Includes election filing, EIN, state registrations
 
 ### Ongoing Annual Costs
 
 **Payroll:**
-- [Payroll service](#) (Gusto, ADP, etc.): $500-$1,200/year
+- Payroll service (Gusto, ADP, etc.): $500-$1,200/year
 - Quarterly 941 filings: Included or $100-$200 if outsourced
 
 **Tax Preparation:**
@@ -170,7 +160,7 @@ Let's be transparent about what this actually costs:
 - More complex than Schedule C, less complex than C-Corp
 
 **Accounting:**
-- Proper [bookkeeping](#) (separating salary vs. distributions): +$200-$500/year if outsourced
+- Proper bookkeeping (separating salary vs. distributions): +$200-$500/year if outsourced
 - Most businesses should already be doing this
 
 **Total annual cost estimate: $1,500-$3,500**
@@ -178,40 +168,35 @@ Let's be transparent about what this actually costs:
 **Break-even point:** You need to save at least $3,500/year in taxes for S-Corp to make sense.
 
 At $60K net profit, you're saving ~$4,500. Worth it.  
-At $100K net profit, you're saving ~$10,000. Clear value.  
+At $100K net profit, you're saving ~$10,000. Definitely worth it.  
 At $200K+ net profit, you're saving $15K-$30K. No-brainer.
 
 ---
 
-## The 20-Minute S-Corp Election (Or 20 Seconds If We Do It)
+## How to Make the S-Corp Election
 
-Look, the IRS makes this *sound* complicated. It's not. Here's the real process:
+### Step 1: Form Your Entity (If You Haven't Already)
 
-**If you already have an LLC:** File one form (2553). Takes 20 minutes. You're done.  
-**If you're a sole prop:** Form an LLC first, then file 2553. Takes a week. Still simple.
+You need to be an LLC or corporation first. If you're currently a sole proprietor, form an LLC in your state.
 
-Here's the breakdown:
-
-### Step 1: Form Your Entity (Skip if you're already an LLC)
-
-**What:** File LLC formation with your state  
-**Cost:** $100-$500  
-**Time:** 1-2 weeks  
-**DIY or pro:** Either works (we charge $500 if you want us to handle it)
+**Cost:** $100-$500 depending on state  
+**Time:** 1-2 weeks
 
 ### Step 2: File Form 2553 with the IRS
 
-This is *the* S-Corp election form. It's free, it's online, and it's shockingly simple for an IRS form.
+This is the S-Corp election form. It's free and can be filed online.
 
-**Critical deadline:** March 15th for current-year election.  
-**Pro tip:** File in January/February. The IRS has been known to "lose" forms filed at the deadline.
+**Critical deadlines:**
+- **For current year:** Must file by March 15th
+- **For next year:** Can file anytime, but March 15th is safest
+- **New entity:** Within 2 months and 15 days of formation (or start of tax year)
 
-**→ [Want us to file it for you? Click here.](https://www.benefique.com/apply)**
+**Pro tip:** File in January or February to avoid issues. The IRS has been known to "lose" forms filed close to the deadline.
 
 ### Step 3: Set Up Payroll
 
-You're now an employee of your business. You need:
-- Payroll service (Gusto, ADP, [QuickBooks Payroll](#))
+You're now an employee. You need:
+- Payroll service (Gusto, ADP, QuickBooks Payroll)
 - State unemployment insurance registration
 - Workers' comp (if required in your state)
 
@@ -220,8 +205,6 @@ You're now an employee of your business. You need:
 - Some do quarterly if profit is variable
 - Must be consistent and documented
 
-Need help with [payroll setup](#)? We handle everything for our clients.
-
 ### Step 4: Update Your Accounting
 
 Separate accounts for:
@@ -229,7 +212,7 @@ Separate accounts for:
 - Distributions (from retained earnings)
 - Shareholder loans (if applicable)
 
-Your bookkeeper or EA can help set this up. We include this in our [S-Corp setup package](#).
+Your bookkeeper or tax professional can help set this up.
 
 ### Step 5: File Quarterly Payroll Taxes
 
@@ -239,13 +222,13 @@ Form 941 is due quarterly. Most payroll services handle this automatically.
 
 ---
 
-## Common S-Corp Election Mistakes to Avoid
+## Common S-Corp Mistakes (And How to Avoid Them)
 
 ### Mistake #1: No Salary, Only Distributions
 
-**The trap:** Taking only distributions to avoid payroll taxes
+**The trap:** "I'll just take distributions and avoid payroll taxes entirely!"
 
-**Reality:** The IRS will reclassify distributions as salary and hit you with penalties, back taxes, and interest.
+**Reality:** The IRS will reclassify your distributions as salary and hit you with penalties, back taxes, and interest.
 
 **Fix:** Pay yourself a reasonable salary BEFORE taking distributions.
 
@@ -281,13 +264,11 @@ Form 941 is due quarterly. Most payroll services handle this automatically.
 
 **Fix:** Keep payroll records, board resolutions, shareholder meeting minutes (even if it's just you).
 
-**Avoid these traps.** We'll handle the election, payroll, and compliance—so you just collect the savings. **→ [Book Your Strategy Call](https://www.benefique.com/apply)**
-
 ---
 
-## Real Client Example: The Solo Dentist Who Saved $21K
+## Real Client Example: The Dentist Who Saved $24K
 
-**Client:** Solo dentist in private practice  
+**Client:** Solo dentist, associate dentist practice  
 **Structure before:** Single-member LLC (taxed as sole prop)  
 **Net profit:** $280,000/year
 
@@ -327,25 +308,23 @@ If you have multiple owners, the math gets more complex but S-Corp often still m
 - Owners actively involved in the business
 - Clear ownership split and roles
 
-We help several multi-owner practices manage S-Corp structures. It's doable, but you need clean books and good communication between partners. Learn more about our [multi-location accounting services](#).
+We help several multi-owner practices manage S-Corp structures. It's doable, but you need clean books and good communication between partners.
 
 ---
 
-## S-Corp vs. C-Corp vs. LLC: What's the Difference?
+## S-Corp vs. C-Corp: What's the Difference?
 
-Quick comparison for those considering different entity structures:
+Quick comparison for those considering C-Corp:
 
-| | S-Corp | C-Corp | LLC |
-|---|---|---|---|
-| **Tax treatment** | Pass-through (profit taxed once) | Double taxation (corporate + personal) | Pass-through (default) |
-| **Shareholders** | Max 100, must be US citizens | Unlimited, can be foreign | N/A (members) |
-| **Stock classes** | One class only | Multiple classes allowed | Flexible |
-| **Best for** | Small business owners, service businesses | Startups raising VC, large corporations | Simple structure, flexibility |
-| **Self-employment tax** | Only on salary | N/A (employees) | On all profit |
+| | S-Corp | C-Corp |
+|---|---|---|
+| **Tax treatment** | Pass-through (profit taxed once) | Double taxation (corporate + personal) |
+| **Shareholders** | Max 100, must be US citizens | Unlimited, can be foreign |
+| **Stock classes** | One class only | Multiple classes allowed |
+| **Best for** | Small business owners, service businesses | Startups raising VC, large corporations |
+| **Dividend tax** | No (distributions taxed at personal rate) | Yes (qualified dividends at 15-20%) |
 
-**Bottom line:** Unless you're raising venture capital or planning to go public, S-Corp is almost always better for profitable small business owners.
-
-Read our complete guide: [Choosing the Right Business Entity](#)
+**Bottom line:** Unless you're raising venture capital or planning to go public, S-Corp is almost always better for small business owners.
 
 ---
 
@@ -364,54 +343,24 @@ Look at your last full-year tax return. What was your Schedule C net profit (or 
 **3. Compare to costs**  
 If savings > $5,000/year, it's probably worth it.
 
-**4. Talk to your EA or tax professional**  
+**4. Talk to your tax professional**  
 If they haven't brought up S-Corp and you're profitable, ask why not.
 
----
+### Don't Have a Proactive Tax Advisor?
 
-## Don't Leave $20K on the Table in 2026
+**We specialize in tax strategy, not just compliance.**
 
-**The March 15th deadline is coming.** Miss it, and you're stuck paying full SE taxes for another year.
+At Benefique, we don't wait until April to tell you how much you owe. We talk strategy in January. We model scenarios. We help you make the election if it makes sense.
 
-Here's what happens when you work with Benefique:
-- ✅ **Week 1:** We analyze your numbers and confirm your savings
-- ✅ **Week 2:** We file Form 2553 and handle all IRS paperwork  
-- ✅ **Week 3:** We set up your payroll and reasonable salary  
-- ✅ **Week 4:** You start saving $10K-$30K/year
-
-**→ [Book Your S-Corp Strategy Call](https://www.benefique.com/apply)** (15 min, free, we'll calculate your exact savings)
-
-Or email hello@benefique.com if you have specific questions.
-
-**Don't wait until March 14th.** Spots are limited—we close our calendar February 28th to ensure everyone gets filed on time.
+**Book a consultation:** [Apply here](https://www.benefique.com/apply)
 
 ---
 
-## FAQ: S-Corp Election
+## The Deadline: Don't Wait
 
-### What is S-Corp election?
+If you want S-Corp status for 2026, **you must file Form 2553 by March 15th, 2026.**
 
-S-Corp election is a tax filing (Form 2553) that allows your LLC or corporation to be taxed as an S-Corporation. This lets you split income between salary (subject to payroll taxes) and distributions (not subject to payroll taxes), typically saving $10K-$30K annually for profitable businesses.
-
-### When should I elect S-Corp status?
-
-Elect S-Corp when your net profit consistently exceeds $60K per year. File Form 2553 by March 15th for current-year election, or anytime during the prior year. The sooner you file, the sooner you start saving.
-
-### How much does S-Corp election cost?
-
-Annual costs are $1,500-$3,500 (payroll services, S-Corp tax return, bookkeeping). One-time setup is $500-$1,500 if using professional help. If you're saving $10K+ in taxes, it's worth it.
-
-### What is a reasonable salary for S-Corp?
-
-A reasonable salary matches what you could pay someone else to do your job. Typical ranges: $50K-$70K for $100K-$150K profit, $70K-$100K for $200K+ profit. Industry benchmarks and documentation are key.
-
-### Can I elect S-Corp if I live in Florida?
-
-Yes! Florida has no state income tax, making S-Corp even more valuable since there's no state tax impact on distributions. You still file federal S-Corp returns and pay federal payroll taxes.
-
-### What's the deadline to elect S-Corp for 2026?
-
-March 15, 2026 for calendar-year businesses. File earlier (January-February) to avoid processing delays. If you miss it, you're stuck with your current structure for the entire year.
+If you miss it, you're stuck with your current structure for another year—and another year of overpaying taxes.
 
 ---
 
@@ -421,16 +370,6 @@ S-Corp election isn't right for everyone. But if you're a profitable small busin
 
 **Real-time accounting. Tax-ready any day. Strategies that save you money.**
 
-That's what we do at Benefique.
-
-📧 **Email:** hello@benefique.com  
-🔗 **Apply:** [www.benefique.com/apply](https://www.benefique.com/apply)  
-📞 **Schedule:** [Free 15-minute S-Corp consultation](#)
-
 ---
 
-**About Benefique Tax & Accounting**
-
-We provide [full-service accounting](#) and [fractional CFO services](#) to healthcare practices, professional services, and multi-location businesses across South Florida. Our clients get real-time financials, [proactive tax planning](#), and strategic guidance—not just tax returns in April.
-
-Davie | Fort Lauderdale | Weston | Plantation | Serving South Florida since 2002
+*Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances.*

@@ -428,16 +428,4 @@ Track both.
 
 ---
 
-**Real-time accounting. Real-time cash flow visibility. Real-time peace of mind.**
-
-That's what we do at Benefique.
-
-📧 Questions? Email hello@benefique.com or [apply here](https://www.benefique.com/apply).
-
----
-
-**About Benefique Tax & Accounting**
-
-We provide full-service accounting and fractional CFO services to healthcare practices, professional services, and multi-location businesses across South Florida. Our clients get real-time financials, proactive tax planning, and strategic guidance—not just tax returns in April.
-
-Davie | Fort Lauderdale | Weston | Plantation | Serving South Florida since 2002
+*Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances.*

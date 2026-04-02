@@ -468,26 +468,6 @@ const blogPosts = {
     readTime: '14 min read',
     featuredImage: '/images/blog/davie-accounting-hero.jpg'
   },
-  's-corp-election': {
-    file: '/content/blogs/s-corp-election.md',
-    title: 'S-Corp Election: Is It Right for Your Florida Business?',
-    date: '2026-01-30',
-    author: 'Gerrit Disbergen, EA',
-    excerpt: 'S-Corp election can save Florida business owners $5K-$20K yearly in self-employment taxes—but only if your profit exceeds $100K.',
-    categories: ['Tax Planning', 'Entity Structure', 'S-Corporation'],
-    readTime: '15 min read',
-    featuredImage: '/images/blog/s-corp-hero.svg'
-  },
-  'cash-flow-forecasting': {
-    file: '/content/blogs/cash-flow-forecasting.md',
-    title: 'Cash Flow Forecasting 101: A Practical Guide for Business Owners',
-    date: '2026-01-30',
-    author: 'Gerrit Disbergen, EA',
-    excerpt: 'Learn cash flow forecasting for your small business with this practical guide.',
-    categories: ['Cash Flow', 'Financial Management', 'Planning'],
-    readTime: '12 min read',
-    featuredImage: '/images/blog/cash-flow-hero.svg'
-  },
   'radiology-collections-dashboard-case-study': {
     file: '/content/blogs/radiology-collections-dashboard-case-study.md',
     title: 'Case Study: Real-Time Collections Intelligence System for Multi-Center Radiology Group',

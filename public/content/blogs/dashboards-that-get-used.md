@@ -288,10 +288,4 @@ Or explore related resources:
 
 ---
 
-**About Benefique Tax & Accounting**
-
-We build financial systems that business owners actually use. Real-time dashboards. Proactive tax planning. 24-hour response times. No boring PDFs.
-
-*History matters. But preparation wins.*
-
-📞 **Ready to stop guessing and start knowing?** [Let's talk →](/contact)
+*Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances.*

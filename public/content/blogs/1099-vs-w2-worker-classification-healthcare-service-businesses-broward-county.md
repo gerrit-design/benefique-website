@@ -18,8 +18,6 @@ You're sitting on a tax bomb.
 
 If you run a healthcare practice or professional services firm in Broward County and you're paying workers on a 1099, the IRS and Department of Labor have made it very clear: they're coming for misclassification. And the penalties aren't a slap on the wrist -- they're **$7,000 to $15,000 per misclassified worker** on average. In bad cases, they exceed **$100,000 per worker**.
 
-(This is one of several critical areas where healthcare practices face unique tax risk. Also see [2026 tax law changes every practice owner needs to know](/blog/2026-tax-law-changes-broward-county-healthcare-service-businesses) and [the 7 tax deductions your practice is probably missing](/blog/missed-tax-deductions-healthcare-service-businesses-broward-county).)
-
 This isn't theoretical. The DOL has specifically increased enforcement in healthcare. Multi-agency coordination between the IRS, DOL, and state agencies is targeting high-risk industries -- and healthcare is at the top of the list.
 
 Here's how to know if you're exposed, what's changed in 2026, and what to do about it.
@@ -55,7 +53,7 @@ There isn't one test. There are three -- and they're applied by different agenci
 
 ### 1. IRS Common Law Test (20-Factor Test)
 
-The IRS looks at three categories of evidence. For detailed guidance, see the [IRS Worker Classification guidance](https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-self-employed-or-employee):
+The IRS looks at three categories of evidence:
 
 **Behavioral Control** -- Does the practice direct *how* the worker does the job?
 - Do you set their schedule?
@@ -79,7 +77,7 @@ If you control the *how*, provide the tools, and the work is ongoing and central
 
 ### 2. DOL Economic Reality Test
 
-The Department of Labor uses a six-factor "economic reality" test to determine if a worker is truly independent or economically dependent on your business. See [DOL's worker classification guidance](https://www.dol.gov/agencies/whd/misclassification/worker-classification) for the official six-factor test. As of May 2025, the DOL applies traditional economic reality principles, asking one core question: **Is this worker in business for themselves, or are they economically dependent on you?**
+The Department of Labor uses a six-factor "economic reality" test to determine if a worker is truly independent or economically dependent on your business. As of May 2025, the DOL applies traditional economic reality principles, asking one core question: **Is this worker in business for themselves, or are they economically dependent on you?**
 
 For most healthcare and service workers -- associate dentists, hygienists, therapists in group practices, associate attorneys, staff consultants -- the answer is clear. They're economically dependent on the practice.
 
@@ -189,7 +187,7 @@ The OBBBA raised the 1099-NEC and 1099-MISC reporting threshold from $600 to **$
 
 ### Rev. Proc. 2025-10: Section 530 Safe Harbor Updated
 
-In January 2025, the IRS issued its first major update to [Section 530 safe harbor guidance](https://www.irs.gov/pub/irs-drop/rp-25-10.pdf) in **40 years**. This is the provision that can protect you from retroactive employment tax liability if you've been treating workers as 1099 contractors. Understanding this is critical if you operate as an S-Corp and are making W-2 vs. distribution decisions—see our guide on [S-Corp reasonable compensation](/blog/s-corp-reasonable-compensation-healthcare-service-businesses-broward-county) for details on structuring compensation correctly.
+In January 2025, the IRS issued its first major update to Section 530 safe harbor guidance in **40 years**. This is the provision that can protect you from retroactive employment tax liability if you've been treating workers as 1099 contractors.
 
 **To qualify for Section 530 protection, you must meet ALL three requirements:**
 
@@ -243,8 +241,6 @@ Multi-million dollar settlements are common in class action misclassification ca
 
 ![Professional business consultation meeting](/images/blog/business-consultation-professional.jpg)
 *Converting 1099 workers to W-2 employees—the cleanest fix to avoid penalties*
-
-The good news: if you catch this problem before an IRS audit, you can reclassify workers going forward. If you're uncertain about your current structure, [proactive tax planning](/services) can identify risks early and help you make the conversion with minimal penalty exposure.
 
 ---
 
@@ -393,8 +389,6 @@ The question isn't whether misclassification will catch up with you. It's when -
 
 We don't do this by guessing. We review the actual facts of each working relationship against all three classification tests -- IRS, DOL, and Florida -- and give you a clear answer for each worker.
 
-If you're a healthcare practice owner or service business leader in Broward County (Davie, Plantation, Fort Lauderdale, Weston, Hollywood) and have workers classified as 1099, a worker classification audit could save you tens of thousands in unexpected taxes and penalties.
-
 **Here's what the review looks like:**
 
 **Week 1:** We list every 1099 worker and map each relationship against the classification factors
@@ -403,7 +397,7 @@ If you're a healthcare practice owner or service business leader in Broward Coun
 
 If everything is clean, you get peace of mind and documentation to support your classifications in case of audit. If something needs to change, we help you fix it at the lowest possible cost.
 
-**[Book a Worker Classification Review](https://www.benefique.com/contact)** (30 min, no obligation)
+**Book a Worker Classification Review (30 min, no obligation)**
 
 Or email hello@benefique.com with "worker classification" in the subject.
 
@@ -413,3 +407,7 @@ Or email hello@benefique.com with "worker classification" in the subject.
 Davie, FL | Serving Healthcare Practices & Service Businesses Across Broward County and South Florida
 
 *Gerrit Disbergen, EA, is the founder of Benefique Tax & Accounting in Davie, FL. Benefique provides full-service accounting, tax planning, and advisory services to healthcare practices and professional services firms across South Florida. This post is educational and does not constitute legal advice. Worker classification involves both tax and employment law -- consult with qualified professionals for your specific situation.*
+
+---
+
+*Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances.*

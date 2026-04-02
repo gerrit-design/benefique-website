@@ -250,13 +250,14 @@ function generateHTML({ title, description, canonical, ogType, ogImage, schemas,
 let pageCount = 0;
 
 for (const route of routes) {
-  // Skip homepage — dist/index.html already serves it via Vercel fallback
-  if (route.path === '/') continue;
-
   const canonical = `${SITE}${route.path}`;
   const schemas = [];
   if (route.schema) schemas.push(route.schema);
   if (route.faq) schemas.push(buildFAQSchema(route.faq));
+
+  // Extract a clean h1 from the title (strip " | Benefique..." suffix)
+  const h1Text = route.title.replace(/\s*[\|–—].*$/, '').trim();
+  const rootContent = `<h1>${escapeHtml(h1Text)}</h1><p>${escapeHtml(route.description)}</p>`;
 
   const html = generateHTML({
     title: route.title,
@@ -264,12 +265,17 @@ for (const route of routes) {
     canonical,
     ogImage: route.ogImage || DEFAULT_OG_IMAGE,
     schemas,
-    rootContent: '',
+    rootContent,
   });
 
-  const outDir = join(DIST, route.path);
-  mkdirSync(outDir, { recursive: true });
-  writeFileSync(join(outDir, 'index.html'), html, 'utf-8');
+  if (route.path === '/') {
+    // Overwrite the homepage dist/index.html with proper SEO content
+    writeFileSync(join(DIST, 'index.html'), html, 'utf-8');
+  } else {
+    const outDir = join(DIST, route.path);
+    mkdirSync(outDir, { recursive: true });
+    writeFileSync(join(outDir, 'index.html'), html, 'utf-8');
+  }
   pageCount++;
 }
 

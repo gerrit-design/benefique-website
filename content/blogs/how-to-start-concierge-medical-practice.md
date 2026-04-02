@@ -82,6 +82,12 @@ For the majority of solo and small-group concierge practices in Florida, the opt
 
 A concierge physician earning $500,000 in net income without an S-Corp election pays approximately $25,000 to $35,000 more per year in self-employment taxes than one with the proper structure. Over a 10-year career, that is $250,000 to $350,000 in unnecessary taxes.
 
+---
+
+> **Try the Simulator:** See exactly how your P&L and cash flow change as you grow your patient panel. Our [Concierge Medicine Financial Simulator](/tools/concierge-simulator) lets you adjust membership fees, costs, and physician salary — three views: Absolute $, % Revenue, and $ per Member.
+
+---
+
 The Form 2553 has a filing deadline — generally within 75 days of forming the entity or by March 15 for the current tax year. Miss it and you either wait until next year or file for late election relief, which is not guaranteed.
 
 For a complete walkthrough of the S-Corp election process, timing, and reasonable compensation rules, read our [S-Corp election guide](/blog/s-corp-election).
@@ -336,6 +342,10 @@ Physicians converting an existing insurance practice typically retain 10-20% of 
 ### Is starting a concierge practice worth it financially?
 
 For most physicians, yes. A mature concierge practice in South Florida generates $750,000 to $2 million+ in annual revenue with overhead ratios of 35-45%, resulting in physician take-home compensation of $400,000 to $900,000+. Compare this to the average employed primary care physician salary of $260,000 to $300,000 or an insurance-based practice netting $200,000 to $400,000 after overhead. The financial advantage grows over time as your panel stabilizes and your overhead ratio drops. See our [income potential analysis](/blog/concierge-medicine-income-south-florida) and [financial comparison guide](/blog/concierge-medicine-vs-insurance-practice-financial-comparison) for detailed projections.
+
+---
+
+*Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances.*
 
 ## Related Articles
 

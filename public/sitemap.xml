@@ -217,8 +217,8 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.benefique.com/blog/cash-flow-forecasting</loc>
-    <lastmod>2026-01-29</lastmod>
+    <loc>https://www.benefique.com/blog/cash-flow-forecasting-101</loc>
+    <lastmod>2025-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -291,6 +291,18 @@
   <url>
     <loc>https://www.benefique.com/blog/december-financials-lying</loc>
     <lastmod>2026-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.benefique.com/blog/december-financials-year-end-review</loc>
+    <lastmod>2025-12-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.benefique.com/blog/dental-group-scaling-accounting</loc>
+    <lastmod>2026-01-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -397,6 +409,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.benefique.com/blog/radiology-practice-real-time-visibility</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.benefique.com/blog/rd-tax-credits-healthcare</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -409,8 +427,8 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.benefique.com/blog/s-corp-election</loc>
-    <lastmod>2026-01-29</lastmod>
+    <loc>https://www.benefique.com/blog/s-corp-election-guide</loc>
+    <lastmod>2025-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

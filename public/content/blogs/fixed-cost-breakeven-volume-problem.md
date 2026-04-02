@@ -47,6 +47,12 @@ February profit: **+$12,000.**
 
 The swing: **$17,000.** The cause: **141 additional scans.**
 
+---
+
+> **Interactive Tool:** Want to model your own numbers? Our [Concierge Medicine Financial Simulator](/tools/concierge-simulator) lets you adjust membership fees, patient volume, and costs — and see your P&L and cash flow waterfall update in real time.
+
+---
+
 No one was hired. No one was fired. No lease was renegotiated. No equipment was purchased or sold. The practice didn't cut a single dollar in costs. It just saw more patients.
 
 ![Diagnostic imaging center with MRI equipment — fixed costs that don't change whether you see 500 or 700 patients](/images/blog/imaging-center-mri-equipment.jpg)

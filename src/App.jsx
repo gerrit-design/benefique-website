@@ -737,7 +737,7 @@ function Services() {
                   We specialize in healthcare practices, professional services, and service-based
                   businesses. We understand your industry's unique tax challenges — from physician compensation structuring to R&D credits for clinical workflows.
                 </p>
-                <Link to="/blog/s-corp-election" className="text-gray-500 text-sm hover:text-benefique-orange hover:underline mt-2 inline-block">
+                <Link to="/blog/s-corp-election-guide" className="text-gray-500 text-sm hover:text-benefique-orange hover:underline mt-2 inline-block">
                   Read: Is S-Corp Election Right for Your Business? →
                 </Link>
               </div>
@@ -1325,8 +1325,6 @@ function Blog() {
     { title: 'Davie Accounting Services for Healthcare Practices & Service-Based Businesses', excerpt: 'Expert accounting services in Davie, FL for healthcare practices (radiology, surgery, dental, vet, pain clinics) and service businesses (law, marine, IT). Real-time reporting, monthly closes, 24-hour response.', date: '2026-02-12', slug: 'davie-accounting-services', published: true, category: 'Accounting', readTime: '12 min' },
     { title: 'R&D Tax Credits: Hidden Money for Healthcare Practices', excerpt: "Many healthcare businesses miss out on significant R&D credits. Here's how to identify and claim them.", date: '2026-02-05', slug: 'rd-tax-credits-healthcare', published: true, category: 'Tax Strategy', readTime: '10 min' },
     { title: 'Real-Time Dashboards That Actually Get Used', excerpt: 'Most business owners ignore their financial reports because they\'re boring PDFs full of numbers. Here\'s how we designed dashboards that clients check daily\u2014and why it matters.', date: '2026-01-31', slug: 'dashboards-that-get-used', published: true, category: 'Accounting', readTime: '10 min' },
-    { title: 'S-Corp Election: Is It Right for Your Florida Business?', excerpt: 'S-Corp election can save Florida business owners $5K-$20K yearly in self-employment taxes\u2014but only if your profit exceeds $100K. Learn when it makes sense and when it doesn\'t.', date: '2026-01-30', slug: 's-corp-election', published: true, category: 'Tax Strategy', readTime: '15 min' },
-    { title: 'Cash Flow Forecasting 101', excerpt: 'Learn cash flow forecasting for your small business with this practical guide. Get step-by-step instructions, free templates, and expert CFO guidance to predict and manage your cash flow.', date: '2026-01-30', slug: 'cash-flow-forecasting', published: true, category: 'Cash Flow', readTime: '12 min' },
     { title: 'December Financials: What to Review Before Year-End', excerpt: 'Key financial checkpoints every business owner should review before closing the books on the year.', date: '2026-10-15', slug: 'december-financials', published: false, category: 'Accounting', readTime: '8 min' },
     { title: 'Multi-Location Financial Management', excerpt: 'Best practices for businesses operating across multiple locations or entities.', date: '2025-08-05', slug: 'multi-location-management', published: false, category: 'Accounting', readTime: '10 min' },
   ];

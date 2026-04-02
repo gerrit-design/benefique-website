@@ -14,7 +14,7 @@ keywords: "tax deductions medical practice Broward County, missed tax deductions
 
 Here's a number that should bother you: the average medical practice overpays between **$15,000 and $50,000 per year** in federal taxes because of deductions they don't take.
 
-Not deductions that are aggressive or risky. Deductions that are completely legal, well-established in the tax code, and used every day by practice owners and service business operators who have a CPA paying attention.
+Not deductions that are aggressive or risky. Deductions that are completely legal, well-established in the tax code, and used every day by practice owners and service business operators who have a tax professional paying attention.
 
 The problem isn't that these deductions don't exist. It's that most accountants do tax *compliance* -- they record what happened and file the return. They don't do tax *planning* -- actively looking for every dollar you're entitled to keep.
 
@@ -154,7 +154,7 @@ For a physician in Fort Lauderdale with family coverage at $24,000/year, the abo
 
 **Coverage includes:** Health insurance, dental, vision, and long-term care premiums for you, your spouse, dependents, and children under 27 (even if not dependents).
 
-**The catch:** If your spouse has access to employer-sponsored health insurance through their own job, you may not qualify for this deduction -- even if they don't enroll. Check the specific rules with your CPA.
+**The catch:** If your spouse has access to employer-sponsored health insurance through their own job, you may not qualify for this deduction -- even if they don't enroll. Check the specific rules with your EA or CPA.
 
 **Works for:** Every S-Corp practice owner and professional who pays health insurance premiums. If you're not doing this, fix it immediately.
 
@@ -255,7 +255,7 @@ Remember: this is a **credit**, not a deduction. A $10,000 credit reduces your t
 
 **What it is:** Using donor-advised funds (DAFs) and strategic gift timing to accomplish two things at once: support causes you care about AND get your taxable income below the SSTB phase-out threshold for the QBI deduction.
 
-**Why you're missing it:** Most practice owners make charitable donations reactively -- a check here, a sponsorship there -- without timing them strategically. And their CPA may not be coordinating charitable giving with QBI planning.
+**Why you're missing it:** Most practice owners make charitable donations reactively -- a check here, a sponsorship there -- without timing them strategically. And their tax professional may not be coordinating charitable giving with QBI planning.
 
 **The dual strategy:**
 
@@ -375,3 +375,7 @@ Or email hello@benefique.com with "tax deduction audit" in the subject.
 Davie, FL | Serving Healthcare Practices & Service Businesses Across Broward County and South Florida
 
 *Gerrit Disbergen, EA, is the founder of Benefique Tax & Accounting in Davie, FL. Benefique provides full-service accounting, tax planning, and advisory services to healthcare practices and professional services firms across Broward County and South Florida. We specialize in proactive tax planning -- not just filing your return, but actively finding every dollar you're entitled to keep.*
+
+---
+
+*Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances.*
