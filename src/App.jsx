@@ -2100,6 +2100,218 @@ function Privacy() {
 }
 
 // ============================================================
+// WESTON BOOKKEEPING LANDING PAGE
+// ============================================================
+function WestonBookkeeping() {
+  return (
+    <div>
+      <Helmet>
+        <title>Bookkeeping Services in Weston, FL | Benefique Tax & Accounting</title>
+        <meta name="description" content="Professional bookkeeping services for Weston, FL businesses. Real-time books in QuickBooks Online, monthly closes by the 7th, payroll, tax planning. Based 10 minutes away in Davie." />
+        <link rel="canonical" href="https://www.benefique.com/weston-bookkeeping" />
+      </Helmet>
+
+      {/* Hero */}
+      <section className="bg-white py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
+            <span>📍</span> Weston, Florida
+          </div>
+
+          <h1 className="text-4xl md:text-5xl font-bold text-benefique-navy leading-tight mb-6">
+            Bookkeeping Services in Weston, FL
+          </h1>
+
+          <div className="bg-gray-50 border-l-4 border-benefique-orange p-6 rounded-r-xl mb-8 max-w-3xl">
+            <p className="text-lg text-gray-700 leading-relaxed">
+              <strong>Benefique Tax & Accounting</strong> provides bookkeeping and full-service accounting
+              for Weston businesses from our office in Davie — 10 minutes down I-75. We work exclusively
+              in QuickBooks Online, close your books by the 7th of every month, and respond within 24 hours.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap gap-4 mb-6">
+            <Link
+              to="/contact"
+              className="bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition inline-flex items-center gap-2"
+            >
+              Get a Free Consultation <span>&rarr;</span>
+            </Link>
+            <Link
+              to="/services"
+              className="border-2 border-benefique-navy text-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-benefique-navy hover:text-white transition"
+            >
+              View All Services
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Signals */}
+      <section className="bg-gray-50 py-6 border-y border-gray-200">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="flex flex-wrap justify-center gap-6 text-sm">
+            {[
+              '✓ Books Closed by the 7th',
+              '✓ 24-Hour Response Time',
+              '✓ QuickBooks Online Experts',
+              '✓ Real-Time Dashboards'
+            ].map((item, i) => (
+              <span key={i} className="text-gray-700 font-medium">{item}</span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* What We Do */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-benefique-navy mb-8">
+            What Weston Business Owners Get
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
+            <div className="bg-gray-50 rounded-xl p-6 border border-gray-100">
+              <h3 className="font-bold text-benefique-navy mb-2">Real-Time Bookkeeping</h3>
+              <p className="text-gray-600 text-sm">
+                Transactions categorized daily in QBO. Your books are always current — not 60 days behind.
+                Monthly close by the 7th, review call by the 10th.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6 border border-gray-100">
+              <h3 className="font-bold text-benefique-navy mb-2">Payroll Processing</h3>
+              <p className="text-gray-600 text-sm">
+                We handle payroll runs, quarterly filings, W-2s, and 1099s. Integrated with your books so
+                labor costs hit your P&L automatically.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6 border border-gray-100">
+              <h3 className="font-bold text-benefique-navy mb-2">Proactive Tax Planning</h3>
+              <p className="text-gray-600 text-sm">
+                Tax-ready any day of the year. We run quarterly projections, catch entity structure
+                issues early, and coordinate with your CPA or handle your returns directly.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6 border border-gray-100">
+              <h3 className="font-bold text-benefique-navy mb-2">Fractional CFO</h3>
+              <p className="text-gray-600 text-sm">
+                Cash flow forecasting, KPI dashboards, and financial strategy for Weston businesses
+                doing $500K to $10M+ in revenue. A full finance department without the full-time cost.
+              </p>
+            </div>
+          </div>
+
+          <h2 className="text-3xl font-bold text-benefique-navy mb-6">
+            Why Weston Businesses Work with Us
+          </h2>
+
+          <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
+            <p>
+              Weston has one of the highest concentrations of professional services firms and healthcare
+              practices in Broward County — from offices along Weston Road and Indian Trace to practices
+              near Cleveland Clinic Florida. These are businesses generating real revenue that need more
+              than a part-time bookkeeper filing bank statements into a shoebox.
+            </p>
+            <p>
+              We serve Weston business owners who want their books done right, on time, every month. Our
+              team of four full-time accountants works inside your QuickBooks Online file daily. You get a
+              dedicated point of contact, not a rotating cast of juniors.
+            </p>
+            <p>
+              Our Davie office is 10 minutes from Weston Town Center via I-75 or Weston Road. We meet
+              in person when it matters, and everything else runs through real-time dashboards and same-day
+              responses. We also serve businesses throughout Broward County including Pembroke Pines,
+              Southwest Ranches, and Plantation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-benefique-navy text-center mb-4">
+            Bookkeeping Questions from Weston Business Owners
+          </h2>
+          <p className="text-gray-600 text-center mb-12">
+            Common questions about our bookkeeping services
+          </p>
+
+          <div className="space-y-4">
+            {[
+              {
+                q: 'How much do bookkeeping services cost in Weston?',
+                a: 'It depends on transaction volume, payroll complexity, and whether you need tax planning or CFO services. Most of our Weston clients are in the $1,500-$4,000/month range for full-service accounting — which replaces a bookkeeper, payroll service, and tax preparer.'
+              },
+              {
+                q: 'Do you only work with healthcare practices?',
+                a: 'Healthcare is our specialty, but we serve any established service business in Weston doing $500K+ in revenue — law firms, IT companies, marine services, construction, and professional services.'
+              },
+              {
+                q: 'Can you take over my existing QuickBooks file?',
+                a: 'Yes. We onboard into your existing QBO file, clean up any prior-period issues, and have your books current within 30 days. No migration to a different platform required.'
+              },
+              {
+                q: 'What\'s the difference between bookkeeping and what Benefique does?',
+                a: 'A bookkeeper records transactions. We do that plus monthly closes by the 7th, payroll, quarterly tax projections, real-time dashboards, and proactive financial advice. It\'s a complete accounting department.'
+              },
+              {
+                q: 'Are you located in Weston?',
+                a: 'Our office is in Davie, FL — about 10 minutes from Weston via I-75. We serve Weston, Pembroke Pines, Southwest Ranches, Plantation, and all of western Broward County.'
+              }
+            ].map((faq, i) => (
+              <details key={i} className="bg-white rounded-xl border border-gray-200 group">
+                <summary className="px-6 py-4 cursor-pointer font-semibold text-benefique-navy hover:text-benefique-orange transition list-none flex justify-between items-center">
+                  {faq.q}
+                  <span className="text-gray-400 group-open:rotate-180 transition-transform">&#9660;</span>
+                </summary>
+                <div className="px-6 pb-4 text-gray-600">
+                  {faq.a}
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Nearby Areas */}
+      <section className="py-12 bg-white border-t border-gray-200">
+        <div className="max-w-6xl mx-auto px-4">
+          <h3 className="text-lg font-bold text-benefique-navy mb-4 text-center">Also Serving Nearby Areas</h3>
+          <div className="flex flex-wrap justify-center gap-3">
+            {['Davie', 'Plantation', 'Pembroke Pines', 'Southwest Ranches', 'Miramar'].map((area) => (
+              <Link
+                key={area}
+                to={`/${area.toLowerCase().replace(/\s+/g, '-')}-accounting`}
+                className="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700 hover:bg-benefique-orange/10 hover:text-benefique-orange transition"
+              >
+                {area}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-benefique-navy text-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4">Ready to Talk Bookkeeping?</h2>
+          <p className="text-blue-100 mb-8">
+            Schedule a free call. We&apos;ll look at your current setup and tell you exactly what we can do.
+          </p>
+          <Link
+            to="/contact"
+            className="inline-block bg-benefique-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
+          >
+            Schedule Free Consultation
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+// ============================================================
 // LOCATION PAGE COMPONENT - SEO Optimized (Jesse Cunningham Style)
 // ============================================================
 function LocationPage({ city, nearby, zipCodes, description }) {
@@ -2851,6 +3063,7 @@ export default function App() {
             <Route path="/davie-accounting" element={<LocationPage {...locations.davie} />} />
             <Route path="/plantation-accounting" element={<LocationPage {...locations.plantation} />} />
             <Route path="/weston-accounting" element={<LocationPage {...locations.weston} />} />
+            <Route path="/weston-bookkeeping" element={<WestonBookkeeping />} />
             <Route path="/miramar-accounting" element={<LocationPage {...locations.miramar} />} />
             <Route path="/fort-lauderdale-accounting" element={<LocationPage {...locations['fort-lauderdale']} />} />
             <Route path="/aventura-accounting" element={<LocationPage {...locations.aventura} />} />

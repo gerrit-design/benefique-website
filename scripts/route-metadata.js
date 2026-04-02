@@ -86,6 +86,20 @@ const routes = [
     },
   },
   {
+    path: '/weston-bookkeeping',
+    title: 'Bookkeeping Services in Weston, FL | Benefique Tax & Accounting',
+    description: 'Professional bookkeeping services for Weston, FL businesses. Real-time books in QuickBooks Online, monthly closes by the 7th, payroll, tax planning. Based 10 minutes away in Davie.',
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'AccountingService',
+      name: 'Benefique Tax & Accounting - Weston Bookkeeping',
+      description: 'Professional bookkeeping services for Weston, FL businesses. Real-time QuickBooks Online bookkeeping, payroll, and tax planning.',
+      url: `${SITE}/weston-bookkeeping`,
+      areaServed: { '@type': 'City', name: 'Weston' },
+      address: { '@type': 'PostalAddress', addressLocality: 'Davie', addressRegion: 'FL', postalCode: '33324', addressCountry: 'US' },
+    },
+  },
+  {
     path: '/miramar-accounting',
     title: 'Miramar Accounting & CFO Services | Benefique Tax & Accounting',
     description: 'Real-time accounting and tax planning for Miramar businesses — healthcare, marine services, and more. Fractional CFO services with monthly closes by the 7th.',
@@ -180,6 +194,41 @@ const routes = [
       { q: 'How do you handle project-based accounting for marine services?', a: 'We set up job costing systems that track revenue and expenses per project, giving you profitability visibility at the job level. You know which projects make money and which don\'t before they\'re finished.' },
       { q: 'How do you manage seasonal cash flow for marine businesses?', a: 'We build cash flow forecasts that account for seasonal patterns, helping you plan for slow periods during peak season. This includes line of credit management, expense timing, and reserve targets.' },
     ],
+  },
+
+  // Tool pages
+  {
+    path: '/tools/concierge-simulator',
+    title: 'Concierge Medicine Financial Simulator | Benefique Tax & Accounting',
+    description: 'Interactive financial model for concierge medical practices. See how your P&L and cash flow change as you grow your patient panel. Adjust membership fees, costs, and physician salary.',
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'WebApplication',
+      name: 'Concierge Medicine Financial Simulator',
+      description: 'Interactive P&L and cash flow model for concierge medical practices',
+      url: `${SITE}/tools/concierge-simulator`,
+      applicationCategory: 'FinanceApplication',
+      operatingSystem: 'Web',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      author: { '@type': 'Organization', name: 'Benefique Tax & Accounting', url: SITE },
+    },
+  },
+
+  {
+    path: '/tools/business-simulator',
+    title: 'Business Simulator | Benefique Intelligence(TM)',
+    description: 'Interactive activity-based business simulator. Decompose your business into assembly line stages, change any input, and watch P&L and cash flow recompute. See break-even in activity units, payer profitability, and scenario comparisons.',
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'WebApplication',
+      name: 'Benefique Intelligence Business Simulator',
+      description: 'Activity-based business simulator: decompose any business into stages, change inputs, see P&L and cash flow cascade in real time',
+      url: `${SITE}/tools/business-simulator`,
+      applicationCategory: 'FinanceApplication',
+      operatingSystem: 'Web',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      author: { '@type': 'Organization', name: 'Benefique Tax & Accounting', url: SITE },
+    },
   },
 
   // Service pages
