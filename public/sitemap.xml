@@ -2,121 +2,127 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.benefique.com/</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
   <url>
     <loc>https://www.benefique.com/services</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.benefique.com/demo</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benefique.com/testimonials</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benefique.com/about</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benefique.com/contact</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.benefique.com/blog</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.benefique.com/davie-accounting</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.benefique.com/plantation-accounting</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benefique.com/weston-accounting</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benefique.com/miramar-accounting</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benefique.com/fort-lauderdale-accounting</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benefique.com/aventura-accounting</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benefique.com/hollywood-accounting</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benefique.com/industries/radiology</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benefique.com/industries/dental</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benefique.com/industries/veterinary</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benefique.com/industries/marine-services</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.benefique.com/services/real-time-accounting</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.benefique.com/services/fractional-cfo</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.benefique.com/tools/concierge-simulator</loc>
+    <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -187,6 +193,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.benefique.com/blog/assembly-line-thinking-medical-practice-profitability</loc>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.benefique.com/blog/bank-balance-lying-trust-accounts</loc>
     <lastmod>2026-03-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -201,12 +213,6 @@
   <url>
     <loc>https://www.benefique.com/blog/cash-flow-breakeven-per-patient-activity-units</loc>
     <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.benefique.com/blog/cash-flow-forecasting</loc>
-    <lastmod>2026-01-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -237,6 +243,12 @@
   <url>
     <loc>https://www.benefique.com/blog/concierge-medical-fees-tax-deductible</loc>
     <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.benefique.com/blog/concierge-medicine-financial-model</loc>
+    <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -309,6 +321,12 @@
   <url>
     <loc>https://www.benefique.com/blog/hidden-cost-not-tracking-wip</loc>
     <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.benefique.com/blog/high-cost-procedure-economics-medical-practice</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -397,12 +415,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.benefique.com/blog/s-corp-election</loc>
-    <lastmod>2026-01-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.benefique.com/blog/s-corp-reasonable-compensation-healthcare-service-businesses-broward-county</loc>
     <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -435,6 +447,12 @@
   <url>
     <loc>https://www.benefique.com/blog/three-views-one-business</loc>
     <lastmod>2026-03-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.benefique.com/blog/toxic-payers-losing-money-medical-practice</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
