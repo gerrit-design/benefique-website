@@ -165,6 +165,23 @@ const blogPosts = {
       { q: 'Should I hire a fractional CFO to prepare for exit?', a: 'If your current accountant can show you operator, banker, and buyer views with prescriptive action plans, you may not need one. If they can\'t answer what a banker would see in your balance sheet or name three changes worth specific dollars, the valuation gap is likely costing more than a CFO engagement.' }
     ]
   },
+  'ebitda-positive-cash-flow-negative-debt-service': {
+    file: '/content/blogs/ebitda-positive-cash-flow-negative-debt-service.md',
+    title: 'EBITDA Positive, Cash Flow Negative \u2014 A $16M Case Study',
+    date: '2026-04-03',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Five locations. $16.7M in revenue. $332K in EBITDA. Looks like a functional business \u2014 until you subtract the $365K in annual interest. The group literally cannot pay its lenders from operations.',
+    categories: ['Cash Flow', 'Financial Intelligence'],
+    readTime: '11 min read',
+    featuredImage: '/images/blog/ebitda-positive-cash-flow-negative-debt-service.jpg',
+    faqs: [
+      { q: 'Can a business be EBITDA-positive and still not be able to pay its debt?', a: 'Yes. EBITDA adds back interest expense, so by definition it will always be higher than net income for any business with debt. If your EBITDA is lower than your annual interest expense, your debt service coverage ratio is below 1.0 \u2014 meaning operations do not generate enough to cover the cost of your debt.' },
+      { q: 'What is a good debt service coverage ratio for a small business?', a: 'The SBA requires a minimum of 1.15x for 7(a) loan approval. Most commercial banks want 1.25x or higher. A DSCR of 2.0x or above is considered strong and gives the business room for unexpected expenses, revenue dips, or growth investment.' },
+      { q: 'Where do I find my interest expense in QuickBooks?', a: 'Run a Profit & Loss report for the trailing twelve months. Interest expense typically appears under Other Expenses at the bottom of the P&L, below operating income. If you have multiple loans, QBO may break them into separate interest accounts. Add them all together.' },
+      { q: 'What happens if my DSCR falls below a loan covenant?', a: 'The lender can declare a technical default. This does not always mean the loan is called immediately, but it gives the lender the right to restrict additional borrowing, require accelerated payments, demand additional collateral, or renegotiate terms.' },
+      { q: 'Is EBITDA a reliable measure of business health?', a: 'For comparing operating performance across companies with different capital structures, EBITDA has a role. For determining whether your specific business can pay its bills, EBITDA is unreliable because it excludes the single largest cash obligation most businesses have \u2014 debt service.' }
+    ]
+  },
   'concierge-medical-fees-tax-deductible': {
     file: '/content/blogs/concierge-medical-fees-tax-deductible.md',
     title: 'Are Concierge Medicine Fees Tax Deductible? IRS Rules for 2026',
