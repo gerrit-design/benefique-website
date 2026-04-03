@@ -3,6 +3,8 @@ slug: "tax-strategies-concierge-physicians"
 date: "2026-03-10"
 ---
 
+**Quick answer:** A concierge physician earning $700,000 who uses generic small business tax strategies overpays by $50,000-$150,000 per year. Eight physician-specific strategies -- S-Corp election ($16,000-$42,000 savings), retirement plan stacking ($200,000-$400,000 sheltered annually), cash balance plans, Augusta Rule, medical expense reimbursement plans, R&D credits, real estate professional status, and entity restructuring -- can reduce the effective tax rate by 10-20 percentage points.
+
 # Tax Strategies for Concierge Physicians
 
 Most concierge physicians are significantly overtaxed — not because the tax code is unfair, but because their accountant treats them like every other small business.

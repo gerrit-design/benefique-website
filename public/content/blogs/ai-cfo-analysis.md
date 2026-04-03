@@ -13,6 +13,8 @@ metaDescription: "See the real workflow behind AI-assisted CFO analysis — from
 keywords: "ai cash flow forecasting, ai cfo analysis, ai financial analysis small business, AI accounting, fractional CFO AI"
 ---
 
+**Quick answer:** AI-assisted CFO analysis connects directly to QuickBooks, pulls 8 reports simultaneously, and produces a 28-page PDF with 14 charts, industry benchmarks, and prioritized action items -- typically in a single session. For one Miami professional services firm, this process turned 7 months of routine QBO transactions into a forensic cash flow audit that found $353K in trapped cash. The AI handles data extraction and pattern recognition; a licensed accountant interprets the output and translates it into decisions.
+
 # What AI-Assisted CFO Analysis Actually Looks Like
 
 AI cash flow forecasting is the process of using machine learning and pattern recognition to analyze historical financial data, surface anomalies, and project future cash positions with more accuracy and speed than manual review allows. When applied to small business accounting, it turns months of raw QuickBooks transactions into a structured, actionable financial picture — often in a single session.

@@ -1,3 +1,4 @@
+**Quick answer:** Across one multi-location healthcare group, AI-powered CFO analysis identified over $1.5M in actionable findings from the same QuickBooks data their previous accountant had access to for years. The difference between a cost-center accountant and an ROI-center accountant is prescriptive analysis: flagging $3.9M in annual distributions draining cash, debt structures heading toward default, and valuation gaps worth $2-4M in enterprise value. Compliance keeps you legal; financial intelligence makes you money.
 
 # Your Accountant Is a Cost Center. Here's What an ROI Center Looks Like.
 

@@ -13,6 +13,8 @@ metaDescription: "AI analysis of 7 months of QuickBooks data uncovered $353K in 
 keywords: "cash flow forecasting with ai, ai tools for cash flow forecasting, find trapped cash business, AI QuickBooks analysis, cash flow problems small business"
 ---
 
+**Quick answer:** AI analysis of 7 months of QuickBooks data uncovered $353,000 in trapped cash at an $8.5M professional services firm -- primarily from a DSO of 61 days (15 days above benchmark) with $1.77M in receivables growing 32% monthly. The analysis also found a bank balance overstating real available cash by $903,000 and partner draws exceeding a $1.58M windfall. All five cash traps were sitting in routine QBO data that nobody had mined.
+
 # How AI Found $353,000 in Trapped Cash — Using Data Already in QuickBooks
 
 Cash flow forecasting with AI does not require new software, a data warehouse, or a team of analysts — it requires connecting a language model to the financial data your business has been generating every single day. In this case, seven months of QuickBooks data sitting in an existing account was enough to surface $353,000 in trapped cash that nobody had noticed.

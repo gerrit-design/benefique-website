@@ -13,6 +13,8 @@ metaDescription: "Learn how an AI-powered cash flow waterfall revealed why a pro
 keywords: "ai cash flow analysis, cash flow waterfall, EBITDA vs cash flow, why profitable but no cash, profit not equal cash"
 ---
 
+**Quick answer:** A cash flow waterfall is a visual chart that starts with EBITDA and subtracts each category of cash outflow until you reach the actual bank balance change. In one real case, a $5M imaging center earned $1.07M in EBITDA but its bank account shrank by $41K — because owner distributions ($686K), debt service ($299K), and intercompany transfers ($128K) consumed every dollar of profit. The P&L never shows this; the waterfall does.
+
 # How AI Found That $1M in Profit Left Zero Cash in the Bank
 
 A $5M healthcare imaging center earned $1.07M in EBITDA last year. Its bank account shrank by $41K. We used AI to pull 8 QuickBooks reports simultaneously and built a cash flow waterfall that showed exactly where every dollar went.

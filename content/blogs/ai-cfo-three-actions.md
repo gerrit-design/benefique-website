@@ -13,6 +13,8 @@ metaDescription: "See how AI distilled a comprehensive CFO analysis into 3 quant
 keywords: "ai cfo analysis, fractional cfo small business, improve business financials, business action plan financial data, data driven business decisions"
 ---
 
+**Quick answer:** An AI-driven CFO analysis of a $5M healthcare practice produced 3 quantified actions worth +$337K/year in retained cash flow: a $3K equipment appraisal that fixed a failing 9.80x debt-to-equity ratio, a distribution policy reset that freed $186K/year in cash, and a refinancing play that saved $48K/year in interest. Every number traces back to a specific QuickBooks line item.
+
 We just finished a CFO analysis for a $5M healthcare practice. The report had 13 sections, 40 metrics, 14 charts, and ran 30 pages. The owner looked at it and asked the only question that matters: "What do I do about it?" Here are the 3 actions we'd take if we were the CEO — each backed by calculation tables that trace every number to QuickBooks.
 
 > **Key Takeaway:** A CFO report is only as valuable as the actions it produces. We distill every analysis into exactly 3 quantified recommendations — maximum impact, minimum complexity. For this healthcare practice, the 3 actions combined to +$337K/year in retained cash flow, a balance sheet transformation from failing to passing bank metrics, and net margin recovery from 17% back toward 25%.

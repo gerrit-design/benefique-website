@@ -3,6 +3,8 @@ slug: "concierge-physicians-build-wealth-beyond-practice"
 date: "2026-03-11"
 ---
 
+**Quick answer:** A concierge physician contributing $250,000 per year to stacked retirement plans (401(k) + cash balance plan) at 7% average return accumulates over $6.6M in 15 years from retirement accounts alone. Combined with real estate, practice equity, and taxable investments, a disciplined physician earning $700,000+ can reach $10-15M in net worth by age 55-60. The five pillars are retirement plan stacking, real estate, practice valuation, tax-efficient investing, and asset protection.
+
 # How Concierge Physicians Can Build Wealth Beyond Their Practice
 
 A concierge physician earning $700,000 a year is not automatically wealthy.

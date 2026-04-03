@@ -7,6 +7,8 @@ categories: ["Tax Planning", "S-Corp Strategy"]
 slug: "s-corp-reasonable-compensation-healthcare-service-businesses-broward-county"
 ---
 
+**Quick answer:** 73% of S-Corp audits target reasonable compensation. Pay yourself too little and the IRS reclassifies distributions as wages -- retroactively -- with back payroll taxes, 20% accuracy penalties, and interest often exceeding 40% of the reclassified amount. Pay yourself too much and you overpay FICA by up to 15.3% on every excess dollar. For an S-Corp earning $400,000, the right salary saves $20,000-$30,000/year versus sole proprietorship.
+
 # S-Corp Reasonable Compensation: How Much Should You Pay Yourself (And Why Getting It Wrong Costs More Than You Think)
 
 You elected S-Corp status to save on self-employment taxes. Smart move. But now comes the question that determines whether that election actually works: **How much do you pay yourself?**

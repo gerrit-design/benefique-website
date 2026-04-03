@@ -13,6 +13,8 @@ metaDescription: "A firm's bank showed $1.4M. Actual available cash was $493K. H
 keywords: "how much cash does my business actually have, trust account accounting, business cash position, firm cash vs bank balance, available cash calculation, IOTA trust account"
 ---
 
+**Quick answer:** A professional services firm showed $1.4M across its bank accounts, but $903K was client trust funds that cannot legally be spent on operations. Actual available cash: $493K -- a 65% overstatement. If your business holds client trust funds, escrow deposits, retainage, or restricted reserves, your real available cash is almost certainly 40-65% lower than what your bank app shows. The calculation takes 30 seconds: total bank balance minus restricted funds.
+
 Your bank balance is not your available cash — and for millions of business owners, the gap between those two numbers is large enough to cause a serious planning error. AI-assisted financial analysis is now surfacing this gap automatically, but most owners are still making decisions based on a number that overstates their real position by 40 to 65 percent.
 
 > **Key Takeaway: The cash in your bank accounts and the cash your business actually controls are two different figures. If your business holds client trust funds, escrow deposits, retainage, or restricted reserves, your real available cash is almost certainly lower than what your bank app shows — and the calculation to find the true number takes less than 30 seconds.**

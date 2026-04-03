@@ -13,6 +13,8 @@ metaDescription: "Your S-Corp is profitable but you can't pay your tax bill. Her
 keywords: "S-Corp tax trap, S-Corp flow-through taxes, S-Corp owner tax bill, S-Corp tax provision, service business tax planning, quarterly estimated payments"
 ---
 
+**Quick answer:** A $4M service business showed $250K in S-Corp profit, but the owner had only $49K in the bank and a $75K personal tax bill she did not know about. S-Corp profits flow through to your personal return whether you take the cash out or not -- creating "phantom income" taxed at your marginal rate. The fix: set aside 25-30% of net profit every month into a dedicated tax reserve account, and make quarterly estimated payments.
+
 Your S-Corp is profitable on paper, but you can never seem to pay your tax bill on time — and the reason is baked into the structure itself. The S-Corp election that saves you thousands in self-employment taxes creates a silent cash drain when you don't provision for the income taxes it shifts to your personal return.
 
 > **Key Takeaway:** S-Corp profits are taxed on your personal return whether you take them out of the business or not. If you aren't setting aside 25-30% of net profit every month into a tax reserve, you will fall behind — and the IRS will find you.

@@ -4,6 +4,8 @@ date: "2026-03-09"
 dateModified: "2026-04-02"
 ---
 
+**Quick answer:** A solo concierge physician in South Florida nets $550,000-$1.2M per year seeing 6-12 patients daily, compared to $240,000-$400,000 for an insurance-based physician seeing 20-30 patients daily. Overhead drops from 60-70% to 40-55%, revenue predictability improves from +/-20% to +/-5%, and billing infrastructure costs of $180,000-$400,000 annually drop to near zero. The trade-off is a 6-18 month transition period requiring $150,000-$540,000 in reserves.
+
 # Concierge Medicine vs Insurance Practice: The Full Financial Comparison
 
 A solo concierge physician in South Florida nets $550,000–$1.2M per year while seeing 6–12 patients daily. An insurance-based physician with the same training nets $240,000–$400,000 while seeing 20–30. The overhead structure, revenue predictability, and quality of life are different in ways that compound over an entire career.

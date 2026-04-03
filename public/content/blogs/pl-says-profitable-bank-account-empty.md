@@ -9,6 +9,8 @@ readTime: "12 min read"
 featuredImage: "/images/blog/pl-profitable-bank-account-empty.jpg"
 ---
 
+**Quick answer:** A $6.4M service business showed $454K in EBITDA but had a $147K annual cash deficit. The gap: $402K in owner distributions and $199K in debt service -- $601K in obligations against $454K in earnings. The EBITDA-to-cash waterfall revealed a $497K difference between reported profit and actual cash movement. If your P&L says profitable but your bank account is shrinking, trace the waterfall: working capital, debt service, draws, and CapEx are where profit disappears.
+
 # Your P&L Says You're Profitable — So Why Is Your Bank Account Empty?
 
 A multi-entity service and distribution business doing $6.4M in annual revenue sat down with us last quarter. Their P&L showed $454K in EBITDA — a 7.1% margin. By any textbook definition, healthy.

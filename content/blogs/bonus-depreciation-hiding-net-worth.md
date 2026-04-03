@@ -13,6 +13,8 @@ metaDescription: "Section 168(k) bonus depreciation may have zeroed out your equ
 keywords: "bonus depreciation balance sheet, equipment appraisal bank loan, debt to equity ratio fix, business valuation bonus depreciation, Section 168k"
 ---
 
+**Quick answer:** Section 168(k) bonus depreciation writes equipment to zero on the balance sheet even when it still operates and generates revenue. One imaging center showed a 9.80x debt-to-equity ratio with just $150K in book equity — but after a $3K certified equipment appraisal established fair market value, adjusted equity rose to $930K and D/E dropped to 1.58x. If you took bonus depreciation on equipment between 2017 and 2026, your balance sheet is almost certainly understating your net worth.
+
 # How Bonus Depreciation Is Hiding Your Real Net Worth
 
 A healthcare imaging center with $1.46M in equipment loans and $5M in annual revenue showed book equity of just $150K — and a debt-to-equity ratio of 9.8x. That D/E ratio fails every bank credit test in existence. But when our AI cross-referenced the balance sheet against the cash flow statement, the real picture emerged: adjusted equity of $930K and a D/E of 1.58x. The difference? Section 168(k) bonus depreciation had written the equipment to zero.

@@ -13,6 +13,8 @@ metaDescription: "Interactive concierge practice financial model — adjust memb
 keywords: "concierge medicine financial model, concierge practice profitability, concierge medicine P&L, concierge practice cash flow, DPC financial model, concierge break-even, physician practice economics"
 ---
 
+**Quick answer:** At $350/month per member with South Florida costs, a concierge practice breaks even on the P&L at 134 members and on cash flow at 143 members. The 9-member gap exists because estimated taxes and startup loan payments consume profit that never reaches the bank account. A 200-member practice shows $253K net income but only $153K in actual cash retained.
+
 # Concierge Medicine Financial Model: How Profitability and Cash Flow Change as You Grow Your Patient Panel
 
 A concierge practice with 200 members at $350/month generates $840,000 in annual revenue and shows $253,000 in net income. Profitable by any measure. But after estimated taxes and a modest startup loan, only $153,000 stays in the bank. The P&L and the bank account are telling two different stories — and most physicians planning a transition never see the second one.

@@ -13,6 +13,8 @@ metaDescription: "5 metrics, 20 minutes, first Monday of every month. This cash 
 keywords: "monthly financial review template, small business financial dashboard, monthly cash review checklist, financial KPIs small business, cash flow review template"
 ---
 
+**Quick answer:** A 20-minute monthly cash review tracking 5 metrics -- available cash, AR aging, AP aging, cash burn rate, and debt service coverage -- catches $20,000 problems before they become $200,000 crises. One radiology practice's AR grew 32% month-over-month due to a credentialing delay; a monthly review would have flagged it in minute four of month one, instead of discovering $1.77M in uncollected receivables at month three. First Monday of every month, 5 numbers, one decision.
+
 Most business owners skip monthly financial reviews because they take too long, cover too much ground, and somehow never produce a clear action item. This one takes 20 minutes, tracks exactly 5 metrics, and has a single agenda rule: cash only.
 
 > **The businesses that survive cash crunches are not the ones with the most sophisticated accounting. They are the ones that looked at 5 numbers on the first Monday of every month and made one decision. That is the entire system.**

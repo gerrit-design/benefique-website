@@ -8,6 +8,8 @@ featured: true
 featuredImage: "/images/blog/multi-location-hero.svg"
 ---
 
+**Quick answer:** Most multi-location operators are flying blind because combined financials mask location-level problems. In one case, a 3-location dental practice showed $180K total profit, but location-level analysis revealed one site was losing $120K per year. Proper overhead allocation, consistent coding, and location-level P&Ls are the fix.
+
 # Multi-Location Financial Management
 
 ![Multi-location business financial visibility dashboard](/images/blog/multi-location-hero.svg)
@@ -515,3 +517,27 @@ That's what we help businesses do.
 ---
 
 *Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances.*
+
+---
+
+## Frequently Asked Questions
+
+**How do I know if each of my business locations is actually profitable?**
+
+You need location-level P&L statements that separate direct costs (staff wages, rent, supplies) from properly allocated corporate overhead. Without this breakdown, combined financials can mask that one location is losing money. In one case, a 3-location dental practice showed $180K total profit, but location-level analysis revealed one site was losing $120K per year.
+
+**What is the best way to allocate shared overhead costs across multiple locations?**
+
+The most common methods are revenue percentage, headcount percentage, square footage percentage, or a hybrid approach. Revenue-based allocation works well for service businesses, headcount works for labor-intensive operations, and the hybrid method — splitting different overhead categories by different drivers — is the most accurate for larger multi-location businesses.
+
+**Should I use one QuickBooks file or separate files for multiple locations?**
+
+For 2-3 locations under one legal entity, a single QBO file with location or class tags is simpler and provides automatic consolidation. For 3+ locations, separate legal entities, or complex operations, separate QBO files give cleaner separation and make it easier to sell individual locations, though they require manual consolidation.
+
+**When is my business ready to open another location?**
+
+You should have at least 12 months of consistent profitability at your existing locations, documented SOPs for every key process, reliable financial reporting with location-level P&Ls, cash reserves covering 6 months of operating expenses, and the ability to run your first location without daily owner involvement.
+
+**What financial KPIs should I track for each location?**
+
+Track revenue per location, gross profit margin, net profit margin, revenue per employee, revenue per square foot (for retail or restaurants), average transaction size, and customer or patient count. Comparing these metrics across locations helps you identify which sites are underperforming and where to focus improvement efforts.

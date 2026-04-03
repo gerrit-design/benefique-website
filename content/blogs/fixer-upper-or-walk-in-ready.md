@@ -1,3 +1,4 @@
+**Quick answer:** The gap between a "fixer upper" and a "walk-in ready" business can be $2-4M in enterprise value on a $5M company. One healthcare group received a $5.2M LOI that collapsed to $1.8M after due diligence uncovered negative equity, a 0.6x DSCR at one location, and distributions exceeding operating cash flow. Fix these defects -- DSCR above 1.5x, positive equity, 3+ quarters of improving trends -- and give yourself 6-12 months before going to market.
 
 # Fixer Upper or Walk-In Ready? How to Prepare Your Business for Sale
 

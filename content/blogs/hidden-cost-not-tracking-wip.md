@@ -9,6 +9,8 @@ readTime: "10 min read"
 featuredImage: "/images/blog/wip-tracking-service-business.jpg"
 ---
 
+**Quick answer:** A typical $5M service business has $30,000-$50,000 in unbilled work-in-progress at any given time that appears nowhere on the balance sheet or P&L. Without WIP tracking, monthly gross margins swing wildly between 40% and 65%+ -- not because performance changed, but because billing timing distorts the numbers. WIP is invisible inventory: labor and materials spent on jobs not yet billed. Track it weekly or your financials, cash flow forecasts, and loan applications are based on fiction.
+
 # The Hidden Cost of Not Tracking Work-in-Progress: Why Your Monthly Financials Are Lying to You
 
 A service business bills $80K/month. Their P&L shows it. But their team has been working on a $45K project for three weeks that hasn't been invoiced yet.

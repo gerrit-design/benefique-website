@@ -13,6 +13,8 @@ metaDescription: "AI compared 12 months of balance sheet snapshots and found $96
 keywords: "hidden debt balance sheet, accounts payable as debt, vendor credit risk small business, balance sheet distortion, AI balance sheet analysis, stealth leverage"
 ---
 
+**Quick answer:** A $4.7M imaging center showed $399K in formal debt on its balance sheet, but AI comparison of 12 monthly snapshots revealed $961K in additional hidden obligations -- accounts payable that tripled and credit cards that went from $0 to $304K. Total real leverage grew by $410K while the "debt" line decreased by $334K. If you only read the long-term debt line, you are missing the majority of your financial obligations.
+
 # The Debt That Doesn't Look Like Debt: How AI Found $961K Your Balance Sheet Hid
 
 A diagnostic imaging center with $4.7M in annual revenue showed $399K in long-term debt on the balance sheet. That number is declining, the payments are current, and a quick glance says the business is deleveraging nicely. Then our AI compared 12 months of quarterly balance sheet snapshots and found $961K in additional obligations that never appear on the "debt" line — accounts payable that tripled in a year and credit cards that went from zero to $304K. The business was not deleveraging. It was swapping cheap bank debt for expensive, unstable vendor credit.

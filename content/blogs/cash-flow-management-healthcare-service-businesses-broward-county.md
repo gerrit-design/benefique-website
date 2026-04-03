@@ -12,6 +12,8 @@ metaDescription: "Medical practices wait 30-90 days for insurance reimbursement.
 keywords: "cash flow management medical practice Broward County, healthcare cash flow problems South Florida, CPA for medical practice Fort Lauderdale, accounts receivable help healthcare Broward County, small business accountant Davie FL, professional services cash flow, insurance reimbursement delays Florida, fractional CFO healthcare Davie FL, dental practice cash flow, consulting firm accounts receivable"
 ---
 
+**Quick answer:** Healthcare practices in Broward County wait 30-90 days for insurance reimbursement, and claim denial rates are creeping toward 12-15%. A practice doing $1.5M/year with a 55-day DSO has roughly $226,000 trapped in receivables at any given time. Fixing your Cash Conversion Cycle -- the gap between spending a dollar and getting it back -- is the single highest-leverage move for practices in Fort Lauderdale, Davie, Plantation, and across South Florida.
+
 You treated patients all month. Your schedule was packed. Your P&L says the practice made money. So why is your checking account empty? Why are you juggling which vendors to pay this week? Why does making payroll feel like a coin flip every two weeks?
 
 Or maybe you run a consulting firm, a marketing agency, or an IT services company. Your clients love you. Your pipeline is full. But half your revenue is sitting in unpaid invoices and you're floating the business on a credit line that keeps growing.

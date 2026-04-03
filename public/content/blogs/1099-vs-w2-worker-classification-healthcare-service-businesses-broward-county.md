@@ -12,6 +12,8 @@ metaDescription: "The IRS and DOL are cracking down on worker misclassification 
 keywords: "1099 vs W-2 healthcare Broward County, worker misclassification medical practice Florida, independent contractor vs employee dental practice, 1099 therapist group practice risks, CPA for medical practice Fort Lauderdale, worker classification penalties Florida, dental hygienist 1099 or W-2, locum tenens tax planning, independent contractor physician Florida, misclassification penalties healthcare"
 ---
 
+**Quick answer:** Misclassifying a W-2 employee as a 1099 contractor costs $7,000-$15,000 per worker in IRS and DOL penalties on average, and in severe cases exceeds $100,000 per worker. The DOL has specifically increased enforcement in healthcare, and classifying workers as 1099 to save 25-35% on labor costs is the single most common -- and most expensive -- compliance mistake in Broward County medical practices and service firms.
+
 You hired an associate dentist. She works four days a week in your Weston office, uses your equipment, sees your patients, follows your protocols, and you set her schedule. But you pay her on a 1099 because "that's how the last office I worked at did it" and it saves you the hassle of payroll taxes and benefits.
 
 You're sitting on a tax bomb.

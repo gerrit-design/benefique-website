@@ -13,6 +13,8 @@ metaDescription: "A lowball competitor stole your biggest client. Don't panic �
 keywords: "competing on value not price, lowball competitors service industry, how to win back lost clients, service business pricing strategy, fly-by-night contractors, price war service business"
 ---
 
+**Quick answer:** A competitor quoting 30% below market is operating at a negative margin -- with only 5-15% net margins in most service trades, a 30% price cut means they are losing money on every job. A 35-year environmental services company lost a major university contract to a lowball operator and held her pricing. Within 18 months, every contract came back at her original price. Hold your pricing, stay visible, and outlast them -- the math is on your side.
+
 When a competitor undercuts your price by 30-40% and walks away with your biggest client, the right response is to hold your pricing and outlast them — because their math doesn't work and yours does. The client will come back when the low-cost operator can't deliver, and you need to be ready when they do.
 
 > **Key Takeaway:** A competitor quoting 30% below market is operating at a negative margin. They're not beating you — they're burning cash. Your job is to stay visible, stay profitable, and be the phone call when the client needs a real operator again.

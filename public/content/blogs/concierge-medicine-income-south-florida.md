@@ -4,6 +4,8 @@ date: "2026-03-07"
 dateModified: "2026-04-02"
 ---
 
+**Quick answer:** Concierge physicians in South Florida typically net $500,000 to $1,000,000 per year — two to three times insurance-based primary care. A solo physician in Broward County charging $5,000/year to 350 patients generates $1.75M in revenue at roughly 44% overhead, netting about $980,000 before tax. With S-Corp structuring and retirement plan stacking, the effective tax rate drops below 25%.
+
 # How Much Do Concierge Doctors Make in South Florida?
 
 Concierge physicians in South Florida typically net $500,000 to $1,000,000 per year — two to three times what insurance-based primary care pays. The math is straightforward: fewer patients, higher fees per patient, and dramatically lower overhead because you stop paying people to argue with insurance companies.

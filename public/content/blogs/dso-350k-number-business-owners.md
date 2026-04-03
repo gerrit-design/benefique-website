@@ -13,6 +13,8 @@ metaDescription: "DSO measures how fast clients pay you. A 15-day improvement fr
 keywords: "what is DSO small business, days sales outstanding, how to reduce DSO, DSO formula, improve collections small business, accounts receivable days"
 ---
 
+**Quick answer:** DSO (Days Sales Outstanding) measures how many days clients take to pay after invoicing. For an $8.5M firm with a 61-day DSO, each day of DSO represents $23,500 in trapped cash. Reducing DSO by just 15 days freed $353,000 -- without earning a single new dollar. The formula is simple: (Accounts Receivable / Revenue) x Days in Period. Most professional service firms should target 30-45 days.
+
 Days Sales Outstanding — DSO — is a single number buried in your QuickBooks that tells you exactly how long your clients are taking to pay you, and for one professional services firm we work with, that number translated to $353,000 in cash sitting idle in their accounts receivable instead of in their bank account.
 
 > **Key Takeaway:** DSO converts your receivables from an accounting line into a dollar figure. A 15-day improvement in DSO freed $353,000 for a firm generating $8.5M in annual revenue — not by selling more, not by cutting expenses, but by collecting what was already owed faster. That cash was sitting in their QBO the whole time.

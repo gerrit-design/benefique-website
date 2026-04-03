@@ -13,6 +13,8 @@ metaDescription: "We found $370K trapped in five places a $6.4M service business
 keywords: "cash leaks service business, cash flow problems, excess inventory, slow paying customers, intercompany settlements, partner draws, unbilled WIP, service business cash management"
 ---
 
+**Quick answer:** Most service businesses have $200,000-$400,000 in cash trapped in five places that never appear on a standard P&L: excess inventory ($106K), slow-paying customers ($88K), intercompany settlement limbo ($45K), partner over-draws ($97K), and unbilled work-in-progress ($34K). We found $370K trapped in a $6.4M service business that reviewed financials monthly with a bookkeeper and CPA. Each leak can be plugged with specific actions within 90 days.
+
 We recently analyzed a multi-entity service business doing $6.4M/year. Profitable by every traditional measure. But when we traced where cash actually went, we found over $370K trapped in five places the owners never thought to look.
 
 Here are the five cash leaks we find in almost every service business -- and the exact steps to plug each one within 90 days.

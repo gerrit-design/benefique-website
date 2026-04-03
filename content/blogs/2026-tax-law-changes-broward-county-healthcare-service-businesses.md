@@ -12,6 +12,8 @@ metaDescription: "The One Big Beautiful Bill Act changed everything: 100% bonus 
 keywords: "2026 tax law changes Florida, OBBBA tax changes healthcare, bonus depreciation 2026 medical practice, Section 179 dental equipment, QBI deduction healthcare 2026, tax planning medical practice Broward County, CPA for doctors Fort Lauderdale, tax changes service business Florida"
 ---
 
+**Quick answer:** The One Big Beautiful Bill Act (signed July 4, 2025) restored 100% bonus depreciation permanently, raised the Section 179 limit to $2.56M, made the 20% QBI deduction permanent, and doubled the dependent care FSA to $7,500. For a Broward County healthcare practice buying $180,000 in equipment, that is a potential $45,000-$54,000 first-year tax reduction. If you have not updated your tax strategy since mid-2025, you are almost certainly overpaying.
+
 The One Big Beautiful Bill Act (OBBBA) was signed into law on July 4, 2025.
 
 If you run a healthcare practice or service business in Broward County and you haven't adjusted your tax strategy since then, you're probably overpaying. Not by a little. By thousands -- potentially tens of thousands.

@@ -3,6 +3,8 @@ slug: concierge-medical-fees-tax-deductible
 date: 2026-03-17
 ---
 
+**Quick answer:** Concierge medical fees are only partially tax deductible. The portion paying for actual medical services (exams, blood panels, screenings) qualifies under IRC Section 213(d), but the access and convenience component (24/7 availability, same-day scheduling) does not. On a $5,000 annual retainer, typically only $3,000 to $3,500 is deductible — and even that only helps if your total medical expenses exceed 7.5% of AGI and you itemize.
+
 # Are Concierge Medical Fees Tax Deductible? What Patients and Physicians Need to Know
 
 Concierge medicine is booming in South Florida — and for good reason. MDVIP launched right here in Boca Raton back in 2000, and the tri-county area (Broward, Palm Beach, Miami-Dade) remains the national epicenter of the concierge medicine movement. Working from Davie, FL, we sit at the center of this ecosystem, and the tax question we hear most often from both patients and physicians is simple: *Can I deduct my concierge medical fees?*

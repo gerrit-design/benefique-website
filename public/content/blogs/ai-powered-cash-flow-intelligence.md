@@ -12,6 +12,8 @@ metaDescription: "Learn how AI and real-time data synthesis help SMB owners opti
 keywords: "cash flow management small business, AI accounting, real-time financial data, cash conversion cycle optimization, accounts receivable improvement, working capital management, financial intelligence, AI CFO services, SMB accounting"
 ---
 
+**Quick answer:** Over half of U.S. small businesses are owed an average of $17,500 in unpaid invoices, and 47% have invoices overdue by 30+ days. AI-powered cash flow intelligence uses real-time data synthesis to track your Cash Conversion Cycle, flag collection slowdowns before they become crises, and give SMB owners Fortune 500-level visibility into working capital -- without Fortune 500 budgets.
+
 ## Your Biggest Business Problem Isn't Profit. It's Cash Flow.
 
 You treated clients all month. Your schedule was packed. Your P&L says the business made money. So why is your checking account empty? Why are you juggling which vendors to pay this week? Why does making payroll feel like a coin flip?

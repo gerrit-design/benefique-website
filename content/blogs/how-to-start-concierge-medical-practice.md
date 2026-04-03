@@ -3,6 +3,8 @@ slug: "how-to-start-concierge-medical-practice"
 date: "2026-03-17"
 ---
 
+**Quick answer:** Starting a concierge medical practice in 2026 requires choosing between three models (concierge, DPC, or hybrid), setting annual fees of $2,000-$15,000, forming an S-Corp, and building $150,000-$540,000 in transition reserves. A solo concierge physician in South Florida nets $550,000-$1.2M per year seeing 6-12 patients daily -- roughly 2-3x insurance-based income with 20-35% fewer work hours. The structural decisions made in the first 90 days determine whether the practice is profitable and tax-efficient from day one.
+
 # How to Start a Concierge Medical Practice: The Complete 2026 Guide
 
 Most guides on starting a concierge medical practice are written by marketing consultants or practice management companies. They tell you to "find your niche" and "build your brand." That is fine advice, but it skips the decisions that actually determine whether your practice is profitable and tax-efficient from day one.

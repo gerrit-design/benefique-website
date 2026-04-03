@@ -9,6 +9,8 @@ featuredImage: "/images/blog/rd-tax-credits-hero.jpg"
 slug: "rd-tax-credits-healthcare"
 ---
 
+**Quick answer:** Healthcare practices routinely qualify for R&D tax credits worth $40,000-$120,000 per year and don't know it. The credit is dollar-for-dollar against your tax bill -- not a deduction -- and you can amend returns for the past 3 years. One multi-location radiology practice claimed $91,400 in credits on $457,000 in qualified research expenses.
+
 When you hear "R&D tax credits," you probably think of tech startups and pharmaceutical companies.
 
 You don't think of your [radiology practice](/industries/radiology), [dental group](/industries/dental), or [veterinary clinic](/industries/veterinary).
@@ -463,3 +465,27 @@ Don't leave it with the IRS.
 ---
 
 *Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances.*
+
+---
+
+## Frequently Asked Questions
+
+**How much can a healthcare practice recover in R&D tax credits?**
+
+The average healthcare practice Benefique works with recovers $40,000-$80,000 in missed credits. A multi-location radiology practice with $457,000 in qualified research expenses claimed $91,400 in credits over three years after a retroactive study.
+
+**What healthcare activities qualify for the R&D tax credit?**
+
+Qualifying activities include implementing new imaging protocols, developing custom EHR integrations, testing and optimizing medical equipment settings, creating new treatment protocols, building custom software tools, and experimenting with clinical processes. The key is that the activity must involve technical uncertainty, a process of experimentation, and a technological basis.
+
+**Can I claim R&D credits if I already filed my tax returns?**
+
+Yes. You can amend returns for the past three years to claim missed credits using Form 6765. If you qualified in 2023, 2024, and 2025 but never claimed, you can amend all three years and receive refunds.
+
+**What is the difference between an R&D tax credit and a tax deduction?**
+
+A tax credit reduces your tax bill dollar-for-dollar, while a deduction only reduces your taxable income. A $10,000 R&D credit saves you $10,000 in taxes, whereas a $10,000 deduction at a 32% tax rate saves only $3,200. Credits are roughly three times more powerful than deductions.
+
+**Can small healthcare practices apply R&D credits against payroll taxes?**
+
+Yes. If your practice has gross receipts under $5 million and is in its first five years of having qualifying R&D expenses, you can apply up to $500,000 of the R&D credit against payroll taxes (Social Security portion). This is especially valuable for newer practices that may not have enough income tax liability to use the full credit.

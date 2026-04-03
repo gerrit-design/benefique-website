@@ -13,6 +13,8 @@ metaDescription: "A service business spent $122K on truck repairs in 2 months â€
 keywords: "fleet replacement vs repair, service business truck costs, Section 179 work vehicles, fleet management small business, fleet repair budget, bonus depreciation trucks"
 ---
 
+**Quick answer:** A $4M service business spent $122K on truck repairs in just two months on a fully depreciated fleet -- $0 tax benefit, unpredictable costs, and rising downtime. A new heavy-duty service truck at $1,200-$1,800/month with a full Section 179 deduction in Year 1 would cost less annually ($14K-$22K vs $60K-$120K per vehicle) while eliminating revenue-killing downtime worth $30,000-$60,000 per quarter in lost billable work.
+
 When your fleet repair bills exceed what new truck payments would cost, you are burning cash with no return. A fully depreciated fleet gives you zero tax benefit on those repairs while a new vehicle purchase can be written off entirely in Year 1 under Section 179.
 
 > **Key Takeaway:** If your trucks are fully depreciated and repair costs are climbing, every dollar you spend keeping them alive is an after-tax dollar with no deduction attached. Replacing those vehicles creates a massive tax deduction, predictable monthly costs, and eliminates the revenue-killing downtime that comes with aging equipment.

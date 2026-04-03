@@ -10,6 +10,8 @@ keywords: ["fractional cfo case study", "healthcare financial dashboard", "radio
 slug: "radiology-collections-dashboard-case-study"
 ---
 
+**Quick answer:** A six-center radiology group had flat collections despite adding two new centers. Our 4-Panel Diagnostic Framework identified a 30% decline in per-claim reimbursement driven by PIP insurance compression -- not seasonality. Year-over-year tests showed one center down 39% and another down 63%. The A/R Months ratio climbed above 30, meaning over 2.5 years to collect outstanding receivables at current rates.
+
 # Case Study: Real-Time Collections Intelligence System for Multi-Center Radiology Group
 
 **The Bottom Line:** A multi-center diagnostic imaging group saw flat collections despite adding two new centers. Traditional monthly P&L reports couldn't explain why. We built three interactive dashboards with a diagnostic framework that systematically eliminated excuses before delivering the diagnosis: a **30% decline in per-claim reimbursement** driven by PIP (Personal Injury Protection) insurance compression—not seasonality, not patient volume, not service mix.
@@ -255,3 +257,27 @@ If your business is growing but your financial visibility isn't keeping pace, we
 ---
 
 *Benefique Tax & Accounting — Outsourced Accounting, Fractional CFO, and Business Intelligence for growing businesses.*
+
+---
+
+## Frequently Asked Questions
+
+**What is the 4-Panel Diagnostic Framework for healthcare financial analysis?**
+
+The 4-Panel Framework systematically eliminates alternative explanations for financial problems by checking four areas in sequence: Activity (patient volume), Modality (service mix), Payer Mix (insurance composition), and $/Claim (collection per scan). If the first three panels show stability but $/Claim declines, the problem is collection execution — not the market or patients.
+
+**How did the dashboards disprove the "seasonality excuse" for declining collections?**
+
+By comparing the exact same month from the prior year at each center, the year-over-year seasonality test showed radically different results — one center had a 39% decline and another a 63% decline in collections versus the same month the previous year. If the dip were seasonal, both years would look similar.
+
+**What was the A/R Months ratio and why was it alarming?**
+
+A/R Months measures how many months it would take to collect outstanding receivables at the current collection rate (Total A/R divided by that month's collections). The PIP-dependent region's A/R Months climbed to over 30, meaning it would take over two and a half years to collect the outstanding receivables at current rates.
+
+**How long does it take to update the dashboards each month?**
+
+The entire pipeline from data pull to live, deployed dashboards takes under 30 minutes. Data is pulled from Airtable, derived calculations are computed, three React dashboards are generated with hardcoded data, built with Vite in about 3 seconds, and deployed to Vercel in about 10 seconds per dashboard.
+
+**Why use hardcoded data in the dashboards instead of live API connections?**
+
+Hardcoded data provides reliability (no API failures or expired tokens), speed (instant page loads with no loading spinners), offline capability, auditability (the data cannot silently change after analysis), and archival value since each month's source file is saved as a permanent record.

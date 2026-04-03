@@ -1,3 +1,4 @@
+**Quick answer:** The same QuickBooks data produces three different verdicts depending on the reader. A $3.8M healthcare practice was simultaneously "doing okay" (operator view), "lendable with conditions" (banker view: 3.3x DSCR but negative $2.5M equity), and "a distressed asset" (buyer view: Rule of 40 score negative 14, revenue declining 22%). Most business owners only see the operator's view -- which is the least useful when applying for loans, selling, or taking on investors.
 
 # Same Business, Three Verdicts: What Operators, Bankers, and Buyers See in Your Financials
 

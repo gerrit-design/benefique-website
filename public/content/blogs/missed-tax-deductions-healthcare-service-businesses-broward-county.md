@@ -12,6 +12,8 @@ metaDescription: "The average medical practice overpays $15,000-$50,000 annually
 keywords: "tax deductions medical practice Broward County, missed tax deductions dental practice, accountable plan S-corp physician, Augusta Rule healthcare business, retirement plan tax deduction dentist, CPA for medical practice Fort Lauderdale, tax savings healthcare practice Florida, S-corp deductions practice owner, home office deduction S-corp, R&D tax credit medical practice"
 ---
 
+**Quick answer:** The average medical practice overpays $15,000-$50,000 per year in federal taxes from missed deductions. Seven commonly overlooked strategies -- accountable plans, the Augusta Rule, retirement plan stacking, S-Corp health insurance, CE expenses, R&D credits, and charitable/QBI coordination -- can save a Broward County practice owner earning $350K-$450K between $51,000 and $134,000 annually.
+
 Here's a number that should bother you: the average medical practice overpays between **$15,000 and $50,000 per year** in federal taxes because of deductions they don't take.
 
 Not deductions that are aggressive or risky. Deductions that are completely legal, well-established in the tax code, and used every day by practice owners and service business operators who have a tax professional paying attention.
@@ -379,3 +381,27 @@ Davie, FL | Serving Healthcare Practices & Service Businesses Across Broward Cou
 ---
 
 *Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances.*
+
+---
+
+## Frequently Asked Questions
+
+**How much can a healthcare practice owner save by implementing all seven tax deductions?**
+
+A typical medical or dental practice owner in Broward County earning $350,000-$450,000 can save between $51,000 and $134,000 per year by implementing all seven strategies. Even implementing just two or three can save $15,000-$40,000 annually.
+
+**What is an accountable plan and why does my S-Corp need one?**
+
+An accountable plan is a formal, IRS-approved expense reimbursement arrangement that lets your S-Corp pay you back for business expenses like home office, mileage, and cell phone costs completely tax-free. Without one, those reimbursements get taxed as W-2 income, costing you roughly $6,000 per year on $15,000 in expenses at a 40% combined rate.
+
+**Can I really rent my home to my business tax-free under the Augusta Rule?**
+
+Yes. Under IRC Section 280A(g), you can rent your personal residence to your business for up to 14 days per year without reporting the rental income. Your business deducts the rent, and you receive the payment income-tax-free. A physician renting their home for 12 days at $1,200/day receives $14,400 tax-free, saving $5,328 in taxes at the 37% bracket.
+
+**How does retirement plan stacking work to shelter over $200,000 per year?**
+
+By combining a Solo 401(k) with a defined benefit plan, you can contribute far more than either plan allows individually. A 52-year-old dentist earning $400,000 could contribute $202,000 total — $72,000 to the Solo 401(k) and $130,000 to the defined benefit plan — saving $77,312 in taxes including the QBI deduction benefit from dropping below the SSTB threshold.
+
+**Do healthcare practices qualify for the R&D tax credit?**
+
+Many do. The IRS defines qualifying research activities broadly, including custom software development, EHR integration projects, clinical protocol development, and medical device modification. A dental practice with $40,000 in qualifying activities could receive a credit of $2,800-$5,600, and unlike a deduction, a credit reduces your tax bill dollar-for-dollar.

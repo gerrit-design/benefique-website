@@ -13,6 +13,8 @@ metaDescription: "Assembly line thinking for medical practices: grade operations
 keywords: "medical practice profitability framework, healthcare operations scorecard, lean medical practice, practice management accountability, procedure profitability, collections scorecard"
 ---
 
+**Quick answer:** Most medical practices have no idea whether individual procedures make or lose money. By grading operations and collections separately on an A-through-F scale and tracking per-procedure unit economics, one imaging center discovered it had been running money-losing procedures for 31 consecutive days without knowing it. Treat every procedure as a product on an assembly line -- if you cannot calculate its margin, you cannot manage your profitability.
+
 # The Factory That Didn't Know It Was Losing Money
 
 Most medical practices track revenue. Some track profit. Almost none track profitability per procedure — which means they have no idea whether the thing they did forty times last Tuesday made money or lost it. We built a framework that treats every procedure like a product on an assembly line, grades operations and collections separately on an A-through-F scale, and puts a number on the wall that nobody can ignore.
