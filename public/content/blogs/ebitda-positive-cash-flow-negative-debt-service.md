@@ -5,7 +5,7 @@ date: "2026-04-03"
 author: "Gerrit Disbergen, EA"
 excerpt: "Five locations. $16.7M in revenue. $332K in EBITDA. Looks like a functional business — until you subtract the $365K in annual interest. The group literally cannot pay its lenders from operations."
 categories: "Cash Flow"
-readTime: "11 min read"
+readTime: "16 min read"
 featuredImage: "/images/blog/ebitda-positive-cash-flow-negative-debt-service.jpg"
 slug: "ebitda-positive-cash-flow-negative-debt-service"
 metaTitle: "EBITDA Positive, Cash Flow Negative | Benefique"
@@ -17,7 +17,7 @@ keywords: "EBITDA positive cash flow negative, DSCR below 1, debt service covera
 
 A multi-location healthcare business with $16.7 million in annual revenue reported EBITDA of $332,000. The accountant said it was profitable. The banker pulled up the interest schedule and saw $365,000 in annual debt service. EBITDA minus interest: negative $33,000. The business could not pay its lenders from operations.
 
-> **Key Takeaway:** EBITDA adds back interest expense by definition. That means a business can be "EBITDA-positive" while generating less cash than it owes its lenders. If your EBITDA is lower than your annual interest expense, your debt service coverage ratio (DSCR) is below 1.0 — and your business is technically underwater. Most owners never check this because EBITDA makes the number look fine. The 3-minute test in this article shows you how to check yours.
+> **Key Takeaway:** EBITDA adds back interest expense by definition. That means a business can be "EBITDA-positive" while generating less cash than it owes its lenders. But even EBITDA-based DSCR is the *generous* version — it ignores working capital movements (growing receivables, unpaid supplier invoices) that make the real picture worse. And all of it is meaningless if your books are on cash basis, where a $3,000/dose drug invoice does not appear until the check clears. This article shows you the 3-minute DSCR test, the more honest OCF-based version, and why clean accrual-basis accounting is the prerequisite for any of it to matter.
 
 ---
 
@@ -200,6 +200,91 @@ If your [balance sheet is distorted by bonus depreciation](/blog/bonus-depreciat
 
 ---
 
+## The EBITDA Version Is the Generous Version
+
+Everything above uses EBITDA to calculate DSCR. That is the version most commonly cited, and it is the most forgiving. There is a more honest version, and most business owners have never seen it.
+
+**True DSCR uses Operating Cash Flow, not EBITDA.**
+
+Operating Cash Flow comes from the Statement of Cash Flows in QuickBooks. It starts with net income and then adjusts for every working capital movement — changes in accounts receivable, accounts payable, inventory, prepaid expenses, and accrued liabilities. These are real cash movements that EBITDA ignores completely.
+
+Here is why the difference matters:
+
+| Scenario | EBITDA Says | OCF Says |
+|----------|-------------|----------|
+| You billed $200K this quarter but only collected $150K (AR grew $50K) | Revenue earned, counted in EBITDA | $50K never arrived. Not in OCF. |
+| You paid down a large supplier invoice (AP shrank $80K) | Invisible — not in EBITDA | $80K left the bank. OCF reflects it. |
+| You prepaid insurance for the year ($36K) | Not an expense yet — spread over 12 months | $36K gone from the bank in one month. OCF shows the hit. |
+
+**EBITDA assumes you collect everything you bill, pay everything on schedule, and have no working capital swings.** For a business with $6M in receivables aging over 26 months — which is common in healthcare — that assumption is dangerous.
+
+In the $16.7M case study, the EBITDA-based DSCR was 0.91. If accounts receivable grew during the period (more billed than collected), the OCF-based DSCR is worse. If the group paid down supplier balances (AP shrank), worse again. The true number could be 0.7 or 0.6 — meaning the business covers only 60-70 cents of every dollar it owes its lenders.
+
+**How to calculate True DSCR:**
+
+```
+True DSCR = Operating Cash Flow ÷ Total Debt Service
+```
+
+In QuickBooks, run the Statement of Cash Flows for the trailing twelve months. The "Net cash provided by operating activities" line is your OCF. Divide that by your annual debt service (interest + principal). That is the number your banker should be looking at — and the number you should be looking at before you take a distribution.
+
+---
+
+## The Cash Basis Trap — When Your P&L Lies
+
+All of this — EBITDA, OCF, DSCR — assumes one thing: that your books are on accrual basis with a proper accounts payable system in place. If they are not, none of these calculations mean anything.
+
+Here is a real example of what happens when they are not.
+
+A multi-location healthcare practice added a high-cost specialty procedure to its service line. Each procedure required a drug costing roughly $3,000 per dose. The practice was on **cash basis accounting** — meaning revenue is recorded when cash arrives and expenses are recorded when cash goes out.
+
+For the first 60 days, the P&L looked spectacular:
+
+- Insurance reimbursements arrived at $4,000–$8,000 per procedure. Revenue recognized immediately.
+- Drug supplier invoices, totaling tens of thousands per month, had not been paid yet. On cash basis, unpaid invoices do not appear as expenses.
+- The P&L showed fat margins on the new service line.
+- The owner, seeing strong profitability, took a distribution.
+
+Then the supplier invoices came due.
+
+The cash was not there. It had gone out the door as a distribution based on profit that had already been committed to the drug supplier. The owner just could not see the commitment because cash basis accounting does not show you what you owe — only what you have paid.
+
+What followed was months of "robbing Peter to pay Paul" — using the next month's reimbursement collections to cover the previous month's drug invoices, while the current month's invoices piled up behind them. The business was never actually as profitable as the P&L showed. It was just on a 60-day delay, and the delay hid the true cost structure long enough for the owner to make a distribution decision that could not be reversed.
+
+**On accrual basis with a proper AP system**, those drug invoices would have appeared as Cost of Goods Sold the moment the drug was administered — regardless of when the supplier was paid. The P&L would have shown the real margin per procedure: some profitable, some breakeven, some underwater. The distribution decision would have been made on actual economics, not timing artifacts.
+
+This is not an edge case. Any business that:
+
+- Has significant supplier invoices with 30–60 day payment terms
+- Uses cash basis accounting
+- Makes distribution decisions based on the P&L
+- Operates in a field with high input costs (drugs, materials, inventory)
+
+...is at risk of the same trap. The P&L tells you what happened with cash. It does not tell you what is about to happen. Only accrual basis with proper AP does that.
+
+---
+
+## None of This Works Without Clean Books
+
+Every calculation in this article — EBITDA, OCF, DSCR, per-location decomposition — is only as reliable as the accounting system producing the inputs. This is the part nobody wants to hear, but it is the foundation:
+
+- **Cash basis P&L** can show profit that does not exist (unpaid obligations hidden from view)
+- **Accrual basis without AP discipline** can mistime expenses, distorting cost of goods and margin
+- **Stale books** (closed 45 days after month-end instead of 7) mean your DSCR is calculated on data that is already two months old
+- **Unreconciled accounts** mean the numbers you are dividing are themselves wrong
+
+The DSCR framework in this article is powerful. It answers the most important question a leveraged business can ask: can I pay my debt? But if the inputs are wrong, the answer is wrong too. A 1.3x DSCR calculated on cash basis books with $200K in unrecognized supplier invoices is not a 1.3x DSCR. It is a number that makes you feel safe while the invoices pile up.
+
+Before you calculate your DSCR, ask your accountant three questions:
+
+1. **Are we on accrual basis?** If not, your P&L does not reflect what you owe — only what you have paid. Every ratio derived from it is unreliable.
+2. **Is AP current?** Meaning: are all known obligations entered into the system as of month-end, even if not yet paid? If supplier invoices sit in a drawer until payment, your liabilities are understated.
+3. **When were the books last closed?** If you are looking at March data in June, you are making decisions on a business that no longer exists. Books need to be closed within 7 days of month-end for the numbers to mean anything.
+
+If the answer to any of these is "no" or "I don't know," fix the accounting before you calculate the ratios. The ratios cannot save you if the books are not telling the truth.
+
+---
+
 ## The Number Your Monthly Financial Statement Never Shows
 
 Most accounting firms deliver a P&L and a balance sheet. Some include a cash flow statement. Almost none calculate DSCR by location and present it to the owner with the question: "Can your business pay its debt?"
@@ -239,6 +324,14 @@ The lender can declare a [technical default](https://www.bankrate.com/loans/smal
 **Is EBITDA a reliable measure of business health?**
 
 For comparing operating performance across companies with different capital structures, EBITDA has a role. For determining whether your specific business can pay its bills, EBITDA is unreliable because it excludes the single largest cash obligation most businesses have — debt service. Warren Buffett and Charlie Munger have both publicly criticized EBITDA as misleading. For an owner-operator, [cash flow after debt service](/blog/cash-flow-waterfall-why-profit-doesnt-equal-cash) is a more honest measure.
+
+**Can I calculate DSCR on cash basis books?**
+
+You can run the formula, but the result may be dangerously misleading. Cash basis accounting does not show unpaid obligations — supplier invoices, accrued expenses, deferred revenue. A business can look profitable on cash basis while sitting on tens of thousands in unpaid invoices that have not hit the P&L yet. Accrual basis with a current AP system is the minimum requirement for any DSCR calculation to reflect economic reality.
+
+**What is the difference between EBITDA-based DSCR and OCF-based DSCR?**
+
+EBITDA-based DSCR ignores working capital changes — it assumes you collect everything you bill and pay everything on schedule. OCF-based DSCR (using Operating Cash Flow from the Statement of Cash Flows) adjusts for real movements in receivables, payables, and other working capital. OCF-based DSCR is always more conservative and usually lower. It is the version sophisticated lenders use.
 
 ---
 

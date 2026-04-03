@@ -172,14 +172,16 @@ const blogPosts = {
     author: 'Gerrit Disbergen, EA',
     excerpt: 'Five locations. $16.7M in revenue. $332K in EBITDA. Looks like a functional business \u2014 until you subtract the $365K in annual interest. The group literally cannot pay its lenders from operations.',
     categories: ['Cash Flow', 'Financial Intelligence'],
-    readTime: '11 min read',
+    readTime: '16 min read',
     featuredImage: '/images/blog/ebitda-positive-cash-flow-negative-debt-service.jpg',
     faqs: [
       { q: 'Can a business be EBITDA-positive and still not be able to pay its debt?', a: 'Yes. EBITDA adds back interest expense, so by definition it will always be higher than net income for any business with debt. If your EBITDA is lower than your annual interest expense, your debt service coverage ratio is below 1.0 \u2014 meaning operations do not generate enough to cover the cost of your debt.' },
       { q: 'What is a good debt service coverage ratio for a small business?', a: 'The SBA requires a minimum of 1.15x for 7(a) loan approval. Most commercial banks want 1.25x or higher. A DSCR of 2.0x or above is considered strong and gives the business room for unexpected expenses, revenue dips, or growth investment.' },
       { q: 'Where do I find my interest expense in QuickBooks?', a: 'Run a Profit & Loss report for the trailing twelve months. Interest expense typically appears under Other Expenses at the bottom of the P&L, below operating income. If you have multiple loans, QBO may break them into separate interest accounts. Add them all together.' },
       { q: 'What happens if my DSCR falls below a loan covenant?', a: 'The lender can declare a technical default. This does not always mean the loan is called immediately, but it gives the lender the right to restrict additional borrowing, require accelerated payments, demand additional collateral, or renegotiate terms.' },
-      { q: 'Is EBITDA a reliable measure of business health?', a: 'For comparing operating performance across companies with different capital structures, EBITDA has a role. For determining whether your specific business can pay its bills, EBITDA is unreliable because it excludes the single largest cash obligation most businesses have \u2014 debt service.' }
+      { q: 'Is EBITDA a reliable measure of business health?', a: 'For comparing operating performance across companies with different capital structures, EBITDA has a role. For determining whether your specific business can pay its bills, EBITDA is unreliable because it excludes the single largest cash obligation most businesses have \u2014 debt service.' },
+      { q: 'Can I calculate DSCR on cash basis books?', a: 'You can run the formula, but the result may be dangerously misleading. Cash basis accounting does not show unpaid obligations \u2014 supplier invoices, accrued expenses, deferred revenue. Accrual basis with a current AP system is the minimum requirement for any DSCR calculation to reflect economic reality.' },
+      { q: 'What is the difference between EBITDA-based DSCR and OCF-based DSCR?', a: 'EBITDA-based DSCR ignores working capital changes \u2014 it assumes you collect everything you bill and pay everything on schedule. OCF-based DSCR adjusts for real movements in receivables, payables, and other working capital. OCF-based DSCR is always more conservative and usually lower.' }
     ]
   },
   'concierge-medical-fees-tax-deductible': {
