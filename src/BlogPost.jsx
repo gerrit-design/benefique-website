@@ -165,6 +165,23 @@ const blogPosts = {
       { q: 'Should I hire a fractional CFO to prepare for exit?', a: 'If your current accountant can show you operator, banker, and buyer views with prescriptive action plans, you may not need one. If they can\'t answer what a banker would see in your balance sheet or name three changes worth specific dollars, the valuation gap is likely costing more than a CFO engagement.' }
     ]
   },
+  'referring-doctor-relationship-myth-medical-imaging': {
+    file: '/content/blogs/referring-doctor-relationship-myth-medical-imaging.md',
+    title: 'The Relationship Myth: When Taking One For The Team Costs $142,000',
+    date: '2026-04-05',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Every multi-location imaging center has a sacred cow: the high-volume referring doctor whose toxic-payer patients you absorb because you can\'t afford to lose the relationship. We tested that assumption with 433 encounters and $142,000 in data. Zero out of 21 doctors justified the losses.',
+    categories: ['Healthcare Finance', 'Cash Flow Advisory', 'Financial Intelligence'],
+    readTime: '12 min read',
+    featuredImage: '/images/blog/referring-doctor-relationship-myth-medical-imaging.jpg',
+    faqs: [
+      { q: 'How do I calculate referring doctor profitability?', a: 'For each referring doctor, sum the profit from their non-toxic-payer encounters and subtract the drug cost burned on their toxic-payer encounters. The result is the Net Relationship Value. If negative, the doctor\'s referral volume doesn\'t justify absorbing the toxic losses. The calculation requires three data points per encounter: the referring doctor\'s name, the payer, and the margin (reimbursement minus cost including consumables).' },
+      { q: 'Will blocking a toxic payer cause us to lose referring doctors?', a: 'No. Blocking a payer is an insurance policy decision, not a relationship decision. The referring doctor can still send patients with any other insurance. The doctor doesn\'t choose the patient\'s insurance plan. In our analysis of 433 encounters, no referring doctor exclusively sent toxic-payer patients \u2014 the toxic patients were scattered across the referring base.' },
+      { q: 'What is a toxic payer in medical imaging?', a: 'A toxic payer is any insurance company that reimburses below the cost of the procedure\'s primary consumable \u2014 in PET imaging, that\'s the radiotracer drug ($2,800-$6,500 per dose). When a toxic payer\'s reimbursement doesn\'t cover the drug cost alone, the practice loses money on every scan regardless of efficiency or volume.' },
+      { q: 'How often should we run a referral profitability analysis?', a: 'Monthly, after encounter data is complete for the prior month. The analysis takes minutes once data collection is clean. The critical prerequisite is capturing the referring doctor\'s name at scheduling for every encounter \u2014 without this, the analysis has gaps.' },
+      { q: 'Does this framework apply outside of radiology?', a: 'Yes. Any practice where a single procedure requires an expensive consumable \u2014 specialty drugs, implants, surgical supplies \u2014 faces the same economics. Surgery centers, oncology infusion centers, specialty pharmacies, and wound care centers all have toxic payer risk. The per-referrer P&L framework works identically.' }
+    ]
+  },
   'ebitda-positive-cash-flow-negative-debt-service': {
     file: '/content/blogs/ebitda-positive-cash-flow-negative-debt-service.md',
     title: 'EBITDA Positive, Cash Flow Negative \u2014 A $16M Case Study',
