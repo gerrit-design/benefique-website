@@ -50,6 +50,13 @@ Blog post entry format:
 }
 ```
 
+## Redirect Safety (CRITICAL — Read This)
+- **NEVER add a 301 redirect where the source matches a live blog slug in BlogPost.jsx** — this silently kills the post. The build validator (`validate-blog-posts.cjs`) will catch this and fail the build, but check manually too.
+- **After ANY git rebase or merge**, verify `vercel.json` redirects survived intact. A rebase in April 2026 silently dropped all 301 redirects.
+- **When replacing a post**, add a 301 from the OLD slug to the NEW slug — never the reverse.
+- **`/go/` redirects** (302s for LinkedIn UTM tracking) are safe — they use 302 not 301 and point to `/blog/[slug]?utm_...` params.
+- The build validator checks: (1) every BlogPost.jsx slug has a markdown file, (2) no 301 redirect shadows a live slug.
+
 ## What NOT to Change
 - **Never modify:** `vite.config.js` without explicit approval
 - **Never modify:** Package versions without testing
@@ -74,6 +81,9 @@ Before ANY deploy:
 - Testing only on desktop (mobile catches 80% of issues)
 - Deploying without running build locally first
 - Creating duplicate Vercel projects (consolidated to ONE on March 6, 2026)
+- **Adding a 301 redirect that shadows a live blog post** (build validator catches this — see Redirect Safety above)
+- **Not verifying vercel.json after git rebase/merge** (redirects can silently disappear)
+- **Using `question`/`answer` keys in FAQ arrays** — must use `q`/`a` for prerender.js FAQ schema generation to work
 
 ## Token Usage Guidelines
 - Use Haiku 4.5 for: Small text edits, simple component updates
