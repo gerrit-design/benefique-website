@@ -44,6 +44,7 @@ const staticRoutes = [
   { path: '/davie-accounting', priority: 0.9, changefreq: 'monthly', lastmod: new Date() },
   { path: '/plantation-accounting', priority: 0.8, changefreq: 'monthly', lastmod: new Date() },
   { path: '/weston-accounting', priority: 0.8, changefreq: 'monthly', lastmod: new Date() },
+  { path: '/weston-bookkeeping', priority: 0.8, changefreq: 'monthly', lastmod: new Date() },
   { path: '/miramar-accounting', priority: 0.8, changefreq: 'monthly', lastmod: new Date() },
   { path: '/fort-lauderdale-accounting', priority: 0.8, changefreq: 'monthly', lastmod: new Date() },
   { path: '/aventura-accounting', priority: 0.8, changefreq: 'monthly', lastmod: new Date() },

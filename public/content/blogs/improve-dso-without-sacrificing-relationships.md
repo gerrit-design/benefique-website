@@ -58,6 +58,8 @@ For healthcare practices, the stakes are even higher. **Healthcare DSO typically
 
 Now, here are the 5 strategies that actually move this number -- without making you the bad guy.
 
+> **Want to know your exact DSO and how much cash it's trapping?** We calculate it automatically from your QuickBooks data. [Book a free 15-minute review](/contact) and we'll show you the number — plus what freeing it would mean for your cash position.
+
 ## Strategy 1: Set Terms Before the Work Starts, Not After
 
 ### The Problem

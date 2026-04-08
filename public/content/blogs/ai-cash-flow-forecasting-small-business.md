@@ -30,6 +30,8 @@ The technology exists today. **7 in 10 firms are already using AI for cash flow 
 
 ![Business professional reviewing financial data and cash flow projections on a laptop](/images/blog/business-owner-financial-data-analysis.jpg)
 
+> **See it in action:** We ran this exact analysis on a real client's QuickBooks and found [$353K in trapped cash](/blog/ai-found-353k-trapped-cash) nobody knew about. Want to see what's hiding in yours? [Book a free 15-minute review](/contact).
+
 ## What AI Cash Flow Forecasting Actually Is
 
 Let's strip away the buzzwords.
