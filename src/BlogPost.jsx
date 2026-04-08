@@ -469,10 +469,10 @@ const blogPosts = {
   },
   'hidden-cost-not-tracking-wip': {
     file: '/content/blogs/hidden-cost-not-tracking-wip.md',
-    title: 'The Hidden Cost of Not Tracking Work-in-Progress',
+    title: 'Not Tracking WIP? Your P&L Is Lying to You',
     date: '2026-03-08',
     author: 'Gerrit Disbergen, EA',
-    excerpt: 'A service business bills $80K/month. But $45K in labor and materials sits unbilled and invisible \u2014 not on the P&L, not on the balance sheet. Without WIP tracking, your financials are fiction.',
+    excerpt: '$45K in labor sitting unbilled and invisible \u2014 not on the P&L, not on the balance sheet. Here\'s why service businesses that skip WIP tracking make decisions on fictional numbers.',
     categories: ['Accounting'],
     readTime: '10 min read',
     featuredImage: '/images/blog/wip-tracking-service-business.jpg',
@@ -657,10 +657,10 @@ const blogPosts = {
   },
   'concierge-medicine-income-south-florida': {
     file: '/content/blogs/concierge-medicine-income-south-florida.md',
-    title: 'How Much Do Concierge Doctors Make in South Florida?',
+    title: 'How Much Do Concierge Doctors Make in South Florida? (2026 Data)',
     date: '2026-03-07',
     author: 'Gerrit Disbergen, EA',
-    excerpt: 'Concierge physicians in South Florida net $500K\u2013$1M+ with 200\u2013500 patients instead of 2,500. Revenue models, overhead breakdown, S-Corp savings of $17K\u2013$35K/year, and Cash Balance Plans sheltering $200K\u2013$400K annually \u2014 all with verified 2026 numbers.',
+    excerpt: 'Concierge physicians in South Florida net $500K\u2013$1M+ with 200\u2013500 patients instead of 2,500. We break down revenue models, overhead, S-Corp tax savings of $17K\u2013$35K/year, and retirement strategies sheltering $200K\u2013$400K annually.',
     categories: ['Concierge Medicine', 'Physician Finance', 'Tax Strategy'],
     readTime: '16 min read',
     featuredImage: '/images/blog/concierge-medicine-income-south-florida.svg',
@@ -674,10 +674,10 @@ const blogPosts = {
   },
   'cost-starting-concierge-medical-practice': {
     file: '/content/blogs/cost-starting-concierge-medical-practice.md',
-    title: 'How Much Does It Cost to Start a Concierge Practice? (2026)',
+    title: 'Cost to Start a Concierge Medical Practice: $75K\u2013$200K Breakdown (2026)',
     date: '2026-03-08',
     author: 'Gerrit Disbergen, EA',
-    excerpt: 'We break down every dollar from $75K to $200K: entity setup, office buildout, EHR, staffing, marketing, and the $19,750/mo in fixed costs that hit before your first patient walks in. Includes the S-Corp election timing most consultants forget to mention.',
+    excerpt: 'Every dollar from $75K to $200K: entity setup, office buildout, EHR, staffing, marketing, and the $19,750/mo in fixed costs before your first patient walks in. Plus the S-Corp election timing most consultants forget.',
     categories: ['Concierge Medicine', 'Practice Startup', 'Tax Planning'],
     readTime: '22 min read',
     featuredImage: '/images/blog/cost-starting-concierge-practice.svg',
@@ -846,12 +846,12 @@ const blogPosts = {
     readTime: '12 min read',
     featuredImage: '/images/blog/ai-cash-flow-waterfall-explained.jpg',
     faqs: [
-      { question: 'Why am I profitable but have no cash?', answer: 'Because profit is an accounting measure on the P&L. Cash flow includes debt payments, owner distributions, and working capital changes that don\'t appear on the income statement. A business can show $1M in profit while its bank account declines.' },
-      { question: 'What is a cash flow waterfall?', answer: 'A visual chart that starts with operating earnings (EBITDA) and steps down through each category of cash outflow — distributions, debt service, intercompany financing, working capital — until reaching the actual net cash change.' },
-      { question: 'What percentage of EBITDA should owner distributions be?', answer: 'For pass-through entities (S-Corps, partnerships), 50-60% of EBITDA is generally sustainable. The owner needs enough for personal tax liability plus reasonable income. Above 60%, the business retains too little cash.' },
-      { question: 'What is the difference between P&L break-even and cash flow break-even?', answer: 'P&L break-even covers operating expenses on the income statement. Cash flow break-even adds debt payments, owner distributions, and tax obligations. The gap is the invisible cost the P&L never shows.' },
-      { question: 'Can AI really analyze my QuickBooks data this way?', answer: 'Yes. AI connects to QuickBooks Online via API, pulls 8 reports simultaneously, decomposes the Statement of Cash Flows line by line, and builds the waterfall automatically in about 30 seconds.' },
-      { question: 'How often should I review my cash flow waterfall?', answer: 'Monthly for businesses with tight cash positions (less than 30 days cash on hand). Quarterly for businesses with comfortable reserves. Always before major decisions like taking on debt or changing distribution levels.' }
+      { q: 'Why am I profitable but have no cash?', a: 'Because profit is an accounting measure on the P&L. Cash flow includes debt payments, owner distributions, and working capital changes that don\'t appear on the income statement. A business can show $1M in profit while its bank account declines.' },
+      { q: 'What is a cash flow waterfall?', a: 'A visual chart that starts with operating earnings (EBITDA) and steps down through each category of cash outflow — distributions, debt service, intercompany financing, working capital — until reaching the actual net cash change.' },
+      { q: 'What percentage of EBITDA should owner distributions be?', a: 'For pass-through entities (S-Corps, partnerships), 50-60% of EBITDA is generally sustainable. The owner needs enough for personal tax liability plus reasonable income. Above 60%, the business retains too little cash.' },
+      { q: 'What is the difference between P&L break-even and cash flow break-even?', a: 'P&L break-even covers operating expenses on the income statement. Cash flow break-even adds debt payments, owner distributions, and tax obligations. The gap is the invisible cost the P&L never shows.' },
+      { q: 'Can AI really analyze my QuickBooks data this way?', a: 'Yes. AI connects to QuickBooks Online via API, pulls 8 reports simultaneously, decomposes the Statement of Cash Flows line by line, and builds the waterfall automatically in about 30 seconds.' },
+      { q: 'How often should I review my cash flow waterfall?', a: 'Monthly for businesses with tight cash positions (less than 30 days cash on hand). Quarterly for businesses with comfortable reserves. Always before major decisions like taking on debt or changing distribution levels.' }
     ]
   },
   'bonus-depreciation-hiding-net-worth': {

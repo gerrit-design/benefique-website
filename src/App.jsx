@@ -250,6 +250,26 @@ function Home() {
             <p className="text-sm text-gray-500">
               No obligation. We&apos;ll tell you honestly if we can help &mdash; and how.
             </p>
+
+            {/* Trust Bar */}
+            <div className="flex flex-wrap items-center gap-6 mt-8 pt-6 border-t border-gray-100">
+              <div className="flex items-center gap-2">
+                <span className="text-2xl font-bold text-benefique-navy">33</span>
+                <span className="text-sm text-gray-500 leading-tight">active client<br/>groups</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-2xl font-bold text-benefique-navy">73</span>
+                <span className="text-sm text-gray-500 leading-tight">QBO entities<br/>managed</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-2xl font-bold text-benefique-navy">~0%</span>
+                <span className="text-sm text-gray-500 leading-tight">client<br/>churn</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-2xl font-bold text-benefique-navy">7th</span>
+                <span className="text-sm text-gray-500 leading-tight">books closed<br/>each month</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -295,6 +315,27 @@ function Home() {
                 <span className="text-gray-700">{item.text}</span>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Not Just a Regular CPA? */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-benefique-navy text-center mb-6">Why Not Just a Regular CPA?</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-xl p-5 border border-gray-100">
+              <h3 className="font-bold text-benefique-navy mb-2">A CPA files your taxes.</h3>
+              <p className="text-gray-600 text-sm">We do that too &mdash; but we also find $20K-$350K in trapped cash, hidden debt, and missed savings before they become problems.</p>
+            </div>
+            <div className="bg-white rounded-xl p-5 border border-gray-100">
+              <h3 className="font-bold text-benefique-navy mb-2">A bookkeeper records history.</h3>
+              <p className="text-gray-600 text-sm">We close books by the 7th, then run AI analysis on your QuickBooks data to show what to do next &mdash; not just what happened.</p>
+            </div>
+            <div className="bg-white rounded-xl p-5 border border-gray-100">
+              <h3 className="font-bold text-benefique-navy mb-2">A fractional CFO costs $5K-$15K/mo.</h3>
+              <p className="text-gray-600 text-sm">You get the same caliber of cash flow analysis, prescriptive actions, and banker-ready reporting &mdash; bundled into your accounting fee.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -427,6 +468,31 @@ function Home() {
                 <p className="text-blue-100 text-sm">{step.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ — AI-Citation Ready */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-benefique-navy text-center mb-10">Frequently Asked Questions</h2>
+          <div className="space-y-6">
+            <div className="bg-white rounded-xl p-6 border border-gray-100">
+              <h3 className="font-bold text-benefique-navy mb-2">What does Benefique do?</h3>
+              <p className="text-gray-600 text-sm">Benefique is a full-service accounting firm that uses AI to turn QuickBooks data into financial intelligence. We handle bookkeeping, tax planning, payroll, and fractional CFO reporting for established South Florida businesses doing $500K&ndash;$10M+ in annual revenue. Every client gets clean books, proactive tax strategy, and prescriptive cash flow analysis &mdash; not just backward-looking reports.</p>
+            </div>
+            <div className="bg-white rounded-xl p-6 border border-gray-100">
+              <h3 className="font-bold text-benefique-navy mb-2">How does AI improve accounting?</h3>
+              <p className="text-gray-600 text-sm">Most small businesses have enough data in QuickBooks to make Fortune 500-level decisions &mdash; nobody is mining it. Our AI reads 12&ndash;36 months of transactions to build cash flow waterfalls, detect hidden debt, calculate per-unit economics, and generate the three highest-ROI actions for your business each quarter. The data was always there. We just extract it.</p>
+            </div>
+            <div className="bg-white rounded-xl p-6 border border-gray-100">
+              <h3 className="font-bold text-benefique-navy mb-2">What industries do you specialize in?</h3>
+              <p className="text-gray-600 text-sm">We serve healthcare practices (radiology, concierge medicine, medical groups), marine and construction services, legal firms, and service-based businesses across South Florida. Our AI models include industry-specific benchmarks so your metrics are compared to peers, not generic averages.</p>
+            </div>
+            <div className="bg-white rounded-xl p-6 border border-gray-100">
+              <h3 className="font-bold text-benefique-navy mb-2">How much does it cost?</h3>
+              <p className="text-gray-600 text-sm">Pricing depends on entity count and complexity, but most clients pay a flat monthly fee that covers bookkeeping, tax planning, payroll, and CFO-grade reporting. There are no hourly surprises. Clients typically discover $20K&ndash;$350K in trapped cash, tax savings, or operational improvements in the first 90 days &mdash; the service pays for itself.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -567,10 +633,10 @@ function Services() {
           <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
             <span>📋</span> Our Services
           </div>
-          <h1 className="text-4xl font-bold text-benefique-navy mb-4">From Cost Center to ROI Center</h1>
+          <h1 className="text-4xl font-bold text-benefique-navy mb-4">Fractional CFO, Tax Planning &amp; Accounting for South Florida Businesses</h1>
           <p className="text-xl text-gray-600 max-w-2xl">
-            Comprehensive financial solutions for healthcare and service-based businesses — designed to work together
-            as a single data intelligence system.
+            AI-powered financial intelligence for healthcare practices and service businesses ($500K&ndash;$10M+ revenue).
+            Real-time books, proactive tax strategy, and CFO-grade analysis &mdash; designed to work together as a single data intelligence system.
           </p>
         </div>
       </section>
@@ -697,6 +763,10 @@ function Services() {
                 <Link to="/blog/stop-doing-your-own-books" className="text-gray-500 text-sm hover:text-benefique-orange hover:underline mt-2 inline-block">
                   Read: The Real Cost of DIY Bookkeeping →
                 </Link>
+                <br />
+                <Link to="/testimonials" className="text-gray-500 text-sm hover:text-benefique-orange hover:underline mt-1 inline-block">
+                  Hear from our clients →
+                </Link>
               </div>
             </div>
           </div>
@@ -740,6 +810,10 @@ function Services() {
                 <Link to="/blog/s-corp-election-guide" className="text-gray-500 text-sm hover:text-benefique-orange hover:underline mt-2 inline-block">
                   Read: Is S-Corp Election Right for Your Business? →
                 </Link>
+                <br />
+                <Link to="/tools/concierge-simulator" className="text-gray-500 text-sm hover:text-benefique-orange hover:underline mt-1 inline-block">
+                  Try: Concierge Medicine Tax Simulator →
+                </Link>
               </div>
             </div>
           </div>
@@ -772,19 +846,107 @@ function Services() {
         </div>
       </section>
 
+      {/* Trust Bar */}
+      <section className="py-10 bg-white border-b border-gray-100">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+              <div className="text-3xl font-bold text-benefique-navy">33+</div>
+              <div className="text-sm text-gray-500">Businesses Served</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-benefique-navy">73</div>
+              <div className="text-sm text-gray-500">QBO Entities Managed</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-benefique-navy">7th</div>
+              <div className="text-sm text-gray-500">Books Closed by Day 7</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-benefique-navy">$350K</div>
+              <div className="text-sm text-gray-500">Largest Cash Finding (90 Days)</div>
+            </div>
+          </div>
+          <p className="text-center text-xs text-gray-400 mt-4">
+            Based in Davie, FL &middot; Serving healthcare practices and service businesses across South Florida &middot; QuickBooks Online ProAdvisor
+          </p>
+        </div>
+      </section>
+
+      {/* Pricing Signals */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-benefique-navy mb-2 text-center">Investment Guide</h2>
+          <p className="text-gray-500 text-sm text-center mb-8 max-w-xl mx-auto">
+            Every engagement is scoped to your entity count, transaction volume, and complexity. Here&apos;s what most clients invest:
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-xl p-6 border border-gray-100 text-center">
+              <div className="text-sm text-benefique-orange font-semibold uppercase tracking-wide mb-1">Full-Service Accounting</div>
+              <div className="text-2xl font-bold text-benefique-navy mb-1">$500&ndash;$2,500<span className="text-base font-normal text-gray-400">/mo</span></div>
+              <p className="text-xs text-gray-500">Per entity. Bookkeeping, payroll, reconciliations, month-end close, tax-ready books.</p>
+            </div>
+            <div className="bg-white rounded-xl p-6 border-2 border-benefique-orange text-center relative">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-benefique-orange text-white text-xs px-3 py-0.5 rounded-full font-semibold">Most Popular</div>
+              <div className="text-sm text-benefique-orange font-semibold uppercase tracking-wide mb-1">Accounting + CFO</div>
+              <div className="text-2xl font-bold text-benefique-navy mb-1">$2,000&ndash;$5,000<span className="text-base font-normal text-gray-400">/mo</span></div>
+              <p className="text-xs text-gray-500">Everything above plus monthly CFO reports, cash flow forecasting, tax planning, and advisory meetings.</p>
+            </div>
+            <div className="bg-white rounded-xl p-6 border border-gray-100 text-center">
+              <div className="text-sm text-benefique-orange font-semibold uppercase tracking-wide mb-1">Fractional CFO Only</div>
+              <div className="text-2xl font-bold text-benefique-navy mb-1">$1,500&ndash;$4,000<span className="text-base font-normal text-gray-400">/mo</span></div>
+              <p className="text-xs text-gray-500">For businesses with clean books. AI-driven analysis, cash waterfall, strategic advisory, bank/investor support.</p>
+            </div>
+          </div>
+          <p className="text-center text-xs text-gray-400 mt-4">
+            Compare: a full-time CFO costs $150K&ndash;$250K/year. A full-time controller costs $80K&ndash;$120K/year.
+          </p>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-12 bg-white">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-benefique-navy mb-8 text-center">Frequently Asked Questions</h2>
+          <div className="space-y-6">
+            {[
+              { q: 'How quickly can I get started?', a: 'Most onboardings take 5\u201310 business days. We connect to your QuickBooks Online, review your chart of accounts, and deliver your first clean monthly close within 30 days.' },
+              { q: 'What if I already have a bookkeeper?', a: 'Many CFO-only clients keep their existing bookkeeper. We layer analysis, tax strategy, and advisory on top of their work. If the books need cleanup first, we handle that during onboarding.' },
+              { q: 'Do you work with businesses outside of healthcare?', a: 'Yes. About half our clients are service-based businesses \u2014 marine services, IT, restaurants, law firms, and construction. Healthcare is our largest vertical, but the CFO methodology works across industries.' },
+              { q: 'What does "AI-assisted" actually mean?', a: 'We connect directly to your QuickBooks via API and run automated financial diagnostics \u2014 cash flow waterfalls, working capital analysis, DSO tracking, break-even modeling. It means you get Fortune 500-level analysis at a fraction of the cost, delivered in plain English.' },
+              { q: 'Is there a minimum contract term?', a: 'Month-to-month. We earn your business every month. Most clients stay 3+ years because the value compounds \u2014 the longer we have your data, the better the insights.' },
+              { q: 'How is Benefique different from my current CPA?', a: 'Most CPAs are reactive \u2014 they file your taxes after the year ends. We build tax strategy into your monthly rhythm and use AI to mine your operational data for cash flow improvements, tax savings, and growth insights in real time.' },
+            ].map((faq, i) => (
+              <div key={i} className="border-b border-gray-100 pb-4">
+                <h3 className="font-semibold text-benefique-navy mb-1">{faq.q}</h3>
+                <p className="text-gray-600 text-sm">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16 bg-benefique-navy text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to get started?</h2>
-          <p className="text-blue-100 mb-8">
-            Let&apos;s talk about your business and see if we&apos;re the right fit.
+          <h2 className="text-3xl font-bold mb-4">Find Out What Your QuickBooks Data Is Hiding</h2>
+          <p className="text-blue-100 mb-8 max-w-xl mx-auto">
+            Most businesses have $20K&ndash;$350K in trapped cash, missed tax savings, or operational improvements sitting in their existing data. A 15-minute call tells us if we can find yours.
           </p>
-          <Link
-            to="/contact"
-            className="inline-block bg-benefique-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
-          >
-            Apply to Work With Us
-          </Link>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              to="/contact"
+              className="inline-block bg-benefique-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
+            >
+              Book a Free 15-Minute Call
+            </Link>
+            <Link
+              to="/demo"
+              className="inline-block bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-lg font-semibold transition"
+            >
+              See Sample Reports First
+            </Link>
+          </div>
         </div>
       </section>
     </div>
@@ -1308,10 +1470,10 @@ function Blog() {
     { title: 'How Concierge Physicians Can Build Wealth Beyond Their Practice', excerpt: 'A concierge physician earning $600K/year can accumulate $15-25M over 20 years with disciplined deployment across retirement plans, real estate, practice equity, and tax-efficient investments. Here\'s the complete wealth-building framework.', date: '2026-03-11', slug: 'concierge-physicians-build-wealth-beyond-practice', published: true, category: 'Concierge Medicine', readTime: '16 min' },
     { title: 'Tax Strategies for Concierge Physicians', excerpt: 'Eight tax strategies that save concierge physicians $50K-$150K per year: S-Corp optimization, retirement plan stacking, accountable plans, Augusta Rule, Section 179, family employment, entity structuring, and QBI planning.', date: '2026-03-10', slug: 'tax-strategies-concierge-physicians', published: true, category: 'Tax Strategy', readTime: '20 min' },
     { title: 'Concierge Medicine vs Insurance Practice: The Full Financial Comparison', excerpt: 'A solo concierge physician nets $550K\u2013$1.2M while seeing 6\u201312 patients daily. Insurance-based: $240K\u2013$400K while seeing 20\u201330. Side-by-side comparison of revenue, overhead, quality of life, transition costs, and tax implications.', date: '2026-03-09', slug: 'concierge-medicine-vs-insurance-practice-financial-comparison', published: true, category: 'Concierge Medicine', readTime: '18 min' },
-    { title: 'How Much Does It Cost to Start a Concierge Practice? (2026)', excerpt: 'We break down every dollar from $75K to $200K: entity setup, office buildout, EHR, staffing, marketing, and the $19,750/mo in fixed costs that hit before your first patient walks in. Includes the S-Corp election timing most consultants forget to mention.', date: '2026-03-08', slug: 'cost-starting-concierge-medical-practice', published: true, category: 'Concierge Medicine', readTime: '22 min' },
-    { title: 'How Much Do Concierge Doctors Make in South Florida?', excerpt: 'Concierge physicians in South Florida net $500K\u2013$1M+ with 200\u2013500 patients instead of 2,500. Revenue models, overhead breakdown, S-Corp savings of $17K\u2013$35K/year, and Cash Balance Plans sheltering $200K\u2013$400K annually.', date: '2026-03-07', slug: 'concierge-medicine-income-south-florida', published: true, category: 'Concierge Medicine', readTime: '16 min' },
+    { title: 'Cost to Start a Concierge Medical Practice: $75K\u2013$200K Breakdown (2026)', excerpt: 'Every dollar from $75K to $200K: entity setup, office buildout, EHR, staffing, marketing, and the $19,750/mo in fixed costs before your first patient walks in. Plus the S-Corp election timing most consultants forget.', date: '2026-03-08', slug: 'cost-starting-concierge-medical-practice', published: true, category: 'Concierge Medicine', readTime: '22 min' },
+    { title: 'How Much Do Concierge Doctors Make in South Florida? (2026 Data)', excerpt: 'Concierge physicians in South Florida net $500K\u2013$1M+ with 200\u2013500 patients instead of 2,500. We break down revenue models, overhead, S-Corp tax savings of $17K\u2013$35K/year, and retirement strategies sheltering $200K\u2013$400K annually.', date: '2026-03-07', slug: 'concierge-medicine-income-south-florida', published: true, category: 'Concierge Medicine', readTime: '16 min' },
     { title: '1099 vs. W-2 in Your Healthcare or Service Practice: The Classification Mistake That Could Cost You $50,000+', excerpt: 'The IRS and DOL are cracking down on worker misclassification in healthcare and professional services. Dental hygienists, associate physicians, therapists, IT contractors\u2014if you\'re paying them on a 1099, you might owe back taxes, penalties, and benefits.', date: '2026-03-06', slug: '1099-vs-w2-worker-classification-healthcare-service-businesses-broward-county', published: true, category: 'Tax Strategy', readTime: '24 min' },
-    { title: 'The Hidden Cost of Not Tracking Work-in-Progress', excerpt: 'A service business bills $80K/month. But $45K in labor and materials sits unbilled and invisible \u2014 not on the P&L, not on the balance sheet. Without WIP tracking, your financials are fiction.', date: '2026-03-08', slug: 'hidden-cost-not-tracking-wip', published: true, category: 'Accounting', readTime: '10 min' },
+    { title: 'Not Tracking WIP? Your P&L Is Lying to You', excerpt: '$45K in labor sitting unbilled and invisible \u2014 not on the P&L, not on the balance sheet. Here\'s why service businesses that skip WIP tracking make decisions on fictional numbers.', date: '2026-03-08', slug: 'hidden-cost-not-tracking-wip', published: true, category: 'Accounting', readTime: '10 min' },
     { title: 'Stop Doing Your Own Books: The Real Cost of DIY Bookkeeping', excerpt: 'DIY bookkeeping looks free until you count your time, missed deductions, and IRS penalties. Here\'s the real math for SE Florida business owners \u2014 and when it makes sense to hand it off.', date: '2026-03-04', slug: 'stop-doing-your-own-books', published: true, category: 'Accounting', readTime: '10 min' },
     { title: 'Real-Time Financial Dashboards for Healthcare Practices: 10 KPIs', excerpt: 'Collection rate, AR aging, overhead ratio, DSO, cash runway \u2014 these 10 KPIs should update daily, not monthly. Includes specific benchmarks for dental, radiology, and physician practices so you know exactly where your numbers should be.', date: '2026-03-05', slug: 'real-time-financial-dashboards-healthcare-practices', published: true, category: 'Healthcare Finance', readTime: '11 min' },
     { title: 'Cash Conversion Cycle: How to Calculate CCC for Service Businesses', excerpt: 'The Cash Conversion Cycle tells you how many days cash is trapped between paying expenses and collecting revenue. For service businesses: CCC = DSO - DPO. Calculate yours in 5 minutes from QuickBooks.', date: '2026-03-04', slug: 'how-to-calculate-cash-conversion-cycle', published: true, category: 'Cash Flow', readTime: '9 min' },

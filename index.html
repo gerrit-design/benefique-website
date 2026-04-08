@@ -9,7 +9,12 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-9LNR3JCNWS');
+      gtag('config', 'G-9LNR3JCNWS', {
+        page_location: window.location.href,
+        campaign_source: new URLSearchParams(window.location.search).get('utm_source') || undefined,
+        campaign_medium: new URLSearchParams(window.location.search).get('utm_medium') || undefined,
+        campaign_name: new URLSearchParams(window.location.search).get('utm_campaign') || undefined
+      });
     </script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

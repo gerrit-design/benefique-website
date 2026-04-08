@@ -64,7 +64,7 @@ Here is the waterfall we built for the imaging center, with every dollar account
 | Intercompany Financing | -$32K | -3.0% | Net loans to related entities |
 | **Net Cash Change** | **-$41K** | **-3.8%** | What actually happened to the bank account |
 
-Let us walk through each one.
+Let us walk through each one — and if this looks familiar, you are not alone. We see this pattern in [service businesses](/blog/5-cash-leaks-service-business), [healthcare practices](/blog/6-financial-blockers-killing-healthcare-practices), and [multi-location operations](/blog/per-unit-pnl-multi-location-cost-analysis).
 
 ### Working Capital Changes: -$3K (-0.3% of EBITDA)
 
@@ -99,6 +99,8 @@ Here is the number the owner needed to see:
 The combined outflows for distributions and debt service exceed 100% of what the business earned. There is nothing left. Every dollar of operating profit — and then some — is spoken for before the business can retain a single cent.
 
 This is why the bank account shrank. Not because the business was unprofitable. Not because of bad operations. Because the combination of owner draws and lender payments consumed everything the business produced.
+
+> **Does this sound like your business?** If your P&L shows profit but your bank account disagrees, [book a 15-minute cash flow review](/contact) — we will pull your QuickBooks data and show you exactly where the disconnect is. Or explore the numbers yourself with our [interactive financial simulator](/tools/concierge-simulator).
 
 > **See it for yourself:** We built an [interactive financial simulator](/tools/concierge-simulator) that shows how P&L profitability and cash flow diverge as a practice grows — with real-time waterfalls for both. Slide a bar from 0 to 600 patients and watch the gap appear.
 
@@ -142,7 +144,7 @@ The P&L says "healthy." The bank account says "one bad quarter away from trouble
 
 If revenue dipped just 2.7% — a single slow month, one insurance company delaying payments, one piece of equipment down for repairs — the business would not generate enough cash to cover its distributions and debt payments. The owner would need to either cut draws, defer a loan payment, or inject personal capital.
 
-This is the break-even nobody talks about, and it is the one that actually matters.
+This is the break-even nobody talks about, and it is the one that actually matters. We wrote a deeper analysis of how to calculate both break-evens in activity units (patients, claims, jobs) in [Cash Flow Break-Even Per Activity Unit](/blog/cash-flow-breakeven-per-patient-activity-units).
 
 ---
 
@@ -214,7 +216,7 @@ The reason most firms do not build waterfalls is not that they lack the knowledg
 
 AI changes the economics. When the analysis takes 30 seconds instead of 6 hours, it becomes part of every monthly review — not a special project reserved for year-end or a crisis.
 
-The cash flow waterfall is also the foundation for other analyses that matter. [Your cash conversion cycle](/blog/how-to-calculate-cash-conversion-cycle) tells you how quickly revenue turns into collected cash. [DSO analysis](/blog/dso-the-350k-number) quantifies the dollar impact of slow-paying customers. [A monthly cash review](/blog/the-20-minute-monthly-cash-review) keeps you ahead of problems before they become emergencies. The waterfall ties them all together.
+The cash flow waterfall is also the foundation for other analyses that matter. [Your cash conversion cycle](/blog/how-to-calculate-cash-conversion-cycle) tells you how quickly revenue turns into collected cash. [DSO analysis](/blog/dso-350k-number-business-owners) quantifies the dollar impact of slow-paying customers. [A monthly cash review](/blog/monthly-cash-review-20-minutes) keeps you ahead of problems before they become emergencies. The waterfall ties them all together.
 
 ---
 
