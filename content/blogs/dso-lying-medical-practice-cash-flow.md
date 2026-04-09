@@ -109,15 +109,15 @@ We did not stop at one center. We analyzed all five centers in the network — s
 
 | Center | Encounters | DSO | Missing Referring Doctor | Collection Profile |
 |--------|-----------|-----|-------------------------|-------------------|
-| **Pines** | 27 | 21 days | 96% | Unreliable — 74 rows missing encounter IDs |
-| **South Miami** | 80 | 25 days | 0% | Gold standard data quality |
-| **Miami Beach** | 54 | 32 days | 0% | Healthy profile |
-| **Aventura** | 102 | 38 days | 93% | United/UHC 80% unpaid |
-| **Coconut Creek** | 182 | 49 days | 50% | Bimodal Medicare distribution |
+| **Center A** | 27 | 21 days | 96% | Unreliable — 74 rows missing encounter IDs |
+| **Center B** | 80 | 25 days | 0% | Gold standard data quality |
+| **Center C** | 54 | 32 days | 0% | Healthy profile |
+| **Center D** | 102 | 38 days | 93% | One commercial payer 80% unpaid |
+| **Center E** | 182 | 49 days | 50% | Bimodal Medicare distribution |
 
-The two centers with **100% data completeness** — South Miami and Miami Beach — had the fastest clean DSOs: **25 and 32 days**. Both within MGMA best-practice range.
+The two centers with **100% data completeness** — Centers B and C — had the fastest clean DSOs: **25 and 32 days**. Both within MGMA best-practice range.
 
-The centers with the worst data gaps — **93% and 96% missing referring doctor data** — had the worst collection profiles. Pines looked fast at 21 days, but 96% of its records were missing basic fields and 74 rows had no encounter IDs. That number is not trustworthy. Aventura had 93% of referring doctor fields empty and 80% of its United/UHC claims unpaid.
+The centers with the worst data gaps — **93% and 96% missing referring doctor data** — had the worst collection profiles. Center A looked fast at 21 days, but 96% of its records were missing basic fields and 74 rows had no encounter IDs. That number is not trustworthy. Center D had 93% of referring doctor fields empty and 80% of its largest commercial payer's claims unpaid.
 
 This is not coincidence. Operational discipline at the front desk — accurately capturing referring physician, authorization numbers, demographic fields — is the same discipline that produces clean claims. When intake is sloppy, the data gaps cascade downstream. A missing referring doctor field means you cannot do accountability analysis or identify which physicians bring profitable versus unprofitable volume.
 
@@ -131,7 +131,7 @@ According to [MGMA research](https://www.mgma.com/), the average cost to rework 
 
 One more data trap we see routinely, and it almost caused the wrong reaction at this network.
 
-March 2026 data for the Coconut Creek center: **77 encounters, 2 paid, 75 unpaid. That is 97% unpaid.** On a dashboard, that looks catastrophic. It looks like collections fell off a cliff.
+March 2026 data for Center E: **77 encounters, 2 paid, 75 unpaid. That is 97% unpaid.** On a dashboard, that looks catastrophic. It looks like collections fell off a cliff.
 
 It was nothing of the sort.
 
