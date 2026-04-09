@@ -61,6 +61,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.benefique.com/weston-bookkeeping</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.benefique.com/miramar-accounting</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -152,7 +158,7 @@
   </url>
   <url>
     <loc>https://www.benefique.com/blog/accountant-cost-center-roi-center</loc>
-    <lastmod>2026-04-03</lastmod>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -237,6 +243,12 @@
   <url>
     <loc>https://www.benefique.com/blog/competing-on-value-not-price-service-business</loc>
     <lastmod>2026-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.benefique.com/blog/concierge-doctor-300-patient-panel-income</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -338,7 +350,7 @@
   </url>
   <url>
     <loc>https://www.benefique.com/blog/fixer-upper-or-walk-in-ready</loc>
-    <lastmod>2026-04-03</lastmod>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -488,7 +500,7 @@
   </url>
   <url>
     <loc>https://www.benefique.com/blog/three-views-one-business</loc>
-    <lastmod>2026-04-03</lastmod>
+    <lastmod>2026-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
