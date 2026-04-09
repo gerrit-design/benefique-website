@@ -873,37 +873,6 @@ function Services() {
         </div>
       </section>
 
-      {/* Pricing Signals */}
-      <section className="py-12 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-benefique-navy mb-2 text-center">Investment Guide</h2>
-          <p className="text-gray-500 text-sm text-center mb-8 max-w-xl mx-auto">
-            Every engagement is scoped to your entity count, transaction volume, and complexity. Here&apos;s what most clients invest:
-          </p>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-xl p-6 border border-gray-100 text-center">
-              <div className="text-sm text-benefique-orange font-semibold uppercase tracking-wide mb-1">Full-Service Accounting</div>
-              <div className="text-2xl font-bold text-benefique-navy mb-1">$500&ndash;$2,500<span className="text-base font-normal text-gray-400">/mo</span></div>
-              <p className="text-xs text-gray-500">Per entity. Bookkeeping, payroll, reconciliations, month-end close, tax-ready books.</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border-2 border-benefique-orange text-center relative">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-benefique-orange text-white text-xs px-3 py-0.5 rounded-full font-semibold">Most Popular</div>
-              <div className="text-sm text-benefique-orange font-semibold uppercase tracking-wide mb-1">Accounting + CFO</div>
-              <div className="text-2xl font-bold text-benefique-navy mb-1">$2,000&ndash;$5,000<span className="text-base font-normal text-gray-400">/mo</span></div>
-              <p className="text-xs text-gray-500">Everything above plus monthly CFO reports, cash flow forecasting, tax planning, and advisory meetings.</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border border-gray-100 text-center">
-              <div className="text-sm text-benefique-orange font-semibold uppercase tracking-wide mb-1">Fractional CFO Only</div>
-              <div className="text-2xl font-bold text-benefique-navy mb-1">$1,500&ndash;$4,000<span className="text-base font-normal text-gray-400">/mo</span></div>
-              <p className="text-xs text-gray-500">For businesses with clean books. AI-driven analysis, cash waterfall, strategic advisory, bank/investor support.</p>
-            </div>
-          </div>
-          <p className="text-center text-xs text-gray-400 mt-4">
-            Compare: a full-time CFO costs $150K&ndash;$250K/year. A full-time controller costs $80K&ndash;$120K/year.
-          </p>
-        </div>
-      </section>
-
       {/* FAQ */}
       <section className="py-12 bg-white">
         <div className="max-w-3xl mx-auto px-4">
