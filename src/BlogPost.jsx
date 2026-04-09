@@ -927,6 +927,40 @@ const blogPosts = {
       { question: 'Can stretching AP actually hurt my business?', answer: 'Yes. Vendor credit tightening can cascade: supply holds stop revenue, COD demands drain cash reserves, and negative payment data shared through credit bureaus causes other vendors to tighten simultaneously.' },
       { question: 'How is this different from cash flow waterfall analysis?', answer: 'The cash flow waterfall shows where your EBITDA went. This hidden debt analysis shows how the resulting cash gap is being filled. The waterfall says you consumed more cash than you generated. The liability analysis says here is where you quietly borrowed to cover the difference.' }
     ]
+  },
+  'expensive-2-minute-decision-medical-practice': {
+    file: '/content/blogs/expensive-2-minute-decision-medical-practice.md',
+    title: 'The Most Expensive 2-Minute Decision in Your Medical Practice',
+    date: '2026-04-08',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A radiology network identified its toxic payers. Warned the team. Then watched 24 more scans go through anyway \u2014 $55,832 in drug costs, $3,773 collected. The fix takes 10 minutes a day and costs nothing to implement.',
+    categories: ['Healthcare Finance', 'Cash Flow Advisory', 'Financial Intelligence'],
+    readTime: '8 min read',
+    featuredImage: '/images/blog/expensive-2-minute-decision-medical-practice.jpg',
+    faqs: [
+      { question: 'What is a pre-authorization gate for high-cost procedures?', answer: 'It is an internal checkpoint between scheduling a procedure and ordering the high-cost input (drug, implant, device). It is not insurance prior authorization \u2014 that is the payer\'s process. This is the practice\'s own financial gate that asks: based on this payer\'s history, will we get paid enough to cover the input cost?' },
+      { question: 'How much does a toxic payer scan actually cost a practice?', answer: 'Drug acquisition alone ranges from $2,800 (VIZAMYL) to $6,500 (POSLUMA) per dose. Add staff time, equipment, and facility overhead and the total is higher. But the drug is the irreversible component \u2014 once injected, it cannot be recovered. In the network we analyzed, one managed-care payer generated 20 scans at $49,756 in drug costs and $0 collected.' },
+      { question: 'What payers should trigger a Tier 2 review?', answer: 'Any payer with a documented history of underpaying or non-paying on high-cost procedures. Any payer not yet seen for a specific drug-procedure combination. Any combination where loss probability exceeds 50%. And any encounter where the drug cost exceeds $5,000.' },
+      { question: 'How long does it take to implement a pre-authorization workflow?', answer: 'One to two weeks. You need payer-drug combinations graded by historical margin, a flag system at scheduling, and an operations reviewer empowered to approve or deny. No software to purchase. Ongoing cost: 10 minutes per day.' },
+      { question: 'Does this replace insurance prior authorization?', answer: 'No. Insurance prior authorization is the payer\'s requirement. The internal authorization gate is in addition to the payer\'s process. The payer asks: is this procedure medically necessary? Your gate asks: if we perform this procedure for this payer, will we get paid enough to cover the drug cost?' }
+    ]
+  },
+  'dso-lying-medical-practice-cash-flow': {
+    file: '/content/blogs/dso-lying-medical-practice-cash-flow.md',
+    title: 'Your DSO Is Lying to You \u2014 Why Averages Hide Your Real Cash Flow Problem',
+    date: '2026-04-08',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'One radiology center reported a 49-day DSO. Looked like a slow-payment problem. It wasn\'t. The median was 35 days. Two distinct payment populations were hiding inside one average \u2014 and the centers with the worst DSO had the worst data entry.',
+    categories: ['Healthcare Finance', 'Cash Flow Advisory', 'Financial Intelligence'],
+    readTime: '9 min read',
+    featuredImage: '/images/blog/dso-lying-medical-practice-cash-flow.jpg',
+    faqs: [
+      { question: 'What is a good DSO for a medical practice?', answer: 'MGMA benchmarks place best-practice DSO at 30-40 days, with anything under 45 days considered acceptable. But the single number matters less than the distribution. A 38-day DSO with a tight distribution is healthier than a 32-day DSO with a bimodal split and a tail of 90+ day claims.' },
+      { question: 'Why is my practice\'s DSO higher than the benchmark?', answer: 'Common causes: bimodal payer distributions, data quality issues at intake producing rejections or delays, denial rates above the 12% industry average, and a mix of payers with structurally different payment timelines. Decomposing by payer tells you which cause is driving your number.' },
+      { question: 'How does data completeness affect collections?', answer: 'Missing fields produce claims that are rejected, held for review, or denied on first pass. MGMA estimates the average cost to rework a claim at $25.20. But the bigger cost is the delay: every rework cycle adds 15-30 days to your payment timeline.' },
+      { question: 'Should I track DSO by payer or as a single number?', answer: 'By payer \u2014 always. A blended DSO across all payers tells you almost nothing actionable. Medicare, commercial payers, Medicaid, and workers\' comp have fundamentally different payment timelines and denial rates.' },
+      { question: 'How often should I review AR aging?', answer: 'Weekly for the dashboard view (age-adjusted). Monthly for the full decomposition (payer-level, distribution analysis). Quarterly for the strategic review (trend comparison, data completeness correlation, payer mix shifts).' }
+    ]
   }
 };
 
