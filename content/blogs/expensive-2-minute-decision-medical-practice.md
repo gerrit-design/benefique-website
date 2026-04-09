@@ -42,12 +42,12 @@ Diagnostic radiopharmaceuticals are not cheap supplies you can absorb when a pay
 
 | Drug | Acquisition Cost per Dose |
 |------|--------------------------|
-| VIZAMYL | $2,800 |
-| NEURACEQ | $2,940 |
-| AMYVID | $3,038 |
-| ILLUCCIX | $5,166 |
-| PYLARIFY | $5,702 |
-| POSLUMA | $6,500 |
+| Amyloid Tracer A | $2,800 |
+| Amyloid Tracer B | $2,940 |
+| Amyloid Tracer C | $3,038 |
+| PSMA Tracer A | $5,166 |
+| PSMA Tracer B | $5,702 |
+| PSMA Tracer C | $6,500 |
 
 CMS unbundled high-cost diagnostic radiopharmaceuticals from imaging exam payment starting in 2025, per ACR guidance. The drug cost is now a separate line item — visible, trackable, and entirely on the practice if the payer does not cover it.
 
@@ -166,7 +166,7 @@ There are firms that read the P&L. And there are firms that read the decision ch
 It is an internal checkpoint between scheduling a procedure and ordering the high-cost input (drug, implant, device). It is not insurance prior authorization — that is the payer's process. This is the practice's own financial gate that asks: based on this payer's history, will we get paid enough to cover the input cost? If yes, proceed. If uncertain, an operations reviewer makes a two-minute decision before the cost is committed.
 
 **How much does a toxic payer scan actually cost a practice?**
-Drug acquisition alone ranges from $2,800 (VIZAMYL) to $6,500 (POSLUMA) per dose. Add staff time, equipment, and facility overhead and the total is higher. But the drug is the irreversible component — once injected, it cannot be recovered. In the network we analyzed, one managed-care payer generated **20 scans at $49,756 in drug costs and $0 collected.**
+Drug acquisition alone ranges from $2,800 to $6,500 per dose depending on the tracer. Add staff time, equipment, and facility overhead and the total is higher. But the drug is the irreversible component — once injected, it cannot be recovered. In the network we analyzed, one managed-care payer generated **20 scans at $49,756 in drug costs and $0 collected.**
 
 **What payers should trigger a Tier 2 review?**
 Any payer with a documented history of underpaying or non-paying on high-cost procedures. Any payer not yet seen for a specific drug-procedure combination. Any combination where loss probability exceeds 50%. And any encounter where the drug cost exceeds $5,000 — the stakes warrant a two-minute check regardless of history.
