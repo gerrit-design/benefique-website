@@ -487,7 +487,7 @@ function Home() {
             </div>
             <div className="bg-white rounded-xl p-6 border border-gray-100">
               <h3 className="font-bold text-benefique-navy mb-2">What industries do you specialize in?</h3>
-              <p className="text-gray-600 text-sm">We serve healthcare practices (radiology, concierge medicine, medical groups), marine and construction services, legal firms, and service-based businesses across South Florida. Our AI models include industry-specific benchmarks so your metrics are compared to peers, not generic averages.</p>
+              <p className="text-gray-600 text-sm">We serve healthcare practices (radiology, concierge medicine, medical groups), marine services, legal firms, and service-based businesses across South Florida. Our AI models include industry-specific benchmarks so your metrics are compared to peers, not generic averages.</p>
             </div>
             <div className="bg-white rounded-xl p-6 border border-gray-100">
               <h3 className="font-bold text-benefique-navy mb-2">How much does it cost?</h3>
@@ -912,7 +912,7 @@ function Services() {
             {[
               { q: 'How quickly can I get started?', a: 'Most onboardings take 5\u201310 business days. We connect to your QuickBooks Online, review your chart of accounts, and deliver your first clean monthly close within 30 days.' },
               { q: 'What if I already have a bookkeeper?', a: 'Many CFO-only clients keep their existing bookkeeper. We layer analysis, tax strategy, and advisory on top of their work. If the books need cleanup first, we handle that during onboarding.' },
-              { q: 'Do you work with businesses outside of healthcare?', a: 'Yes. About half our clients are service-based businesses \u2014 marine services, IT, restaurants, law firms, and construction. Healthcare is our largest vertical, but the CFO methodology works across industries.' },
+              { q: 'Do you work with businesses outside of healthcare?', a: 'Yes. About half our clients are service-based businesses \u2014 marine services, IT, law firms, and professional services. Healthcare is our largest vertical, but the CFO methodology works across industries.' },
               { q: 'What does "AI-assisted" actually mean?', a: 'We connect directly to your QuickBooks via API and run automated financial diagnostics \u2014 cash flow waterfalls, working capital analysis, DSO tracking, break-even modeling. It means you get Fortune 500-level analysis at a fraction of the cost, delivered in plain English.' },
               { q: 'Is there a minimum contract term?', a: 'Month-to-month. We earn your business every month. Most clients stay 3+ years because the value compounds \u2014 the longer we have your data, the better the insights.' },
               { q: 'How is Benefique different from my current CPA?', a: 'Most CPAs are reactive \u2014 they file your taxes after the year ends. We build tax strategy into your monthly rhythm and use AI to mine your operational data for cash flow improvements, tax savings, and growth insights in real time.' },
@@ -976,7 +976,7 @@ function Testimonials() {
   const servicesTestimonials = [
     { name: 'Jamel', industry: 'IT Services', quote: 'Fast, responsive, and actually understands tech businesses. The monthly close is always on time.' },
     { name: 'Kobus', industry: 'Marine Services', quote: 'We went from chaos to clarity. Now I know exactly where we stand financially at any moment.' },
-    { name: 'Natasha', industry: 'Restaurant Group', quote: "Multiple locations, different concepts, one clear financial picture. That's what Benefique built for us." },
+    { name: 'Natasha', industry: 'Healthcare Group', quote: "Multiple locations, different specialties, one clear financial picture. That's what Benefique built for us." },
   ];
 
   const TestimonialCard = ({ t }) => (
@@ -1030,7 +1030,7 @@ function Testimonials() {
             <span className="text-3xl">🏢</span>
             <div>
               <h2 className="text-2xl font-bold text-benefique-navy">Service-Based Businesses</h2>
-              <p className="text-gray-600">IT, marine, hospitality, and professional services</p>
+              <p className="text-gray-600">IT, marine, legal, and professional services</p>
             </div>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -1370,7 +1370,6 @@ function About() {
                 <ul className="text-gray-600 text-sm space-y-1 ml-4">
                   <li>- Professional services & law firms</li>
                   <li>- Marine & industrial services</li>
-                  <li>- Construction & contractors</li>
                   <li>- IT & technology services</li>
                 </ul>
               </div>
@@ -2410,7 +2409,7 @@ function WestonBookkeeping() {
               },
               {
                 q: 'Do you only work with healthcare practices?',
-                a: 'Healthcare is our specialty, but we serve any established service business in Weston doing $500K+ in revenue — law firms, IT companies, marine services, construction, and professional services.'
+                a: 'Healthcare is our specialty, but we serve any established service business in Weston doing $500K+ in revenue — law firms, IT companies, marine services, and professional services.'
               },
               {
                 q: 'Can you take over my existing QuickBooks file?',
@@ -2497,7 +2496,7 @@ function LocationPage({ city, nearby, zipCodes, description }) {
     },
     {
       q: `What industries does Benefique serve in ${city}?`,
-      a: `We focus on healthcare practices (radiology, dental, veterinary) and service-based businesses including marine services, IT companies, restaurants, and professional services firms in ${city}.`
+      a: `We focus on healthcare practices (radiology, dental, veterinary) and service-based businesses including marine services, IT companies, law firms, and professional services firms in ${city}.`
     },
     {
       q: `How is Benefique different from other accountants in ${city}?`,
@@ -3123,8 +3122,8 @@ const locations = {
   weston: { city: 'Weston', nearby: ['Davie', 'Plantation', 'Miramar', 'Southwest Ranches', 'Pembroke Pines'], zipCodes: ['33326', '33327', '33331', '33332'], description: 'Weston is home to a concentration of healthcare practices, professional services firms, and high-growth service businesses. We serve Weston business owners who have outgrown their bookkeeper but aren\'t ready for a full-time CFO — providing real-time books, proactive tax planning, and AI-powered cash flow intelligence from our office 15 minutes away in Davie.' },
   miramar: { city: 'Miramar', nearby: ['Hollywood', 'Pembroke Pines', 'Weston', 'Miami Gardens'], description: 'Real-time accounting and tax planning for Miramar businesses — healthcare, marine services, and more.' },
   'fort-lauderdale': { city: 'Fort Lauderdale', nearby: ['Davie', 'Plantation', 'Hollywood', 'Oakland Park'], description: 'Fort Lauderdale\'s trusted accounting firm for healthcare practices, marine services, and professional services.' },
-  aventura: { city: 'Aventura', nearby: ['North Miami Beach', 'Sunny Isles', 'Hallandale', 'Miami'], description: 'Accounting and CFO services for Aventura businesses — medical practices, professional services, and hospitality.' },
-  hollywood: { city: 'Hollywood', nearby: ['Fort Lauderdale', 'Davie', 'Hallandale', 'Miramar'], description: 'Full-service accounting for Hollywood, FL businesses — from healthcare to marine and hospitality services.' },
+  aventura: { city: 'Aventura', nearby: ['North Miami Beach', 'Sunny Isles', 'Hallandale', 'Miami'], description: 'Accounting and CFO services for Aventura businesses — medical practices, professional services, and law firms.' },
+  hollywood: { city: 'Hollywood', nearby: ['Fort Lauderdale', 'Davie', 'Hallandale', 'Miramar'], description: 'Full-service accounting for Hollywood, FL businesses — from healthcare to marine and professional services.' },
 };
 
 // ============================================================
