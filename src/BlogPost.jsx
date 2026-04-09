@@ -204,14 +204,19 @@ const blogPosts = {
   'concierge-medical-fees-tax-deductible': {
     file: '/content/blogs/concierge-medical-fees-tax-deductible.md',
     title: 'Are Concierge Medicine Fees Tax Deductible? IRS Rules for 2026',
-    date: '2026-03-17',
+    date: '2026-04-08',
     author: 'Gerrit Disbergen, EA',
     excerpt: 'Short answer: partially. The annual retainer is not deductible, but the medical services portion is \u2014 subject to the 7.5% AGI floor. We cover patients, self-employed, HSA eligibility, MDVIP/DPC plans, and the corporate concierge strategy that makes 100% deductible.',
     categories: ['Concierge Medicine', 'Tax Planning', 'Healthcare Finance'],
-    readTime: '14 min read',
+    readTime: '18 min read',
     featuredImage: '/images/blog/cost-starting-concierge-practice.svg',
     faqs: [
       { q: 'Are concierge doctor fees tax deductible?', a: 'Partially. The portion of a concierge retainer allocable to actual medical services (annual physical, screenings, specific visits) qualifies as a medical expense under IRC Section 213(d). Access and convenience fees (shorter wait times, 24/7 phone access) do not qualify. The deduction is subject to the 7.5% AGI floor and requires itemizing.' },
+      { q: 'Are MDVIP fees tax deductible?', a: 'Partially. MDVIP fees run $2,400 to $4,800 per year and bundle both medical services and access fees. MDVIP does not issue a formal allocation letter, so you estimate \u2014 typically 60\u201370% for medical services, 30\u201340% for access and convenience. On a $3,600 membership, roughly $2,340 is potentially deductible under IRC Section 213(d), subject to the 7.5% AGI floor and itemization test.' },
+      { q: 'Can I deduct my concierge doctor\'s fee on my tax return?', a: 'Yes, the medical services portion \u2014 but there are three conditions. Your physician must confirm in writing what portion goes to actual medical care. Your total medical expenses must exceed 7.5% of AGI. And your total itemized deductions must exceed the standard deduction. For many patients the answer is technically yes but practically zero. Run the math.' },
+      { q: 'Are DPC fees tax deductible?', a: 'DPC monthly fees are subject to the same IRC Section 213(d) rules as concierge fees. They are not insurance premiums, so they cannot use the Section 162(l) above-the-line deduction. They land on Schedule A as itemized medical expenses, subject to the 7.5% AGI floor. The allocation argument is stronger for DPC since the fee is structured around care delivery. Proposed Treasury regulations (REG-109755-19) remain unfinalized as of April 2026.' },
+      { q: 'Is concierge medicine an HSA-eligible expense?', a: 'The medical services portion is HSA-eligible. Membership and access fees are not. The bigger risk: if proposed Treasury regulations on concierge and DPC arrangements are finalized, enrollment could disqualify you from making HSA contributions entirely. Not current law \u2014 but worth monitoring if HSA contributions are part of your tax strategy.' },
+      { q: 'Can my business pay for my concierge membership?', a: 'Yes \u2014 and this is the most tax-efficient approach. When structured through a MERP, HRA, or QSEHRA, your business deducts the full cost under Section 162 with no AGI floor. You receive the benefit tax-free under Sections 105 and 106. C-Corps get the cleanest treatment. S-Corp owners with 2%+ ownership have it run through W-2 wages. Small employers can use a QSEHRA (2026 limits: $6,350 individual / $12,800 family). Section 105(h) nondiscrimination rules apply.' },
       { q: 'Can I use my HSA to pay for concierge medicine?', a: 'Only for the portion covering actual medical services. The membership/access fee component is not HSA-eligible. Additionally, if IRS proposed regulations (REG-109755-19) are finalized, DPC/concierge arrangements may disqualify you from HSA contributions entirely.' },
       { q: 'Can an employer deduct concierge medicine as a business expense?', a: 'Yes. Employer payments for employee concierge medicine qualify as business expenses under Section 162. When structured through a Section 105 MERP or HRA, the benefit is tax-free to employees and fully deductible to the employer. Small employers can use a QSEHRA within annual limits.' },
       { q: 'Are concierge fees deductible for self-employed individuals?', a: 'Concierge retainer fees are NOT insurance premiums and do not qualify for the self-employed health insurance deduction under Section 162(l). They are only deductible as an itemized medical expense on Schedule A, subject to the 7.5% AGI floor.' }
@@ -736,6 +741,23 @@ const blogPosts = {
       { q: 'How much wealth can a concierge physician accumulate?', a: 'A concierge physician earning $600,000/year who deploys capital across retirement plans, real estate, practice equity, and tax-efficient investments can realistically accumulate $15-25 million over a 20-year career, compared to $3-5 million without structured wealth-building strategies.' },
       { q: 'What is the best retirement plan for high-income physicians?', a: 'The optimal structure is a stacked retirement plan: 401(k) employee deferral ($23,500) + employer match (up to $46,000) + Cash Balance Plan ($150,000-$350,000+). This shelters $219,500-$419,500 annually, saving $81,000-$155,000 in federal taxes at the 37% bracket.' },
       { q: 'How do physicians build wealth through real estate?', a: 'Physicians build real estate wealth by owning their office space, investing in rental properties, or participating in commercial syndications. Cost segregation studies accelerate depreciation deductions ($74K-$130K in Year 1 tax savings on a $1.5M property). 1031 exchanges defer capital gains indefinitely when reinvesting proceeds.' }
+    ]
+  },
+  'concierge-doctor-300-patient-panel-income': {
+    file: '/content/blogs/concierge-doctor-300-patient-panel-income.md',
+    title: 'How Concierge Doctors Clear $400K+ With a 300-Patient Panel',
+    date: '2026-04-08',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: '300 patients. $350/month. $1.26M in annual revenue. After $19,750/month in overhead, S-Corp tax savings, and a Cash Balance Plan sheltering $200K \u2014 your take-home clears $430K. Here is every dollar, step by step.',
+    categories: ['Concierge Medicine', 'Physician Finance', 'Tax Strategy'],
+    readTime: '14 min read',
+    featuredImage: '/images/blog/concierge-doctor-300-patient-panel-income.jpg',
+    faqs: [
+      { q: 'How many patients do I need to break even in a concierge practice?', a: 'There are three break-evens. P&L break-even is approximately 170 patients \u2014 revenue covers operating expenses but not your salary. Cash flow break-even is approximately 215 patients, covering overhead plus a $200,000 W-2 salary and taxes. Lifestyle break-even is approximately 250 patients, which adds retirement contributions and operating reserves.' },
+      { q: 'What is the take-home income for a 300-patient concierge practice at $350/month?', a: 'At $350/month with 300 patients, gross revenue is $1.26M. After $356,000 in overhead (fixed and variable), EBITDA is $904,000. After W-2 salary, payroll taxes, Cash Balance Plan contributions, and estimated taxes, take-home is approximately $424,000 per year.' },
+      { q: 'How long does it take to build a 300-patient concierge panel?', a: 'From zero, plan 18 to 30 months. Physicians converting an existing patient base can reach 300 patients in 6 to 12 months. Cold launches in a new market take longer. A realistic growth rate after launch is 10 to 15 new patients per month.' },
+      { q: 'How much does an S-Corp save a concierge physician?', a: 'Compared to a sole proprietorship, an S-Corp election typically saves $17,000 to $25,000 per year in self-employment taxes on a $900,000+ EBITDA. The savings come from paying FICA taxes only on the W-2 salary, not on S-Corp distributions.' },
+      { q: 'What is a Cash Balance Plan and how much can a physician contribute?', a: 'A Cash Balance Plan is a defined-benefit retirement plan under IRC Section 401(a) that allows contributions far exceeding standard 401(k) limits. At age 45, a physician can typically contribute $150,000\u2013$180,000 annually. At age 52, contributions approach $250,000. Every dollar is tax-deductible, reducing taxable income dollar-for-dollar.' }
     ]
   },
   'ai-cfo-analysis': {

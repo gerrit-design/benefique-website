@@ -1,6 +1,9 @@
 ---
 slug: concierge-medical-fees-tax-deductible
 date: 2026-03-17
+dateModified: 2026-04-08
+keywords: concierge medical fees tax deductible, mdvip fees tax deductible, dpc fees tax deductible, concierge doctor fee deduction, are concierge fees tax deductible, concierge medicine fees tax deductible irs, IRC 213d medical deduction
+author: Gerrit Disbergen, EA
 ---
 
 **Quick answer:** Concierge medical fees are only partially tax deductible. The portion paying for actual medical services (exams, blood panels, screenings) qualifies under IRC Section 213(d), but the access and convenience component (24/7 availability, same-day scheduling) does not. On a $5,000 annual retainer, typically only $3,000 to $3,500 is deductible — and even that only helps if your total medical expenses exceed 7.5% of AGI and you itemize.
@@ -34,6 +37,52 @@ There is no Revenue Ruling or Tax Court case that directly addresses concierge m
 - **Revenue Ruling 2003-57** defines "medical care" broadly and reinforces that amounts paid for the diagnosis, cure, mitigation, treatment, or prevention of disease qualify under Section 213(d).
 
 In practice, this means you need documentation. Your physician needs to tell you — in writing — what portion of your retainer goes to actual medical services versus access. Without that allocation, defending the deduction becomes much harder.
+
+## MDVIP Fees: Are They Tax Deductible?
+
+MDVIP is the largest concierge medicine network in the country — and it launched right here in Boca Raton in 2000. With more than 1,100 affiliated physicians nationally, it's the brand patients ask about most when the tax question comes up.
+
+Annual MDVIP fees range from $2,400 to $4,800 depending on the physician and region. The same IRC Section 213(d) rules apply. The retainer bundles both covered medical services and the access-and-availability tier that patients pay a premium for.
+
+MDVIP does not issue a formal allocation letter to patients. That means you're estimating — and your estimate needs to be reasonable and documented.
+
+**Typical MDVIP allocation (based on the services bundled in the MDVIP program):**
+- 60–70% allocable to medical services (comprehensive annual physical, executive wellness labs, health screenings, chronic disease management)
+- 30–40% allocable to access and convenience (same-day scheduling, 24/7 physician access, reduced panel size)
+
+Here is what that looks like in dollars at three common price points:
+
+| Annual MDVIP Fee | Est. Medical Services (65%) | Est. Access Fees (35%) | Potentially Deductible |
+|------------------|-----------------------------|------------------------|------------------------|
+| $2,400 | $1,560 | $840 | $1,560 |
+| $3,600 | $2,340 | $1,260 | $2,340 |
+| $4,800 | $3,120 | $1,680 | $3,120 |
+
+Remember: "potentially deductible" means before the 7.5% AGI floor and the itemization test. Most MDVIP patients — who tend to be higher-income — find that the floor wipes out the benefit on Schedule A. The employer pathway below is where the math actually works.
+
+> **Document your estimate.** Keep a copy of your MDVIP membership agreement and any annual summary of services received. If you're audited, you need something beyond "I guessed 65%."
+
+## DPC (Direct Primary Care) Fees: Different Model, Same Tax Rules
+
+Direct Primary Care practices charge a flat monthly membership — typically $75 to $200 per month — and bill patients directly with no insurance involvement. It's a simpler model than MDVIP, and the tax analysis has one meaningful difference: more of what you're paying is arguably medical care.
+
+In a traditional concierge arrangement, you're partly paying for exclusivity and access. In a DPC model, the monthly fee is primarily paying for primary care services — unlimited visits, same-day access, direct messaging, and basic procedures included. There's no separate "access tier" bundled on top.
+
+That does not make DPC fees automatically fully deductible. The same Section 213(d) test applies. But the allocation argument is stronger because the fee is structured around the delivery of care rather than the curation of a premium experience.
+
+**The proposed regulations — still not final:**
+
+In 2020, the Treasury Department proposed regulations (REG-109755-19) that would have explicitly treated DPC arrangements as deductible medical expenses. As of April 2026, those regulations remain proposed only. Do not plan as if they're law.
+
+| Monthly DPC Fee | Annual Total | Est. Deductible Portion (80%) | Before 7.5% Floor |
+|-----------------|--------------|-------------------------------|-------------------|
+| $75/month | $900 | $720 | Subject to AGI floor |
+| $125/month | $1,500 | $1,200 | Subject to AGI floor |
+| $200/month | $2,400 | $1,920 | Subject to AGI floor |
+
+**DPC and HSAs — a specific risk:** The same HSA disqualification concern that applies to concierge arrangements applies to DPC. If the proposed DPC regs are ever finalized, enrollment in a DPC arrangement could disqualify you from making HSA contributions. Not current law — but worth watching if your tax strategy depends on HSA contributions.
+
+**DPC cannot use Section 162(l).** Like concierge fees, DPC monthly payments are not insurance premiums. They don't qualify for the self-employed health insurance deduction. They land on Schedule A as itemized medical expenses, subject to the same 7.5% AGI floor as everyone else.
 
 ## The Proposed Regulations: DPC Arrangements (Not Yet Law)
 
@@ -148,6 +197,18 @@ This actually simplifies planning. You're not juggling different AGI thresholds 
 
 For concierge physicians operating in the Broward/Palm Beach/Miami-Dade corridor, the combination of no state income tax, a concentrated high-net-worth patient base, and the employer benefit structure creates a uniquely favorable tax environment for this practice model.
 
+## Three Paths to Deducting Concierge Fees
+
+Not everyone reaches the deduction the same way. The path that matters most depends on how the payment is structured — as a personal expense, a self-employed person's expense, or an employer-provided benefit.
+
+| Path | Who Benefits | Deduction Type | AGI Floor? | Best For |
+|------|-------------|----------------|------------|----------|
+| **Patient → Schedule A (IRC 213(d))** | Individual patients who itemize | Medical expense on Schedule A | Yes — 7.5% of AGI | High-medical-expense years where itemizing beats the standard deduction |
+| **Self-Employed → Schedule A (NOT 162(l))** | Solo practitioners, independent contractors | Still Schedule A — not above-the-line | Yes — 7.5% of AGI | Self-employed physicians paying their own concierge fee; weaker than most expect |
+| **Employer → Section 162 business expense** | Business owners, C-Corps, S-Corps, employers | Ordinary business expense deduction | No floor | The strongest structure — deductible to employer, tax-free to employee under Sections 105/106 |
+
+The employer path wins on every axis: no AGI floor, no itemization hurdle, no standard deduction problem. If you own your business and can run concierge medicine through a MERP, HRA, or QSEHRA, that is the route worth pursuing.
+
 ## Frequently Asked Questions
 
 ### Are concierge doctor fees tax deductible?
@@ -169,6 +230,26 @@ You can use HSA funds for the medical services portion of a concierge fee. Membe
 ### What is the employer concierge medicine tax deduction?
 
 When an employer pays for concierge medicine as an employee benefit, the cost is deductible under Section 162 as an ordinary business expense. The employee receives the benefit tax-free under Sections 105 and 106 when structured through a MERP or HRA. C-Corporations get the cleanest treatment. S-Corp shareholders with 2%+ ownership have the benefit included in W-2 wages. Small employers under 50 employees can use a QSEHRA with annual limits of $6,350 (individual) and $12,800 (family) for 2026.
+
+### Are MDVIP fees tax deductible?
+
+Partially. MDVIP fees run $2,400 to $4,800 per year and bundle both medical services and access fees. MDVIP does not issue a formal allocation letter, so you'll need to estimate — typically 60–70% for medical services, 30–40% for access and convenience. On a $3,600 membership, roughly $2,340 is potentially deductible under IRC Section 213(d). That's still subject to the 7.5% AGI floor and the itemization test. See the full MDVIP breakdown and table above.
+
+### Can I deduct my concierge doctor's fee on my tax return?
+
+Yes, the medical services portion — but there are three conditions. First, your physician must confirm (in writing) what portion of the retainer goes to actual medical care versus access fees. Second, your total medical expenses must exceed 7.5% of your AGI before any deduction applies. Third, your total itemized deductions must exceed the standard deduction ($15,000 single / $30,000 MFJ for 2025) before Schedule A does you any good. For many patients, the answer is technically yes but practically zero. Run the math.
+
+### Are DPC fees tax deductible?
+
+The same rules that apply to concierge fees apply to Direct Primary Care (DPC) monthly payments. DPC fees are not insurance premiums, so they don't qualify for the above-the-line Section 162(l) deduction. They land on Schedule A as medical expenses, subject to the 7.5% AGI floor. The allocation argument is stronger for DPC (since more of the fee goes to actual care delivery), but the deduction is still not guaranteed. Proposed Treasury regulations (REG-109755-19) would have simplified this — but as of April 2026 they remain unfinalized. See the DPC section above for the full analysis.
+
+### Is concierge medicine an HSA-eligible expense?
+
+The medical services portion of a concierge fee is HSA-eligible. Membership and access fees are not. The more important issue: if proposed Treasury regulations on DPC and concierge arrangements are ever finalized, enrollment in a concierge or DPC arrangement could disqualify you from making HSA contributions at all. Not current law — but a real risk if the regs move forward. If HSA contributions are a meaningful part of your tax strategy, monitor this closely.
+
+### Can my business pay for my concierge membership?
+
+Yes — and this is the most tax-efficient approach available. When structured through a Medical Expense Reimbursement Plan (MERP), Health Reimbursement Arrangement (HRA), or QSEHRA, your business deducts the full cost under Section 162 with no AGI floor. You receive the benefit tax-free under Sections 105 and 106. C-Corps get the cleanest treatment. S-Corp owners with 2%+ ownership have the benefit run through W-2 wages. Small employers under 50 can use a QSEHRA (2026 limits: $6,350 individual / $12,800 family). The nondiscrimination rules under Section 105(h) apply — the plan must cover a broad class of employees, not just executives.
 
 ---
 
