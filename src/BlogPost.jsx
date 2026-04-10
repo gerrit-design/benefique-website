@@ -6,6 +6,23 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  'quarterly-kpi-scorecards-ai-performance-decline': {
+    file: '/content/blogs/quarterly-kpi-scorecards-ai-performance-decline.md',
+    title: 'Quarterly KPI Scorecards: How 90-Day Reviews Catch the $5,000/Month Problem Annual Reviews Miss',
+    date: '2026-04-10',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A COO\'s cost per claim rose 78% over four quarters. The annual review caught it in January \u2014 six months after intervention should have started. A quarterly scorecard would have flagged it in Q2. Here\'s the framework, the backtest, and the dollar cost of waiting.',
+    categories: ['Healthcare Finance', 'Cash Flow Advisory', 'Financial Intelligence'],
+    readTime: '10 min read',
+    featuredImage: '/images/blog/quarterly-kpi-scorecards-ai-performance-decline.jpg',
+    faqs: [
+      { q: 'What data sources do I need to build a quarterly KPI scorecard?', a: 'Two: your accounting system (QBO, Xero, or similar) for cost data, and your practice management or billing system for claims volume. If both systems have API access, the scorecard can be automated with zero manual data entry. If not, a monthly export from each is sufficient.' },
+      { q: 'Can I use this framework for non-healthcare businesses?', a: 'Yes. The three-KPI structure (volume, cost per unit, largest cost category as percentage of revenue) applies to any service business. Replace "claims" with the relevant activity unit \u2014 cases, jobs, projects, deliverables. The scoring tiers and performance zones work identically.' },
+      { q: 'How do I set Floor, Target, and Stretch values?', a: 'Start with 12 months of historical data. The median is your Target. The 25th percentile is your Floor. The 75th percentile (or industry benchmark, whichever is more ambitious) is your Stretch. Recalibrate annually.' },
+      { q: 'Does the bonus pool size matter?', a: 'It has to be meaningful enough to drive behavior but not so large that missing a quarter creates resentment. For COO-level positions in practices under $20M revenue, 5-10% of base salary as the annual bonus pool is typical. The quarterly structure ensures four chances to earn rather than one all-or-nothing annual event.' },
+      { q: 'What if volume drops due to factors outside the COO\'s control?', a: 'Build an exception process for documented external events \u2014 major payer contract changes, facility closures, or regional disruptions. The composite scoring with weighted KPIs already provides some cushion: if volume drops but cost per claim improves, the composite score reflects both.' }
+    ]
+  },
   'high-cost-procedure-economics-medical-practice': {
     file: '/content/blogs/high-cost-procedure-economics-medical-practice.md',
     title: '$2,940 Out the Door Before You Know If You\'ll Get Paid',
