@@ -24,7 +24,7 @@ const blogPosts = {
   },
   'margin-drop-test-trend-vs-accident': {
     file: '/content/blogs/margin-drop-test-trend-vs-accident.md',
-    title: 'When \u201CIt\u2019s Just Seasonal\u201D Isn\u2019t',
+    title: 'When “It’s Just Seasonal” Isn’t',
     date: '2026-04-15',
     author: 'Gerrit Disbergen, EA',
     excerpt: 'One month last quarter, a multi-entity distributor posted a negative gross profit month — $200K in revenue, $201K in COGS, the first time in three years. Before the owners restructured anything, we ran a 60-minute test that told us the cause was isolated to three external customer invoices.',
