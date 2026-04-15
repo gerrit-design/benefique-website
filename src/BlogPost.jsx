@@ -6,6 +6,55 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  'blended-pl-lying-multi-entity-business': {
+    file: '/content/blogs/blended-pl-lying-multi-entity-business.md',
+    title: 'Your Blended P&L Is Lying to You',
+    date: '2026-04-14',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A $3M distribution business showed a 15% gross margin and looked distressed. We split it into internal and external divisions and found a healthy 50%+ external business sitting next to a subsidized 9% internal transfer operation. The owner had been trying to fix the wrong problem for two quarters.',
+    categories: ['Cash Flow', 'Cash Flow Advisory'],
+    readTime: '10 min read',
+    featuredImage: '/images/blog/blended-pl-lying-multi-entity-business.jpg',
+    faqs: [
+      { q: 'What counts as a "multi-entity business" for this analysis?', a: 'Any business structure where two or more related legal entities (LLCs, S-Corps, partnerships) buy from or sell to each other on a recurring basis. Holding-company-plus-operating-company structures, parent-subsidiary arrangements, and horizontal sister-entity setups (common in marine, construction, healthcare, and distribution) all qualify. If you have two QuickBooks files and one of them is a customer of the other, you have a multi-entity business for divisional analysis purposes.' },
+      { q: 'How do I identify internal customers in QuickBooks?', a: 'If your intercompany customer names contain a common brand token — most groups name them after the parent — a simple text match catches them. Pull a Sales by Customer Summary, flag anything matching your brand keyword as Internal, and treat everything else as External. It takes ten minutes. If your internal customers are named inconsistently, that\'s a separate QuickBooks hygiene problem worth fixing for reasons that go beyond this analysis.' },
+      { q: 'Is a 10% intercompany markup too low?', a: 'For accounting purposes, no — it\'s within the range the IRS considers defensible under Section 482 for simple parts transfers between related parties. For strategic purposes, it\'s often structurally unprofitable for the selling entity once operating expenses are allocated. Whether that\'s a problem depends on which entity you want showing profit and why. The intercompany markup is a deliberate lever, not an accident, and it deserves a conscious decision.' },
+      { q: 'Can I run this analysis myself or do I need an advisor?', a: 'You can run it yourself if your QuickBooks is clean and your customer tagging is consistent. Pull the blended gross margin from your P&L, pull the internal-vs-external mix from a customer sales report, plug in the residual formula, and build the divisional view. The harder part is interpreting the result — especially if the external channel margin emerges as something unexpected. That\'s where a second set of experienced eyes usually pays for itself inside a month.' }
+    ]
+  },
+  'margin-drop-test-trend-vs-accident': {
+    file: '/content/blogs/margin-drop-test-trend-vs-accident.md',
+    title: 'When "It\'s Just Seasonal" Isn\'t',
+    date: '2026-04-15',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'One month last quarter, a multi-entity distributor posted a negative gross profit month — $200K in revenue, $201K in COGS, the first time in three years. Before the owners restructured anything, we ran a 60-minute test that told us the cause was isolated to three external customer invoices.',
+    categories: ['Cash Flow', 'Cash Flow Advisory'],
+    readTime: '8 min read',
+    featuredImage: '/images/blog/margin-drop-test-trend-vs-accident.jpg',
+    faqs: [
+      { q: 'What if my business doesn\'t have a fixed internal markup to anchor on?', a: 'Use whichever channel has the most stable pricing. For a contractor, it might be government contracts priced off a published schedule. For a dental practice, it might be a capitated insurance panel. For a distributor, it might be a single large dealer on a locked-in contract. The anchor doesn\'t have to be internal — it just has to be a channel where you genuinely know the gross margin within a few points.' },
+      { q: 'How do I know if a month-over-month margin drop is big enough to investigate?', a: 'A useful rule of thumb: any drop greater than 5 percentage points in blended gross margin, or any month where blended gross margin falls below two-thirds of the trailing six-month average. Smaller drops usually fall within normal business noise. Larger drops almost always repay the hour of investigation, even if the result is "we confirmed it\'s normal volatility."' },
+      { q: 'What counts as "seasonal" and how do I rule it out?', a: 'True seasonality shows up the same way every year — Q1 is weak because your customers are on vacation, December is heavy because of year-end buying. The cleanest seasonality test is a same-month year-over-year comparison: if December 2026 is 15 points below November 2026 but the same 15 points below November 2025, that\'s seasonal. If December 2026 is also 15 points below December 2025, that\'s structural or channel.' },
+      { q: 'How often should I run this test?', a: 'Not monthly — it\'s a diagnostic tool, not a routine report. Run it whenever a blended gross margin drop triggers your attention (either a rule-of-thumb threshold or an instinct that something looks wrong). For most multi-channel businesses, that\'s one or two times per year. The value is in having the test ready when you need it, not in running it for its own sake.' }
+    ]
+  },
+  'intercompany-markup-dial-multi-entity': {
+    file: '/content/blogs/intercompany-markup-dial-multi-entity.md',
+    title: 'The Intercompany Markup Dial Nobody Tells You About',
+    date: '2026-04-16',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A multi-entity business has a dial its owner usually doesn\'t know exists. At 10% it makes one entity look profitable and the other look structurally broken. At 20% it rebalances them. Group profit doesn\'t change by a dollar — but the banker, the buyer, and the tax return all see different stories.',
+    categories: ['Tax Strategy', 'Cash Flow Advisory'],
+    readTime: '10 min read',
+    featuredImage: '/images/blog/intercompany-markup-dial-multi-entity.jpg',
+    faqs: [
+      { q: 'Is changing my intercompany markup considered tax avoidance?', a: 'No, when done within the arm\'s-length range and documented. The IRS explicitly permits related parties to set transfer prices, subject to the requirement under IRC Section 482 that the price fall within a range a third party would accept for a comparable transaction. Tax avoidance would be setting a markup outside that range specifically to shift income without a business rationale. A move from 10% to 15% for simple parts transfers, documented as a banking or buyer-readiness response, is a normal business decision.' },
+      { q: 'What if my entities are in the same tax jurisdiction with identical partner splits?', a: 'The tax-optimization rationale largely disappears, but the bank presentation and buyer readiness rationales remain. Even if the group tax bill is identical at every markup level, the standalone financials of each entity still change — and every outside party that reads those financials individually still forms a different opinion based on which setting you chose. That\'s enough reason to set the dial consciously.' },
+      { q: 'How do I know if my current intercompany markup is inside the arm\'s-length range?', a: 'For simple parts transfers, 5–30% is generally defensible. For service transfers (labor, management time), the range is wider and more fact-specific. The test is: would an unrelated third-party distributor or service provider, without a long-standing relationship, charge something in this range for this specific transaction, at this specific volume, with these specific payment terms? If yes, you\'re inside the range.' },
+      { q: 'Can my accountant just change the markup without a formal partner decision?', a: 'Technically yes, procedurally no. A change to intercompany pricing is a policy change, not a bookkeeping correction. It should be documented in a partner resolution or board minute, with the rationale stated. This protects you if the IRS ever asks, protects the partners from disputes about the economic consequences, and creates a paper trail that supports the decision in a banking or sale context.' },
+      { q: 'How often should I revisit the rate?', a: 'Every 12 to 24 months, or whenever a specific event — an upcoming loan application, a sale conversation, a major shift in entity scale, a new partner — creates a reason to re-evaluate. The binding constraint changes over time. A rate that was optimal three years ago is rarely still optimal today.' }
+    ]
+  },
   'radiology-accounts-receivable-line-of-credit': {
     file: '/content/blogs/radiology-accounts-receivable-line-of-credit.md',
     title: 'Radiology Accounts Receivable: How Banks Misread Your Aging Report',
