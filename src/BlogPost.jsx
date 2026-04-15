@@ -762,10 +762,10 @@ const blogPosts = {
   },
   'cost-starting-concierge-medical-practice': {
     file: '/content/blogs/cost-starting-concierge-medical-practice.md',
-    title: 'Cost to Start a Concierge Medical Practice: $75K\u2013$200K Breakdown (2026)',
+    title: 'Concierge Medicine Average Cost (2026): $75K\u2013$200K to Start in South Florida',
     date: '2026-03-08',
     author: 'Gerrit Disbergen, EA',
-    excerpt: 'Every dollar from $75K to $200K: entity setup, office buildout, EHR, staffing, marketing, and the $19,750/mo in fixed costs before your first patient walks in. Plus the S-Corp election timing most consultants forget.',
+    excerpt: 'The average cost to start a concierge medical practice in 2026 is $75K\u2013$200K, with most Broward County physicians landing at $100K\u2013$175K. Full breakdown: entity setup, buildout, EHR, marketing, $19,750/mo fixed costs, and the S-Corp election timing most consultants forget.',
     categories: ['Concierge Medicine', 'Practice Startup', 'Tax Planning'],
     readTime: '22 min read',
     featuredImage: '/images/blog/cost-starting-concierge-practice.svg',
