@@ -6,6 +6,23 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  'radiology-accounts-receivable-line-of-credit': {
+    file: '/content/blogs/radiology-accounts-receivable-line-of-credit.md',
+    title: 'Radiology Accounts Receivable: How Banks Misread Your Aging Report',
+    date: '2026-04-14',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Your banker sees 58% of your A/R sitting in the 120+ bucket and thinks your practice is a disaster. It isn\'t. Here\'s the three-number framework that translates a radiology aging report into language a commercial credit team understands — and the template we send when a bank asks for A/R.',
+    categories: ['Healthcare Finance', 'Cash Flow Advisory'],
+    readTime: '11 min read',
+    featuredImage: '/images/blog/radiology-accounts-receivable-line-of-credit.jpg',
+    faqs: [
+      { q: 'Why is most of my radiology A/R in the 120+ day bucket?', a: 'Because of how healthcare billing works, not because of a collection problem. The 120+ concentration is driven almost entirely by the Letter of Protection segment, which settles on a 12-to-36-month cycle through the personal injury litigation process. A practice with 35-45% LOP in its A/R will normally show 55-60% in 120+ days even with a perfectly run billing operation.' },
+      { q: 'What is a good Net Collection Rate for a radiology practice?', a: 'For a Florida radiology practice, 25-35% NCR is the normal range, depending on payer mix. The absolute number matters less than the stability: a practice holding a consistent NCR over twelve rolling months is performing correctly, even if the number looks low compared to commercial business expectations. Stability, not magnitude, is the billing health indicator.' },
+      { q: 'Is LOP (Letter of Protection) A/R actually collectible?', a: 'Yes, when it sits against tier-1 Florida personal injury firms, which is where most of it does. Morgan & Morgan, Farah & Farah, Steinger Greene, and similar established firms have multi-decade settlement histories and reliable payment practices on executed LOPs. The issue is not collectibility — it is the 12-to-36-month duration, which means charges are recognized immediately but cash realizes over the settlement cycle.' },
+      { q: 'How should I explain healthcare A/R to my commercial banker?', a: 'Send the aging report with a one-page translation memo covering six things: a chargemaster explainer, a payer-class breakdown, an LOP counterparty table, a twelve-month cash run rate with coefficient of variation, any specialty receivables segmented out, and raw enough data for the credit team to run their own DSCR calculation. Do not compute the DSCR for them — they prefer to run it themselves on inputs they trust.' },
+      { q: 'Should I include LOP receivables in my borrowing base?', a: 'Usually yes, but with a separate advance rate reflecting the longer duration. A flat commercial borrowing base that either fully includes or fully excludes LOP paper will misprice the facility in both directions. The right conversation to have with the credit team is a tiered advance rate — higher on commercial and PIP, moderate on LOP against tier-1 firms, excluded on self-pay and unknown counterparties.' }
+    ]
+  },
   'quarterly-kpi-scorecards-ai-performance-decline': {
     file: '/content/blogs/quarterly-kpi-scorecards-ai-performance-decline.md',
     title: 'Quarterly KPI Scorecards: How 90-Day Reviews Catch the $5,000/Month Problem Annual Reviews Miss',
