@@ -134,17 +134,17 @@ One of the most revealing findings from the analysis: DSO varies dramatically by
 
 | Payer | DSO | A/R Balance | 120+ % | Status |
 |-------|-----|------------|--------|--------|
-| Medicare | 21 days | $153K | 0% | Model payer |
-| Aetna Medicare | 16 days | $21K | 0% | Fastest on the board |
-| Cigna | 61 days | $86K | 16% | Workable with follow-up |
-| United (all entities) | 87 days | $671K | 36% | Biggest problem — 7 sub-entities |
-| FL Blue Shield | 92 days | $194K | 34% | Denial tail growing |
+| Medicare | 21 days | $150K | 0% | Model payer |
+| Medicare Advantage (Plan A) | 16 days | $20K | 0% | Fastest on the board |
+| Commercial Payer A | 61 days | $85K | 16% | Workable with follow-up |
+| National Carrier Group (7 sub-plans) | 87 days | $670K | 36% | Biggest problem |
+| Regional Blue Plan | 92 days | $195K | 34% | Denial tail growing |
 | Self Pay | 158 days | $370K | 82% | Write-off territory |
-| LOP / Personal Injury | 173 days | $868K | 93% | Structural — 12-36 month cycle |
+| LOP / Personal Injury | 173 days | $870K | 93% | Structural — 12-36 month cycle |
 
-Medicare pays in 21 days because claims go in clean and adjudication is automated. United takes 87 days because it has seven different sub-entities (Preferred Care Partners, UHC, UHC Community Plan, AARP, UHC Claims Division, UMR, Oxford), each with different modifier requirements, authorization processes, and denial patterns.
+Medicare pays in 21 days because claims go in clean and adjudication is automated. The national carrier group takes 87 days because it operates seven different sub-plans under one parent brand, each with different modifier requirements, authorization processes, and denial patterns.
 
-The 66-day gap between Medicare and United is not a medical complexity problem. It is a billing process problem. A billing company that understands United's submission requirements for each sub-entity — and follows up aggressively when claims stall — closes that gap. A billing company that treats all payers the same lets $240,000 age into the 120+ bucket, where the probability of collection drops below 20%.
+The 66-day gap between Medicare and the national carrier is not a medical complexity problem. It is a billing process problem. A billing company that understands each sub-plan's submission requirements — and follows up aggressively when claims stall — closes that gap. A billing company that treats all payers the same lets $240,000 age into the 120+ bucket, where the probability of collection drops below 20%.
 
 This is the difference between a billing company that processes claims and one that [manages your accounts receivable as an investment](/blog/radiology-accounts-receivable-line-of-credit). The data to diagnose the problem is already in your aging report. The question is whether anyone is reading it at the payer level.
 
