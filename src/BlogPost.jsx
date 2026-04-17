@@ -6,6 +6,23 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  'medical-billing-fees-vs-collections-dso': {
+    file: '/content/blogs/medical-billing-fees-vs-collections-dso.md',
+    title: 'Your Billing Company Costs 6%. Slow Collections Cost 10x That.',
+    date: '2026-04-17',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Every practice owner negotiates billing fees down. The math says you should probably pay more. A South Florida imaging center discovered that $66K per year in invisible carrying costs dwarfed the billing fee savings they were chasing.',
+    categories: ['Healthcare Finance', 'Cash Flow'],
+    readTime: '10 min read',
+    featuredImage: '/images/blog/medical-billing-fees-vs-collections-dso.jpg',
+    faqs: [
+      { q: 'What is a normal medical billing fee percentage?', a: 'Medical billing companies typically charge 4% to 10% of net collections, with 5% to 8% being the standard range for full-service outsourced billing. Some charge per claim ($2 to $4) or hourly ($20 to $35). The percentage alone does not tell you whether the fee is a good deal \u2014 you need to measure what that fee produces in collection speed and yield.' },
+      { q: 'What is a good DSO for a healthcare practice?', a: 'The Medical Group Management Association (MGMA) benchmarks best-in-class DSO at 45 days or less. The industry average is approximately 47 days. Anything above 60 days means significant cash is trapped in the pipeline. For radiology and imaging centers, DSO varies dramatically by payer \u2014 Medicare typically pays in 20 to 25 days while commercial payers can take 60 to 90 days.' },
+      { q: 'How much does one day of DSO reduction actually save?', a: 'One day of DSO reduction frees your average daily collections in cash \u2014 permanently. For a practice collecting $4 million per year, that is approximately $11,000 per day. A 10-day improvement frees $110,000 in one-time cash plus ongoing carrying cost savings at whatever interest rate you pay on debt or credit lines.' },
+      { q: 'Should I switch billing companies to save on fees?', a: 'Not without measuring what you have first. Request your current billing company\'s clean claim rate, denial turnaround time, and A/R over 90 days percentage. If those numbers are strong and your DSO is at or below 45 days, the current fee may be a bargain. If those numbers are weak, switching could help \u2014 but only if the new company can demonstrate better KPIs, not just a lower rate.' },
+      { q: 'What causes high DSO in medical practices?', a: 'The most common causes are low clean claim rate (claims rejected on first submission), slow denial rework (denied claims sitting in a queue instead of being resubmitted within 48 hours), payer-specific submission errors (wrong modifiers, missing authorizations), and delayed charge capture (days between performing the service and entering the charge). Each of these adds 15 to 60 days to the collection cycle.' }
+    ]
+  },
   'blended-pl-lying-multi-entity-business': {
     file: '/content/blogs/blended-pl-lying-multi-entity-business.md',
     title: 'Your Blended P&L Is Lying to You',
