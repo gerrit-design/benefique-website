@@ -59,6 +59,7 @@ const staticRoutes = [
   // Service pages
   { path: '/services/real-time-accounting', priority: 0.9, changefreq: 'monthly', lastmod: new Date() },
   { path: '/services/fractional-cfo', priority: 0.9, changefreq: 'monthly', lastmod: new Date() },
+  { path: '/services/radiology', priority: 0.9, changefreq: 'monthly', lastmod: new Date() },
 
   // Tool pages
   { path: '/tools/concierge-simulator', priority: 0.9, changefreq: 'monthly', lastmod: new Date() },

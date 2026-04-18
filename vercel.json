@@ -37,7 +37,9 @@
     { "source": "/blog/proactive-tax-planning-for-healthcare-smbs--maximizing-returns-and-minimizing-risks", "destination": "/blog/missed-tax-deductions-healthcare-service-businesses-broward-county", "statusCode": 301 },
     { "source": "/davie/-davie-tax-preparation", "destination": "/davie-accounting", "statusCode": 301 },
     { "source": "/davie/bookkeeping-services", "destination": "/davie-accounting", "statusCode": 301 },
-    { "source": "/davie/:path*", "destination": "/davie-accounting", "statusCode": 301 }
+    { "source": "/davie/:path*", "destination": "/davie-accounting", "statusCode": 301 },
+
+    { "source": "/industries/radiology", "destination": "/services/radiology", "statusCode": 301 }
   ],
   "rewrites": [
     { "source": "/terms", "destination": "/api/terms" },

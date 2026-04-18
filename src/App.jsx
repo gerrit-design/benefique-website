@@ -27,8 +27,29 @@ function Nav() {
         
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
+          {/* Services dropdown */}
+          <div className="relative group">
+            <Link
+              to="/services"
+              className={`text-sm font-medium transition-colors inline-flex items-center gap-1 ${
+                location.pathname.startsWith('/services') ? 'text-benefique-navy' : 'text-gray-600 hover:text-benefique-navy'
+              }`}
+            >
+              Services <span className="text-xs">▾</span>
+            </Link>
+            <div className="absolute top-full left-0 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity">
+              <div className="bg-white shadow-lg rounded-lg py-2 min-w-[260px] border border-gray-100">
+                <Link to="/services" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-benefique-navy font-semibold">All Services</Link>
+                <div className="border-t border-gray-100 my-1"></div>
+                <Link to="/services/fractional-cfo" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-benefique-navy">Fractional CFO</Link>
+                <Link to="/services/real-time-accounting" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-benefique-navy">Real-Time Accounting</Link>
+                <Link to="/services/radiology" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-benefique-navy">
+                  <span className="text-benefique-orange mr-1">◆</span>Radiology CFO
+                </Link>
+              </div>
+            </div>
+          </div>
           {[
-            ['/services', 'Services'],
             ['/demo', 'Sample Reports'],
             ['/blog', 'Blog'],
             ['/testimonials', 'Testimonials'],
@@ -66,7 +87,18 @@ function Nav() {
       {/* Mobile Menu */}
       {mobileOpen && (
         <div className="md:hidden bg-white border-t px-4 py-4 space-y-4">
-          <Link to="/services" className="block text-gray-600">Services</Link>
+          <details className="group">
+            <summary className="flex justify-between items-center text-gray-600 cursor-pointer list-none">
+              <span>Services</span>
+              <span className="text-xs group-open:rotate-180 transition-transform">▾</span>
+            </summary>
+            <div className="pl-4 mt-3 space-y-3 border-l-2 border-gray-100">
+              <Link to="/services" className="block text-sm text-gray-600">All Services</Link>
+              <Link to="/services/fractional-cfo" className="block text-sm text-gray-600">Fractional CFO</Link>
+              <Link to="/services/real-time-accounting" className="block text-sm text-gray-600">Real-Time Accounting</Link>
+              <Link to="/services/radiology" className="block text-sm text-gray-600"><span className="text-benefique-orange mr-1">◆</span>Radiology CFO</Link>
+            </div>
+          </details>
           <Link to="/demo" className="block text-gray-600">Sample Reports</Link>
           <Link to="/blog" className="block text-gray-600">Blog</Link>
           <Link to="/testimonials" className="block text-gray-600">Testimonials</Link>
@@ -133,7 +165,7 @@ function Footer() {
           <div>
             <span className="text-gray-500 text-xs uppercase tracking-wider">Industries</span>
             <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1">
-              <Link to="/industries/radiology" className="text-gray-400 hover:text-white transition">Radiology</Link>
+              <Link to="/services/radiology" className="text-gray-400 hover:text-white transition">Radiology CFO</Link>
               <Link to="/industries/dental" className="text-gray-400 hover:text-white transition">Dental</Link>
               <Link to="/industries/veterinary" className="text-gray-400 hover:text-white transition">Veterinary</Link>
               <Link to="/industries/marine-services" className="text-gray-400 hover:text-white transition">Marine Services</Link>
@@ -3089,6 +3121,545 @@ function RealTimeAccountingPage() {
 }
 
 // ============================================================
+// RADIOLOGY CFO INTELLIGENCE LANDING PAGE
+// ============================================================
+function RadiologyLandingPage() {
+  const services = [
+    {
+      icon: '🧪',
+      title: 'PET Tracer Economics',
+      desc: 'Two Business Unit decomposition separating high-reimbursement PET Tracer Scans from general radiology. Per-payer, per-tracer, per-facility toxic-combination detection and referrer strategy.',
+      link: '/blog/referring-doctor-relationship-myth-medical-imaging',
+      linkLabel: 'The Relationship Myth',
+    },
+    {
+      icon: '💵',
+      title: 'Collections & Cash Release',
+      desc: 'Per-payer DSO, aging decomposition, Letter-of-Protection trap analysis, and the billing-fee-versus-DSO trade-off your biller will not run for you.',
+      link: '/blog/radiology-accounts-receivable-line-of-credit',
+      linkLabel: 'How Banks Misread Your A/R',
+    },
+    {
+      icon: '📊',
+      title: 'Payer Mix Analysis',
+      desc: 'PIP compression modeling, payer grading A–F, and the front-desk selection economics that lock in profitability weeks before billing touches the claim.',
+      link: '/blog/toxic-payers-losing-money-medical-practice',
+      linkLabel: '7 Payers, 41 Procedures, $80,593 Lost',
+    },
+    {
+      icon: '🔍',
+      title: 'Per-Claim Profitability',
+      desc: '$/Claim → GP$/Claim → NOI/Claim stack. High-cost procedure economics. Which procedures lose money on which payers — a 9:1 profitability gap on identical work.',
+      link: '/blog/high-cost-procedure-economics-medical-practice',
+      linkLabel: '$2,940 Out the Door',
+    },
+    {
+      icon: '🏢',
+      title: 'Multi-Center COO Scorecard',
+      desc: 'Quarterly performance framework with gated bonus design, independent assessment, and cross-center benchmarking that holds operators accountable to numbers.',
+      link: '/blog/real-time-financial-dashboards-healthcare-practices',
+      linkLabel: '10 KPIs Every Practice Should Track',
+    },
+    {
+      icon: '🧾',
+      title: 'Radiology Tax & R&D',
+      desc: 'Section 41 R&D credits for imaging groups ($40K–$120K/year typical). S-corp reasonable compensation. Entity structure. 2026 tax law changes.',
+      link: '/blog/rd-tax-credits-healthcare',
+      linkLabel: 'R&D Tax Credits for Healthcare',
+    },
+  ];
+
+  const clusters = [
+    {
+      title: 'PET Tracer Economics',
+      posts: [
+        { slug: 'referring-doctor-relationship-myth-medical-imaging', title: 'The Relationship Myth: When Taking One For The Team Costs $142,000' },
+        { slug: 'high-cost-procedure-economics-medical-practice', title: '$2,940 Out the Door Before You Know If You\'ll Get Paid' },
+        { slug: 'toxic-payers-losing-money-medical-practice', title: '7 Payers, 41 Procedures, $80,593 Lost' },
+        { slug: 'expensive-2-minute-decision-medical-practice', title: 'The Most Expensive 2-Minute Decision in Your Medical Practice' },
+      ],
+    },
+    {
+      title: 'Collections, DSO & Cash Flow',
+      posts: [
+        { slug: 'ai-cash-flow-waterfall-explained', title: 'How AI Found That $1M in Profit Left Zero Cash in the Bank' },
+        { slug: 'radiology-accounts-receivable-line-of-credit', title: 'Radiology Accounts Receivable: How Banks Misread Your Aging Report' },
+        { slug: 'dso-lying-medical-practice-cash-flow', title: 'Your DSO Is Lying to You — Why Averages Hide Your Real Cash Flow Problem' },
+        { slug: 'medical-billing-fees-vs-collections-dso', title: 'Your Billing Company Costs 6%. Slow Collections Cost 10x That.' },
+      ],
+    },
+    {
+      title: 'Payer Mix & PIP Risk',
+      posts: [
+        { slug: 'radiology-collections-dashboard-case-study', title: 'Real-Time Collections Intelligence for Multi-Center Radiology' },
+        { slug: 'toxic-payers-losing-money-medical-practice', title: '7 Payers, 41 Procedures, $80,593 Lost' },
+        { slug: 'expensive-2-minute-decision-medical-practice', title: 'The Most Expensive 2-Minute Decision in Your Medical Practice' },
+      ],
+    },
+    {
+      title: 'Per-Claim Profitability',
+      posts: [
+        { slug: 'high-cost-procedure-economics-medical-practice', title: '$2,940 Out the Door Before You Know If You\'ll Get Paid' },
+        { slug: 'cash-flow-breakeven-per-patient-activity-units', title: 'Your Practice Is Profitable — So Why Do You Need 922 Patients?' },
+        { slug: 'fixed-cost-breakeven-volume-problem', title: 'Your Practice Doesn\'t Have a Profit Problem — It Has a Volume Problem' },
+      ],
+    },
+    {
+      title: 'Multi-Center Operations & COO',
+      posts: [
+        { slug: '6-financial-blockers-killing-healthcare-practices', title: 'The 6 Financial Blockers Killing Healthcare Practices' },
+        { slug: 'radiology-collections-dashboard-case-study', title: 'Multi-Center Radiology Collections Intelligence' },
+        { slug: 'real-time-financial-dashboards-healthcare-practices', title: '10 KPIs Every Healthcare Practice Should Track in Real Time' },
+        { slug: 'assembly-line-thinking-medical-practice-profitability', title: 'The Factory That Didn\'t Know It Was Losing Money' },
+      ],
+    },
+    {
+      title: 'Radiology Tax & R&D',
+      posts: [
+        { slug: 'rd-tax-credits-healthcare', title: 'R&D Tax Credits: Hidden Money for Healthcare Practices' },
+        { slug: 's-corp-reasonable-compensation-healthcare-service-businesses-broward-county', title: 'S-Corp Reasonable Compensation for Healthcare Service Businesses' },
+        { slug: '2026-tax-law-changes-broward-county-healthcare-service-businesses', title: '2026 Tax Law Changes for Healthcare Practice Owners' },
+        { slug: 'missed-tax-deductions-healthcare-service-businesses-broward-county', title: '7 Tax Deductions Your Practice Is Probably Missing' },
+      ],
+    },
+  ];
+
+  const faqs = [
+    {
+      q: 'Who is the Strategic Radiology Review for?',
+      a: 'Imaging center operators, CFOs, and medical directors running one or more centers with $2M+ revenue who suspect their accountant and billing company cannot answer per-payer, per-tracer, or per-claim profitability questions. Typical profile: growing but cash-constrained, unclear on PET Tracer Scan economics, preparing for a lender conversation, or renegotiating payer contracts.',
+    },
+    {
+      q: 'What are PET Tracer Scans, and why do you separate them?',
+      a: 'PET Tracer Scans refers to high-reimbursement specialty tracers with radiopharmaceutical input costs of $2,000–$3,000 per dose and payer reimbursement that varies as much as 9x depending on payer mix. Their economics are structurally different from general radiology (MRI, CT, ultrasound, X-ray, standard PET). Blending them into one "imaging" line hides the single largest profit-and-loss driver in a modern center — which is exactly what most accounting systems do. Our Two Business Unit Framework breaks them apart.',
+    },
+    {
+      q: 'Do you replace our accountant or biller?',
+      a: 'No. We sit above both. Your accountant keeps the books. Your biller processes claims. We build the intelligence layer that makes sense of both data sources together — per-payer, per-tracer, per-facility, per-claim. Most engagements run alongside existing accounting and billing relationships.',
+    },
+    {
+      q: 'What does the Strategic Radiology Review deliver?',
+      a: 'A banker-grade Intelligence PDF covering Two Business Unit decomposition, PET Tracer economics with toxic-combination detection, per-claim profitability stack, DSO by payer, payer mix risk analysis, and a prioritized action plan with quantified dollar impact. Turnaround is two weeks from data access. A 90-minute executive readout is included.',
+    },
+    {
+      q: 'What is the investment for ongoing CFO work?',
+      a: 'It depends on center count, complexity, and scope. We propose specific scope and pricing on the Strategic Review readout — after we have seen your data, not before. This avoids the common trap of buying generic "CFO services" priced by hour or headcount rather than by the problems actually worth solving.',
+    },
+    {
+      q: 'Can you help us prepare for a lender or line-of-credit conversation?',
+      a: 'Yes. We have built triple-reconciliation methodologies that align operational billing data, the accounting system, and bank-grade aged receivables — typically within 0.5% variance. This is the difference between a lender funding a seven-figure facility and a lender asking for another quarter of data.',
+    },
+  ];
+
+  return (
+    <div>
+      <Helmet>
+        <title>Radiology CFO Intelligence | PET Tracer Economics, Collections & Multi-Center Operations | Benefique</title>
+        <meta name="description" content="Strategic financial intelligence for multi-center radiology groups. PET Tracer economics, per-payer DSO, payer mix risk, per-claim profitability, COO scorecards. Start with a Strategic Radiology Review." />
+        <link rel="canonical" href="https://www.benefique.com/services/radiology" />
+      </Helmet>
+
+      {/* Hero */}
+      <section className="bg-white py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
+            <span>🔬</span> For Radiology &amp; Imaging Groups
+          </div>
+
+          <h1 className="text-4xl md:text-5xl font-bold text-benefique-navy leading-tight mb-6">
+            Radiology CFO Intelligence
+          </h1>
+
+          <div className="bg-gray-50 border-l-4 border-benefique-orange p-6 rounded-r-xl mb-8 max-w-3xl">
+            <p className="text-lg text-gray-700 leading-relaxed">
+              We separate your <strong>PET Tracer Unit</strong> from your <strong>Radiology Unit</strong>, expose toxic payer and tracer combinations, model per-payer DSO, and give your lender numbers they can trust. The intelligence your accountant and biller will not build for you.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap gap-4 mb-6">
+            <Link
+              to="/services/radiology/intake?ref=review"
+              className="bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition inline-flex items-center gap-2"
+            >
+              Book a Strategic Radiology Review <span>→</span>
+            </Link>
+            <a
+              href="#intelligence-library"
+              className="border-2 border-benefique-navy text-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-benefique-navy hover:text-white transition"
+            >
+              Browse the Intelligence Library
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Proof Strip */}
+      <section className="py-12 bg-benefique-navy text-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <div>
+              <div className="text-3xl font-bold text-benefique-orange mb-2">+$290K</div>
+              <div className="text-sm text-blue-100">Q1 NOI swing at a 4-center SE Florida imaging group</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-benefique-orange mb-2">$597K</div>
+              <div className="text-sm text-blue-100">Collection momentum unlocked in 90 days at a regional operator</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-benefique-orange mb-2">$154K/yr</div>
+              <div className="text-sm text-blue-100">Preventable PET Tracer Scan losses quantified at a single center</div>
+            </div>
+          </div>
+          <p className="text-xs text-blue-200 text-center mt-6">
+            Anonymized from active Benefique engagements. Specific client context available under NDA on the Review readout.
+          </p>
+        </div>
+      </section>
+
+      {/* What We Do */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-benefique-navy text-center mb-4">What We Do for Radiology Groups</h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+            Six named capabilities delivered inside every engagement. Each one solves a problem generic accounting and billing reports cannot.
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((s) => (
+              <div key={s.title} className="bg-gray-50 rounded-xl p-6 border border-gray-100 flex flex-col">
+                <div className="text-3xl mb-3">{s.icon}</div>
+                <h3 className="text-lg font-bold text-benefique-navy mb-2">{s.title}</h3>
+                <p className="text-gray-600 text-sm flex-1 mb-4">{s.desc}</p>
+                <Link to={s.link} className="text-benefique-orange text-sm font-semibold hover:underline">
+                  Read: {s.linkLabel} →
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* How We Engage */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-benefique-navy text-center mb-4">How We Engage</h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+            One fixed-fee entry point. Everything else is scoped on the readout — because pricing ongoing CFO work before seeing your data is how radiology operators get commoditized.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white rounded-2xl p-8 border-2 border-benefique-orange">
+              <div className="text-xs uppercase tracking-wider text-benefique-orange font-semibold mb-2">Start Here</div>
+              <h3 className="text-2xl font-bold text-benefique-navy mb-2">Strategic Radiology Review</h3>
+              <div className="text-3xl font-bold text-benefique-navy mb-1">$12,500</div>
+              <div className="text-sm text-gray-500 mb-6">Fixed fee &middot; 2-week turnaround</div>
+              <p className="text-gray-700 mb-4">
+                A board-grade diagnostic the CEO can hand to partners, lenders, or the investment committee.
+              </p>
+              <ul className="space-y-2 mb-6">
+                {[
+                  'Two Business Unit P&L decomposition',
+                  'PET Tracer Scan toxic-combination analysis',
+                  'Per-Claim profitability stack ($/Claim → GP$ → NOI)',
+                  'DSO by payer and aging decomposition',
+                  'Payer mix risk and PIP compression modeling',
+                  'Banker-grade Intelligence PDF',
+                  '90-minute executive readout',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-gray-700 text-sm">
+                    <span className="text-benefique-orange mt-0.5">✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <Link
+                to="/services/radiology/intake?ref=review"
+                className="block text-center bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
+              >
+                Book the Review →
+              </Link>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 border border-gray-200">
+              <div className="text-xs uppercase tracking-wider text-gray-500 font-semibold mb-2">Ongoing</div>
+              <h3 className="text-2xl font-bold text-benefique-navy mb-2">Radiology CFO Engagement</h3>
+              <div className="text-3xl font-bold text-benefique-navy mb-1">Bespoke</div>
+              <div className="text-sm text-gray-500 mb-6">Scope &amp; investment proposed on Review readout</div>
+              <p className="text-gray-700 mb-4">
+                Monthly financial intelligence for multi-center groups serious about knowing which center, which payer, and which tracer is making — or costing — money.
+              </p>
+              <ul className="space-y-2 mb-6">
+                {[
+                  'Monthly branded CFO report (Two Business Unit framework)',
+                  'Quarterly COO scorecard with gated bonus design',
+                  'Collections optimization reviews',
+                  'Per-payer and per-tracer profitability tracking',
+                  'Lender-readiness & triple reconciliation methodology',
+                  'R&D tax credit screening',
+                  'Direct access to Benefique leadership',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-gray-700 text-sm">
+                    <span className="text-benefique-orange mt-0.5">✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <Link
+                to="/services/radiology/intake?ref=cfo"
+                className="block text-center border-2 border-benefique-navy text-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-benefique-navy hover:text-white transition"
+              >
+                Start with a Review →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Intelligence Library */}
+      <section id="intelligence-library" className="py-16 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-benefique-navy text-center mb-4">Intelligence Library</h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+            Every service above comes with published research. Start anywhere — these are the frameworks we use inside engagements.
+          </p>
+
+          <div className="space-y-4">
+            {clusters.map((cluster) => (
+              <details key={cluster.title} className="bg-gray-50 rounded-xl border border-gray-200 group">
+                <summary className="px-6 py-4 cursor-pointer font-semibold text-benefique-navy hover:text-benefique-orange transition list-none flex justify-between items-center">
+                  {cluster.title}
+                  <span className="text-gray-400 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <div className="px-6 pb-4 border-t border-gray-200">
+                  <ul className="divide-y divide-gray-200">
+                    {cluster.posts.map((p) => (
+                      <li key={p.slug}>
+                        <Link to={`/blog/${p.slug}`} className="block py-3 text-gray-700 hover:text-benefique-orange text-sm">
+                          → {p.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-benefique-navy text-center mb-12">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            {faqs.map((faq, i) => (
+              <details key={i} className="bg-white rounded-xl border border-gray-200 group">
+                <summary className="px-6 py-4 cursor-pointer font-semibold text-benefique-navy hover:text-benefique-orange transition list-none flex justify-between items-center">
+                  {faq.q}
+                  <span className="text-gray-400 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <div className="px-6 pb-4 text-gray-600">{faq.a}</div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-16 bg-benefique-navy text-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4">See Your Centers the Way Your Lender Wants To</h2>
+          <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
+            Two weeks from data access to a board-grade Intelligence PDF. Fixed fee. The readout defines what ongoing CFO work, if any, is worth the investment.
+          </p>
+          <Link
+            to="/services/radiology/intake?ref=review"
+            className="inline-block bg-benefique-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
+          >
+            Book a Strategic Radiology Review
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+// ============================================================
+// RADIOLOGY INTAKE FORM
+// ============================================================
+function RadiologyIntake() {
+  const [params] = [new URLSearchParams(typeof window !== 'undefined' ? window.location.search : '')];
+  const ref = params.get('ref') || 'direct';
+  const isReview = ref === 'review';
+
+  return (
+    <div>
+      <Helmet>
+        <title>Radiology CFO Intake | Benefique</title>
+        <meta name="description" content="Request a Strategic Radiology Review or discuss ongoing CFO engagement. Multi-center imaging operators only. 24-hour response." />
+        <meta name="robots" content="noindex" />
+        <link rel="canonical" href="https://www.benefique.com/services/radiology/intake" />
+      </Helmet>
+
+      <section className="bg-white py-16">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
+            <span>🔬</span> Radiology CFO Intake
+          </div>
+          <h1 className="text-4xl font-bold text-benefique-navy mb-4">
+            {isReview ? 'Book a Strategic Radiology Review' : 'Talk to Us About Radiology CFO Work'}
+          </h1>
+          <p className="text-lg text-gray-600 max-w-2xl">
+            {isReview
+              ? 'Fixed fee, 2-week turnaround, banker-grade Intelligence PDF. Tell us a little about your operation so we can confirm fit before the kickoff call.'
+              : 'Ongoing CFO scope is proposed after a Strategic Review. Tell us about your operation and we will route this to the right starting point.'}
+          </p>
+        </div>
+      </section>
+
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-3xl mx-auto px-4">
+          <div className="bg-white rounded-2xl p-8 border border-gray-100">
+            <form action="https://formspree.io/f/mzdjjprp" method="POST" className="space-y-5">
+              <input type="hidden" name="_subject" value="New Radiology CFO Intake" />
+              <input type="hidden" name="source" value={`radiology-intake-${ref}`} />
+              <input type="text" name="_gotcha" style={{ display: 'none' }} />
+
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                  <input type="text" name="name" required className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Role</label>
+                  <select name="role" required className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent text-gray-700">
+                    <option value="">Select...</option>
+                    <option>CEO / Owner</option>
+                    <option>CFO</option>
+                    <option>COO / Operations</option>
+                    <option>Medical Director</option>
+                    <option>Radiologist / Partner</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                  <input type="email" name="email" required className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                  <input type="tel" name="phone" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Group / Practice Name</label>
+                <input type="text" name="business" required className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Number of Centers</label>
+                  <select name="centers" required className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent text-gray-700">
+                    <option value="">Select...</option>
+                    <option>1</option>
+                    <option>2–3</option>
+                    <option>4–6</option>
+                    <option>7+</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Annual Revenue</label>
+                  <select name="revenue" required className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent text-gray-700">
+                    <option value="">Select...</option>
+                    <option>Under $2M</option>
+                    <option>$2M–$5M</option>
+                    <option>$5M–$10M</option>
+                    <option>$10M–$25M</option>
+                    <option>$25M+</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Modalities (select all that apply)</label>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-2 text-sm text-gray-700">
+                  {['X-Ray', 'Ultrasound', 'CT', 'MRI', 'Mammography', 'Standard PET (FDG)', 'PET Tracer Scans', 'Interventional', 'Research'].map((m) => (
+                    <label key={m} className="flex items-center gap-2">
+                      <input type="checkbox" name="modalities" value={m} className="rounded border-gray-300" />
+                      <span>{m}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Do You Run High-Reimbursement PET Tracer Scans?</label>
+                <select name="pet_tracer" required className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent text-gray-700">
+                  <option value="">Select...</option>
+                  <option>Yes — actively scanning</option>
+                  <option>Yes — but volume is low</option>
+                  <option>No — but exploring</option>
+                  <option>No</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Billing Company (if outsourced)</label>
+                <input type="text" name="billing_company" placeholder="Optional — e.g., in-house, Forena, other" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Top Priority</label>
+                <select name="priority" required className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent text-gray-700">
+                  <option value="">Select...</option>
+                  <option>Cash flow visibility</option>
+                  <option>Payer mix / PIP compression</option>
+                  <option>PET Tracer profitability</option>
+                  <option>Collections &amp; DSO</option>
+                  <option>COO scorecard / performance accountability</option>
+                  <option>Lender / line-of-credit readiness</option>
+                  <option>Multi-center consolidation</option>
+                  <option>Tax planning &amp; R&amp;D credits</option>
+                  <option>M&amp;A / transaction support</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Timing</label>
+                <select name="timing" required className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent text-gray-700">
+                  <option value="">Select...</option>
+                  <option>Urgent — within 30 days</option>
+                  <option>Next quarter</option>
+                  <option>Exploring — no fixed timeline</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Brief Context</label>
+                <textarea name="context" rows={4} placeholder="What is driving this conversation? What have you tried already?" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
+              </div>
+
+              <button type="submit" className="w-full bg-benefique-orange text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition">
+                {isReview ? 'Request Strategic Review' : 'Submit Intake'}
+              </button>
+
+              <p className="text-xs text-gray-500 text-center">
+                Reviewed personally by Benefique leadership. Response within 24 hours. NDA available on request.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+// ============================================================
 // LOCATION DATA
 // ============================================================
 const locations = {
@@ -3217,6 +3788,8 @@ export default function App() {
             {/* Service Pages */}
             <Route path="/services/real-time-accounting" element={<RealTimeAccountingPage />} />
             <Route path="/services/fractional-cfo" element={<Services />} />
+            <Route path="/services/radiology" element={<RadiologyLandingPage />} />
+            <Route path="/services/radiology/intake" element={<RadiologyIntake />} />
             <Route path="/tools/concierge-simulator" element={<ConciergeSimulator />} />
             <Route path="/tools/business-simulator" element={<BusinessSimulator />} />
           </Routes>
