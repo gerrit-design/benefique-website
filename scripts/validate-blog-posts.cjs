@@ -114,9 +114,62 @@ function checkRedirectConflicts() {
   return true;
 }
 
+/**
+ * Check for orphan markdown files — .md files in content/blogs/ or public/content/blogs/
+ * that are NOT registered in BlogPost.jsx. These get picked up by generate-sitemap.js
+ * and submitted to Google, but redirect or don't render correctly, triggering GSC
+ * "Page with redirect" coverage issues.
+ *
+ * Temporary allowlist holds posts pending a re-register-or-delete decision.
+ */
+const ORPHAN_ALLOWLIST = new Set([
+  // TODO: decide to re-register in BlogPost.jsx or delete. Live URLs return 200 OK
+  // but the posts aren't registered, causing sitemap pollution.
+  'dental-group-scaling-accounting',
+  'radiology-practice-real-time-visibility',
+]);
+
+function checkOrphanFiles() {
+  const posts = extractBlogPostsFromRegistry();
+  const registered = new Set(Object.keys(posts));
+  const dirs = [
+    path.join(__dirname, '../content/blogs'),
+    path.join(__dirname, '../public/content/blogs'),
+  ];
+  const orphans = [];
+
+  for (const dir of dirs) {
+    if (!fs.existsSync(dir)) continue;
+    const files = fs.readdirSync(dir).filter(f => f.endsWith('.md'));
+    for (const file of files) {
+      const slug = file.replace(/\.md$/, '');
+      if (!registered.has(slug) && !ORPHAN_ALLOWLIST.has(slug)) {
+        orphans.push({ slug, path: path.join(dir, file) });
+      }
+    }
+  }
+
+  if (orphans.length > 0) {
+    console.log('\n⚠️  ORPHAN MARKDOWN FILES DETECTED\n');
+    console.log('These .md files exist but are NOT registered in BlogPost.jsx.');
+    console.log('They will be added to sitemap.xml and submitted to Google, but redirect');
+    console.log('or fail to render, causing "Page with redirect" GSC coverage issues.\n');
+    orphans.forEach(({ slug, path: p }) => {
+      console.log(`  ❌ ${p}`);
+    });
+    console.log('\nFix: delete the orphan .md files, or add them to BlogPost.jsx, or');
+    console.log('add them to ORPHAN_ALLOWLIST in this script (pending-decision only).\n');
+    return false;
+  }
+
+  console.log(`✅ No orphan .md files (checked ${dirs.length} content dirs)`);
+  return true;
+}
+
 const postsValid = validatePosts();
 const redirectsClean = checkRedirectConflicts();
+const orphansClean = checkOrphanFiles();
 
-if (!postsValid || !redirectsClean) {
+if (!postsValid || !redirectsClean || !orphansClean) {
   process.exit(1);
 }
