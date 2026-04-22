@@ -6,6 +6,58 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  'cash-machine-vs-exit-machine': {
+    file: '/content/blogs/cash-machine-vs-exit-machine.md',
+    title: 'Cash Machine or Exit Machine: The Owner\'s Decision',
+    date: '2026-05-06',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Every owner-operator eventually faces the same fork: optimize the business to pay me forever, or position it to sell. Most never make the decision explicitly. They drift. The drift costs them millions — and the framework for deciding is simpler than the M&A industry wants you to believe.',
+    categories: ['Business Strategy', 'Cash Flow'],
+    readTime: '9 min read',
+    featuredImage: '/images/blog/cash-machine-vs-exit-machine.jpg',
+    faqs: [
+      { q: 'Is this just about preparing to sell?', a: 'No. The framework is equally useful for owners committed to never selling. A well-run Cash Machine is a specific thing — and it is not the same thing as an accidentally-run business with unclear goals. The discipline of deciding makes either path better; the lack of decision makes both paths worse.' },
+      { q: 'How often should I revisit the decision?', a: 'Annually at minimum, and immediately whenever a major life event intrudes — partner change, health event, market shift, unsolicited offer. The decision is not permanent. But it should be explicit.' },
+      { q: 'What if my partner and I disagree on the path?', a: 'You do not yet have a goal; you have a pending negotiation. The framework still applies. The first operational task is to make the partners\' preferences explicit, negotiate a shared outcome (which might involve a buyout agreement, a timeline, or a defined branching point), and only then select the strategic path. Most partner conflicts about operating decisions are actually latent disagreements about the underlying goal.' },
+      { q: 'Does this apply to businesses under $1M in revenue?', a: 'The framework applies. The numbers compress — the multiple premium for recurring revenue is smaller, the enterprise value ranges are lower, the leverage from leadership hires is less — but the 80/20 overlap/divergence pattern holds. Smaller businesses often need the framework more, because drift is harder to detect at smaller scale.' },
+      { q: 'How long does the Exit Machine path actually take?', a: 'Plan on 36–48 months of disciplined execution from decision to closing. Shorter timelines are possible for businesses already well-run — but they are exceptions. Most businesses need the full 36–48 months to build the recurring revenue, leadership, and clean-books elements that move the multiple from 3x to 4.5x+.' },
+      { q: 'Can I switch paths mid-stream?', a: 'You can switch from Cash Machine to Exit Machine with 24–36 months of lead time. The reverse switch (from Exit Machine back to Cash Machine) happens frequently and has almost zero cost — you simply stop the reinvestment push and start distributing the retained earnings. The costly direction is no-decision, not wrong-decision.' }
+    ]
+  },
+  'distribution-ratio-business-loan': {
+    file: '/content/blogs/distribution-ratio-business-loan.md',
+    title: 'Why Your Business Loan Was Denied (And The 60 Percent Rule)',
+    date: '2026-04-29',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Most owner-operators think of partner draws as a number. Your banker thinks of them as a ratio. The 60% threshold is the difference between a lendable business and a declined application — regardless of how profitable your books look.',
+    categories: ['Cash Flow', 'Business Strategy'],
+    readTime: '5 min read',
+    featuredImage: '/images/blog/distribution-ratio-business-loan.jpg',
+    faqs: [
+      { q: 'What counts as a partner draw?', a: 'Any money taken from the business that is not a W-2 salary or a vendor payment. Guaranteed payments to partners, member draws, distributions, and K-1 flow-through withdrawals all count. The rule of thumb: if it shows up in the equity section of your balance sheet instead of as an operating expense on your P&L, it is a draw.' },
+      { q: 'What if I\'m an S-Corp, not an LLC?', a: 'The equivalent number is owner distributions over-and-above reasonable W-2 salary. Banks apply the same 60% test. A $100K salary plus $150K of distributions against $200K of net income puts you at 75% on the test.' },
+      { q: 'Can I fix this by reclassifying past draws as loans?', a: 'No. Banks see through it immediately. Reclassifying a draw as a shareholder loan requires interest, a promissory note, and a realistic repayment schedule. Without those, it is still treated as a draw for purposes of the ratio — and now you have a data-quality red flag too.' },
+      { q: 'How long does the discipline need to last before I can apply?', a: 'Four consecutive clean quarters is the typical lender requirement. Some community banks with a strong deposit relationship will accept less. SBA 7(a) loans often require the same four-quarter window but look more favorably on demonstrated trajectory (a ratio moving from 90% to 65% to 55% is more compelling than a flat 59%).' },
+      { q: 'Does this apply if my business is growing fast?', a: 'Growth makes it worse, not better. Fast-growing businesses consume more working capital and need to retain more earnings to fund inventory and receivables. A 60% ratio in a flat business is tight. A 60% ratio in a 40%-YoY-growth business is dangerously tight and may trigger further scrutiny.' }
+    ]
+  },
+  'profitable-but-losing-cash': {
+    file: '/content/blogs/profitable-but-losing-cash.md',
+    title: 'Why Your Business Is Profitable And Still Losing Cash',
+    date: '2026-04-22',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A marine services group in South Florida grew revenue 24% last year, showed $219,000 of net income on the books, and still lost $56,898 of cash. The math only works when you combine the entities. Here is the single metric that reveals the truth — and why your P&L will never show it to you.',
+    categories: ['Cash Flow', 'Business Strategy'],
+    readTime: '6 min read',
+    featuredImage: '/images/blog/profitable-but-losing-cash.jpg',
+    faqs: [
+      { q: 'What is Cash Retained Per Working Day?', a: 'It is a single number that tells you whether your business is building cash or draining it after you pay yourself. Combined net income minus combined partner draws plus combined partner contributions, divided by 261 working days. Negative means you are funding the business with its own balance sheet; positive means the business is self-funding your draws and still growing its cushion.' },
+      { q: 'Why doesn\'t my monthly P&L show this?', a: 'Partner draws and contributions are balance sheet items, not income statement items. Drawing $300K in a year you earned $100K does not change your P&L at all. Only the cash flow statement and the equity rollforward capture it — and most owner-operators never look at those monthly.' },
+      { q: 'Is this just a multi-entity problem?', a: 'No, but multi-entity groups are where it hides best. Single-entity businesses usually feel the cash drain in the bank balance within a quarter. Multi-entity groups can run the drain for 12–18 months before the cushion is exhausted, because one entity\'s stability masks the other\'s extraction.' },
+      { q: 'How often should I calculate this?', a: 'Quarterly at minimum, monthly if you are actively managing through a cash-tight period. The value of the metric is that it is slow-moving and stable — a sudden swing means something real changed and deserves attention.' },
+      { q: 'My accountant did not raise this. Should I be concerned?', a: 'Most compliance accountants are scoped to produce the monthly P&L and the tax return. Combined group cash analysis is CFO work, which is a separate engagement. This is the gap between compliance and advisory — the intelligence owners need but rarely receive. Your accountant has the data. The question is whether anyone is mining it.' }
+    ]
+  },
   'medical-billing-fees-vs-collections-dso': {
     file: '/content/blogs/medical-billing-fees-vs-collections-dso.md',
     title: 'Your Billing Company Costs 6%. Slow Collections Cost 10x That.',
