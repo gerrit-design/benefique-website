@@ -106,7 +106,7 @@ This is why the strategic decision must come before the operational calendar.
 
 ## Why Drift Costs Millions: The Scenario Math
 
-Here is what a 36-month execution difference looks like on a real-world starting point. Imagine two owner-operators of similar marine services groups, each starting April 2026 with:
+Here is what a 36-month execution difference looks like on a real-world starting point. Imagine two owner-operators of similar two-entity specialty services groups, each starting April 2026 with:
 
 - Combined TTM revenue: $6.7M
 - Combined TTM EBITDA: ~$340K
@@ -166,7 +166,7 @@ The moment the decision is made — and made jointly with any partners — a ser
 
 This is what happens when accounting stops looking backward and starts looking forward. Most firms deliver financials. The firms that also deliver the strategic frame — the lens for interpreting what the financials mean for the owner's actual goal — are rare, and worth seeking out. See [how accounting becomes an ROI center](/about).
 
-We watched one family-owned marine services group go through this exercise over the course of a weekend. The two partners went in disagreeing about whether to expand. They came out aligned on an Exit Machine path with a specific 36-month runway, a distribution cap, two leadership hires planned for year one, and a PMA rollout designed. None of the advice was new to them — their accountant had been mentioning these items for years. What was new was the frame that told them which of the advice to take and which to defer. That started the Monday morning after they answered the five questions together, for the first time, with numbers in front of them.
+We watched one family-owned specialty services group go through this exercise over the course of a weekend. The two partners went in disagreeing about whether to expand. They came out aligned on an Exit Machine path with a specific 36-month runway, a distribution cap, two leadership hires planned for year one, and a PMA rollout designed. None of the advice was new to them — their accountant had been mentioning these items for years. What was new was the frame that told them which of the advice to take and which to defer. That started the Monday morning after they answered the five questions together, for the first time, with numbers in front of them.
 
 The tactical pieces of this strategy — how to measure whether your cash is actually working (see [Why Your Business Is Profitable And Still Losing Cash](/blog/profitable-but-losing-cash)) and how to pass the banker's Distribution Ratio test that makes either path viable (see [Why Your Business Loan Was Denied](/blog/distribution-ratio-business-loan)) — are the implementation layer. The underlying analytical framework that separates the operator, banker, and buyer lenses lives at [Three Views, One Business](/blog/three-views-one-business). But the strategic decision described in this article sits above all of them. Everything else is execution against whichever goal you have chosen.
 

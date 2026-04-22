@@ -3,7 +3,7 @@ title: "Why Your Business Is Profitable And Still Losing Cash"
 description: "A multi-entity business showed $219K of profit and still lost $56,898 of cash. The combined-group metric that reveals it in one number."
 date: "2026-04-22"
 author: "Gerrit Disbergen, EA"
-excerpt: "A marine services group in South Florida grew revenue 24% last year, showed $219,000 of net income on the books, and still lost $56,898 of cash. The math only works when you combine the entities. Here is the single metric that reveals the truth — and why your P&L will never show it to you."
+excerpt: "A two-entity specialty services group in South Florida grew revenue 24% last year, showed $219,000 of net income on the books, and still lost $56,898 of cash. The math only works when you combine the entities. Here is the single metric that reveals the truth — and why your P&L will never show it to you."
 categories: "Cash Flow"
 readTime: "6 min read"
 featuredImage: "/images/blog/profitable-but-losing-cash.jpg"
@@ -13,7 +13,7 @@ metaDescription: "Your P&L says you are profitable. Your bank balance is shrinki
 keywords: "profitable but losing cash, multi-entity cash flow, why is my business losing money if I'm profitable, net income vs cash flow, combined group cash, partner draws ratio, cash flow analysis small business"
 ---
 
-**Quick answer:** A multi-entity marine services group in South Florida grew revenue 24% year-over-year, showed $219,000 of net income on its combined books, and still lost $56,898 of cash over the same twelve months. The entity-level P&Ls looked fine — one showed $66K of profit, the other $153K. Only when the partners' draws at one entity and contributions at the other were netted across the group did the real number surface: the business was retaining negative $218 of cash per working day. This article explains how that happens, how to calculate your own version of the number, and what to do when it is negative.
+**Quick answer:** A two-entity specialty services group in South Florida grew revenue 24% year-over-year, showed $219,000 of net income on its combined books, and still lost $56,898 of cash over the same twelve months. The entity-level P&Ls looked fine — one showed $66K of profit, the other $153K. Only when the partners' draws at one entity and contributions at the other were netted across the group did the real number surface: the business was retaining negative $218 of cash per working day. This article explains how that happens, how to calculate your own version of the number, and what to do when it is negative.
 
 > **Key Takeaway:** When you run two or more entities, your monthly P&L will tell you each entity is profitable while the group bleeds cash. The reason is not fraud. It is not a bookkeeping error. It is the combination of draws taken at one entity, contributions made at another, and intergroup transfers that nobody is watching in combined form. Cash Retained Per Working Day — calculated at the group level — is the single metric that catches it.
 
@@ -21,7 +21,7 @@ keywords: "profitable but losing cash, multi-entity cash flow, why is my busines
 
 ## The Paradox: $219K of Profit, $56K of Cash Gone
 
-Two partners, two Florida-based LLCs, one business. The distribution arm moved $3.12M of parts. The service arm billed $3.55M of HVAC work on yachts and commercial marine vessels. Both entities filed K-1s showing partnership income. Both accountants — and there were two separate monthly closes — delivered profitable-looking statements.
+Two partners, two Florida-based LLCs, one business. The Distribution Entity moved $3.12M of specialty parts and inventory. The Services Entity billed $3.55M of specialty service work on private and commercial vessels. Both entities filed K-1s showing partnership income. Both accountants — and there were two separate monthly closes — delivered profitable-looking statements.
 
 Combined net income for the trailing twelve months: **$219,000**.
 
@@ -29,7 +29,7 @@ Combined cash change over the same twelve months: **down $56,898**.
 
 The partners did not understand it. The P&Ls said they made money. The bank account said otherwise.
 
-When we layered the two entities into a single group view, the picture resolved instantly. Air Services had a TTM net income of $66,000 — and partner drawings of $355,407. Distribution had a TTM net income of $153,000 — and partner contributions of positive $79,000 (the partners had put money in during the year, not taken it out). Net cash movement from the partners across the group: negative $276,000. That overwhelmed the $219,000 the business actually earned, and the bank balance paid the difference.
+When we layered the two entities into a single group view, the picture resolved instantly. The Services Entity had a TTM net income of $66,000 — and partner drawings of $355,407. The Distribution Entity had a TTM net income of $153,000 — and partner contributions of positive $79,000 (the partners had put money in during the year, not taken it out). Net cash movement from the partners across the group: negative $276,000. That overwhelmed the $219,000 the business actually earned, and the bank balance paid the difference.
 
 **The business was profitable. The partners were extracting more than the business could support. Neither monthly P&L showed it. Only the combined view did.**
 
@@ -47,11 +47,11 @@ Partner distributions do not reduce net income. Partner contributions do not inc
 
 ### 2. Intergroup transfers inflate each entity's revenue
 
-When Distribution sells parts to Air Services at cost plus 10%, Distribution books revenue and Air Services books a matching cost. Consolidated, it washes. Standalone, each entity looks busier than it is. A combined view is the only place where "real external revenue" becomes visible — and real external revenue is what actually generates new cash.
+When the Distribution Entity sells parts to the Services Entity at cost plus 10%, the Distribution Entity books revenue and the Services Entity books a matching cost. Consolidated, it washes. Standalone, each entity looks busier than it is. A combined view is the only place where "real external revenue" becomes visible — and real external revenue is what actually generates new cash.
 
 ### 3. Cash timing differs by entity
 
-One entity collects in 24 days (service work, yacht customers). Another collects in 22 days on trade but sits on 91 days of inventory (parts distribution). One entity's peak payroll week is another's slow vendor week. Entity-level cash statements look manageable; the group's combined cash position can be much tighter than either cushion suggests.
+One entity collects in 24 days (service work, vessel customers). Another collects in 22 days on trade but sits on 91 days of inventory (specialty parts distribution). One entity's peak payroll week is another's slow vendor week. Entity-level cash statements look manageable; the group's combined cash position can be much tighter than either cushion suggests.
 
 ---
 
@@ -69,13 +69,13 @@ The 261-day denominator comes from the standard U.S. working-day count — 365 d
 
 A positive number means the business is building cash even after you pay yourself. A negative number means you are funding the business with its own balance sheet — draining cash cushion week after week while the P&L tells a different story.
 
-For the marine services group, the math was:
+For the specialty services group, the math was:
 
 | Line | Amount |
 |---|---|
 | Combined TTM Net Income | +$219,000 |
-| Combined Partner Draws (Air Services) | −$355,407 |
-| Combined Partner Contributions (Distribution) | +$79,000 |
+| Combined Partner Draws (Services Entity) | −$355,407 |
+| Combined Partner Contributions (Distribution Entity) | +$79,000 |
 | **Net Cash Retained (TTM)** | **−$57,407** |
 | Divided by 261 working days | |
 | **Cash Retained Per Working Day** | **−$220** |
@@ -90,8 +90,8 @@ Here is what the partners saw every month (entity view) next to the number nobod
 
 | View | Net Income | Partner Activity | Implied Cash Trend |
 |---|---|---|---|
-| Air Services (entity view) | +$66K | Draws $(355K) | Cash draining — but treated as "partners taking normal profit" |
-| Distribution (entity view) | +$153K | Contributions +$79K | Cash stable — partners adding money |
+| Services Entity (entity view) | +$66K | Draws $(355K) | Cash draining — but treated as "partners taking normal profit" |
+| Distribution Entity (entity view) | +$153K | Contributions +$79K | Cash stable — partners adding money |
 | **Combined Group View** | **+$219K** | **Net −$276K** | **Losing $57K/year. Running on balance sheet.** |
 
 The entity view is not wrong. It is just incomplete. A banker looking at the combined group calculates this number in 30 seconds and immediately flags the business as non-bankable until draw discipline is demonstrated — this pattern is consistent with the cash-flow and owner-compensation findings reported annually in the [Federal Reserve Small Business Credit Survey](https://www.fedsmallbusiness.org/survey/2024/report-on-employer-firms). A buyer running quality-of-earnings finds it in the first hour and attaches a discount to the multiple. The partners were the last people in the room to see it.
@@ -102,7 +102,7 @@ The entity view is not wrong. It is just incomplete. A banker looking at the com
 
 When we find a negative Cash-Retained-Per-Working-Day number in a multi-entity group, the cause is almost always one of three things:
 
-1. **Asymmetric draws across entities.** One entity's partner is taking large draws; the other entity is being "kept thin" to fund vendor or growth needs. On a combined basis the group is over-extracting. This was the pattern in the marine case.
+1. **Asymmetric draws across entities.** One entity's partner is taking large draws; the other entity is being "kept thin" to fund vendor or growth needs. On a combined basis the group is over-extracting. This was the pattern in the specialty-services case above.
 
 2. **Phantom growth from intergroup revenue.** Top-line growth is celebrated, partners take bigger draws on the basis of "the business is doing better," but the growth is intergroup (one entity selling to another). Real external revenue may be flat or declining. Cash never materializes to back the draws.
 
@@ -112,13 +112,23 @@ The first two are draw discipline problems. The third is a working-capital probl
 
 ---
 
+## Why This Makes a Case for Strong Entity-Specific Accounting
+
+The entire analysis above — the divergence between each entity's view and the combined group view, the surfacing of the daily cash drain, the ability to trace draws to one entity and contributions to the other — only works because each entity kept its own clean set of books. When multi-entity owners consolidate everything into a single QuickBooks file or co-mingle transactions across entities to "save time," this forensic trail disappears. The question "which entity is draining cash and which is subsidizing it?" becomes unanswerable without weeks of reconstructive work.
+
+Strong entity-specific accounting is not a bureaucratic preference. It is the prerequisite for every group-level analysis worth running. When each entity has its own chart of accounts, its own balance sheet, its own capital-account structure, and its own monthly close — the group view becomes additive. You can see whose draws are too aggressive, whose working capital is trapping cash, and whose growth is real external revenue versus intergroup transfer, all from data that already exists. The entity layer and the group layer reveal different truths, and neither one alone is enough.
+
+The cost of maintaining separate books is typically one additional hour of close per entity per month. The cost of *not* having them is that the combined-group cash number becomes uncomputable the day a banker, a buyer, or a lender's diligence team asks for it — and attempting to reconstruct it after the question has been asked is how discovery discounts and failed credit applications happen. If you are running more than one entity today and your accounts are blended, the single highest-return bookkeeping investment you can make this quarter is separating them.
+
+---
+
 ## What Benefique Does Differently
 
 Most accounting firms produce two separate monthly packages for a group like this — one per entity — and stop there. The work of combining them into a group view, netting the draws, surfacing the single cash-retained number, and benchmarking it against operating-cash-flow capacity is CFO work, not compliance work. It is also the work that changes the owner's decisions — including how much to pay themselves next month.
 
 This is the kind of clarity that does not come from a monthly financial statement. It comes from someone who reads QuickBooks the way a pilot reads an instrument panel — not looking at each gauge in isolation, but looking at what the combination is saying about where the plane is actually going. Read how accounting becomes an [ROI center at Benefique](/about).
 
-The partners in the marine case implemented a combined-draw cap within 30 days of seeing the number. Twelve weeks later the group was retaining positive cash per working day for the first time in eighteen months. The cushion rebuilt. The banker's call got easier. They stopped wondering on Monday mornings whether this was going to be the week the business ran out of room. They were not saving money — they were earning the same money and finally watching it land in the bank. That started the Monday morning after they saw one number nobody on their team had ever shown them before.
+The partners in the specialty-services case implemented a combined-draw cap within 30 days of seeing the number. Twelve weeks later the group was retaining positive cash per working day for the first time in eighteen months. The cushion rebuilt. The banker's call got easier. They stopped wondering on Monday mornings whether this was going to be the week the business ran out of room. They were not saving money — they were earning the same money and finally watching it land in the bank. That started the Monday morning after they saw one number nobody on their team had ever shown them before.
 
 ---
 

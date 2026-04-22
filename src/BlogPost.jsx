@@ -46,7 +46,7 @@ const blogPosts = {
     title: 'Why Your Business Is Profitable And Still Losing Cash',
     date: '2026-04-22',
     author: 'Gerrit Disbergen, EA',
-    excerpt: 'A marine services group in South Florida grew revenue 24% last year, showed $219,000 of net income on the books, and still lost $56,898 of cash. The math only works when you combine the entities. Here is the single metric that reveals the truth — and why your P&L will never show it to you.',
+    excerpt: 'A two-entity specialty services group in South Florida grew revenue 24% last year, showed $219,000 of net income on the books, and still lost $56,898 of cash. The math only works when you combine the entities. Here is the single metric that reveals the truth — and why your P&L will never show it to you.',
     categories: ['Cash Flow', 'Business Strategy'],
     readTime: '6 min read',
     featuredImage: '/images/blog/profitable-but-losing-cash.jpg',
