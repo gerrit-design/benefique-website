@@ -1,6 +1,6 @@
 ---
-title: "How AI Found $353,000 in Trapped Cash — Using Data Already in QuickBooks"
-description: "AI analysis of 7 months of QuickBooks data uncovered $353K in trapped cash across 5 hidden cash traps. The data was already there."
+title: "How AI Found $353K of Trapped Cash Inside a Healthcare Practice Balance Sheet"
+description: "A real working capital diagnosis: 4 hidden cash leaks, a 6-week recovery plan, and the AI workflow that surfaced $353K already sitting in the books."
 date: "2026-03-12"
 author: "Gerrit Disbergen, EA"
 excerpt: "A professional services firm had $353,000 trapped in slow-paying receivables, a bank balance that overstated actual cash by $900K, and partner draws that exceeded a $1.58M windfall. All of this was sitting in their QuickBooks data. Nobody had mined it until AI did."
@@ -8,8 +8,8 @@ categories: ["Cash Flow"]
 readTime: "11 min read"
 featuredImage: "/images/blog/ai-found-353k-trapped-cash.jpg"
 slug: "ai-found-353k-trapped-cash"
-metaTitle: "How AI Found $353K in Trapped Cash Using QuickBooks Data | Benefique"
-metaDescription: "AI analysis of 7 months of QuickBooks data uncovered $353K in trapped cash across 5 hidden cash traps. The data was already there."
+metaTitle: "How AI Found $353K of Trapped Cash Inside a Healthcare Practice Balance Sheet | Benefique"
+metaDescription: "A real working capital diagnosis: 4 hidden cash leaks, a 6-week recovery plan, and the AI workflow that surfaced $353K already sitting in the books."
 keywords: "cash flow forecasting with ai, ai tools for cash flow forecasting, find trapped cash business, AI QuickBooks analysis, cash flow problems small business"
 ---
 

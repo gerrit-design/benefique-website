@@ -1,6 +1,6 @@
 ---
-title: "How AI Found That $1M in Profit Left Zero Cash in the Bank"
-description: "Learn how an AI-powered cash flow waterfall revealed why a profitable $5M business had zero cash growth — and how to fix yours."
+title: "Cash Flow Waterfall Explained: How Money Actually Moves Through a Business"
+description: "The cash waterfall framework — operating cash, debt service, distributions, working capital — visualized with a real $5M imaging-center example that earned $1.07M EBITDA and lost $41K of bank balance."
 date: "2026-03-18"
 author: "Gerrit Disbergen, EA"
 excerpt: "A $5M imaging center earned $1.07M in EBITDA but its bank account shrank by $41K. Here is exactly where that million dollars went — broken down by the AI that found it."
@@ -8,8 +8,8 @@ categories: "Cash Flow"
 readTime: "12 min read"
 featuredImage: "/images/blog/ai-cash-flow-waterfall-explained.jpg"
 slug: "ai-cash-flow-waterfall-explained"
-metaTitle: "How AI Found $1M in Profit Left Zero Cash | Benefique"
-metaDescription: "Learn how an AI-powered cash flow waterfall revealed why a profitable $5M business had zero cash growth — and how to fix yours."
+metaTitle: "Cash Flow Waterfall Explained: How Money Actually Moves Through a Business | Benefique"
+metaDescription: "The cash waterfall framework — operating cash, debt service, distributions, working capital — visualized with a real $5M imaging-center example that earned $1.07M EBITDA and lost $41K of bank balance."
 keywords: "ai cash flow analysis, cash flow waterfall, EBITDA vs cash flow, why profitable but no cash, profit not equal cash"
 ---
 

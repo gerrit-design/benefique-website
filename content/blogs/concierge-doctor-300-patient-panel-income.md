@@ -1,6 +1,6 @@
 ---
-title: "How Concierge Doctors Clear $400K+ With a 300-Patient Panel"
-description: "300 patients at $350/month = $1.26M revenue. After overhead, taxes, and retirement: $430K+ take-home. The full math from gross to net."
+title: "Concierge Doctor 300-Patient Panel Income: The Real Math for 2026"
+description: "What does a 300-patient concierge panel actually pay in 2026? Real revenue, overhead, and take-home math — every dollar from $1.26M gross to $430K net, step by step."
 date: "2026-04-08"
 author: "Gerrit Disbergen, EA"
 excerpt: "300 patients. $350/month. $1.26M in annual revenue. After $19,750/month in overhead, S-Corp tax savings, and a Cash Balance Plan sheltering $200K — your take-home clears $430K. Here is every dollar, step by step."
@@ -8,8 +8,8 @@ categories: "Concierge Medicine"
 readTime: "14 min read"
 featuredImage: "/images/blog/concierge-doctor-300-patient-panel-income.jpg"
 slug: "concierge-doctor-300-patient-panel-income"
-metaTitle: "300-Patient Concierge Panel: $400K+ Take-Home | Benefique"
-metaDescription: "300 patients at $350/month = $1.26M revenue. After overhead, taxes, and retirement: $430K+ take-home. The full math from gross to net."
+metaTitle: "Concierge Doctor 300-Patient Panel Income: The Real Math for 2026 | Benefique"
+metaDescription: "What does a 300-patient concierge panel actually pay in 2026? Real revenue, overhead, and take-home math — every dollar from $1.26M gross to $430K net, step by step."
 keywords: "concierge doctor income, 300 patient panel, concierge medicine salary, concierge practice revenue, panel size economics"
 ---
 
