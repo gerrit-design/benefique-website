@@ -1,6 +1,6 @@
 ---
-title: "The Intercompany Markup Dial Nobody Tells You About"
-description: "If you own more than one company, there's a dial on your books that moves profit between them without changing a thing operationally. Most owners never touch it."
+title: "Intercompany Markup: 10% vs 20% Moves $48K per $1M"
+description: "Move the intercompany markup from 10% to 20% and $48K of gross profit shifts per $1M of internal sales — without a new customer or a cost cut."
 date: "2026-04-16"
 author: "Gerrit Disbergen, EA"
 excerpt: "A multi-entity business has a dial its owner usually doesn't know exists. At 10% it makes one entity look profitable and the other look structurally broken. At 20% it rebalances them. Group profit doesn't change by a dollar — but the banker, the buyer, and the tax return all see different stories. Here's how to set it consciously."
@@ -8,8 +8,8 @@ categories: "Tax Strategy"
 readTime: "10 min read"
 featuredImage: "/images/blog/intercompany-markup-dial-multi-entity.jpg"
 slug: "intercompany-markup-dial-multi-entity"
-metaTitle: "The Intercompany Markup Dial Nobody Tells You About | Benefique"
-metaDescription: "A multi-entity business has a profit-shifting dial most owners never touch consciously. 10% vs 15% vs 20% changes how bankers, buyers, and the IRS see your companies."
+metaTitle: "Intercompany Markup: 10% vs 20% Moves $48K per $1M | Benefique"
+metaDescription: "Move the intercompany markup from 10% to 20% and $48K shifts per $1M of internal sales. Bankers, buyers, and the IRS each see a different story."
 keywords: "intercompany markup policy, transfer pricing small business, profit shifting multi-entity, intercompany pricing strategy, cost-plus markup, IRC section 482 small business"
 ---
 

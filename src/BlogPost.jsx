@@ -77,7 +77,7 @@ const blogPosts = {
   },
   'blended-pl-lying-multi-entity-business': {
     file: '/content/blogs/blended-pl-lying-multi-entity-business.md',
-    title: 'Your Blended P&L Is Lying to You',
+    title: 'Blended Gross Margin: When a 15% P&L Hides a 50% Business',
     date: '2026-04-14',
     author: 'Gerrit Disbergen, EA',
     excerpt: 'A $3M distribution business showed a 15% gross margin and looked distressed. We split it into internal and external divisions and found a healthy 50%+ external business sitting next to a subsidized 9% internal transfer operation. The owner had been trying to fix the wrong problem for two quarters.',
@@ -109,7 +109,7 @@ const blogPosts = {
   },
   'intercompany-markup-dial-multi-entity': {
     file: '/content/blogs/intercompany-markup-dial-multi-entity.md',
-    title: 'The Intercompany Markup Dial Nobody Tells You About',
+    title: 'Intercompany Markup: 10% vs 20% Moves $48K per $1M',
     date: '2026-04-16',
     author: 'Gerrit Disbergen, EA',
     excerpt: 'A multi-entity business has a dial its owner usually doesn\'t know exists. At 10% it makes one entity look profitable and the other look structurally broken. At 20% it rebalances them. Group profit doesn\'t change by a dollar — but the banker, the buyer, and the tax return all see different stories.',

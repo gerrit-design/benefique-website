@@ -1,6 +1,6 @@
 ---
-title: "Your Blended P&L Is Lying to You"
-description: "Multi-entity businesses hide two stories inside one P&L. Here's how to split them, anchored at your intercompany markup — and what it reveals."
+title: "Blended Gross Margin: When a 15% P&L Hides a 50% Business"
+description: "A 15% blended gross margin in a multi-entity P&L can hide a healthy 50%+ external business. Here's how to split it, anchored at your intercompany markup."
 date: "2026-04-14"
 author: "Gerrit Disbergen, EA"
 excerpt: "A $3M distribution business showed a 15% gross margin and looked distressed. We split it into internal and external divisions and found a healthy 50%+ external business sitting next to a subsidized 9% internal transfer operation. The owner had been trying to fix the wrong problem for two quarters."
@@ -8,8 +8,8 @@ categories: "Cash Flow"
 readTime: "10 min read"
 featuredImage: "/images/blog/blended-pl-lying-multi-entity-business.jpg"
 slug: "blended-pl-lying-multi-entity-business"
-metaTitle: "Your Blended P&L Is Lying to You | Benefique"
-metaDescription: "Multi-entity businesses hide two stories inside one P&L. Here's how to split them — and what the divisional view reveals that consolidated numbers never will."
+metaTitle: "Blended Gross Margin: When a 15% P&L Hides a 50% Business | Benefique"
+metaDescription: "Blended margin in a multi-entity P&L hides two profit stories. A 15% consolidated gross margin masked a 50%+ external business — here's how to split them."
 keywords: "blended P&L, multi-entity business, divisional analysis, intercompany markup, gross margin by channel, internal vs external revenue, transfer pricing small business"
 ---
 
