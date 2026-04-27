@@ -25,6 +25,7 @@
     { "source": "/go/cash-leak", "destination": "/blog/profitable-but-losing-cash?utm_source=linkedin&utm_medium=social&utm_campaign=cash-leak", "statusCode": 302 },
     { "source": "/go/loan-denied", "destination": "/blog/distribution-ratio-business-loan?utm_source=linkedin&utm_medium=social&utm_campaign=loan-denied", "statusCode": 302 },
     { "source": "/go/owner-fork", "destination": "/blog/cash-machine-vs-exit-machine?utm_source=linkedin&utm_medium=social&utm_campaign=owner-fork", "statusCode": 302 },
+    { "source": "/go/rule-of-40", "destination": "/blog/rule-of-40-small-business?utm_source=linkedin&utm_medium=social&utm_campaign=rule-of-40", "statusCode": 302 },
 
     { "source": "/blog/the-20-minute-monthly-cash-review", "destination": "/blog/monthly-cash-review-20-minutes", "statusCode": 301 },
     { "source": "/blog/dso-the-350k-number", "destination": "/blog/dso-350k-number-business-owners", "statusCode": 301 },

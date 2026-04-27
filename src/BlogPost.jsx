@@ -6,6 +6,23 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  'rule-of-40-small-business': {
+    file: '/content/blogs/rule-of-40-small-business.md',
+    title: 'The Rule of 40 for Owner-Operated Businesses',
+    date: '2026-04-27',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Before a private equity firm reads your financials, they run a single equation: revenue growth plus EBITDA margin. The threshold is 40. Most owner-operators have never calculated their score — and the directional premium for closing the gap is bigger than they think.',
+    categories: ['Business Strategy', 'Cash Flow'],
+    readTime: '7 min read',
+    featuredImage: '/images/blog/rule-of-40-small-business.jpg',
+    faqs: [
+      { q: 'Does the Rule of 40 really apply to a $2M-$5M business?', a: 'The directional logic applies. The threshold of 40 is a SaaS-world benchmark and should not be treated as an automatic gate for traditional services or distribution businesses. For SMBs the more useful framing is the trajectory: is your score moving up or down over the last four quarters, and which lever drove the change?' },
+      { q: 'Should I use net income or EBITDA for the margin calculation?', a: 'EBITDA. It strips out interest, depreciation, and amortization — three line items that vary by capital structure and accounting choice rather than by operational quality. Net income is the right number for tax and personal-cash purposes; EBITDA is the right number for valuation and comparison.' },
+      { q: 'My growth rate is negative. Is the Rule of 40 useless for me?', a: 'The opposite — it is more useful. A business at -5% growth and 20% margin scores 15, the same as a 4% / 11% business. The lever question is sharper for declining businesses: stabilize the top line first, or lean harder into margin to fund the rebuild? The Rule of 40 frames that decision rather than answering it.' },
+      { q: 'How does the Rule of 40 differ from a Quality of Earnings analysis?', a: 'Rule of 40 is a one-minute screening signal. Quality of Earnings is a 30-to-60-day pre-closing audit that adjusts reported EBITDA up and down for non-recurring items, owner add-backs, and concentration risks. A buyer uses Rule of 40 to decide whether to read further; QofE is what they do once they decide to engage. Both matter; they operate at different stages of the process.' },
+      { q: 'Can I improve the score in less than 24 months?', a: 'Margin moves faster than growth. A targeted pricing discipline cycle can lift margin 200-400 basis points in 9-12 months. Growth lifts typically take 18-36 months because they depend on sales-cycle length and customer-acquisition payback. Most score improvements in the first year come from the margin lever; growth carries the second-year lift.' }
+    ]
+  },
   'cash-machine-vs-exit-machine': {
     file: '/content/blogs/cash-machine-vs-exit-machine.md',
     title: 'Cash Machine or Exit Machine: The Owner\'s Decision',
