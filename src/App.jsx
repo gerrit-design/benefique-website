@@ -3378,8 +3378,8 @@ function RadiologyLandingPage() {
             <div className="bg-white rounded-2xl p-8 border-2 border-benefique-orange">
               <div className="text-xs uppercase tracking-wider text-benefique-orange font-semibold mb-2">Start Here</div>
               <h3 className="text-2xl font-bold text-benefique-navy mb-2">Strategic Radiology Review</h3>
-              <div className="text-3xl font-bold text-benefique-navy mb-1">$12,500</div>
-              <div className="text-sm text-gray-500 mb-6">Fixed fee &middot; 2-week turnaround</div>
+              <div className="text-3xl font-bold text-benefique-navy mb-1">Fixed Fee</div>
+              <div className="text-sm text-gray-500 mb-6">Scoped on intake &middot; 2-week turnaround</div>
               <p className="text-gray-700 mb-4">
                 A board-grade diagnostic the CEO can hand to partners, lenders, or the investment committee.
               </p>

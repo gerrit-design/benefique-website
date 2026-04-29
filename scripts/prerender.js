@@ -255,8 +255,8 @@ for (const route of routes) {
   if (route.schema) schemas.push(route.schema);
   if (route.faq) schemas.push(buildFAQSchema(route.faq));
 
-  // Extract a clean h1 from the title (strip " | Benefique..." suffix)
-  const h1Text = route.title.replace(/\s*[\|–—].*$/, '').trim();
+  // H1: prefer explicit override, otherwise derive from title (strip " | Benefique..." suffix)
+  const h1Text = route.h1 || route.title.replace(/\s*[\|–—].*$/, '').trim();
   const rootContent = `<h1>${escapeHtml(h1Text)}</h1><p>${escapeHtml(route.description)}</p>`;
 
   const html = generateHTML({
