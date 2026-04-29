@@ -26,6 +26,11 @@
     { "source": "/go/loan-denied", "destination": "/blog/distribution-ratio-business-loan?utm_source=linkedin&utm_medium=social&utm_campaign=loan-denied", "statusCode": 302 },
     { "source": "/go/owner-fork", "destination": "/blog/cash-machine-vs-exit-machine?utm_source=linkedin&utm_medium=social&utm_campaign=owner-fork", "statusCode": 302 },
     { "source": "/go/rule-of-40", "destination": "/blog/rule-of-40-small-business?utm_source=linkedin&utm_medium=social&utm_campaign=rule-of-40", "statusCode": 302 },
+    { "source": "/go/dso-buckets", "destination": "/blog/dso-benchmarks-imaging-centers-2026-sefl?utm_source=linkedin&utm_medium=social&utm_campaign=dso-buckets", "statusCode": 302 },
+    { "source": "/go/lop-yield", "destination": "/blog/lop-economics-real-yield-vs-face-value?utm_source=linkedin&utm_medium=social&utm_campaign=lop-yield", "statusCode": 302 },
+    { "source": "/go/modality-margin", "destination": "/blog/per-modality-profitability-imaging-center?utm_source=linkedin&utm_medium=social&utm_campaign=modality-margin", "statusCode": 302 },
+    { "source": "/go/owner-income", "destination": "/blog/multi-center-imaging-owner-income-2026-sefl?utm_source=linkedin&utm_medium=social&utm_campaign=owner-income", "statusCode": 302 },
+    { "source": "/go/second-center", "destination": "/blog/how-to-acquire-second-imaging-center?utm_source=linkedin&utm_medium=social&utm_campaign=second-center", "statusCode": 302 },
 
     { "source": "/blog/the-20-minute-monthly-cash-review", "destination": "/blog/monthly-cash-review-20-minutes", "statusCode": 301 },
     { "source": "/blog/dso-the-350k-number", "destination": "/blog/dso-350k-number-business-owners", "statusCode": 301 },

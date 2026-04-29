@@ -1434,6 +1434,11 @@ function Blog() {
     { title: 'Cash Machine or Exit Machine: The Owner\'s Decision', excerpt: 'Every owner-operator eventually faces the same fork: optimize the business to pay me forever, or position it to sell. Most never make the decision explicitly. They drift. The drift costs them millions — and the framework for deciding is simpler than the M&A industry wants you to believe.', date: '2026-05-06', slug: 'cash-machine-vs-exit-machine', published: false, category: 'Business Strategy', readTime: '9 min read' },
     { title: 'The Rule of 40 for Owner-Operated Businesses', excerpt: 'Before a private equity firm reads your financials, they run a single equation: revenue growth plus EBITDA margin. The threshold is 40. Most owner-operators have never calculated their score — and the directional premium for closing the gap is bigger than they think.', date: '2026-04-27', slug: 'rule-of-40-small-business', published: true, category: 'Business Strategy', readTime: '7 min read' },
     { title: 'Why Your Business Loan Was Denied (And The 60 Percent Rule)', excerpt: 'Most owner-operators think of partner draws as a number. Your banker thinks of them as a ratio. The 60% threshold is the difference between a lendable business and a declined application — regardless of how profitable your books look.', date: '2026-04-29', slug: 'distribution-ratio-business-loan', published: false, category: 'Cash Flow', readTime: '5 min read' },
+    { title: 'DSO Benchmarks for Imaging Centers: 2026 SE Florida Data', excerpt: 'A four-center SE Florida imaging group reports a 45-day DSO. The number is meaningless — until you separate Tier-1 commercial from PIP from LOP. Here are the five payer-class benchmarks for 2026, the weighted-DSO math, and five actions to compress yours this quarter.', date: '2026-04-29', slug: 'dso-benchmarks-imaging-centers-2026-sefl', published: true, category: 'Healthcare Finance', readTime: '16 min read' },
+    { title: 'LOP Economics: Real Yield vs Face Value (Imaging Center 2026)', excerpt: 'A $4,200 MRI billed to an LOP case is not a $4,200 receivable. It is, in expected-value terms, a $2,500–$3,000 contingent claim that may or may not convert in 9 to 18 months. Here is the LOP yield framework SE Florida imaging operators need before their next lender review — and the math your billing company has never run.', date: '2026-04-29', slug: 'lop-economics-real-yield-vs-face-value', published: true, category: 'Healthcare Finance', readTime: '15 min read' },
+    { title: 'Per-Modality Profitability: MRI vs CT vs Ultrasound vs PET', excerpt: 'MRI, CT, ultrasound, and PET Tracer Scans each have wildly different cost structures, payer-mix exposures, and per-claim yields — but most imaging-center P&Ls roll them into a single \'imaging revenue\' line. Here is the per-modality profitability framework that turns one number into four businesses, and shows you which of them is actually paying the bills.', date: '2026-04-29', slug: 'per-modality-profitability-imaging-center', published: true, category: 'Healthcare Finance', readTime: '15 min read' },
+    { title: 'Multi-Center Imaging Owner Income: 2026 SE Florida Benchmarks', excerpt: 'What does a SE Florida multi-center imaging owner actually take home in 2026? The real math at 2-, 3-, 4-, and 5-center scale: revenue, EBITDA, distributions, and net-net of the owner\'s W-2 plus K-1 plus distribution stack — with the cash-flow constraints, debt service, and partner-distribution discipline that determine what hits the personal account.', date: '2026-04-29', slug: 'multi-center-imaging-owner-income-2026-sefl', published: true, category: 'Healthcare Finance', readTime: '16 min read' },
+    { title: 'How to Acquire a Second Imaging Center: The Financial Roadmap', excerpt: 'A single-center imaging operator buying a second center is making the most consequential financial decision of their career. The valuation logic, deal structure choices, debt-stack engineering, integration math, and 90-day post-close playbook that determine whether the second center compounds the first or compromises it — built specifically for SE Florida operators in 2026.', date: '2026-04-29', slug: 'how-to-acquire-second-imaging-center', published: true, category: 'Healthcare Finance', readTime: '17 min read' },
     { title: 'Why Your Business Is Profitable And Still Losing Cash', excerpt: 'A two-entity specialty services group in South Florida grew revenue 24% last year, showed $219,000 of net income on the books, and still lost $56,898 of cash. The math only works when you combine the entities. Here is the single metric that reveals the truth — and why your P&L will never show it to you.', date: '2026-04-22', slug: 'profitable-but-losing-cash', published: true, category: 'Cash Flow', readTime: '6 min read' },
     { title: 'Is Your Marketing Working? The 10-Minute Cash Flow Test Every Owner Can Run', excerpt: 'A SE Florida imaging center ran marketing at 14% of revenue while claim volume fell 74% over two years. The spend was defending a shrinking book, not growing it. Here\'s the two-line test any owner can run on their own QuickBooks data in 10 minutes.', date: '2026-04-21', slug: 'marketing-spend-defending-not-growing-book', published: true, category: 'Cash Flow', readTime: '9 min' },
     { title: 'Why PI-Heavy Medical Practices Carry 20+ Months of A/R — The LOP Cash Cycle Explained', excerpt: 'A multi-location SE Florida imaging group carries $6.17M of A/R against $2.85M of annual collections — about 26 months. That is not a collections failure. It is the arithmetic of a Letter-of-Protection-heavy payer mix. Here is how the math works and why DSO is the wrong metric.', date: '2026-04-21', slug: 'lop-cash-cycle-personal-injury-practice-ar', published: true, category: 'Healthcare Finance', readTime: '11 min' },
@@ -3188,6 +3193,8 @@ function RadiologyLandingPage() {
     {
       title: 'Collections, DSO & Cash Flow',
       posts: [
+        { slug: 'dso-benchmarks-imaging-centers-2026-sefl', title: 'DSO Benchmarks for Imaging Centers: 2026 SE Florida Data' },
+        { slug: 'lop-economics-real-yield-vs-face-value', title: 'LOP Economics: Real Yield vs Face Value (Imaging Center 2026)' },
         { slug: 'ai-cash-flow-waterfall-explained', title: 'How AI Found That $1M in Profit Left Zero Cash in the Bank' },
         { slug: 'radiology-accounts-receivable-line-of-credit', title: 'Radiology Accounts Receivable: How Banks Misread Your Aging Report' },
         { slug: 'dso-lying-medical-practice-cash-flow', title: 'Your DSO Is Lying to You — Why Averages Hide Your Real Cash Flow Problem' },
@@ -3205,6 +3212,7 @@ function RadiologyLandingPage() {
     {
       title: 'Per-Claim Profitability',
       posts: [
+        { slug: 'per-modality-profitability-imaging-center', title: 'Per-Modality Profitability: MRI vs CT vs Ultrasound vs PET' },
         { slug: 'high-cost-procedure-economics-medical-practice', title: '$2,940 Out the Door Before You Know If You\'ll Get Paid' },
         { slug: 'cash-flow-breakeven-per-patient-activity-units', title: 'Your Practice Is Profitable — So Why Do You Need 922 Patients?' },
         { slug: 'fixed-cost-breakeven-volume-problem', title: 'Your Practice Doesn\'t Have a Profit Problem — It Has a Volume Problem' },
@@ -3217,6 +3225,15 @@ function RadiologyLandingPage() {
         { slug: 'radiology-collections-dashboard-case-study', title: 'Multi-Center Radiology Collections Intelligence' },
         { slug: 'real-time-financial-dashboards-healthcare-practices', title: '10 KPIs Every Healthcare Practice Should Track in Real Time' },
         { slug: 'assembly-line-thinking-medical-practice-profitability', title: 'The Factory That Didn\'t Know It Was Losing Money' },
+      ],
+    },
+    {
+      title: 'Owner Economics & Exit',
+      posts: [
+        { slug: 'multi-center-imaging-owner-income-2026-sefl', title: 'Multi-Center Imaging Owner Income: 2026 SE Florida Benchmarks' },
+        { slug: 'how-to-acquire-second-imaging-center', title: 'How to Acquire a Second Imaging Center: The Financial Roadmap' },
+        { title: 'Selling Your Imaging Center: What Buyers Actually Pay (SDE, EBITDA, Multiples)', comingSoon: true },
+        { title: 'Building Wealth as an Imaging Center Owner: Beyond the Practice', comingSoon: true },
       ],
     },
     {
@@ -3269,16 +3286,20 @@ function RadiologyLandingPage() {
       <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-4">
           <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
-            <span>🔬</span> For Radiology &amp; Imaging Groups
+            <span>🔬</span> For Multi-Center Radiology &amp; Imaging Groups
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-benefique-navy leading-tight mb-6">
-            Radiology CFO Intelligence
+          <h1 className="text-4xl md:text-5xl font-bold text-benefique-navy leading-tight mb-3">
+            Your Volume Is Up. Your Cash Isn&apos;t.
           </h1>
+
+          <p className="text-xl text-gray-600 mb-6 max-w-3xl">
+            Radiology CFO Intelligence — the financial operating layer for multi-center imaging groups.
+          </p>
 
           <div className="bg-gray-50 border-l-4 border-benefique-orange p-6 rounded-r-xl mb-8 max-w-3xl">
             <p className="text-lg text-gray-700 leading-relaxed">
-              We separate your <strong>PET Tracer Unit</strong> from your <strong>Radiology Unit</strong>, expose toxic payer and tracer combinations, model per-payer DSO, and give your lender numbers they can trust. The intelligence your accountant and biller will not build for you.
+              Imaging demand in Florida is rising faster than back-office systems can convert it. We compress the <strong>referral → auth → scan → claim → paid</strong> cycle, separate your <strong>PET Tracer Unit</strong> from your <strong>Radiology Unit</strong>, and turn billing-company activity into economic outcomes your lender will fund. The intelligence your accountant and biller will not build for you.
             </p>
           </div>
 
@@ -3438,11 +3459,18 @@ function RadiologyLandingPage() {
                 </summary>
                 <div className="px-6 pb-4 border-t border-gray-200">
                   <ul className="divide-y divide-gray-200">
-                    {cluster.posts.map((p) => (
-                      <li key={p.slug}>
-                        <Link to={`/blog/${p.slug}`} className="block py-3 text-gray-700 hover:text-benefique-orange text-sm">
-                          → {p.title}
-                        </Link>
+                    {cluster.posts.map((p, i) => (
+                      <li key={p.slug || `coming-${i}`}>
+                        {p.comingSoon ? (
+                          <div className="py-3 text-gray-400 text-sm flex items-center justify-between gap-2">
+                            <span>→ {p.title}</span>
+                            <span className="text-xs bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full font-medium whitespace-nowrap">Coming soon</span>
+                          </div>
+                        ) : (
+                          <Link to={`/blog/${p.slug}`} className="block py-3 text-gray-700 hover:text-benefique-orange text-sm">
+                            → {p.title}
+                          </Link>
+                        )}
                       </li>
                     ))}
                   </ul>

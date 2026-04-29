@@ -58,6 +58,91 @@ const blogPosts = {
       { q: 'Does this apply if my business is growing fast?', a: 'Growth makes it worse, not better. Fast-growing businesses consume more working capital and need to retain more earnings to fund inventory and receivables. A 60% ratio in a flat business is tight. A 60% ratio in a 40%-YoY-growth business is dangerously tight and may trigger further scrutiny.' }
     ]
   },
+  'how-to-acquire-second-imaging-center': {
+    file: '/content/blogs/how-to-acquire-second-imaging-center.md',
+    title: 'How to Acquire a Second Imaging Center: The Financial Roadmap',
+    date: '2026-04-29',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A single-center imaging operator buying a second center is making the most consequential financial decision of their career. The valuation logic, deal structure choices, debt-stack engineering, integration math, and 90-day post-close playbook that determine whether the second center compounds the first or compromises it — built specifically for SE Florida operators in 2026.',
+    categories: ['Healthcare Finance', 'Business Strategy'],
+    readTime: '17 min read',
+    featuredImage: '/images/blog/how-to-acquire-second-imaging-center.jpg',
+    faqs: [
+      { q: 'What multiple should I pay for a second imaging center in SE Florida in 2026?', a: 'Typical bands: 2.5x–3.5x for soft single-center deals, 3.5x–4.5x for stable single-center, 4.5x–5.5x for growing single-center, and 5.0x–6.5x for strategic tuck-ins to an existing platform. The right multiple inside the band is driven by revenue durability, payer-mix quality, equipment age, real-estate situation, and location overlap with your existing draw.' },
+      { q: 'Should I do an asset deal or a stock deal?', a: 'Almost always an asset deal at this scale. Asset deals provide step-up in basis, isolate the buyer from pre-closing contingent liabilities, and allow specific liability assumption. Stock deals are typically used only when unassignable contracts (such as unique payer agreements) make asset transfer impractical, and require robust reps-and-warranties indemnification when they do happen.' },
+      { q: 'How much cash equity do I need to put up?', a: 'SBA 7(a) typically requires 10%–20% buyer equity. Conventional financing requires 20%–35%. With a 10–15% seller note and a working-capital LOC layered in, total buyer cash equity on a $4M–$5M deal usually lands in the $600K–$1.2M range. Cash equity below 10% is uncommon and typically signals deal-structure problems.' },
+      { q: 'What is the right combined-entity DSCR after a second-center acquisition?', a: 'Lenders require minimum 1.25x. Operationally survivable structures need 1.4x+. Strong structures run 1.7x–2.5x. Going below 1.4x is leveraging into a fragile structure that doesn\'t survive routine stress.' },
+      { q: 'How long does post-close integration actually take?', a: 'The 90-day playbook is the active-management window. Full operational integration typically runs 6–12 months. Full financial-system unification typically runs 9–18 months. The most common mistake is to attempt all of it inside the first 90 days, which destabilizes both centers and creates avoidable referrer and staff churn. Slow integration is almost always the right answer.' }
+    ]
+  },
+  'multi-center-imaging-owner-income-2026-sefl': {
+    file: '/content/blogs/multi-center-imaging-owner-income-2026-sefl.md',
+    title: 'Multi-Center Imaging Owner Income: 2026 SE Florida Benchmarks',
+    date: '2026-04-29',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'What does a SE Florida multi-center imaging owner actually take home in 2026? The real math at 2-, 3-, 4-, and 5-center scale: revenue, EBITDA, distributions, and net-net of the owner\'s W-2 plus K-1 plus distribution stack — with the cash-flow constraints, debt service, and partner-distribution discipline that determine what hits the personal account.',
+    categories: ['Healthcare Finance', 'Business Strategy'],
+    readTime: '16 min read',
+    featuredImage: '/images/blog/multi-center-imaging-owner-income-2026-sefl.jpg',
+    faqs: [
+      { q: 'What does a SE Florida imaging center owner actually take home in 2026?', a: 'Net-net to personal account ranges roughly from $280K–$425K at two centers, $475K–$725K at three, $700K–$1.1M at four, and $1.0M–$1.6M+ at five centers. The bands assume functional payer mix, normal SE Florida debt-service conditions, and disciplined distribution policy below the 60% lender threshold.' },
+      { q: 'What is the right W-2 for a multi-center imaging owner?', a: 'At SE Florida scale, market-rate W-2 typically runs $200K–$450K depending on hands-on operational involvement. Below market creates IRS reasonable-compensation exposure and depresses sale-time normalized EBITDA. Above market is tax-inefficient because every additional W-2 dollar incurs payroll taxes that distributions do not.' },
+      { q: 'How much should I distribute as a percentage of net income?', a: 'The lender benchmark in 2026 SE Florida is roughly 60% or below. Operators above 60% are modeled by lenders as consuming working capital rather than just earnings, which tightens credit terms and raises cost of capital. The right operating discipline is to manage to 55%–60% in stable periods and below 50% during growth-investment phases.' },
+      { q: 'Does my Florida residency change the income math?', a: 'Yes — Florida\'s lack of state personal income tax produces a 5%–10% structural net-net advantage relative to operators in high-tax states, every year. At four-center scale, this advantage is worth $50K–$110K per year of permanent take-home.' },
+      { q: 'What is the enterprise value of a typical multi-center imaging operator?', a: 'SE Florida multi-center platforms in 2026 trade in bands of roughly 3.5x–5.0x EBITDA at two centers, 4.5x–6.0x at three centers, 5.0x–6.5x at four centers, and 6.0x–8.0x+ at five-plus-center platforms. The enterprise-value answer often dominates the operating-income answer over a long horizon — which is why current-year distribution decisions need to be run with one eye on the multi-year exit math.' }
+    ]
+  },
+  'per-modality-profitability-imaging-center': {
+    file: '/content/blogs/per-modality-profitability-imaging-center.md',
+    title: 'Per-Modality Profitability: MRI vs CT vs Ultrasound vs PET',
+    date: '2026-04-29',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'MRI, CT, ultrasound, and PET Tracer Scans each have wildly different cost structures, payer-mix exposures, and per-claim yields — but most imaging-center P&Ls roll them into a single \'imaging revenue\' line. Here is the per-modality profitability framework that turns one number into four businesses, and shows you which of them is actually paying the bills.',
+    categories: ['Healthcare Finance', 'Cash Flow Advisory'],
+    readTime: '15 min read',
+    featuredImage: '/images/blog/per-modality-profitability-imaging-center.jpg',
+    faqs: [
+      { q: 'What is a healthy contribution margin for an imaging modality?', a: 'Targets vary by modality: MRI 35–55%, CT 40–60%, ultrasound/X-ray/DEXA 50–70%, and PET Tracer Scans 25–45% net of tracer cost. The absolute number matters less than internal consistency: a modality drifting 7+ points off its prior trailing-12-month average is signaling something the headline P&L will not.' },
+      { q: 'How do I allocate fixed costs across modalities?', a: 'Scan-time-weighted allocation matches fixed cost to capacity consumption and produces the most defensible per-modality contribution figure. Square-footage allocation is the most common but penalizes high-throughput modalities. Revenue-share allocation creates a circularity that biases the math.' },
+      { q: 'Should PET Tracer Scans be reported as a separate business unit?', a: 'Yes. Tracer pass-through economics make PET Tracer Scans structurally distinct from general imaging, and rolling them into a single imaging line hides the largest profit-or-loss driver in a modern center. The Two Business Unit Framework breaks PET Tracer Scans out as a separate operating segment with its own P&L, its own DSO, and its own capital-allocation logic.' },
+      { q: 'How long does it take to build modality-level P&L?', a: 'First time: 4–8 hours of finance and billing-data work to construct the prior-12-months baseline. Ongoing: 30 minutes per month to maintain once the data pipeline is set up. The cost is overwhelmingly upfront; the benefit compounds every month thereafter.' },
+      { q: 'Will my CPA or accountant produce this report?', a: 'Almost never, unless explicitly asked. Standard accounting deliverables are tax-compliance-format financials, which roll modalities into a single imaging line. Producing modality-level management reports requires a different scope, different data inputs, and different reporting cadence — which is why most imaging centers have to build this view outside their compliance accounting workflow.' }
+    ]
+  },
+  'lop-economics-real-yield-vs-face-value': {
+    file: '/content/blogs/lop-economics-real-yield-vs-face-value.md',
+    title: 'LOP Economics: Real Yield vs Face Value (Imaging Center 2026)',
+    date: '2026-04-29',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A $4,200 MRI billed to an LOP case is not a $4,200 receivable. It is, in expected-value terms, a $2,500–$3,000 contingent claim that may or may not convert in 9 to 18 months. Here is the LOP yield framework SE Florida imaging operators need before their next lender review — and the math your billing company has never run.',
+    categories: ['Healthcare Finance', 'Cash Flow Advisory'],
+    readTime: '15 min read',
+    featuredImage: '/images/blog/lop-economics-real-yield-vs-face-value.jpg',
+    faqs: [
+      { q: 'What discount should I apply to LOP receivables?', a: 'There is no single discount, because LOP yield depends on attorney tier, settlement timeline, modality, and statute exposure. SE Florida imaging operators typically see blended markdowns of 35–50% against face value once the four-variable framework is applied. Tier-1 attorney concentrations produce smaller markdowns (15–25%); Tier-3 and unrepresented exposure can require 50–70% markdowns or full exclusion.' },
+      { q: 'Should LOP receivables be on the borrowing base?', a: 'Yes, but with a tiered advance rate, not a flat rate. Most A/R-backed lenders in 2026 will lend 30–45% against Tier-1, current-aged LOP; 15–25% against Tier-2 or moderately-aged LOP; and exclude Tier-3 or LOP aged past 720 days. The right move is to bring this analysis to the lender first, before the underwriter discovers it.' },
+      { q: 'How long do LOP receivables typically take to convert?', a: 'Median timelines run 220–540 days from scan to cash, depending on case complexity, attorney tier, and modality. Soft-tissue cases settle faster (often inside 12 months); contested or multi-defendant cases can stretch 18–36 months or longer. Aged LOP balances past 540 days face binary statute outcomes that change the asset\'s character entirely.' },
+      { q: 'Are LOP balances written off if a case loses at trial?', a: 'Generally yes, with the legal nuances depending on the LOP terms. Most LOP agreements protect the medical provider only to the extent of settlement or recovery proceeds. A case that loses at trial typically extinguishes the LOP — which is why concentration in firms with weak case-selection discipline is a real bad-debt risk, not just a slow-pay risk.' },
+      { q: 'Can I use LOP yield analysis for my tax bad-debt reserve?', a: 'Accrual-basis imaging centers can establish a documented bad-debt reserve methodology tied to historical realization rates, subject to standard IRS rules on consistency and documentation. The yield analysis described in this article forms a defensible empirical basis for that reserve — but the specific reserve mechanics should be set with your tax preparer, with attention to Section 166 specifics for accrual taxpayers.' }
+    ]
+  },
+  'dso-benchmarks-imaging-centers-2026-sefl': {
+    file: '/content/blogs/dso-benchmarks-imaging-centers-2026-sefl.md',
+    title: 'DSO Benchmarks for Imaging Centers: 2026 SE Florida Data',
+    date: '2026-04-29',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A four-center SE Florida imaging group reports a 45-day DSO. The number is meaningless — until you separate Tier-1 commercial from PIP from LOP. Here are the five payer-class benchmarks for 2026, the weighted-DSO math, and five actions to compress yours this quarter.',
+    categories: ['Healthcare Finance', 'Cash Flow Advisory'],
+    readTime: '16 min read',
+    featuredImage: '/images/blog/dso-benchmarks-imaging-centers-2026-sefl.jpg',
+    faqs: [
+      { q: 'What is a healthy DSO for an imaging center in 2026?', a: 'There is no single healthy DSO for an imaging center, because the metric changes meaning depending on payer mix. The five payer-class targets in SE Florida are Tier-1 commercial 28–35 days, Tier-2 commercial 35–50 days, Medicare/MA 14–21 days, Florida PIP 75–120 days, and LOP/attorney-driven 180–540 days at yield-adjusted face value. Weighted DSO across all five buckets typically runs 45–55 days at a well-managed multi-center imaging group.' },
+      { q: 'Why is my reported DSO different from my weighted DSO?', a: 'Reported DSO is usually a simple revenue-divided-by-AR calculation that treats every dollar of receivable as equivalent. Weighted DSO multiplies each payer-class DSO by that class\'s share of revenue. The two numbers diverge most when LOP and PIP receivables sit in the aging report at face value while clean Tier-1 commercial collects quickly — which is the case at most SE Florida imaging centers.' },
+      { q: 'Is Florida PIP being repealed in 2026?', a: 'No. Despite recurring rumors, the Florida no-fault PIP statute remains in force in 2026. Operators planning around a near-term repeal are planning around a fiction. The right strategy is to manage PIP to its own benchmark (75–120 days median), not to expect statutory relief.' },
+      { q: 'Should I include LOP receivables in my DSO calculation?', a: 'Include them in the calculation, but report them separately and at yield-adjusted value, not face value. LOP receivables behave like contingent legal claims, not commercial A/R. Most imaging centers in SE Florida carry them at gross face value, which inflates apparent A/R, distorts DSO, and creates avoidable surprises in lender diligence.' },
+      { q: 'How fast can DSO actually be compressed?', a: 'A focused 90-day program targeting Tier-1 audit, PIP reconciliation, and weighted-DSO reporting cadence will typically compress weighted DSO by 5–10 days at a multi-center imaging group, freeing $135K–$275K in cash on a $10M revenue base. The compression is not free — it requires operational discipline that has to survive the program — but the cash is already in the building.' }
+    ]
+  },
   'profitable-but-losing-cash': {
     file: '/content/blogs/profitable-but-losing-cash.md',
     title: 'Why Your Business Is Profitable And Still Losing Cash',
