@@ -160,6 +160,8 @@ Your staffing model is the single largest variable cost. Here are the most commo
 
 > **Try the Simulator:** See exactly how your P&L and cash flow change as you grow your patient panel. Our [Concierge Medicine Financial Simulator](/tools/concierge-simulator) lets you adjust membership fees, costs, and physician salary — three views: Absolute $, % Revenue, and $ per Member.
 
+> **Related — the cash-flow blind spot most new owners hit:** Even a profitable concierge practice can drain its bank account when partner draws and intercompany transfers compound. The combined-group metric that catches it lives at [Why Your Business Is Profitable And Still Losing Cash](/blog/profitable-but-losing-cash).
+
 ---
 
 - [ ] Establish personal savings reserve (6 months of personal expenses)

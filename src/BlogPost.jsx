@@ -933,7 +933,7 @@ const blogPosts = {
   },
   'cost-starting-concierge-medical-practice': {
     file: '/content/blogs/cost-starting-concierge-medical-practice.md',
-    title: 'Concierge Medicine Average Cost (2026): $75K–$200K to Start in South Florida',
+    title: 'How Much Does It Cost to Start a Concierge Practice? $75K–$200K (2026)',
     date: '2026-03-08',
     author: 'Gerrit Disbergen, EA',
     excerpt: 'The average cost to start a concierge medical practice in 2026 is $75K–$200K, with most Broward County physicians landing at $100K–$175K. Full breakdown: entity setup, buildout, EHR, marketing, $19,750/mo fixed costs, and the S-Corp election timing most consultants forget.',
@@ -999,7 +999,7 @@ const blogPosts = {
   },
   'concierge-doctor-300-patient-panel-income': {
     file: '/content/blogs/concierge-doctor-300-patient-panel-income.md',
-    title: 'Concierge Doctor 300-Patient Panel Income: The Real Math for 2026',
+    title: 'Concierge Doctor Income: 300 Patients = $430K Take-Home (2026)',
     date: '2026-04-08',
     author: 'Gerrit Disbergen, EA',
     excerpt: 'What does a 300-patient concierge panel actually pay in 2026? Real revenue, overhead, and take-home math: every dollar from $1.26M gross to $430K net, step by step.',
@@ -1114,7 +1114,7 @@ const blogPosts = {
   },
   'ai-cash-flow-waterfall-explained': {
     file: '/content/blogs/ai-cash-flow-waterfall-explained.md',
-    title: 'Cash Flow Waterfall Explained: How Money Actually Moves Through a Business',
+    title: '$1.07M EBITDA, –$41K Cash: The Cash Flow Waterfall Explained',
     date: '2026-03-18',
     author: 'Gerrit Disbergen, EA',
     excerpt: 'The cash waterfall framework — operating cash, debt service, distributions, working capital — visualized with a real $5M imaging-center example that earned $1.07M EBITDA and lost $41K of bank balance.',

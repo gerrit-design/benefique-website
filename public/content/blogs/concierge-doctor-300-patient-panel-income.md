@@ -1,5 +1,5 @@
 ---
-title: "Concierge Doctor 300-Patient Panel Income: The Real Math for 2026"
+title: "Concierge Doctor Income: 300 Patients = $430K Take-Home (2026)"
 description: "What does a 300-patient concierge panel actually pay in 2026? Real revenue, overhead, and take-home math — every dollar from $1.26M gross to $430K net, step by step."
 date: "2026-04-08"
 author: "Gerrit Disbergen, EA"
@@ -8,7 +8,7 @@ categories: "Concierge Medicine"
 readTime: "14 min read"
 featuredImage: "/images/blog/concierge-doctor-300-patient-panel-income.jpg"
 slug: "concierge-doctor-300-patient-panel-income"
-metaTitle: "Concierge Doctor 300-Patient Panel Income: The Real Math for 2026 | Benefique"
+metaTitle: "Concierge Doctor Income: 300 Patients = $430K Take-Home (2026) | Benefique"
 metaDescription: "What does a 300-patient concierge panel actually pay in 2026? Real revenue, overhead, and take-home math — every dollar from $1.26M gross to $430K net, step by step."
 keywords: "concierge doctor income, 300 patient panel, concierge medicine salary, concierge practice revenue, panel size economics"
 ---
@@ -102,7 +102,7 @@ For startup cost details — buildout, equipment, software, and working capital 
 
 ## The Cash Flow Waterfall — EBITDA to Bank Account
 
-This is where most financial guides stop. They show you revenue and overhead and call the difference "income." That is not how money actually moves.
+This is where most financial guides stop. They show you revenue and overhead and call the difference "income." That is not how money actually moves. (For a deeper case study of how a profitable business can still lose cash, see [Why Your Business Is Profitable And Still Losing Cash](/blog/profitable-but-losing-cash).)
 
 Here is the full waterfall from $904,200 EBITDA to net cash in pocket:
 

@@ -187,7 +187,7 @@ If you run a concierge practice, do your patients a favor: issue a detailed annu
 
 This documentation helps patients claim defensible deductions, makes your membership more attractive to tax-savvy patients, and positions your practice as professionally managed. It also strengthens the employer reimbursement pathway — an HRA administrator will want to see this breakdown.
 
-For more on building a financially optimized concierge practice, explore our guides on [tax strategies for concierge physicians](/blog/tax-strategies-concierge-physicians) and [building wealth beyond the practice](/blog/concierge-physicians-build-wealth-beyond-practice).
+For more on building a financially optimized concierge practice, explore our guides on [tax strategies for concierge physicians](/blog/tax-strategies-concierge-physicians), [building wealth beyond the practice](/blog/concierge-physicians-build-wealth-beyond-practice), and [why a profitable practice can still lose cash](/blog/profitable-but-losing-cash) — the combined-group metric every multi-entity owner should run quarterly.
 
 ## Florida-Specific Considerations
 

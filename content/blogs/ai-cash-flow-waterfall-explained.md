@@ -1,5 +1,5 @@
 ---
-title: "Cash Flow Waterfall Explained: How Money Actually Moves Through a Business"
+title: "$1.07M EBITDA, –$41K Cash: The Cash Flow Waterfall Explained"
 description: "The cash waterfall framework — operating cash, debt service, distributions, working capital — visualized with a real $5M imaging-center example that earned $1.07M EBITDA and lost $41K of bank balance."
 date: "2026-03-18"
 author: "Gerrit Disbergen, EA"
@@ -8,7 +8,7 @@ categories: "Cash Flow"
 readTime: "12 min read"
 featuredImage: "/images/blog/ai-cash-flow-waterfall-explained.jpg"
 slug: "ai-cash-flow-waterfall-explained"
-metaTitle: "Cash Flow Waterfall Explained: How Money Actually Moves Through a Business | Benefique"
+metaTitle: "$1.07M EBITDA, –$41K Cash: The Cash Flow Waterfall Explained | Benefique"
 metaDescription: "The cash waterfall framework — operating cash, debt service, distributions, working capital — visualized with a real $5M imaging-center example that earned $1.07M EBITDA and lost $41K of bank balance."
 keywords: "ai cash flow analysis, cash flow waterfall, EBITDA vs cash flow, why profitable but no cash, profit not equal cash"
 ---
