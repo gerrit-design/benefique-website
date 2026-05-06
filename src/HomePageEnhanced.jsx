@@ -44,10 +44,10 @@ export default function HomePageEnhanced() {
                 See Our AI-Powered Dashboards <span>→</span>
               </Link>
               <Link
-                to="#proof"
+                to="#intelligence-library"
                 className="border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition backdrop-blur"
               >
-                Show Me the Proof
+                Browse the Intelligence Library
               </Link>
             </div>
           </div>
@@ -146,13 +146,16 @@ export default function HomePageEnhanced() {
                 <div className="text-sm text-benefique-orange font-semibold mb-1">Healthcare Group</div>
                 <h4 className="font-bold text-benefique-navy mb-2">Multi-Location Radiology Practice</h4>
                 <p className="text-gray-600 text-sm mb-3">
-                  4 locations, 2 entities, consolidated reporting. Dashboard shows location-level P&L, 
+                  4 locations, 2 entities, consolidated reporting. Dashboard shows location-level P&L,
                   AR aging, and physician compensation tracking.
                 </p>
-                <div className="text-xs text-gray-500">
+                <div className="text-xs text-gray-500 mb-3">
                   <span className="font-semibold">Deployed:</span> January 2025<br />
                   <span className="font-semibold">Client since:</span> 2019
                 </div>
+                <Link to="/services/radiology" className="text-benefique-orange text-sm font-semibold hover:underline">
+                  See the Radiology CFO engagement →
+                </Link>
               </div>
 
               <div>
@@ -304,22 +307,130 @@ export default function HomePageEnhanced() {
           
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { icon: '📚', title: 'Full Bookkeeping', desc: 'Bank reconciliation, categorization, month-end close — automated and accurate.' },
-              { icon: '💰', title: 'Payroll Processing', desc: 'Employee and contractor payroll, on time, with all filings handled.' },
-              { icon: '🎯', title: 'Tax Prep & Planning', desc: 'Not just filing — proactive planning throughout the year.' },
-              { icon: '📊', title: 'AI-Powered Dashboards', desc: 'Real-time financials that update automatically. See your numbers anytime.' },
-              { icon: '📋', title: 'AP/AR Management', desc: 'Bills tracked, paid on schedule. No missed payments or late fees.' },
-              { icon: '📞', title: 'Monthly Review Calls', desc: 'Walk through your numbers. Ask questions. Get strategic advice.' },
-              { icon: '🤖', title: 'Automated Insights', desc: 'AI reviews your books nightly and flags issues before they become problems.' },
-              { icon: '⚡', title: '24-Hour Response', desc: 'Email, text, call — you get answers within 24 hours. Guaranteed.' },
-              { icon: '✅', title: 'Full Compliance', desc: 'Sales tax, 1099s, all filings handled. No surprises, no penalties.' },
+              { icon: '📚', title: 'Full Bookkeeping', desc: 'Bank reconciliation, categorization, month-end close — automated and accurate.', link: '/blog/stop-doing-your-own-books', linkLabel: 'Read: Stop Doing Your Own Books' },
+              { icon: '💰', title: 'Payroll Processing', desc: 'Employee and contractor payroll, on time, with all filings handled.', link: '/blog/s-corp-reasonable-compensation-healthcare-service-businesses-broward-county', linkLabel: 'Read: S-Corp Reasonable Compensation' },
+              { icon: '🎯', title: 'Tax Prep & Planning', desc: 'Not just filing — proactive planning throughout the year.', link: '/blog/missed-tax-deductions-healthcare-service-businesses-broward-county', linkLabel: 'Read: Missed Tax Deductions' },
+              { icon: '📊', title: 'AI-Powered Dashboards', desc: 'Real-time financials that update automatically. See your numbers anytime.', link: '/blog/real-time-financial-dashboards-healthcare-practices', linkLabel: 'Read: Real-Time Dashboards' },
+              { icon: '📋', title: 'AP/AR Management', desc: 'Bills tracked, paid on schedule. No missed payments or late fees.', link: '/blog/improve-dso-without-sacrificing-relationships', linkLabel: 'Read: Improve DSO' },
+              { icon: '📞', title: 'Monthly Review Calls', desc: 'Walk through your numbers. Ask questions. Get strategic advice.', link: '/blog/why-monthly-reports-too-late', linkLabel: 'Read: Why Monthly Reports Are Too Late' },
+              { icon: '🤖', title: 'Automated Insights', desc: 'AI reviews your books nightly and flags issues before they become problems.', link: '/blog/ai-found-353k-trapped-cash', linkLabel: 'Read: How AI Found $353K Trapped' },
+              { icon: '⚡', title: '24-Hour Response', desc: 'Email, text, call — you get answers within 24 hours. Guaranteed.', link: null },
+              { icon: '✅', title: 'Full Compliance', desc: 'Sales tax, 1099s, all filings handled. No surprises, no penalties.', link: '/blog/1099-vs-w2-worker-classification-healthcare-service-businesses-broward-county', linkLabel: 'Read: 1099 vs W-2 Classification' },
             ].map((service) => (
-              <div key={service.title} className="bg-white rounded-xl p-6 border border-gray-100">
+              <div key={service.title} className="bg-white rounded-xl p-6 border border-gray-100 flex flex-col">
                 <div className="text-3xl mb-3">{service.icon}</div>
                 <h3 className="text-lg font-bold text-benefique-navy mb-2">{service.title}</h3>
-                <p className="text-gray-600 text-sm">{service.desc}</p>
+                <p className="text-gray-600 text-sm flex-1 mb-3">{service.desc}</p>
+                {service.link && (
+                  <Link to={service.link} className="text-benefique-orange text-sm font-semibold hover:underline">
+                    {service.linkLabel} →
+                  </Link>
+                )}
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* INTELLIGENCE LIBRARY */}
+      <section id="intelligence-library" className="py-16 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <p className="text-sm font-semibold text-benefique-orange uppercase tracking-wide mb-2 text-center">
+            Published Research
+          </p>
+          <h2 className="text-3xl font-bold text-benefique-navy text-center mb-4">Intelligence Library</h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+            The frameworks we use inside engagements. Owner-grade reads on cash, tax, and operations — with the math worked out.
+          </p>
+
+          <div className="space-y-4">
+            {[
+              {
+                title: 'Cash Flow & Working Capital',
+                posts: [
+                  { slug: 'profitable-but-losing-cash', title: 'Profitable on Paper, Losing Cash in the Bank' },
+                  { slug: 'cash-flow-waterfall-why-profit-doesnt-equal-cash', title: 'Cash Flow Waterfall: Why Profit Does Not Equal Cash' },
+                  { slug: 'ai-found-353k-trapped-cash', title: 'How AI Found $353K of Trapped Cash' },
+                  { slug: '5-cash-leaks-service-business', title: '5 Cash Leaks in Every Service Business' },
+                  { slug: 'improve-dso-without-sacrificing-relationships', title: 'Improve DSO Without Sacrificing Relationships' },
+                ],
+              },
+              {
+                title: 'Tax Strategy & Entity Structure',
+                posts: [
+                  { slug: 's-corp-tax-trap-service-business', title: 'The S-Corp Tax Trap in Service Businesses' },
+                  { slug: 'tax-strategies-concierge-physicians', title: 'Tax Strategies for Concierge Physicians' },
+                  { slug: 'missed-tax-deductions-healthcare-service-businesses-broward-county', title: 'Missed Tax Deductions: Broward County Healthcare & Service Businesses' },
+                  { slug: '2026-tax-law-changes-broward-county-healthcare-service-businesses', title: '2026 Tax Law Changes — What Broward County Owners Need to Know' },
+                  { slug: 'distribution-ratio-business-loan', title: 'The Distribution Ratio Your Banker Watches' },
+                ],
+              },
+              {
+                title: 'Healthcare Practice Economics',
+                posts: [
+                  { slug: 'cost-starting-concierge-medical-practice', title: 'How Much Does It Cost to Start a Concierge Practice? $75K–$200K (2026)' },
+                  { slug: 'concierge-medicine-income-south-florida', title: 'How Much Does a Concierge Medical Practice Make in South Florida?' },
+                  { slug: 'concierge-medicine-financial-model', title: 'The Concierge Medicine Financial Model' },
+                  { slug: 'concierge-medicine-vs-insurance-practice-financial-comparison', title: 'Concierge vs Insurance-Based Practice: A Financial Comparison' },
+                  { slug: 'per-unit-pnl-multi-location-cost-analysis', title: 'Per-Unit P&L for Multi-Location Practices' },
+                ],
+              },
+              {
+                title: 'Radiology & Multi-Center Imaging',
+                isService: true,
+                serviceLink: '/services/radiology',
+                serviceLabel: 'See the full Radiology CFO Intelligence engagement →',
+                posts: [
+                  { slug: 'radiology-accounts-receivable-line-of-credit', title: 'Radiology A/R as Collateral: The Line-of-Credit Playbook' },
+                  { slug: 'per-modality-profitability-imaging-center', title: 'Per-Modality Profitability at an Imaging Center' },
+                  { slug: 'dso-benchmarks-imaging-centers-2026-sefl', title: 'DSO Benchmarks for SE-Florida Imaging Centers (2026)' },
+                  { slug: 'toxic-payers-losing-money-medical-practice', title: 'Toxic Payers: When Volume Costs You Money' },
+                  { slug: 'multi-center-imaging-owner-income-2026-sefl', title: 'Multi-Center Imaging Owner Income (SEFL 2026)' },
+                ],
+              },
+              {
+                title: 'Banker & Lender Readiness',
+                posts: [
+                  { slug: 'ebitda-positive-cash-flow-negative-debt-service', title: 'EBITDA Positive, Cash Flow Negative, Debt Service Due' },
+                  { slug: 'what-your-banker-sees-that-you-dont', title: 'What Your Banker Sees That You Do Not' },
+                  { slug: 'why-banker-asks-personal-tax-return', title: 'Why Your Banker Asks for Your Personal Tax Return' },
+                  { slug: 'stealth-debt-balance-sheet-hidden', title: 'Stealth Debt: What is Hiding on Your Balance Sheet' },
+                  { slug: 'cash-machine-vs-exit-machine', title: 'Cash Machine vs Exit Machine' },
+                ],
+              },
+            ].map((cluster) => (
+              <details key={cluster.title} className="bg-gray-50 rounded-xl border border-gray-200 group">
+                <summary className="px-6 py-4 cursor-pointer font-semibold text-benefique-navy hover:text-benefique-orange transition list-none flex justify-between items-center">
+                  {cluster.title}
+                  <span className="text-gray-400 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <div className="px-6 pb-4 border-t border-gray-200">
+                  {cluster.isService && (
+                    <Link
+                      to={cluster.serviceLink}
+                      className="block py-3 text-benefique-orange font-semibold hover:underline border-b border-gray-200"
+                    >
+                      {cluster.serviceLabel}
+                    </Link>
+                  )}
+                  <ul className="divide-y divide-gray-200">
+                    {cluster.posts.map((p) => (
+                      <li key={p.slug}>
+                        <Link to={`/blog/${p.slug}`} className="block py-3 text-gray-700 hover:text-benefique-orange text-sm">
+                          → {p.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </details>
+            ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <Link to="/blog" className="text-benefique-orange font-semibold hover:underline">
+              Browse all posts →
+            </Link>
           </div>
         </div>
       </section>
