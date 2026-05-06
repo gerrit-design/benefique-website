@@ -460,17 +460,22 @@ function Home() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { icon: '📚', title: 'Real-Time Bookkeeping', desc: 'Every transaction categorized. Bank recs done. Books closed by the 7th — not the 30th.' },
-              { icon: '🎯', title: 'Proactive Tax Planning', desc: 'Year-round strategy, not April surprises. S-Corp timing, R&D credits, retirement plan stacking.' },
-              { icon: '💰', title: 'Payroll & Compliance', desc: 'Employee and contractor payroll, 1099s, sales tax — on time, every time, no exceptions.' },
-              { icon: '📊', title: 'CFO-Grade Reporting', desc: 'Cash flow waterfalls, per-unit economics, and prescriptive actions — not just P&Ls.' },
-              { icon: '📱', title: 'Real-Time Dashboard', desc: 'See your numbers anytime. No waiting. No asking. Just log in and know.' },
-              { icon: '📞', title: '24-Hour Response', desc: 'Questions answered within one business day. Always. Our client churn is near zero.' },
+              { icon: '📚', title: 'Real-Time Bookkeeping', desc: 'Every transaction categorized. Bank recs done. Books closed by the 7th — not the 30th.', link: '/blog/why-monthly-reports-too-late', linkLabel: 'Read: Why Monthly Reports Are Too Late' },
+              { icon: '🎯', title: 'Proactive Tax Planning', desc: 'Year-round strategy, not April surprises. S-Corp timing, R&D credits, retirement plan stacking.', link: '/blog/tax-strategies-concierge-physicians', linkLabel: 'Read: Tax Strategies in Action' },
+              { icon: '💰', title: 'Payroll & Compliance', desc: 'Employee and contractor payroll, 1099s, sales tax — on time, every time, no exceptions.', link: '/blog/1099-vs-w2-worker-classification-healthcare-service-businesses-broward-county', linkLabel: 'Read: 1099 vs W-2 Classification' },
+              { icon: '📊', title: 'CFO-Grade Reporting', desc: 'Cash flow waterfalls, per-unit economics, and prescriptive actions — not just P&Ls.', link: '/blog/three-views-one-business', linkLabel: 'Read: Three Views, One Business' },
+              { icon: '📱', title: 'Real-Time Dashboard', desc: 'See your numbers anytime. No waiting. No asking. Just log in and know.', link: '/blog/real-time-financial-dashboards-healthcare-practices', linkLabel: 'Read: Real-Time Dashboards' },
+              { icon: '📞', title: '24-Hour Response', desc: 'Questions answered within one business day. Always. Our client churn is near zero.', link: null },
             ].map((service) => (
-              <div key={service.title} className="bg-white rounded-xl p-6 border border-gray-100">
+              <div key={service.title} className="bg-white rounded-xl p-6 border border-gray-100 flex flex-col">
                 <div className="text-3xl mb-3">{service.icon}</div>
                 <h3 className="text-lg font-bold text-benefique-navy mb-2">{service.title}</h3>
-                <p className="text-gray-600 text-sm">{service.desc}</p>
+                <p className="text-gray-600 text-sm flex-1 mb-3">{service.desc}</p>
+                {service.link && (
+                  <Link to={service.link} className="text-benefique-orange text-sm font-semibold hover:underline">
+                    {service.linkLabel} →
+                  </Link>
+                )}
               </div>
             ))}
           </div>
@@ -500,6 +505,109 @@ function Home() {
                 <p className="text-blue-100 text-sm">{step.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* INTELLIGENCE LIBRARY */}
+      <section id="intelligence-library" className="py-16 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <p className="text-sm font-semibold text-benefique-orange uppercase tracking-wide mb-2 text-center">
+            Published Research
+          </p>
+          <h2 className="text-3xl font-bold text-benefique-navy text-center mb-4">Intelligence Library</h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+            The frameworks we use inside engagements. Owner-grade reads on cash, tax, and operations &mdash; with the math worked out.
+          </p>
+
+          <div className="space-y-4">
+            {[
+              {
+                title: 'Cash Flow & Working Capital',
+                posts: [
+                  { slug: 'profitable-but-losing-cash', title: 'Profitable on Paper, Losing Cash in the Bank' },
+                  { slug: 'cash-flow-waterfall-why-profit-doesnt-equal-cash', title: 'Cash Flow Waterfall: Why Profit Does Not Equal Cash' },
+                  { slug: 'ai-found-353k-trapped-cash', title: 'How AI Found $353K of Trapped Cash' },
+                  { slug: '5-cash-leaks-service-business', title: '5 Cash Leaks in Every Service Business' },
+                  { slug: 'improve-dso-without-sacrificing-relationships', title: 'Improve DSO Without Sacrificing Relationships' },
+                ],
+              },
+              {
+                title: 'Tax Strategy & Entity Structure',
+                posts: [
+                  { slug: 's-corp-tax-trap-service-business', title: 'The S-Corp Tax Trap in Service Businesses' },
+                  { slug: 'tax-strategies-concierge-physicians', title: 'Tax Strategies for Concierge Physicians' },
+                  { slug: 'missed-tax-deductions-healthcare-service-businesses-broward-county', title: 'Missed Tax Deductions: Broward County Healthcare & Service Businesses' },
+                  { slug: '2026-tax-law-changes-broward-county-healthcare-service-businesses', title: '2026 Tax Law Changes — What Broward County Owners Need to Know' },
+                  { slug: 'distribution-ratio-business-loan', title: 'The Distribution Ratio Your Banker Watches' },
+                ],
+              },
+              {
+                title: 'Healthcare Practice Economics',
+                posts: [
+                  { slug: 'cost-starting-concierge-medical-practice', title: 'How Much Does It Cost to Start a Concierge Practice? $75K–$200K (2026)' },
+                  { slug: 'concierge-medicine-income-south-florida', title: 'How Much Does a Concierge Medical Practice Make in South Florida?' },
+                  { slug: 'concierge-medicine-financial-model', title: 'The Concierge Medicine Financial Model' },
+                  { slug: 'concierge-medicine-vs-insurance-practice-financial-comparison', title: 'Concierge vs Insurance-Based Practice: A Financial Comparison' },
+                  { slug: 'per-unit-pnl-multi-location-cost-analysis', title: 'Per-Unit P&L for Multi-Location Practices' },
+                ],
+              },
+              {
+                title: 'Radiology & Multi-Center Imaging',
+                isService: true,
+                serviceLink: '/services/radiology',
+                serviceLabel: 'See the full Radiology CFO Intelligence engagement →',
+                posts: [
+                  { slug: 'radiology-accounts-receivable-line-of-credit', title: 'Radiology A/R as Collateral: The Line-of-Credit Playbook' },
+                  { slug: 'per-modality-profitability-imaging-center', title: 'Per-Modality Profitability at an Imaging Center' },
+                  { slug: 'dso-benchmarks-imaging-centers-2026-sefl', title: 'DSO Benchmarks for SE-Florida Imaging Centers (2026)' },
+                  { slug: 'toxic-payers-losing-money-medical-practice', title: 'Toxic Payers: When Volume Costs You Money' },
+                  { slug: 'multi-center-imaging-owner-income-2026-sefl', title: 'Multi-Center Imaging Owner Income (SEFL 2026)' },
+                ],
+              },
+              {
+                title: 'Banker & Lender Readiness',
+                posts: [
+                  { slug: 'ebitda-positive-cash-flow-negative-debt-service', title: 'EBITDA Positive, Cash Flow Negative, Debt Service Due' },
+                  { slug: 'what-your-banker-sees-that-you-dont', title: 'What Your Banker Sees That You Do Not' },
+                  { slug: 'why-banker-asks-personal-tax-return', title: 'Why Your Banker Asks for Your Personal Tax Return' },
+                  { slug: 'stealth-debt-balance-sheet-hidden', title: 'Stealth Debt: What is Hiding on Your Balance Sheet' },
+                  { slug: 'cash-machine-vs-exit-machine', title: 'Cash Machine vs Exit Machine' },
+                ],
+              },
+            ].map((cluster) => (
+              <details key={cluster.title} className="bg-gray-50 rounded-xl border border-gray-200 group">
+                <summary className="px-6 py-4 cursor-pointer font-semibold text-benefique-navy hover:text-benefique-orange transition list-none flex justify-between items-center">
+                  {cluster.title}
+                  <span className="text-gray-400 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <div className="px-6 pb-4 border-t border-gray-200">
+                  {cluster.isService && (
+                    <Link
+                      to={cluster.serviceLink}
+                      className="block py-3 text-benefique-orange font-semibold hover:underline border-b border-gray-200"
+                    >
+                      {cluster.serviceLabel}
+                    </Link>
+                  )}
+                  <ul className="divide-y divide-gray-200">
+                    {cluster.posts.map((p) => (
+                      <li key={p.slug}>
+                        <Link to={`/blog/${p.slug}`} className="block py-3 text-gray-700 hover:text-benefique-orange text-sm">
+                          → {p.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </details>
+            ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <Link to="/blog" className="text-benefique-orange font-semibold hover:underline">
+              Browse all posts →
+            </Link>
           </div>
         </div>
       </section>
