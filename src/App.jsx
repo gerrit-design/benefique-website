@@ -794,7 +794,7 @@ function Services() {
               <div className="text-4xl">📊</div>
               <div>
                 <h2 className="text-2xl font-bold text-benefique-navy">Fractional CFO Services</h2>
-                <p className="text-gray-600">C-suite financial leadership at a fraction of the cost</p>
+                <p className="text-gray-600">You stop guessing whether next quarter is a cash crunch.</p>
               </div>
             </div>
             <p className="text-gray-700 mb-6">
@@ -875,7 +875,7 @@ function Services() {
               </ul>
               <div className="bg-gray-50 rounded-xl p-6">
                 <div className="text-sm text-benefique-orange uppercase tracking-wide font-semibold mb-2">Our Promise</div>
-                <h3 className="text-lg font-bold text-benefique-navy mb-2">24-Hour Response Time</h3>
+                <h3 className="text-lg font-bold text-benefique-navy mb-2">Send the Question. Move On.</h3>
                 <p className="text-gray-600 text-sm">
                   Questions don't wait. Neither do we. Every client inquiry gets a response
                   within one business day, guaranteed.
@@ -946,7 +946,7 @@ function Services() {
           <div className="bg-gradient-to-br from-benefique-navy to-slate-800 rounded-2xl p-8 text-white">
             <h2 className="text-2xl font-bold mb-4">The Result: Financial Intelligence, Not Just Financial Reporting</h2>
             <p className="text-blue-100 mb-4">
-              Most accounting firms deliver compliance — books closed, taxes filed. That&apos;s necessary work. But when your books are real-time, your tax strategy is proactive, and AI is mining the operational data in your QuickBooks, your accounting function stops being a cost center and starts generating ROI.
+              Most accounting firms deliver compliance — books closed, taxes filed. Necessary work. But when your books are real-time, your tax strategy is proactive, and AI is mining your operational QuickBooks data, you stop paying for accounting and start getting paid by it.
             </p>
             <p className="text-blue-100 mb-6">
               Our clients typically discover $20K–$350K in trapped cash, tax savings, or operational improvements within the first 90 days. Not because the data wasn&apos;t there — because nobody was looking.
@@ -1171,7 +1171,7 @@ function About() {
     <div>
       <Helmet>
         <title>From Tax Returns to Data Intelligence | About Benefique Tax & Accounting</title>
-        <meta name="description" content="We started with your tax return. Then we built real-time accounting, AI-powered cash flow intelligence, and a data platform that turns your accounting function from a cost center into an ROI center." />
+        <meta name="description" content="Most accounting firms hand you a tax return and a year-old P&amp;L. We give you the cash answer, the tax answer, and the operational answer in real time — before you have to ask." />
         <link rel="canonical" href="https://www.benefique.com/about" />
       </Helmet>
 
@@ -1314,9 +1314,8 @@ function About() {
             <div className="border-l-4 border-benefique-orange pl-6">
               <h3 className="font-bold text-benefique-navy text-lg mb-2">Books closed by the 7th. Review calls by the 10th.</h3>
               <p className="text-gray-600 text-sm">
-                Questions answered within 24 hours. Always. Our client churn is near zero — not because
-                we lock anyone in, but because when your financial team is always available and always ahead
-                of the problem, you stop looking for alternatives.
+                Questions answered within 24 hours. Always. When your accounting team is ahead of the problem
+                instead of catching up to it, you stop looking for alternatives.
               </p>
             </div>
           </div>
