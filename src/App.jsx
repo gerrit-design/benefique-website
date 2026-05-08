@@ -282,26 +282,6 @@ function Home() {
             <p className="text-sm text-gray-500">
               No obligation. We&apos;ll tell you honestly if we can help &mdash; and how.
             </p>
-
-            {/* Trust Bar */}
-            <div className="flex flex-wrap items-center gap-6 mt-8 pt-6 border-t border-gray-100">
-              <div className="flex items-center gap-2">
-                <span className="text-2xl font-bold text-benefique-navy">33</span>
-                <span className="text-sm text-gray-500 leading-tight">active client<br/>groups</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-2xl font-bold text-benefique-navy">73</span>
-                <span className="text-sm text-gray-500 leading-tight">QBO entities<br/>managed</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-2xl font-bold text-benefique-navy">~0%</span>
-                <span className="text-sm text-gray-500 leading-tight">client<br/>churn</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-2xl font-bold text-benefique-navy">7th</span>
-                <span className="text-sm text-gray-500 leading-tight">books closed<br/>each month</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
