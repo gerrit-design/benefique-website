@@ -13,6 +13,8 @@ metaDescription: "Five payer-class DSO benchmarks for SE Florida imaging centers
 keywords: "imaging center DSO benchmark, radiology days sales outstanding 2026, imaging A/R aging Florida, payer-class DSO, weighted DSO calculation, PIP DSO, LOP receivables"
 ---
 
+**Quick answer:** Aggregate DSO is a vanity number for SE Florida imaging in 2026. The five payer-class benchmarks that actually matter are Tier-1 commercial (28–35 days), Tier-2 commercial (35–50 days), Medicare/MA (14–21 days), Florida PIP (75–120 days), and LOP/attorney-driven (180–540 days, face value ≠ yield). Every day of weighted DSO at a $10M-revenue center represents roughly $27,000 in cash — compress weighted DSO by 10 days and you free $274,000 without raising fees, signing a contract, or scanning one more patient.
+
 # DSO Benchmarks for Imaging Centers: 2026 SE Florida Data
 
 A four-center imaging group in Broward County reported a 45-day DSO at year-end. The CFO accepted it. The lender accepted it. Everyone moved on.

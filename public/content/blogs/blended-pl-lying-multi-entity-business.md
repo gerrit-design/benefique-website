@@ -13,6 +13,8 @@ metaDescription: "Blended margin in a multi-entity P&L hides two profit stories.
 keywords: "blended P&L, multi-entity business, divisional analysis, intercompany markup, gross margin by channel, internal vs external revenue, transfer pricing small business"
 ---
 
+**Quick answer:** A $3M multi-entity distribution business posted a 15.5% blended gross margin and looked distressed. Splitting the P&L into Internal (sold to your own entities at cost + 10%) and External (sold at 50%+ margin to outside customers) revealed a healthy 50%+ external business subsidizing a structurally unprofitable 9% internal transfer operation. The blended margin was hiding both stories. Splitting by channel takes about ninety minutes and changes every strategic decision that follows.
+
 If your business has two or more entities that transact with each other, your consolidated P&L is lying to you. Not maliciously — structurally. Every line on that statement blends two different businesses running at two different margins, and the blend is almost always dominated by the one you least want it to be dominated by.
 
 > **Key Takeaway:** When a multi-entity business sells internally at cost + 10% and externally at 50%+ gross margin, the blended P&L hides both stories. A "distressed" 15% blended margin can conceal a thriving external business subsidizing a structurally unprofitable internal transfer operation. Splitting the P&L by channel — anchored at your known intercompany markup — takes ninety minutes and changes every strategic decision that follows.

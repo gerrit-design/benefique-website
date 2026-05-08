@@ -13,6 +13,8 @@ metaDescription: "Real take-home math for multi-center imaging owners in SE Flor
 keywords: "imaging center owner income, multi-center radiology owner take home, imaging center owner salary, radiology center owner compensation, imaging center owner distributions, SE Florida imaging income"
 ---
 
+**Quick answer:** A SE Florida multi-center imaging owner's real take-home in 2026 ranges roughly from $280K–$425K at two centers, $475K–$725K at three, $700K–$1.1M at four, and $1.0M–$1.6M+ at five centers — measured as the residual after debt service, working-capital reinvestment, partner-distribution discipline, and personal tax. The biggest determinant is not center count. It is whether the operator has built distribution discipline that survives debt service and growth reinvestment, or is drawing against next year's working capital and calling it income.
+
 # Multi-Center Imaging Owner Income: 2026 SE Florida Benchmarks
 
 A SE Florida imaging owner asked us a simple question last quarter: "How much should I be making?"
