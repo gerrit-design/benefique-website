@@ -26,6 +26,18 @@ const moduleScriptMatches = indexHtml.match(/<script[^>]+type="module"[^>]*>[\s\
 // Also grab any preload/modulepreload links
 const preloadMatches = indexHtml.match(/<link[^>]+rel="modulepreload"[^>]*>/g) || [];
 
+// Extract base brand JSON-LD (LocalBusiness, Person, Organization) so they
+// appear on every prerendered route — index.html is the source of truth.
+const baseJsonLdBlocks = (
+  indexHtml.match(/<script type="application\/ld\+json">[\s\S]*?<\/script>/g) || []
+).join('\n    ');
+
+// Extract geo meta tags (geo.region, geo.placename, geo.position, ICBM)
+// for local-SEO consistency across every route.
+const geoMetaTags = (
+  indexHtml.match(/<meta name="(?:geo\.[a-z]+|ICBM)"[^>]*>/g) || []
+).join('\n    ');
+
 const cssLinks = cssLinkMatches.join('\n    ');
 const preloadLinks = preloadMatches.join('\n    ');
 const moduleScripts = moduleScriptMatches
@@ -207,9 +219,12 @@ function generateHTML({ title, description, canonical, ogType, ogImage, schemas,
   const safeCanonical = escapeHtml(canonical);
   const safeOgImage = escapeHtml(ogImage || DEFAULT_OG_IMAGE);
 
-  const schemaBlocks = (schemas || []).map(s =>
+  const routeSchemaBlocks = (schemas || []).map(s =>
     typeof s === 'string' ? s : buildSchemaScript(s)
   ).join('\n    ');
+  const schemaBlocks = baseJsonLdBlocks
+    ? (routeSchemaBlocks ? `${baseJsonLdBlocks}\n    ${routeSchemaBlocks}` : baseJsonLdBlocks)
+    : routeSchemaBlocks;
 
   return `<!doctype html>
 <html lang="en">
@@ -233,6 +248,7 @@ function generateHTML({ title, description, canonical, ogType, ogImage, schemas,
     <meta name="twitter:title" content="${safeTitle}">
     <meta name="twitter:description" content="${safeDesc}">
     <meta name="twitter:image" content="${safeOgImage}">
+    ${geoMetaTags}
     ${schemaBlocks}
     ${preloadLinks}
     ${cssLinks}
