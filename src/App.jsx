@@ -258,7 +258,7 @@ function Home() {
               Your Accounting Should Tell You<br />What to Do &mdash; Not Just What Happened
             </h1>
             <p className="text-lg text-gray-600 mb-4">
-              We turn your accounting function from a cost center into an ROI center. Clean books are the foundation. AI-powered financial intelligence is the product.
+              You stop watching your bank balance shrink while your P&amp;L says you&apos;re profitable. We tell you exactly which dollar is leaking &mdash; and how to plug it.
             </p>
             <p className="text-gray-600 mb-8">
               One client had $1M in profit and zero cash growth. Another had $353K trapped in receivables nobody was tracking. A third had $961K in hidden debt the balance sheet never showed. All of it was sitting in their QuickBooks. Nobody was mining it.
@@ -440,12 +440,12 @@ function Home() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { icon: '📚', title: 'Real-Time Bookkeeping', desc: 'Every transaction categorized. Bank recs done. Books closed by the 7th — not the 30th.', link: '/blog/why-monthly-reports-too-late', linkLabel: 'Read: Why Monthly Reports Are Too Late' },
-              { icon: '🎯', title: 'Proactive Tax Planning', desc: 'Year-round strategy, not April surprises. S-Corp timing, R&D credits, retirement plan stacking.', link: '/blog/tax-strategies-concierge-physicians', linkLabel: 'Read: Tax Strategies in Action' },
-              { icon: '💰', title: 'Payroll & Compliance', desc: 'Employee and contractor payroll, 1099s, sales tax — on time, every time, no exceptions.', link: '/blog/1099-vs-w2-worker-classification-healthcare-service-businesses-broward-county', linkLabel: 'Read: 1099 vs W-2 Classification' },
-              { icon: '📊', title: 'CFO-Grade Reporting', desc: 'Cash flow waterfalls, per-unit economics, and prescriptive actions — not just P&Ls.', link: '/blog/three-views-one-business', linkLabel: 'Read: Three Views, One Business' },
+              { icon: '📚', title: 'You Stop Touching QuickBooks', desc: 'The numbers are clean before you look. You stop wondering whether the bank balance is real.', link: '/blog/why-monthly-reports-too-late', linkLabel: 'Read: Why Monthly Reports Are Too Late' },
+              { icon: '🎯', title: 'April Stops Being a Surprise', desc: 'By December you know what you\'re writing — and what you\'re not. No more April-surprise phone calls.', link: '/blog/tax-strategies-concierge-physicians', linkLabel: 'Read: Tax Strategies in Action' },
+              { icon: '💰', title: 'Payroll Disappears from Your Calendar', desc: 'Sales-tax filings, 1099 January, contractor pay — none of it lands on your desk again.', link: '/blog/1099-vs-w2-worker-classification-healthcare-service-businesses-broward-county', linkLabel: 'Read: 1099 vs W-2 Classification' },
+              { icon: '📊', title: 'You Stop Guessing About Cash', desc: 'Whether next quarter is a crunch. Which location is actually making money. The number is in your inbox before you ask.', link: '/blog/three-views-one-business', linkLabel: 'Read: Three Views, One Business' },
               { icon: '📱', title: 'Real-Time Dashboard', desc: 'See your numbers anytime. No waiting. No asking. Just log in and know.', link: '/blog/real-time-financial-dashboards-healthcare-practices', linkLabel: 'Read: Real-Time Dashboards' },
-              { icon: '📞', title: '24-Hour Response', desc: 'Questions answered within one business day. Always. Our client churn is near zero.', link: null },
+              { icon: '📞', title: 'Ask. Get On With Your Day.', desc: 'Send the question. The answer comes back the same business day. The thing in your head can leave it.', link: null },
             ].map((service) => (
               <div key={service.title} className="bg-white rounded-xl p-6 border border-gray-100 flex flex-col">
                 <div className="text-3xl mb-3">{service.icon}</div>
