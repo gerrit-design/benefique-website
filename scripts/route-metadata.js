@@ -9,17 +9,17 @@ const routes = [
   {
     path: '/',
     title: 'Benefique Tax & Accounting | Fractional CFO Services | Davie FL',
-    description: 'Fractional CFO services and full-service accounting for healthcare practices in South Florida. Books closed by the 7th, review call by the 10th. Serving Davie, Fort Lauderdale, and Miami.',
+    description: 'You stop watching your bank balance shrink while your P&L says you are profitable. We tell you exactly which dollar is leaking and how to plug it. Fractional CFO and accounting for healthcare practices in South Florida.',
   },
   {
     path: '/services',
     title: 'Accounting & CFO Services | Benefique Tax & Accounting',
-    description: 'Full-service accounting, tax planning, and fractional CFO services for healthcare practices and service businesses in South Florida. Real-time reporting, monthly closes, 24-hour response.',
+    description: 'Stop touching QuickBooks. Stop guessing about cash. Stop being surprised in April. The accounting team that closes your books before you ask, and tells you what to do next — for healthcare practices and service businesses in South Florida.',
   },
   {
     path: '/about',
     title: 'Your Accounting Should Pay for Itself | Benefique Tax & Accounting | Davie, FL',
-    description: 'Benefique turns accounting from a cost center into an ROI center. AI-powered cash flow analysis and proactive tax planning for healthcare practices and service businesses. Real-time accounting. Tax-ready any day.',
+    description: 'Most accounting firms hand you a tax return and a year-old P&L. We give you the cash answer, the tax answer, and the operational answer in real time — before you have to ask.',
   },
   {
     path: '/blog',
