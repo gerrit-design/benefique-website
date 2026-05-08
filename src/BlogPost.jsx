@@ -6,6 +6,38 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  'cash-conversion-cycle-lie': {
+    file: '/content/blogs/cash-conversion-cycle-lie.md',
+    title: 'The Cash Conversion Cycle Lie: Why a Blended CCC Hides Everything',
+    date: '2026-05-09',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A profitable veterinary practice in Atlanta tracks a 27-day Cash Conversion Cycle and feels good about it. The problem is that 27 days is an average — and the streams underneath it move in opposite directions. One stream funds the business. The other one bleeds it. The blended number tells you neither.',
+    categories: ['Cash Flow'],
+    readTime: '7 min read',
+    featuredImage: '/images/blog/cash-conversion-cycle-lie.jpg',
+    faqs: [
+      { q: 'Does this apply to a single-stream business?', a: 'If your revenue truly comes from one stream — a pure recurring software business, a pure consulting practice with no pass-through — the blended CCC is informative on its own. The stream-level analysis matters when two or more streams have structurally different working-capital profiles. Most service businesses do, even when their owners describe the business in single-stream terms.' },
+      { q: 'How is this different from gross-margin-by-stream analysis?', a: 'Gross margin by stream tells you which stream is most profitable per dollar of revenue. Stream-level CCC tells you which stream is generating or consuming cash per day of operation. They answer different questions. A high-margin stream with a +60-day CCC can consume more cash than a lower-margin stream with a negative CCC produces. The two analyses are complements, not substitutes.' },
+      { q: 'What if my accounting system doesn\'t track stream-level data?', a: 'Build it from invoice-line history. Almost every QuickBooks file or specialty practice-management system records the underlying detail at the line-item level, even when the headline P&L rolls into a single revenue account. The first stream-level CCC pull is typically four to eight hours of analyst work; subsequent monthly updates run thirty minutes once the categorization is mapped.' },
+      { q: 'How frequently should I track stream-level CCC?', a: 'Monthly, with a quarterly trend review. The single most actionable metric is the trajectory of the percentage of revenue in negative-CCC streams. If it is rising, the business is becoming better-funded operationally. If it is falling while revenue is growing, the business is silently absorbing working capital that will appear as a cash crisis two quarters later.' }
+    ]
+  },
+  'record-month-drained-bank-account': {
+    file: '/content/blogs/record-month-drained-bank-account.md',
+    title: 'Why Your Record Month Drained Your Bank Account',
+    date: '2026-05-09',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A Charlotte HVAC contractor closed the strongest month in the firm\'s history — $293K of revenue and $116K of net income. The bank balance went down. The owners stared at the statement and asked the most common question in small business: where did the money go? The math is brutal, and the fix is a single policy.',
+    categories: ['Cash Flow'],
+    readTime: '6 min read',
+    featuredImage: '/images/blog/record-month-drained-bank-account.jpg',
+    faqs: [
+      { q: 'What if our partnership\'s normal draws are below 60%? Do we still need a policy?', a: 'Yes. The value of the written policy is not the cap; it is the fact that any draw above the trailing-3-month-OCF baseline now requires a partnership decision instead of an unilateral check. Many of our clients run well below the 60% threshold most months, and the policy still pays for itself the first time one partner wants to spike a draw and the policy structure produces a cleaner conversation than the alternative.' },
+      { q: 'Does this work for S-Corps as well as partnerships?', a: 'Yes. The S-Corp version replaces "partner draws" with "owner distributions over and above reasonable W-2 salary." The 60% test, the trailing-3-month-OCF base, and the retention buffer all work the same way. Banks evaluate S-Corp distributions against the same threshold they evaluate partnership distributions against.' },
+      { q: 'Won\'t this hurt our personal cash flow?', a: 'Short-term, possibly. Long-term, the opposite. A growing business with disciplined distribution policy generates more retained cash, more reinvestment capacity, lower borrowing costs, and a higher exit multiple — all of which translate to more personal cash for the partners over a multi-year horizon. The trade is a small near-term smoothing for a meaningful long-term compounding effect.' },
+      { q: 'How quickly does a banker notice the difference?', a: 'Four consecutive quarters of clean discipline is the typical lender threshold. Some community banks with a strong existing deposit relationship will accept less; SBA 7(a) lenders typically want the four-quarter run plus a positive trajectory in the ratio. The policy benefit shows up in pricing, covenant tightness, and approval speed — in that order — within a year of disciplined execution.' }
+    ]
+  },
   'rule-of-40-small-business': {
     file: '/content/blogs/rule-of-40-small-business.md',
     title: 'The Rule of 40 for Owner-Operated Businesses',
