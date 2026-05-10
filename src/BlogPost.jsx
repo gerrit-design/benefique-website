@@ -6,6 +6,23 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  'cash-vs-accrual-small-business': {
+    file: '/content/blogs/cash-vs-accrual-small-business.md',
+    title: '$3.64M or $2.45M? The Same Business, Two Profit Numbers, Both Correct',
+    date: '2026-05-10',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A 3-partner Florida law firm we work with closed April 2026 with $3.64M of profit and $2.45M of profit. Both numbers are correct. The $1.19M gap between them has three names — and confusing them is how owners over-distribute, under-fund tax, and get blindsided in March.',
+    categories: ['Cash Flow', 'Business Strategy', 'Accounting'],
+    readTime: '9 min read',
+    featuredImage: '/images/blog/cash-vs-accrual-small-business.jpg',
+    faqs: [
+      { q: 'Can I file cash and manage on accrual at the same time?', a: 'Yes. You maintain one accrual general ledger and run two reports from it — accrual for management, cash for tax filing. QuickBooks Online produces both natively from the same ledger with a single toggle. The discipline is in keeping the accrual entries (A/R, A/P, prepaid, depreciation, deferred revenue) properly maintained.' },
+      { q: 'What is the IRS revenue threshold for cash-basis eligibility in 2026?', a: 'Under TCJA §448(c), businesses with average gross receipts of $30 million or less (2025 indexed amount) may elect the cash method. C-corporations, partnerships with C-corporation partners, and tax shelters are excluded regardless of size. Most service businesses, professional partnerships, and small operating companies qualify.' },
+      { q: 'My business has no A/R and no inventory — do I still need accrual?', a: 'Often no. Pure point-of-sale, zero-A/R, zero-inventory businesses (single-doctor vet practice paid at checkout, restaurant collecting same-day, hairdresser) can run cash with minimal distortion because the timing gaps are days, not months. Anyone with A/R, A/P, deferred revenue, or inventory needs the accrual overlay to manage the business.' },
+      { q: 'Will running both bases cost more in accounting fees?', a: 'Yes — typically 20–40% more than cash-only bookkeeping, because closing entries require accountant-level work. The math justifies itself the first time the dual-basis read prevents one mispriced hire, one over-distribution, or one rejected loan application. For most owner-operated businesses, that payback hits within the first two months.' },
+      { q: 'How long does it take to convert cash-basis books to accrual?', a: 'Typically two to six weeks for clean books — a chart of accounts redesign, opening balance entries for A/R and A/P, prepaid and depreciation schedules, and deferred revenue setup. Longer (eight to twelve weeks) if A/R and A/P were never tracked at all and have to be reconstructed from invoices and bills. The conversion is a one-time cost; the dual-basis monthly cadence is what produces the ongoing value.' }
+    ]
+  },
   'cash-conversion-cycle-lie': {
     file: '/content/blogs/cash-conversion-cycle-lie.md',
     title: 'The Cash Conversion Cycle Lie: Why a Blended CCC Hides Everything',
