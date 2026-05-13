@@ -36,6 +36,7 @@
     { "source": "/go/ccc-lie", "destination": "/blog/cash-conversion-cycle-lie?utm_source=linkedin&utm_medium=social&utm_campaign=ccc-lie", "statusCode": 302 },
     { "source": "/go/record-month", "destination": "/blog/record-month-drained-bank-account?utm_source=linkedin&utm_medium=social&utm_campaign=record-month", "statusCode": 302 },
 
+    { "source": "/contact/", "destination": "/contact", "statusCode": 301 },
     { "source": "/blog/the-20-minute-monthly-cash-review", "destination": "/blog/monthly-cash-review-20-minutes", "statusCode": 301 },
     { "source": "/blog/dso-the-350k-number", "destination": "/blog/dso-350k-number-business-owners", "statusCode": 301 },
     { "source": "/blog/cash-flow-forecasting-101", "destination": "/blog/ai-cash-flow-forecasting-small-business", "statusCode": 301 },

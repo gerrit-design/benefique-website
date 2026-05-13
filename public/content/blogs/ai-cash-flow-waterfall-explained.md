@@ -1,6 +1,6 @@
 ---
 title: "$1.07M EBITDA, –$41K Cash: The Cash Flow Waterfall Explained"
-description: "The cash waterfall framework — operating cash, debt service, distributions, working capital — visualized with a real $5M imaging-center example that earned $1.07M EBITDA and lost $41K of bank balance."
+description: "$1.07M EBITDA, –$41K cash. The waterfall shows exactly where every dollar went — operating cash, debt service, distributions, working capital. Real $5M imaging-center walkthrough, line by line."
 date: "2026-03-18"
 author: "Gerrit Disbergen, EA"
 excerpt: "A $5M imaging center earned $1.07M in EBITDA but its bank account shrank by $41K. Here is exactly where that million dollars went — broken down by the AI that found it."
@@ -9,7 +9,7 @@ readTime: "12 min read"
 featuredImage: "/images/blog/ai-cash-flow-waterfall-explained.jpg"
 slug: "ai-cash-flow-waterfall-explained"
 metaTitle: "$1.07M EBITDA, –$41K Cash: The Cash Flow Waterfall Explained | Benefique"
-metaDescription: "The cash waterfall framework — operating cash, debt service, distributions, working capital — visualized with a real $5M imaging-center example that earned $1.07M EBITDA and lost $41K of bank balance."
+metaDescription: "$1.07M EBITDA, –$41K cash. The waterfall shows exactly where every dollar went — operating cash, debt service, distributions, working capital. Real $5M imaging-center walkthrough, line by line."
 keywords: "ai cash flow analysis, cash flow waterfall, EBITDA vs cash flow, why profitable but no cash, profit not equal cash"
 ---
 
