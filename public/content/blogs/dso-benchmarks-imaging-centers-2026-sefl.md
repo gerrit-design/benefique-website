@@ -3,7 +3,7 @@ title: "DSO Benchmarks for Imaging Centers: 2026 SE Florida Data"
 description: "What's a healthy DSO for an imaging center in 2026? Five payer-class benchmarks for SE Florida, the weighted-DSO math, and 5 actions to compress yours."
 date: "2026-04-29"
 author: "Gerrit Disbergen, EA"
-excerpt: "A four-center SE Florida imaging group reports a 45-day DSO. The number is meaningless — until you separate Tier-1 commercial from PIP from LOP. Here are the five payer-class benchmarks for 2026, the weighted-DSO math, and five actions to compress yours this quarter."
+excerpt: "A $4.2M SE Florida imaging center reports a 53-day DSO. Technically accurate. Operationally useless. Here are the five payer-class benchmarks for 2026 — Tier-1, Tier-2, Medicare/MA, Florida PIP, and LOP — calibrated to industry-defensible targets, with the weighted-DSO math and five actions to compress yours this quarter."
 categories: ["Healthcare Finance", "Cash Flow Advisory"]
 readTime: "16 min read"
 featuredImage: "/images/blog/dso-benchmarks-imaging-centers-2026-sefl.jpg"
@@ -13,19 +13,19 @@ metaDescription: "Five payer-class DSO benchmarks for SE Florida imaging centers
 keywords: "imaging center DSO benchmark, radiology days sales outstanding 2026, imaging A/R aging Florida, payer-class DSO, weighted DSO calculation, PIP DSO, LOP receivables"
 ---
 
-**Quick answer:** Aggregate DSO is a vanity number for SE Florida imaging in 2026. The five payer-class benchmarks that actually matter are Tier-1 commercial (28–35 days), Tier-2 commercial (35–50 days), Medicare/MA (14–21 days), Florida PIP (75–120 days), and LOP/attorney-driven (180–540 days, face value ≠ yield). Every day of weighted DSO at a $10M-revenue center represents roughly $27,000 in cash — compress weighted DSO by 10 days and you free $274,000 without raising fees, signing a contract, or scanning one more patient.
+**Quick answer:** Aggregate DSO is a vanity number for SE Florida imaging in 2026. The five payer-class benchmarks that actually matter — target medians for well-managed operations, from date of service — are Tier-1 commercial (32–42 days), Tier-2 commercial (42–55 days), Medicare/MA (18–28 days), Florida PIP (90–150 days), and LOP/attorney-driven (270–540 days, yield-adjusted). Every day of weighted DSO at a $4M-revenue center represents roughly $11,000 in cash — compress weighted DSO by 10 days and you free $110,000 without raising fees, signing a contract, or scanning one more patient.
 
 # DSO Benchmarks for Imaging Centers: 2026 SE Florida Data
 
-A four-center imaging group in Broward County reported a 45-day DSO at year-end. The CFO accepted it. The lender accepted it. Everyone moved on.
+A single-center SE Florida imaging operator running $4.2M in annual revenue reported a 53-day DSO at year-end. The CFO accepted it. The lender accepted it. Everyone moved on.
 
-The number was a lie.
+The number was technically accurate. It was also operationally useless.
 
-Once we decomposed the A/R, the picture flipped: Tier-1 commercial was collecting in 31 days (healthy). Medicare was collecting in 17 days (healthy). But Florida PIP was sitting at 102 days, LOP-backed receivables were at 412 days, and the patient self-pay bucket had a median over 90 days with a 38% never-collected rate. The 45-day "DSO" was a weighted average of clean money and trapped money — and it told the operator nothing about which problem to solve first.
+Once we decomposed the A/R into its actual payer-class buckets, the picture broke open: Tier-1 commercial was collecting in 36 days (in range). Medicare was collecting in 22 days (in range). But Florida PIP was sitting at 138 days, LOP-backed receivables were at 412 days concentrated in three referring attorneys, and the patient self-pay bucket had a 96-day median with a 38% never-collected rate. The 53-day "DSO" was a weighted average of clean money and trapped money — and it told the operator nothing about which problem to solve first.
 
-This article is the per-payer DSO benchmark framework we use inside Strategic Radiology Reviews — built specifically for SE Florida imaging in 2026, where rising volume, payer compression, PIP delays, and LOP collateral risk make aggregate DSO worse than useless.
+This article is the per-payer DSO benchmark framework we use inside Strategic Radiology Reviews — built specifically for SE Florida imaging in 2026, where rising volume, payer compression, PIP delays, and LOP collateral risk make aggregate DSO worse than useless. The framework applies whether you're running a $3M single-center operation or a $20M multi-center group — the math just scales.
 
-> **Key Takeaway:** Aggregate DSO is a vanity number. The five payer-class DSO benchmarks below — Tier-1 commercial (28–35d), Tier-2 commercial (35–50d), Medicare/MA (14–21d), Florida PIP (75–120d), and LOP/attorney-driven (180–540d, face value ≠ yield) — are the operational layer your accountant and billing company will not build for you. Every day of weighted DSO at a $10M-revenue center represents roughly $27K in cash. Compress weighted DSO by 10 days and you free $274K — without raising fees, signing a contract, or scanning one more patient.
+> **Key Takeaway:** Aggregate DSO is a vanity number. The five payer-class DSO benchmarks below — Tier-1 commercial (32–42d), Tier-2 commercial (42–55d), Medicare/MA (18–28d), Florida PIP (90–150d), and LOP/attorney-driven (270–540d, yield-adjusted) — are target medians for well-managed operations, measured from date of service. Industry medians often run materially above these targets; the gap between target and reality is the management opportunity. At a $4M-revenue center, every day of weighted DSO represents roughly $11K in cash. Compress weighted DSO by 10 days and you free $110K — without raising fees, signing a contract, or scanning one more patient.
 
 ## Why Aggregate DSO Is Lying to You
 
@@ -47,20 +47,20 @@ The first decision an imaging operator has to make is: **which DSO am I trying t
 
 These targets are calibrated to current SE Florida market conditions: post-2024 payer compression, the Florida no-fault statute's continued $10K PIP cap, and the LOP collateral environment lenders are now scrutinizing in A/R-backed credit reviews.
 
-### Bucket 1 — Tier-1 Commercial (Target: 28–35 days)
+### Bucket 1 — Tier-1 Commercial (Target: 32–42 days)
 
-Large national commercial plans should adjudicate cleanly. If your Tier-1 DSO is materially above 35 days at a SE Florida imaging center, the bottleneck is almost never the payer — it's pre-submission. The most common causes, in order:
+Large national commercial plans contract for 30-day clean-claim payment, but real-world DSO from date of service includes submission lag, denial rework, and rebill cycles. If your Tier-1 DSO is materially above 45 days at a SE Florida imaging center, the bottleneck is almost never the payer — it's pre-submission. The most common causes, in order:
 
 - Authorization captured for the wrong CPT or facility
 - Demographic mismatches between the EMR and the claim
 - Documentation gaps preventing medical necessity attachment
 - Claims not submitted within the same business week as the scan
 
-**A clean Tier-1 imaging operation in SE Florida should hit 31 days median, 35 days at the 75th percentile.** Anything above 40 is a front-end problem disguised as a back-end problem.
+**A well-managed Tier-1 imaging operation in SE Florida should hit 36 days median, 42 days at the 75th percentile.** Anything above 50 is a front-end problem disguised as a back-end problem. Industry medians for radiology Tier-1 commercial often run 40–55 days at operators not actively managing the front end.
 
-### Bucket 2 — Tier-2 Commercial (Target: 35–50 days)
+### Bucket 2 — Tier-2 Commercial (Target: 42–55 days)
 
-Regional plans, narrow networks, and HMO carve-outs are structurally slower than Tier-1, but they should still settle inside 50 days for a well-run imaging center. Above that, the diagnostic questions:
+Regional plans, narrow networks, and HMO carve-outs are structurally slower than Tier-1, but they should still settle inside 55 days for a well-run imaging center. Above that, the diagnostic questions:
 
 - Is the contract correctly loaded in the billing system?
 - Are denials being worked weekly, or accumulating in a "pending" bucket that nobody owns?
@@ -68,33 +68,33 @@ Regional plans, narrow networks, and HMO carve-outs are structurally slower than
 
 The Tier-2 bucket is where DSO drift hides. It's "not bad enough to escalate," so it slowly bleeds. **Audit it monthly, not quarterly.**
 
-### Bucket 3 — Medicare / Medicare Advantage (Target: 14–21 days)
+### Bucket 3 — Medicare / Medicare Advantage (Target: 18–28 days)
 
-Medicare is the fastest-paying bucket in radiology — typically clean adjudication inside three weeks under standard CMS claims-processing timelines ([CMS Medicare Claims Processing Manual](https://www.cms.gov/regulations-and-guidance/guidance/manuals/internet-only-manuals-ioms-items/cms018912)). If your Medicare DSO is above 21 days, you have a documentation or claim-submission problem, not a payment problem.
+Medicare is the fastest-paying bucket in radiology. The Medicare statutory clean-claim payment floor is 14 days from submission for electronic claims (Social Security Act §1842(c)(2)(B) / 42 USC §1395u), but DSO is measured from date of service — and submission lag, documentation issues, and rebill cycles add 4–14 days on top of the payment-side floor. **A well-managed Medicare operation should run 22 days median, 28 days at the 75th percentile.** If your Medicare DSO is above 30 days, you have a documentation or claim-submission problem, not a payment problem.
 
-Medicare Advantage adds 3–7 days on average due to plan-specific prior auth. Anything over 28 days for MA suggests the prior-auth workflow is breaking before the claim ever leaves the building.
+Medicare Advantage adds 3–7 days on average due to plan-specific prior auth. Anything over 35 days for MA suggests the prior-auth workflow is breaking before the claim ever leaves the building.
 
-### Bucket 4 — Florida PIP (Target: 75–120 days)
+### Bucket 4 — Florida PIP (Target: 90–150 days)
 
-Florida's no-fault auto statute ([F.S. 627.736](https://www.flsenate.gov/Laws/Statutes/2024/627.736)) caps PIP medical benefits at $10,000 per claimant. Despite years of rumors, **the Florida PIP system is not being repealed in 2026** — operators planning around a near-term repeal are planning around a fiction.
+Florida's no-fault auto statute ([F.S. 627.736](https://www.flsenate.gov/Laws/Statutes/2024/627.736)) caps PIP medical benefits at $10,000 per claimant and requires PIP clean-claim payment within 30 days of receipt. Despite years of rumors, **the Florida PIP system is not being repealed in 2026** — operators planning around a near-term repeal are planning around a fiction.
 
-PIP is structurally slow. Insurers have statutory windows, dispute mechanisms, and PPO discount fights that routinely push collections past 90 days. A healthy imaging center running PIP volume should target **75–105 days median, with the 75th percentile under 120**.
+The statutory 30-day payment requirement is theoretical. In practice, insurer statutory dispute windows, PPO discount fights, EUO/IME demands, and partial-payment cycles routinely push real-world median collection past 90 days. A healthy imaging center running PIP volume should target **90–120 days median, with the 75th percentile under 150**.
 
-Above 120 days, the diagnostic questions are different from commercial:
+Above 150 days, the diagnostic questions are different from commercial:
 
 - Are demand letters being issued at the statutory windows?
 - Is the PIP log being reconciled against insurer payment patterns weekly?
 - Is the operator distinguishing collectible PIP balances from disputed PIP balances in the aging report?
 
-PIP cannot be "compressed" to commercial speeds. It can be **managed to its own benchmark** — and the gap between a center managing PIP at 90 days and one drifting at 150 is real cash flow.
+PIP cannot be "compressed" to commercial speeds. It can be **managed to its own benchmark** — and the gap between a center managing PIP at 110 days and one drifting at 180 is real cash flow.
 
-### Bucket 5 — LOP / Attorney-Driven (Target: 180–540 days, face value ≠ yield)
+### Bucket 5 — LOP / Attorney-Driven (Target: 270–540 days, yield-adjusted face value)
 
 Letters of Protection are not receivables in the traditional sense. They are **contingent claims on legal settlements**, and treating their face value as A/R is the single largest source of imaging-center balance-sheet inflation in SE Florida.
 
-A $4,200 MRI billed to an LOP case with a 280-day settlement timeline and a 65% negotiated final yield is not a $4,200 receivable. It is, in expected-value terms, a $2,730 receivable that won't convert for nine months. Two centers with identical LOP balances on paper can have wildly different cash realities depending on:
+A $4,200 MRI billed to an LOP case with a 320-day settlement timeline and a 65% negotiated final yield is not a $4,200 receivable. It is, in expected-value terms, a $2,730 receivable that won't convert for nearly eleven months. Two centers with identical LOP balances on paper can have wildly different cash realities depending on:
 
-- Median settlement timeline (180 days vs. 540+)
+- Median settlement timeline (270 days vs. 540+)
 - Final-yield negotiation rate (50% vs. 80%)
 - Concentration in a single attorney or referral network
 - Statute exposure on aged cases
@@ -115,31 +115,31 @@ For multi-center groups, run median + average + 75th percentile + 90th percentil
 
 ## Weighted DSO — The Math That Actually Matters
 
-Once you've broken DSO into five buckets, the next calculation is weighted DSO across the entire revenue base. Here's the math on a representative SE Florida $10M-revenue imaging center:
+Once you've broken DSO into five buckets, the next calculation is weighted DSO across the entire revenue base. Here's the math on the $4.2M single-center operator from the hook:
 
 | Payer Class | Revenue Mix | DSO | Weighted Days |
 |-------------|-------------|-----|---------------|
-| Tier-1 commercial | 38% | 31 | 11.8 |
-| Tier-2 commercial | 22% | 44 | 9.7 |
-| Medicare / MA | 24% | 18 | 4.3 |
-| Florida PIP | 11% | 96 | 10.6 |
-| LOP / attorney | 5% | 312 | 15.6 |
-| **Weighted DSO** | **100%** | | **52.0 days** |
+| Tier-1 commercial | 38% | 36 | 13.7 |
+| Tier-2 commercial | 22% | 48 | 10.6 |
+| Medicare / MA | 24% | 22 | 5.3 |
+| Florida PIP | 11% | 138 | 15.2 |
+| LOP / attorney | 5% | 412 | 20.6 |
+| **Weighted DSO** | **100%** | | **65.4 days** |
 
-The weighted DSO is **52 days** — not the 45 the operator was reporting. The 7-day gap was hiding inside the LOP bucket and the PIP bucket, which were both being averaged into the headline number with no weighting.
+The weighted DSO is **65 days** — not the 53 the operator was reporting. The 12-day gap was hiding inside the LOP and PIP buckets, which the operator's naive A/R-divided-by-revenue calc was effectively under-weighting against the faster-cycling commercial and Medicare claims.
 
-Now the same center compresses Tier-1 by 4 days, Tier-2 by 6 days, and PIP by 12 days — without touching LOP at all:
+Now the same center runs a focused 90-day program: Tier-1 compressed by 3 days, Tier-2 by 6, PIP by 18 — without touching LOP at all:
 
 | Payer Class | Revenue Mix | DSO | Weighted Days |
 |-------------|-------------|-----|---------------|
-| Tier-1 commercial | 38% | 27 | 10.3 |
-| Tier-2 commercial | 22% | 38 | 8.4 |
-| Medicare / MA | 24% | 18 | 4.3 |
-| Florida PIP | 11% | 84 | 9.2 |
-| LOP / attorney | 5% | 312 | 15.6 |
-| **Weighted DSO** | **100%** | | **47.8 days** |
+| Tier-1 commercial | 38% | 33 | 12.5 |
+| Tier-2 commercial | 22% | 42 | 9.2 |
+| Medicare / MA | 24% | 22 | 5.3 |
+| Florida PIP | 11% | 120 | 13.2 |
+| LOP / attorney | 5% | 412 | 20.6 |
+| **Weighted DSO** | **100%** | | **60.8 days** |
 
-A 4.2-day weighted DSO compression. At $10M of revenue, that's about $115K in cash freed — by managing only the buckets the operator can actually control. LOP wasn't touched. Medicare wasn't touched. The win came entirely from Tier-1, Tier-2, and PIP discipline.
+A 4.6-day weighted DSO compression. At $4.2M of revenue, that's about $53K in cash freed — by managing only the buckets the operator can actually control. LOP wasn't touched. Medicare wasn't touched. The win came entirely from Tier-1, Tier-2, and PIP discipline. The same compression at a $10M operator would free $126K; at a $25M operator, $315K. The leverage scales linearly.
 
 This is the calculation your accountant doesn't run, your billing company won't run, and your bank doesn't have data to run. (See: [Your Billing Company Costs 6%. Slow Collections Cost 10x That.](/blog/medical-billing-fees-vs-collections-dso))
 
@@ -163,12 +163,14 @@ Take your annual revenue. Divide by 365. That's the dollar value of one day of D
 
 | Annual Revenue | $/Day Cash | 10-Day Compression |
 |----------------|-----------|--------------------|
+| $3M | $8,219 | $82K |
+| $4M | $10,959 | $110K |
 | $5M | $13,699 | $137K |
 | $10M | $27,397 | $274K |
 | $25M | $68,493 | $685K |
 | $50M | $136,986 | $1.37M |
 
-Once an operator sees this calculation, the conversation changes. "Compress DSO by 10 days" stops being an abstract operational goal and becomes **a board-level decision worth a quarter-million dollars at a typical mid-sized imaging operator**, with no new equipment, no new hires, and no new contracts.
+Once an operator sees this calculation, the conversation changes. "Compress DSO by 10 days" stops being an abstract operational goal and becomes **a board-level decision worth a real six-figure cash release** — $82K at a $3M single-center, a quarter-million dollars at a typical mid-sized operator, north of $1M at a $50M platform — with no new equipment, no new hires, and no new contracts.
 
 The cash is already in the building. It just hasn't moved across the asset side of the balance sheet yet.
 
@@ -199,7 +201,7 @@ You can't manage what you can't see. If your billing company can't produce per-p
 This is the highest-yield, lowest-effort lever in any imaging operation. Tier-1 above 45 days is almost always a pre-submission problem (authorization, documentation, demographic) that can be cleared with a focused two-week sprint.
 
 **3. Reconcile your PIP log against insurer payment behavior weekly, not monthly.**
-PIP discipline collapses inside the gap between billing and reconciliation. Statutory demand windows close, payment patterns drift, and PPO discount disputes accumulate. Weekly reconciliation is the difference between a 90-day PIP DSO and a 130-day PIP DSO.
+PIP discipline collapses inside the gap between billing and reconciliation. Statutory demand windows close, payment patterns drift, and PPO discount disputes accumulate. Weekly reconciliation is the difference between a 110-day PIP DSO and a 160-day PIP DSO.
 
 **4. Mark down LOP A/R to expected yield in your internal management reporting.**
 Keep the gross balance for tax, compliance, and billing. Run management reports — and lender conversations — on the yield-adjusted balance. If you can't quantify the markdown, your LOP economics are already a black box.
@@ -211,11 +213,11 @@ One number. Calculated the same way every month. Tracked against the prior month
 
 Your accountant has every number this article requires. Your billing company has every number this article requires. The question is whether anyone is mining the data with the right framework.
 
-Most accounting firms see a 45-day DSO and move on. The operator sees a healthy headline. Both are looking at the same number — and both are missing the same problem. This is what happens when accounting stops looking backward and starts looking forward. (Read how accounting becomes an [ROI center, not a cost center](/about).)
+Most accounting firms see a 53-day DSO and move on. The operator sees a healthy headline. Both are looking at the same number — and both are missing the same problem. This is what happens when accounting stops looking backward and starts looking forward. (Read how accounting becomes an [ROI center, not a cost center](/about).)
 
-The four-center group from the opening of this article ran the decomposition during a [Strategic Radiology Review](/services/radiology). Within 30 days, they had per-payer-class aging being produced weekly, a PIP reconciliation cadence that closed three statutory windows that had been quietly drifting, and a Tier-1 claim audit that cleared $187K of receivables aged 45–90 days inside a single billing cycle.
+The single-center operator from the opening of this article ran the decomposition during a [Strategic Radiology Review](/services/radiology). Within 30 days, they had per-payer-class aging being produced weekly, a PIP reconciliation cadence that closed three statutory windows that had been quietly drifting, and a Tier-1 claim audit that cleared $68K of receivables aged 45–90 days inside a single billing cycle.
 
-By day 90, weighted DSO had compressed 6.8 days. On their revenue base, that was approximately $186K of cash released — without raising fees, renegotiating one contract, or scanning one additional patient. The CFO ran the next lender renewal conversation with three months of payer-class trend data instead of a single aggregate number, and the bank tightened the advance rate on the line of credit by four percentage points.
+By day 90, weighted DSO had compressed 4.6 days. On their $4.2M revenue base, that was approximately $53K of cash released — without raising fees, renegotiating one contract, or scanning one additional patient. The CFO ran the next lender renewal conversation with three months of payer-class trend data instead of a single aggregate number, and the bank tightened the advance rate on the line of credit by four percentage points.
 
 The Monday after that lender meeting, the CFO told us the conversation felt different for the first time in years. Not because the operation had changed — but because for the first time, the operator could see what was actually happening, in the language a banker actually uses.
 
@@ -228,7 +230,7 @@ A [Strategic Radiology Review](/services/radiology) is a fixed-fee, two-week eng
 ## Frequently Asked Questions
 
 **What is a healthy DSO for an imaging center in 2026?**
-There is no single healthy DSO for an imaging center, because the metric changes meaning depending on payer mix. The five payer-class targets in SE Florida are Tier-1 commercial 28–35 days, Tier-2 commercial 35–50 days, Medicare/MA 14–21 days, Florida PIP 75–120 days, and LOP/attorney-driven 180–540 days at yield-adjusted face value. Weighted DSO across all five buckets typically runs 45–55 days at a well-managed multi-center imaging group.
+There is no single healthy DSO for an imaging center, because the metric changes meaning depending on payer mix. The five payer-class targets in SE Florida — measured as median DSO from date of service for a well-managed operation — are Tier-1 commercial 32–42 days, Tier-2 commercial 42–55 days, Medicare/MA 18–28 days, Florida PIP 90–150 days, and LOP/attorney-driven 270–540 days at yield-adjusted face value. Weighted DSO across all five buckets typically runs 55–70 days at a well-managed SE Florida imaging operator with normal payer mix. Industry medians often run materially higher than these targets — the gap is the management opportunity.
 
 **Why is my reported DSO different from my weighted DSO?**
 Reported DSO is usually a simple revenue-divided-by-AR calculation that treats every dollar of receivable as equivalent. Weighted DSO multiplies each payer-class DSO by that class's share of revenue. The two numbers diverge most when LOP and PIP receivables sit in the aging report at face value while clean Tier-1 commercial collects quickly — which is the case at most SE Florida imaging centers.
