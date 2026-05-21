@@ -3,6 +3,7 @@
   "outputDirectory": "dist",
   "trailingSlash": false,
   "redirects": [
+    { "source": "/go/two-salaries", "destination": "/blog/owner-salary-two-numbers?utm_source=linkedin&utm_medium=social&utm_campaign=two-salaries", "statusCode": 302 },
     { "source": "/go/simulator", "destination": "/tools/concierge-simulator?utm_source=linkedin&utm_medium=social&utm_campaign=concierge-simulator", "statusCode": 302 },
     { "source": "/go/waterfall", "destination": "/blog/ai-cash-flow-waterfall-explained?utm_source=linkedin&utm_medium=social&utm_campaign=waterfall", "statusCode": 302 },
     { "source": "/go/financial-model", "destination": "/blog/concierge-medicine-financial-model?utm_source=linkedin&utm_medium=social&utm_campaign=financial-model", "statusCode": 302 },

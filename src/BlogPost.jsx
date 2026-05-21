@@ -6,6 +6,22 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  'owner-salary-two-numbers': {
+    file: '/content/blogs/owner-salary-two-numbers.md',
+    title: 'Your Owner Salary Is Two Numbers, Not One',
+    date: '2026-05-21',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Most owners look for one answer to "what should I pay myself?" There are actually two numbers — the one that keeps you audit-proof and the one that tells you what your business is worth. Confusing them quietly underpays your valuation and fakes your margins.',
+    categories: ['Tax Planning', 'Business Strategy'],
+    readTime: '8 min read',
+    featuredImage: '/images/blog/owner-salary-two-numbers.jpg',
+    faqs: [
+      { q: 'Is reasonable compensation the same as fair market value salary?', a: 'No — and that is the core confusion. Reasonable compensation is the IRS-defensible W-2 salary for an S-Corp owner, and the incentive is to keep it as low as you can justify. Market replacement compensation is what an outside hire would cost to do your job, used for valuation and margin analysis. They are rarely the same number, and they serve opposite purposes.' },
+      { q: 'Does underpaying myself really lower what my business is worth?', a: 'Yes. A buyer normalizes earnings by replacing your actual pay with the market cost of your role. If you paid yourself below market, the difference comes off normalized earnings and gets multiplied by the valuation multiple. We have seen a $133,000 under-market salary reduce enterprise value by roughly $650,000 at a 5x multiple.' },
+      { q: 'Why did my margins look like they were improving when they were not?', a: 'Often because owner pay shifted from W-2 wages (which hit the income statement) to owner draws (which do not). Labor cost disappears from the P&L, so margins drift upward without any real efficiency gain. Normalizing owner compensation to a consistent market rate across every period removes the illusion.' },
+      { q: 'How do I find my market replacement compensation?', a: 'Start with the actual roles you perform — CEO, operations, sales, clinical — and price each at market using Bureau of Labor Statistics wage data and industry compensation surveys. Sum the market rate for the hours you would have to replace. A fractional CFO or valuation-aware accountant can build this so it holds up in diligence.' }
+    ]
+  },
   'cash-vs-accrual-small-business': {
     file: '/content/blogs/cash-vs-accrual-small-business.md',
     title: '$3.64M or $2.45M? The Same Business, Two Profit Numbers, Both Correct',
