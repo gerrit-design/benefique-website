@@ -21,6 +21,8 @@ keywords: "owner salary vs reasonable compensation, market replacement compensat
 
 When you ask "what should I pay myself?" you are actually asking two different questions with two different right answers. One number keeps the IRS off your back. The other tells you what your business is worth — and most owners never calculate it, which quietly costs them hundreds of thousands of dollars at the only moment it matters.
 
+**Quick answer:** Your owner pay is two different numbers. Reasonable compensation is the IRS-defensible W-2 salary that keeps an S-Corp audit-proof, and the incentive is to keep it low. Market replacement compensation is what a buyer must pay to replace your role — almost always higher — and it determines your valuation and whether your margins are real. Paying yourself below market lowers your sale price (a $133,000 under-market salary can erase roughly $650,000 of value at a 5x multiple), and shifting wages to owner draws can fake a margin "improvement" that was never there.
+
 > **Key Takeaway:** Your owner compensation is two distinct numbers. The **reasonable compensation** number is a tax figure — it's the W-2 salary that keeps an S-Corp audit-proof. The **market replacement** number is a valuation figure — it's what a buyer must pay to replace the work you do, and it's almost always higher. Treating them as one number does two kinds of damage: paying yourself below market *lowers* your sale price, and shifting wages to owner draws can fake a margin "improvement" that doesn't exist. We've seen a single mismatch erase $650,000 of enterprise value.
 
 ---
@@ -105,7 +107,7 @@ This kind of two-number thinking is the same arc behind every owner's bigger dec
 
 > **Run both your numbers.** If you've never calculated what it would cost to replace yourself at market — or you're not sure your margin trend is real — [book a conversation with Benefique](/contact). We'll separate your tax number from your valuation number, normalize your trend the way a buyer will, and show you what your business is actually worth before someone else gets to tell you.
 
-## Frequently asked questions
+## Frequently Asked Questions
 
 **Is reasonable compensation the same as fair market value salary?**
 No — and that's the core confusion. Reasonable compensation is the IRS-defensible W-2 salary for an S-Corp owner, and the incentive is to keep it as low as you can justify. Market replacement compensation is what an outside hire would cost to do your job, used for valuation and margin analysis. They're rarely the same number, and they serve opposite purposes.
