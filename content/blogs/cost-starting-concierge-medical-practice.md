@@ -3,13 +3,19 @@ slug: "cost-starting-concierge-medical-practice"
 date: "2026-03-08"
 ---
 
-**Quick answer:** A solo concierge medical practice in South Florida costs $75,000 to $200,000 to launch, with most Broward County physicians landing in the $100,000 to $175,000 range. Monthly overhead runs $12,000 to $24,000 once operational. The bigger financial risk is not the startup capital — it is choosing the wrong entity structure, payroll setup, or accounting system, which compounds into six-figure mistakes over time.
+# How Much Does It Cost to Start a Concierge Medical Practice? $75K–$200K (2026 Breakdown)
+
+**Quick answer:** A solo concierge medical practice in South Florida costs **$75,000 to $200,000 to launch**, with most Broward County physicians landing in the **$100,000 to $175,000 range**. Monthly overhead runs **$12,000 to $24,000** once operational. The bigger financial risk is not the startup capital — it is choosing the wrong entity structure, payroll setup, or accounting system, which compounds into six-figure mistakes over time.
+
+| Bucket | Low | High |
+|---|---|---|
+| One-time startup capital | $71,500 | $282,500 |
+| Monthly operating overhead | $11,800 | $24,200 |
+| Annual overhead | $141,600 | $290,400 |
 
 > **Want the answer in 60 seconds?** Three structural decisions — entity type, S-Corp election timing, and accounting setup — drive whether your first three years compound into wealth or into expensive corrections that cost $15K–$25K every year you operate in the wrong structure.
 >
 > **Or skip the article entirely:** Open the [Concierge Medicine Financial Simulator](/tools/concierge-simulator) — adjust membership fees, costs, and physician salary across three views (Absolute $, % of Revenue, $ per Member). Model your specific situation in 5 minutes.
-
-# The Real Cost of Starting a Concierge Medical Practice
 
 The number one barrier physicians cite when considering concierge medicine is startup cost. The fear is understandable — you are leaving a paycheck, taking on risk, and building something from scratch. (If you are still evaluating the income potential, start with our [concierge medicine income guide](/blog/concierge-medicine-income-south-florida).)
 

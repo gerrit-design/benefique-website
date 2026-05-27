@@ -19,7 +19,11 @@ keywords: "owner salary vs reasonable compensation, market replacement compensat
 
 ---
 
-When you ask "what should I pay myself?" you are actually asking two different questions with two different right answers. One number keeps the IRS off your back. The other tells you what your business is worth — and most owners never calculate it, which quietly costs them hundreds of thousands of dollars at the only moment it matters.
+We normalized one owner's salary on a business we reviewed — and watched **$650,000 of value disappear**. Not because he overpaid himself. Because he ran the company as CEO but took a salary **$133,000 below market** for that role. On the tax return it looked smart: lower salary, lower payroll tax. But a buyer doesn't care what you chose to pay yourself — they price what it costs to replace you. At a 5× multiple, that $133K under-market salary quietly erased about $650K of enterprise value before the closing table.
+
+Same month, a different business: the books showed **$285,000 of EBITDA**. We priced the **$181,000 of owner labor** that was never on payroll. Real number: **$104,000**. The "profitable" headline was carrying nearly two-thirds free labor the owner didn't realize they were donating.
+
+This isn't a tax mistake. It's a *category* mistake — owners track one salary number when there are actually two, with opposite incentives. Below: which is which, when each one matters, and the three specific mechanisms by which confusing them costs you twice — at sale, and every month in between while your margin trend silently lies to you.
 
 **Quick answer:** Your owner pay is two different numbers. Reasonable compensation is the IRS-defensible W-2 salary that keeps an S-Corp audit-proof, and the incentive is to keep it low. Market replacement compensation is what a buyer must pay to replace your role — almost always higher — and it determines your valuation and whether your margins are real. Paying yourself below market lowers your sale price (a $133,000 under-market salary can erase roughly $650,000 of value at a 5x multiple), and shifting wages to owner draws can fake a margin "improvement" that was never there.
 

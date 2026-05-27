@@ -6,6 +6,24 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  'blended-margin-meaning-and-formula': {
+    file: '/content/blogs/blended-margin-meaning-and-formula.md',
+    title: 'What Is Blended Margin? Definition, Formula, and a $1M Worked Example',
+    date: '2026-05-27',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Blended margin = total gross profit ÷ total revenue across all your streams. The formula takes 30 seconds. The danger is that a single 24% blended number can hide a 50% wholesale margin and a 9% internal transfer margin sitting right next to it — and you\'d never know which one to fix.',
+    categories: ['Accounting', 'Cash Flow', 'Business Strategy'],
+    readTime: '7 min read',
+    featuredImage: '/images/blog/blended-margin-meaning-and-formula.jpg',
+    faqs: [
+      { q: 'What is blended margin in simple terms?', a: 'Blended margin is the single average margin you get when you combine two or more revenue streams with different cost structures and divide total gross profit by total revenue. It is a weighted average — each stream contributes proportionally to its own revenue. The danger is that the average hides what each underlying stream actually looks like.' },
+      { q: 'What is the formula for blended margin?', a: 'Blended Margin (%) = Total Gross Profit ÷ Total Revenue × 100, where both totals are summed across every revenue stream in the business. The formula is identical whether you are blending two streams or twenty — and identical to a weighted average margin calculation.' },
+      { q: 'What is the difference between blended margin and gross margin?', a: 'Gross margin is the margin of one product, service, or stream — calculated as (Revenue minus COGS) divided by Revenue for that one thing. Blended gross margin is what you get when you combine the gross margins of two or more streams and report a single weighted-average number across the whole business. A single-stream business has only a gross margin; a multi-stream business reports a blended gross margin unless it segments the report.' },
+      { q: 'What is the difference between blended gross margin and blended net margin?', a: 'Blended gross margin uses gross profit (revenue minus COGS) and captures direct cost structure only. Blended net margin uses net income and captures everything, including operating expenses, interest, tax, and depreciation. Gross is the right cut for operating decisions and stream-level diagnostics; net is the right cut for headline profitability and tax planning.' },
+      { q: 'When does a blended margin start misleading you?', a: 'The moment two or more revenue streams in the business have meaningfully different margins. A business with a 50% wholesale stream and a 9% intercompany-transfer stream produces a 37.7% blended number that describes neither. The blended figure looks stable while underlying mix shifts can quietly destroy or create profitability without ever showing up on the headline line.' },
+      { q: 'Is blended margin the same as weighted average margin?', a: 'Mathematically, yes — both calculations divide total gross profit by total revenue, weighting each stream by its own revenue contribution. Rhetorically, "blended" carries the implicit warning that you are mixing things that may be operationally distinct.' }
+    ]
+  },
   'owner-salary-two-numbers': {
     file: '/content/blogs/owner-salary-two-numbers.md',
     title: 'Your Owner Salary Is Two Numbers, Not One',
