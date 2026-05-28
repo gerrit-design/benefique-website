@@ -44,7 +44,9 @@ def main() -> int:
         return 1
 
     flow = InstalledAppFlow.from_client_secrets_file(str(CREDENTIALS_FILE), WRITE_SCOPES)
-    creds = flow.run_local_server(port=0)
+    # prompt='consent' + access_type='offline' forces Google to issue a fresh
+    # refresh_token bound to the requested scopes (not the old grant's scopes).
+    creds = flow.run_local_server(port=0, prompt='consent', access_type='offline')
 
     if not creds.refresh_token:
         print(
