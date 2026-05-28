@@ -26,7 +26,7 @@ Our monthly CFO report is extensive. We tell every owner to focus on three secti
 
 Not because the rest doesn't matter. Because the rest was never built for the owner.
 
-> **Key Takeaway:** The three sections every business owner should focus on in their monthly CFO report are the **Benefique Matrix** (where am I, and which way am I drifting?), the **Cash Flow Waterfall** (where did my cash actually go?), and the **Top Three** (what should I do — by Monday — for the next 90 days?). Position, diagnosis, action. The rest of the report exists for the bookkeeper, banker, and buyer — readers other than the eight-hatted owner trying to run a business. The reason this layout works: tax is the **last** decision an owner makes, not the first. The way to make the tax savings bigger is to improve the operating layer underneath — and these three sections are the operator's dashboard.
+> **Key Takeaway:** The three sections every business owner should focus on in their monthly CFO report are the **Benefique Matrix** (where am I, and which way am I drifting?), the **Cash Flow Waterfall** (where did my cash actually go?), and the **Top Three** (what should I do — by Monday — for the next 90 days?). Position, diagnosis, action. The rest of the report exists for the bookkeeper, banker, and buyer — readers other than the eight-hatted owner trying to run a business. The reason this layout works: the tax win lands at the back end of the year because the structure at the front end — chart of accounts, entity, owner-comp baseline, divisional cuts — was built for it. These three sections are the operator's dashboard.
 
 The full report has to exist for the audiences who need it. The bookkeeper reads the divisional P&L to close the books. The banker reads the debt schedule and DSCR before underwriting your line of credit. The buyer reads the owner-labor note and working capital cycle before signing an LOI. You — the owner — are wearing those eight hats in the steepest learning curve of your life. It is wishful thinking that you are going to digest the full report the way an accountant does. So we ask you to focus on three.
 
@@ -56,13 +56,13 @@ An extensive CFO report is a tool for the accountant who reads it on the owner's
 
 We started Benefique with one wedge: proactive tax planning. We were good at it — and clients felt the savings. Then, a few hundred reports in, we noticed something that bothered us.
 
-Tax is the **last** decision an owner ever makes.
+The tax win lands at the back end of the calendar year. But it only lands because the structure at the front end — the entity, the chart of accounts, the divisional split, the owner-comp baseline, the way every transaction was classified along the way — was built for it.
 
 Every dollar of tax saved depends on a chain that started long before April. Revenue had to be earned. Cost had to be classified. Cash had to clear. An entity had to be the right entity. A bookkeeper had to code an expense to one of two accounts that look identical to a non-accountant. By the time we sat down to plan the tax outcome, ninety percent of the levers had already moved without us in the room.
 
 The math made the case to move upstream. A great proactive tax strategy on a $5M business saves $30,000 to $80,000 per year. For an owner-operator, $50,000 of avoided tax is a real outcome — we are not minimizing it. But a 5-point improvement in operating margin on the same business — achieved by tightening collections by 20 days and renegotiating two vendor categories — is roughly $250,000 per year, and it compounds into enterprise value at exit. Same business. Same owner. Five-to-tenfold more leverage from operations than from tax. And the operations work makes the tax work better, because the books underneath are now clean enough to plan against.
 
-That is why our work expanded. Not because tax planning stopped working. Because tax planning works best on top of a business that has already been improved. ([Read the full evolution: Cost Center to ROI Center](/about).)
+That is why our work expanded. Not because tax planning stopped working. Because the bigger bang comes from the operations that produce the tax outcome — and the data, read like a betting man reads odds, tells you where the leverage actually sits. ([Read the full evolution: Cost Center to ROI Center](/about).)
 
 ## What "Taking Hold of the Accounting Function" Actually Means
 
