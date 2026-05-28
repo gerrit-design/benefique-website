@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Link, useLocation, Navigate, useSearchParams } from 'react-router-dom';
+import { Routes, Route, Link, useLocation, Navigate, useSearchParams, useNavigate } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import BlogPost from './BlogPost';
 import ConciergeSimulator from './components/ConciergeSimulator';
@@ -3900,9 +3900,13 @@ function groupSlotsByDate(slots) {
 
 function ThankYou() {
   const [params] = useSearchParams();
+  const navigate = useNavigate();
   const formSource = params.get('form') || 'unknown';
   const booked = params.get('booked') === '1';
   const slotIso = params.get('slot') || '';
+
+  const [booking, setBooking] = React.useState(false);
+  const [bookingError, setBookingError] = React.useState(null);
 
   React.useEffect(() => {
     if (booked) {
@@ -3911,6 +3915,40 @@ function ThankYou() {
       trackEvent('application_confirmed', { form_source: formSource });
     }
   }, []);
+
+  async function handleBookingSubmit(e) {
+    e.preventDefault();
+    setBookingError(null);
+    setBooking(true);
+
+    const fd = new FormData(e.currentTarget);
+    const email = (fd.get('email') || '').toString().trim();
+    const slot = (fd.get('slot') || '').toString();
+
+    if (!email || !slot) {
+      setBookingError('Pick a slot and enter your email.');
+      setBooking(false);
+      return;
+    }
+
+    trackEvent('slot_booking_attempt', { form_source: formSource, slot_iso: slot });
+
+    try {
+      const resp = await fetch('/api/book-slot', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, slot, original_form: formSource }),
+      });
+      if (!resp.ok) {
+        const data = await resp.json().catch(() => ({}));
+        throw new Error(data.detail || data.error || `Server returned ${resp.status}`);
+      }
+      navigate(`/thank-you?booked=1&slot=${encodeURIComponent(slot)}&form=${encodeURIComponent(formSource)}`);
+    } catch (err) {
+      setBookingError(err?.message || 'Booking failed');
+      setBooking(false);
+    }
+  }
 
   if (booked) {
     const slot = BOOKING_SLOTS.find((s) => s.iso === slotIso);
@@ -3982,13 +4020,9 @@ function ThankYou() {
               </div>
 
               <form
-                action="https://formspree.io/f/mzdjjprp"
-                method="POST"
                 className="space-y-6"
-                onSubmit={trackFormSubmit('slot-booking', { form_source: formSource })}
+                onSubmit={handleBookingSubmit}
               >
-                <input type="hidden" name="_subject" value="📅 Slot picked from /thank-you" />
-                <input type="hidden" name="original_form" value={formSource} />
                 <input type="text" name="_gotcha" style={{ display: 'none' }} />
 
                 <div>
@@ -4027,21 +4061,22 @@ function ThankYou() {
                   </div>
                 </div>
 
-                <input
-                  type="hidden"
-                  name="_next"
-                  value={`https://www.benefique.com/thank-you?booked=1&form=${formSource}`}
-                />
+                {bookingError && (
+                  <div className="bg-red-50 border border-red-200 text-red-800 rounded-lg px-4 py-3 text-sm">
+                    Something went wrong: {bookingError}. Gerrit will reach out within 24 hours regardless.
+                  </div>
+                )}
 
                 <button
                   type="submit"
-                  className="w-full bg-benefique-orange text-white px-6 py-4 rounded-lg font-bold text-lg hover:bg-orange-600 transition"
+                  disabled={booking}
+                  className="w-full bg-benefique-orange text-white px-6 py-4 rounded-lg font-bold text-lg hover:bg-orange-600 transition disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  Book This Slot →
+                  {booking ? 'Booking...' : 'Book This Slot →'}
                 </button>
 
                 <p className="text-xs text-gray-500 text-center">
-                  All times Eastern. You'll get a Google Meet link by email within the hour.
+                  All times Eastern. You'll get a Google Meet invite by email immediately.
                 </p>
               </form>
             </div>
