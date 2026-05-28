@@ -69,8 +69,28 @@ DEFAULT_SLOT_MIN = 30
 def get_calendar_service():
     """Return an authenticated Calendar API client.
 
-    Caches the refresh token at TOKEN_FILE; only the first run opens a browser.
+    Two modes:
+    1. CI / cloud (GitHub Actions): if GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET,
+       and GOOGLE_REFRESH_TOKEN env vars are set, build creds from them
+       directly. No filesystem, no browser.
+    2. Local: fall back to file-based OAuth at ~/.benefique/. Caches the
+       refresh token at TOKEN_FILE; only the first run opens a browser.
     """
+    env_cid = os.environ.get("GOOGLE_CLIENT_ID")
+    env_csec = os.environ.get("GOOGLE_CLIENT_SECRET")
+    env_rtok = os.environ.get("GOOGLE_REFRESH_TOKEN")
+    if env_cid and env_csec and env_rtok:
+        creds = Credentials(
+            token=None,
+            refresh_token=env_rtok,
+            token_uri="https://oauth2.googleapis.com/token",
+            client_id=env_cid,
+            client_secret=env_csec,
+            scopes=SCOPES,
+        )
+        creds.refresh(Request())
+        return build("calendar", "v3", credentials=creds)
+
     CRED_DIR.mkdir(parents=True, exist_ok=True)
     creds = None
     if TOKEN_FILE.exists():
