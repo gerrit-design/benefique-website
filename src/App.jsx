@@ -4,6 +4,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import BlogPost from './BlogPost';
 import ConciergeSimulator from './components/ConciergeSimulator';
 import BusinessSimulator from './components/BusinessSimulator';
+import { trackFormSubmit } from './analytics';
 
 // ============================================================
 // BENEFIQUE WEBSITE - Davie Design Style
@@ -656,7 +657,7 @@ function Home() {
               <h3 className="text-xl font-bold text-benefique-navy mb-2">Quick Application</h3>
               <p className="text-gray-600 text-sm mb-6">Takes 60 seconds. We'll reach out within 24 hours.</p>
               
-              <form action="https://formspree.io/f/mzdjjprp" method="POST" className="space-y-4">
+              <form action="https://formspree.io/f/mzdjjprp" method="POST" className="space-y-4" onSubmit={trackFormSubmit('homepage-quick-application')}>
                 <input type="hidden" name="_subject" value="New Benefique Application" />
                 <input type="text" name="_gotcha" style={{display: 'none'}} />
                 <div>
@@ -1812,7 +1813,7 @@ function Contact() {
               <h3 className="text-xl font-bold text-benefique-navy mb-2">Quick Application</h3>
               <p className="text-gray-600 text-sm mb-6">Takes 60 seconds. We'll reach out within 24 hours.</p>
               
-              <form action="https://formspree.io/f/mzdjjprp" method="POST" className="space-y-4">
+              <form action="https://formspree.io/f/mzdjjprp" method="POST" className="space-y-4" onSubmit={trackFormSubmit('contact-page-application')}>
                 <input type="hidden" name="_subject" value="New Benefique Contact Application" />
                 <input type="text" name="_gotcha" style={{display: 'none'}} />
                 <div>
@@ -3647,7 +3648,7 @@ function RadiologyIntake() {
       <section className="py-12 bg-gray-50">
         <div className="max-w-3xl mx-auto px-4">
           <div className="bg-white rounded-2xl p-8 border border-gray-100">
-            <form action="https://formspree.io/f/mzdjjprp" method="POST" className="space-y-5">
+            <form action="https://formspree.io/f/mzdjjprp" method="POST" className="space-y-5" onSubmit={trackFormSubmit('radiology-intake', { intake_ref: ref })}>
               <input type="hidden" name="_subject" value="New Radiology CFO Intake" />
               <input type="hidden" name="source" value={`radiology-intake-${ref}`} />
               <input type="text" name="_gotcha" style={{ display: 'none' }} />
