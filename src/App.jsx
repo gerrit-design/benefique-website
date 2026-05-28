@@ -1,10 +1,10 @@
 import React from 'react';
-import { Routes, Route, Link, useLocation, Navigate } from 'react-router-dom';
+import { Routes, Route, Link, useLocation, Navigate, useSearchParams } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import BlogPost from './BlogPost';
 import ConciergeSimulator from './components/ConciergeSimulator';
 import BusinessSimulator from './components/BusinessSimulator';
-import { trackFormSubmit } from './analytics';
+import { trackFormSubmit, trackEvent } from './analytics';
 
 // ============================================================
 // BENEFIQUE WEBSITE - Davie Design Style
@@ -659,6 +659,7 @@ function Home() {
               
               <form action="https://formspree.io/f/mzdjjprp" method="POST" className="space-y-4" onSubmit={trackFormSubmit('homepage-quick-application')}>
                 <input type="hidden" name="_subject" value="New Benefique Application" />
+                <input type="hidden" name="_next" value="https://www.benefique.com/thank-you?form=homepage" />
                 <input type="text" name="_gotcha" style={{display: 'none'}} />
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
@@ -1815,6 +1816,7 @@ function Contact() {
               
               <form action="https://formspree.io/f/mzdjjprp" method="POST" className="space-y-4" onSubmit={trackFormSubmit('contact-page-application')}>
                 <input type="hidden" name="_subject" value="New Benefique Contact Application" />
+                <input type="hidden" name="_next" value="https://www.benefique.com/thank-you?form=contact" />
                 <input type="text" name="_gotcha" style={{display: 'none'}} />
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
@@ -3651,6 +3653,7 @@ function RadiologyIntake() {
             <form action="https://formspree.io/f/mzdjjprp" method="POST" className="space-y-5" onSubmit={trackFormSubmit('radiology-intake', { intake_ref: ref })}>
               <input type="hidden" name="_subject" value="New Radiology CFO Intake" />
               <input type="hidden" name="source" value={`radiology-intake-${ref}`} />
+              <input type="hidden" name="_next" value={`https://www.benefique.com/thank-you?form=radiology-${ref}`} />
               <input type="text" name="_gotcha" style={{ display: 'none' }} />
 
               <div className="grid md:grid-cols-2 gap-4">
@@ -3875,6 +3878,188 @@ const industries = {
 };
 
 // ============================================================
+// THANK YOU PAGE (post-submission landing + slot booking)
+// ============================================================
+const BOOKING_SLOTS = [
+  { date: 'Friday, May 29', day: 'fri', iso: '2026-05-29T12:30:00-04:00', display: '12:30 PM ET' },
+  { date: 'Friday, May 29', day: 'fri', iso: '2026-05-29T13:00:00-04:00', display: '1:00 PM ET' },
+  { date: 'Friday, May 29', day: 'fri', iso: '2026-05-29T13:30:00-04:00', display: '1:30 PM ET' },
+  { date: 'Monday, June 1',  day: 'mon', iso: '2026-06-01T11:00:00-04:00', display: '11:00 AM ET' },
+  { date: 'Monday, June 1',  day: 'mon', iso: '2026-06-01T11:30:00-04:00', display: '11:30 AM ET' },
+  { date: 'Monday, June 1',  day: 'mon', iso: '2026-06-01T13:30:00-04:00', display: '1:30 PM ET' },
+];
+
+function ThankYou() {
+  const [params] = useSearchParams();
+  const formSource = params.get('form') || 'unknown';
+  const booked = params.get('booked') === '1';
+  const slotIso = params.get('slot') || '';
+
+  React.useEffect(() => {
+    if (booked) {
+      trackEvent('slot_booked', { form_source: formSource, slot_iso: slotIso });
+    } else {
+      trackEvent('application_confirmed', { form_source: formSource });
+    }
+  }, []);
+
+  if (booked) {
+    const slot = BOOKING_SLOTS.find((s) => s.iso === slotIso);
+    return (
+      <div>
+        <Helmet>
+          <title>You're Booked | Benefique Tax & Accounting</title>
+          <meta name="robots" content="noindex" />
+        </Helmet>
+        <section className="bg-white py-20">
+          <div className="max-w-2xl mx-auto px-4 text-center">
+            <div className="text-5xl mb-6">📅</div>
+            <h1 className="text-4xl font-bold text-benefique-navy mb-4">You're booked.</h1>
+            <p className="text-xl text-gray-700 mb-6">
+              {slot ? <>Gerrit will see you on <strong>{slot.date}</strong> at <strong>{slot.display}</strong>.</> : 'Gerrit will be in touch shortly.'}
+            </p>
+            <p className="text-gray-600 mb-8">
+              Within the next hour you'll get a confirmation email with a Google Meet link and a quick 3-question prep doc so the 30 minutes is well-spent.
+            </p>
+            <div className="bg-benefique-orange/10 border border-benefique-orange/30 rounded-xl p-6 text-left">
+              <h3 className="font-bold text-benefique-navy mb-2">While you wait — see what we actually deliver:</h3>
+              <Link to="/demo" className="text-benefique-orange font-semibold hover:underline">View sample reports →</Link>
+            </div>
+          </div>
+        </section>
+      </div>
+    );
+  }
+
+  const friSlots = BOOKING_SLOTS.filter((s) => s.day === 'fri');
+  const monSlots = BOOKING_SLOTS.filter((s) => s.day === 'mon');
+
+  return (
+    <div>
+      <Helmet>
+        <title>Thanks — Your Application Is In | Benefique Tax & Accounting</title>
+        <meta name="robots" content="noindex" />
+      </Helmet>
+
+      <section className="bg-white py-16">
+        <div className="max-w-3xl mx-auto px-4 text-center">
+          <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium mb-6">
+            <span>✓</span> Got it
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold text-benefique-navy mb-4">
+            Thanks — your note's in.
+          </h1>
+          <p className="text-xl text-gray-700 mb-3">
+            Within 24 hours, Gerrit will email you back personally.
+          </p>
+          <p className="text-gray-600">
+            (Usually within the same business day — sometimes faster.)
+          </p>
+        </div>
+      </section>
+
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-3xl mx-auto px-4">
+          <div className="bg-white rounded-2xl p-8 border border-gray-100">
+            <div className="text-center mb-8">
+              <h2 className="text-2xl font-bold text-benefique-navy mb-2">
+                Want to skip the back-and-forth?
+              </h2>
+              <p className="text-gray-600">
+                Pick a 30-minute slot now and we'll talk live. No prep needed.
+              </p>
+            </div>
+
+            <form
+              action="https://formspree.io/f/mzdjjprp"
+              method="POST"
+              className="space-y-6"
+              onSubmit={trackFormSubmit('slot-booking', { form_source: formSource })}
+            >
+              <input type="hidden" name="_subject" value="📅 Slot picked from /thank-you" />
+              <input type="hidden" name="original_form" value={formSource} />
+              <input type="text" name="_gotcha" style={{ display: 'none' }} />
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Your email <span className="text-red-500">*</span>
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="Same one you used a moment ago"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent"
+                />
+              </div>
+
+              <div>
+                <p className="text-sm font-medium text-gray-700 mb-3">Pick a slot:</p>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                  <fieldset>
+                    <legend className="font-semibold text-benefique-navy mb-3">{friSlots[0]?.date}</legend>
+                    <div className="space-y-2">
+                      {friSlots.map((slot) => (
+                        <label
+                          key={slot.iso}
+                          className="flex items-center gap-3 p-3 border border-gray-200 rounded-lg cursor-pointer hover:border-benefique-orange hover:bg-benefique-orange/5 transition"
+                        >
+                          <input type="radio" name="slot" value={slot.iso} required className="text-benefique-orange focus:ring-benefique-orange" />
+                          <span className="text-gray-700 font-medium">{slot.display}</span>
+                        </label>
+                      ))}
+                    </div>
+                  </fieldset>
+
+                  <fieldset>
+                    <legend className="font-semibold text-benefique-navy mb-3">{monSlots[0]?.date}</legend>
+                    <div className="space-y-2">
+                      {monSlots.map((slot) => (
+                        <label
+                          key={slot.iso}
+                          className="flex items-center gap-3 p-3 border border-gray-200 rounded-lg cursor-pointer hover:border-benefique-orange hover:bg-benefique-orange/5 transition"
+                        >
+                          <input type="radio" name="slot" value={slot.iso} required className="text-benefique-orange focus:ring-benefique-orange" />
+                          <span className="text-gray-700 font-medium">{slot.display}</span>
+                        </label>
+                      ))}
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+
+              <input
+                type="hidden"
+                name="_next"
+                value={`https://www.benefique.com/thank-you?booked=1&form=${formSource}`}
+              />
+
+              <button
+                type="submit"
+                className="w-full bg-benefique-orange text-white px-6 py-4 rounded-lg font-bold text-lg hover:bg-orange-600 transition"
+              >
+                Book This Slot →
+              </button>
+
+              <p className="text-xs text-gray-500 text-center">
+                All times Eastern. You'll get a Google Meet link by email within the hour.
+              </p>
+            </form>
+          </div>
+
+          <div className="text-center mt-8">
+            <p className="text-gray-600 text-sm">
+              Prefer to keep it async? No action needed — Gerrit will reach out within 24 hours.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+// ============================================================
 // MAIN APP
 // ============================================================
 export default function App() {
@@ -3892,6 +4077,7 @@ export default function App() {
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/apply" element={<Navigate to="/contact" replace />} />
+            <Route path="/thank-you" element={<ThankYou />} />
             <Route path="/demo" element={<Demo />} />
             <Route path="/oauth/callback" element={<OAuthCallback />} />
             <Route path="/terms" element={<Terms />} />
