@@ -12,6 +12,42 @@ import BOOKING_DATA from './booking-slots.json';
 // Built: 2026-01-28 | Restyled: 2026-01-29
 // ============================================================
 
+// ------------------------------------------------------------
+// Formspree AJAX submit hook
+// Formspree ignores the `_next` field on its free plan and force-
+// redirects standard form POSTs to its own logo'd /thanks page,
+// which kills the /thank-you slot-picker funnel. Submitting via
+// fetch (Accept: application/json) lets us keep the user on-site
+// and navigate to our own /thank-you page ourselves.
+// ------------------------------------------------------------
+function useFormspreeAjax(endpoint, formId, nextPath, extra = {}) {
+  const navigate = useNavigate();
+  const [submitting, setSubmitting] = React.useState(false);
+  const [error, setError] = React.useState(null);
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    trackFormSubmit(formId, extra)();
+    setSubmitting(true);
+    setError(null);
+    try {
+      const resp = await fetch(endpoint, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' },
+      });
+      if (!resp.ok) throw new Error('Formspree returned ' + resp.status);
+      navigate(nextPath);
+    } catch (err) {
+      setSubmitting(false);
+      setError("Something went wrong submitting the form. Please email hello@benefique.com and we'll follow up.");
+    }
+  };
+
+  return { onSubmit, submitting, error };
+}
+
 // Navigation Component
 function Nav() {
   const location = useLocation();
@@ -189,6 +225,7 @@ function Footer() {
 // HOME PAGE
 // ============================================================
 function Home() {
+  const homeForm = useFormspreeAjax('https://formspree.io/f/mzdjjprp', 'homepage-quick-application', '/thank-you?form=homepage');
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
@@ -658,9 +695,8 @@ function Home() {
               <h3 className="text-xl font-bold text-benefique-navy mb-2">Quick Application</h3>
               <p className="text-gray-600 text-sm mb-6">Takes 60 seconds. We'll reach out within 24 hours.</p>
               
-              <form action="https://formspree.io/f/mzdjjprp" method="POST" className="space-y-4" onSubmit={trackFormSubmit('homepage-quick-application')}>
+              <form onSubmit={homeForm.onSubmit} className="space-y-4">
                 <input type="hidden" name="_subject" value="New Benefique Application" />
-                <input type="hidden" name="_next" value="https://www.benefique.com/thank-you?form=homepage" />
                 <input type="text" name="_gotcha" style={{display: 'none'}} />
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
@@ -724,10 +760,14 @@ function Home() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-benefique-orange text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
+                  disabled={homeForm.submitting}
+                  className="w-full bg-benefique-orange text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition disabled:opacity-60"
                 >
-                  Submit Application
+                  {homeForm.submitting ? 'Submitting…' : 'Submit Application'}
                 </button>
+                {homeForm.error && (
+                  <p className="text-sm text-red-600 text-center">{homeForm.error}</p>
+                )}
                 <p className="text-xs text-gray-500 text-center">
                   No spam. No sales pressure. Just an honest conversation about your numbers.
                 </p>
@@ -1759,6 +1799,7 @@ function Blog() {
 // CONTACT PAGE
 // ============================================================
 function Contact() {
+  const contactForm = useFormspreeAjax('https://formspree.io/f/xlgvzwyo', 'contact-page-application', '/thank-you?form=contact');
   return (
     <div>
       <Helmet>
@@ -1815,9 +1856,8 @@ function Contact() {
               <h3 className="text-xl font-bold text-benefique-navy mb-2">Quick Application</h3>
               <p className="text-gray-600 text-sm mb-6">Takes 60 seconds. We'll reach out within 24 hours.</p>
               
-              <form action="https://formspree.io/f/mzdjjprp" method="POST" className="space-y-4" onSubmit={trackFormSubmit('contact-page-application')}>
+              <form onSubmit={contactForm.onSubmit} className="space-y-4">
                 <input type="hidden" name="_subject" value="New Benefique Contact Application" />
-                <input type="hidden" name="_next" value="https://www.benefique.com/thank-you?form=contact" />
                 <input type="text" name="_gotcha" style={{display: 'none'}} />
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
@@ -1846,9 +1886,12 @@ function Contact() {
                   <label className="block text-sm font-medium text-gray-700 mb-1">Biggest Financial Headache Right Now?</label>
                   <textarea rows={3} name="headache" placeholder="What's keeping you up at night?" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
                 </div>
-                <button type="submit" className="w-full bg-benefique-orange text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition">
-                  Submit Application
+                <button type="submit" disabled={contactForm.submitting} className="w-full bg-benefique-orange text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition disabled:opacity-60">
+                  {contactForm.submitting ? 'Submitting…' : 'Submit Application'}
                 </button>
+                {contactForm.error && (
+                  <p className="text-sm text-red-600 text-center">{contactForm.error}</p>
+                )}
                 <p className="text-xs text-gray-500 text-center">
                   No spam. No sales pressure. Just an honest conversation about your numbers.
                 </p>
@@ -3622,6 +3665,7 @@ function RadiologyIntake() {
   const [params] = [new URLSearchParams(typeof window !== 'undefined' ? window.location.search : '')];
   const ref = params.get('ref') || 'direct';
   const isReview = ref === 'review';
+  const intakeForm = useFormspreeAjax('https://formspree.io/f/mzdjjprp', 'radiology-intake', `/thank-you?form=radiology-${ref}`, { intake_ref: ref });
 
   return (
     <div>
@@ -3651,10 +3695,9 @@ function RadiologyIntake() {
       <section className="py-12 bg-gray-50">
         <div className="max-w-3xl mx-auto px-4">
           <div className="bg-white rounded-2xl p-8 border border-gray-100">
-            <form action="https://formspree.io/f/mzdjjprp" method="POST" className="space-y-5" onSubmit={trackFormSubmit('radiology-intake', { intake_ref: ref })}>
+            <form onSubmit={intakeForm.onSubmit} className="space-y-5">
               <input type="hidden" name="_subject" value="New Radiology CFO Intake" />
               <input type="hidden" name="source" value={`radiology-intake-${ref}`} />
-              <input type="hidden" name="_next" value={`https://www.benefique.com/thank-you?form=radiology-${ref}`} />
               <input type="text" name="_gotcha" style={{ display: 'none' }} />
 
               <div className="grid md:grid-cols-2 gap-4">
@@ -3776,10 +3819,13 @@ function RadiologyIntake() {
                 <textarea name="context" rows={4} placeholder="What is driving this conversation? What have you tried already?" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
               </div>
 
-              <button type="submit" className="w-full bg-benefique-orange text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition">
-                {isReview ? 'Request Strategic Review' : 'Submit Intake'}
+              <button type="submit" disabled={intakeForm.submitting} className="w-full bg-benefique-orange text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition disabled:opacity-60">
+                {intakeForm.submitting ? 'Submitting…' : isReview ? 'Request Strategic Review' : 'Submit Intake'}
               </button>
 
+              {intakeForm.error && (
+                <p className="text-sm text-red-600 text-center">{intakeForm.error}</p>
+              )}
               <p className="text-xs text-gray-500 text-center">
                 Reviewed personally by Benefique leadership. Response within 24 hours. NDA available on request.
               </p>
