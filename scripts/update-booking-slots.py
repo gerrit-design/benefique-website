@@ -53,7 +53,7 @@ except ImportError:
     )
     sys.exit(1)
 
-SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"]
+SCOPES = ["https://www.googleapis.com/auth/calendar.events"]
 TZ = ZoneInfo("America/New_York")
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
