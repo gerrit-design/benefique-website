@@ -1,12 +1,14 @@
 name: Refresh booking slots
 
 # Runs on GitHub's infrastructure — independent of any local machine.
-# Schedule: every Sunday at 22:00 UTC = 6 PM EDT (5 PM EST in winter).
+# Schedule: daily at 22:00 UTC = 6 PM EDT (5 PM EST in winter). Daily keeps
+# the picker rolling forward so it never shows past dates (the 5-business-day
+# window would otherwise go stale mid-week on a weekly cadence).
 # Also runnable on-demand from the Actions tab via the "Run workflow" button.
 
 on:
   schedule:
-    - cron: '0 22 * * 0'
+    - cron: '0 22 * * *'
   workflow_dispatch:
 
 # Allow the workflow to push refreshed booking-slots.json back to main.
@@ -43,4 +45,4 @@ jobs:
           GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
           GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
-        run: python scripts/update-booking-slots.py --auto-deploy
+        run: python scripts/update-booking-slots.py --auto-deploy --days 5
