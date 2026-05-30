@@ -1,9 +1,10 @@
 name: Refresh booking slots
 
 # Runs on GitHub's infrastructure — independent of any local machine.
-# Schedule: daily at 22:00 UTC = 6 PM EDT (5 PM EST in winter). Daily keeps
-# the picker rolling forward so it never shows past dates (the 5-business-day
-# window would otherwise go stale mid-week on a weekly cadence).
+# Schedule: daily at 22:00 UTC = 6 PM EDT (5 PM EST in winter). Daily refresh
+# keeps the picker rolling forward so it never shows past dates. We only offer
+# the next 2 business days (--days 2): a short booking horizon minimizes
+# no-shows and cancellations; the daily run keeps that 2-day window current.
 # Also runnable on-demand from the Actions tab via the "Run workflow" button.
 
 on:
@@ -22,13 +23,13 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
@@ -45,4 +46,4 @@ jobs:
           GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
           GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
-        run: python scripts/update-booking-slots.py --auto-deploy --days 5
+        run: python scripts/update-booking-slots.py --auto-deploy --days 2
