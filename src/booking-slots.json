@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-30T07:48:56.461428-04:00",
+  "generated_at": "2026-05-30T07:50:04.877267-04:00",
   "window_start_hour": 11,
   "window_end_hour": 14,
   "slot_minutes": 30,
@@ -50,96 +50,6 @@
       "date": "Tuesday, June 2",
       "day": "tue",
       "iso": "2026-06-02T13:30:00-04:00",
-      "display": "1:30 PM ET"
-    },
-    {
-      "date": "Wednesday, June 3",
-      "day": "wed",
-      "iso": "2026-06-03T11:00:00-04:00",
-      "display": "11:00 AM ET"
-    },
-    {
-      "date": "Wednesday, June 3",
-      "day": "wed",
-      "iso": "2026-06-03T11:30:00-04:00",
-      "display": "11:30 AM ET"
-    },
-    {
-      "date": "Wednesday, June 3",
-      "day": "wed",
-      "iso": "2026-06-03T12:00:00-04:00",
-      "display": "12:00 PM ET"
-    },
-    {
-      "date": "Wednesday, June 3",
-      "day": "wed",
-      "iso": "2026-06-03T12:30:00-04:00",
-      "display": "12:30 PM ET"
-    },
-    {
-      "date": "Wednesday, June 3",
-      "day": "wed",
-      "iso": "2026-06-03T13:00:00-04:00",
-      "display": "1:00 PM ET"
-    },
-    {
-      "date": "Wednesday, June 3",
-      "day": "wed",
-      "iso": "2026-06-03T13:30:00-04:00",
-      "display": "1:30 PM ET"
-    },
-    {
-      "date": "Thursday, June 4",
-      "day": "thu",
-      "iso": "2026-06-04T11:00:00-04:00",
-      "display": "11:00 AM ET"
-    },
-    {
-      "date": "Thursday, June 4",
-      "day": "thu",
-      "iso": "2026-06-04T11:30:00-04:00",
-      "display": "11:30 AM ET"
-    },
-    {
-      "date": "Thursday, June 4",
-      "day": "thu",
-      "iso": "2026-06-04T12:00:00-04:00",
-      "display": "12:00 PM ET"
-    },
-    {
-      "date": "Thursday, June 4",
-      "day": "thu",
-      "iso": "2026-06-04T12:30:00-04:00",
-      "display": "12:30 PM ET"
-    },
-    {
-      "date": "Thursday, June 4",
-      "day": "thu",
-      "iso": "2026-06-04T13:00:00-04:00",
-      "display": "1:00 PM ET"
-    },
-    {
-      "date": "Thursday, June 4",
-      "day": "thu",
-      "iso": "2026-06-04T13:30:00-04:00",
-      "display": "1:30 PM ET"
-    },
-    {
-      "date": "Friday, June 5",
-      "day": "fri",
-      "iso": "2026-06-05T12:30:00-04:00",
-      "display": "12:30 PM ET"
-    },
-    {
-      "date": "Friday, June 5",
-      "day": "fri",
-      "iso": "2026-06-05T13:00:00-04:00",
-      "display": "1:00 PM ET"
-    },
-    {
-      "date": "Friday, June 5",
-      "day": "fri",
-      "iso": "2026-06-05T13:30:00-04:00",
       "display": "1:30 PM ET"
     }
   ]
