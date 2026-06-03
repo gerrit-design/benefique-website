@@ -2,9 +2,11 @@ name: Refresh booking slots
 
 # Runs on GitHub's infrastructure — independent of any local machine.
 # Schedule: daily at 22:00 UTC = 6 PM EDT (5 PM EST in winter). Daily refresh
-# keeps the picker rolling forward so it never shows past dates. We only offer
-# the next 2 business days (--days 2): a short booking horizon minimizes
-# no-shows and cancellations; the daily run keeps that 2-day window current.
+# keeps the picker rolling forward so it never shows past dates. We surface the
+# next 2 business days that actually have availability (--days 2): a short
+# horizon minimizes no-shows, but if those days are fully blocked (travel,
+# vacation) the script rolls forward instead of showing an empty picker, so
+# there's always a bookable option. The daily run keeps the window current.
 # Also runnable on-demand from the Actions tab via the "Run workflow" button.
 
 on:

@@ -2,9 +2,14 @@
 """
 Refresh available booking slots on benefique.com/thank-you page.
 
-Pulls Gerrit's Google Calendar availability for the next N business days
-(default 2) in an 11:00 AM - 2:00 PM ET window, computes truly-open
-30-minute slots (no conflicts), and writes src/booking-slots.json.
+Pulls Gerrit's Google Calendar availability and surfaces the next N
+business days that ACTUALLY have an open slot (default 2) in an
+11:00 AM - 2:00 PM ET window, computing truly-open 30-minute slots
+(no conflicts) and writing src/booking-slots.json. It prefers the
+nearest days, but if those are fully blocked (travel, vacation) it
+scans forward up to --max-lookahead business days rather than show an
+empty picker — a dead-end booking page drops off worse than offering a
+slightly later slot.
 
 Run weekly (Sunday 6 PM is a good default) to keep the booking page fresh.
 The React app reads booking-slots.json at build time, so changes ship via
@@ -112,11 +117,17 @@ def get_calendar_service():
     return build("calendar", "v3", credentials=creds)
 
 
-def next_business_days(n: int) -> list[date]:
-    """Next N weekdays after today, in date order."""
+def upcoming_business_days(max_count: int) -> list[date]:
+    """Up to max_count weekdays after today, in date order.
+
+    Used as the forward-scan horizon: main() walks these in order and keeps
+    each day that actually has an open slot, stopping once it has enough
+    bookable days. The cap keeps the calendar API calls bounded if the user
+    is blocked for a long stretch (travel, vacation).
+    """
     out: list[date] = []
     cursor = datetime.now(TZ).date() + timedelta(days=1)
-    while len(out) < n:
+    while len(out) < max_count:
         if cursor.weekday() < 5:
             out.append(cursor)
         cursor += timedelta(days=1)
@@ -227,7 +238,9 @@ def auto_deploy(slot_count: int) -> None:
 
 def main() -> int:
     p = argparse.ArgumentParser(description="Refresh /thank-you booking slots from Google Calendar.")
-    p.add_argument("--days", type=int, default=2, help="Number of business days to offer (default 2).")
+    p.add_argument("--days", type=int, default=2, help="Number of bookable business days to surface (default 2).")
+    p.add_argument("--max-lookahead", type=int, default=15,
+                   help="Max business days to scan forward looking for availability (default 15 = ~3 weeks).")
     p.add_argument("--window-start", type=int, default=11, help="Slot window start hour ET (default 11 = 11am).")
     p.add_argument("--window-end", type=int, default=14, help="Slot window end hour ET (default 14 = 2pm).")
     p.add_argument("--slot-min", type=int, default=DEFAULT_SLOT_MIN, help="Slot duration in minutes (default 30).")
@@ -239,18 +252,32 @@ def main() -> int:
         return 2
 
     service = get_calendar_service()
-    days = next_business_days(args.days)
 
+    # Surface the next args.days business days that ACTUALLY have an open slot,
+    # scanning forward up to args.max_lookahead business days. We prefer the
+    # nearest days (short horizon cuts no-shows), but if the next days are
+    # fully blocked (travel, vacation) we roll forward rather than show an
+    # empty picker — a dead-end booking page drops off worse than a slightly
+    # later slot does.
     all_slots: list[dict] = []
-    print(f"Computing slots {args.window_start:02d}:00 - {args.window_end:02d}:00 ET, {args.slot_min}-min:")
-    for day in days:
+    days_offered = 0
+    print(f"Computing slots {args.window_start:02d}:00 - {args.window_end:02d}:00 ET, {args.slot_min}-min "
+          f"(want {args.days} bookable day(s), scan ≤{args.max_lookahead}):")
+    for day in upcoming_business_days(args.max_lookahead):
         busy = fetch_busy(service, day, args.window_start, args.window_end)
         open_for_day = open_slots_for_day(day, busy, args.window_start, args.window_end, args.slot_min)
-        all_slots.extend(open_for_day)
-        print(f"  {day.strftime('%a %b %d')}: {len(open_for_day)} open, {len(busy)} conflict(s)")
+        marker = ""
+        if open_for_day:
+            all_slots.extend(open_for_day)
+            days_offered += 1
+            marker = f"  <- offered ({days_offered}/{args.days})"
+        print(f"  {day.strftime('%a %b %d')}: {len(open_for_day)} open, {len(busy)} conflict(s){marker}")
+        if days_offered >= args.days:
+            break
 
     if not all_slots:
-        print("WARNING: zero open slots in window. Page will show its fallback copy.")
+        print(f"WARNING: zero open slots in next {args.max_lookahead} business days. "
+              "Page will show its fallback copy.")
 
     payload = {
         "generated_at": datetime.now(TZ).isoformat(),
