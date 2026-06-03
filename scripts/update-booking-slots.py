@@ -3,8 +3,8 @@
 Refresh available booking slots on benefique.com/thank-you page.
 
 Pulls Gerrit's Google Calendar availability and surfaces the next N
-business days that ACTUALLY have an open slot (default 2) in an
-11:00 AM - 2:00 PM ET window, computing truly-open 30-minute slots
+business days that ACTUALLY have an open slot (default 2) in a
+12:00 PM - 2:00 PM ET window, computing truly-open 30-minute slots
 (no conflicts) and writing src/booking-slots.json. It prefers the
 nearest days, but if those are fully blocked (travel, vacation) it
 scans forward up to --max-lookahead business days rather than show an
@@ -241,7 +241,7 @@ def main() -> int:
     p.add_argument("--days", type=int, default=2, help="Number of bookable business days to surface (default 2).")
     p.add_argument("--max-lookahead", type=int, default=15,
                    help="Max business days to scan forward looking for availability (default 15 = ~3 weeks).")
-    p.add_argument("--window-start", type=int, default=11, help="Slot window start hour ET (default 11 = 11am).")
+    p.add_argument("--window-start", type=int, default=12, help="Slot window start hour ET (default 12 = noon).")
     p.add_argument("--window-end", type=int, default=14, help="Slot window end hour ET (default 14 = 2pm).")
     p.add_argument("--slot-min", type=int, default=DEFAULT_SLOT_MIN, help="Slot duration in minutes (default 30).")
     p.add_argument("--auto-deploy", action="store_true", help="git commit + push if slots changed.")

@@ -4063,6 +4063,9 @@ function ThankYou() {
                 <p className="text-gray-600">
                   Pick a 30-minute slot now and we'll talk live. No prep needed.
                 </p>
+                <p className="text-sm text-gray-500 mt-2">
+                  These are the next available openings on Gerrit's calendar.
+                </p>
               </div>
 
               <form
@@ -4085,7 +4088,7 @@ function ThankYou() {
                 </div>
 
                 <div>
-                  <p className="text-sm font-medium text-gray-700 mb-3">Pick a slot:</p>
+                  <p className="text-sm font-medium text-gray-700 mb-3">Pick the next available slot:</p>
 
                   <div className={`grid ${gridCols} gap-6`}>
                     {slotGroups.map((group) => (
