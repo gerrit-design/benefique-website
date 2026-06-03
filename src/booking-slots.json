@@ -1,7 +1,80 @@
 {
-  "generated_at": "2026-06-03T15:44:17.301838-04:00",
+  "generated_at": "2026-06-03T16:25:20.251966-04:00",
   "window_start_hour": 11,
   "window_end_hour": 14,
   "slot_minutes": 30,
-  "slots": []
+  "slots": [
+    {
+      "date": "Tuesday, June 9",
+      "day": "tue",
+      "iso": "2026-06-09T11:00:00-04:00",
+      "display": "11:00 AM ET"
+    },
+    {
+      "date": "Tuesday, June 9",
+      "day": "tue",
+      "iso": "2026-06-09T11:30:00-04:00",
+      "display": "11:30 AM ET"
+    },
+    {
+      "date": "Tuesday, June 9",
+      "day": "tue",
+      "iso": "2026-06-09T12:00:00-04:00",
+      "display": "12:00 PM ET"
+    },
+    {
+      "date": "Tuesday, June 9",
+      "day": "tue",
+      "iso": "2026-06-09T12:30:00-04:00",
+      "display": "12:30 PM ET"
+    },
+    {
+      "date": "Tuesday, June 9",
+      "day": "tue",
+      "iso": "2026-06-09T13:00:00-04:00",
+      "display": "1:00 PM ET"
+    },
+    {
+      "date": "Tuesday, June 9",
+      "day": "tue",
+      "iso": "2026-06-09T13:30:00-04:00",
+      "display": "1:30 PM ET"
+    },
+    {
+      "date": "Wednesday, June 10",
+      "day": "wed",
+      "iso": "2026-06-10T11:00:00-04:00",
+      "display": "11:00 AM ET"
+    },
+    {
+      "date": "Wednesday, June 10",
+      "day": "wed",
+      "iso": "2026-06-10T11:30:00-04:00",
+      "display": "11:30 AM ET"
+    },
+    {
+      "date": "Wednesday, June 10",
+      "day": "wed",
+      "iso": "2026-06-10T12:00:00-04:00",
+      "display": "12:00 PM ET"
+    },
+    {
+      "date": "Wednesday, June 10",
+      "day": "wed",
+      "iso": "2026-06-10T12:30:00-04:00",
+      "display": "12:30 PM ET"
+    },
+    {
+      "date": "Wednesday, June 10",
+      "day": "wed",
+      "iso": "2026-06-10T13:00:00-04:00",
+      "display": "1:00 PM ET"
+    },
+    {
+      "date": "Wednesday, June 10",
+      "day": "wed",
+      "iso": "2026-06-10T13:30:00-04:00",
+      "display": "1:30 PM ET"
+    }
+  ]
 }
