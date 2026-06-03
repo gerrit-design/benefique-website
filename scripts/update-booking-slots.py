@@ -140,21 +140,30 @@ def fetch_busy(service, day: date, start_hour: int, end_hour: int) -> list[tuple
     )
     busy: list[tuple[datetime, datetime]] = []
     for ev in resp.get("items", []):
-        # Skip cancelled, transparent (free), and all-day events
         if ev.get("status") == "cancelled":
-            continue
-        if ev.get("transparency") == "transparent":
             continue
         s = ev.get("start", {})
         e = ev.get("end", {})
-        if "dateTime" not in s or "dateTime" not in e:
-            continue
-        busy.append(
-            (
-                datetime.fromisoformat(s["dateTime"]).astimezone(TZ),
-                datetime.fromisoformat(e["dateTime"]).astimezone(TZ),
+        if "date" in s and "date" in e:
+            # All-day event on the primary calendar (travel, "Stay at...",
+            # OOO, vacation). These mean "unavailable" even though Google
+            # defaults all-day events to Free/transparent, so we block the
+            # whole slot window REGARDLESS of the transparency flag. Holiday
+            # and birthday calendars are separate calendars and never appear
+            # in this primary-only query, so there's no over-blocking risk.
+            busy.append((window_start, window_end))
+        elif "dateTime" in s and "dateTime" in e:
+            # Timed event: a transparent (Free) hold genuinely shouldn't block,
+            # so honor the flag here. Otherwise block its actual span.
+            if ev.get("transparency") == "transparent":
+                continue
+            busy.append(
+                (
+                    datetime.fromisoformat(s["dateTime"]).astimezone(TZ),
+                    datetime.fromisoformat(e["dateTime"]).astimezone(TZ),
+                )
             )
-        )
+        # else: malformed event with neither dateTime nor date — skip.
     return busy
 
 
@@ -241,7 +250,7 @@ def main() -> int:
         print(f"  {day.strftime('%a %b %d')}: {len(open_for_day)} open, {len(busy)} conflict(s)")
 
     if not all_slots:
-        print("WARNING: zero open slots. Page will show fallback copy. Not deploying.")
+        print("WARNING: zero open slots in window. Page will show its fallback copy.")
 
     payload = {
         "generated_at": datetime.now(TZ).isoformat(),
@@ -257,10 +266,12 @@ def main() -> int:
         return 0
 
     print(f"Wrote {len(all_slots)} slots to {OUTPUT_FILE.relative_to(REPO_ROOT)}")
-    if args.auto_deploy and all_slots:
+    if args.auto_deploy:
+        # Deploy whatever is truthful — including an empty list. The /thank-you
+        # page renders a clean "no open slots this week" fallback when empty,
+        # so shipping zero slots is correct. NOT deploying would leave the
+        # previous (now-wrong, possibly past-dated) slots frozen on the page.
         auto_deploy(len(all_slots))
-    elif args.auto_deploy:
-        print("Skipped auto-deploy because zero open slots.")
     else:
         print("Run with --auto-deploy to commit + push.")
     return 0
