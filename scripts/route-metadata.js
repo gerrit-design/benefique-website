@@ -275,15 +275,79 @@ const routes = [
     ],
   },
   {
-    path: '/services/radiology',
+    path: '/radiology',
     title: 'Radiology CFO Intelligence | PET Tracer Economics, Collections & Multi-Center Operations | Benefique',
     h1: 'Your Volume Is Up. Your Cash Isn\'t.',
     description: 'Strategic financial intelligence for multi-center radiology groups. PET Tracer economics, per-payer DSO, payer mix risk, per-claim profitability, COO scorecards. Start with a Strategic Radiology Review.',
+    schema: {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'CollectionPage',
+          '@id': `${SITE}/radiology`,
+          url: `${SITE}/radiology`,
+          name: 'Radiology CFO Intelligence — Case Studies & Frameworks',
+          description: 'Financial intelligence case studies for multi-center radiology and imaging groups: PET tracer economics, revenue cycle and DSO, payer mix, per-claim profitability, multi-site scaling, and M&A / exit readiness.',
+          about: ['Radiology', 'Diagnostic imaging center', 'Fractional CFO', 'Medical revenue cycle', 'PET imaging'],
+          isPartOf: { '@type': 'WebSite', name: 'Benefique Tax & Accounting', url: SITE },
+          publisher: { '@type': 'Organization', name: 'Benefique Tax & Accounting', url: SITE },
+        },
+        {
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: SITE },
+            { '@type': 'ListItem', position: 2, name: 'Healthcare', item: `${SITE}/knowledge` },
+            { '@type': 'ListItem', position: 3, name: 'Radiology', item: `${SITE}/radiology` },
+          ],
+        },
+        {
+          '@type': 'ItemList',
+          name: 'Radiology case-study library',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Multi-Center Imaging Owner Income: 2026 SE Florida Benchmarks', url: `${SITE}/blog/multi-center-imaging-owner-income-2026-sefl` },
+            { '@type': 'ListItem', position: 2, name: 'Per-Modality Profitability: MRI vs CT vs Ultrasound vs PET', url: `${SITE}/blog/per-modality-profitability-imaging-center` },
+            { '@type': 'ListItem', position: 3, name: 'DSO Benchmarks for Imaging Centers: 2026 SE Florida Data', url: `${SITE}/blog/dso-benchmarks-imaging-centers-2026-sefl` },
+            { '@type': 'ListItem', position: 4, name: '7 Payers, 41 Procedures, $80,593 Lost', url: `${SITE}/blog/toxic-payers-losing-money-medical-practice` },
+            { '@type': 'ListItem', position: 5, name: 'How to Acquire a Second Imaging Center: The Financial Roadmap', url: `${SITE}/blog/how-to-acquire-second-imaging-center` },
+          ],
+        },
+      ],
+    },
     faq: [
       { q: 'Who is the Strategic Radiology Review for?', a: 'Imaging center operators, CFOs, and medical directors running one or more centers with $2M+ revenue who suspect their accountant and billing company cannot answer per-payer, per-tracer, or per-claim profitability questions. Typical profile: growing but cash-constrained, unclear on PET Tracer Scan economics, preparing for a lender conversation, or renegotiating payer contracts.' },
       { q: 'What are PET Tracer Scans, and why do you separate them?', a: 'PET Tracer Scans refers to high-reimbursement specialty tracers with radiopharmaceutical input costs of $2,000-$3,000 per dose and payer reimbursement that varies as much as 9x depending on payer mix. Their economics are structurally different from general radiology. Blending them into one imaging line hides the single largest profit-and-loss driver in a modern center -- which is exactly what most accounting systems do.' },
       { q: 'What does the Strategic Radiology Review deliver?', a: 'A banker-grade Intelligence PDF covering Two Business Unit decomposition, PET Tracer economics with toxic-combination detection, per-claim profitability stack, DSO by payer, payer mix risk analysis, and a prioritized action plan with quantified dollar impact. Turnaround is two weeks from data access. A 90-minute executive readout is included.' },
       { q: 'What is the investment for ongoing CFO work?', a: 'It depends on center count, complexity, and scope. We propose specific scope and pricing on the Strategic Review readout -- after we have seen your data, not before. This avoids the common trap of buying generic CFO services priced by hour or headcount rather than by the problems actually worth solving.' },
+    ],
+  },
+  {
+    path: '/knowledge',
+    title: 'Knowledge Map | Healthcare & Services Financial Intelligence | Benefique',
+    h1: 'The Benefique Knowledge Map',
+    description: 'Find Benefique financial case studies by your situation. Two branches: Healthcare (radiology, veterinary, concierge, dental) and Services (fractional CFO, tax, bookkeeping, M&A, R&D, and the industries we serve).',
+    schema: {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'CollectionPage',
+          '@id': `${SITE}/knowledge`,
+          url: `${SITE}/knowledge`,
+          name: 'Benefique Knowledge Map',
+          description: 'A two-branch map of Benefique financial intelligence: Healthcare (radiology, veterinary, concierge, dental) and Services (fractional CFO, tax, bookkeeping, M&A, R&D, and the industries we serve).',
+          isPartOf: { '@type': 'WebSite', name: 'Benefique Tax & Accounting', url: SITE },
+        },
+        {
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: SITE },
+            { '@type': 'ListItem', position: 2, name: 'Knowledge Map', item: `${SITE}/knowledge` },
+          ],
+        },
+      ],
+    },
+    faq: [
+      { q: 'How do I find a case study for my type of business?', a: 'Start on the Knowledge Map. The left branch is by industry (Healthcare -- with a dedicated Radiology silo, plus veterinary, concierge, and dental). The right branch is by service (fractional CFO, real-time accounting, tax and entity strategy, M&A and exit readiness, R&D credits) and the other industries we serve, including legal and marine. Every node links to a real case study or framework.' },
+      { q: 'Where are the radiology case studies?', a: 'The Radiology silo at /radiology organizes every imaging case study into five areas: multi-site and scaling, PET tracer economics, revenue cycle (A/R and DSO), payer mix (commercial / PI / self-pay), and M&A and exit / quality-of-earnings readiness.' },
     ],
   },
 ];

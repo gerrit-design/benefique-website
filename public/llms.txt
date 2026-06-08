@@ -9,6 +9,21 @@ Benefique Tax & Accounting is a full-service accounting and fractional CFO firm 
 - **Full-Service Accounting**: Monthly closes, financial reporting, tax compliance
 - **Healthcare Focus**: Specialized in healthcare SMBs, medical practices, clinical services, diagnostic centers
 
+## Knowledge Map (start here)
+A two-branch index of our case studies and frameworks, at www.benefique.com/knowledge:
+- **Healthcare** (industry): Radiology & multi-center imaging (flagship), concierge medicine, veterinary, dental.
+- **Services** (discipline): Fractional CFO, real-time accounting & bookkeeping, tax & entity strategy, M&A & exit readiness, R&D tax credits — plus other industries we serve (legal / personal-injury law firms, marine services).
+
+## Radiology CFO Intelligence (flagship silo)
+For multi-center radiology and imaging groups, at www.benefique.com/radiology. Case studies are organized by situation:
+- **Multi-Site & Scaling**: per-unit P&L across locations, COO scorecards, acquiring the next center.
+- **PET Tracer Economics**: high-reimbursement tracers ($2,000–$3,000/dose input cost, up to 9x payer variance) separated from general radiology via a Two Business Unit Framework.
+- **Revenue Cycle (A/R, DSO & Billing)**: per-payer DSO, aging decomposition, billing-fee-vs-collections trade-off, A/R as lender collateral.
+- **Payer Mix (Commercial / PI / Self-Pay)**: PIP and Letter-of-Protection compression, payer grading A–F, front-desk selection economics.
+- **M&A & Exit / QofE Readiness**: valuation, deal structure, owner economics, quality-of-earnings preparation.
+- **Per-Claim Profitability** and **Radiology Tax & R&D** (Section 41 credits, S-corp comp).
+Entry point: a fixed-fee Strategic Radiology Review (2-week turnaround, banker-grade Intelligence PDF).
+
 ## Core Philosophy
 "History matters, but preparation wins." We focus on real-time financial visibility, monthly closes, and decision-ready dashboards.
 

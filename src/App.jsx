@@ -81,15 +81,17 @@ function Nav() {
                 <div className="border-t border-gray-100 my-1"></div>
                 <Link to="/services/fractional-cfo" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-benefique-navy">Fractional CFO</Link>
                 <Link to="/services/real-time-accounting" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-benefique-navy">Real-Time Accounting</Link>
-                <Link to="/services/radiology" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-benefique-navy">
+                <Link to="/radiology" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-benefique-navy">
                   <span className="text-benefique-orange mr-1">◆</span>Radiology CFO
                 </Link>
               </div>
             </div>
           </div>
           {[
-            ['/demo', 'Sample Reports'],
+            ['/radiology', 'Radiology'],
+            ['/knowledge', 'Knowledge Map'],
             ['/blog', 'Blog'],
+            ['/demo', 'Sample Reports'],
             ['/testimonials', 'Testimonials'],
             ['/about', 'About'],
             ['/careers', 'Careers'],
@@ -135,9 +137,11 @@ function Nav() {
               <Link to="/services" className="block text-sm text-gray-600">All Services</Link>
               <Link to="/services/fractional-cfo" className="block text-sm text-gray-600">Fractional CFO</Link>
               <Link to="/services/real-time-accounting" className="block text-sm text-gray-600">Real-Time Accounting</Link>
-              <Link to="/services/radiology" className="block text-sm text-gray-600"><span className="text-benefique-orange mr-1">◆</span>Radiology CFO</Link>
+              <Link to="/radiology" className="block text-sm text-gray-600"><span className="text-benefique-orange mr-1">◆</span>Radiology CFO</Link>
             </div>
           </details>
+          <Link to="/radiology" className="block text-gray-600"><span className="text-benefique-orange mr-1">◆</span>Radiology</Link>
+          <Link to="/knowledge" className="block text-gray-600">Knowledge Map</Link>
           <Link to="/demo" className="block text-gray-600">Sample Reports</Link>
           <Link to="/blog" className="block text-gray-600">Blog</Link>
           <Link to="/testimonials" className="block text-gray-600">Testimonials</Link>
@@ -206,7 +210,7 @@ function Footer() {
           <div>
             <span className="text-gray-500 text-xs uppercase tracking-wider">Industries</span>
             <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1">
-              <Link to="/services/radiology" className="text-gray-400 hover:text-white transition">Radiology CFO</Link>
+              <Link to="/radiology" className="text-gray-400 hover:text-white transition">Radiology CFO</Link>
               <Link to="/industries/dental" className="text-gray-400 hover:text-white transition">Dental</Link>
               <Link to="/industries/veterinary" className="text-gray-400 hover:text-white transition">Veterinary</Link>
               <Link to="/industries/marine-services" className="text-gray-400 hover:text-white transition">Marine Services</Link>
@@ -577,7 +581,7 @@ function Home() {
               {
                 title: 'Radiology & Multi-Center Imaging',
                 isService: true,
-                serviceLink: '/services/radiology',
+                serviceLink: '/radiology',
                 serviceLabel: 'See the full Radiology CFO Intelligence engagement →',
                 posts: [
                   { slug: 'radiology-accounts-receivable-line-of-credit', title: 'Radiology A/R as Collateral: The Line-of-Credit Playbook' },
@@ -3277,6 +3281,175 @@ function RealTimeAccountingPage() {
 // ============================================================
 // RADIOLOGY CFO INTELLIGENCE LANDING PAGE
 // ============================================================
+// ============================================================
+// KNOWLEDGE MAP — visual front door (two roots: Healthcare / Services)
+// Every node is a real link so humans browse it and crawlers index it.
+// ============================================================
+function KnowledgeMap() {
+  const SITE = 'https://www.benefique.com';
+
+  // Healthcare = the hero vertical. Radiology is the flagship silo.
+  const healthcare = {
+    title: 'Healthcare',
+    tagline: 'Imaging, veterinary, and medical-group finance.',
+    featured: {
+      title: 'Radiology & Multi-Center Imaging',
+      to: '/radiology',
+      desc: 'The full Radiology CFO Intelligence silo — case studies by exactly the situation you are in.',
+      subtabs: [
+        { label: 'Multi-Site & Scaling', to: '/blog/multi-center-imaging-owner-income-2026-sefl' },
+        { label: 'PET Tracer Economics', to: '/blog/per-modality-profitability-imaging-center' },
+        { label: 'Revenue Cycle: A/R & DSO', to: '/blog/dso-benchmarks-imaging-centers-2026-sefl' },
+        { label: 'Payer Mix (Commercial / PI)', to: '/blog/toxic-payers-losing-money-medical-practice' },
+        { label: 'M&A & Exit / QofE', to: '/blog/how-to-acquire-second-imaging-center' },
+      ],
+    },
+    branches: [
+      { label: 'Concierge Medicine', to: '/blog/concierge-medicine-financial-model', desc: 'Membership-model economics, panel size, and the build-to income math.' },
+      { label: 'Veterinary Practices', to: '/industries/veterinary', desc: 'Inventory-heavy, single-DVM productivity, point-of-service collection.' },
+      { label: 'Dental Groups & DSOs', to: '/industries/dental', desc: 'Insurance-vs-cash mix, multi-provider comp, acquisition accounting.' },
+    ],
+  };
+
+  // Services = our disciplines, plus the other industries we serve (Legal lives here).
+  const services = {
+    title: 'Services',
+    tagline: 'What we actually do — and the industries beyond healthcare we do it for.',
+    branches: [
+      { label: 'Fractional CFO', to: '/services/fractional-cfo', desc: 'Cash-flow forecasting, KPI dashboards, board-ready reporting.' },
+      { label: 'Real-Time Accounting & Bookkeeping', to: '/services/real-time-accounting', desc: 'Books closed by the 7th, live dashboards, no month-end surprise.' },
+      { label: 'Tax & Entity Strategy', to: '/blog/s-corp-tax-trap-service-business', desc: 'S-corp elections, reasonable comp, proactive planning not April scramble.' },
+      { label: 'M&A & Exit Readiness', to: '/blog/cash-machine-vs-exit-machine', desc: 'Cash machine or exit machine — valuation, deal structure, QofE prep.' },
+      { label: 'R&D Tax Credits', to: '/blog/rd-tax-credits-healthcare', desc: 'Section 41 credits — often $40K–$120K/yr for technical practices.' },
+    ],
+    industries: [
+      { label: 'Legal / PI Law Firms', to: '/blog/lop-cash-cycle-personal-injury-practice-ar', desc: 'Letter-of-Protection cash cycle, trust-vs-operating, contingency normalization.' },
+      { label: 'Marine Services', to: '/industries/marine-services', desc: 'Job-cost profitability, seasonal cash flow, intercompany markup.' },
+    ],
+  };
+
+  const knowledgeSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'CollectionPage',
+        '@id': `${SITE}/knowledge`,
+        url: `${SITE}/knowledge`,
+        name: 'Benefique Knowledge Map',
+        description: 'A two-branch map of Benefique financial intelligence: Healthcare (radiology, veterinary, concierge, dental) and Services (fractional CFO, tax, bookkeeping, M&A, R&D, and the industries we serve).',
+        isPartOf: { '@type': 'WebSite', name: 'Benefique Tax & Accounting', url: SITE },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: SITE },
+          { '@type': 'ListItem', position: 2, name: 'Knowledge Map', item: `${SITE}/knowledge` },
+        ],
+      },
+    ],
+  };
+
+  const Branch = ({ label, to, desc }) => (
+    <Link to={to} className="block group/branch pl-5 py-3 border-l-2 border-gray-200 hover:border-benefique-orange transition-colors">
+      <span className="font-semibold text-benefique-navy group-hover/branch:text-benefique-orange transition-colors">{label}</span>
+      {desc && <span className="block text-sm text-gray-500 mt-0.5">{desc}</span>}
+    </Link>
+  );
+
+  return (
+    <div>
+      <Helmet>
+        <title>Knowledge Map | Healthcare & Services Financial Intelligence | Benefique</title>
+        <meta name="description" content="The Benefique Knowledge Map — find financial case studies by your situation. Two branches: Healthcare (radiology, veterinary, concierge, dental) and Services (fractional CFO, tax, bookkeeping, M&A, R&D)." />
+        <link rel="canonical" href="https://www.benefique.com/knowledge" />
+        <script type="application/ld+json">{JSON.stringify(knowledgeSchema)}</script>
+      </Helmet>
+
+      {/* Hero */}
+      <section className="bg-white py-14 border-b border-gray-100">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="inline-flex items-center gap-2 bg-benefique-navy/5 text-benefique-navy px-3 py-1 rounded-full text-sm font-medium mb-5">
+            <span>🗺️</span> Find it by your situation
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold text-benefique-navy leading-tight mb-3">The Benefique Knowledge Map</h1>
+          <p className="text-xl text-gray-600 max-w-3xl">
+            Two ways in. Start with <strong>your industry</strong> on the left, or <strong>the work you need done</strong> on the right. Every node lands you on a real case study or framework — not a brochure.
+          </p>
+        </div>
+      </section>
+
+      {/* The Map */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-8">
+
+            {/* HEALTHCARE ROOT */}
+            <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
+              <div className="bg-benefique-navy px-6 py-5 border-b-4 border-benefique-orange">
+                <h2 className="text-2xl font-bold text-white flex items-center gap-2"><span>🏥</span> {healthcare.title}</h2>
+                <p className="text-blue-100 text-sm mt-1">{healthcare.tagline}</p>
+              </div>
+              <div className="p-6">
+                {/* Featured: Radiology */}
+                <div className="rounded-xl border-2 border-benefique-orange/40 bg-benefique-orange/5 p-5 mb-5">
+                  <div className="flex items-center justify-between gap-2 mb-1">
+                    <Link to={healthcare.featured.to} className="text-lg font-bold text-benefique-navy hover:text-benefique-orange transition-colors">
+                      <span className="text-benefique-orange mr-1">◆</span>{healthcare.featured.title}
+                    </Link>
+                    <span className="text-[11px] uppercase tracking-wider bg-benefique-orange text-white px-2 py-0.5 rounded-full font-semibold whitespace-nowrap">Flagship silo</span>
+                  </div>
+                  <p className="text-sm text-gray-600 mb-4">{healthcare.featured.desc}</p>
+                  <div className="grid sm:grid-cols-2 gap-2">
+                    {healthcare.featured.subtabs.map((s) => (
+                      <Link key={s.label} to={s.to} className="flex items-center gap-2 text-sm text-gray-700 bg-white rounded-lg border border-gray-200 px-3 py-2 hover:border-benefique-orange hover:text-benefique-orange transition-colors">
+                        <span className="text-benefique-orange">→</span>{s.label}
+                      </Link>
+                    ))}
+                  </div>
+                  <Link to={healthcare.featured.to} className="inline-block mt-4 text-sm font-semibold text-benefique-orange hover:underline">
+                    Open the full Radiology silo →
+                  </Link>
+                </div>
+                {/* Other healthcare branches */}
+                <div className="space-y-1">
+                  {healthcare.branches.map((b) => <Branch key={b.label} {...b} />)}
+                </div>
+              </div>
+            </div>
+
+            {/* SERVICES ROOT */}
+            <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
+              <div className="bg-benefique-navy px-6 py-5 border-b-4 border-benefique-orange">
+                <h2 className="text-2xl font-bold text-white flex items-center gap-2"><span>⚙️</span> {services.title}</h2>
+                <p className="text-blue-100 text-sm mt-1">{services.tagline}</p>
+              </div>
+              <div className="p-6">
+                <div className="space-y-1 mb-6">
+                  {services.branches.map((b) => <Branch key={b.label} {...b} />)}
+                </div>
+                <div className="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2 pl-1">Industries We Serve</div>
+                <div className="space-y-1">
+                  {services.industries.map((b) => <Branch key={b.label} {...b} />)}
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Footer CTA */}
+          <div className="text-center mt-10">
+            <p className="text-gray-600 mb-4">Not sure where you fit? Browse everything, or tell us your situation.</p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Link to="/blog" className="border-2 border-benefique-navy text-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-benefique-navy hover:text-white transition">Browse all posts →</Link>
+              <Link to="/contact" className="bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition">Apply to Work With Us</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
 function RadiologyLandingPage() {
   const services = [
     {
@@ -3325,35 +3498,55 @@ function RadiologyLandingPage() {
 
   const clusters = [
     {
+      title: 'Multi-Site & Scaling Operations',
+      anchor: 'multi-site',
+      blurb: 'Running more than one center? Portfolio and per-center P&L, COO accountability, and the math of adding the next location.',
+      posts: [
+        { slug: 'multi-center-imaging-owner-income-2026-sefl', title: 'Multi-Center Imaging Owner Income: 2026 SE Florida Benchmarks' },
+        { slug: 'per-unit-pnl-multi-location-cost-analysis', title: 'Per-Unit P&L for Multi-Location Practices' },
+        { slug: '6-financial-blockers-killing-healthcare-practices', title: 'The 6 Financial Blockers Killing Healthcare Practices' },
+        { slug: 'real-time-financial-dashboards-healthcare-practices', title: '10 KPIs Every Healthcare Practice Should Track in Real Time' },
+        { slug: 'assembly-line-thinking-medical-practice-profitability', title: 'The Factory That Didn\'t Know It Was Losing Money' },
+      ],
+    },
+    {
       title: 'PET Tracer Economics',
+      anchor: 'pet-tracer',
+      blurb: 'The single largest P&L driver in a modern center — and the one most accounting systems blend into invisibility.',
       posts: [
         { slug: 'referring-doctor-relationship-myth-medical-imaging', title: 'The Relationship Myth: When Taking One For The Team Costs $142,000' },
         { slug: 'high-cost-procedure-economics-medical-practice', title: '$2,940 Out the Door Before You Know If You\'ll Get Paid' },
-        { slug: 'toxic-payers-losing-money-medical-practice', title: '7 Payers, 41 Procedures, $80,593 Lost' },
+        { slug: 'per-modality-profitability-imaging-center', title: 'Per-Modality Profitability: MRI vs CT vs Ultrasound vs PET' },
         { slug: 'expensive-2-minute-decision-medical-practice', title: 'The Most Expensive 2-Minute Decision in Your Medical Practice' },
       ],
     },
     {
-      title: 'Collections, DSO & Cash Flow',
+      title: 'Revenue Cycle: A/R, DSO & Billing',
+      anchor: 'revenue-cycle',
+      blurb: 'Per-payer DSO, aging decomposition, the billing-fee-versus-collections trade-off, and A/R your lender will actually fund.',
       posts: [
         { slug: 'dso-benchmarks-imaging-centers-2026-sefl', title: 'DSO Benchmarks for Imaging Centers: 2026 SE Florida Data' },
-        { slug: 'lop-economics-real-yield-vs-face-value', title: 'LOP Economics: Real Yield vs Face Value (Imaging Center 2026)' },
-        { slug: 'ai-cash-flow-waterfall-explained', title: 'How AI Found That $1M in Profit Left Zero Cash in the Bank' },
         { slug: 'radiology-accounts-receivable-line-of-credit', title: 'Radiology Accounts Receivable: How Banks Misread Your Aging Report' },
         { slug: 'dso-lying-medical-practice-cash-flow', title: 'Your DSO Is Lying to You — Why Averages Hide Your Real Cash Flow Problem' },
         { slug: 'medical-billing-fees-vs-collections-dso', title: 'Your Billing Company Costs 6%. Slow Collections Cost 10x That.' },
+        { slug: 'ai-cash-flow-waterfall-explained', title: 'How AI Found That $1M in Profit Left Zero Cash in the Bank' },
       ],
     },
     {
-      title: 'Payer Mix & PIP Risk',
+      title: 'Payer Mix (Commercial / PI / Self-Pay)',
+      anchor: 'payer-mix',
+      blurb: 'PIP and Letter-of-Protection compression, payer grading A–F, and the front-desk selection economics that lock in profit before billing touches the claim.',
       posts: [
-        { slug: 'radiology-collections-dashboard-case-study', title: 'Real-Time Collections Intelligence for Multi-Center Radiology' },
         { slug: 'toxic-payers-losing-money-medical-practice', title: '7 Payers, 41 Procedures, $80,593 Lost' },
-        { slug: 'expensive-2-minute-decision-medical-practice', title: 'The Most Expensive 2-Minute Decision in Your Medical Practice' },
+        { slug: 'lop-cash-cycle-personal-injury-practice-ar', title: 'Why PI-Heavy Practices Carry 20+ Months of A/R: The LOP Cash Cycle' },
+        { slug: 'lop-economics-real-yield-vs-face-value', title: 'LOP Economics: Real Yield vs Face Value (Imaging Center 2026)' },
+        { slug: 'radiology-collections-dashboard-case-study', title: 'Real-Time Collections Intelligence for Multi-Center Radiology' },
       ],
     },
     {
       title: 'Per-Claim Profitability',
+      anchor: 'per-claim',
+      blurb: 'The $/Claim → GP$/Claim → NOI/Claim stack. Which procedures lose money on which payers — a 9:1 profitability gap on identical work.',
       posts: [
         { slug: 'per-modality-profitability-imaging-center', title: 'Per-Modality Profitability: MRI vs CT vs Ultrasound vs PET' },
         { slug: 'high-cost-procedure-economics-medical-practice', title: '$2,940 Out the Door Before You Know If You\'ll Get Paid' },
@@ -3362,25 +3555,21 @@ function RadiologyLandingPage() {
       ],
     },
     {
-      title: 'Multi-Center Operations & COO',
+      title: 'M&A & Exit / QofE Readiness',
+      anchor: 'ma-exit',
+      blurb: 'Buying the next center, or getting ready to sell. Valuation logic, deal structure, owner economics, and quality-of-earnings readiness.',
       posts: [
-        { slug: '6-financial-blockers-killing-healthcare-practices', title: 'The 6 Financial Blockers Killing Healthcare Practices' },
-        { slug: 'radiology-collections-dashboard-case-study', title: 'Multi-Center Radiology Collections Intelligence' },
-        { slug: 'real-time-financial-dashboards-healthcare-practices', title: '10 KPIs Every Healthcare Practice Should Track in Real Time' },
-        { slug: 'assembly-line-thinking-medical-practice-profitability', title: 'The Factory That Didn\'t Know It Was Losing Money' },
-      ],
-    },
-    {
-      title: 'Owner Economics & Exit',
-      posts: [
-        { slug: 'multi-center-imaging-owner-income-2026-sefl', title: 'Multi-Center Imaging Owner Income: 2026 SE Florida Benchmarks' },
         { slug: 'how-to-acquire-second-imaging-center', title: 'How to Acquire a Second Imaging Center: The Financial Roadmap' },
+        { slug: 'cash-machine-vs-exit-machine', title: 'Cash Machine vs Exit Machine: Which Are You Building?' },
+        { slug: 'multi-center-imaging-owner-income-2026-sefl', title: 'Multi-Center Imaging Owner Income: 2026 SE Florida Benchmarks' },
         { title: 'Selling Your Imaging Center: What Buyers Actually Pay (SDE, EBITDA, Multiples)', comingSoon: true },
         { title: 'Building Wealth as an Imaging Center Owner: Beyond the Practice', comingSoon: true },
       ],
     },
     {
       title: 'Radiology Tax & R&D',
+      anchor: 'tax-rd',
+      blurb: 'Section 41 R&D credits for imaging groups, S-corp reasonable compensation, entity structure, and 2026 tax-law changes.',
       posts: [
         { slug: 'rd-tax-credits-healthcare', title: 'R&D Tax Credits: Hidden Money for Healthcare Practices' },
         { slug: 's-corp-reasonable-compensation-healthcare-service-businesses-broward-county', title: 'S-Corp Reasonable Compensation for Healthcare Service Businesses' },
@@ -3417,12 +3606,49 @@ function RadiologyLandingPage() {
     },
   ];
 
+  const SITE = 'https://www.benefique.com';
+  const radiologySchema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'CollectionPage',
+        '@id': `${SITE}/radiology`,
+        url: `${SITE}/radiology`,
+        name: 'Radiology CFO Intelligence — Case Studies & Frameworks',
+        description: 'Financial intelligence case studies for multi-center radiology and imaging groups: PET tracer economics, revenue cycle and DSO, payer mix, per-claim profitability, multi-site scaling, and M&A/exit readiness.',
+        about: ['Radiology', 'Diagnostic imaging center', 'Fractional CFO', 'Medical revenue cycle', 'PET imaging'],
+        isPartOf: { '@type': 'WebSite', name: 'Benefique Tax & Accounting', url: SITE },
+        publisher: { '@type': 'Organization', name: 'Benefique Tax & Accounting', url: SITE },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: SITE },
+          { '@type': 'ListItem', position: 2, name: 'Healthcare', item: `${SITE}/knowledge` },
+          { '@type': 'ListItem', position: 3, name: 'Radiology', item: `${SITE}/radiology` },
+        ],
+      },
+      {
+        '@type': 'ItemList',
+        name: 'Radiology case-study library',
+        itemListElement: clusters.flatMap((c) =>
+          c.posts.filter((p) => p.slug).map((p) => ({
+            '@type': 'ListItem',
+            name: p.title,
+            url: `${SITE}/blog/${p.slug}`,
+          }))
+        ).map((it, i) => ({ ...it, position: i + 1 })),
+      },
+    ],
+  };
+
   return (
     <div>
       <Helmet>
         <title>Radiology CFO Intelligence | PET Tracer Economics, Collections & Multi-Center Operations | Benefique</title>
         <meta name="description" content="Strategic financial intelligence for multi-center radiology groups. PET Tracer economics, per-payer DSO, payer mix risk, per-claim profitability, COO scorecards. Start with a Strategic Radiology Review." />
-        <link rel="canonical" href="https://www.benefique.com/services/radiology" />
+        <link rel="canonical" href="https://www.benefique.com/radiology" />
+        <script type="application/ld+json">{JSON.stringify(radiologySchema)}</script>
       </Helmet>
 
       {/* Hero */}
@@ -3595,12 +3821,15 @@ function RadiologyLandingPage() {
 
           <div className="space-y-4">
             {clusters.map((cluster) => (
-              <details key={cluster.title} className="bg-gray-50 rounded-xl border border-gray-200 group">
+              <details key={cluster.title} id={cluster.anchor} className="bg-gray-50 rounded-xl border border-gray-200 group scroll-mt-24">
                 <summary className="px-6 py-4 cursor-pointer font-semibold text-benefique-navy hover:text-benefique-orange transition list-none flex justify-between items-center">
                   {cluster.title}
                   <span className="text-gray-400 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <div className="px-6 pb-4 border-t border-gray-200">
+                  {cluster.blurb && (
+                    <p className="text-sm text-gray-500 pt-4 pb-1">{cluster.blurb}</p>
+                  )}
                   <ul className="divide-y divide-gray-200">
                     {cluster.posts.map((p, i) => (
                       <li key={p.slug || `coming-${i}`}>
@@ -4517,7 +4746,9 @@ export default function App() {
             {/* Service Pages */}
             <Route path="/services/real-time-accounting" element={<RealTimeAccountingPage />} />
             <Route path="/services/fractional-cfo" element={<Services />} />
-            <Route path="/services/radiology" element={<RadiologyLandingPage />} />
+            <Route path="/radiology" element={<RadiologyLandingPage />} />
+            <Route path="/knowledge" element={<KnowledgeMap />} />
+            <Route path="/services/radiology" element={<Navigate to="/radiology" replace />} />
             <Route path="/services/radiology/intake" element={<RadiologyIntake />} />
             <Route path="/tools/concierge-simulator" element={<ConciergeSimulator />} />
             <Route path="/tools/business-simulator" element={<BusinessSimulator />} />

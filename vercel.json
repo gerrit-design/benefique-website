@@ -3,6 +3,7 @@
   "outputDirectory": "dist",
   "trailingSlash": false,
   "redirects": [
+    { "source": "/services/radiology", "destination": "/radiology", "statusCode": 301 },
     { "source": "/go/two-salaries", "destination": "/blog/owner-salary-two-numbers?utm_source=linkedin&utm_medium=social&utm_campaign=two-salaries", "statusCode": 302 },
     { "source": "/go/simulator", "destination": "/tools/concierge-simulator?utm_source=linkedin&utm_medium=social&utm_campaign=concierge-simulator", "statusCode": 302 },
     { "source": "/go/waterfall", "destination": "/blog/ai-cash-flow-waterfall-explained?utm_source=linkedin&utm_medium=social&utm_campaign=waterfall", "statusCode": 302 },
@@ -55,7 +56,7 @@
     { "source": "/davie/bookkeeping-services", "destination": "/davie-accounting", "statusCode": 301 },
     { "source": "/davie/:path*", "destination": "/davie-accounting", "statusCode": 301 },
 
-    { "source": "/industries/radiology", "destination": "/services/radiology", "statusCode": 301 }
+    { "source": "/industries/radiology", "destination": "/radiology", "statusCode": 301 }
   ],
   "rewrites": [
     { "source": "/terms", "destination": "/api/terms" },
