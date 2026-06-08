@@ -32,6 +32,28 @@ const routes = [
     description: 'Get in touch with Benefique Tax & Accounting. Fractional CFO services, tax planning, and real-time accounting for healthcare practices and service businesses in South Florida.',
   },
   {
+    path: '/careers',
+    title: 'Careers — Financial Analyst (AI-Enabled), Remote South Africa | Benefique',
+    description: 'We do not hire people to balance books. We hire people who can read them. A remote Financial Analyst role for a South Africa-based accountant who thinks like a CFO and works with AI. Solve the case-study challenge to apply.',
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'JobPosting',
+      title: 'Financial Analyst (AI-Enabled)',
+      description: 'A remote Financial Analyst role for a South Africa-based accountant who reads financials like a CFO, uses AI to go deeper and faster, and connects operational activity to financial results for US-based business owners. Strong QuickBooks Online and an accounting qualification required. Apply by solving a short case-study challenge from the Benefique blog.',
+      datePosted: '2026-06-08',
+      employmentType: 'FULL_TIME',
+      hiringOrganization: {
+        '@type': 'Organization',
+        name: 'Benefique Tax & Accounting',
+        sameAs: 'https://www.benefique.com',
+        logo: `${SITE}/images/logo-full.jpg`,
+      },
+      jobLocationType: 'TELECOMMUTE',
+      applicantLocationRequirements: { '@type': 'Country', name: 'South Africa' },
+      directApply: true,
+    },
+  },
+  {
     path: '/demo',
     title: 'Sample Reports & Dashboards | Benefique Tax & Accounting',
     description: 'See sample financial reports and real-time dashboards from Benefique. Interactive cash flow dashboards, P&L reports, and KPI tracking for healthcare and service businesses.',

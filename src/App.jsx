@@ -92,6 +92,7 @@ function Nav() {
             ['/blog', 'Blog'],
             ['/testimonials', 'Testimonials'],
             ['/about', 'About'],
+            ['/careers', 'Careers'],
           ].map(([path, label]) => (
             <Link
               key={path}
@@ -141,6 +142,7 @@ function Nav() {
           <Link to="/blog" className="block text-gray-600">Blog</Link>
           <Link to="/testimonials" className="block text-gray-600">Testimonials</Link>
           <Link to="/about" className="block text-gray-600">About</Link>
+          <Link to="/careers" className="block text-gray-600">Careers</Link>
           <Link to="/contact" className="block bg-benefique-orange text-white px-4 py-2 rounded-lg text-center font-semibold">
             Apply to Work With Us
           </Link>
@@ -177,6 +179,7 @@ function Footer() {
             </a>
           </div>
           <div className="flex gap-6 text-sm text-gray-300">
+            <Link to="/careers" className="hover:text-white">Careers</Link>
             <Link to="/terms" className="hover:text-white">Terms of Service</Link>
             <Link to="/privacy" className="hover:text-white">Privacy Policy</Link>
             <Link to="/contact" className="hover:text-white">Contact</Link>
@@ -4155,6 +4158,281 @@ function ThankYou() {
 }
 
 // ============================================================
+// CAREERS PAGE
+// ============================================================
+function Careers() {
+  // Real case studies — the work, not a job description.
+  const caseStudies = [
+    {
+      slug: 'record-month-drained-bank-account',
+      tag: 'The Cash Trap',
+      headline: '$293K record month. The bank balance went DOWN.',
+      body: 'A Charlotte HVAC contractor closed the strongest month in the firm’s history — and lost cash doing it. Most accountants never see it. We found the single policy that fixed it.',
+    },
+    {
+      slug: 'stealth-debt-balance-sheet-hidden',
+      tag: 'The Hidden Debt',
+      headline: 'The balance sheet said $399K. We found $961K more.',
+      body: 'Vendor credit and credit cards were quietly replacing formal loans while nobody noticed. It took 12 months of snapshots and the instinct to ask why the numbers didn’t feel right.',
+    },
+    {
+      slug: 'expensive-2-minute-decision-medical-practice',
+      tag: 'The Operational Leak',
+      headline: '$55,832 spent. $3,773 collected.',
+      body: 'A medical practice knew which payers were toxic — then ran 24 more scans anyway. The financial damage was hiding inside an operational habit. The fix took 10 minutes a day.',
+    },
+    {
+      slug: 'per-unit-pnl-multi-location-cost-analysis',
+      tag: 'The P&L Blind Spot',
+      headline: 'Same owner. Same industry. $109 vs $309 per unit.',
+      body: 'Three locations, one P&L that couldn’t explain a 3x cost gap. A per-unit analysis exposed it in 20 minutes — by marrying the financials to what was actually happening on the floor.',
+    },
+    {
+      slug: 'cash-vs-accrual-small-business',
+      tag: 'The Two-Truths Problem',
+      headline: '$3.64M of profit. $2.45M of profit. Both correct.',
+      body: 'A law firm closed the same month with two profit numbers $1.19M apart. Confusing them is how owners over-distribute, under-fund tax, and get blindsided in March. The analyst’s job is to know which is which.',
+    },
+    {
+      slug: 'ai-found-353k-trapped-cash',
+      tag: 'The AI Edge',
+      headline: 'AI found $353K of cash already sitting in the books.',
+      body: 'Four hidden cash leaks, a six-week recovery plan, surfaced by an AI workflow a person drove. The tool found it. A human who understood why it mattered turned it into a decision.',
+    },
+  ];
+
+  const lookingFor = [
+    ['Accounting depth, not data entry', 'A real accounting foundation (qualification required) and strong QuickBooks Online. The books being right is the floor — not the job.'],
+    ['Analytical instinct', 'You ask “why is this unusual?” before you touch anything. You see the story underneath the numbers, not just whether they balance.'],
+    ['AI fluency — beyond the chat box', 'You’ve actually used AI to do work: read a stack of material, pressure-test a conclusion, move faster. Not just asked it questions.'],
+    ['Owner-level thinking', 'You can look at a client’s numbers and say what you’d do if the business were yours — a decision, with a tradeoff, not a list of entries.'],
+    ['Operations married to finance', 'You connect what the business is doing to what the numbers say. The $309 scan, the toxic payer, the record month that lost cash — that’s the link you live in.'],
+    ['Pace and ownership', 'You solve problems and move. You don’t wait for a checklist in a fast-moving environment.'],
+  ];
+
+  const notLookingFor = [
+    'Someone who only talks debits and credits and never the business behind them',
+    'Someone who fixes errors without understanding why they’re errors',
+    'Someone who needs to be told exactly what to do every day',
+  ];
+
+  const jobPostingSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'JobPosting',
+    title: 'Financial Analyst (AI-Enabled)',
+    description: 'A remote Financial Analyst role for a South Africa-based accountant who reads financials like a CFO, uses AI to go deeper and faster, and connects operational activity to financial results for US-based business owners.',
+    datePosted: '2026-06-08',
+    employmentType: 'FULL_TIME',
+    hiringOrganization: {
+      '@type': 'Organization',
+      name: 'Benefique Tax & Accounting',
+      sameAs: 'https://www.benefique.com',
+    },
+    jobLocationType: 'TELECOMMUTE',
+    applicantLocationRequirements: { '@type': 'Country', name: 'South Africa' },
+    directApply: true,
+  };
+
+  return (
+    <div>
+      <Helmet>
+        <title>Careers — Financial Analyst (AI-Enabled), Remote South Africa | Benefique</title>
+        <meta name="description" content="We don’t hire people to balance books. We hire people who can read them. A remote Financial Analyst role for a South Africa-based accountant who thinks like a CFO and works with AI. Solve the case-study challenge to apply." />
+        <link rel="canonical" href="https://www.benefique.com/careers" />
+        <script type="application/ld+json">{JSON.stringify(jobPostingSchema)}</script>
+      </Helmet>
+
+      {/* HERO */}
+      <section className="bg-gradient-to-br from-benefique-navy to-slate-800 text-white">
+        <div className="max-w-5xl mx-auto px-4 py-20 md:py-28">
+          <span className="inline-block bg-benefique-orange/15 text-orange-300 text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-6">
+            We’re hiring · Remote, South Africa
+          </span>
+          <h1 className="text-4xl md:text-6xl font-black leading-[1.05] tracking-tight">
+            We don’t hire people<br className="hidden md:block" /> to <span className="line-through decoration-benefique-orange/60 decoration-4">balance the books.</span>
+          </h1>
+          <h2 className="text-4xl md:text-6xl font-black leading-[1.05] tracking-tight mt-1 text-orange-400">
+            We hire people who can read them.
+          </h2>
+          <p className="text-lg md:text-xl text-blue-100 mt-8 max-w-2xl leading-relaxed">
+            Benefique is an AI-powered financial intelligence firm in Florida. We turn QuickBooks data into the kind of analysis a fractional CFO delivers — for US business owners who don’t have time to mine their own numbers.
+          </p>
+          <p className="text-lg md:text-xl text-white mt-4 max-w-2xl leading-relaxed font-semibold">
+            We’re adding one analyst to our South African team. This is not a bookkeeping role.
+          </p>
+          <div className="flex flex-wrap gap-4 mt-10">
+            <a href="#challenge" className="bg-benefique-orange hover:bg-orange-600 text-white px-7 py-3.5 rounded-lg font-semibold transition inline-flex items-center gap-2">
+              Take the challenge →
+            </a>
+            <Link to="/blog" className="bg-white/10 hover:bg-white/20 text-white px-7 py-3.5 rounded-lg font-semibold transition">
+              Read our case studies
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* THE PAIN WE ELIMINATE */}
+      <section className="max-w-5xl mx-auto px-4 py-16 md:py-20">
+        <div className="max-w-3xl">
+          <span className="text-benefique-orange text-sm font-semibold uppercase tracking-widest">The pain we eliminate</span>
+          <h2 className="text-3xl md:text-4xl font-black text-benefique-navy mt-3 leading-tight">
+            Every owner we help is staring at the same gap.
+          </h2>
+          <p className="text-lg text-gray-600 mt-5 leading-relaxed">
+            The P&L says they’re profitable. The bank account says they’re not. The accountant hands them a tax return and a year-old report and calls it a day. Nobody tells them <em>why the money is leaking</em> — or what to do about it before it becomes a crisis.
+          </p>
+          <p className="text-lg text-gray-600 mt-4 leading-relaxed">
+            That gap is the job. You’ll close it for 8–12 US-based clients — reading the numbers, finding the leak, and telling the owner what you’d do if the business were yours.
+          </p>
+        </div>
+      </section>
+
+      {/* THE WORK — REAL CASE STUDIES */}
+      <section className="bg-benefique-gray border-y border-gray-100">
+        <div className="max-w-6xl mx-auto px-4 py-16 md:py-20">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="text-benefique-orange text-sm font-semibold uppercase tracking-widest">The actual work</span>
+            <h2 className="text-3xl md:text-4xl font-black text-benefique-navy mt-3 leading-tight">
+              These are real problems we solved.
+            </h2>
+            <p className="text-gray-600 mt-4">
+              Every one started as a number that didn’t feel right. This is the kind of detective work you’d do every week — and what your application challenge is built from.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {caseStudies.map((c) => (
+              <Link
+                key={c.slug}
+                to={`/blog/${c.slug}`}
+                className="group bg-white rounded-xl border border-gray-100 p-6 hover:shadow-lg hover:border-benefique-orange/30 transition flex flex-col"
+              >
+                <span className="text-[11px] font-bold uppercase tracking-widest text-benefique-orange">{c.tag}</span>
+                <h3 className="text-lg font-bold text-benefique-navy mt-2 leading-snug">{c.headline}</h3>
+                <p className="text-sm text-gray-600 mt-3 leading-relaxed flex-1">{c.body}</p>
+                <span className="text-benefique-orange text-sm font-semibold mt-4 group-hover:underline">Read the case study →</span>
+              </Link>
+            ))}
+          </div>
+          <p className="text-center text-gray-500 text-sm mt-10">
+            That’s six. There are <Link to="/blog" className="text-benefique-orange font-semibold hover:underline">dozens more on the blog</Link> — almost every post is a real case study.
+          </p>
+        </div>
+      </section>
+
+      {/* WHO WE'RE LOOKING FOR */}
+      <section className="max-w-6xl mx-auto px-4 py-16 md:py-20">
+        <div className="max-w-2xl mb-12">
+          <span className="text-benefique-orange text-sm font-semibold uppercase tracking-widest">Who we’re looking for</span>
+          <h2 className="text-3xl md:text-4xl font-black text-benefique-navy mt-3 leading-tight">
+            Less bookkeeping. More accounting. A lot more thinking.
+          </h2>
+          <p className="text-gray-600 mt-4 text-lg">
+            You don’t need US industry experience — we’ll teach you the verticals. We can’t teach analytical instinct or curiosity.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-x-10 gap-y-8">
+          {lookingFor.map(([title, desc]) => (
+            <div key={title} className="flex gap-4">
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-benefique-orange/10 text-benefique-orange flex items-center justify-center font-bold mt-0.5">✓</div>
+              <div>
+                <h3 className="font-bold text-benefique-navy">{title}</h3>
+                <p className="text-gray-600 mt-1 leading-relaxed">{desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-14 bg-benefique-navy text-white rounded-2xl p-8 md:p-10">
+          <h3 className="text-xl font-bold text-orange-400">This role is not for everyone.</h3>
+          <p className="text-blue-100 mt-2">Please don’t apply if you are:</p>
+          <ul className="mt-4 space-y-3">
+            {notLookingFor.map((item) => (
+              <li key={item} className="flex gap-3 text-blue-50">
+                <span className="text-benefique-orange font-bold flex-shrink-0">✕</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* THE CHALLENGE / HOW TO APPLY */}
+      <section id="challenge" className="bg-gradient-to-br from-benefique-navy to-slate-800 text-white scroll-mt-20">
+        <div className="max-w-4xl mx-auto px-4 py-16 md:py-24">
+          <div className="text-center max-w-2xl mx-auto">
+            <span className="text-orange-300 text-sm font-semibold uppercase tracking-widest">Before you apply</span>
+            <h2 className="text-3xl md:text-5xl font-black mt-3 leading-tight">A short challenge.</h2>
+            <p className="text-lg text-blue-100 mt-5 leading-relaxed">
+              Go to our blog. Almost everything there is a real case study: a business owner, a messy financial picture, and what changed once someone actually read the numbers.
+            </p>
+            <p className="text-blue-100 mt-4 leading-relaxed">
+              It’s a lot to read. We know. We’re not asking you to read all of it — if you’re the analyst we’re looking for, you already know how to put an AI to work on a stack of material and pull out what matters. <span className="text-white font-semibold">That’s part of the test.</span>
+            </p>
+          </div>
+
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-8 mt-10">
+            <ol className="space-y-6">
+              {[
+                ['1', <>Pick <strong className="text-white">one</strong> case study from <Link to="/blog" className="text-orange-300 underline hover:text-orange-200">our blog</Link>.</>],
+                ['2', <>Tell us, in your own words: <strong className="text-white">what was the core financial or operational problem?</strong></>],
+                ['3', <>Then the real question: <strong className="text-white">how would <em>you</em> have solved it</strong> — with your specific skills, tools, and experience? Where would AI have made you faster or sharper?</>],
+                ['4', <>Make your email <strong className="text-white">subject line exactly</strong> this format:</>],
+              ].map(([n, text]) => (
+                <li key={n} className="flex gap-4">
+                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-benefique-orange text-white font-bold flex items-center justify-center">{n}</span>
+                  <span className="text-blue-50 leading-relaxed pt-1">{text}</span>
+                </li>
+              ))}
+            </ol>
+
+            <div className="mt-6 ml-12">
+              <code className="block bg-slate-900 text-orange-300 font-mono text-sm md:text-base px-5 py-4 rounded-lg border border-white/10">
+                Case Study: &lt;the one word or number that best captures the problem&gt;
+              </code>
+              <p className="text-blue-200 text-sm mt-3">
+                e.g. <span className="font-mono text-orange-200">Case Study: $961K hidden debt</span> &nbsp;·&nbsp; <span className="font-mono text-orange-200">Case Study: DSO</span>
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center mt-10">
+            <a
+              href="mailto:hello@benefique.com?subject=Case%20Study%3A%20"
+              className="inline-flex items-center gap-2 bg-benefique-orange hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition"
+            >
+              Email your application →
+            </a>
+            <p className="text-blue-100 mt-4">
+              Send your CV and your answer to <span className="font-semibold text-white">hello@benefique.com</span>.
+            </p>
+            <p className="text-blue-300 text-sm mt-3 max-w-xl mx-auto">
+              If your subject line isn’t in that format, we’ll know you didn’t make it this far — and that’s okay. If this role <em>is</em> for you, this is the part you’ll enjoy.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* LOGISTICS */}
+      <section className="max-w-5xl mx-auto px-4 py-14">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+          {[
+            ['Remote', 'South Africa based'],
+            ['US Eastern overlap', '4–5 hours per day'],
+            ['Compensation', 'Competitive SA market salary'],
+            ['Horizon', 'Long-term role, fast-growing firm'],
+          ].map(([label, value]) => (
+            <div key={label} className="bg-benefique-gray rounded-xl p-6 border border-gray-100">
+              <div className="text-xs uppercase tracking-widest text-gray-500 font-semibold">{label}</div>
+              <div className="text-benefique-navy font-bold mt-2">{value}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+}
+
+// ============================================================
 // MAIN APP
 // ============================================================
 export default function App() {
@@ -4172,6 +4450,8 @@ export default function App() {
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/apply" element={<Navigate to="/contact" replace />} />
+            <Route path="/careers" element={<Careers />} />
+            <Route path="/jobs" element={<Navigate to="/careers" replace />} />
             <Route path="/thank-you" element={<ThankYou />} />
             <Route path="/demo" element={<Demo />} />
             <Route path="/oauth/callback" element={<OAuthCallback />} />

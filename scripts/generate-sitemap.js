@@ -38,6 +38,7 @@ const staticRoutes = [
   { path: '/testimonials', priority: 0.8, changefreq: 'monthly', lastmod: new Date() },
   { path: '/about', priority: 0.8, changefreq: 'monthly', lastmod: new Date() },
   { path: '/contact', priority: 0.9, changefreq: 'monthly', lastmod: new Date() },
+  { path: '/careers', priority: 0.7, changefreq: 'monthly', lastmod: new Date() },
   { path: '/blog', priority: 0.7, changefreq: 'weekly', lastmod: new Date() },
   
   // Location pages
