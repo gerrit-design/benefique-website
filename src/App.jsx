@@ -4407,26 +4407,45 @@ function Careers() {
           </div>
 
           <div className="text-center mt-10">
-            <a
-              href="mailto:hello@benefique.com?subject=Case%20Study%3A%20"
-              className="inline-flex items-center gap-2 bg-benefique-orange hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition"
+            <p className="text-blue-100">Email your answer and CV to:</p>
+            <button
+              type="button"
+              onClick={copyEmail}
+              className="mt-3 inline-flex items-center gap-3 bg-benefique-orange hover:bg-orange-600 text-white rounded-lg px-6 py-4 transition"
             >
-              Open your email app →
-            </a>
-            <div className="mt-6">
-              <p className="text-blue-100 text-sm">No email app opens? Send it manually to:</p>
-              <button
-                type="button"
-                onClick={copyEmail}
-                className="mt-3 inline-flex items-center gap-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-lg px-5 py-3 transition"
+              <span className="font-mono text-base md:text-lg font-semibold">hello@benefique.com</span>
+              <span className="text-sm font-semibold bg-white/20 rounded px-2 py-1">
+                {copied ? 'Copied ✓' : 'Copy'}
+              </span>
+            </button>
+
+            <p className="text-blue-200 text-sm mt-7">Or open a pre-filled draft in:</p>
+            <div className="flex flex-wrap justify-center gap-3 mt-3">
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@benefique.com&su=Case%20Study%3A%20"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition"
               >
-                <span className="font-mono text-white text-base md:text-lg">hello@benefique.com</span>
-                <span className={`text-sm font-semibold ${copied ? 'text-green-300' : 'text-orange-300'}`}>
-                  {copied ? 'Copied ✓' : 'Copy'}
-                </span>
-              </button>
+                Gmail
+              </a>
+              <a
+                href="https://outlook.live.com/mail/0/deeplink/compose?to=hello@benefique.com&subject=Case%20Study%3A%20"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition"
+              >
+                Outlook
+              </a>
+              <a
+                href="mailto:hello@benefique.com?subject=Case%20Study%3A%20"
+                className="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition"
+              >
+                Desktop mail app
+              </a>
             </div>
-            <p className="text-blue-300 text-sm mt-6 max-w-xl mx-auto">
+
+            <p className="text-blue-300 text-sm mt-7 max-w-xl mx-auto">
               If your subject line isn’t in that format, we’ll know you didn’t make it this far — and that’s okay. If this role <em>is</em> for you, this is the part you’ll enjoy.
             </p>
           </div>
