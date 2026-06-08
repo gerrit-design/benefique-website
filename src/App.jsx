@@ -4161,6 +4161,17 @@ function ThankYou() {
 // CAREERS PAGE
 // ============================================================
 function Careers() {
+  const [copied, setCopied] = React.useState(false);
+  const copyEmail = () => {
+    const email = 'hello@benefique.com';
+    if (navigator.clipboard?.writeText) {
+      navigator.clipboard.writeText(email).then(() => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2500);
+      }).catch(() => {});
+    }
+  };
+
   // Real case studies — the work, not a job description.
   const caseStudies = [
     {
@@ -4400,12 +4411,22 @@ function Careers() {
               href="mailto:hello@benefique.com?subject=Case%20Study%3A%20"
               className="inline-flex items-center gap-2 bg-benefique-orange hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition"
             >
-              Email your application →
+              Open your email app →
             </a>
-            <p className="text-blue-100 mt-4">
-              Send your CV and your answer to <span className="font-semibold text-white">hello@benefique.com</span>.
-            </p>
-            <p className="text-blue-300 text-sm mt-3 max-w-xl mx-auto">
+            <div className="mt-6">
+              <p className="text-blue-100 text-sm">No email app opens? Send it manually to:</p>
+              <button
+                type="button"
+                onClick={copyEmail}
+                className="mt-3 inline-flex items-center gap-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-lg px-5 py-3 transition"
+              >
+                <span className="font-mono text-white text-base md:text-lg">hello@benefique.com</span>
+                <span className={`text-sm font-semibold ${copied ? 'text-green-300' : 'text-orange-300'}`}>
+                  {copied ? 'Copied ✓' : 'Copy'}
+                </span>
+              </button>
+            </div>
+            <p className="text-blue-300 text-sm mt-6 max-w-xl mx-auto">
               If your subject line isn’t in that format, we’ll know you didn’t make it this far — and that’s okay. If this role <em>is</em> for you, this is the part you’ll enjoy.
             </p>
           </div>
