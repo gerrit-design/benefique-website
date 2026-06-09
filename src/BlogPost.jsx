@@ -158,6 +158,24 @@ const blogPosts = {
       { q: 'Does this apply if my business is growing fast?', a: 'Growth makes it worse, not better. Fast-growing businesses consume more working capital and need to retain more earnings to fund inventory and receivables. A 60% ratio in a flat business is tight. A 60% ratio in a 40%-YoY-growth business is dangerously tight and may trigger further scrutiny.' }
     ]
   },
+  'selling-imaging-center-what-buyers-pay': {
+    file: '/content/blogs/selling-imaging-center-what-buyers-pay.md',
+    title: 'Selling Your Imaging Center: What Buyers Actually Pay',
+    date: '2026-06-08',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A SE Florida imaging owner got a roughly $12M LOI at 5x EBITDA. The buyer closed near $9.4M. That gap was not lost in negotiation — it was set in due diligence, which is how the private-equity playbook works. Here is what buyers actually pay for a radiology center, the terms that decide what you pocket, and the one question that sets your price before a buyer ever calls.',
+    categories: ['Healthcare Finance', 'Business Strategy'],
+    readTime: '16 min read',
+    featuredImage: '/images/blog/selling-imaging-center-what-buyers-pay.jpg',
+    faqs: [
+      { q: 'How much is my imaging center worth in 2026?', a: 'SE Florida imaging centers typically trade between roughly 2.5x and 8x earnings, depending on size, payer mix, equipment age, and revenue durability — and premium multi-center platforms can run higher. Owner-operated single centers are often priced on a 1.5x–3x SDE multiple; centers above about $1M EBITDA and multi-center platforms on Adjusted EBITDA. The right number inside the band is decided in diligence, not in the LOI.' },
+      { q: 'Why does a private-equity buyer lower the price after the LOI?', a: 'The LOI is a non-binding offer whose main job is to win your exclusivity. Once you sign the no-shop, the diligence team can reset the price using your own add-backs, deferred capex, and revenue-concentration gaps. It is a structural feature of the process, not necessarily bad faith — which is why running your own Quality of Earnings first removes most of the leverage.' },
+      { q: 'What deal terms matter besides the multiple when selling an imaging center?', a: 'Cash at close, rollover equity, earnout, escrow/holdback, the working-capital peg, reps and warranties, and the employment agreement plus non-compete. A high headline multiple can hide that only a portion is certain cash at close — a 6x with heavy rollover and an earnout might put roughly 3x in your pocket on day one, with the rest contingent or illiquid.' },
+      { q: 'What is rollover equity, and is it good or bad?', a: 'Rollover equity is the portion of the price you re-invest into the buyer\'s platform, usually 20 to 40 percent. It can be a valuable second bite if the platform sells higher later — or a trap that leaves you a minority holder with no control on a private-equity timeline, often junior to the sponsor\'s preferred return. Whether it is good depends entirely on the platform\'s quality, leverage, and governance, which you should diligence as hard as they diligence you.' },
+      { q: 'Will a buyer keep my staff and management?', a: 'It depends on the trend and how dependent the business is on you. If operations are institutionalized and trending up, buyers tend to keep the team and pay more. If you are the rainmaker or the trend is declining, buyers price in key-man risk or management change — and discount accordingly.' },
+      { q: 'What is the difference between SDE and EBITDA?', a: 'SDE adds one owner\'s full salary and perks back to EBITDA, because a small-practice buyer steps into the owner\'s seat. Adjusted EBITDA subtracts a market-rate replacement manager, because a platform buyer hires one. Using a platform EBITDA multiple on an SDE number double-counts the owner\'s pay and inflates the expectation by a full salary.' },
+    ],
+  },
   'how-to-acquire-second-imaging-center': {
     file: '/content/blogs/how-to-acquire-second-imaging-center.md',
     title: 'How to Acquire a Second Imaging Center: The Financial Roadmap',

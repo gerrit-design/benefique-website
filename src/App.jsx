@@ -1568,6 +1568,7 @@ function Blog() {
   const [activeCategory, setActiveCategory] = React.useState('All');
 
   const posts = [
+    { title: 'Selling Your Imaging Center: What Buyers Actually Pay', excerpt: 'A SE Florida imaging owner got a roughly $12M LOI at 5x EBITDA. The buyer closed near $9.4M. That gap was not lost in negotiation — it was set in due diligence, which is how the private-equity playbook works. Here is what buyers actually pay, the terms that decide what you pocket, and the one question that sets your price.', date: '2026-06-08', slug: 'selling-imaging-center-what-buyers-pay', published: true, category: 'Healthcare Finance', readTime: '16 min read' },
     { title: 'Three Pages Every Owner Should Read in Their CFO Report', excerpt: 'We deliver an extensive monthly CFO report and tell every owner to focus on three sections. Here\'s which three — and what the rest of the report is actually for.', date: '2026-05-27', slug: 'three-pages-the-owner-reads', published: true, category: 'Business Strategy', readTime: '7 min read' },
     { title: 'What Is Blended Margin? Definition, Formula, and a $1M Worked Example', excerpt: 'Blended margin = total gross profit ÷ total revenue across all your streams. The formula takes 30 seconds. The danger is that a single 24% blended number can hide a 50% wholesale margin and a 9% internal transfer margin sitting right next to it — and you\'d never know which one to fix.', date: '2026-05-27', slug: 'blended-margin-meaning-and-formula', published: true, category: 'Accounting', readTime: '7 min read' },
     { title: 'Your Owner Salary Is Two Numbers, Not One', excerpt: 'Most owners look for one answer to "what should I pay myself?" There are actually two numbers — the one that keeps you audit-proof and the one that tells you what your business is worth. Confusing them quietly underpays your valuation and fakes your margins.', date: '2026-05-21', slug: 'owner-salary-two-numbers', published: true, category: 'Tax Planning', readTime: '8 min read' },
@@ -3301,7 +3302,7 @@ function KnowledgeMap() {
         { label: 'PET Tracer Economics', to: '/blog/per-modality-profitability-imaging-center' },
         { label: 'Revenue Cycle: A/R & DSO', to: '/blog/dso-benchmarks-imaging-centers-2026-sefl' },
         { label: 'Payer Mix (Commercial / PI)', to: '/blog/toxic-payers-losing-money-medical-practice' },
-        { label: 'M&A & Exit / QofE', to: '/blog/how-to-acquire-second-imaging-center' },
+        { label: 'M&A & Exit / QofE', to: '/blog/selling-imaging-center-what-buyers-pay' },
       ],
     },
     branches: [
@@ -3559,10 +3560,10 @@ function RadiologyLandingPage() {
       anchor: 'ma-exit',
       blurb: 'Buying the next center, or getting ready to sell. Valuation logic, deal structure, owner economics, and quality-of-earnings readiness.',
       posts: [
+        { slug: 'selling-imaging-center-what-buyers-pay', title: 'Selling Your Imaging Center: What Buyers Actually Pay (SDE, EBITDA, Multiples)' },
         { slug: 'how-to-acquire-second-imaging-center', title: 'How to Acquire a Second Imaging Center: The Financial Roadmap' },
         { slug: 'cash-machine-vs-exit-machine', title: 'Cash Machine vs Exit Machine: Which Are You Building?' },
         { slug: 'multi-center-imaging-owner-income-2026-sefl', title: 'Multi-Center Imaging Owner Income: 2026 SE Florida Benchmarks' },
-        { title: 'Selling Your Imaging Center: What Buyers Actually Pay (SDE, EBITDA, Multiples)', comingSoon: true },
         { title: 'Building Wealth as an Imaging Center Owner: Beyond the Practice', comingSoon: true },
       ],
     },
