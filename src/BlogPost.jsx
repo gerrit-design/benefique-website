@@ -6,6 +6,23 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  'revenue-up-cash-down-conversion-cycle': {
+    file: '/content/blogs/revenue-up-cash-down-conversion-cycle.md',
+    title: 'Revenue Up, Bank Balance Down: The Cash Conversion Math',
+    date: '2026-06-11',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A service business grew revenue two years running while its bank balance quietly fell the entire time. The P&L looked great the whole way down. The problem wasn\'t sales — it was timing: DSO drifted from 38 days to 61, trapping cash inside receivables. Here\'s the billed-vs-banked overlay that finds it, why it\'s almost never every customer, and why a DSO cut can beat a price increase on a cash basis.',
+    categories: ['Cash Flow'],
+    readTime: '7 min read',
+    featuredImage: '/images/blog/revenue-up-cash-down-conversion-cycle.jpg',
+    faqs: [
+      { q: 'Why is my revenue growing but my cash going down?', a: 'Because revenue and cash are measured on different clocks. Your P&L books revenue when you invoice; cash arrives only when customers pay. If your collection cycle (DSO) is stretching, a growing business actually traps more cash every month — bigger sales collected more slowly means a larger balance frozen in receivables. The P&L looks great while the bank balance falls.' },
+      { q: 'What is DSO and how do I calculate it?', a: 'Days Sales Outstanding measures how many days, on average, it takes to collect after you invoice. The formula is (Accounts Receivable ÷ Revenue) × Days in Period. On $3.1M of annual revenue, each single day of DSO equals about $8,493 of cash — so a 20-day improvement is real money you have already earned, sitting in your customers\' hands instead of your bank.' },
+      { q: 'Is it normal for only a few customers to cause a DSO spike?', a: 'Yes — it is the usual case, not the exception. When DSO climbs, decomposing receivables by customer almost always reveals that most accounts are paying on time and a small number have stretched their terms. That is good news: a targeted conversation with three accounts beats a sweeping collections overhaul aimed at customers who were never the problem.' },
+      { q: 'Does reducing DSO really help more than raising prices?', a: 'On a cash basis, in the near term, it often does — and with no customer risk. Collecting cash you have already earned is a one-time release that can exceed a year of a modest price increase, while the price increase carries churn risk and collects with the same lag. The smart sequence is to fix collections first, then raise prices from strength. Price increases still matter for the long run because they recur.' },
+      { q: 'What is a good DSO for a service business?', a: 'Most professional and B2B service businesses should target 30–45 days. Consistently above 50 and trending up is the signal to overlay billed-vs-banked and decompose your receivables before reaching for any other fix.' }
+    ]
+  },
   'three-pages-the-owner-reads': {
     file: '/content/blogs/three-pages-the-owner-reads.md',
     title: 'Three Pages Every Owner Should Read in Their CFO Report',

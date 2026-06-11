@@ -5,6 +5,7 @@
   "redirects": [
     { "source": "/services/radiology", "destination": "/radiology", "statusCode": 301 },
     { "source": "/go/sell-imaging", "destination": "/blog/selling-imaging-center-what-buyers-pay?utm_source=linkedin&utm_medium=social&utm_campaign=sell-imaging", "statusCode": 302 },
+    { "source": "/go/cash-timing", "destination": "/blog/revenue-up-cash-down-conversion-cycle?utm_source=linkedin&utm_medium=social&utm_campaign=cash-timing", "statusCode": 302 },
     { "source": "/go/two-salaries", "destination": "/blog/owner-salary-two-numbers?utm_source=linkedin&utm_medium=social&utm_campaign=two-salaries", "statusCode": 302 },
     { "source": "/go/simulator", "destination": "/tools/concierge-simulator?utm_source=linkedin&utm_medium=social&utm_campaign=concierge-simulator", "statusCode": 302 },
     { "source": "/go/waterfall", "destination": "/blog/ai-cash-flow-waterfall-explained?utm_source=linkedin&utm_medium=social&utm_campaign=waterfall", "statusCode": 302 },
