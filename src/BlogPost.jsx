@@ -6,6 +6,23 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  'radiology-cash-flow-by-payer': {
+    file: '/content/blogs/radiology-cash-flow-by-payer.md',
+    title: 'Radiology Cash Flow by Payer: Why the P&L Lies',
+    date: '2026-06-13',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Two radiology centers booked the exact same $4.2M. One ended the year with $600K in the bank; the other was begging its lender for a line of credit. Same scans, same payers, same income statement. The difference was never on the P&L — it lived in the flow of funds between the center and each payer. Here is how payer mix, the Letter-of-Protection tail, and the Florida PIP cap decide whether earned revenue ever becomes cash.',
+    categories: ['Cash Flow', 'Healthcare Finance'],
+    readTime: '9 min read',
+    featuredImage: '/images/blog/radiology-cash-flow-by-payer.jpg',
+    faqs: [
+      { q: 'Why is my radiology center profitable on paper but short on cash?', a: 'Because your P&L records revenue when it is earned, not when it is collected. In imaging, the gap between those two events depends entirely on payer mix — commercial and Medicare collect in 30–45 days, while a Letter of Protection can take 12–36 months. A profitable P&L with a tightening bank account almost always means earned revenue is piling up in slow payment pipes.' },
+      { q: 'What is a Letter of Protection and why does it hurt cash flow?', a: 'A Letter of Protection (LOP) is an agreement to provide imaging for a personal-injury patient and collect from the eventual case settlement instead of up front. The revenue books immediately, but the cash can take one to three years and is often negotiated down at settlement. A growing LOP book locks up millions in earned-but-uncollected revenue.' },
+      { q: 'How does the Florida PIP cap affect imaging reimbursement?', a: 'Florida\'s no-fault law caps Personal Injury Protection benefits at $10,000 per person (Fla. Stat. §627.736). High-dollar imaging can exhaust that cap quickly, and any studies after it converts to a slower payer — frequently an LOP or self-pay — which slows your collections without changing the work you performed.' },
+      { q: 'Do high-dollar PET scans slow down my cash?', a: 'Generally the opposite. Drug-enabled PET scans are typically billed to commercial insurance and pay on commercial timing, so a $6,000 PET can convert to cash faster than a $400 X-ray stuck behind a Letter of Protection. Payment speed is driven by the payer, not the price of the study.' },
+      { q: 'How do I measure cash flow by payer in my own center?', a: 'Start by segmenting accounts receivable by payer pipe (commercial, Medicare, PIP, LOP, self-pay) rather than by age alone, then put a live monthly number on your LOP exposure. That single reframing usually reveals where the cash is actually trapped — and it uses data already sitting in your billing system.' }
+    ]
+  },
   'revenue-up-cash-down-conversion-cycle': {
     file: '/content/blogs/revenue-up-cash-down-conversion-cycle.md',
     title: 'Revenue Up, Bank Balance Down: The Cash Conversion Math',
