@@ -93,12 +93,9 @@ function Nav() {
           </div>
           {[
             ['/radiology', 'Radiology'],
-            ['/knowledge', 'Knowledge Map'],
             ['/blog', 'Blog'],
             ['/demo', 'Sample Reports'],
-            ['/testimonials', 'Testimonials'],
             ['/about', 'About'],
-            ['/careers', 'Careers'],
           ].map(([path, label]) => (
             <Link
               key={path}
@@ -149,12 +146,9 @@ function Nav() {
             </div>
           </details>
           <Link to="/radiology" className="block text-gray-600"><span className="text-benefique-orange mr-1" aria-hidden="true">◆</span>Radiology</Link>
-          <Link to="/knowledge" className="block text-gray-600">Knowledge Map</Link>
           <Link to="/demo" className="block text-gray-600">Sample Reports</Link>
           <Link to="/blog" className="block text-gray-600">Blog</Link>
-          <Link to="/testimonials" className="block text-gray-600">Testimonials</Link>
           <Link to="/about" className="block text-gray-600">About</Link>
-          <Link to="/careers" className="block text-gray-600">Careers</Link>
           <Link to="/contact" className="block bg-benefique-orange text-white px-4 py-2 rounded-lg text-center font-semibold">
             Apply to Work With Us
           </Link>
@@ -190,7 +184,9 @@ function Footer() {
               </svg>
             </a>
           </div>
-          <div className="flex gap-6 text-sm text-gray-300">
+          <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-300">
+            <Link to="/testimonials" className="hover:text-white">Testimonials</Link>
+            <Link to="/knowledge" className="hover:text-white">Knowledge Map</Link>
             <Link to="/careers" className="hover:text-white">Careers</Link>
             <Link to="/terms" className="hover:text-white">Terms of Service</Link>
             <Link to="/privacy" className="hover:text-white">Privacy Policy</Link>
@@ -319,7 +315,7 @@ function Home() {
               You stop watching your bank balance shrink while your P&amp;L says you&apos;re profitable. We tell you exactly which dollar is leaking &mdash; and how to plug it.
             </p>
             <p className="text-gray-600 mb-8">
-              One client had $1M in profit and zero cash growth. Another had $353K trapped in receivables nobody was tracking. A third had $961K in hidden debt the balance sheet never showed. All of it was sitting in their QuickBooks. Nobody was mining it.
+              One client had $1M in profit and zero cash growth &mdash; all of it sitting in their QuickBooks, none of it mined. That gap, between what your books say and what your bank account does, is what we close.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-6">
@@ -340,27 +336,6 @@ function Home() {
             <p className="text-sm text-gray-500">
               No obligation. We&apos;ll tell you honestly if we can help &mdash; and how.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Proof Strip — Real Findings */}
-      <section className="bg-gray-50 py-8">
-        <div className="max-w-6xl mx-auto px-4">
-          <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">
-            Real findings from client engagements
-          </p>
-          <div className="grid md:grid-cols-3 gap-4">
-            {[
-              { number: '$353K', finding: 'in trapped cash freed by reducing collections from 61 to 46 days' },
-              { number: '$337K/yr', finding: 'in retained cash flow from 3 actions that cost $3K to implement' },
-              { number: '$961K', finding: 'in hidden debt the balance sheet never showed — found by comparing 12 months of snapshots' },
-            ].map((item) => (
-              <div key={item.number} className="bg-white rounded-xl p-5 border border-gray-100">
-                <div className="text-2xl font-bold text-benefique-orange mb-1">{item.number}</div>
-                <p className="text-gray-600 text-sm">{item.finding}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -547,106 +522,19 @@ function Home() {
         </div>
       </section>
 
-      {/* INTELLIGENCE LIBRARY */}
-      <section id="intelligence-library" className="py-16 bg-white">
-        <div className="max-w-5xl mx-auto px-4">
-          <p className="text-sm font-semibold text-benefique-orange uppercase tracking-wide mb-2 text-center">
+      {/* Intelligence Library — compact pointer; full curated index lives on /blog (Resources) */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 text-center">
+          <p className="text-sm font-semibold text-benefique-orange uppercase tracking-wide mb-2">
             Published Research
           </p>
-          <h2 className="text-3xl font-bold text-benefique-navy text-center mb-4">Intelligence Library</h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-            The frameworks we use inside engagements. Owner-grade reads on cash, tax, and operations &mdash; with the math worked out.
+          <h2 className="text-3xl font-bold text-benefique-navy mb-4">The Intelligence Library</h2>
+          <p className="text-gray-600 mb-8">
+            The frameworks we use inside engagements &mdash; owner-grade reads on cash, tax, and operations, with the math worked out. Browse the full library by topic.
           </p>
-
-          <div className="space-y-4">
-            {[
-              {
-                title: 'Cash Flow & Working Capital',
-                posts: [
-                  { slug: 'profitable-but-losing-cash', title: 'Profitable on Paper, Losing Cash in the Bank' },
-                  { slug: 'cash-flow-waterfall-why-profit-doesnt-equal-cash', title: 'Cash Flow Waterfall: Why Profit Does Not Equal Cash' },
-                  { slug: 'ai-found-353k-trapped-cash', title: 'How AI Found $353K of Trapped Cash' },
-                  { slug: '5-cash-leaks-service-business', title: '5 Cash Leaks in Every Service Business' },
-                  { slug: 'improve-dso-without-sacrificing-relationships', title: 'Improve DSO Without Sacrificing Relationships' },
-                ],
-              },
-              {
-                title: 'Tax Strategy & Entity Structure',
-                posts: [
-                  { slug: 's-corp-tax-trap-service-business', title: 'The S-Corp Tax Trap in Service Businesses' },
-                  { slug: 'tax-strategies-concierge-physicians', title: 'Tax Strategies for Concierge Physicians' },
-                  { slug: 'missed-tax-deductions-healthcare-service-businesses-broward-county', title: 'Missed Tax Deductions: Broward County Healthcare & Service Businesses' },
-                  { slug: '2026-tax-law-changes-broward-county-healthcare-service-businesses', title: '2026 Tax Law Changes — What Broward County Owners Need to Know' },
-                  { slug: 'distribution-ratio-business-loan', title: 'The Distribution Ratio Your Banker Watches' },
-                ],
-              },
-              {
-                title: 'Healthcare Practice Economics',
-                posts: [
-                  { slug: 'cost-starting-concierge-medical-practice', title: 'How Much Does It Cost to Start a Concierge Practice? $75K–$200K (2026)' },
-                  { slug: 'concierge-medicine-income-south-florida', title: 'How Much Does a Concierge Medical Practice Make in South Florida?' },
-                  { slug: 'concierge-medicine-financial-model', title: 'The Concierge Medicine Financial Model' },
-                  { slug: 'concierge-medicine-vs-insurance-practice-financial-comparison', title: 'Concierge vs Insurance-Based Practice: A Financial Comparison' },
-                  { slug: 'per-unit-pnl-multi-location-cost-analysis', title: 'Per-Unit P&L for Multi-Location Practices' },
-                ],
-              },
-              {
-                title: 'Radiology & Multi-Center Imaging',
-                isService: true,
-                serviceLink: '/radiology',
-                serviceLabel: 'See the full Radiology CFO Intelligence engagement →',
-                posts: [
-                  { slug: 'radiology-accounts-receivable-line-of-credit', title: 'Radiology A/R as Collateral: The Line-of-Credit Playbook' },
-                  { slug: 'per-modality-profitability-imaging-center', title: 'Per-Modality Profitability at an Imaging Center' },
-                  { slug: 'dso-benchmarks-imaging-centers-2026-sefl', title: 'DSO Benchmarks for SE-Florida Imaging Centers (2026)' },
-                  { slug: 'toxic-payers-losing-money-medical-practice', title: 'Toxic Payers: When Volume Costs You Money' },
-                  { slug: 'multi-center-imaging-owner-income-2026-sefl', title: 'Multi-Center Imaging Owner Income (SEFL 2026)' },
-                ],
-              },
-              {
-                title: 'Banker & Lender Readiness',
-                posts: [
-                  { slug: 'ebitda-positive-cash-flow-negative-debt-service', title: 'EBITDA Positive, Cash Flow Negative, Debt Service Due' },
-                  { slug: 'what-your-banker-sees-that-you-dont', title: 'What Your Banker Sees That You Do Not' },
-                  { slug: 'why-banker-asks-personal-tax-return', title: 'Why Your Banker Asks for Your Personal Tax Return' },
-                  { slug: 'stealth-debt-balance-sheet-hidden', title: 'Stealth Debt: What is Hiding on Your Balance Sheet' },
-                  { slug: 'cash-machine-vs-exit-machine', title: 'Cash Machine vs Exit Machine' },
-                ],
-              },
-            ].map((cluster) => (
-              <details key={cluster.title} className="bg-gray-50 rounded-xl border border-gray-200 group">
-                <summary className="px-6 py-4 cursor-pointer font-semibold text-benefique-navy hover:text-benefique-orange transition list-none flex justify-between items-center">
-                  {cluster.title}
-                  <span className="text-gray-400 group-open:rotate-180 transition-transform">▼</span>
-                </summary>
-                <div className="px-6 pb-4 border-t border-gray-200">
-                  {cluster.isService && (
-                    <Link
-                      to={cluster.serviceLink}
-                      className="block py-3 text-benefique-orange font-semibold hover:underline border-b border-gray-200"
-                    >
-                      {cluster.serviceLabel}
-                    </Link>
-                  )}
-                  <ul className="divide-y divide-gray-200">
-                    {cluster.posts.map((p) => (
-                      <li key={p.slug}>
-                        <Link to={`/blog/${p.slug}`} className="block py-3 text-gray-700 hover:text-benefique-orange text-sm">
-                          → {p.title}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </details>
-            ))}
-          </div>
-
-          <div className="text-center mt-8">
-            <Link to="/blog" className="text-benefique-orange font-semibold hover:underline">
-              Browse all posts →
-            </Link>
-          </div>
+          <Link to="/blog" className="inline-block bg-benefique-navy text-white px-6 py-3 rounded-lg font-semibold hover:bg-slate-800 transition">
+            Explore the Intelligence Library →
+          </Link>
         </div>
       </section>
 
@@ -1810,6 +1698,103 @@ function Blog() {
             <Link to="/contact" className="inline-block bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition">
               Apply to Work With Us →
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Intelligence Library — curated index by topic (relocated from homepage) */}
+      <section id="intelligence-library" className="py-16 bg-white border-t border-gray-100">
+        <div className="max-w-5xl mx-auto px-4">
+          <p className="text-sm font-semibold text-benefique-orange uppercase tracking-wide mb-2 text-center">
+            Published Research
+          </p>
+          <h2 className="text-3xl font-bold text-benefique-navy text-center mb-4">Intelligence Library</h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+            The frameworks we use inside engagements. Owner-grade reads on cash, tax, and operations &mdash; with the math worked out, grouped by topic.
+          </p>
+
+          <div className="space-y-4">
+            {[
+              {
+                title: 'Cash Flow & Working Capital',
+                posts: [
+                  { slug: 'profitable-but-losing-cash', title: 'Profitable on Paper, Losing Cash in the Bank' },
+                  { slug: 'cash-flow-waterfall-why-profit-doesnt-equal-cash', title: 'Cash Flow Waterfall: Why Profit Does Not Equal Cash' },
+                  { slug: 'ai-found-353k-trapped-cash', title: 'How AI Found $353K of Trapped Cash' },
+                  { slug: '5-cash-leaks-service-business', title: '5 Cash Leaks in Every Service Business' },
+                  { slug: 'improve-dso-without-sacrificing-relationships', title: 'Improve DSO Without Sacrificing Relationships' },
+                ],
+              },
+              {
+                title: 'Tax Strategy & Entity Structure',
+                posts: [
+                  { slug: 's-corp-tax-trap-service-business', title: 'The S-Corp Tax Trap in Service Businesses' },
+                  { slug: 'tax-strategies-concierge-physicians', title: 'Tax Strategies for Concierge Physicians' },
+                  { slug: 'missed-tax-deductions-healthcare-service-businesses-broward-county', title: 'Missed Tax Deductions: Broward County Healthcare & Service Businesses' },
+                  { slug: '2026-tax-law-changes-broward-county-healthcare-service-businesses', title: '2026 Tax Law Changes — What Broward County Owners Need to Know' },
+                  { slug: 'distribution-ratio-business-loan', title: 'The Distribution Ratio Your Banker Watches' },
+                ],
+              },
+              {
+                title: 'Healthcare Practice Economics',
+                posts: [
+                  { slug: 'cost-starting-concierge-medical-practice', title: 'How Much Does It Cost to Start a Concierge Practice? $75K–$200K (2026)' },
+                  { slug: 'concierge-medicine-income-south-florida', title: 'How Much Does a Concierge Medical Practice Make in South Florida?' },
+                  { slug: 'concierge-medicine-financial-model', title: 'The Concierge Medicine Financial Model' },
+                  { slug: 'concierge-medicine-vs-insurance-practice-financial-comparison', title: 'Concierge vs Insurance-Based Practice: A Financial Comparison' },
+                  { slug: 'per-unit-pnl-multi-location-cost-analysis', title: 'Per-Unit P&L for Multi-Location Practices' },
+                ],
+              },
+              {
+                title: 'Radiology & Multi-Center Imaging',
+                isService: true,
+                serviceLink: '/radiology',
+                serviceLabel: 'See the full Radiology CFO Intelligence engagement →',
+                posts: [
+                  { slug: 'radiology-accounts-receivable-line-of-credit', title: 'Radiology A/R as Collateral: The Line-of-Credit Playbook' },
+                  { slug: 'per-modality-profitability-imaging-center', title: 'Per-Modality Profitability at an Imaging Center' },
+                  { slug: 'dso-benchmarks-imaging-centers-2026-sefl', title: 'DSO Benchmarks for SE-Florida Imaging Centers (2026)' },
+                  { slug: 'toxic-payers-losing-money-medical-practice', title: 'Toxic Payers: When Volume Costs You Money' },
+                  { slug: 'multi-center-imaging-owner-income-2026-sefl', title: 'Multi-Center Imaging Owner Income (SEFL 2026)' },
+                ],
+              },
+              {
+                title: 'Banker & Lender Readiness',
+                posts: [
+                  { slug: 'ebitda-positive-cash-flow-negative-debt-service', title: 'EBITDA Positive, Cash Flow Negative, Debt Service Due' },
+                  { slug: 'what-your-banker-sees-that-you-dont', title: 'What Your Banker Sees That You Do Not' },
+                  { slug: 'why-banker-asks-personal-tax-return', title: 'Why Your Banker Asks for Your Personal Tax Return' },
+                  { slug: 'stealth-debt-balance-sheet-hidden', title: 'Stealth Debt: What is Hiding on Your Balance Sheet' },
+                  { slug: 'cash-machine-vs-exit-machine', title: 'Cash Machine vs Exit Machine' },
+                ],
+              },
+            ].map((cluster) => (
+              <details key={cluster.title} className="bg-gray-50 rounded-xl border border-gray-200 group">
+                <summary className="px-6 py-4 cursor-pointer font-semibold text-benefique-navy hover:text-benefique-orange transition list-none flex justify-between items-center">
+                  {cluster.title}
+                  <span className="text-gray-400 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <div className="px-6 pb-4 border-t border-gray-200">
+                  {cluster.isService && (
+                    <Link
+                      to={cluster.serviceLink}
+                      className="block py-3 text-benefique-orange font-semibold hover:underline border-b border-gray-200"
+                    >
+                      {cluster.serviceLabel}
+                    </Link>
+                  )}
+                  <ul className="divide-y divide-gray-200">
+                    {cluster.posts.map((p) => (
+                      <li key={p.slug}>
+                        <Link to={`/blog/${p.slug}`} className="block py-3 text-gray-700 hover:text-benefique-orange text-sm">
+                          → {p.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </details>
+            ))}
           </div>
         </div>
       </section>
