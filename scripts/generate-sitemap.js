@@ -62,6 +62,7 @@ const staticRoutes = [
   { path: '/services/fractional-cfo', priority: 0.9, changefreq: 'monthly', lastmod: new Date() },
   { path: '/radiology', priority: 0.95, changefreq: 'weekly', lastmod: new Date() },
   { path: '/knowledge', priority: 0.9, changefreq: 'weekly', lastmod: new Date() },
+  { path: '/intelligence', priority: 0.95, changefreq: 'monthly', lastmod: new Date() },
 
   // Tool pages
   { path: '/tools/concierge-simulator', priority: 0.9, changefreq: 'monthly', lastmod: new Date() },
