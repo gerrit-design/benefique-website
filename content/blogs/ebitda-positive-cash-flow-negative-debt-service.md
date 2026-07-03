@@ -1,5 +1,5 @@
 ---
-title: "EBITDA Positive, Cash Flow Negative — A $16M Case Study"
+title: "EBITDA Positive but Cash Flow Negative? The Debt-Service Math"
 description: "A multi-location business earned $332K in EBITDA on $16.7M revenue. Its interest expense was $365K. Here is how to check if your business can cover its debt."
 date: "2026-04-03"
 author: "Gerrit Disbergen, EA"
@@ -8,8 +8,8 @@ categories: "Cash Flow"
 readTime: "16 min read"
 featuredImage: "/images/blog/ebitda-positive-cash-flow-negative-debt-service.jpg"
 slug: "ebitda-positive-cash-flow-negative-debt-service"
-metaTitle: "EBITDA Positive, Cash Flow Negative | Benefique"
-metaDescription: "A multi-location business earned $332K in EBITDA on $16.7M revenue. Its interest expense was $365K. Here is how to check if your business can cover its debt."
+metaTitle: "EBITDA Positive but Cash Flow Negative? The Debt-Service Math | Benefique"
+metaDescription: "Yes — EBITDA can be positive while cash flow is negative. A $16.7M business earned $332K EBITDA against $365K of interest. The debt-service check to run on your own books."
 keywords: "EBITDA positive cash flow negative, DSCR below 1, debt service coverage ratio, EBITDA misleading, can business pay its debt, cash flow vs profit"
 ---
 

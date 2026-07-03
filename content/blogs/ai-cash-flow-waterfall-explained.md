@@ -1,5 +1,5 @@
 ---
-title: "$1.07M EBITDA, –$41K Cash: The Cash Flow Waterfall Explained"
+title: "Cash Flow Waterfall Explained: From $1.07M EBITDA to –$41K Cash"
 description: "$1.07M EBITDA, –$41K cash. The waterfall shows exactly where every dollar went — operating cash, debt service, distributions, working capital. Real $5M imaging-center walkthrough, line by line."
 date: "2026-03-18"
 author: "Gerrit Disbergen, EA"
@@ -8,8 +8,8 @@ categories: "Cash Flow"
 readTime: "12 min read"
 featuredImage: "/images/blog/ai-cash-flow-waterfall-explained.jpg"
 slug: "ai-cash-flow-waterfall-explained"
-metaTitle: "$1.07M EBITDA, –$41K Cash: The Cash Flow Waterfall Explained | Benefique"
-metaDescription: "$1.07M EBITDA, –$41K cash. The waterfall shows exactly where every dollar went — operating cash, debt service, distributions, working capital. Real $5M imaging-center walkthrough, line by line."
+metaTitle: "Cash Flow Waterfall Explained: From $1.07M EBITDA to –$41K Cash | Benefique"
+metaDescription: "A cash flow waterfall traces profit into cash, step by step — operating cash, working capital, debt service, distributions. See how $1.07M of EBITDA became –$41K of cash."
 keywords: "ai cash flow analysis, cash flow waterfall, EBITDA vs cash flow, why profitable but no cash, profit not equal cash"
 ---
 

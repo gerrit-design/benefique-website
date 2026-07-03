@@ -383,7 +383,7 @@ const blogPosts = {
   },
   'blended-pl-lying-multi-entity-business': {
     file: '/content/blogs/blended-pl-lying-multi-entity-business.md',
-    title: 'Blended Gross Margin: When a 15% P&L Hides a 50% Business',
+    title: 'Multi-Entity P&L: Why Your Blended Margin Is Lying (15% vs 50%)',
     date: '2026-04-14',
     author: 'Gerrit Disbergen, EA',
     excerpt: 'A $3M distribution business showed a 15% gross margin and looked distressed. We split it into internal and external divisions and found a healthy 50%+ external business sitting next to a subsidized 9% internal transfer operation. The owner had been trying to fix the wrong problem for two quarters.',
@@ -535,7 +535,7 @@ const blogPosts = {
   },
   'per-unit-pnl-multi-location-cost-analysis': {
     file: '/content/blogs/per-unit-pnl-multi-location-cost-analysis.md',
-    title: 'Same Owner, Same Industry, 3x Cost Difference — What the P&L Can\'t Tell You',
+    title: 'Per-Unit P&L: The 3x Cost Gap in Multi-Location Businesses',
     date: '2026-03-24',
     author: 'Gerrit Disbergen, EA',
     excerpt: 'Three imaging centers. Same owner. Same industry. One costs $109 per scan to operate. Another costs $309. Their P&L couldn\'t explain the difference. A per-unit analysis — dividing every cost category by every claim — exposed the gap in 20 minutes.',
@@ -642,7 +642,7 @@ const blogPosts = {
   },
   'ebitda-positive-cash-flow-negative-debt-service': {
     file: '/content/blogs/ebitda-positive-cash-flow-negative-debt-service.md',
-    title: 'EBITDA Positive, Cash Flow Negative \u2014 A $16M Case Study',
+    title: 'EBITDA Positive but Cash Flow Negative? The Debt-Service Math',
     date: '2026-04-03',
     author: 'Gerrit Disbergen, EA',
     excerpt: 'Five locations. $16.7M in revenue. $332K in EBITDA. Looks like a functional business \u2014 until you subtract the $365K in annual interest. The group literally cannot pay its lenders from operations.',
@@ -1318,7 +1318,7 @@ const blogPosts = {
   },
   'ai-cash-flow-waterfall-explained': {
     file: '/content/blogs/ai-cash-flow-waterfall-explained.md',
-    title: '$1.07M EBITDA, –$41K Cash: The Cash Flow Waterfall Explained',
+    title: 'Cash Flow Waterfall Explained: From $1.07M EBITDA to –$41K Cash',
     date: '2026-03-18',
     author: 'Gerrit Disbergen, EA',
     excerpt: '$1.07M EBITDA, –$41K cash. The waterfall shows exactly where every dollar went — operating cash, debt service, distributions, working capital. Real $5M imaging-center walkthrough, line by line.',

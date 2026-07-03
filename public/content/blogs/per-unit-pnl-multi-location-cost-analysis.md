@@ -1,5 +1,5 @@
 ---
-title: "Same Owner, Same Industry, 3x Cost Difference — What the P&L Can't Tell You"
+title: "Per-Unit P&L: The 3x Cost Gap in Multi-Location Businesses"
 date: "2026-03-24"
 author: "Gerrit Disbergen, EA"
 excerpt: "Three imaging centers. Same owner. Same industry. One costs $109 per scan to operate. Another costs $309. Their P&L couldn't explain the difference. A per-unit analysis — dividing every cost category by every claim — exposed the gap in 20 minutes."
@@ -8,8 +8,8 @@ categories: ["Cash Flow Advisory", "Healthcare Finance", "Financial Intelligence
 readTime: "16 min read"
 featuredImage: "/images/blog/per-unit-pnl-multi-location-cost-analysis.jpg"
 slug: "per-unit-pnl-multi-location-cost-analysis"
-metaTitle: "Per-Unit P&L: What Multi-Location Practice Owners Miss | Benefique"
-metaDescription: "3 imaging centers, same owner, 3x cost gap. Per-unit P&L analysis revealed what the standard P&L couldn't. Here's the framework for any multi-location practice."
+metaTitle: "Per-Unit P&L: The 3x Cost Gap in Multi-Location Businesses | Benefique"
+metaDescription: "Three imaging centers, same owner: $109 per scan at one, $309 at another — and the P&L couldn’t explain it. The per-unit method that finds the gap in 20 minutes."
 keywords: "per unit cost analysis healthcare, multi-location practice profitability, cost per claim analysis, per-unit P&L, healthcare practice benchmarking, cost normalization, multi-site benchmarking, unit economics healthcare, cost variance analysis, operational cost per patient, imaging center cost analysis, dental practice cost per visit, controllable expenses healthcare"
 schema:
   type: "Article"
