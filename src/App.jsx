@@ -2669,6 +2669,19 @@ function LocationPage({ city, nearby, zipCodes, description }) {
     }
   ];
 
+  if (city === 'Hollywood') {
+    faqs.push({
+      q: 'Does Benefique work with dental practices in Hollywood, FL?',
+      a: 'Yes — dental practices are one of our core healthcare niches. We handle bookkeeping, payroll, associate compensation, and tax planning for dental offices in Hollywood and across Broward County, including multi-location dental groups.'
+    });
+  }
+  if (city === 'Plantation') {
+    faqs.push({
+      q: 'Does Benefique work with law firms and professional services firms in Plantation?',
+      a: 'Yes — we serve law firms and professional services companies in Plantation, including trust accounting support, partner compensation, and cash flow reporting built for firms that bill by the matter or the hour.'
+    });
+  }
+
   return (
     <div>
       {/* Hero with Direct Answer Block */}
@@ -2816,6 +2829,100 @@ function LocationPage({ city, nearby, zipCodes, description }) {
                 ))}
               </div>
               <p className="text-gray-500 text-xs mt-2">Including Weston Town Center, Weston Hills, The Ridges, Savanna, and all Weston communities.</p>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Hollywood-Specific Content */}
+      {city === 'Hollywood' && (
+        <section className="py-12 bg-gray-50 border-t border-gray-200">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-2xl font-bold text-benefique-navy mb-6">Why Hollywood Businesses Choose Benefique</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-white rounded-xl p-6 border border-gray-100">
+                <h3 className="font-bold text-benefique-navy mb-2">Healthcare & Dental Corridor</h3>
+                <p className="text-gray-600 text-sm">
+                  Memorial Regional Hospital and Joe DiMaggio Children's Hospital anchor one of Broward's densest
+                  healthcare corridors, with dental, medical, and imaging practices lining Hollywood Boulevard and
+                  Sheridan Street. We keep books for practices like these every day — payer mix, collections cycles,
+                  provider compensation, and the working-capital math most generalist firms never touch.
+                </p>
+              </div>
+              <div className="bg-white rounded-xl p-6 border border-gray-100">
+                <h3 className="font-bold text-benefique-navy mb-2">Dental Practice Specialists</h3>
+                <p className="text-gray-600 text-sm">
+                  From solo offices to multi-location dental groups, we handle the accounting questions dentists
+                  actually ask: associate compensation, equipment financing, PPO write-off tracking, and when a
+                  second location makes financial sense.
+                </p>
+                <Link to="/blog/dental-group-scaling-accounting" className="text-benefique-orange text-sm font-semibold hover:underline mt-2 inline-block">
+                  Read: scaling a dental group &rarr;
+                </Link>
+              </div>
+              <div className="bg-white rounded-xl p-6 border border-gray-100">
+                <h3 className="font-bold text-benefique-navy mb-2">20 Minutes from Our Office</h3>
+                <p className="text-gray-600 text-sm">
+                  Our Davie headquarters is a short drive via I-95 or US-441. Close enough for in-person meetings
+                  when you want them, with real-time dashboards so your numbers are never a month old.
+                </p>
+              </div>
+              <div className="bg-white rounded-xl p-6 border border-gray-100">
+                <h3 className="font-bold text-benefique-navy mb-2">Not Just Bookkeeping</h3>
+                <p className="text-gray-600 text-sm">
+                  Hollywood businesses generating $500K–$10M+ in revenue have outgrown basic bookkeeping. We provide
+                  a complete accounting department: real-time books closed by the 7th, proactive tax planning,
+                  payroll, and AI-powered cash flow intelligence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Plantation-Specific Content */}
+      {city === 'Plantation' && (
+        <section className="py-12 bg-gray-50 border-t border-gray-200">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-2xl font-bold text-benefique-navy mb-6">Why Plantation Businesses Choose Benefique</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-white rounded-xl p-6 border border-gray-100">
+                <h3 className="font-bold text-benefique-navy mb-2">Professional Services Hub</h3>
+                <p className="text-gray-600 text-sm">
+                  The University Drive and Cleary Boulevard corridors are home to law firms, medical offices,
+                  and corporate service companies. We serve firms that bill by the matter or the hour — partner
+                  compensation, trust accounting support, and cash flow reporting that shows where the next
+                  quarter actually stands.
+                </p>
+              </div>
+              <div className="bg-white rounded-xl p-6 border border-gray-100">
+                <h3 className="font-bold text-benefique-navy mb-2">Medical Offices Around Westside</h3>
+                <p className="text-gray-600 text-sm">
+                  HCA Florida Westside Hospital anchors a cluster of physician practices and specialty clinics.
+                  We work with healthcare owners on collections cycles, payer mix, and 1099-vs-W2 classification —
+                  questions with real dollars attached in Broward County.
+                </p>
+                <Link to="/blog/1099-vs-w2-worker-classification-healthcare-service-businesses-broward-county" className="text-benefique-orange text-sm font-semibold hover:underline mt-2 inline-block">
+                  Read: 1099 vs W-2 for Broward healthcare &rarr;
+                </Link>
+              </div>
+              <div className="bg-white rounded-xl p-6 border border-gray-100">
+                <h3 className="font-bold text-benefique-navy mb-2">10 Minutes from Our Office</h3>
+                <p className="text-gray-600 text-sm">
+                  Plantation is our next-door neighbor — a straight shot up University Drive or Pine Island Road
+                  from our Davie headquarters. In-person when you need it, real-time dashboards the rest of the time.
+                </p>
+              </div>
+              <div className="bg-white rounded-xl p-6 border border-gray-100">
+                <h3 className="font-bold text-benefique-navy mb-2">Cash Flow Intelligence</h3>
+                <p className="text-gray-600 text-sm">
+                  Our AI-powered analysis finds what the P&amp;L is hiding. Clients typically uncover $20K–$350K
+                  in trapped cash, tax savings, or operational improvements within the first 90 days.
+                </p>
+                <Link to="/blog/accountant-cost-center-roi-center" className="text-benefique-orange text-sm font-semibold hover:underline mt-2 inline-block">
+                  See a real case study &rarr;
+                </Link>
+              </div>
             </div>
           </div>
         </section>
@@ -4376,12 +4483,12 @@ function RadiologyIntake() {
 // ============================================================
 const locations = {
   davie: { city: 'Davie', nearby: ['Plantation', 'Weston', 'Fort Lauderdale', 'Hollywood'], description: 'Benefique is headquartered in Davie, FL — providing accounting and CFO services to local healthcare practices and service businesses.' },
-  plantation: { city: 'Plantation', nearby: ['Davie', 'Fort Lauderdale', 'Weston', 'Sunrise'], description: 'Full-service accounting for Plantation businesses — from medical practices to professional services firms.' },
+  plantation: { city: 'Plantation', nearby: ['Davie', 'Fort Lauderdale', 'Weston', 'Sunrise'], zipCodes: ['33313', '33317', '33322', '33323', '33324', '33325'], description: 'Plantation\'s business corridor — University Drive, Cleary Boulevard, and the offices around HCA Florida Westside Hospital — is dense with medical practices, law firms, and professional services companies. We serve Plantation owners who need more than a bookkeeper: real-time books closed by the 7th, proactive tax planning, and CFO-grade reporting from our office 10 minutes away in Davie.' },
   weston: { city: 'Weston', nearby: ['Davie', 'Plantation', 'Miramar', 'Southwest Ranches', 'Pembroke Pines'], zipCodes: ['33326', '33327', '33331', '33332'], description: 'Weston is home to a concentration of healthcare practices, professional services firms, and high-growth service businesses. We serve Weston business owners who have outgrown their bookkeeper but aren\'t ready for a full-time CFO — providing real-time books, proactive tax planning, and AI-powered cash flow intelligence from our office 15 minutes away in Davie.' },
   miramar: { city: 'Miramar', nearby: ['Hollywood', 'Pembroke Pines', 'Weston', 'Miami Gardens'], description: 'Real-time accounting and tax planning for Miramar businesses — healthcare, marine services, and more.' },
   'fort-lauderdale': { city: 'Fort Lauderdale', nearby: ['Davie', 'Plantation', 'Hollywood', 'Oakland Park'], description: 'Fort Lauderdale\'s trusted accounting firm for healthcare practices, marine services, and professional services.' },
   aventura: { city: 'Aventura', nearby: ['North Miami Beach', 'Sunny Isles', 'Hallandale', 'Miami'], description: 'Accounting and CFO services for Aventura businesses — medical practices, professional services, and law firms.' },
-  hollywood: { city: 'Hollywood', nearby: ['Fort Lauderdale', 'Davie', 'Hallandale', 'Miramar'], description: 'Full-service accounting for Hollywood, FL businesses — from healthcare to marine and professional services.' },
+  hollywood: { city: 'Hollywood', nearby: ['Fort Lauderdale', 'Davie', 'Hallandale', 'Miramar'], zipCodes: ['33019', '33020', '33021', '33023', '33024', '33025', '33026', '33027', '33028', '33029'], description: 'Hollywood\'s healthcare corridor — anchored by Memorial Regional Hospital and the dental and medical offices along Hollywood Boulevard and Sheridan Street — is one of Broward\'s densest concentrations of practices. We keep the books for healthcare and dental practices and service businesses across Hollywood: real-time reporting, monthly closes by the 7th, and tax planning that runs all year.' },
 };
 
 // ============================================================

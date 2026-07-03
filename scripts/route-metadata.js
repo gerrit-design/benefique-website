@@ -81,17 +81,24 @@ const routes = [
   },
   {
     path: '/plantation-accounting',
-    title: 'Plantation Accounting & CFO Services | Benefique Tax & Accounting',
-    description: 'Full-service accounting for Plantation businesses — from medical practices to professional services firms. Real-time reporting and fractional CFO services.',
+    title: 'Accounting Firm in Plantation, FL — CFO & Tax Planning | Benefique',
+    description: 'Accounting firm serving Plantation, FL law firms, medical practices, and professional services companies. Books closed by the 7th, proactive tax planning, fractional CFO — 10 minutes away in Davie.',
     schema: {
       '@context': 'https://schema.org',
       '@type': 'AccountingService',
       name: 'Benefique Tax & Accounting - Plantation',
-      description: 'Full-service accounting for Plantation businesses — medical practices to professional services.',
+      description: 'Accounting, tax planning, and fractional CFO services for Plantation law firms, medical practices, and professional services companies.',
       url: `${SITE}/plantation-accounting`,
       areaServed: { '@type': 'City', name: 'Plantation' },
       address: { '@type': 'PostalAddress', addressLocality: 'Plantation', addressRegion: 'FL', addressCountry: 'US' },
     },
+    faq: [
+      { q: 'What accounting services does Benefique offer in Plantation?', a: 'Benefique provides full-service accounting, fractional CFO services, bookkeeping, payroll processing, tax planning, and real-time financial reporting for businesses in Plantation and throughout South Florida.' },
+      { q: 'How quickly can Benefique close my books each month?', a: 'We close books by the 7th business day of each month, with a review call by the 10th.' },
+      { q: 'Does Benefique work with healthcare practices in Plantation?', a: 'Yes — we specialize in healthcare practices including radiology centers, dental practices, veterinary clinics, and medical offices throughout Plantation and Broward County.' },
+      { q: 'Does Benefique work with law firms and professional services firms in Plantation?', a: 'Yes — we serve law firms and professional services companies in Plantation, including trust accounting support, partner compensation, and cash flow reporting built for firms that bill by the matter or the hour.' },
+      { q: 'How is Benefique different from other accountants in Plantation?', a: 'We provide real-time accounting with 24-hour response times, decision-ready dashboards, and proactive tax planning — a complete accounting department, not just a bookkeeper.' },
+    ],
   },
   {
     path: '/weston-accounting',
@@ -165,17 +172,24 @@ const routes = [
   },
   {
     path: '/hollywood-accounting',
-    title: 'Hollywood FL Accounting & CFO Services | Benefique Tax & Accounting',
-    description: 'Full-service accounting for Hollywood, FL businesses — from healthcare to marine and hospitality services. Fractional CFO, tax planning, real-time dashboards.',
+    title: 'Dental & Healthcare Accounting in Hollywood, FL | Benefique',
+    description: 'Accounting for Hollywood, FL dental and healthcare practices and service businesses. Books closed by the 7th, payer-mix and collections expertise, fractional CFO. Serving the Memorial healthcare corridor.',
     schema: {
       '@context': 'https://schema.org',
       '@type': 'AccountingService',
       name: 'Benefique Tax & Accounting - Hollywood',
-      description: 'Full-service accounting for Hollywood, FL businesses.',
+      description: 'Accounting, tax planning, and fractional CFO services for Hollywood, FL dental practices, healthcare practices, and service businesses.',
       url: `${SITE}/hollywood-accounting`,
       areaServed: { '@type': 'City', name: 'Hollywood' },
       address: { '@type': 'PostalAddress', addressLocality: 'Hollywood', addressRegion: 'FL', addressCountry: 'US' },
     },
+    faq: [
+      { q: 'What accounting services does Benefique offer in Hollywood, FL?', a: 'Benefique provides full-service accounting, fractional CFO services, bookkeeping, payroll processing, tax planning, and real-time financial reporting for businesses in Hollywood and throughout South Florida.' },
+      { q: 'How quickly can Benefique close my books each month?', a: 'We close books by the 7th business day of each month, with a review call by the 10th.' },
+      { q: 'Does Benefique work with dental practices in Hollywood, FL?', a: 'Yes — dental practices are one of our core healthcare niches. We handle bookkeeping, payroll, associate compensation, and tax planning for dental offices in Hollywood and across Broward County, including multi-location dental groups.' },
+      { q: 'Does Benefique work with healthcare practices in Hollywood?', a: 'Yes — we specialize in healthcare practices including radiology centers, dental practices, veterinary clinics, and medical offices throughout Hollywood and Broward County.' },
+      { q: 'How is Benefique different from other accountants in Hollywood?', a: 'We provide real-time accounting with 24-hour response times, decision-ready dashboards, and proactive tax planning — a complete accounting department, not just a bookkeeper.' },
+    ],
   },
 
   // Industry pages
