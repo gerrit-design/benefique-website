@@ -6,6 +6,58 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  'net-collection-rate-imaging-centers': {
+    file: '/content/blogs/net-collection-rate-imaging-centers.md',
+    title: 'Net Collection Rate for Imaging Centers: Formula & 2026 Benchmarks',
+    date: '2026-07-03',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Gross collection rate tells you your chargemaster is inflated. Net collection rate tells you whether your billing operation is leaking money. Here is the NCR formula, a worked imaging-center example, per-payer-class targets for 2026, and the cohort method PI-heavy centers need — because a monthly NCR on a Letter-of-Protection book is a number that cannot be true.',
+    categories: ['Healthcare Finance', 'Cash Flow Advisory'],
+    readTime: '12 min read',
+    featuredImage: '/images/blog/net-collection-rate-imaging-centers.png',
+    faqs: [
+      { q: 'What is net collection rate?', a: 'Net collection rate (NCR) is the percentage of collectible revenue a practice actually collects: payments divided by gross charges minus contractual adjustments. It measures revenue-cycle completeness — how much of the money you were contractually entitled to receive actually arrived — and well-managed imaging operations run 94–99% on adjudicated payer classes.' },
+      { q: 'What is the difference between gross and net collection rate?', a: 'Gross collection rate divides payments by full chargemaster charges, so it mostly measures how inflated your price list is and how much personal-injury volume you carry. Net collection rate divides payments by what contracts actually allowed, so it measures billing performance. A PI-heavy imaging center can have a 30% gross rate and a healthy 96% net rate at the same time.' },
+      { q: 'What is a good net collection rate for an imaging center?', a: 'Targets for well-managed imaging operations: 97–99% on Medicare and Medicare Advantage, 94–98% on Tier-1 commercial, and 90–95% on Tier-2 commercial — measured per payer class from date of service. PIP and Letter-of-Protection receivables should be measured separately by cohort against yield-adjusted expected value, not face value.' },
+      { q: 'How much is one point of NCR worth?', a: 'At a center with $4M of annual net collectible revenue, each percentage point of net collection rate represents roughly $40,000 per year. The gap between a 91% and a 96% operation is about $200,000 annually — money that was contractually owed and simply not collected.' },
+      { q: 'Why does monthly NCR not work for LOP-heavy centers?', a: 'Because Letter-of-Protection receivables settle in 9–36 months, this month\'s collections belong to charges from one to three years ago. The honest method is cohort (vintage) tracking: group charges by date-of-service month and track each cohort\'s cumulative collections against expected value over time, the way a lender tracks a loan book.' }
+    ]
+  },
+  'texas-lop-imaging-accounts-receivable': {
+    file: '/content/blogs/texas-lop-imaging-accounts-receivable.md',
+    title: 'LOP Economics in Texas: Why Imaging A/R Works Differently Than Florida',
+    date: '2026-07-03',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'In Florida, the first $10,000 of a car-crash patient\'s imaging usually arrives through statutory no-fault PIP in a few months. In Texas, there is no mandatory PIP — the same scan rides a Letter of Protection until the lawsuit settles, or gets sold to a medical funding company at a discount today. Same MRI, completely different business.',
+    categories: ['Healthcare Finance', 'Cash Flow Advisory'],
+    readTime: '13 min read',
+    featuredImage: '/images/blog/texas-lop-imaging-accounts-receivable.png',
+    faqs: [
+      { q: 'Why is personal-injury imaging A/R different in Texas than in Florida?', a: 'Florida is a no-fault state with mandatory $10,000 PIP coverage, so the first dollars on a crash patient\'s imaging arrive through a statutory claim within months. Texas is fault-based with no mandatory PIP, so the same scan waits for the liability case to settle — making Texas PI imaging receivables almost entirely Letter-of-Protection paper on litigation timelines of 9–36 months.' },
+      { q: 'What does a medical funding company do for an imaging center?', a: 'A medical funding company advances cash against — or purchases outright — personal-injury medical receivables at a discount to face value, then recovers from the eventual settlement. It converts a 1–3 year receivable into cash today, at a price. Whether a given arrangement is a true sale or a recourse financing determines how it must be booked.' },
+      { q: 'How should an imaging center book revenue on LOP cases?', a: 'At expected value, not face value. Under ASC 606 you recognize the amount you expect to be entitled to collect — for LOP paper that is the yield-adjusted number after historical settlement haircuts. Booking full chargemaster face as revenue overstates earnings and gets unwound by the next auditor, lender, or buyer diligence team.' },
+      { q: 'Is cash from a medical funding company revenue or a loan?', a: 'It depends on the contract. If the receivable is sold non-recourse, the discounted purchase price is effectively your revenue on that scan. If the funder advances cash with recourse to you, the advance is a liability — a draw on a credit facility secured by the receivable — and booking it as revenue misstates both the P&L and the balance sheet.' },
+      { q: 'What should a Texas imaging center track on its LOP book?', a: 'Five things: date-of-service cohort collection curves at expected value, a yield-adjusted reserve policy applied monthly, receivable concentration by law firm and by funder, hold-versus-sell economics at the portfolio level, and the sale-versus-financing classification of every funding relationship.' }
+    ]
+  },
+  'imaging-rcm-glossary': {
+    file: '/content/blogs/imaging-rcm-glossary.md',
+    title: 'The Imaging RCM Glossary: 16 Terms That Decide Whether Your Center Gets Paid',
+    date: '2026-07-03',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'Imaging revenue cycle has a vocabulary problem: the words your biller, your banker, and your buyer use all sound interchangeable and aren\'t. Sixteen definitions, each in plain English, each with the reason it shows up in real money at an imaging center — from chargemaster fiction to LOP yield to why denial and rejection are different problems with different fixes.',
+    categories: ['Healthcare Finance', 'Cash Flow Advisory'],
+    readTime: '14 min read',
+    featuredImage: '/images/blog/imaging-rcm-glossary.png',
+    faqs: [
+      { q: 'What is revenue cycle management (RCM) at an imaging center?', a: 'RCM is everything that happens between scanning a patient and cash landing in the bank: authorization, charge capture, claim submission, adjudication, denial rework, payment posting, and collections. In imaging it spans radically different payer rails — commercial, Medicare, PIP, and Letter-of-Protection — each with its own speed and yield.' },
+      { q: 'What is a chargemaster?', a: 'A chargemaster is the facility\'s master price list — the full sticker price attached to every CPT code before any contract touches it. No adjudicated payer pays chargemaster rates; it exists mainly because personal-injury and out-of-network contexts bill at or near face value. Any metric with chargemaster charges in the denominator measures your price list, not your performance.' },
+      { q: 'What is the difference between a claim denial and a rejection?', a: 'A rejection never entered the payer\'s adjudication system — usually a formatting or data error, fixable the same week at the clearinghouse or front desk. A denial is an adjudicated claim the payer refused to pay, which requires an appeal workflow with deadlines. Denials that age past timely-filing limits become permanent, unrecoverable revenue leakage.' },
+      { q: 'What are the technical and professional components in radiology billing?', a: 'Imaging reimbursement splits into a technical component (TC) covering the facility\'s equipment, staff, and overhead, and a professional component (PC) covering the radiologist\'s interpretation. Billed together they form a global charge. The split defines which revenue is actually the center\'s — so centers with different radiology-read arrangements are not comparable on gross revenue.' },
+      { q: 'What is a Letter of Protection?', a: 'A Letter of Protection (LOP) is a personal-injury attorney\'s written commitment to pay a medical provider out of a future settlement or judgment. It makes the receivable a contingent legal claim rather than ordinary A/R: it resolves in 9–36 months, typically at a negotiated fraction of face value, with concentration risk by law firm.' },
+      { q: 'What is a good clean claim rate?', a: 'A clean claim adjudicates and pays on first submission. High-performing imaging operations push clean-claim rates well above 90% by hard-gating the front end: correct patient demographics, the right CPT on the authorization, and complete medical-necessity documentation before the claim leaves the building.' }
+    ]
+  },
   'radiology-cash-flow-by-payer': {
     file: '/content/blogs/radiology-cash-flow-by-payer.md',
     title: 'Radiology Cash Flow by Payer: Why the P&L Lies',

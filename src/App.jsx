@@ -1468,6 +1468,9 @@ function Blog() {
   const [activeCategory, setActiveCategory] = React.useState('All');
 
   const posts = [
+    { title: 'Net Collection Rate for Imaging Centers: Formula & 2026 Benchmarks', excerpt: 'Gross collection rate tells you your chargemaster is inflated. Net collection rate tells you whether your billing operation is leaking money. The NCR formula, a worked imaging example, per-payer-class targets for 2026, and the cohort method PI-heavy centers need — because a monthly NCR on a Letter-of-Protection book is a number that cannot be true.', date: '2026-07-03', slug: 'net-collection-rate-imaging-centers', published: true, category: 'Healthcare Finance', readTime: '12 min read' },
+    { title: 'LOP Economics in Texas: Why Imaging A/R Works Differently Than Florida', excerpt: 'Florida routes the first $10,000 of a crash patient\'s imaging through statutory PIP within months. Texas has no mandatory PIP — the same scan rides a Letter of Protection until the lawsuit settles, or gets sold to a funding company at a discount today. Same MRI, completely different business: the A/R, revenue-recognition, and valuation map for Texas imaging operators.', date: '2026-07-03', slug: 'texas-lop-imaging-accounts-receivable', published: true, category: 'Healthcare Finance', readTime: '13 min read' },
+    { title: 'The Imaging RCM Glossary: 16 Terms That Decide Whether Your Center Gets Paid', excerpt: 'Imaging revenue cycle has a vocabulary problem: the words your biller, your banker, and your buyer use all sound interchangeable and aren\'t. Sixteen plain-English definitions — chargemaster, NCR, DSO, LOP, PIP, clean claim, TC/PC split — each with the way it shows up in real money at an imaging center.', date: '2026-07-03', slug: 'imaging-rcm-glossary', published: true, category: 'Healthcare Finance', readTime: '14 min read' },
     { title: 'Radiology Cash Flow by Payer: Why the P&L Lies', excerpt: 'Two radiology centers booked the exact same $4.2M. One ended the year with $600K in the bank; the other was begging its lender for a line of credit. Same scans, same payers, same income statement — the difference was never on the P&L. It lived in the flow of funds between the center and each payer: the Letter-of-Protection tail, the Florida PIP cap, and why your most expensive PET scans actually pay fastest.', date: '2026-06-13', slug: 'radiology-cash-flow-by-payer', published: true, category: 'Cash Flow', readTime: '9 min read' },
     { title: 'Revenue Up, Bank Balance Down: The Cash Conversion Math', excerpt: 'A service business grew revenue two years running while its bank balance quietly fell the entire time. The P&L looked great the whole way down. The problem wasn\'t sales — it was timing: DSO drifted from 38 days to 61, trapping cash inside receivables. Here\'s the billed-vs-banked overlay that finds it, why it\'s almost never every customer, and why a DSO cut can beat a price increase on a cash basis.', date: '2026-06-11', slug: 'revenue-up-cash-down-conversion-cycle', published: true, category: 'Cash Flow', readTime: '7 min read' },
     { title: 'Selling Your Imaging Center: What Buyers Actually Pay', excerpt: 'The buyers circling imaging centers are real, named, and well-capitalized — RadNet, SimonMed, RAYUS, US Radiology. The headline multiple they open with is not the number you will get. Here is what buyers actually pay in 2026, sourced to real market data: the LOI-to-diligence reset, the deal terms that decide your cash at close, and the one question that sets your price.', date: '2026-06-09', slug: 'selling-imaging-center-what-buyers-pay', published: true, category: 'Healthcare Finance', readTime: '15 min read' },
@@ -3934,7 +3937,9 @@ function RadiologyLandingPage() {
       anchor: 'revenue-cycle',
       blurb: 'Per-payer DSO, aging decomposition, the billing-fee-versus-collections trade-off, and A/R your lender will actually fund.',
       posts: [
+        { slug: 'net-collection-rate-imaging-centers', title: 'Net Collection Rate for Imaging Centers: Formula & 2026 Benchmarks' },
         { slug: 'dso-benchmarks-imaging-centers-2026-sefl', title: 'DSO Benchmarks for Imaging Centers: 2026 SE Florida Data' },
+        { slug: 'imaging-rcm-glossary', title: 'The Imaging RCM Glossary: 16 Terms That Decide Whether Your Center Gets Paid' },
         { slug: 'radiology-accounts-receivable-line-of-credit', title: 'Radiology Accounts Receivable: How Banks Misread Your Aging Report' },
         { slug: 'dso-lying-medical-practice-cash-flow', title: 'Your DSO Is Lying to You — Why Averages Hide Your Real Cash Flow Problem' },
         { slug: 'medical-billing-fees-vs-collections-dso', title: 'Your Billing Company Costs 6%. Slow Collections Cost 10x That.' },
@@ -3946,6 +3951,8 @@ function RadiologyLandingPage() {
       anchor: 'payer-mix',
       blurb: 'PIP and Letter-of-Protection compression, payer grading A–F, and the front-desk selection economics that lock in profit before billing touches the claim.',
       posts: [
+        { slug: 'radiology-cash-flow-by-payer', title: 'Radiology Cash Flow by Payer: Why the P&L Lies' },
+        { slug: 'texas-lop-imaging-accounts-receivable', title: 'LOP Economics in Texas: Why Imaging A/R Works Differently Than Florida' },
         { slug: 'toxic-payers-losing-money-medical-practice', title: '7 Payers, 41 Procedures, $80,593 Lost' },
         { slug: 'lop-cash-cycle-personal-injury-practice-ar', title: 'Why PI-Heavy Practices Carry 20+ Months of A/R: The LOP Cash Cycle' },
         { slug: 'lop-economics-real-yield-vs-face-value', title: 'LOP Economics: Real Yield vs Face Value (Imaging Center 2026)' },
