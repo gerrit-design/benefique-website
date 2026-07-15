@@ -4129,6 +4129,28 @@ function RadiologyLandingPage() {
         </div>
       </section>
 
+      {/* Featured Tool — Radiology Profit Simulator */}
+      <section className="py-8 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <Link to="/tools/radiology-profit-simulator" className="block bg-benefique-navy rounded-2xl p-6 md:p-8 hover:shadow-xl transition group">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+              <div>
+                <div className="inline-flex items-center gap-2 bg-white/10 text-orange-300 px-3 py-1 rounded-full text-xs font-semibold mb-2">
+                  INTERACTIVE TOOL
+                </div>
+                <h2 className="text-2xl font-bold text-white group-hover:text-blue-200 transition">The Radiology Profit Simulator</h2>
+                <p className="text-blue-200 text-sm mt-1 max-w-2xl">
+                  Slide volume and price and watch fixed cost per scan, contribution margin, and operating profit recompute in real time &mdash; and see why cutting &ldquo;below-cost&rdquo; scans can halve your profit.
+                </p>
+              </div>
+              <span className="inline-block bg-white text-benefique-navy font-semibold px-6 py-3 rounded-lg whitespace-nowrap">
+                Try the Simulator &rarr;
+              </span>
+            </div>
+          </Link>
+        </div>
+      </section>
+
       {/* Proof Strip */}
       <section className="py-12 bg-benefique-navy text-white">
         <div className="max-w-6xl mx-auto px-4">
