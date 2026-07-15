@@ -251,6 +251,23 @@ const routes = [
   },
 
   {
+    path: '/tools/radiology-profit-simulator',
+    title: 'Radiology Profit Simulator | Benefique Tax & Accounting',
+    description: 'Interactive contribution-margin simulator for outpatient imaging centers. Slide volume and price to see why cutting "below-cost" scans can halve your profit — and what the real keep-or-cut floor is.',
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'WebApplication',
+      name: 'Radiology Profit Simulator',
+      description: 'Interactive contribution-margin and cost-per-scan simulator for outpatient imaging centers',
+      url: `${SITE}/tools/radiology-profit-simulator`,
+      applicationCategory: 'FinanceApplication',
+      operatingSystem: 'Web',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      author: { '@type': 'Organization', name: 'Benefique Tax & Accounting', url: SITE },
+    },
+  },
+
+  {
     path: '/tools/business-simulator',
     title: 'Business Simulator | Benefique Intelligence(TM)',
     description: 'Interactive activity-based business simulator. Decompose your business into assembly line stages, change any input, and watch P&L and cash flow recompute. See break-even in activity units, payer profitability, and scenario comparisons.',
