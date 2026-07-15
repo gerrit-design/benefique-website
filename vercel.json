@@ -4,6 +4,8 @@
   "trailingSlash": false,
   "redirects": [
     { "source": "/services/radiology", "destination": "/radiology", "statusCode": 301 },
+    { "source": "/go/radiology-pl", "destination": "/blog/radiology-cost-per-scan-1d-2d-3d?utm_source=linkedin&utm_medium=social&utm_campaign=radiology-pl", "statusCode": 302 },
+    { "source": "/go/radiology-sim", "destination": "/tools/radiology-profit-simulator?utm_source=linkedin&utm_medium=social&utm_campaign=radiology-sim", "statusCode": 302 },
     { "source": "/go/ncr", "destination": "/blog/net-collection-rate-imaging-centers?utm_source=linkedin&utm_medium=social&utm_campaign=ncr", "statusCode": 302 },
     { "source": "/go/texas-lop", "destination": "/blog/texas-lop-imaging-accounts-receivable?utm_source=linkedin&utm_medium=social&utm_campaign=texas-lop", "statusCode": 302 },
     { "source": "/go/rcm-glossary", "destination": "/blog/imaging-rcm-glossary?utm_source=linkedin&utm_medium=social&utm_campaign=rcm-glossary", "statusCode": 302 },

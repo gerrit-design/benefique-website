@@ -6,6 +6,22 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  'radiology-cost-per-scan-1d-2d-3d': {
+    file: '/content/blogs/radiology-cost-per-scan-1d-2d-3d.md',
+    title: 'The Radiology P&L Lies to You: The 1-D, 2-D, 3-D Way to Read Every Scan',
+    date: '2026-07-15',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'A partner priced his kill line at his $253 fully-loaded cost per scan and nearly cut operating profit in half. Here\'s why the correct cost is still the wrong number for a keep-or-cut call, and the three-dimensional way to read every scan you run.',
+    categories: ['Healthcare Finance', 'Cash Flow Advisory', 'Financial Intelligence'],
+    readTime: '11 min read',
+    featuredImage: '/images/blog/radiology-cost-per-scan-1d-2d-3d.svg',
+    faqs: [
+      { q: 'What is the real cost per scan in an imaging center?', a: 'There isn\'t one number — there are two, and confusing them is expensive. The fully-loaded cost (in this network, $253 per scan) spreads all fixed and variable costs across every scan; it\'s fine for pricing and budgeting at steady volume. The variable cost (about $116 per scan) is what actually leaves when a scan leaves. For any decision that changes volume, the variable number is the real one.' },
+      { q: 'Should I drop insurance payers that pay below my cost per scan?', a: 'Almost never on the basis of fully-loaded cost. If a payer pays $150 and your fully-loaded cost is $253, it looks like a loss — but against the $116 that actually leaves with the scan, that payer hands you $34 toward fixed costs you pay regardless. Drop it and that fixed cost reloads onto every remaining scan, making them look more expensive. Judge payers against the variable floor, then against how fast they pay — not against the loaded average.' },
+      { q: 'What is contribution margin in radiology?', a: 'Contribution margin is what a scan contributes toward your fixed costs and profit after you subtract only the costs that leave when that scan goes away — reads, technologist time, supplies, contrast. If a scan brings in $305 and its variable cost is $116, contribution margin is $189. It\'s the single most important number for keep-or-cut decisions, and most imaging operators have never had it explained by name.' },
+      { q: 'Does high scan volume mean my imaging center is profitable?', a: 'Not on its own. Volume drives revenue, but profitability depends on whether each scan clears its variable floor and how fast it converts to cash. A center packed with high-margin scans that collect in 400 days behind legal liens can be cash-starved while the P&L looks healthy. Read volume through contribution margin and days sales outstanding — not by itself.' }
+    ]
+  },
   'net-collection-rate-imaging-centers': {
     file: '/content/blogs/net-collection-rate-imaging-centers.md',
     title: 'Net Collection Rate for Imaging Centers: Formula & 2026 Benchmarks',

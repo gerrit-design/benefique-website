@@ -4,6 +4,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import BlogPost from './BlogPost';
 import ConciergeSimulator from './components/ConciergeSimulator';
 import BusinessSimulator from './components/BusinessSimulator';
+import RadiologySimulator from './components/RadiologySimulator';
 import { trackFormSubmit, trackEvent } from './analytics';
 import BOOKING_DATA from './booking-slots.json';
 
@@ -1468,6 +1469,7 @@ function Blog() {
   const [activeCategory, setActiveCategory] = React.useState('All');
 
   const posts = [
+    { title: 'The Radiology P&L Lies to You: The 1-D, 2-D, 3-D Way to Read Every Scan', excerpt: 'A partner priced his kill line at his $253 fully-loaded cost per scan and nearly cut operating profit in half. Here\'s why the correct cost is still the wrong number for a keep-or-cut call, and the three-dimensional way to read every scan you run — with a live simulator to prove it.', date: '2026-07-15', slug: 'radiology-cost-per-scan-1d-2d-3d', published: true, category: 'Healthcare Finance', readTime: '11 min read' },
     { title: 'Net Collection Rate for Imaging Centers: Formula & 2026 Benchmarks', excerpt: 'Gross collection rate tells you your chargemaster is inflated. Net collection rate tells you whether your billing operation is leaking money. The NCR formula, a worked imaging example, per-payer-class targets for 2026, and the cohort method PI-heavy centers need — because a monthly NCR on a Letter-of-Protection book is a number that cannot be true.', date: '2026-07-03', slug: 'net-collection-rate-imaging-centers', published: true, category: 'Healthcare Finance', readTime: '12 min read' },
     { title: 'LOP Economics in Texas: Why Imaging A/R Works Differently Than Florida', excerpt: 'Florida routes the first $10,000 of a crash patient\'s imaging through statutory PIP within months. Texas has no mandatory PIP — the same scan rides a Letter of Protection until the lawsuit settles, or gets sold to a funding company at a discount today. Same MRI, completely different business: the A/R, revenue-recognition, and valuation map for Texas imaging operators.', date: '2026-07-03', slug: 'texas-lop-imaging-accounts-receivable', published: true, category: 'Healthcare Finance', readTime: '13 min read' },
     { title: 'The Imaging RCM Glossary: 16 Terms That Decide Whether Your Center Gets Paid', excerpt: 'Imaging revenue cycle has a vocabulary problem: the words your biller, your banker, and your buyer use all sound interchangeable and aren\'t. Sixteen plain-English definitions — chargemaster, NCR, DSO, LOP, PIP, clean claim, TC/PC split — each with the way it shows up in real money at an imaging center.', date: '2026-07-03', slug: 'imaging-rcm-glossary', published: true, category: 'Healthcare Finance', readTime: '14 min read' },
@@ -5176,6 +5178,7 @@ export default function App() {
             <Route path="/services/radiology/intake" element={<RadiologyIntake />} />
             <Route path="/tools/concierge-simulator" element={<ConciergeSimulator />} />
             <Route path="/tools/business-simulator" element={<BusinessSimulator />} />
+            <Route path="/tools/radiology-profit-simulator" element={<RadiologySimulator />} />
           </Routes>
         </main>
         <Footer />
