@@ -23,7 +23,8 @@ const STATIC_PAGES = [
   '/davie-fl', '/broward-county', '/south-florida',
   '/healthcare', '/radiology', '/dental', '/veterinary',
   '/service-businesses', '/professional-services',
-  '/fractional-cfo', '/tax-planning', '/bookkeeping', '/payroll'
+  '/fractional-cfo', '/tax-planning', '/bookkeeping', '/payroll',
+  '/tools/radiology-profit-simulator', '/tools/concierge-simulator', '/tools/business-simulator'
 ];
 
 function getBlogSlugs() {
