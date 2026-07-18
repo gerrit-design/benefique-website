@@ -1,15 +1,9 @@
 {
-  "generated_at": "2026-07-17T18:49:43.536045-04:00",
+  "generated_at": "2026-07-18T18:49:12.852031-04:00",
   "window_start_hour": 12,
   "window_end_hour": 14,
   "slot_minutes": 30,
   "slots": [
-    {
-      "date": "Monday, July 20",
-      "day": "mon",
-      "iso": "2026-07-20T12:00:00-04:00",
-      "display": "12:00 PM ET"
-    },
     {
       "date": "Monday, July 20",
       "day": "mon",
