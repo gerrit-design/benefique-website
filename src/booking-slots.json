@@ -1,33 +1,9 @@
 {
-  "generated_at": "2026-08-12T18:39:18.635027-04:00",
+  "generated_at": "2026-08-13T18:39:54.265586-04:00",
   "window_start_hour": 12,
   "window_end_hour": 14,
   "slot_minutes": 30,
   "slots": [
-    {
-      "date": "Thursday, August 13",
-      "day": "thu",
-      "iso": "2026-08-13T12:00:00-04:00",
-      "display": "12:00 PM ET"
-    },
-    {
-      "date": "Thursday, August 13",
-      "day": "thu",
-      "iso": "2026-08-13T12:30:00-04:00",
-      "display": "12:30 PM ET"
-    },
-    {
-      "date": "Thursday, August 13",
-      "day": "thu",
-      "iso": "2026-08-13T13:00:00-04:00",
-      "display": "1:00 PM ET"
-    },
-    {
-      "date": "Thursday, August 13",
-      "day": "thu",
-      "iso": "2026-08-13T13:30:00-04:00",
-      "display": "1:30 PM ET"
-    },
     {
       "date": "Friday, August 14",
       "day": "fri",
@@ -44,6 +20,30 @@
       "date": "Friday, August 14",
       "day": "fri",
       "iso": "2026-08-14T13:30:00-04:00",
+      "display": "1:30 PM ET"
+    },
+    {
+      "date": "Monday, August 17",
+      "day": "mon",
+      "iso": "2026-08-17T12:00:00-04:00",
+      "display": "12:00 PM ET"
+    },
+    {
+      "date": "Monday, August 17",
+      "day": "mon",
+      "iso": "2026-08-17T12:30:00-04:00",
+      "display": "12:30 PM ET"
+    },
+    {
+      "date": "Monday, August 17",
+      "day": "mon",
+      "iso": "2026-08-17T13:00:00-04:00",
+      "display": "1:00 PM ET"
+    },
+    {
+      "date": "Monday, August 17",
+      "day": "mon",
+      "iso": "2026-08-17T13:30:00-04:00",
       "display": "1:30 PM ET"
     }
   ]
