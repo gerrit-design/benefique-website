@@ -6,6 +6,23 @@ import remarkGfm from 'remark-gfm';
 
 // Blog post metadata and content mapping
 const blogPosts = {
+  'revenue-per-available-magnet-hour': {
+    file: '/content/blogs/revenue-per-available-magnet-hour.md',
+    title: 'The Magnet-Hour: What an Imaging Slot Is Actually Worth',
+    date: '2026-08-29',
+    author: 'Gerrit Disbergen, EA',
+    excerpt: 'We built one imaging network a payer ranking and told them to protect their best-paying slots. Then the protected slots lost more bookings than the ones we had deprioritized — 15% against 10%. Not because the ranking was wrong. Because we had ranked on price, and a slot is only worth what shows up.',
+    categories: ['Healthcare Finance', 'Cash Flow Advisory'],
+    readTime: '12 min read',
+    featuredImage: '/images/blog/revenue-per-available-magnet-hour.svg',
+    faqs: [
+      { q: 'What is revenue per available magnet-hour?', a: 'It is total collections divided by every hour your scanner was staffed and open — including the hours that produced no study. It is the imaging equivalent of an airline’s revenue per available seat mile. It differs from revenue per completed scan, which only counts the hours that worked.' },
+      { q: 'Should I stop scheduling my lowest-paying payers?', a: 'Only if that hour is genuinely scarce. On a center with open capacity, a low-paying study still contributes above its variable cost, and refusing it leaves you with an idle machine and the same fixed costs. On a full center, the same booking displaces a better one. Measure occupancy per location before you touch the schedule.' },
+      { q: 'My centers run at 85-90% utilization. Is capacity my constraint?', a: 'Not necessarily. One center in this analysis ran at 88% and its binding constraint was referral volume, not scanner time. High utilization with a starved referral base looks identical on a dashboard to high utilization with excess demand, and the correct action is opposite in each case.' },
+      { q: 'Why does the show rate matter more than the contracted rate?', a: 'It does not matter more — it matters as well, and it is almost never measured. A booking is worth the rate multiplied by the probability the patient arrives. A rail paying $403 that shows 81% of the time is worth roughly $327 per scan in expectation; ignoring the second term overstates your best payers and understates your most reliable ones.' },
+      { q: 'Can I apply this if I only have one imaging center?', a: 'Yes, and it is simpler. The center-versus-hour question disappears and you are left with one book, one capacity curve, and one set of show rates. The same four measurements — collections per staffed hour, show rate by rail and hour, a genuine test of what is binding, and a check on your denominator — work identically on a single location.' }
+    ]
+  },
   'radiology-cost-per-scan-1d-2d-3d': {
     file: '/content/blogs/radiology-cost-per-scan-1d-2d-3d.md',
     title: 'The Radiology P&L Lies to You: The 1-D, 2-D, 3-D Way to Read Every Scan',

@@ -6,7 +6,7 @@
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <text x="80" y="120" font-family="Georgia, serif" font-size="30" fill="#F97316" font-weight="700">BENEFIQUE INTELLIGENCE</text>
+  <text x="80" y="120" font-family="Georgia, serif" font-size="30" fill="#F97316" font-weight="700">BENEFIQUE INTELLIGENCE<tspan font-size="16" dy="-10">&#8482;</tspan></text>
   <text x="80" y="210" font-family="Georgia, serif" font-size="58" fill="#ffffff" font-weight="700">The radiology P&amp;L</text>
   <text x="80" y="278" font-family="Georgia, serif" font-size="58" fill="#ffffff" font-weight="700">lies to you.</text>
   <text x="80" y="340" font-family="Arial, sans-serif" font-size="26" fill="#9DB2CE">The 1-D / 2-D / 3-D way to read every scan</text>

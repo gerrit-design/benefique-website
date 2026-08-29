@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="The payers you protect are the ones who do not show up. Revenue per completed slot $421, revenue per available slot $372, and day-of loss of 15 percent in the protected tier against 10 percent in the buffered tier.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B365D"/>
+      <stop offset="1" stop-color="#0F1F38"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <text x="80" y="120" font-family="Georgia, serif" font-size="30" fill="#F97316" font-weight="700">BENEFIQUE INTELLIGENCE<tspan font-size="16" dy="-10">&#8482;</tspan></text>
+
+  <text x="80" y="210" font-family="Georgia, serif" font-size="58" fill="#ffffff" font-weight="700">The payers you protect</text>
+  <text x="80" y="278" font-family="Georgia, serif" font-size="58" fill="#ffffff" font-weight="700">are the ones who don&#8217;t show up.</text>
+  <text x="80" y="340" font-family="Arial, sans-serif" font-size="26" fill="#9DB2CE">Revenue per available magnet-hour, across fourteen imaging centres</text>
+
+  <!-- three stat tiles: 326 wide, 31px gutters, 80px margins -->
+  <g font-family="Arial, sans-serif">
+    <rect x="80" y="400" width="326" height="150" rx="12" fill="#ffffff" opacity="0.06"/>
+    <text x="110" y="462" font-size="44" fill="#ffffff" font-weight="700">$421</text>
+    <text x="110" y="500" font-size="21" fill="#ffffff">Per completed slot</text>
+    <text x="110" y="528" font-size="17" fill="#9DB2CE">the number you track</text>
+
+    <rect x="437" y="400" width="326" height="150" rx="12" fill="#ffffff" opacity="0.06"/>
+    <text x="467" y="462" font-size="44" fill="#F97316" font-weight="700">$372</text>
+    <text x="467" y="500" font-size="21" fill="#ffffff">Per available slot</text>
+    <text x="467" y="528" font-size="17" fill="#9DB2CE">the number that pays rent</text>
+
+    <rect x="794" y="400" width="326" height="150" rx="12" fill="#ffffff" opacity="0.06"/>
+    <text x="824" y="462" font-size="40" fill="#F97316" font-weight="700">15% vs 10%</text>
+    <text x="824" y="500" font-size="21" fill="#ffffff">Protected vs buffered</text>
+    <text x="824" y="528" font-size="17" fill="#9DB2CE">day-of loss, inverted</text>
+  </g>
+</svg>

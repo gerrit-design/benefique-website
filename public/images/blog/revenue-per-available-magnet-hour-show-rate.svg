@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-label="Show rate by payer rail: government 93.6 percent, commercial carrier 90.2 percent, attorney-referred 81.2 percent, brokered networks 77.4 percent. Bars measured from a zero baseline.">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B365D"/>
+      <stop offset="1" stop-color="#0F1F38"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#bg2)"/>
+
+  <text x="80" y="70" font-family="Georgia, serif" font-size="34" fill="#ffffff" font-weight="700">Show rate by payer rail</text>
+  <text x="80" y="104" font-family="Arial, sans-serif" font-size="19" fill="#9DB2CE">Share of booked studies that arrived. Scale runs from zero &#8212; not truncated.</text>
+
+  <!-- zero baseline -->
+  <line x1="380" y1="140" x2="380" y2="410" stroke="#9DB2CE" stroke-width="2" opacity="0.45"/>
+  <text x="380" y="438" font-family="Arial, sans-serif" font-size="15" fill="#9DB2CE" text-anchor="middle">0%</text>
+  <text x="1120" y="438" font-family="Arial, sans-serif" font-size="15" fill="#9DB2CE" text-anchor="middle">100%</text>
+
+  <!-- bars: x0=380, full width 740 = 100%. 4px rounded data-ends, 2px gap via 46px pitch on 44px bars -->
+  <g font-family="Arial, sans-serif">
+    <text x="360" y="172" font-size="20" fill="#ffffff" text-anchor="end">Government</text>
+    <rect x="380" y="150" width="693" height="44" rx="4" fill="#F97316"/>
+    <text x="1090" y="179" font-size="21" fill="#ffffff" font-weight="700" text-anchor="end">93.6%</text>
+
+    <text x="360" y="238" font-size="20" fill="#ffffff" text-anchor="end">Commercial carrier</text>
+    <rect x="380" y="216" width="668" height="44" rx="4" fill="#F97316" opacity="0.85"/>
+    <text x="1065" y="245" font-size="21" fill="#ffffff" font-weight="700" text-anchor="end">90.2%</text>
+
+    <text x="360" y="304" font-size="20" fill="#ffffff" text-anchor="end">Attorney-referred</text>
+    <rect x="380" y="282" width="601" height="44" rx="4" fill="#F97316" opacity="0.70"/>
+    <text x="998" y="311" font-size="21" fill="#ffffff" font-weight="700" text-anchor="end">81.2%</text>
+
+    <text x="360" y="370" font-size="20" fill="#ffffff" text-anchor="end">Brokered networks</text>
+    <rect x="380" y="348" width="573" height="44" rx="4" fill="#F97316" opacity="0.58"/>
+    <text x="970" y="377" font-size="21" fill="#ffffff" font-weight="700" text-anchor="end">77.4%</text>
+  </g>
+
+  <text x="80" y="478" font-family="Arial, sans-serif" font-size="16" fill="#9DB2CE">A rail paying more per scan is not worth more per slot unless it arrives.</text>
+</svg>
