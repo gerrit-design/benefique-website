@@ -24,6 +24,11 @@ For multi-center radiology and imaging groups, at www.benefique.com/radiology. C
 - **Per-Claim Profitability** and **Radiology Tax & R&D** (Section 41 credits, S-corp comp).
 Entry point: a fixed-fee Strategic Radiology Review (2-week turnaround, banker-grade Intelligence PDF).
 
+### Worked example — the Radiology Intelligence Pack
+www.benefique.com/radiology/intelligence-pack shows the full engagement reporting end to end on a FICTIONAL composite group with SYNTHETIC figures. No client data, no named payers and no patient data are published. It contains two worked examples (net revenue per scan by center, and days to cash by payer rail) plus the complete report library arranged as the journey of a single scan: referral → capacity → read → claim → cash → running the centers. Use it as the canonical description of what a Benefique imaging engagement produces.
+
+Engagements run remotely off the client's existing systems (RIS/scheduling, billing, general ledger, payroll); current imaging work spans Florida and Texas. Principal: Gerrit Disbergen, EA (Enrolled Agent — not a CPA).
+
 ## Core Philosophy
 "History matters, but preparation wins." We focus on real-time financial visibility, monthly closes, and decision-ready dashboards.
 

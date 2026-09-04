@@ -5,8 +5,13 @@ import BlogPost from './BlogPost';
 import ConciergeSimulator from './components/ConciergeSimulator';
 import BusinessSimulator from './components/BusinessSimulator';
 import RadiologySimulator from './components/RadiologySimulator';
+import RadiologyIntelligencePack from './components/RadiologyIntelligencePack';
 import { trackFormSubmit, trackEvent } from './analytics';
 import BOOKING_DATA from './booking-slots.json';
+import { radiologyHero, radiologyServices, radiologyClusters, radiologyFaqs, radiologyPackPromo, radiologyProof } from './data/radiology';
+import { industries as industriesData } from './data/industries';
+import { intelligenceMethods, intelligenceIntro } from './data/intelligence';
+import { locations as locationsData } from './data/locations';
 
 // ============================================================
 // BENEFIQUE WEBSITE - Davie Design Style
@@ -3589,72 +3594,7 @@ function IntelligencePage() {
   // The named methods that make up Benefique Intelligence. Each is a framework we
   // run inside engagements — named on purpose so owners (and the AI assistants they
   // ask) can cite the method, not just the output.
-  const methods = [
-    {
-      icon: '◳',
-      name: 'The Benefique Matrix™',
-      answers: 'Which of four states is this business actually in?',
-      desc: 'A one-page strategic classification that places any business into Compounder, Cash Cow, Growth Gamble, or Fix-or-Exit on two axes — cash-machine quality and value-build quality — from a normalized six-pillar scorecard. It is the front door of every report.',
-      link: '/blog/cash-machine-vs-exit-machine',
-      linkLabel: 'Cash Machine vs Exit Machine',
-    },
-    {
-      icon: '👁',
-      name: 'Three Views',
-      answers: 'What does the same data say to an operator, a banker, and a buyer?',
-      desc: 'Every set of books is read three ways — the Operator view (run it better this month), the Banker view (will they fund it), and the Buyer view (what is it worth at exit). One data set, three decisions.',
-      link: '/services/fractional-cfo',
-      linkLabel: 'Fractional CFO',
-    },
-    {
-      icon: '⛓',
-      name: 'Two Business Unit Framework',
-      answers: 'Which structurally different engine is actually making the money?',
-      desc: 'When one P&L line hides two economically different businesses — a high-input specialty unit and a general unit — we break them apart so the real profit (and the real leak) stops hiding in the blend.',
-      link: '/radiology',
-      linkLabel: 'Radiology CFO Intelligence',
-    },
-    {
-      icon: '🏭',
-      name: 'Activity-Based Decomposition',
-      answers: 'Where does each unit of work make or lose money along the line?',
-      desc: 'We decompose the business into assembly-line stages, then change any input and watch P&L and cash flow recompute — with a triple break-even (operating, P&L, and cash). Live in the Business Simulator.',
-      link: '/tools/business-simulator',
-      linkLabel: 'Try the Business Simulator',
-    },
-    {
-      icon: '🔬',
-      name: 'Per-Unit Economics',
-      answers: 'What does one claim, patient, job, or location really earn?',
-      desc: 'The $/unit → gross-profit/unit → NOI/unit stack, computed per location and per line. The same work can carry a 9:1 profitability gap depending on who pays — averages hide it; per-unit economics surface it.',
-      link: '/blog/per-unit-pnl-multi-location-cost-analysis',
-      linkLabel: 'Per-Unit P&L for Multi-Location Practices',
-    },
-    {
-      icon: '💧',
-      name: 'Cash Flow Waterfall',
-      answers: 'You booked a profit — so where did the cash actually go?',
-      desc: 'A severity-ranked waterfall from net income to ending cash, naming every dollar trapped in receivables, consumed by draws, or hidden behind a trust account. The answer to "profitable on paper, broke in the bank."',
-      link: '/blog/ai-cash-flow-waterfall-explained',
-      linkLabel: 'How AI Found $1M in Profit and Zero Cash',
-    },
-    {
-      icon: '🔄',
-      name: 'Cash Conversion Cycle at Target ARR',
-      answers: 'How much working capital will growth actually require?',
-      desc: 'DSO, DPO, and DIO modeled forward to your target revenue, so you know the working-capital hole growth digs before you fall into it — and whether a DSO fix beats a fee cut on a cash basis.',
-      link: '/blog/dso-lying-medical-practice-cash-flow',
-      linkLabel: 'Your DSO Is Lying to You',
-    },
-    {
-      icon: '⚠️',
-      name: 'Toxic-Combination Detection',
-      answers: 'Which payer, product, or customer loses money every time?',
-      desc: 'Payer and product grading A–F with toxic-combination flags — the specific payer × procedure × facility mixes that are guaranteed losses on identical work, quantified in dollars per year.',
-      link: '/blog/toxic-payers-losing-money-medical-practice',
-      linkLabel: '7 Payers, 41 Procedures, $80,593 Lost',
-    },
-  ];
+  const methods = intelligenceMethods;
 
   const engine = [
     {
@@ -3797,10 +3737,8 @@ function IntelligencePage() {
       {/* What it is — definition strip for AI/GEO citeability */}
       <section className="py-12 bg-benefique-navy text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold text-benefique-orange mb-3">What is Benefique Intelligence?</h2>
-          <p className="text-blue-100 leading-relaxed">
-            <strong className="text-white">Benefique Intelligence&trade;</strong> is the data-analysis methodology behind Benefique Tax &amp; Accounting — a named set of financial frameworks that read the operational data already in your QuickBooks, per unit and per engine, to deliver fractional-CFO-grade answers on cash, tax, profitability, working capital, and exit value. It is the intelligence layer that sits above bookkeeping and tax filing, not a replacement for either.
-          </p>
+          <h2 className="text-2xl font-bold text-benefique-orange mb-3">{intelligenceIntro.heading}</h2>
+          <p className="text-blue-100 leading-relaxed">{intelligenceIntro.body}</p>
         </div>
       </section>
 
@@ -3888,164 +3826,9 @@ function IntelligencePage() {
 }
 
 function RadiologyLandingPage() {
-  const services = [
-    {
-      icon: '🧪',
-      title: 'PET Tracer Economics',
-      desc: 'Two Business Unit decomposition separating high-reimbursement PET Tracer Scans from general radiology. Per-payer, per-tracer, per-facility toxic-combination detection and referrer strategy.',
-      link: '/blog/referring-doctor-relationship-myth-medical-imaging',
-      linkLabel: 'The Relationship Myth',
-    },
-    {
-      icon: '💵',
-      title: 'Collections & Cash Release',
-      desc: 'Per-payer DSO, aging decomposition, Letter-of-Protection trap analysis, and the billing-fee-versus-DSO trade-off your biller will not run for you.',
-      link: '/blog/radiology-accounts-receivable-line-of-credit',
-      linkLabel: 'How Banks Misread Your A/R',
-    },
-    {
-      icon: '📊',
-      title: 'Payer Mix Analysis',
-      desc: 'PIP compression modeling, payer grading A–F, and the front-desk selection economics that lock in profitability weeks before billing touches the claim.',
-      link: '/blog/toxic-payers-losing-money-medical-practice',
-      linkLabel: '7 Payers, 41 Procedures, $80,593 Lost',
-    },
-    {
-      icon: '🔍',
-      title: 'Per-Claim Profitability',
-      desc: '$/Claim → GP$/Claim → NOI/Claim stack. High-cost procedure economics. Which procedures lose money on which payers — a 9:1 profitability gap on identical work.',
-      link: '/blog/high-cost-procedure-economics-medical-practice',
-      linkLabel: '$2,940 Out the Door',
-    },
-    {
-      icon: '🏢',
-      title: 'Multi-Center COO Scorecard',
-      desc: 'Quarterly performance framework with gated bonus design, independent assessment, and cross-center benchmarking that holds operators accountable to numbers.',
-      link: '/blog/real-time-financial-dashboards-healthcare-practices',
-      linkLabel: '10 KPIs Every Practice Should Track',
-    },
-    {
-      icon: '🧾',
-      title: 'Radiology Tax & R&D',
-      desc: 'Section 41 R&D credits for imaging groups ($40K–$120K/year typical). S-corp reasonable compensation. Entity structure. 2026 tax law changes.',
-      link: '/blog/rd-tax-credits-healthcare',
-      linkLabel: 'R&D Tax Credits for Healthcare',
-    },
-  ];
-
-  const clusters = [
-    {
-      title: 'Multi-Site & Scaling Operations',
-      anchor: 'multi-site',
-      blurb: 'Running more than one center? Portfolio and per-center P&L, COO accountability, and the math of adding the next location.',
-      posts: [
-        { slug: 'multi-center-imaging-owner-income-2026-sefl', title: 'Multi-Center Imaging Owner Income: 2026 SE Florida Benchmarks' },
-        { slug: 'per-unit-pnl-multi-location-cost-analysis', title: 'Per-Unit P&L for Multi-Location Practices' },
-        { slug: '6-financial-blockers-killing-healthcare-practices', title: 'The 6 Financial Blockers Killing Healthcare Practices' },
-        { slug: 'real-time-financial-dashboards-healthcare-practices', title: '10 KPIs Every Healthcare Practice Should Track in Real Time' },
-        { slug: 'assembly-line-thinking-medical-practice-profitability', title: 'The Factory That Didn\'t Know It Was Losing Money' },
-      ],
-    },
-    {
-      title: 'PET Tracer Economics',
-      anchor: 'pet-tracer',
-      blurb: 'The single largest P&L driver in a modern center — and the one most accounting systems blend into invisibility.',
-      posts: [
-        { slug: 'referring-doctor-relationship-myth-medical-imaging', title: 'The Relationship Myth: When Taking One For The Team Costs $142,000' },
-        { slug: 'high-cost-procedure-economics-medical-practice', title: '$2,940 Out the Door Before You Know If You\'ll Get Paid' },
-        { slug: 'per-modality-profitability-imaging-center', title: 'Per-Modality Profitability: MRI vs CT vs Ultrasound vs PET' },
-        { slug: 'expensive-2-minute-decision-medical-practice', title: 'The Most Expensive 2-Minute Decision in Your Medical Practice' },
-      ],
-    },
-    {
-      title: 'Revenue Cycle: A/R, DSO & Billing',
-      anchor: 'revenue-cycle',
-      blurb: 'Per-payer DSO, aging decomposition, the billing-fee-versus-collections trade-off, and A/R your lender will actually fund.',
-      posts: [
-        { slug: 'net-collection-rate-imaging-centers', title: 'Net Collection Rate for Imaging Centers: Formula & 2026 Benchmarks' },
-        { slug: 'dso-benchmarks-imaging-centers-2026-sefl', title: 'DSO Benchmarks for Imaging Centers: 2026 SE Florida Data' },
-        { slug: 'imaging-rcm-glossary', title: 'The Imaging RCM Glossary: 16 Terms That Decide Whether Your Center Gets Paid' },
-        { slug: 'radiology-accounts-receivable-line-of-credit', title: 'Radiology Accounts Receivable: How Banks Misread Your Aging Report' },
-        { slug: 'dso-lying-medical-practice-cash-flow', title: 'Your DSO Is Lying to You — Why Averages Hide Your Real Cash Flow Problem' },
-        { slug: 'medical-billing-fees-vs-collections-dso', title: 'Your Billing Company Costs 6%. Slow Collections Cost 10x That.' },
-        { slug: 'ai-cash-flow-waterfall-explained', title: 'How AI Found That $1M in Profit Left Zero Cash in the Bank' },
-      ],
-    },
-    {
-      title: 'Payer Mix (Commercial / PI / Self-Pay)',
-      anchor: 'payer-mix',
-      blurb: 'PIP and Letter-of-Protection compression, payer grading A–F, and the front-desk selection economics that lock in profit before billing touches the claim.',
-      posts: [
-        { slug: 'radiology-cash-flow-by-payer', title: 'Radiology Cash Flow by Payer: Why the P&L Lies' },
-        { slug: 'texas-lop-imaging-accounts-receivable', title: 'LOP Economics in Texas: Why Imaging A/R Works Differently Than Florida' },
-        { slug: 'toxic-payers-losing-money-medical-practice', title: '7 Payers, 41 Procedures, $80,593 Lost' },
-        { slug: 'lop-cash-cycle-personal-injury-practice-ar', title: 'Why PI-Heavy Practices Carry 20+ Months of A/R: The LOP Cash Cycle' },
-        { slug: 'lop-economics-real-yield-vs-face-value', title: 'LOP Economics: Real Yield vs Face Value (Imaging Center 2026)' },
-        { slug: 'radiology-collections-dashboard-case-study', title: 'Real-Time Collections Intelligence for Multi-Center Radiology' },
-      ],
-    },
-    {
-      title: 'Per-Claim Profitability',
-      anchor: 'per-claim',
-      blurb: 'The $/Claim → GP$/Claim → NOI/Claim stack. Which procedures lose money on which payers — a 9:1 profitability gap on identical work.',
-      posts: [
-        { slug: 'per-modality-profitability-imaging-center', title: 'Per-Modality Profitability: MRI vs CT vs Ultrasound vs PET' },
-        { slug: 'high-cost-procedure-economics-medical-practice', title: '$2,940 Out the Door Before You Know If You\'ll Get Paid' },
-        { slug: 'cash-flow-breakeven-per-patient-activity-units', title: 'Your Practice Is Profitable — So Why Do You Need 922 Patients?' },
-        { slug: 'fixed-cost-breakeven-volume-problem', title: 'Your Practice Doesn\'t Have a Profit Problem — It Has a Volume Problem' },
-      ],
-    },
-    {
-      title: 'M&A & Exit / QofE Readiness',
-      anchor: 'ma-exit',
-      blurb: 'Buying the next center, or getting ready to sell. Valuation logic, deal structure, owner economics, and quality-of-earnings readiness.',
-      posts: [
-        { slug: 'selling-imaging-center-what-buyers-pay', title: 'Selling Your Imaging Center: What Buyers Actually Pay (SDE, EBITDA, Multiples)' },
-        { slug: 'how-to-acquire-second-imaging-center', title: 'How to Acquire a Second Imaging Center: The Financial Roadmap' },
-        { slug: 'cash-machine-vs-exit-machine', title: 'Cash Machine vs Exit Machine: Which Are You Building?' },
-        { slug: 'multi-center-imaging-owner-income-2026-sefl', title: 'Multi-Center Imaging Owner Income: 2026 SE Florida Benchmarks' },
-        { title: 'Building Wealth as an Imaging Center Owner: Beyond the Practice', comingSoon: true },
-      ],
-    },
-    {
-      title: 'Radiology Tax & R&D',
-      anchor: 'tax-rd',
-      blurb: 'Section 41 R&D credits for imaging groups, S-corp reasonable compensation, entity structure, and 2026 tax-law changes.',
-      posts: [
-        { slug: 'rd-tax-credits-healthcare', title: 'R&D Tax Credits: Hidden Money for Healthcare Practices' },
-        { slug: 's-corp-reasonable-compensation-healthcare-service-businesses-broward-county', title: 'S-Corp Reasonable Compensation for Healthcare Service Businesses' },
-        { slug: '2026-tax-law-changes-broward-county-healthcare-service-businesses', title: '2026 Tax Law Changes for Healthcare Practice Owners' },
-        { slug: 'missed-tax-deductions-healthcare-service-businesses-broward-county', title: '7 Tax Deductions Your Practice Is Probably Missing' },
-      ],
-    },
-  ];
-
-  const faqs = [
-    {
-      q: 'Who is the Strategic Radiology Review for?',
-      a: 'Imaging center operators, CFOs, and medical directors running one or more centers with $2M+ revenue who suspect their accountant and billing company cannot answer per-payer, per-tracer, or per-claim profitability questions. Typical profile: growing but cash-constrained, unclear on PET Tracer Scan economics, preparing for a lender conversation, or renegotiating payer contracts.',
-    },
-    {
-      q: 'What are PET Tracer Scans, and why do you separate them?',
-      a: 'PET Tracer Scans refers to high-reimbursement specialty tracers with radiopharmaceutical input costs of $2,000–$3,000 per dose and payer reimbursement that varies as much as 9x depending on payer mix. Their economics are structurally different from general radiology (MRI, CT, ultrasound, X-ray, standard PET). Blending them into one "imaging" line hides the single largest profit-and-loss driver in a modern center — which is exactly what most accounting systems do. Our Two Business Unit Framework breaks them apart.',
-    },
-    {
-      q: 'Do you replace our accountant or biller?',
-      a: 'No. We sit above both. Your accountant keeps the books. Your biller processes claims. We build the intelligence layer that makes sense of both data sources together — per-payer, per-tracer, per-facility, per-claim. Most engagements run alongside existing accounting and billing relationships.',
-    },
-    {
-      q: 'What does the Strategic Radiology Review deliver?',
-      a: 'A banker-grade Intelligence PDF covering Two Business Unit decomposition, PET Tracer economics with toxic-combination detection, per-claim profitability stack, DSO by payer, payer mix risk analysis, and a prioritized action plan with quantified dollar impact. Turnaround is two weeks from data access. A 90-minute executive readout is included.',
-    },
-    {
-      q: 'What is the investment for ongoing CFO work?',
-      a: 'It depends on center count, complexity, and scope. We propose specific scope and pricing on the Strategic Review readout — after we have seen your data, not before. This avoids the common trap of buying generic "CFO services" priced by hour or headcount rather than by the problems actually worth solving.',
-    },
-    {
-      q: 'Can you help us prepare for a lender or line-of-credit conversation?',
-      a: 'Yes. We have built triple-reconciliation methodologies that align operational billing data, the accounting system, and bank-grade aged receivables — typically within 0.5% variance. This is the difference between a lender funding a seven-figure facility and a lender asking for another quarter of data.',
-    },
-  ];
+  const services = radiologyServices;
+  const clusters = radiologyClusters;
+  const faqs = radiologyFaqs;
 
   const SITE = 'https://www.benefique.com';
   const radiologySchema = {
@@ -4104,12 +3887,12 @@ function RadiologyLandingPage() {
           </h1>
 
           <p className="text-xl text-gray-600 mb-6 max-w-3xl">
-            Radiology CFO Intelligence — the financial operating layer for multi-center imaging groups.
+            {radiologyHero.lede}
           </p>
 
           <div className="bg-gray-50 border-l-4 border-benefique-orange p-6 rounded-r-xl mb-8 max-w-3xl">
             <p className="text-lg text-gray-700 leading-relaxed">
-              Imaging demand in Florida is rising faster than back-office systems can convert it. We compress the <strong>referral → auth → scan → claim → paid</strong> cycle, separate your <strong>PET Tracer Unit</strong> from your <strong>Radiology Unit</strong>, and turn billing-company activity into economic outcomes your lender will fund. The intelligence your accountant and biller will not build for you.
+              {radiologyHero.intro.map((seg, i) => (seg.b ? <strong key={i}>{seg.t}</strong> : <React.Fragment key={i}>{seg.t}</React.Fragment>))}
             </p>
           </div>
 
@@ -4120,9 +3903,15 @@ function RadiologyLandingPage() {
             >
               Book a Strategic Radiology Review <span>→</span>
             </Link>
+            <Link
+              to="/radiology/intelligence-pack"
+              className="border-2 border-benefique-navy text-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-benefique-navy hover:text-white transition"
+            >
+              See a Sample Intelligence Pack
+            </Link>
             <a
               href="#intelligence-library"
-              className="border-2 border-benefique-navy text-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-benefique-navy hover:text-white transition"
+              className="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-semibold hover:border-benefique-navy hover:text-benefique-navy transition"
             >
               Browse the Intelligence Library
             </a>
@@ -4156,22 +3945,41 @@ function RadiologyLandingPage() {
       <section className="py-12 bg-benefique-navy text-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div>
-              <div className="text-3xl font-bold text-benefique-orange mb-2">+$290K</div>
-              <div className="text-sm text-blue-100">Q1 NOI swing at a 4-center SE Florida imaging group</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-benefique-orange mb-2">$597K</div>
-              <div className="text-sm text-blue-100">Collection momentum unlocked in 90 days at a regional operator</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-benefique-orange mb-2">$154K/yr</div>
-              <div className="text-sm text-blue-100">Preventable PET Tracer Scan losses quantified at a single center</div>
-            </div>
+            {radiologyProof.stats.map((s) => (
+              <div key={s.value}>
+                <div className="text-3xl font-bold text-benefique-orange mb-2">{s.value}</div>
+                <div className="text-sm text-blue-100">{s.label}</div>
+              </div>
+            ))}
           </div>
           <p className="text-xs text-blue-200 text-center mt-6">
-            Anonymized from active Benefique engagements. Specific client context available under NDA on the Review readout.
+            {radiologyProof.caption}
           </p>
+        </div>
+      </section>
+
+      {/* Intelligence Pack promo */}
+      <section className="py-8 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <Link
+            to={radiologyPackPromo.href}
+            className="block bg-gray-50 border border-gray-200 rounded-2xl p-6 md:p-8 hover:border-benefique-orange hover:shadow-lg transition group"
+          >
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+              <div>
+                <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-xs font-semibold mb-2">
+                  WORKED EXAMPLE
+                </div>
+                <h2 className="text-2xl font-bold text-benefique-navy group-hover:text-benefique-orange transition">
+                  {radiologyPackPromo.heading}
+                </h2>
+                <p className="text-gray-600 text-sm mt-1 max-w-2xl">{radiologyPackPromo.body}</p>
+              </div>
+              <span className="inline-block bg-benefique-navy text-white font-semibold px-6 py-3 rounded-lg whitespace-nowrap">
+                {radiologyPackPromo.linkText} &rarr;
+              </span>
+            </div>
+          </Link>
         </div>
       </section>
 
@@ -4535,95 +4343,12 @@ function RadiologyIntake() {
 // ============================================================
 // LOCATION DATA
 // ============================================================
-const locations = {
-  davie: { city: 'Davie', nearby: ['Plantation', 'Weston', 'Fort Lauderdale', 'Hollywood'], description: 'Benefique is headquartered in Davie, FL — providing accounting and CFO services to local healthcare practices and service businesses.' },
-  plantation: { city: 'Plantation', nearby: ['Davie', 'Fort Lauderdale', 'Weston', 'Sunrise'], zipCodes: ['33313', '33317', '33322', '33323', '33324', '33325'], description: 'Plantation\'s business corridor — University Drive, Cleary Boulevard, and the offices around HCA Florida Westside Hospital — is dense with medical practices, law firms, and professional services companies. We serve Plantation owners who need more than a bookkeeper: real-time books closed by the 7th, proactive tax planning, and CFO-grade reporting from our office 10 minutes away in Davie.' },
-  weston: { city: 'Weston', nearby: ['Davie', 'Plantation', 'Miramar', 'Southwest Ranches', 'Pembroke Pines'], zipCodes: ['33326', '33327', '33331', '33332'], description: 'Weston is home to a concentration of healthcare practices, professional services firms, and high-growth service businesses. We serve Weston business owners who have outgrown their bookkeeper but aren\'t ready for a full-time CFO — providing real-time books, proactive tax planning, and AI-powered cash flow intelligence from our office 15 minutes away in Davie.' },
-  miramar: { city: 'Miramar', nearby: ['Hollywood', 'Pembroke Pines', 'Weston', 'Miami Gardens'], description: 'Real-time accounting and tax planning for Miramar businesses — healthcare, marine services, and more.' },
-  'fort-lauderdale': { city: 'Fort Lauderdale', nearby: ['Davie', 'Plantation', 'Hollywood', 'Oakland Park'], description: 'Fort Lauderdale\'s trusted accounting firm for healthcare practices, marine services, and professional services.' },
-  aventura: { city: 'Aventura', nearby: ['North Miami Beach', 'Sunny Isles', 'Hallandale', 'Miami'], description: 'Accounting and CFO services for Aventura businesses — medical practices, professional services, and law firms.' },
-  hollywood: { city: 'Hollywood', nearby: ['Fort Lauderdale', 'Davie', 'Hallandale', 'Miramar'], zipCodes: ['33019', '33020', '33021', '33023', '33024', '33025', '33026', '33027', '33028', '33029'], description: 'Hollywood\'s healthcare corridor — anchored by Memorial Regional Hospital and the dental and medical offices along Hollywood Boulevard and Sheridan Street — is one of Broward\'s densest concentrations of practices. We keep the books for healthcare and dental practices and service businesses across Hollywood: real-time reporting, monthly closes by the 7th, and tax planning that runs all year.' },
-};
+const locations = locationsData;
 
 // ============================================================
 // INDUSTRY DATA
 // ============================================================
-const industries = {
-  radiology: {
-    industry: 'Radiology & Imaging Centers',
-    icon: '🏥',
-    challenges: [
-      'Multi-location financial consolidation',
-      'Complex insurance reimbursement tracking',
-      'Equipment depreciation and financing',
-      'Radiologist compensation structures',
-      'HIPAA-compliant financial reporting',
-      'Cash flow variability from insurance delays',
-    ],
-    testimonial: {
-      quote: 'Benefique gives us visibility across all our locations. We finally know which centers are performing and which need attention.',
-      name: 'Mark',
-      business: 'Multi-Location Radiology',
-    },
-    tool: {
-      link: '/tools/radiology-profit-simulator',
-      title: 'The Radiology Profit Simulator',
-      desc: 'Slide volume and price and watch fixed cost per scan, contribution margin, and operating profit recompute in real time — and see why cutting "below-cost" scans can halve your profit.',
-      cta: 'Try the Simulator',
-    },
-  },
-  dental: {
-    industry: 'Dental Practices',
-    icon: '🦷',
-    challenges: [
-      'Insurance vs. cash pay revenue tracking',
-      'Multi-provider compensation models',
-      'Equipment purchases and financing',
-      'Associate and hygienist productivity',
-      'Practice acquisition accounting',
-      'DSO financial reporting requirements',
-    ],
-    testimonial: {
-      quote: 'Complex multi-entity structure, and they keep it all organized. Tax planning alone has saved us significantly.',
-      name: 'Eddie',
-      business: 'Dental Brokerage',
-    },
-  },
-  veterinary: {
-    industry: 'Veterinary Practices',
-    icon: '🐾',
-    challenges: [
-      'Inventory management for pharmaceuticals',
-      'Multi-location or mobile practice accounting',
-      'Equipment and facility costs',
-      'Staff scheduling and payroll complexity',
-      'Client payment plans and collections',
-      'Emergency vs. routine service profitability',
-    ],
-    testimonial: {
-      quote: 'They handle everything—books, taxes, payroll. I can focus on my patients instead of spreadsheets.',
-      name: 'Brandon',
-      business: 'Veterinary Practice',
-    },
-  },
-  'marine-services': {
-    industry: 'Marine Services',
-    icon: '⚓',
-    challenges: [
-      'Project-based revenue recognition',
-      'Seasonal cash flow fluctuations',
-      'Large equipment and dock costs',
-      'Subcontractor management',
-      'Parts inventory tracking',
-      'Multi-vessel or multi-location operations',
-    ],
-    testimonial: {
-      quote: 'We went from chaos to clarity. Now I know exactly where we stand financially at any moment.',
-      name: 'Kobus',
-      business: 'Marine Services',
-    },
-  },
-};
+const industries = industriesData;
 
 // ============================================================
 // THANK YOU PAGE (post-submission landing + slot booking)
@@ -5222,6 +4947,7 @@ export default function App() {
             <Route path="/services/real-time-accounting" element={<RealTimeAccountingPage />} />
             <Route path="/services/fractional-cfo" element={<Services />} />
             <Route path="/radiology" element={<RadiologyLandingPage />} />
+            <Route path="/radiology/intelligence-pack" element={<RadiologyIntelligencePack />} />
             <Route path="/knowledge" element={<KnowledgeMap />} />
             <Route path="/intelligence" element={<IntelligencePage />} />
             <Route path="/benefique-intelligence" element={<Navigate to="/intelligence" replace />} />

@@ -1,0 +1,14 @@
+// locations.js — single source of truth for the /{city}-accounting pages.
+//
+// Imported by BOTH src/App.jsx and scripts/route-metadata.js so the prerendered
+// H1 matches the H1 a visitor sees.
+
+export const locations = {
+  davie: { city: 'Davie', nearby: ['Plantation', 'Weston', 'Fort Lauderdale', 'Hollywood'], description: 'Benefique is headquartered in Davie, FL — providing accounting and CFO services to local healthcare practices and service businesses.' },
+  plantation: { city: 'Plantation', nearby: ['Davie', 'Fort Lauderdale', 'Weston', 'Sunrise'], zipCodes: ['33313', '33317', '33322', '33323', '33324', '33325'], description: 'Plantation\'s business corridor — University Drive, Cleary Boulevard, and the offices around HCA Florida Westside Hospital — is dense with medical practices, law firms, and professional services companies. We serve Plantation owners who need more than a bookkeeper: real-time books closed by the 7th, proactive tax planning, and CFO-grade reporting from our office 10 minutes away in Davie.' },
+  weston: { city: 'Weston', nearby: ['Davie', 'Plantation', 'Miramar', 'Southwest Ranches', 'Pembroke Pines'], zipCodes: ['33326', '33327', '33331', '33332'], description: 'Weston is home to a concentration of healthcare practices, professional services firms, and high-growth service businesses. We serve Weston business owners who have outgrown their bookkeeper but aren\'t ready for a full-time CFO — providing real-time books, proactive tax planning, and AI-powered cash flow intelligence from our office 15 minutes away in Davie.' },
+  miramar: { city: 'Miramar', nearby: ['Hollywood', 'Pembroke Pines', 'Weston', 'Miami Gardens'], description: 'Real-time accounting and tax planning for Miramar businesses — healthcare, marine services, and more.' },
+  'fort-lauderdale': { city: 'Fort Lauderdale', nearby: ['Davie', 'Plantation', 'Hollywood', 'Oakland Park'], description: 'Fort Lauderdale\'s trusted accounting firm for healthcare practices, marine services, and professional services.' },
+  aventura: { city: 'Aventura', nearby: ['North Miami Beach', 'Sunny Isles', 'Hallandale', 'Miami'], description: 'Accounting and CFO services for Aventura businesses — medical practices, professional services, and law firms.' },
+  hollywood: { city: 'Hollywood', nearby: ['Fort Lauderdale', 'Davie', 'Hallandale', 'Miramar'], zipCodes: ['33019', '33020', '33021', '33023', '33024', '33025', '33026', '33027', '33028', '33029'], description: 'Hollywood\'s healthcare corridor — anchored by Memorial Regional Hospital and the dental and medical offices along Hollywood Boulevard and Sheridan Street — is one of Broward\'s densest concentrations of practices. We keep the books for healthcare and dental practices and service businesses across Hollywood: real-time reporting, monthly closes by the 7th, and tax planning that runs all year.' },
+};

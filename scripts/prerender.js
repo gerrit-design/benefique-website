@@ -62,7 +62,7 @@ const blogPostJsx = readFileSync(join(ROOT, 'src', 'BlogPost.jsx'), 'utf-8');
 const blogPostsBlockMatch = blogPostJsx.match(/const blogPosts\s*=\s*\{([\s\S]*?)\n\};/);
 const blogPostsBlock = blogPostsBlockMatch ? blogPostsBlockMatch[1] : '';
 // Match the top-level keys: 'slug-name': { (must contain a hyphen to avoid matching schema keys)
-const slugRegex = /^\s+'([a-z0-9]+-[a-z0-9-]+)':\s*\{/gm;
+const slugRegex = /^\s+['"]([a-z0-9]+-[a-z0-9-]+)['"]:\s*\{/gm;
 const blogSlugs = [];
 let m;
 while ((m = slugRegex.exec(blogPostsBlock)) !== null) {
@@ -261,6 +261,73 @@ function generateHTML({ title, description, canonical, ogType, ogImage, schemas,
 }
 
 // ---------------------------------------------------------------------------
+// 4b. Render a route's `body` blocks into crawlable HTML
+// ---------------------------------------------------------------------------
+// Non-blog routes used to prerender as <h1> + <p>{description}</p> and nothing
+// else — roughly 32 words — so every capability, proof point and internal link
+// on a React page was invisible to any crawler that does not execute JS.
+// A route may now carry a `body` array of blocks, rendered here as real HTML.
+// Blocks mirror what the React page actually renders; drive them off the same
+// data the page imports so the two cannot drift.
+// Only same-site paths and a short allowlist of schemes become live links.
+// Escaping stops attribute breakout but not `javascript:`; route data is ours
+// today, and this keeps that from being load-bearing.
+const NEWLINE_INDENT = String.fromCharCode(10) + '      ';
+
+function safeHref(href) {
+  const value = String(href || '').trim();
+  // Protocol-relative forms leave the site while still starting with "/",
+  // so a bare startsWith("/") is not sufficient. Reject them first.
+  const BACKSLASH = String.fromCharCode(92);
+  const first = value.charAt(0);
+  const second = value.charAt(1);
+  if (first === '/' && (second === '/' || second === BACKSLASH)) return '#';
+  if (first === '/' || first === '#') return value;
+  if (/^(https?:|mailto:|tel:)/i.test(value)) return value;
+  return '#';
+}
+
+function renderBody(blocks) {
+  if (!Array.isArray(blocks) || blocks.length === 0) return '';
+  const out = [];
+  const NEWLINE_SEP = String.fromCharCode(10) + '      ';
+  for (const block of blocks) {
+    if (!block || typeof block !== 'object') continue;
+    if (block.h2) out.push(`<h2>${escapeHtml(block.h2)}</h2>`);
+    if (block.h3) out.push(`<h3>${escapeHtml(block.h3)}</h3>`);
+    if (block.p) out.push(`<p>${escapeHtml(block.p)}</p>`);
+    if (Array.isArray(block.ul) && block.ul.length) {
+      out.push(`<ul>${block.ul.map((li) => `<li>${escapeHtml(li)}</li>`).join('')}</ul>`);
+    }
+    if (Array.isArray(block.links) && block.links.length) {
+      out.push(
+        `<ul>${block.links
+          .map((l) => `<li><a href="${escapeHtml(safeHref(l.href))}">${escapeHtml(l.text)}</a></li>`)
+          .join('')}</ul>`
+      );
+    }
+    if (block.table && Array.isArray(block.table.rows)) {
+      const { headers = [], rows = [] } = block.table;
+      const head = headers.length
+        ? `<thead><tr>${headers.map((h) => `<th>${escapeHtml(h)}</th>`).join('')}</tr></thead>`
+        : '';
+      const bodyRows = rows
+        .map((r) => `<tr>${r.map((cell) => `<td>${escapeHtml(String(cell))}</td>`).join('')}</tr>`)
+        .join('');
+      out.push(`<table>${head}<tbody>${bodyRows}</tbody></table>`);
+    }
+    if (Array.isArray(block.qa) && block.qa.length) {
+      out.push(
+        block.qa
+          .map((item) => `<h3>${escapeHtml(item.q)}</h3><p>${escapeHtml(item.a)}</p>`)
+          .join('')
+      );
+    }
+  }
+  return out.join(NEWLINE_SEP);
+}
+
+// ---------------------------------------------------------------------------
 // 5. Generate non-blog route pages
 // ---------------------------------------------------------------------------
 let pageCount = 0;
@@ -273,7 +340,12 @@ for (const route of routes) {
 
   // H1: prefer explicit override, otherwise derive from title (strip " | Benefique..." suffix)
   const h1Text = route.h1 || route.title.replace(/\s*[\|–—].*$/, '').trim();
-  const rootContent = `<h1>${escapeHtml(h1Text)}</h1><p>${escapeHtml(route.description)}</p>`;
+  // With a body, the body IS the page copy; repeating the meta description as
+  // body text would put a sentence in front of crawlers that no visitor sees.
+  const bodyHtml = renderBody(route.body);
+  const rootContent = bodyHtml
+    ? `<h1>${escapeHtml(h1Text)}</h1>` + NEWLINE_INDENT + bodyHtml
+    : `<h1>${escapeHtml(h1Text)}</h1><p>${escapeHtml(route.description)}</p>`;
 
   const html = generateHTML({
     title: route.title,

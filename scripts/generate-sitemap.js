@@ -61,12 +61,45 @@ const staticRoutes = [
   { path: '/services/real-time-accounting', priority: 0.9, changefreq: 'monthly', lastmod: new Date() },
   { path: '/services/fractional-cfo', priority: 0.9, changefreq: 'monthly', lastmod: new Date() },
   { path: '/radiology', priority: 0.95, changefreq: 'weekly', lastmod: new Date() },
+  { path: '/radiology/intelligence-pack', priority: 0.9, changefreq: 'monthly', lastmod: new Date() },
   { path: '/knowledge', priority: 0.9, changefreq: 'weekly', lastmod: new Date() },
   { path: '/intelligence', priority: 0.95, changefreq: 'monthly', lastmod: new Date() },
 
   // Tool pages
   { path: '/tools/concierge-simulator', priority: 0.9, changefreq: 'monthly', lastmod: new Date() },
+  { path: '/tools/radiology-profit-simulator', priority: 0.9, changefreq: 'monthly', lastmod: new Date() },
+  { path: '/tools/business-simulator', priority: 0.85, changefreq: 'monthly', lastmod: new Date() },
 ];
+
+/**
+ * Slugs actually registered in src/BlogPost.jsx.
+ *
+ * A markdown file on disk is NOT a published post — the post only renders if
+ * it also has an entry in the BlogPost.jsx registry. Two files
+ * (dental-group-scaling-accounting, radiology-practice-real-time-visibility)
+ * were being listed in the sitemap without a registry entry, so Google was
+ * being sent to URLs that return 200 with an empty app shell: soft 404s.
+ * Listing only registered slugs keeps the sitemap honest.
+ */
+function readRegisteredSlugs() {
+  try {
+    const registry = readFileSync(resolve(__dirname, '..', 'src', 'BlogPost.jsx'), 'utf-8');
+    // Same extraction scripts/prerender.js uses: scope to the blogPosts object,
+    // then take top-level keys containing a hyphen. Keeping these identical is
+    // the point — if the sitemap and the prerenderer disagreed about which posts
+    // exist, one of them would be wrong and nothing would say so.
+    const block = registry.match(/const blogPosts\s*=\s*\{([\s\S]*?)\n\};/);
+    if (!block) return null;
+    const slugRegex = /^\s+['"]([a-z0-9]+-[a-z0-9-]+)['"]:\s*\{/gm;
+    const slugs = new Set();
+    let m;
+    while ((m = slugRegex.exec(block[1])) !== null) slugs.add(m[1]);
+    return slugs.size > 0 ? slugs : null;
+  } catch (err) {
+    console.warn(`⚠️  Could not read BlogPost.jsx registry (${err.message}); listing all markdown files.`);
+    return null;
+  }
+}
 
 /**
  * Parse blog post metadata from frontmatter
@@ -140,8 +173,20 @@ function generateSitemap() {
   let blogCount = 0;
   const seenSlugs = new Set();
   try {
-    const blogFiles = readdirSync(BLOGS_DIR).filter(f => f.endsWith('.md'));
-    console.log(`[sitemap] Found ${blogFiles.length} blog post files`);
+    const allBlogFiles = readdirSync(BLOGS_DIR).filter(f => f.endsWith('.md'));
+    const registeredSlugs = readRegisteredSlugs();
+    const blogFiles = registeredSlugs
+      ? allBlogFiles.filter((f) => registeredSlugs.has(f.replace(/\.md$/, '')))
+      : allBlogFiles;
+    const skipped = allBlogFiles.length - blogFiles.length;
+    console.log(`[sitemap] Found ${allBlogFiles.length} blog post files`);
+    if (skipped > 0) {
+      const names = allBlogFiles
+        .filter((f) => !blogFiles.includes(f))
+        .map((f) => f.replace(/\.md$/, ''))
+        .join(', ');
+      console.log(`[sitemap] Skipping ${skipped} unregistered (not in BlogPost.jsx): ${names}`);
+    }
 
     for (const file of blogFiles) {
       const filePath = join(BLOGS_DIR, file);

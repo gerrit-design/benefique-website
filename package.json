@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/validate-blog-posts.cjs && vite build && node scripts/generate-sitemap.js && node scripts/prerender.js",
+    "build": "node scripts/validate-blog-posts.cjs && vite build && node scripts/generate-sitemap.js && node scripts/prerender.js && node scripts/verify-prerender.mjs",
     "preview": "vite preview",
     "validate-blogs": "node scripts/validate-blog-posts.cjs",
+    "verify-prerender": "node scripts/verify-prerender.mjs",
     "blog-dash": "node ../scripts/blog-performance-dashboard.js",
     "lint": "echo 'Running blog validation...' && npm run validate-blogs"
   },

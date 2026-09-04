@@ -1,8 +1,179 @@
 // route-metadata.js — SEO metadata for all non-blog routes
 // Used by prerender.js to generate per-route HTML files
 
+import {
+  radiologyHero,
+  radiologyIntroText,
+  radiologyServices,
+  radiologyClusters,
+  radiologyFaqs,
+  radiologyPackPromo,
+  radiologyProof,
+} from '../src/data/radiology.js';
+import {
+  packCenterRows,
+  packRailRowsWithShare,
+  packTotals,
+  packHeadline,
+  packMoney2,
+} from '../src/data/radiology-pack.js';
+import { industries } from '../src/data/industries.js';
+import { intelligenceMethods, intelligenceIntro } from '../src/data/intelligence.js';
+import { locations } from '../src/data/locations.js';
+import {
+  packLibrary,
+  packFaqs,
+  packSchema,
+  packProse,
+  packFlatten,
+} from '../src/data/radiology-pack-content.js';
+
+// The crawlable body for /radiology, assembled from the SAME arrays the React
+// page imports. Editing src/data/radiology.js updates the page and this at once.
+const radiologyBody = [
+  { p: radiologyHero.lede },
+  { p: radiologyIntroText },
+  { h2: 'Proof' },
+  { ul: radiologyProof.stats.map((stat) => `${stat.value} — ${stat.label}`) },
+  { p: radiologyProof.caption },
+  {
+    h2: radiologyPackPromo.heading,
+    p: radiologyPackPromo.body,
+    links: [{ href: radiologyPackPromo.href, text: radiologyPackPromo.linkText }],
+  },
+  { h2: 'What We Do for Radiology Groups' },
+  { p: 'Six named capabilities delivered inside every engagement. Each one solves a problem generic accounting and billing reports cannot.' },
+  ...radiologyServices.map((s) => ({ h3: s.title, p: s.desc })),
+  { h2: 'Intelligence Library' },
+  ...radiologyClusters.map((c) => ({
+    h3: c.title,
+    p: c.blurb,
+    links: c.posts
+      .filter((post) => post.slug)
+      .map((post) => ({ href: `/blog/${post.slug}`, text: post.title })),
+  })),
+  { h2: 'Frequently Asked Questions' },
+  { qa: radiologyFaqs.map((f) => ({ q: f.q, a: f.a })) },
+];
+
 const SITE = 'https://www.benefique.com';
 const DEFAULT_OG_IMAGE = `${SITE}/images/logo-full.jpg`;
+
+// Crawlable body for /radiology/intelligence-pack. Same computed model the
+// React page renders, so the numbers a crawler reads are the numbers a visitor
+// sees — including the tables, which are the whole proof.
+const money0 = (n) => `$${Math.round(n).toLocaleString('en-US')}`;
+const num0 = (n) => n.toLocaleString('en-US');
+const pct1 = (n) => `${(n * 100).toFixed(1)}%`;
+
+const packBody = [
+  { p: packProse.badge },
+  { p: packProse.lede },
+  { p: packFlatten(packProse.disclaimer) },
+  { h2: packProse.bookHeading },
+  {
+    ul: [
+      `${packTotals.centers} centers`,
+      `${num0(packTotals.scans)} completed scans a year`,
+      `${money0(packTotals.net)} net collected`,
+      `${packMoney2(packTotals.netPerScan)} net per completed scan`,
+    ],
+  },
+  { h2: packProse.ex1Heading },
+  { p: packProse.ex1Intro },
+  {
+    table: {
+      headers: ['Center', 'Completed scans', 'Net collected', 'Net per scan', 'Government rail share'],
+      rows: [
+        ...packCenterRows.map((c) => [
+          c.name,
+          num0(c.scans),
+          money0(c.net),
+          packMoney2(c.netPerScan),
+          pct1(c.govShare),
+        ]),
+        ['Group', num0(packTotals.scans), money0(packTotals.net), packMoney2(packTotals.netPerScan), '—'],
+      ],
+    },
+  },
+  { p: packFlatten(packProse.ex1Callout) },
+  { h2: packProse.ex2Heading },
+  { p: packProse.ex2Intro },
+  {
+    table: {
+      headers: ['Payer rail', 'Share of scans', 'Net per scan', 'Days to cash'],
+      rows: [
+        ...packRailRowsWithShare.map((r) => [
+          r.label,
+          pct1(r.share),
+          money0(r.netPerScan),
+          num0(r.dsoDays),
+        ]),
+        ['Blended', '100.0%', packMoney2(packTotals.netPerScan), packTotals.blendedDso.toFixed(1)],
+      ],
+    },
+  },
+  { p: packFlatten(packProse.ex2Callout) },
+  { h2: packProse.libraryHeading },
+  { p: packProse.libraryIntro },
+  ...packLibrary.flatMap((stage) => [
+    { h3: `${stage.stage} — ${stage.question}` },
+    { ul: stage.reports.map((r) => `${r.name}: ${r.desc}`) },
+  ]),
+  { h2: packProse.faqHeading },
+  { qa: packFaqs.map((f) => ({ q: f.q, a: f.a })) },
+  { h2: packProse.ctaHeading },
+  { p: packProse.ctaBody },
+  {
+    links: [
+      { href: '/services/radiology/intake?ref=pack', text: 'Book a Strategic Radiology Review' },
+      { href: '/radiology', text: 'Back to Radiology CFO Intelligence' },
+    ],
+  },
+];
+
+// Crawlable body for each /industries/* page, generated from the same object
+// the React IndustryPage renders. Mirrors the page: the direct-answer block,
+// the challenges list, the featured tool, and the testimonial.
+function industryBody(key) {
+  const ind = industries[key];
+  if (!ind) return undefined;
+  const blocks = [
+    {
+      p: `Benefique Tax & Accounting specializes in accounting and fractional CFO services for ${ind.industry} businesses in South Florida. We provide real-time financial reporting, monthly closes by the 7th, and industry-specific KPI dashboards to help you grow.`,
+    },
+  ];
+  if (Array.isArray(ind.challenges) && ind.challenges.length) {
+    blocks.push({ h2: `What we solve for ${ind.industry}` }, { ul: ind.challenges });
+  }
+  if (ind.tool) {
+    blocks.push({ h2: ind.tool.title }, { p: ind.tool.desc }, { links: [{ href: ind.tool.link, text: ind.tool.cta }] });
+  }
+  if (ind.testimonial) {
+    blocks.push({
+      h2: 'What clients say',
+      p: `"${ind.testimonial.quote}" — ${ind.testimonial.name}, ${ind.testimonial.business}`,
+    });
+  }
+  return blocks;
+}
+
+// Crawlable body for /intelligence, generated from the same `methods` array the
+// React page renders as cards.
+const intelligenceBody = [
+  { h2: intelligenceIntro.heading },
+  { p: intelligenceIntro.body },
+  { h2: 'The frameworks' },
+  ...intelligenceMethods.map((m) => ({ h3: m.name, p: m.desc })),
+];
+
+// The React IndustryPage and LocationPage headline is
+// "<name> Accounting & Fractional CFO Services", but prerender.js derives its
+// H1 from route.title when no `h1` is set — which produced a DIFFERENT headline
+// for crawlers than for visitors on all twelve of these pages. Derive both from
+// the same data instead.
+const industryH1 = (key) => `${industries[key].industry} Accounting & Fractional CFO Services`;
+const locationH1 = (key) => `${locations[key].city} Accounting & Fractional CFO Services`;
 
 const routes = [
   // Core pages
@@ -67,6 +238,7 @@ const routes = [
   // Location pages
   {
     path: '/davie-accounting',
+    h1: locationH1('davie'),
     title: 'Davie Accounting & CFO Services | Benefique Tax & Accounting',
     description: 'Benefique is headquartered in Davie, FL — providing accounting and fractional CFO services to local healthcare practices and service businesses. Books closed by the 7th.',
     schema: {
@@ -81,6 +253,7 @@ const routes = [
   },
   {
     path: '/plantation-accounting',
+    h1: locationH1('plantation'),
     title: 'Accounting Firm in Plantation, FL — CFO & Tax Planning | Benefique',
     description: 'Accounting firm serving Plantation, FL law firms, medical practices, and professional services companies. Books closed by the 7th, proactive tax planning, fractional CFO — 10 minutes away in Davie.',
     schema: {
@@ -102,6 +275,7 @@ const routes = [
   },
   {
     path: '/weston-accounting',
+    h1: locationH1('weston'),
     title: 'Weston Accounting & CFO Services | Benefique Tax & Accounting',
     description: 'Accounting and fractional CFO services for Weston\'s growing healthcare and service business community. Tax planning, real-time reporting, monthly closes.',
     schema: {
@@ -130,6 +304,7 @@ const routes = [
   },
   {
     path: '/miramar-accounting',
+    h1: locationH1('miramar'),
     title: 'Miramar Accounting & CFO Services | Benefique Tax & Accounting',
     description: 'Real-time accounting and tax planning for Miramar businesses — healthcare, marine services, and more. Fractional CFO services with monthly closes by the 7th.',
     schema: {
@@ -144,6 +319,7 @@ const routes = [
   },
   {
     path: '/fort-lauderdale-accounting',
+    h1: locationH1('fort-lauderdale'),
     title: 'Fort Lauderdale Accounting & CFO Services | Benefique Tax & Accounting',
     description: 'Fort Lauderdale\'s trusted accounting firm for healthcare practices, marine services, and professional services. Fractional CFO, tax planning, real-time dashboards.',
     schema: {
@@ -158,6 +334,7 @@ const routes = [
   },
   {
     path: '/aventura-accounting',
+    h1: locationH1('aventura'),
     title: 'Aventura Accounting & CFO Services | Benefique Tax & Accounting',
     description: 'Accounting and CFO services for Aventura businesses — medical practices, professional services, and hospitality. Real-time reporting and tax strategy.',
     schema: {
@@ -172,6 +349,7 @@ const routes = [
   },
   {
     path: '/hollywood-accounting',
+    h1: locationH1('hollywood'),
     title: 'Dental & Healthcare Accounting in Hollywood, FL | Benefique',
     description: 'Accounting for Hollywood, FL dental and healthcare practices and service businesses. Books closed by the 7th, payer-mix and collections expertise, fractional CFO. Serving the Memorial healthcare corridor.',
     schema: {
@@ -195,6 +373,8 @@ const routes = [
   // Industry pages
   {
     path: '/industries/radiology',
+    h1: industryH1('radiology'),
+    body: industryBody('radiology'),
     title: 'Radiology & Imaging Center Accounting | Benefique Tax & Accounting',
     description: 'Specialized accounting for radiology and imaging centers. Multi-location consolidation, insurance reimbursement tracking, equipment depreciation, and HIPAA-compliant financial reporting.',
     faq: [
@@ -205,6 +385,8 @@ const routes = [
   },
   {
     path: '/industries/dental',
+    h1: industryH1('dental'),
+    body: industryBody('dental'),
     title: 'Dental Practice Accounting | Benefique Tax & Accounting',
     description: 'Accounting services built for dental practices. Insurance vs. cash pay tracking, multi-provider compensation, practice acquisition accounting, and DSO financial reporting.',
     faq: [
@@ -215,6 +397,8 @@ const routes = [
   },
   {
     path: '/industries/veterinary',
+    h1: industryH1('veterinary'),
+    body: industryBody('veterinary'),
     title: 'Veterinary Practice Accounting | Benefique Tax & Accounting',
     description: 'Accounting and CFO services for veterinary practices. Pharmaceutical inventory management, multi-location accounting, equipment depreciation, and real-time financial dashboards.',
     faq: [
@@ -224,6 +408,8 @@ const routes = [
   },
   {
     path: '/industries/marine-services',
+    h1: industryH1('marine-services'),
+    body: industryBody('marine-services'),
     title: 'Marine Services Accounting | Benefique Tax & Accounting',
     description: 'Accounting for marine service businesses. Project-based revenue recognition, seasonal cash flow management, equipment and dock costs, subcontractor management, and parts inventory.',
     faq: [
@@ -308,6 +494,7 @@ const routes = [
   {
     path: '/radiology',
     title: 'Radiology CFO Intelligence | PET Tracer Economics, Collections & Multi-Center Operations | Benefique',
+    body: radiologyBody,
     h1: 'Your Volume Is Up. Your Cash Isn\'t.',
     description: 'Strategic financial intelligence for multi-center radiology groups. PET Tracer economics, per-payer DSO, payer mix risk, per-claim profitability, COO scorecards. Start with a Strategic Radiology Review.',
     schema: {
@@ -355,7 +542,19 @@ const routes = [
     ],
   },
   {
+    path: '/radiology/intelligence-pack',
+    title: 'The Radiology Intelligence Pack | What a Benefique Imaging Engagement Delivers | Benefique',
+    h1: packHeadline,
+    description:
+      'A worked, fully illustrative example of the reporting an independent multi-center imaging group receives from Benefique: net revenue per scan by center, days to cash by payer rail, and the complete report library. Synthetic data, real method.',
+    body: packBody,
+    // packSchema already contains the FAQPage node for these questions.
+    // Setting `faq` here as well would emit a second, duplicate FAQPage.
+    schema: packSchema,
+  },
+  {
     path: '/intelligence',
+    body: intelligenceBody,
     title: 'Benefique Intelligence | The Financial Methodology Behind Benefique',
     h1: 'The Intelligence Layer Above Your Accounting.',
     description: 'Benefique Intelligence is the named data-analysis methodology behind Benefique: the Benefique Matrix, Three Views, Two Business Unit Framework, Activity-Based Decomposition, Per-Unit Economics, Cash Flow Waterfall, and more. The intelligence layer above your accounting.',
