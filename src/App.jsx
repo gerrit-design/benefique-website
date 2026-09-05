@@ -12,6 +12,14 @@ import { radiologyHero, radiologyServices, radiologyClusters, radiologyFaqs, rad
 import { industries as industriesData } from './data/industries';
 import { intelligenceMethods, intelligenceIntro } from './data/intelligence';
 import { locations as locationsData } from './data/locations';
+import {
+  AUDIENCE_ONE_LINE,
+  AUDIENCE_FAQ_ANSWER,
+  REVENUE_BAND,
+  REVENUE_FLOOR,
+  REVENUE_BANDS,
+  whoWeServe,
+} from './data/positioning';
 
 // ============================================================
 // BENEFIQUE WEBSITE - Davie Design Style
@@ -315,7 +323,7 @@ function Home() {
               Your Accounting Should Tell You<br />What to Do &mdash; Not Just What Happened
             </h1>
             <p className="text-base md:text-lg font-semibold text-benefique-navy mb-5">
-              Financial intelligence, accounting, and tax strategy for established healthcare practices and service businesses doing $500K&ndash;$10M+ in revenue.
+              Financial intelligence, accounting, and tax strategy for {AUDIENCE_ONE_LINE}.
             </p>
             <p className="text-lg text-gray-600 mb-4">
               You stop watching your bank balance shrink while your P&amp;L says you&apos;re profitable. We tell you exactly which dollar is leaking &mdash; and how to plug it.
@@ -551,7 +559,7 @@ function Home() {
           <div className="space-y-6">
             <div className="bg-white rounded-xl p-6 border border-gray-100">
               <h3 className="font-bold text-benefique-navy mb-2">What does Benefique do?</h3>
-              <p className="text-gray-600 text-sm">Benefique is a full-service accounting firm that uses AI to turn QuickBooks data into financial intelligence. We handle bookkeeping, tax planning, payroll, and fractional CFO reporting for established South Florida businesses doing $500K&ndash;$10M+ in annual revenue. Every client gets clean books, proactive tax strategy, and prescriptive cash flow analysis &mdash; not just backward-looking reports.</p>
+              <p className="text-gray-600 text-sm">Benefique is a full-service accounting firm that uses AI to turn QuickBooks data into financial intelligence. We handle bookkeeping, tax planning, payroll, and fractional CFO reporting for {AUDIENCE_ONE_LINE}. Every client gets clean books, proactive tax strategy, and prescriptive cash flow analysis &mdash; not just backward-looking reports.</p>
             </div>
             <div className="bg-white rounded-xl p-6 border border-gray-100">
               <h3 className="font-bold text-benefique-navy mb-2">How does AI improve accounting?</h3>
@@ -576,7 +584,7 @@ function Home() {
             <div>
               <h2 className="text-3xl font-bold text-benefique-navy mb-6">Let&apos;s See What Your Numbers Are Hiding</h2>
               <p className="text-gray-600 mb-6">
-                We work with established businesses doing $500K-$10M+ in revenue &mdash; owners who are tired of backward-looking reports and want financial intelligence that actually moves the needle.
+                We work with {AUDIENCE_ONE_LINE} &mdash; owners who are past backward-looking reports and want financial intelligence that actually moves the needle.
               </p>
 
               <ul className="space-y-3 mb-8">
@@ -645,11 +653,9 @@ function Home() {
                   <label className="block text-sm font-medium text-gray-700 mb-1">Annual Revenue</label>
                   <select name="revenue" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent text-gray-600">
                     <option>Select range...</option>
-                    <option>Under $500K</option>
-                    <option>$500K - $1M</option>
-                    <option>$1M - $5M</option>
-                    <option>$5M - $10M</option>
-                    <option>$10M+</option>
+                    {REVENUE_BANDS.map((band) => (
+                      <option key={band}>{band}</option>
+                    ))}
                   </select>
                 </div>
                 <div>
@@ -711,7 +717,7 @@ function Services() {
           </div>
           <h1 className="text-4xl font-bold text-benefique-navy mb-4">Fractional CFO, Tax Planning &amp; Accounting for South Florida Businesses</h1>
           <p className="text-xl text-gray-600 max-w-2xl">
-            AI-powered financial intelligence for healthcare practices and service businesses ($500K&ndash;$10M+ revenue).
+            AI-powered financial intelligence for {AUDIENCE_ONE_LINE}.
             Real-time books, proactive tax strategy, and CFO-grade analysis &mdash; designed to work together as a single data intelligence system.
           </p>
         </div>
@@ -1393,31 +1399,22 @@ function About() {
 
           {/* Who We Serve */}
           <div className="bg-white rounded-2xl p-8 border border-gray-100 mb-8">
-            <h2 className="text-2xl font-bold text-benefique-navy mb-4">Who We Serve</h2>
-            <p className="text-gray-600 mb-6">
-              Established businesses doing $500K-$10M+ in revenue who have outgrown their bookkeeper but aren&apos;t
-              ready for a full-time CFO. Owners who are tired of backward-looking reports and want financial
-              intelligence that actually moves the needle.
-            </p>
+            <h2 className="text-2xl font-bold text-benefique-navy mb-4">{whoWeServe.heading}</h2>
+            <p className="text-gray-600 mb-6">{whoWeServe.body}</p>
             <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h3 className="font-semibold text-benefique-navy mb-2">Healthcare Practices</h3>
-                <ul className="text-gray-600 text-sm space-y-1 ml-4">
-                  <li>- Radiology & diagnostic imaging</li>
-                  <li>- Dental practices & DSOs</li>
-                  <li>- Veterinary clinics</li>
-                  <li>- Medical practices & concierge medicine</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold text-benefique-navy mb-2">Service-Based Businesses</h3>
-                <ul className="text-gray-600 text-sm space-y-1 ml-4">
-                  <li>- Professional services & law firms</li>
-                  <li>- Marine & industrial services</li>
-                  <li>- IT & technology services</li>
-                </ul>
-              </div>
+              {whoWeServe.columns.map((col) => (
+                <div key={col.title}>
+                  <h3 className="font-semibold text-benefique-navy mb-2">{col.title}</h3>
+                  {col.note && <p className="text-gray-500 text-xs italic mb-2">{col.note}</p>}
+                  <ul className="text-gray-600 text-sm space-y-1 ml-4">
+                    {col.items.map((item) => (
+                      <li key={item}>- {item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
+            <p className="text-gray-500 text-sm mt-6">{whoWeServe.legacy}</p>
             <div className="mt-4 pt-4 border-t border-gray-100">
               <Link to="/testimonials" className="text-benefique-orange font-semibold hover:underline">
                 Read what our clients say →
@@ -1893,11 +1890,9 @@ function Contact() {
                   <label className="block text-sm font-medium text-gray-700 mb-1">Annual Revenue</label>
                   <select name="revenue" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent text-gray-600">
                     <option>Select range...</option>
-                    <option>Under $500K</option>
-                    <option>$500K - $1M</option>
-                    <option>$1M - $5M</option>
-                    <option>$5M - $10M</option>
-                    <option>$10M+</option>
+                    {REVENUE_BANDS.map((band) => (
+                      <option key={band}>{band}</option>
+                    ))}
                   </select>
                 </div>
                 <div>
@@ -2536,7 +2531,7 @@ function WestonBookkeeping() {
               <h3 className="font-bold text-benefique-navy mb-2">Fractional CFO</h3>
               <p className="text-gray-600 text-sm">
                 Cash flow forecasting, KPI dashboards, and financial strategy for Weston businesses
-                doing $500K to $10M+ in revenue. A full finance department without the full-time cost.
+                doing {REVENUE_BAND} in revenue. A full finance department without the full-time cost.
               </p>
             </div>
           </div>
@@ -2585,7 +2580,7 @@ function WestonBookkeeping() {
               },
               {
                 q: 'Do you only work with healthcare practices?',
-                a: 'Healthcare is our specialty, but we serve any established service business in Weston doing $500K+ in revenue — law firms, IT companies, marine services, and professional services.'
+                a: `Imaging and multi-center healthcare is our focus, and we take new engagements from ${REVENUE_FLOOR} in revenue. We also serve an established Weston book built up since 2002 — law firms, IT companies, marine services and professional services — which is closed to new generalist engagements.`
               },
               {
                 q: 'Can you take over my existing QuickBooks file?',
@@ -2816,7 +2811,7 @@ function LocationPage({ city, nearby, zipCodes, description }) {
               <div className="bg-white rounded-xl p-6 border border-gray-100">
                 <h3 className="font-bold text-benefique-navy mb-2">Not Just Bookkeeping</h3>
                 <p className="text-gray-600 text-sm">
-                  Weston businesses generating $500K-$10M+ in revenue have outgrown basic bookkeeping.
+                  Weston businesses generating {REVENUE_FLOOR}+ in revenue have outgrown basic bookkeeping.
                   We provide a complete accounting department: real-time books, proactive tax planning, payroll,
                   and AI-powered financial intelligence that turns your QuickBooks data into an ROI center.
                 </p>
@@ -2881,7 +2876,7 @@ function LocationPage({ city, nearby, zipCodes, description }) {
               <div className="bg-white rounded-xl p-6 border border-gray-100">
                 <h3 className="font-bold text-benefique-navy mb-2">Not Just Bookkeeping</h3>
                 <p className="text-gray-600 text-sm">
-                  Hollywood businesses generating $500K–$10M+ in revenue have outgrown basic bookkeeping. We provide
+                  Hollywood businesses generating {REVENUE_FLOOR}+ in revenue have outgrown basic bookkeeping. We provide
                   a complete accounting department: real-time books closed by the 7th, proactive tax planning,
                   payroll, and AI-powered cash flow intelligence.
                 </p>
@@ -3638,7 +3633,7 @@ function IntelligencePage() {
     },
     {
       q: 'Who is Benefique Intelligence for?',
-      a: 'Owners of healthcare practices and service businesses, typically $500K–$40M in revenue, who are profitable on paper but unclear on cash, unit economics, or exit value — and whose current accountant cannot answer per-payer, per-unit, or per-engine profitability questions. It is delivered as a flat-fee engagement, never billed by the hour.',
+      a: AUDIENCE_FAQ_ANSWER,
     },
   ];
 

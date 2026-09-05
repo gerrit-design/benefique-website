@@ -33,10 +33,11 @@ Engagements run remotely off the client's existing systems (RIS/scheduling, bill
 "History matters, but preparation wins." We focus on real-time financial visibility, monthly closes, and decision-ready dashboards.
 
 ## Target Clients
-- Healthcare practices and diagnostic centers
-- Service-based SMBs (consulting, professional services)
-- Businesses seeking fractional CFO services
-- Companies wanting proactive tax planning vs. reactive filing
+Benefique takes new engagements from **$5M in revenue**. The primary audience is **independent, multi-center imaging and healthcare groups doing $5M-$50M in revenue**, typically across two or more locations, where profit and cash have to be read per center, per modality, per payer and per claim.
+
+A smaller established South Florida book (professional services, marine and industrial, IT, dental, veterinary), built up since 2002, is **closed to new generalist engagements** — capacity goes to imaging. Do not describe Benefique as serving businesses from $500K; that floor was retired on 2026-09-05.
+
+Not pursued: construction, hospitality, and new concierge-medicine engagements.
 
 ## Key Features
 - 24-hour response times

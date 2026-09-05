@@ -16,6 +16,7 @@ import {
 import { industries } from '../src/data/industries.js';
 import { locations } from '../src/data/locations.js';
 import { intelligenceIntro, intelligenceMethods } from '../src/data/intelligence.js';
+import { REVENUE_BAND, REVENUE_FLOOR, whoWeServe } from '../src/data/positioning.js';
 
 const decode = (s) =>
   s.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
@@ -224,6 +225,42 @@ for (const page of ['dist/radiology/index.html', 'dist/radiology/intelligence-pa
       missed.join(', ')
     );
   }
+}
+
+
+// --- the retired $500K floor must not survive anywhere --------------------
+// This text lived on ten surfaces and had already drifted three ways
+// ("$500K-$10M+", "$500K to $40M", "$500K+"). One source now, and a check that
+// the old floor cannot reappear in a positioning statement.
+{
+  const positioningFiles = [
+    join(ROOT, 'src', 'App.jsx'),
+    join(ROOT, 'scripts', 'route-metadata.js'),
+    join(ROOT, 'public', 'llms.txt'),
+  ];
+  // Blog titles, excerpts and tax examples legitimately mention $500K.
+  const allowed = /blog|excerpt|title:|slug:|concierge|S-Corp|net income|salary|prescriptive|retired on/i;
+  for (const file of positioningFiles) {
+    const offenders = readFileSync(file, 'utf-8')
+      .split('\n')
+      .map((line, n) => [n + 1, line])
+      .filter(([, line]) => /\$500K|\$500,000/.test(line) && !allowed.test(line));
+    check(
+      `no retired $500K positioning left in ${file.split(/[\/]/).pop()}`,
+      offenders.length === 0,
+      offenders.map(([n]) => `line ${n}`).join(', ')
+    );
+  }
+
+  // The homepage must state the new band, and state the closed book.
+  const home = rootText('dist/index.html');
+  check('homepage meta states the new revenue band', home.text.includes(norm(REVENUE_BAND)), REVENUE_BAND);
+  const about = rootText('dist/about/index.html');
+  check('/about carries the Who We Serve heading', about.text.includes(norm(whoWeServe.heading)));
+  check('/about states the new revenue band', about.text.includes(norm(REVENUE_BAND)), REVENUE_BAND);
+  check('/about says the established book is closed', about.text.includes(norm(whoWeServe.legacy)));
+  check('REVENUE_FLOOR is inside REVENUE_BAND', REVENUE_BAND.startsWith(REVENUE_FLOOR));
+  check('legacy book is described as closed', /closed to new generalist engagements/i.test(whoWeServe.legacy));
 }
 
 

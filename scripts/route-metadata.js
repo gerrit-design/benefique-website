@@ -21,6 +21,11 @@ import { industries } from '../src/data/industries.js';
 import { intelligenceMethods, intelligenceIntro } from '../src/data/intelligence.js';
 import { locations } from '../src/data/locations.js';
 import {
+  AUDIENCE_ONE_LINE,
+  AUDIENCE_FAQ_ANSWER,
+  whoWeServe,
+} from '../src/data/positioning.js';
+import {
   packLibrary,
   packFaqs,
   packSchema,
@@ -180,7 +185,7 @@ const routes = [
   {
     path: '/',
     title: 'Benefique Tax & Accounting | Fractional CFO Services | Davie FL',
-    description: 'You stop watching your bank balance shrink while your P&L says you are profitable. We tell you exactly which dollar is leaking and how to plug it. Fractional CFO and accounting for healthcare practices in South Florida.',
+    description: `You stop watching your bank balance shrink while your P&L says you are profitable. We tell you exactly which dollar is leaking and how to plug it. Fractional CFO, accounting and tax for ${AUDIENCE_ONE_LINE}.`,
   },
   {
     path: '/services',
@@ -191,6 +196,18 @@ const routes = [
     path: '/about',
     title: 'Your Accounting Should Pay for Itself | Benefique Tax & Accounting | Davie, FL',
     description: 'Most accounting firms hand you a tax return and a year-old P&L. We give you the cash answer, the tax answer, and the operational answer in real time — before you have to ask.',
+    // /about carries the Who We Serve block. It was 40 crawlable words, so the
+    // firm's own definition of its client was invisible to search and to agents.
+    body: [
+      { p: 'Most accounting firms hand you a tax return and a year-old P&L. We give you the cash answer, the tax answer, and the operational answer in real time — before you have to ask.' },
+      { h2: whoWeServe.heading },
+      { p: whoWeServe.body },
+      ...whoWeServe.columns.map((col) => ({
+        h3: col.note ? `${col.title} — ${col.note}` : col.title,
+        ul: col.items,
+      })),
+      { p: whoWeServe.legacy },
+    ],
   },
   {
     path: '/blog',
@@ -488,7 +505,7 @@ const routes = [
     faq: [
       { q: 'What does a fractional CFO do?', a: 'A fractional CFO provides executive-level financial strategy on a part-time basis. This includes cash flow forecasting, financial modeling, KPI development, tax strategy, and board-ready reporting -- without the $200K+ salary of a full-time CFO.' },
       { q: 'How is a fractional CFO different from a bookkeeper or CPA?', a: 'A bookkeeper records transactions. A CPA files taxes. A fractional CFO provides forward-looking financial strategy -- helping you make better decisions about hiring, expansion, pricing, and cash management before problems arise.' },
-      { q: 'What size business needs a fractional CFO?', a: 'Businesses with $500K-$10M in revenue typically benefit most. You\'re big enough that financial decisions have significant impact, but not so large that you need a full-time CFO. Most of our clients are healthcare practices and service businesses in this range.' },
+      { q: 'What size business needs a fractional CFO?', a: `We take new engagements from $5M in revenue, and most of our work is with ${AUDIENCE_ONE_LINE} across two or more locations. Below that, a good bookkeeper and an annual tax planner usually serve an owner better than a fractional CFO does.` },
     ],
   },
   {
@@ -610,7 +627,7 @@ const routes = [
       { q: 'How is this different from regular accounting or bookkeeping?', a: 'A bookkeeper records what happened and a CPA files the return. Benefique Intelligence sits above both: it reads the same data forward, per unit and per engine, to tell you which dollar is leaking, which payer or product loses money, how much working capital growth will need, and what the business is worth at exit.' },
       { q: 'Do you replace our accountant or our software?', a: 'No. We sit above your existing accountant, biller, and QuickBooks. They keep recording and filing; we build the intelligence layer on top. Most engagements run alongside the relationships and software you already have — nothing to install or migrate.' },
       { q: 'Which frameworks make up Benefique Intelligence?', a: 'Eight named methods: the Benefique Matrix, Three Views, the Two Business Unit Framework, Activity-Based Decomposition, Per-Unit Economics, the Cash Flow Waterfall, the Cash Conversion Cycle at target ARR, and Toxic-Combination Detection.' },
-      { q: 'Who is Benefique Intelligence for?', a: 'Owners of healthcare practices and service businesses, typically $500K to $40M in revenue, who are profitable on paper but unclear on cash, unit economics, or exit value. It is delivered as a flat-fee engagement, never billed by the hour.' },
+      { q: 'Who is Benefique Intelligence for?', a: AUDIENCE_FAQ_ANSWER },
     ],
   },
   {
