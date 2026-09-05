@@ -790,13 +790,9 @@ function Services() {
                     <h3 className="text-sm font-bold text-benefique-navy">CFO Weekly Pulse</h3>
                     <p className="text-gray-500 text-xs">Every Monday — key metrics, alerts, and trends at a glance.</p>
                   </div>
-                  <div>
-                    <h3 className="text-sm font-bold text-benefique-navy">The Benefique Financial Times&trade;</h3>
-                    <p className="text-gray-500 text-xs">Monthly — your financial story told as news, in owner terms.</p>
-                  </div>
                 </div>
                 <Link to="/demo" className="text-benefique-orange text-sm font-semibold hover:underline inline-block">
-                  See all three sample reports →
+                  See both sample reports →
                 </Link>
                 <br />
                 <Link to="/blog/accountant-cost-center-roi-center" className="text-gray-500 text-sm hover:text-benefique-orange hover:underline mt-1 inline-block">
@@ -1093,9 +1089,10 @@ function Testimonials() {
       {/* See Our Reports CTA */}
       <section className="py-12 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h3 className="text-xl font-bold text-benefique-navy mb-4">See the reports our clients love</h3>
+          <h3 className="text-xl font-bold text-benefique-navy mb-4">See the reporting behind an engagement</h3>
           <p className="text-gray-600 mb-6">
-            Our CFO dashboards and Benefique Financial Times™ give owners clarity they've never had before.
+            A quarterly deep dive and a weekly pulse, both built from your own books &mdash; the cash answer,
+            the tax answer and the operational answer, without another report to read.
           </p>
           <Link
             to="/demo"
@@ -1355,10 +1352,10 @@ function About() {
                 </Link>
               </div>
               <div className="bg-white/10 rounded-xl p-5 hover:bg-white/20 transition">
-                <h3 className="font-bold text-lg mb-2">The Benefique Financial Times&trade;</h3>
+                <h3 className="font-bold text-lg mb-2">CFO Weekly Pulse</h3>
                 <p className="text-blue-100 text-sm mb-3">
-                  A newspaper-style report that tells your financial story. Lead articles, trend analysis,
-                  and action items — because numbers without narrative are just noise.
+                  Every Monday: cash position, revenue against target, margin alerts, and anything that moved
+                  more than 5% since last week. Scanned in two minutes, not read for an hour.
                 </p>
                 <Link to="/demo" className="text-benefique-orange font-semibold text-sm hover:underline">
                   View Sample →
@@ -1918,7 +1915,7 @@ function Contact() {
 }
 
 // ============================================================
-// DEMO PAGE - CFO Report & BFT Samples
+// DEMO PAGE - CFO Deep Dive & Weekly Pulse samples
 // ============================================================
 function Demo() {
   const [activeTab, setActiveTab] = React.useState('deepdive');
@@ -1942,15 +1939,6 @@ function Demo() {
       src: 'https://bft-demo-seven.vercel.app',
       openLabel: 'Open weekly pulse in new tab',
     },
-    bft: {
-      name: 'The Benefique Financial Times\u2122',
-      icon: '📰',
-      frequency: 'Monthly',
-      tagline: 'Your financial story told as news — lead articles, trend analysis, and action items written in owner terms.',
-      description: 'Numbers without narrative are noise. This newspaper-style report translates your financial data into stories your team can understand: what happened, why it matters, and what to do about it. Lead articles, financial tables, and trend analysis — written like a CFO briefing, not an accounting report.',
-      src: 'https://bft-newspaper-demo.vercel.app',
-      openLabel: 'Open Financial Times in new tab',
-    },
   };
 
   const report = reports[activeTab];
@@ -1958,8 +1946,8 @@ function Demo() {
   return (
     <div>
       <Helmet>
-        <title>Sample Reports | CFO Deep Dive, Weekly Pulse, Financial Times | Benefique</title>
-        <meta name="description" content="See what Benefique delivers: a quarterly CFO Deep Dive with cash waterfall and prescriptive actions, a weekly dashboard pulse, and a monthly Financial Times narrative. All from your QuickBooks data." />
+        <title>Sample Reports | CFO Deep Dive &amp; Weekly Pulse | Benefique</title>
+        <meta name="description" content="See what Benefique delivers: a quarterly CFO Deep Dive with cash waterfall and prescriptive actions, and a weekly dashboard pulse. Both generated from your own QuickBooks data." />
         <link rel="canonical" href="https://www.benefique.com/demo" />
       </Helmet>
 
@@ -1969,14 +1957,14 @@ function Demo() {
           <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
             Sample Reports
           </div>
-          <h1 className="text-4xl font-bold text-benefique-navy mb-4">Three Reports. One Data Source. Complete Visibility.</h1>
+          <h1 className="text-4xl font-bold text-benefique-navy mb-4">Two Reports. One Data Source. Complete Visibility.</h1>
           <p className="text-xl text-gray-600 max-w-3xl">
-            Every Fractional CFO client receives all three: a deep quarterly analysis, a weekly dashboard, and a monthly financial narrative. All generated from the same QuickBooks connection.
+            Every Fractional CFO client receives both: a deep quarterly analysis and a weekly dashboard, generated from the same QuickBooks connection.
           </p>
         </div>
       </section>
 
-      {/* Report Selector — 3 Tabs */}
+      {/* Report Selector */}
       <section className="bg-gray-50 border-y border-gray-200">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex flex-wrap gap-3 py-4">
@@ -2055,8 +2043,8 @@ function Demo() {
       {/* What You Get Summary */}
       <section className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-benefique-navy mb-6 text-center">Every CFO Client Receives All Three</h2>
-          <div className="grid md:grid-cols-3 gap-6">
+          <h2 className="text-2xl font-bold text-benefique-navy mb-6 text-center">Every CFO Client Receives Both</h2>
+          <div className="grid md:grid-cols-2 gap-6">
             <div className="text-center p-6 rounded-xl border border-gray-100 bg-gray-50">
               <div className="text-3xl mb-3">📊</div>
               <h3 className="font-bold text-benefique-navy mb-1">CFO Deep Dive</h3>
@@ -2068,12 +2056,6 @@ function Demo() {
               <h3 className="font-bold text-benefique-navy mb-1">CFO Weekly Pulse</h3>
               <p className="text-xs text-benefique-orange font-semibold mb-2">Every Monday</p>
               <p className="text-gray-600 text-sm">The vital signs check. Key metrics, alerts, and trends — scanned in 2 minutes.</p>
-            </div>
-            <div className="text-center p-6 rounded-xl border border-gray-100 bg-gray-50">
-              <div className="text-3xl mb-3">📰</div>
-              <h3 className="font-bold text-benefique-navy mb-1">Financial Times&trade;</h3>
-              <p className="text-xs text-benefique-orange font-semibold mb-2">Monthly</p>
-              <p className="text-gray-600 text-sm">The narrative layer. Your financial story told as news — for you and your team.</p>
             </div>
           </div>
 
