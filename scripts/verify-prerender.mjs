@@ -259,6 +259,8 @@ for (const page of ['dist/radiology/index.html', 'dist/radiology/intelligence-pa
   check('/about carries the Who We Serve heading', about.text.includes(norm(whoWeServe.heading)));
   check('/about states the new revenue band', about.text.includes(norm(REVENUE_BAND)), REVENUE_BAND);
   check('/about says the established book is closed', about.text.includes(norm(whoWeServe.legacy)));
+  const cfo = rootText('dist/services/fractional-cfo/index.html');
+  check('/services/fractional-cfo states the new revenue band', cfo.text.includes(norm(REVENUE_BAND)), REVENUE_BAND);
   check('REVENUE_FLOOR is inside REVENUE_BAND', REVENUE_BAND.startsWith(REVENUE_FLOOR));
   check('legacy book is described as closed', /closed to new generalist engagements/i.test(whoWeServe.legacy));
 }

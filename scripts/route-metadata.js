@@ -501,7 +501,7 @@ const routes = [
   {
     path: '/services/fractional-cfo',
     title: 'Fractional CFO Services | Benefique Tax & Accounting',
-    description: 'Fractional CFO services for healthcare practices and service businesses. Cash flow forecasting, financial strategy, KPI dashboards, and tax planning -- without the full-time CFO cost.',
+    description: `Fractional CFO services for ${AUDIENCE_ONE_LINE}. Cash flow forecasting, financial strategy, KPI dashboards, and tax planning -- without the full-time CFO cost.`,
     faq: [
       { q: 'What does a fractional CFO do?', a: 'A fractional CFO provides executive-level financial strategy on a part-time basis. This includes cash flow forecasting, financial modeling, KPI development, tax strategy, and board-ready reporting -- without the $200K+ salary of a full-time CFO.' },
       { q: 'How is a fractional CFO different from a bookkeeper or CPA?', a: 'A bookkeeper records transactions. A CPA files taxes. A fractional CFO provides forward-looking financial strategy -- helping you make better decisions about hiring, expansion, pricing, and cash management before problems arise.' },
