@@ -67,6 +67,26 @@ A single blended margin is fine when both underlying streams have similar econom
 
 In all of these, the diagnostic move is the same: split the blended number into its components, calculate each one's margin independently, and look at how each one is *trending*. The blended number is then useful as a checksum, not as a management tool.
 
+## A Worked Example in Imaging: One Number Hiding $1M of Mix
+
+The distribution case above is the cleanest illustration of the arithmetic. Healthcare is where it does the most damage, because there the "streams" are payer rails — and mix shifts without anyone deciding that it should.
+
+Take a fictional four-center imaging group. (Meridian Imaging Partners is a composite we built to publish the method; every figure below is synthetic.) Across 54,100 scans it collects $20,631,100 — a blended **$381.35 of net revenue per scan**. That is not a margin, but it is the same weighted-average structure: total dollars over total units, summed across streams with genuinely different economics. It fails in exactly the same way.
+
+Because it describes none of the four centers:
+
+| Center | Net revenue per scan | Share of volume on the government rail |
+|---|---|---|
+| Northgate (best) | $421.80 | 13.6% |
+| Lakeside (worst) | $315.32 | 50.0% |
+
+Both centers operate on **identical payer terms**. Nobody negotiated a worse contract, and nobody is billing badly. The whole $106.48-per-scan difference is mix — which rails the volume happens to arrive on. Against Lakeside's 9,600 scans, that gap is **$1,022,170 a year**.
+
+The blended $381.35 moves only when mix moves, and mix moves slowly enough to read as stability. An owner watching that one line sees a business holding steady. Over a million dollars a year is sitting inside it — and because it is not a billing failure, no amount of pressure on the billing company will surface it.
+
+Which is the general rule restated in one industry: **the blended number is a checksum, and the decision always lives one level down.** The full example — per center, per modality, per payer rail, and days to cash, all reconciling to one volume figure — is published as [the Radiology Intelligence Pack](/radiology/intelligence-pack).
+
+
 ## Blended vs Weighted Average — Same Math, Different Connotation
 
 Some textbooks distinguish "weighted average margin" from "blended margin." Mathematically they are identical — both divide total gross profit by total revenue. The difference is rhetorical:
@@ -102,6 +122,7 @@ The blended-margin trap is most visible in real-world cases. Two deeper pieces e
 
 - [Blended Gross Margin: When a 15% P&L Hides a 50% Business](/blog/blended-pl-lying-multi-entity-business) — a $3M distribution case where splitting the blended margin revealed a healthy 50%+ external operation next to a subsidized 9% internal one.
 - [Intercompany Markup: 10% vs 20% Moves $48K per $1M](/blog/intercompany-markup-dial-multi-entity) — what the markup dial does to multi-entity blended margins, and how to set it consciously.
+- [The Radiology Intelligence Pack](/radiology/intelligence-pack) — the blended-number trap worked end to end for a multi-center imaging group, with the per-center, per-modality and per-payer-rail cuts that replace it. Fictional group, synthetic figures, real method.
 
 If you've never split your own blended margin, the most useful 30 minutes you'll spend this quarter is doing exactly that. [Book a free conversation with Benefique](/contact) and we'll pull your QuickBooks file, split your blended margin into its real components, and show you which stream is actually carrying the business — before the blended number convinces you the wrong thing is the problem.
 

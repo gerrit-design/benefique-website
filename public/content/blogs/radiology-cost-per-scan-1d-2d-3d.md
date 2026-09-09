@@ -145,4 +145,6 @@ Not on its own. Volume drives revenue, but profitability depends on whether each
 
 ---
 
+**Cost per scan only means something next to net revenue per scan.** The [Radiology Intelligence Pack](/radiology/intelligence-pack) puts the two side by side across four centers on identical payer terms - and shows the centers still landing more than a million dollars a year apart on mix alone. Fictional composite, synthetic figures. We build the real version in a [Strategic Radiology Review](/radiology).
+
 *Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Practice examples are anonymized composites based on real client data; identifying details have been changed. Consult a qualified professional for advice specific to your situation.*

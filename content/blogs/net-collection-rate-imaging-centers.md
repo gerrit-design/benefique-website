@@ -108,3 +108,5 @@ Industry medians run materially below the adjudicated-class targets at operators
 Gross collection rate measures your chargemaster. Net collection rate measures your operation. And at PI-heavy imaging centers, even NCR only works when it's computed per payer class and — for the slow classes — by cohort against yield-adjusted value.
 
 We build this instrumentation as part of our imaging work for multi-center groups in Florida and Texas: NCR by payer class by center, cohort curves on the PI book, and the monthly scorecard that puts speed and completeness on the same page. If you want to see your center's version of these numbers, [that's a conversation we're glad to have](/contact).
+
+**NCR is one line in a longer chain.** The [Radiology Intelligence Pack](/radiology/intelligence-pack) carries it alongside net revenue per scan, days to cash by payer rail and per-center contribution - all reconciling to one volume figure, which is what makes the rate trustworthy. Fictional composite, synthetic figures, real method. Yours is built in a [Strategic Radiology Review](/radiology).

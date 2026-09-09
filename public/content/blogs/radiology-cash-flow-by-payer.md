@@ -111,4 +111,6 @@ Start by segmenting accounts receivable by payer pipe (commercial, Medicare, PIP
 
 ---
 
+**This is the analysis, worked end to end.** The [Radiology Intelligence Pack](/radiology/intelligence-pack) takes four centers on identical payer terms and shows them landing over a million dollars a year apart - entirely on payer mix - with days to cash carried rail by rail. The group is fictional and every figure synthetic; the method is the one we run for clients. Start with a [Strategic Radiology Review](/radiology).
+
 *Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances. Practice examples are anonymized composites based on real client data; identifying details have been changed.*

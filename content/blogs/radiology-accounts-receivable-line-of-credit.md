@@ -163,4 +163,6 @@ Usually yes, but with a separate advance rate reflecting the longer duration. A 
 
 Ready to have that conversation with your bank with the numbers already on your side? [Benefique's fractional CFO engagement](/contact) for healthcare practices includes the A/R translation memo as standard deliverable whenever a credit event comes up. Read how accounting becomes an [ROI center](/about) when the translation layer is built in.
 
+**The pack a lender actually reads.** Our [worked imaging example](/radiology/intelligence-pack) lays out net collection rate, days to cash by payer rail, and per-center performance in the order a credit committee asks for them - the same structure we prepare for banking conversations. The group is fictional and the figures synthetic; the format is not. Start with a [Strategic Radiology Review](/radiology).
+
 *Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax and banking situations vary — consult a qualified professional for advice specific to your circumstances. Practice examples are anonymized composites based on real client data; identifying details have been changed.*

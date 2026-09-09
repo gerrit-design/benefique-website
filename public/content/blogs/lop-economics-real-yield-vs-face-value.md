@@ -188,4 +188,6 @@ Accrual-basis imaging centers can establish a documented bad-debt reserve method
 
 ---
 
+**LOP is a rail, not a receivable line.** In the [Radiology Intelligence Pack](/radiology/intelligence-pack) the PI / letter-of-protection rail is carried as its own rail - priced, aged, and set against the commercial and government rails so the yield trade-off is visible rather than buried in a blended A/R number. Illustrative data throughout. If you want your own LOP book measured this way, that is a [Strategic Radiology Review](/radiology).
+
 *Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances. Practice examples are anonymized composites based on real client data; identifying details have been changed.*

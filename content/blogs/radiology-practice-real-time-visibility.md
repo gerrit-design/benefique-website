@@ -166,4 +166,6 @@ Or explore more resources:
 
 ---
 
+**What real-time visibility actually delivers.** The [Radiology Intelligence Pack](/radiology/intelligence-pack) shows the finished shape - profit and cash by center, by modality, by payer rail and by claim - worked through on a fictional four-center group. Synthetic figures, real method. To scope it for your practice, start with a [Strategic Radiology Review](/radiology).
+
 *Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances.*

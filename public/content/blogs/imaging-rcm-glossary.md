@@ -100,3 +100,5 @@ Three closing rules that convert definitions into money:
 3. **Never let contingent paper (PIP over-cap, LOP, funded receivables) blend into ordinary A/R.** It's a different asset with different math.
 
 This glossary reflects how we actually instrument imaging businesses — the same definitions behind our [DSO benchmarks](/blog/dso-benchmarks-imaging-centers-2026-sefl), [NCR framework](/blog/net-collection-rate-imaging-centers), and [payer cash-flow analysis](/blog/radiology-cash-flow-by-payer). If your center's reporting uses these words loosely, the numbers built on them are loose too — [we can tighten both](/contact).
+
+**Seeing the terms used together is faster than reading them one at a time.** The [Radiology Intelligence Pack](/radiology/intelligence-pack) puts net collection rate, days to cash, payer rail and per-scan net revenue on one worked example, so each definition sits next to the decision it drives. The group is fictional and the figures synthetic. For your own numbers, start with a [Strategic Radiology Review](/radiology).

@@ -182,4 +182,6 @@ The most common causes are low clean claim rate (claims rejected on first submis
 
 **Ready to see what your collection cycle is actually costing you?** [Schedule a working capital analysis](/contact) and we will map your scan-to-cash pipeline — payer by payer, stage by stage — and show you exactly where the cash is trapped. Most practices find six figures in recoverable cash within the first 30 days.
 
+**Billing ROI is only measurable once cash is split by rail.** The [Radiology Intelligence Pack](/radiology/intelligence-pack) reads days to cash rail by rail against net revenue per scan, which is where a billing company's real contribution - or its absence - becomes visible. Fictional group, synthetic figures. A [Strategic Radiology Review](/radiology) measures your own.
+
 *Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances. Practice examples are anonymized composites based on real client data; identifying details have been changed.*

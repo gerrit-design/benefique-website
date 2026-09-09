@@ -246,4 +246,6 @@ Yes. Any practice where a single procedure requires an expensive consumable — 
 
 ---
 
+**Separating the payer decision from the referrer decision needs both cuts on one page.** The [Radiology Intelligence Pack](/radiology/intelligence-pack) is built that way - profit read by center, by modality and by payer rail off a single reconciled volume, so a mix problem cannot be mistaken for a referral problem. Illustrative figures throughout. Yours gets built in a [Strategic Radiology Review](/radiology).
+
 *Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances. Practice examples are anonymized composites based on real client data; identifying details have been changed to comply with HIPAA Safe Harbor de-identification standards.*

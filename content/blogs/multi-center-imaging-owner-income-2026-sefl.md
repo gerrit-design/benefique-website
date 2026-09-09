@@ -197,4 +197,6 @@ SE Florida multi-center platforms in 2026 trade in bands of roughly 3.5x–5.0x 
 
 ---
 
+**Owner income is the residual - and the residual is decided per center.** The [Radiology Intelligence Pack](/radiology/intelligence-pack) shows how four centers on the same payer terms produce materially different cash, and where the difference is created. Synthetic figures, real method. A [Strategic Radiology Review](/radiology) reconstructs the picture from your own numbers.
+
 *Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances. Practice examples are anonymized composites based on real client data; identifying details have been changed.*

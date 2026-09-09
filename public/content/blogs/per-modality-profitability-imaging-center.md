@@ -231,4 +231,6 @@ Almost never, unless explicitly asked. Standard accounting deliverables are tax-
 
 ---
 
+**Want to see per-modality contribution carried across a whole group?** The [Radiology Intelligence Pack](/radiology/intelligence-pack) works a fictional four-center composite end to end - net revenue per scan by center, contribution by modality, and days to cash by payer rail, with every cut reconciling to the same underlying volume. The figures are synthetic; the method is the one we run. To have it built on your own data, start with a [Strategic Radiology Review](/radiology).
+
 *Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances. Practice examples are anonymized composites based on real client data; identifying details have been changed.*

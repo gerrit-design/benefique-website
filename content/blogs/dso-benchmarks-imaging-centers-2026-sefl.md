@@ -246,4 +246,6 @@ A focused 90-day program targeting Tier-1 audit, PIP reconciliation, and weighte
 
 ---
 
+**Benchmarks tell you where you should be; your own payer rails tell you where you are.** Our [worked four-center example](/radiology/intelligence-pack) shows days-to-cash split by rail alongside net revenue per scan, so the collection cycle sits next to the margin it is funding. Fictional group, synthetic figures, real method. A [Strategic Radiology Review](/radiology) produces the same views from your billing data.
+
 *Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances. Practice examples are anonymized composites based on real client data; identifying details have been changed.*

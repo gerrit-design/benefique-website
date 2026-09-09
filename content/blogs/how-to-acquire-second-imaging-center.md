@@ -185,4 +185,6 @@ The 90-day playbook is the active-management window. Full operational integratio
 
 ---
 
+**Before you underwrite a second center, you need the first one measured properly.** The [Radiology Intelligence Pack](/radiology/intelligence-pack) shows the per-center, per-modality and per-rail views that make a target's economics comparable to your own rather than merely adjacent. Illustrative data. A [Strategic Radiology Review](/radiology) produces the version you can take to a lender.
+
 *Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances. Practice examples are anonymized composites based on real client data; identifying details have been changed.*

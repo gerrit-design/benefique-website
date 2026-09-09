@@ -266,6 +266,94 @@ for (const page of ['dist/radiology/index.html', 'dist/radiology/intelligence-pa
 }
 
 
+// ---------------------------------------------------------------------------
+// Blog markdown lives in TWO trees:
+//   content/blogs/         -> read by prerender.js, so it is what a CRAWLER sees
+//   public/content/blogs/  -> copied into dist and fetched at runtime, so it is
+//                             what a VISITOR sees
+// They were 95/95 identical until an edit landed in only one of them on
+// 2026-09-09, which would have shipped two different articles to the two
+// audiences without any build error. Nothing else enforces this, so the build
+// does.
+{
+  const A = join(ROOT, 'content/blogs');
+  const B = join(ROOT, 'public/content/blogs');
+  const mds = (d) => readdirSync(d).filter((f) => f.endsWith('.md')).sort();
+  const listA = mds(A);
+  const listB = mds(B);
+
+  check(
+    'blog markdown trees hold the same files',
+    listA.join('|') === listB.join('|'),
+    `${listA.length} in content/blogs, ${listB.length} in public/content/blogs`
+  );
+
+  // Compare on normalised line endings: the repo holds a mix of CRLF and LF and
+  // that difference is not a content difference.
+  const read = (p) => readFileSync(p, 'utf-8').replace(/\r\n/g, '\n');
+  const drifted = listA.filter(
+    (f) => listB.includes(f) && read(join(A, f)) !== read(join(B, f))
+  );
+  check(
+    'content/blogs and public/content/blogs are identical',
+    drifted.length === 0,
+    drifted.slice(0, 6).join(', ')
+  );
+
+  // The imaging cluster must route to the money pages in the HTML a crawler
+  // actually reads — asserting it in the markdown source would pass even when
+  // the prerender is stale, which is the failure this whole file exists to catch.
+  const IMAGING_CLUSTER = [
+    'per-modality-profitability-imaging-center',
+    'dso-benchmarks-imaging-centers-2026-sefl',
+    'lop-economics-real-yield-vs-face-value',
+    'radiology-cost-per-scan-1d-2d-3d',
+    'radiology-accounts-receivable-line-of-credit',
+    'multi-center-imaging-owner-income-2026-sefl',
+    'referring-doctor-relationship-myth-medical-imaging',
+    'radiology-collections-dashboard-case-study',
+    'revenue-per-available-magnet-hour',
+    'radiology-cash-flow-by-payer',
+    'how-to-acquire-second-imaging-center',
+    'net-collection-rate-imaging-centers',
+    'imaging-rcm-glossary',
+    'texas-lop-imaging-accounts-receivable',
+    'medical-billing-fees-vs-collections-dso',
+    'selling-imaging-center-what-buyers-pay',
+    'blended-margin-meaning-and-formula',
+  ];
+  const noPack = IMAGING_CLUSTER.filter((slug) => {
+    const p = dist(`dist/blog/${slug}/index.html`);
+    return !existsSync(p) || !readFileSync(p, 'utf-8').includes('/radiology/intelligence-pack');
+  });
+  check(
+    'imaging cluster links to the Intelligence Pack in prerendered HTML',
+    noPack.length === 0,
+    noPack.join(', ')
+  );
+
+  const noRad = IMAGING_CLUSTER
+    // A general accounting post: it earns the Pack link through its imaging
+    // worked example, but its readers are not mostly imaging owners.
+    .filter((slug) => slug !== 'blended-margin-meaning-and-formula')
+    .filter((slug) => {
+    const p = dist(`dist/blog/${slug}/index.html`);
+    return !existsSync(p) || !/href="\/radiology"/.test(readFileSync(p, 'utf-8'));
+  });
+  check(
+    'imaging cluster links to /radiology in prerendered HTML',
+    noRad.length === 0,
+    noRad.join(', ')
+  );
+
+  // Positive control: the parity comparison must be capable of failing.
+  check(
+    'parity check can fail (positive control)',
+    read(join(A, listA[0])) !== read(join(A, listA[0])) + 'x'
+  );
+}
+
+
 console.log(`\nwords: /radiology ${rad.text.split(' ').length}, pack ${pack.text.split(' ').length}`);
 console.log(failures === 0 ? '\nALL CHECKS PASSED' : `\n${failures} CHECK(S) FAILED`);
 process.exit(failures === 0 ? 0 : 1);
