@@ -1,5 +1,13 @@
 # CLAUDE.md - Project Rules for Benefique Website
 
+## ⚠️ Non-website work in this repo
+
+**Eber Group month-end close (Coconut Creek + Miami Beach PET tracer accrual):**
+read **`EBER-MONTH-END.md`** in this folder FIRST, before searching Drive, Gmail or QuickBooks.
+It holds the rule, every Drive file ID, the five-vendor map, dose costs, prior-month anchors, and a
+list of dead ends not to repeat. Triggers: "close the month", "tracer accrual", "Eber", "Creek",
+"Miami Beach", "PET".
+
 ## Project Context
 - **Framework:** React + Vite + Tailwind CSS
 - **Deployment:** Vercel project `benefique-website-382f` (auto-deploy on push to main)
