@@ -81,9 +81,23 @@ function extractBlogMeta(slug) {
   const block = match[1];
 
   const get = (key) => {
-    const re = new RegExp(`${key}:\\s*'([^']*(?:\\\\.[^']*)*)'`);
+    // Match a JS single-quoted literal INCLUDING escapes. The base class must
+    // exclude the backslash: with [^']* the backslash of \' is swallowed first,
+    // the escape alternation never fires, and the value is silently truncated
+    // at the apostrophe. That shipped a title reading "...What the P&L Can\"
+    // on 2026-09-17 — the build passed, the artefact was wrong.
+    const re = new RegExp(`${key}:\\s*'((?:[^'\\\\]|\\\\.)*)'`);
     const m = block.match(re);
-    return m ? m[1].replace(/\\'/g, "'") : '';
+    if (!m) return '';
+    // We read BlogPost.jsx as TEXT, so JS escapes arrive literally. React parses
+    // the same source and renders them correctly, which is why this was invisible
+    // on screen while six prerendered <title>s shipped a literal "–" to
+    // Google. Decode what the JS engine would have decoded.
+    return m[1]
+      .replace(/\\u([0-9a-fA-F]{4})/g, (_, hex) =>
+        String.fromCharCode(parseInt(hex, 16))
+      )
+      .replace(/\\'/g, "'");
   };
 
   // Extract categories array: categories: ['Cat1', 'Cat2']

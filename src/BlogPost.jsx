@@ -568,7 +568,7 @@ const blogPosts = {
   },
   'per-unit-pnl-multi-location-cost-analysis': {
     file: '/content/blogs/per-unit-pnl-multi-location-cost-analysis.md',
-    title: 'Per-Unit P&L: The 3x Cost Gap in Multi-Location Businesses',
+    title: 'Same Owner, Same Industry, 3x Cost Difference — What the P&L Can\'t Tell You',
     date: '2026-03-24',
     author: 'Gerrit Disbergen, EA',
     excerpt: 'Three imaging centers. Same owner. Same industry. One costs $109 per scan to operate. Another costs $309. Their P&L couldn\'t explain the difference. A per-unit analysis — dividing every cost category by every claim — exposed the gap in 20 minutes.',
@@ -1351,7 +1351,7 @@ const blogPosts = {
   },
   'ai-cash-flow-waterfall-explained': {
     file: '/content/blogs/ai-cash-flow-waterfall-explained.md',
-    title: 'Cash Flow Waterfall Explained: From $1.07M EBITDA to –$41K Cash',
+    title: '$1.07M EBITDA, –$41K Cash: The Cash Flow Waterfall Explained',
     date: '2026-03-18',
     author: 'Gerrit Disbergen, EA',
     excerpt: '$1.07M EBITDA, –$41K cash. The waterfall shows exactly where every dollar went — operating cash, debt service, distributions, working capital. Real $5M imaging-center walkthrough, line by line.',

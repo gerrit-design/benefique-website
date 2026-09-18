@@ -354,6 +354,45 @@ for (const page of ['dist/radiology/index.html', 'dist/radiology/intelligence-pa
 }
 
 
+// ---------------------------------------------------------------------------
+// A JS string literal that is parsed with [^']* truncates at an escaped
+// apostrophe, and the truncation is silent: the build succeeds and ships a
+// <title> ending in a bare backslash. Happened 2026-09-17 with
+// "...What the P&L Can\". Nothing here would have caught it, so:
+{
+  const blogDirs = readdirSync(dist('dist/blog'), { withFileTypes: true })
+    .filter((d) => d.isDirectory())
+    .map((d) => d.name);
+
+  const truncated = [];
+  for (const slug of blogDirs) {
+    const p = dist(`dist/blog/${slug}/index.html`);
+    if (!existsSync(p)) continue;
+    const html = readFileSync(p, 'utf-8');
+    const t = html.match(/<title>([\s\S]*?)<\/title>/);
+    const d = html.match(/<meta name="description" content="([\s\S]*?)"/);
+    // No legitimate title or description on this site contains a backslash.
+    if ((t && t[1].includes('\\')) || (d && d[1].includes('\\'))) truncated.push(slug);
+  }
+  check(
+    'no prerendered blog title/description truncated at an escape',
+    truncated.length === 0,
+    truncated.slice(0, 6).join(', ')
+  );
+  check(
+    'blog prerender directories were found at all',
+    blogDirs.length > 50,
+    `${blogDirs.length} dirs`
+  );
+
+  // Positive control: the detector must be able to see a backslash.
+  check(
+    'title-truncation detector can fail (positive control)',
+    'What the P&L Can\\'.includes('\\')
+  );
+}
+
+
 console.log(`\nwords: /radiology ${rad.text.split(' ').length}, pack ${pack.text.split(' ').length}`);
 console.log(failures === 0 ? '\nALL CHECKS PASSED' : `\n${failures} CHECK(S) FAILED`);
 process.exit(failures === 0 ? 0 : 1);
