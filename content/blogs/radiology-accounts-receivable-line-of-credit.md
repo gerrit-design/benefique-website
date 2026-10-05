@@ -1,5 +1,5 @@
 ---
-title: "Radiology Accounts Receivable: How Banks Misread Your Aging Report"
+title: "How to Reduce Radiology Accounts Receivable (and Why Banks Misread the Aging Report)"
 description: "Commercial banks haircut radiology A/R because they've never been taught how a chargemaster works. Here's the three-number framework to translate it."
 date: "2026-04-14"
 author: "Gerrit Disbergen, EA"
@@ -8,7 +8,7 @@ categories: "Healthcare Finance"
 readTime: "11 min read"
 featuredImage: "/images/blog/radiology-accounts-receivable-line-of-credit.jpg"
 slug: "radiology-accounts-receivable-line-of-credit"
-metaTitle: "Radiology Accounts Receivable: How Banks Misread It | Benefique"
+metaTitle: "How to Reduce Radiology Accounts Receivable | Benefique"
 metaDescription: "Why 58% of your radiology A/R in 120+ days is normal, not a warning. The chargemaster, Net Collection Rate, and how to explain it to your bank."
 keywords: "radiology accounts receivable, radiology line of credit, net collection rate, healthcare A/R, chargemaster, LOP letter of protection, Florida radiology billing"
 ---

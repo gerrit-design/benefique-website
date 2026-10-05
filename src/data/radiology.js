@@ -99,7 +99,7 @@ export const radiologyClusters = [
       { slug: 'net-collection-rate-imaging-centers', title: 'Net Collection Rate for Imaging Centers: Formula & 2026 Benchmarks' },
       { slug: 'dso-benchmarks-imaging-centers-2026-sefl', title: 'DSO Benchmarks for Imaging Centers: 2026 SE Florida Data' },
       { slug: 'imaging-rcm-glossary', title: 'The Imaging RCM Glossary: 16 Terms That Decide Whether Your Center Gets Paid' },
-      { slug: 'radiology-accounts-receivable-line-of-credit', title: 'Radiology Accounts Receivable: How Banks Misread Your Aging Report' },
+      { slug: 'radiology-accounts-receivable-line-of-credit', title: 'How to Reduce Radiology Accounts Receivable (and Why Banks Misread the Aging Report)' },
       { slug: 'dso-lying-medical-practice-cash-flow', title: 'Your DSO Is Lying to You — Why Averages Hide Your Real Cash Flow Problem' },
       { slug: 'medical-billing-fees-vs-collections-dso', title: 'Your Billing Company Costs 6%. Slow Collections Cost 10x That.' },
       { slug: 'ai-cash-flow-waterfall-explained', title: 'How AI Found That $1M in Profit Left Zero Cash in the Bank' },

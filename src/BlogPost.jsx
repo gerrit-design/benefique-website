@@ -465,7 +465,7 @@ const blogPosts = {
   },
   'radiology-accounts-receivable-line-of-credit': {
     file: '/content/blogs/radiology-accounts-receivable-line-of-credit.md',
-    title: 'Radiology Accounts Receivable: How Banks Misread Your Aging Report',
+    title: 'How to Reduce Radiology Accounts Receivable (and Why Banks Misread the Aging Report)',
     date: '2026-04-14',
     author: 'Gerrit Disbergen, EA',
     excerpt: 'Your banker sees 58% of your A/R sitting in the 120+ bucket and thinks your practice is a disaster. It isn\'t. Here\'s the three-number framework that translates a radiology aging report into language a commercial credit team understands — and the template we send when a bank asks for A/R.',

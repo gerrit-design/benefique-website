@@ -52,7 +52,6 @@ const staticRoutes = [
   { path: '/hollywood-accounting', priority: 0.8, changefreq: 'monthly', lastmod: new Date() },
   
   // Industry pages
-  { path: '/industries/radiology', priority: 0.8, changefreq: 'monthly', lastmod: new Date() },
   { path: '/industries/dental', priority: 0.8, changefreq: 'monthly', lastmod: new Date() },
   { path: '/industries/veterinary', priority: 0.8, changefreq: 'monthly', lastmod: new Date() },
   { path: '/industries/marine-services', priority: 0.8, changefreq: 'monthly', lastmod: new Date() },

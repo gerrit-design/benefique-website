@@ -13,7 +13,7 @@ slug: "rd-tax-credits-healthcare"
 
 When you hear "R&D tax credits," you probably think of tech startups and pharmaceutical companies.
 
-You don't think of your [radiology practice](/industries/radiology), [dental group](/industries/dental), or [veterinary clinic](/industries/veterinary).
+You don't think of your [radiology practice](/radiology), [dental group](/industries/dental), or [veterinary clinic](/industries/veterinary).
 
 **That's a mistake that's costing you tens of thousands of dollars.**
 
