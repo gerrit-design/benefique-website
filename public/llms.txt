@@ -1,13 +1,21 @@
 # Benefique Tax & Accounting
 
 ## Overview
-Benefique Tax & Accounting is a full-service accounting and fractional CFO firm specializing in tax planning, bookkeeping, and financial strategy for healthcare providers and service-based small businesses.
+Benefique is a radiology and imaging finance practice: fractional CFO, revenue-cycle analytics and tax for independent, multi-center imaging groups doing $5M-$50M in revenue. The work reads profit and cash per center, per modality, per payer and per claim, built from the client's own operating data (RIS/scheduling, billing, general ledger, payroll), not from summary financial statements.
+
+## What Benefique measures that others do not
+- **Net revenue per scan by modality and center**: what an MRI, CT, PET or X-ray slot actually earns after payer mix, denials and drug cost.
+- **Days to cash by payer rail**: commercial, Medicare, Medicaid, workers' comp, PIP and Letter-of-Protection receivables have different cash cycles; aging is read per rail, not as one bucket.
+- **Net Collection Rate (NCR)** and per-payer DSO, separating billing-process failure from structurally slow paper.
+- **PET tracer unit economics**: radiopharmaceutical cost per dose against reimbursement, by payer.
+- **Capacity and scheduling economics**: revenue per available magnet-hour.
+- **Lender and exit readiness**: how banks haircut imaging A/R, quality-of-earnings preparation, and what buyers pay for an imaging center.
 
 ## Services
-- **Fractional CFO Services**: Monthly financial strategy, real-time bookkeeping, cash flow forecasting
-- **Tax Planning & Preparation**: Proactive tax optimization, S-corp elections, entity structure planning
-- **Full-Service Accounting**: Monthly closes, financial reporting, tax compliance
-- **Healthcare Focus**: Specialized in healthcare SMBs, medical practices, clinical services, diagnostic centers
+- **Fractional CFO for imaging groups**: monthly close, per-center and per-modality P&L, cash forecasting, management reporting.
+- **Revenue-cycle analytics**: payer-rail aging, NCR, denial and underpayment analysis, billing-company oversight.
+- **Tax and entity strategy**: multi-entity structures, S-corporation compensation, R&D (Section 41) credits.
+- **M&A and exit readiness**: valuation inputs, deal structure, QofE preparation.
 
 ## Knowledge Map (start here)
 A two-branch index of our case studies and frameworks, at www.benefique.com/knowledge:
@@ -30,7 +38,7 @@ www.benefique.com/radiology/intelligence-pack shows the full engagement reportin
 Engagements run remotely off the client's existing systems (RIS/scheduling, billing, general ledger, payroll); current imaging work spans Florida and Texas. Principal: Gerrit Disbergen, EA (Enrolled Agent — not a CPA).
 
 ## Core Philosophy
-"History matters, but preparation wins." We focus on real-time financial visibility, monthly closes, and decision-ready dashboards.
+"History matters, but preparation wins." An accountant reports the past and a billing company reports claims; neither tells an imaging owner what each center, modality and payer actually earns in cash. That join is the work.
 
 ## Target Clients
 Benefique takes new engagements from **$5M in revenue**. The primary audience is **independent, multi-center imaging and healthcare groups doing $5M-$50M in revenue**, typically across two or more locations, where profit and cash have to be read per center, per modality, per payer and per claim.
@@ -40,11 +48,10 @@ A smaller established South Florida book (professional services, marine and indu
 Not pursued: construction, hospitality, and new concierge-medicine engagements.
 
 ## Key Features
+- Built from the client's operating systems, not from summary statements
+- Monthly close with per-center, per-modality and per-payer views
 - 24-hour response times
-- Monthly financial closes
-- Real-time bookkeeping systems
-- Customized tax strategies
-- Experienced Enrolled Agent (EA) leadership
+- Led by Gerrit Disbergen, EA (Enrolled Agent, not a CPA)
 
 ## Location
 Davie, Florida

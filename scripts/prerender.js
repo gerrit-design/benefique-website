@@ -209,11 +209,24 @@ function buildArticleSchema(slug, meta) {
     '@type': 'Article',
     headline: meta.title,
     description: meta.excerpt,
-    author: {
-      '@type': 'Organization',
-      name: 'Benefique Tax & Accounting',
-      url: SITE,
-    },
+    // Posts by Gerrit carry a Person author tied to the site-wide Person entity
+    // (index.html, same @id), so AI and search engines attribute the work to a
+    // named expert; posts credited to the firm keep the Organization author.
+    author: /Gerrit Disbergen/.test(meta.author || '')
+      ? {
+          '@type': 'Person',
+          '@id': `${SITE}/#gerrit-disbergen`,
+          name: 'Gerrit Disbergen, EA',
+          honorificSuffix: 'EA',
+          jobTitle: 'Founder & Fractional CFO',
+          url: `${SITE}/about`,
+          worksFor: { '@type': 'Organization', name: 'Benefique Tax & Accounting', url: SITE },
+        }
+      : {
+          '@type': 'Organization',
+          name: 'Benefique Tax & Accounting',
+          url: SITE,
+        },
     datePublished: meta.date,
     dateModified: meta.date,
     publisher: {
