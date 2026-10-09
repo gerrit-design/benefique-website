@@ -9,6 +9,7 @@ import { fileURLToPath } from 'url';
 import matter from 'gray-matter';
 import { marked } from 'marked';
 import { routes, SITE, DEFAULT_OG_IMAGE } from './route-metadata.js';
+import { LINE_PATH, LINE_POSTS, stopFor } from '../src/data/referral-line.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
@@ -438,6 +439,14 @@ for (const slug of blogSlugs) {
     schemas.push(buildFAQSchema(faqs));
   }
 
+  // Radiology posts carry a pointer to their stop on the Referral-to-Cash Line,
+  // mirroring the LineStrip the React page renders above the article.
+  const lineEntry = LINE_POSTS[slug];
+  const lineStop = lineEntry ? stopFor(lineEntry.stop) : null;
+  const lineHtml = lineStop
+    ? `<p>On the Referral-to-Cash Line: <a href="${LINE_PATH}#${lineStop.code}">${escapeHtml(lineStop.line.name)}: ${escapeHtml(lineStop.name)}</a></p>`
+    : '';
+
   const ogImage = meta.featuredImage ? `${SITE}${meta.featuredImage}` : DEFAULT_OG_IMAGE;
   const pageTitle = `${meta.title} - Benefique Tax & Accounting`;
 
@@ -448,7 +457,7 @@ for (const slug of blogSlugs) {
     ogType: 'article',
     ogImage,
     schemas,
-    rootContent: `<article>${articleHtml}</article>`,
+    rootContent: `${lineHtml}<article>${articleHtml}</article>`,
   });
 
   const outDir = join(DIST, 'blog', slug);

@@ -166,10 +166,53 @@ function checkOrphanFiles() {
   return true;
 }
 
-const postsValid = validatePosts();
-const redirectsClean = checkRedirectConflicts();
-const orphansClean = checkOrphanFiles();
+// Every radiology post must point to a stop on the Referral-to-Cash Line
+// (src/data/referral-line.js), so each article can show where it sits.
+// A post counts as radiology when its slug, title or excerpt matches
+// RADIOLOGY_TERMS; deliberate exceptions go in OFF_LINE with a reason.
+async function checkReferralLine() {
+  const { pathToFileURL } = require('url');
+  const line = await import(pathToFileURL(path.join(__dirname, '../src/data/referral-line.js')).href);
+  const source = fs.readFileSync(BLOG_REGISTRY, 'utf8');
+  const registered = Object.keys(extractBlogPostsFromRegistry());
+  const validStops = new Set(line.LINES.flatMap((l) => l.stops.map((s) => s.code)));
+  const problems = [];
 
-if (!postsValid || !redirectsClean || !orphansClean) {
-  process.exit(1);
+  for (const [slug, entry] of Object.entries(line.LINE_POSTS)) {
+    if (!registered.includes(slug)) problems.push(`LINE_POSTS has '${slug}', which is not a registered post`);
+    if (!validStops.has(entry.stop)) problems.push(`'${slug}' points to unknown stop '${entry.stop}'`);
+    if (entry.also && !validStops.has(entry.also)) problems.push(`'${slug}' has unknown also-stop '${entry.also}'`);
+  }
+
+  for (const slug of registered) {
+    if (line.LINE_POSTS[slug] || line.OFF_LINE[slug]) continue;
+    const start = source.indexOf(`\n  '${slug}': {`);
+    const block = start === -1 ? '' : source.slice(start, start + 3000);
+    const title = (block.match(/title: (['"])((?:\\.|(?!\1).)*)\1/) || [])[2] || '';
+    const excerpt = (block.match(/excerpt: (['"])((?:\\.|(?!\1).)*)\1/) || [])[2] || '';
+    if (line.RADIOLOGY_TERMS.test(`${slug} ${title} ${excerpt}`)) {
+      problems.push(`'${slug}' looks like a radiology post but has no stop on the line`);
+    }
+  }
+
+  if (problems.length) {
+    console.log('\n❌ REFERRAL-TO-CASH LINE CHECK FAILED\n');
+    problems.forEach((p) => console.log(`  ❌ ${p}`));
+    console.log('\nFix: add the post to LINE_POSTS in src/data/referral-line.js with its stop,');
+    console.log('or to OFF_LINE with a reason if it is not a radiology post.\n');
+    return false;
+  }
+  console.log(`✅ Referral-to-Cash Line: ${Object.keys(line.LINE_POSTS).length} radiology posts mapped, none missing`);
+  return true;
 }
+
+(async () => {
+  const postsValid = validatePosts();
+  const redirectsClean = checkRedirectConflicts();
+  const orphansClean = checkOrphanFiles();
+  const lineClean = await checkReferralLine();
+
+  if (!postsValid || !redirectsClean || !orphansClean || !lineClean) {
+    process.exit(1);
+  }
+})();

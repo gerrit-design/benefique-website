@@ -3,9 +3,10 @@ import { useParams, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { LineStrip } from './components/ReferralLine';
 
 // Blog post metadata and content mapping
-const blogPosts = {
+export const blogPosts = {
   'revenue-per-available-magnet-hour': {
     file: '/content/blogs/revenue-per-available-magnet-hour.md',
     title: 'The Magnet-Hour: What an Imaging Slot Is Actually Worth',
@@ -1872,6 +1873,9 @@ function BlogPost() {
               <span className="text-sm text-gray-600">{post.readTime}</span>
             </div>
           </div>
+
+          {/* Where this article sits on the Referral-to-Cash Line (radiology posts only) */}
+          <LineStrip slug={slug} />
 
           {/* Main content */}
           <div className="prose prose-lg max-w-none blog-content">

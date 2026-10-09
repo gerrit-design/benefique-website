@@ -20,6 +20,8 @@ import {
 import { industries } from '../src/data/industries.js';
 import { intelligenceMethods, intelligenceIntro } from '../src/data/intelligence.js';
 import { locations } from '../src/data/locations.js';
+import { LINES, LINE_PATH, LINE_POSTS, postsAtStop } from '../src/data/referral-line.js';
+import { readFileSync } from 'fs';
 import {
   AUDIENCE_ONE_LINE,
   AUDIENCE_FAQ_ANSWER,
@@ -179,6 +181,30 @@ const intelligenceBody = [
 // the same data instead.
 const industryH1 = (key) => `${industries[key].industry} Accounting & Fractional CFO Services`;
 const locationH1 = (key) => `${locations[key].city} Accounting & Fractional CFO Services`;
+
+// Crawlable body for /radiology/line, generated from the same referral-line.js
+// data the React page and the per-article strip use. Titles come from the
+// BlogPost.jsx registry so a retitled post updates here too.
+const blogRegistrySource = readFileSync(new URL('../src/BlogPost.jsx', import.meta.url), 'utf-8');
+function blogTitle(slug) {
+  const start = blogRegistrySource.indexOf(`\n  '${slug}': {`);
+  if (start === -1) return slug;
+  const m = blogRegistrySource.slice(start, start + 2000).match(/title: (['"])((?:\\.|(?!\1).)*)\1/);
+  return m ? m[2].replace(/\\(['"])/g, '$1').replace(/\\u([0-9a-fA-F]{4})/g, (_, h) => String.fromCharCode(parseInt(h, 16))) : slug;
+}
+const referralLineBody = [
+  { p: 'Every scan an imaging center performs travels one route. A referring provider sends the patient. The patient is scheduled, verified, shows up, is scanned and read. The study becomes a claim, the claim becomes cash, and the cash becomes margin, owner pay and enterprise value.' },
+  { p: 'Most centers run each step with its own team, its own system and its own metric. Each step can look healthy while dollars leak between them. We join the operations data to the financial data and read the whole line. Each article below points to the stop it is about.' },
+  ...LINES.flatMap((line) => [
+    { h2: `${line.name}: ${line.route}` },
+    ...line.stops.flatMap((stop) => {
+      const slugs = postsAtStop(stop.code);
+      const blocks = [{ h3: `${stop.code} ${stop.name}`, p: stop.what }];
+      if (slugs.length) blocks.push({ links: slugs.map((slug) => ({ href: `/blog/${slug}`, text: blogTitle(slug) })) });
+      return blocks;
+    }),
+  ]),
+];
 
 const routes = [
   // Core pages
@@ -568,6 +594,43 @@ const routes = [
     // packSchema already contains the FAQPage node for these questions.
     // Setting `faq` here as well would emit a second, duplicate FAQPage.
     schema: packSchema,
+  },
+  {
+    path: LINE_PATH,
+    title: 'The Referral-to-Cash Line | Imaging Center Data Analytics | Benefique',
+    h1: 'The Referral-to-Cash Line',
+    description: 'Every imaging center scan travels one route, from referrer to cash to enterprise value. See where each of our radiology articles sits on the operations line and the financial line.',
+    body: referralLineBody,
+    schema: {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'CollectionPage',
+          '@id': `${SITE}${LINE_PATH}`,
+          url: `${SITE}${LINE_PATH}`,
+          name: 'The Referral-to-Cash Line',
+          description: 'Radiology articles mapped to the stop they address on the imaging center operations line and financial line.',
+          about: ['Imaging center data analytics', 'Radiology revenue cycle', 'Diagnostic imaging center operations'],
+          isPartOf: { '@type': 'WebSite', name: 'Benefique Tax & Accounting', url: SITE },
+          publisher: { '@type': 'Organization', name: 'Benefique Tax & Accounting', url: SITE },
+        },
+        {
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: SITE },
+            { '@type': 'ListItem', position: 2, name: 'Radiology', item: `${SITE}/radiology` },
+            { '@type': 'ListItem', position: 3, name: 'The Referral-to-Cash Line', item: `${SITE}${LINE_PATH}` },
+          ],
+        },
+        {
+          '@type': 'ItemList',
+          name: 'Radiology articles on the Referral-to-Cash Line',
+          itemListElement: Object.keys(LINE_POSTS).map((slug, i) => ({
+            '@type': 'ListItem', position: i + 1, name: blogTitle(slug), url: `${SITE}/blog/${slug}`,
+          })),
+        },
+      ],
+    },
   },
   {
     path: '/intelligence',

@@ -61,6 +61,7 @@ const staticRoutes = [
   { path: '/services/fractional-cfo', priority: 0.9, changefreq: 'monthly', lastmod: new Date() },
   { path: '/radiology', priority: 0.95, changefreq: 'weekly', lastmod: new Date() },
   { path: '/radiology/intelligence-pack', priority: 0.9, changefreq: 'monthly', lastmod: new Date() },
+  { path: '/radiology/line', priority: 0.85, changefreq: 'weekly', lastmod: new Date() },
   { path: '/knowledge', priority: 0.9, changefreq: 'weekly', lastmod: new Date() },
   { path: '/intelligence', priority: 0.95, changefreq: 'monthly', lastmod: new Date() },
 
