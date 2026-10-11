@@ -157,7 +157,7 @@ export const radiologyClusters = [
 export const radiologyFaqs = [
   {
     q: 'Who is the Strategic Radiology Review for?',
-    a: 'Imaging center operators, CFOs, and medical directors running one or more centers with $2M+ revenue who suspect their accountant and billing company cannot answer per-payer, per-tracer, or per-claim profitability questions. Typical profile: growing but cash-constrained, unclear on PET Tracer Scan economics, preparing for a lender conversation, or renegotiating payer contracts.',
+    a: 'Imaging center operators, CFOs, and medical directors running one or more centers with $5M+ in revenue who suspect their accountant and billing company cannot answer per-payer, per-tracer, or per-claim profitability questions. Typical profile: growing but cash-constrained, unclear on PET Tracer Scan economics, preparing for a lender conversation, or renegotiating payer contracts.',
   },
   {
     q: 'What are PET Tracer Scans, and why do you separate them?',
