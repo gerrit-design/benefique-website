@@ -379,6 +379,14 @@ for (const page of ['dist/radiology/index.html', 'dist/radiology/intelligence-pa
     truncated.length === 0,
     truncated.slice(0, 6).join(', ')
   );
+  // Every blog post prerenders exactly one <h1> (the post title).
+  const badH1 = blogDirs.filter((slug) => {
+    const p = dist(`dist/blog/${slug}/index.html`);
+    if (!existsSync(p)) return false;
+    return (rootText(`dist/blog/${slug}/index.html`).frag.match(/<h1[\s>]/g) || []).length !== 1;
+  });
+  check('every prerendered blog post has exactly one <h1>', badH1.length === 0, badH1.slice(0, 6).join(', '));
+
   check(
     'blog prerender directories were found at all',
     blogDirs.length > 50,

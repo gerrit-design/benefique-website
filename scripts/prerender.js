@@ -429,8 +429,15 @@ for (const slug of blogSlugs) {
   // Use FAQs from BlogPost.jsx (source of truth), fallback to markdown parsing
   const faqs = meta.faqs && meta.faqs.length > 0 ? meta.faqs : parseFAQ(raw);
 
-  // Convert markdown to HTML for pre-rendering
-  const articleHtml = marked.parse(mdContent);
+  // Convert markdown to HTML for pre-rendering. The React page renders the post
+  // title as the page's only <h1> (hero) and maps markdown H1s to <h2>; mirror
+  // both. Before this, 52 posts whose markdown did not open with "# Title"
+  // prerendered with no <h1> at all.
+  const articleHtml = marked
+    .parse(mdContent)
+    .replace(/<h1(\s[^>]*)?>/g, '<h2$1>')
+    .replace(/<\/h1>/g, '</h2>');
+  const titleH1 = `<h1>${escapeHtml(meta.title)}</h1>`;
 
   // Build schemas
   const schemas = [];
@@ -457,7 +464,7 @@ for (const slug of blogSlugs) {
     ogType: 'article',
     ogImage,
     schemas,
-    rootContent: `${lineHtml}<article>${articleHtml}</article>`,
+    rootContent: `${titleH1}${lineHtml}<article>${articleHtml}</article>`,
   });
 
   const outDir = join(DIST, 'blog', slug);

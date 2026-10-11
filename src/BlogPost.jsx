@@ -1492,6 +1492,15 @@ export const blogPosts = {
 
 // Custom components for enhanced markdown rendering
 const MarkdownComponents = {
+  // The hero already renders the post title as the page's <h1>; a markdown
+  // "# Title" becomes an <h2> so the page keeps exactly one. scripts/prerender.js
+  // does the same, so crawlers and visitors see one heading structure.
+  h1: ({node, children, ...props}) => (
+    <h2 className="text-4xl font-bold text-benefique-navy mb-6" {...props}>
+      {children}
+    </h2>
+  ),
+
   // Enhanced H2 with anchor links
   h2: ({node, children, ...props}) => {
     const id = children?.toString().toLowerCase().replace(/[^a-z0-9]+/g, '-');
