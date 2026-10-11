@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route, Link, useLocation, Navigate, useSearchParams, useNavigate } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import BlogPost, { blogPosts } from './BlogPost';
-import { ReferralLinePage } from './components/ReferralLine';
+import { ReferralLinePage, LineOverview } from './components/ReferralLine';
 import ConciergeSimulator from './components/ConciergeSimulator';
 import BusinessSimulator from './components/BusinessSimulator';
 import RadiologySimulator from './components/RadiologySimulator';
@@ -3897,6 +3897,9 @@ function RadiologyLandingPage() {
         </div>
       </section>
 
+      {/* The Patient Referral-to-Cash Line */}
+      <LineOverview />
+
       {/* Featured Tool — Radiology Profit Simulator */}
       <section className="py-8 bg-white">
         <div className="max-w-6xl mx-auto px-4">
@@ -3955,33 +3958,6 @@ function RadiologyLandingPage() {
               </div>
               <span className="inline-block bg-benefique-navy text-white font-semibold px-6 py-3 rounded-lg whitespace-nowrap">
                 {radiologyPackPromo.linkText} &rarr;
-              </span>
-            </div>
-          </Link>
-        </div>
-      </section>
-
-      {/* Referral-to-Cash Line promo */}
-      <section className="py-4 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <Link
-            to="/radiology/line"
-            className="block bg-gray-50 border border-gray-200 rounded-2xl p-6 md:p-8 hover:border-benefique-orange hover:shadow-lg transition group"
-          >
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              <div>
-                <div className="inline-flex items-center gap-2 bg-benefique-navy/10 text-benefique-navy px-3 py-1 rounded-full text-xs font-semibold mb-2">
-                  ARTICLE MAP
-                </div>
-                <h2 className="text-2xl font-bold text-benefique-navy group-hover:text-benefique-orange transition">
-                  The Referral-to-Cash Line
-                </h2>
-                <p className="text-gray-600 text-sm mt-1 max-w-2xl">
-                  Every scan travels one route, from referrer to claim to cash to enterprise value. See which stop each of our radiology articles is about.
-                </p>
-              </div>
-              <span className="inline-block bg-benefique-navy text-white font-semibold px-6 py-3 rounded-lg whitespace-nowrap">
-                See the line &rarr;
               </span>
             </div>
           </Link>

@@ -20,7 +20,7 @@ import {
 import { industries } from '../src/data/industries.js';
 import { intelligenceMethods, intelligenceIntro } from '../src/data/intelligence.js';
 import { locations } from '../src/data/locations.js';
-import { LINES, LINE_PATH, LINE_POSTS, postsAtStop } from '../src/data/referral-line.js';
+import { LINES, LINE_PATH, LINE_NAME, LINE_POSTS, postsAtStop } from '../src/data/referral-line.js';
 import { readFileSync } from 'fs';
 import {
   AUDIENCE_ONE_LINE,
@@ -37,9 +37,28 @@ import {
 
 // The crawlable body for /radiology, assembled from the SAME arrays the React
 // page imports. Editing src/data/radiology.js updates the page and this at once.
+// The four answers for one stop, as crawlable text (shared by /radiology and /radiology/line).
+const stopAnswers = (stop) => [
+  `Owner: ${stop.owner}`,
+  `Scored on: ${stop.scored}`,
+  `What the score misses: ${stop.misses}`,
+  `What we measure: ${stop.measure}`,
+];
+const LINE_LEDE = 'Scheduling, the front desk, the billing company and the bank each run their own stop, scored on their own number. Every stop can hit its number while the business loses money between them. We tie the operations data to the ledger and follow every patient from the referrer to the bank.';
+
 const radiologyBody = [
   { p: radiologyHero.lede },
   { p: radiologyIntroText },
+  { h2: `The ${LINE_NAME}: every stop hits its number. The business still loses money.` },
+  { p: LINE_LEDE },
+  ...LINES.flatMap((line) => [
+    { h3: `${line.name}: ${line.route}` },
+    ...line.stops.map((stop) => ({
+      p: `${stop.code} ${stop.name}`,
+      ul: stopAnswers(stop),
+    })),
+  ]),
+  { links: [{ href: LINE_PATH, text: `Read the articles on the ${LINE_NAME}, stop by stop` }] },
   { h2: 'Proof' },
   { ul: radiologyProof.stats.map((stat) => `${stat.value} — ${stat.label}`) },
   { p: radiologyProof.caption },
@@ -193,13 +212,14 @@ function blogTitle(slug) {
   return m ? m[2].replace(/\\(['"])/g, '$1').replace(/\\u([0-9a-fA-F]{4})/g, (_, h) => String.fromCharCode(parseInt(h, 16))) : slug;
 }
 const referralLineBody = [
-  { p: 'Every scan an imaging center performs travels one route. A referring provider sends the patient. The patient is scheduled, verified, shows up, is scanned and read. The study becomes a claim, the claim becomes cash, and the cash becomes margin, owner pay and enterprise value.' },
-  { p: 'Most centers run each step with its own team, its own system and its own metric. Each step can look healthy while dollars leak between them. We join the operations data to the financial data and read the whole line. Each article below points to the stop it is about.' },
+  { p: 'Every patient an imaging center sees travels one line. A referring provider sends the patient. The patient is scheduled, verified, shows up, is scanned and read. The study becomes a claim, the claim becomes cash, and the cash becomes margin, owner pay and enterprise value.' },
+  { p: LINE_LEDE },
+  { p: 'Each stop below names who owns it, what they are scored on, what that score misses, and what we measure instead, followed by our articles about that stop.' },
   ...LINES.flatMap((line) => [
     { h2: `${line.name}: ${line.route}` },
     ...line.stops.flatMap((stop) => {
       const slugs = postsAtStop(stop.code);
-      const blocks = [{ h3: `${stop.code} ${stop.name}`, p: stop.what }];
+      const blocks = [{ h3: `${stop.code} ${stop.name}`, ul: stopAnswers(stop) }];
       if (slugs.length) blocks.push({ links: slugs.map((slug) => ({ href: `/blog/${slug}`, text: blogTitle(slug) })) });
       return blocks;
     }),
@@ -597,9 +617,9 @@ const routes = [
   },
   {
     path: LINE_PATH,
-    title: 'The Referral-to-Cash Line | Imaging Center Data Analytics | Benefique',
-    h1: 'The Referral-to-Cash Line',
-    description: 'Every imaging center scan travels one route, from referrer to cash to enterprise value. See where each of our radiology articles sits on the operations line and the financial line.',
+    title: `The ${LINE_NAME} | Imaging Center Data Analytics | Benefique`,
+    h1: `The ${LINE_NAME}`,
+    description: 'Every imaging patient travels one line, from referrer to cash to enterprise value. Who owns each stop, what they are scored on, what that score misses, and what we measure instead.',
     body: referralLineBody,
     schema: {
       '@context': 'https://schema.org',
@@ -608,7 +628,7 @@ const routes = [
           '@type': 'CollectionPage',
           '@id': `${SITE}${LINE_PATH}`,
           url: `${SITE}${LINE_PATH}`,
-          name: 'The Referral-to-Cash Line',
+          name: `The ${LINE_NAME}`,
           description: 'Radiology articles mapped to the stop they address on the imaging center operations line and financial line.',
           about: ['Imaging center data analytics', 'Radiology revenue cycle', 'Diagnostic imaging center operations'],
           isPartOf: { '@type': 'WebSite', name: 'Benefique Tax & Accounting', url: SITE },
@@ -619,12 +639,12 @@ const routes = [
           itemListElement: [
             { '@type': 'ListItem', position: 1, name: 'Home', item: SITE },
             { '@type': 'ListItem', position: 2, name: 'Radiology', item: `${SITE}/radiology` },
-            { '@type': 'ListItem', position: 3, name: 'The Referral-to-Cash Line', item: `${SITE}${LINE_PATH}` },
+            { '@type': 'ListItem', position: 3, name: `The ${LINE_NAME}`, item: `${SITE}${LINE_PATH}` },
           ],
         },
         {
           '@type': 'ItemList',
-          name: 'Radiology articles on the Referral-to-Cash Line',
+          name: `Radiology articles on the ${LINE_NAME}`,
           itemListElement: Object.keys(LINE_POSTS).map((slug, i) => ({
             '@type': 'ListItem', position: i + 1, name: blogTitle(slug), url: `${SITE}/blog/${slug}`,
           })),

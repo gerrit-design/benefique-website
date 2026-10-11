@@ -1,4 +1,4 @@
-// referral-line.js — single source of truth for the Referral-to-Cash Line.
+// referral-line.js — single source of truth for the Patient Referral-to-Cash Line.
 //
 // Imported by src/components/ReferralLine.jsx (the /radiology/line page and the
 // "where this article sits" strip on each radiology post), scripts/route-metadata.js
@@ -6,6 +6,10 @@
 // (the build fails if a radiology post has no stop). Radiology posts only.
 
 export const LINE_PATH = '/radiology/line';
+export const LINE_NAME = 'Patient Referral-to-Cash Line';
+
+// Each stop answers four questions: who owns it, what they are scored on, what
+// that score misses, and what we measure instead. Reviewed by Gerrit 11 Oct 2026.
 
 export const LINES = [
   {
@@ -13,12 +17,30 @@ export const LINES = [
     name: 'Operations line',
     route: 'Referral to read report',
     stops: [
-      { code: 'O1', name: 'Referrer', what: 'Who sends the patient, and whether they keep sending' },
-      { code: 'O2', name: 'Schedule & slot', what: 'Which patient gets which magnet-hour' },
-      { code: 'O3', name: 'Verify & authorize', what: 'Eligibility, authorization, take or decline' },
-      { code: 'O4', name: 'Patient shows', what: 'Booked is not scanned: no-shows and cancellations' },
-      { code: 'O5', name: 'Scan', what: 'The procedure: time, staff, drug, equipment' },
-      { code: 'O6', name: 'Read & sign', what: 'Report signed, study released to billing' },
+      { code: 'O1', name: 'Referrer', what: 'Who sends the patient, and whether they keep sending',
+        owner: 'Marketers', scored: 'New referrers, visits',
+        misses: 'Losing an existing VIP referrer costs more than winning a new one, and nobody sees the loss happening',
+        measure: 'Referrer retention, VIPs at risk, value per referrer' },
+      { code: 'O2', name: 'Schedule & slot', what: 'Which patient gets which magnet-hour',
+        owner: 'Scheduling', scored: '% of slots booked',
+        misses: 'A 9am slot isn\'t worth the same as 5pm Friday, and a full book can be full of the wrong patients',
+        measure: 'Revenue per available magnet-hour' },
+      { code: 'O3', name: 'Verify & authorize', what: 'Eligibility, authorization, take or decline',
+        owner: 'Intake and authorization', scored: 'Speed, authorizations obtained',
+        misses: 'Whether a scan should be taken at all at that payer\'s rate',
+        measure: 'Denials traced back to intake; value of scans taken versus declined' },
+      { code: 'O4', name: 'Patient shows', what: 'Booked is not scanned: no-shows and cancellations',
+        owner: 'Front desk', scored: 'Check-ins, front-desk collections',
+        misses: 'Booked isn\'t scanned: PI patients don\'t show up, insurance patients cancel in advance',
+        measure: 'Scanned versus booked, by payer class and slot' },
+      { code: 'O5', name: 'Scan', what: 'The procedure: time, staff, drug, equipment',
+        owner: 'Techs and the center manager', scored: 'Scans per day, utilization',
+        misses: 'A center that\'s already busy can\'t be incentivized on the same basis as one with spare capacity',
+        measure: 'Contribution per scan, by modality and center' },
+      { code: 'O6', name: 'Read & sign', what: 'Report signed, study released to billing',
+        owner: 'Reading group', scored: 'Turnaround',
+        misses: 'Unsigned studies hold up billing',
+        measure: 'Days from scan to release to billing' },
     ],
   },
   {
@@ -26,14 +48,38 @@ export const LINES = [
     name: 'Financial line',
     route: 'Charge to cash to value',
     stops: [
-      { code: 'F1', name: 'Charge & claim', what: 'Coding, the billing company, the claim out the door' },
-      { code: 'F2', name: 'Payer & denial', what: 'What each payer pays, and what it refuses' },
-      { code: 'F3', name: 'Collections & A/R', what: 'Days to cash, collection rate, open balances' },
-      { code: 'F4', name: 'Cash in the bank', what: 'Profit versus cash, and where the difference went' },
-      { code: 'F5', name: 'Profit per unit', what: 'Margin by modality, center and procedure' },
-      { code: 'F6', name: 'Tax & owner pay', what: 'What the owner keeps' },
-      { code: 'F7', name: 'Lender & capital', what: 'Debt service, credit lines, the bank\'s view' },
-      { code: 'F8', name: 'Value & exit', what: 'What a buyer pays, and how to be ready' },
+      { code: 'F1', name: 'Charge & claim', what: 'Coding, the billing company, the claim out the door',
+        owner: 'Billing company', scored: 'Fee as % of collections',
+        misses: 'They\'re paid on what they collect, not on what they leave behind',
+        measure: 'Scan-to-claim lag, studies never billed' },
+      { code: 'F2', name: 'Payer & denial', what: 'What each payer pays, and what it refuses',
+        owner: 'Billing and contracting', scored: 'Denial rate',
+        misses: 'What each payer actually nets per scan',
+        measure: 'Net yield per scan, by payer' },
+      { code: 'F3', name: 'Collections & A/R', what: 'Days to cash, collection rate, open balances',
+        owner: 'Billing company', scored: 'Collection rate',
+        misses: 'Days to cash by payer, and how PI recovery is factored',
+        measure: 'DSO and net collection rate, by payer' },
+      { code: 'F4', name: 'Cash in the bank', what: 'Profit versus cash, and where the difference went',
+        owner: 'Owner and bookkeeper', scored: 'The P&L',
+        misses: 'Profit isn\'t cash',
+        measure: 'Cash conversion' },
+      { code: 'F5', name: 'Profit per unit', what: 'Margin by modality, center and procedure',
+        owner: 'Owner', scored: 'Total revenue',
+        misses: 'Which center, modality or scan loses money',
+        measure: 'Margin per unit' },
+      { code: 'F6', name: 'Tax & owner pay', what: 'What the owner keeps',
+        owner: 'CPA', scored: 'Return filed',
+        misses: 'Planning only works off monthly books',
+        measure: 'What the owner keeps' },
+      { code: 'F7', name: 'Lender & capital', what: 'Debt service, credit lines, the bank\'s view',
+        owner: 'Owner and the bank', scored: 'Covenants',
+        misses: 'The bank misreads the A/R aging report',
+        measure: 'DSCR, borrowing base' },
+      { code: 'F8', name: 'Value & exit', what: 'What a buyer pays, and how to be ready',
+        owner: 'Owner and the buyer', scored: 'The multiple',
+        misses: 'Buyers reset the price at diligence',
+        measure: 'EBITDA that holds up in diligence' },
     ],
   },
 ];

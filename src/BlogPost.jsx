@@ -1874,7 +1874,7 @@ function BlogPost() {
             </div>
           </div>
 
-          {/* Where this article sits on the Referral-to-Cash Line (radiology posts only) */}
+          {/* Where this article sits on the Patient Referral-to-Cash Line (radiology posts only) */}
           <LineStrip slug={slug} />
 
           {/* Main content */}

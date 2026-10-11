@@ -166,7 +166,7 @@ function checkOrphanFiles() {
   return true;
 }
 
-// Every radiology post must point to a stop on the Referral-to-Cash Line
+// Every radiology post must point to a stop on the Patient Referral-to-Cash Line
 // (src/data/referral-line.js), so each article can show where it sits.
 // A post counts as radiology when its slug, title or excerpt matches
 // RADIOLOGY_TERMS; deliberate exceptions go in OFF_LINE with a reason.
@@ -202,7 +202,7 @@ async function checkReferralLine() {
     console.log('or to OFF_LINE with a reason if it is not a radiology post.\n');
     return false;
   }
-  console.log(`✅ Referral-to-Cash Line: ${Object.keys(line.LINE_POSTS).length} radiology posts mapped, none missing`);
+  console.log(`✅ Patient Referral-to-Cash Line: ${Object.keys(line.LINE_POSTS).length} radiology posts mapped, none missing`);
   return true;
 }
 
