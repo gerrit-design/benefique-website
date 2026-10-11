@@ -6,7 +6,7 @@
 export const intelligenceIntro = {
   heading: 'What is Benefique Intelligence?',
   body:
-    'Benefique Intelligence™ is the data-analysis methodology behind Benefique Tax & Accounting — a named set of financial frameworks that read the operational data already in your QuickBooks, per unit and per engine, to deliver fractional-CFO-grade answers on cash, tax, profitability, working capital, and exit value. It is the intelligence layer that sits above bookkeeping and tax filing, not a replacement for either.',
+    'Benefique Intelligence™ is the accounting and fractional CFO firm for multi-center imaging groups. We keep your books and close them by the 7th, then tie that ledger to the operational data in your scheduling, RIS and billing systems, so every dollar can be traced to a center, a modality, a payer, a referrer and a stop on the Patient Referral-to-Cash Line. The named frameworks below are how we read it. Tax compliance and planning come off the same ledger and are part of the engagement.',
 };
 
 export const intelligenceMethods = [

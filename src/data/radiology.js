@@ -165,7 +165,7 @@ export const radiologyFaqs = [
   },
   {
     q: 'Do you replace our accountant or biller?',
-    a: 'No. We sit above both. Your accountant keeps the books. Your biller processes claims. We build the intelligence layer that makes sense of both data sources together — per-payer, per-tracer, per-facility, per-claim. Most engagements run alongside existing accounting and billing relationships.',
+    a: 'We replace the bookkeeping, not the biller. We keep the books and close them by the 7th, because per-payer, per-tracer, per-facility and per-claim answers are only as good as the ledger under them. Your billing company keeps processing claims; we tie its data to the ledger and measure what it collects against what it should. Tax is part of the engagement, and we only do it when we keep the books.',
   },
   {
     q: 'What does the Strategic Radiology Review deliver?',

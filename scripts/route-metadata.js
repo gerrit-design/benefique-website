@@ -663,7 +663,7 @@ const routes = [
     body: intelligenceBody,
     title: 'Benefique Intelligence | The Financial Methodology Behind Benefique',
     h1: 'The Intelligence Layer Above Your Accounting.',
-    description: 'Benefique Intelligence is the named data-analysis methodology behind Benefique: the Benefique Matrix, Three Views, Two Business Unit Framework, Activity-Based Decomposition, Per-Unit Economics, Cash Flow Waterfall, and more. The intelligence layer above your accounting.',
+    description: 'Benefique Intelligence is the accounting and fractional CFO firm for multi-center imaging groups. We keep the books, tie them to your operational data, and read them through named methods: the Benefique Matrix, Three Views, Per-Unit Economics, the Cash Flow Waterfall and more.',
     schema: {
       '@context': 'https://schema.org',
       '@graph': [
@@ -672,7 +672,7 @@ const routes = [
           '@id': `${SITE}/intelligence`,
           url: `${SITE}/intelligence`,
           name: 'Benefique Intelligence — The Methodology',
-          description: 'Benefique Intelligence is the named data-analysis methodology behind Benefique Tax & Accounting: the Benefique Matrix, Three Views, the Two Business Unit Framework, Activity-Based Decomposition, Per-Unit Economics, the Cash Flow Waterfall, the Cash Conversion Cycle at target ARR, and Toxic-Combination Detection.',
+          description: 'Benefique Intelligence is the accounting and fractional CFO firm for multi-center imaging groups. Its named methods: the Benefique Matrix, Three Views, the Two Business Unit Framework, Activity-Based Decomposition, Per-Unit Economics, the Cash Flow Waterfall, the Cash Conversion Cycle at target ARR, and Toxic-Combination Detection.',
           isPartOf: { '@type': 'WebSite', name: 'Benefique Tax & Accounting', url: SITE },
           about: { '@type': 'Thing', name: 'Benefique Intelligence' },
         },
@@ -712,9 +712,9 @@ const routes = [
       ],
     },
     faq: [
-      { q: 'What is Benefique Intelligence?', a: 'Benefique Intelligence is the data-analysis methodology behind Benefique Tax & Accounting. It is a named set of financial frameworks — the Benefique Matrix, Three Views, the Two Business Unit Framework, Activity-Based Decomposition, Per-Unit Economics, the Cash Flow Waterfall, and the Cash Conversion Cycle at target ARR — that turn the operational data already in your books into the cash, tax, and operational answers a fractional CFO would give you.' },
-      { q: 'How is this different from regular accounting or bookkeeping?', a: 'A bookkeeper records what happened and a CPA files the return. Benefique Intelligence sits above both: it reads the same data forward, per unit and per engine, to tell you which dollar is leaking, which payer or product loses money, how much working capital growth will need, and what the business is worth at exit.' },
-      { q: 'Do you replace our accountant or our software?', a: 'No. We sit above your existing accountant, biller, and QuickBooks. They keep recording and filing; we build the intelligence layer on top. Most engagements run alongside the relationships and software you already have — nothing to install or migrate.' },
+      { q: 'What is Benefique Intelligence?', a: 'Benefique Intelligence is the accounting and fractional CFO firm for multi-center imaging groups, and the name of the method we use. We keep the books ourselves and tie them to your operational data, then read them through a named set of frameworks — the Benefique Matrix, Three Views, the Two Business Unit Framework, Activity-Based Decomposition, Per-Unit Economics, the Cash Flow Waterfall, and the Cash Conversion Cycle at target ARR — to answer the cash, profit and exit questions a CFO would.' },
+      { q: 'How is this different from regular accounting or bookkeeping?', a: 'A bookkeeper records what happened. A CPA files the return. We do both, from one ledger, and then read that ledger forward, per unit and per engine, to tell you which dollar is leaking, which payer or product loses money, how much working capital growth will need, and what the business is worth at exit.' },
+      { q: 'Do you replace our accountant or our software?', a: 'We replace the bookkeeping, not your software. We keep the books in your QuickBooks and close them by the 7th, because the analysis is only as good as the ledger under it. Your billing company and your RIS stay; we read their data and measure it against the ledger. Tax is part of the engagement, and we only do it when we keep the books.' },
       { q: 'Which frameworks make up Benefique Intelligence?', a: 'Eight named methods: the Benefique Matrix, Three Views, the Two Business Unit Framework, Activity-Based Decomposition, Per-Unit Economics, the Cash Flow Waterfall, the Cash Conversion Cycle at target ARR, and Toxic-Combination Detection.' },
       { q: 'Who is Benefique Intelligence for?', a: AUDIENCE_FAQ_ANSWER },
     ],
