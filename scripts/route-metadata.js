@@ -288,11 +288,6 @@ const routes = [
     },
   },
   {
-    path: '/demo',
-    title: 'Sample Reports & Dashboards | Benefique Tax & Accounting',
-    description: 'See sample financial reports and real-time dashboards from Benefique. Interactive cash flow dashboards, P&L reports, and KPI tracking for healthcare and service businesses.',
-  },
-  {
     path: '/testimonials',
     title: 'Client Testimonials | Benefique Tax & Accounting',
     description: 'Hear from healthcare practices and service businesses across South Florida about their experience with Benefique Tax & Accounting. Real results, real clients.',

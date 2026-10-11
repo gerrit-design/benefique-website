@@ -74,8 +74,8 @@ function Nav() {
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" className="flex flex-col">
           <span className="text-2xl md:text-3xl font-black text-benefique-navy tracking-wider" style={{ fontFamily: 'Georgia, Times, serif' }}>BENEFIQUE</span>
-          <span className="text-xs text-gray-500 tracking-wide font-medium">Tax & Accounting</span>
-          <span className="text-[10px] md:text-xs text-benefique-orange font-semibold italic mt-0.5">Real-time accounting. Tax-ready any day.</span>
+          <span className="text-xs md:text-sm text-benefique-navy tracking-[0.3em] uppercase font-semibold">Intelligence</span>
+          <span className="text-[10px] md:text-xs text-benefique-orange font-semibold italic mt-0.5">Accounting, tax and fractional CFO for multi-center imaging groups</span>
         </Link>
         
         {/* Desktop Nav */}
@@ -108,8 +108,8 @@ function Nav() {
           </div>
           {[
             ['/radiology', 'Radiology'],
+            ['/intelligence', 'Intelligence'],
             ['/blog', 'Blog'],
-            ['/demo', 'Sample Reports'],
             ['/about', 'About'],
           ].map(([path, label]) => (
             <Link
@@ -161,7 +161,7 @@ function Nav() {
             </div>
           </details>
           <Link to="/radiology" className="block text-gray-600"><span className="text-benefique-orange mr-1" aria-hidden="true">◆</span>Radiology</Link>
-          <Link to="/demo" className="block text-gray-600">Sample Reports</Link>
+          <Link to="/intelligence" className="block text-gray-600">Intelligence</Link>
           <Link to="/blog" className="block text-gray-600">Blog</Link>
           <Link to="/about" className="block text-gray-600">About</Link>
           <Link to="/contact" className="block bg-benefique-orange text-white px-4 py-2 rounded-lg text-center font-semibold">
@@ -183,8 +183,8 @@ function Footer() {
           <div className="flex items-center gap-6">
             <div className="flex flex-col">
               <span className="text-xl font-black tracking-wider" style={{ fontFamily: 'Georgia, Times, serif' }}>BENEFIQUE</span>
-              <span className="text-xs text-gray-400 tracking-wide">Tax & Accounting</span>
-              <span className="text-[10px] text-orange-400 font-semibold italic mt-0.5">Real-time accounting. Tax-ready any day.</span>
+              <span className="text-xs text-gray-300 tracking-[0.3em] uppercase font-semibold">Intelligence</span>
+              <span className="text-[10px] text-orange-400 font-semibold italic mt-0.5">Accounting, tax and fractional CFO for multi-center imaging groups</span>
             </div>
             {/* LinkedIn */}
             <a 
@@ -341,10 +341,10 @@ function Home() {
                 Apply to Work With Us <span aria-hidden="true">→</span>
               </Link>
               <Link
-                to="/demo"
+                to="/radiology/intelligence-pack"
                 className="border-2 border-benefique-navy text-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-benefique-navy hover:text-white transition"
               >
-                View Sample Reports
+                See a Sample Intelligence Pack
               </Link>
             </div>
 
@@ -718,7 +718,7 @@ function Services() {
           </div>
           <h1 className="text-4xl font-bold text-benefique-navy mb-4">Fractional CFO, Tax Planning &amp; Accounting for South Florida Businesses</h1>
           <p className="text-xl text-gray-600 max-w-2xl">
-            AI-powered financial intelligence for {AUDIENCE_ONE_LINE}.
+            Financial intelligence for {AUDIENCE_ONE_LINE}.
             Real-time books, proactive tax strategy, and CFO-grade analysis &mdash; designed to work together as a single data intelligence system.
           </p>
         </div>
@@ -792,8 +792,8 @@ function Services() {
                     <p className="text-gray-500 text-xs">Every Monday — key metrics, alerts, and trends at a glance.</p>
                   </div>
                 </div>
-                <Link to="/demo" className="text-benefique-orange text-sm font-semibold hover:underline inline-block">
-                  See both sample reports →
+                <Link to="/radiology/intelligence-pack" className="text-benefique-orange text-sm font-semibold hover:underline inline-block">
+                  See a sample Intelligence Pack →
                 </Link>
                 <br />
                 <Link to="/blog/accountant-cost-center-roi-center" className="text-gray-500 text-sm hover:text-benefique-orange hover:underline mt-1 inline-block">
@@ -917,8 +917,8 @@ function Services() {
               <Link to="/blog/three-views-one-business" className="bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition inline-flex items-center gap-2">
                 Same data, three verdicts &rarr;
               </Link>
-              <Link to="/demo" className="bg-benefique-orange hover:bg-orange-600 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition inline-flex items-center gap-2">
-                See sample reports &rarr;
+              <Link to="/radiology/intelligence-pack" className="bg-benefique-orange hover:bg-orange-600 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition inline-flex items-center gap-2">
+                See a sample Intelligence Pack &rarr;
               </Link>
             </div>
           </div>
@@ -989,10 +989,10 @@ function Services() {
               Book a Free 15-Minute Call
             </Link>
             <Link
-              to="/demo"
+              to="/radiology/intelligence-pack"
               className="inline-block bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-lg font-semibold transition"
             >
-              See Sample Reports First
+              See a Sample Intelligence Pack First
             </Link>
           </div>
         </div>
@@ -1096,10 +1096,10 @@ function Testimonials() {
             the tax answer and the operational answer, without another report to read.
           </p>
           <Link
-            to="/demo"
+            to="/radiology/intelligence-pack"
             className="inline-flex items-center gap-2 bg-white text-benefique-navy border-2 border-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-benefique-navy hover:text-white transition"
           >
-            📊 View Sample Reports
+            📊 See a Sample Intelligence Pack
           </Link>
         </div>
       </section>
@@ -1348,9 +1348,6 @@ function About() {
                   Cash health, revenue trends, profitability metrics, cash waterfall, and action items with dollar impact.
                   Written in owner terms, not accountant-speak.
                 </p>
-                <Link to="/demo" className="text-benefique-orange font-semibold text-sm hover:underline">
-                  View Sample →
-                </Link>
               </div>
               <div className="bg-white/10 rounded-xl p-5 hover:bg-white/20 transition">
                 <h3 className="font-bold text-lg mb-2">CFO Weekly Pulse</h3>
@@ -1358,14 +1355,11 @@ function About() {
                   Every Monday: cash position, revenue against target, margin alerts, and anything that moved
                   more than 5% since last week. Scanned in two minutes, not read for an hour.
                 </p>
-                <Link to="/demo" className="text-benefique-orange font-semibold text-sm hover:underline">
-                  View Sample →
-                </Link>
               </div>
             </div>
             <div className="text-center">
-              <Link to="/demo" className="inline-flex items-center gap-2 bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition">
-                See All Sample Reports
+              <Link to="/radiology/intelligence-pack" className="inline-flex items-center gap-2 bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition">
+                See a Sample Intelligence Pack
               </Link>
             </div>
           </div>
@@ -1444,10 +1438,10 @@ function About() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
-              to="/demo"
+              to="/radiology/intelligence-pack"
               className="inline-flex items-center gap-2 bg-white text-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
             >
-              View Sample Reports
+              See a Sample Intelligence Pack
             </Link>
             <Link
               to="/contact"
@@ -1950,6 +1944,7 @@ function Demo() {
         <title>Sample Reports | CFO Deep Dive &amp; Weekly Pulse | Benefique</title>
         <meta name="description" content="See what Benefique delivers: a quarterly CFO Deep Dive with cash waterfall and prescriptive actions, and a weekly dashboard pulse. Both generated from your own QuickBooks data." />
         <link rel="canonical" href="https://www.benefique.com/demo" />
+        <meta name="robots" content="noindex" />
       </Helmet>
 
       {/* Hero */}
@@ -2743,7 +2738,7 @@ function LocationPage({ city, nearby, zipCodes, description }) {
               { icon: '🎯', title: 'Tax Planning', desc: `Proactive tax strategies for ${city} businesses. R&D credits, entity optimization, and year-round planning.`, link: '/services' },
               { icon: '🏥', title: 'Healthcare Accounting', desc: 'Specialized services for radiology, dental, veterinary, and medical practices.', link: '/radiology' },
               { icon: '⚓', title: 'Marine Services', desc: 'Financial management for marine and industrial service companies.', link: '/industries/marine-services' },
-              { icon: '📱', title: 'Real-Time Dashboards', desc: 'See your numbers anytime. Decision-ready reports updated continuously.', link: '/demo' },
+              { icon: '📱', title: 'Real-Time Dashboards', desc: 'See your numbers anytime. Decision-ready reports updated continuously.', link: '/services/real-time-accounting' },
             ].map((service) => (
               <Link key={service.title} to={service.link} className="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:shadow-lg hover:border-benefique-orange/30 transition group">
                 <div className="text-3xl mb-3">{service.icon}</div>
@@ -2796,7 +2791,7 @@ function LocationPage({ city, nearby, zipCodes, description }) {
                 <p className="text-gray-600 text-sm">
                   Weston businesses generating {REVENUE_FLOOR}+ in revenue have outgrown basic bookkeeping.
                   We provide a complete accounting department: real-time books, proactive tax planning, payroll,
-                  and AI-powered financial intelligence that turns your QuickBooks data into an ROI center.
+                  and financial intelligence that turns your QuickBooks data into an ROI center.
                 </p>
               </div>
               <div className="bg-white rounded-xl p-6 border border-gray-100">
@@ -3051,10 +3046,10 @@ function IndustryPage({ industry, icon, services, challenges, testimonial, tool 
               Get a Free Consultation <span>→</span>
             </Link>
             <Link
-              to="/demo"
+              to="/radiology/intelligence-pack"
               className="border-2 border-benefique-navy text-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-benefique-navy hover:text-white transition"
             >
-              See Sample Reports
+              See a Sample Intelligence Pack
             </Link>
           </div>
         </div>
@@ -3279,10 +3274,10 @@ function RealTimeAccountingPage() {
               Get Real-Time Books <span>→</span>
             </Link>
             <Link
-              to="/demo"
+              to="/radiology/intelligence-pack"
               className="border-2 border-benefique-navy text-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-benefique-navy hover:text-white transition"
             >
-              See Sample Dashboards
+              See a Sample Intelligence Pack
             </Link>
           </div>
         </div>
@@ -3600,7 +3595,7 @@ function IntelligencePage() {
   const faqs = [
     {
       q: 'What is Benefique Intelligence?',
-      a: 'Benefique Intelligence is the data-analysis methodology behind Benefique Tax & Accounting. It is a named set of financial frameworks — the Benefique Matrix, Three Views, the Two Business Unit Framework, Activity-Based Decomposition, Per-Unit Economics, the Cash Flow Waterfall, and the Cash Conversion Cycle at target ARR — that turn the operational data already in your books into the cash, tax, and operational answers a fractional CFO would give you. It is what we mean when we say we are not an accounting shop but an AI-powered financial intelligence firm.',
+      a: 'Benefique Intelligence is the data-analysis methodology behind Benefique Tax & Accounting. It is a named set of financial frameworks — the Benefique Matrix, Three Views, the Two Business Unit Framework, Activity-Based Decomposition, Per-Unit Economics, the Cash Flow Waterfall, and the Cash Conversion Cycle at target ARR — that turn the operational data already in your books into the cash, tax, and operational answers a fractional CFO would give you. It is what we mean when we say we are not an accounting shop but a financial intelligence firm.',
     },
     {
       q: 'How is this different from regular accounting or bookkeeping?',
@@ -3691,7 +3686,7 @@ function IntelligencePage() {
 
           <div className="bg-gray-50 border-l-4 border-benefique-orange p-6 rounded-r-xl mb-8 max-w-3xl">
             <p className="text-lg text-gray-700 leading-relaxed">
-              Most firms hand you a tax return and a year-old P&amp;L. We are not an accounting shop — we are an <strong>AI-powered financial intelligence firm</strong>. Benefique Intelligence is the set of frameworks we run inside every engagement to find <strong>which dollar is leaking, which unit loses money, how much cash growth will eat, and what the business is worth at exit</strong>. Named on purpose, so you can point to the method — not just the result.
+              Most firms hand you a tax return and a year-old P&amp;L. We are not an accounting shop — we are a <strong>financial intelligence firm</strong>. Benefique Intelligence is the set of frameworks we run inside every engagement to find <strong>which dollar is leaking, which unit loses money, how much cash growth will eat, and what the business is worth at exit</strong>. Named on purpose, so you can point to the method — not just the result.
             </p>
           </div>
 
@@ -4423,7 +4418,7 @@ function ThankYou() {
             </p>
             <div className="bg-benefique-orange/10 border border-benefique-orange/30 rounded-xl p-6 text-left">
               <h3 className="font-bold text-benefique-navy mb-2">While you wait — see what we actually deliver:</h3>
-              <Link to="/demo" className="text-benefique-orange font-semibold hover:underline">View sample reports →</Link>
+              <Link to="/radiology/intelligence-pack" className="text-benefique-orange font-semibold hover:underline">See a sample Intelligence Pack →</Link>
             </div>
           </div>
         </section>
@@ -4670,7 +4665,7 @@ function Careers() {
             We hire people who can read them.
           </h2>
           <p className="text-lg md:text-xl text-blue-100 mt-8 max-w-2xl leading-relaxed">
-            Benefique is an AI-powered financial intelligence firm in Florida. We turn QuickBooks data into the kind of analysis a fractional CFO delivers — for US business owners who don’t have time to mine their own numbers.
+            Benefique is a financial intelligence firm in Florida. We turn QuickBooks data into the kind of analysis a fractional CFO delivers — for US business owners who don’t have time to mine their own numbers.
           </p>
           <p className="text-lg md:text-xl text-white mt-4 max-w-2xl leading-relaxed font-semibold">
             We’re adding one analyst to our South African team. This is not a bookkeeping role.

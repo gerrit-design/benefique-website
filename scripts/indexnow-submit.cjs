@@ -19,7 +19,7 @@ const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 
 // Static pages
 const STATIC_PAGES = [
-  '/', '/services', '/about', '/contact', '/blog', '/demo', '/testimonials',
+  '/', '/services', '/about', '/contact', '/blog', '/testimonials',
   '/davie-fl', '/broward-county', '/south-florida',
   '/healthcare', '/radiology', '/dental', '/veterinary',
   '/service-businesses', '/professional-services',

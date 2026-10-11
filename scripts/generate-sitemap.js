@@ -34,7 +34,6 @@ const OUTPUT_FILE = join(ROOT, 'public', 'sitemap.xml');
 const staticRoutes = [
   { path: '/', priority: 1.0, changefreq: 'weekly', lastmod: new Date() },
   { path: '/services', priority: 0.9, changefreq: 'monthly', lastmod: new Date() },
-  { path: '/demo', priority: 0.8, changefreq: 'monthly', lastmod: new Date() },
   { path: '/testimonials', priority: 0.8, changefreq: 'monthly', lastmod: new Date() },
   { path: '/about', priority: 0.8, changefreq: 'monthly', lastmod: new Date() },
   { path: '/contact', priority: 0.9, changefreq: 'monthly', lastmod: new Date() },

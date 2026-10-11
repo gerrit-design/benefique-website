@@ -19,7 +19,7 @@ export function trackFormSubmit(formId, extra = {}) {
   }
 }
 
-const CTA_DESTS = new Set(['/contact', '/demo', '/apply'])
+const CTA_DESTS = new Set(['/contact', '/demo', '/radiology/intelligence-pack', '/apply'])
 
 function isCTADest(href) {
   if (!href) return false
