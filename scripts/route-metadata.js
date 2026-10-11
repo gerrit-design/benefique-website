@@ -240,12 +240,23 @@ const routes = [
   },
   {
     path: '/about',
-    title: 'Your Accounting Should Pay for Itself | Benefique Tax & Accounting | Davie, FL',
-    description: 'Most accounting firms hand you a tax return and a year-old P&L. We give you the cash answer, the tax answer, and the operational answer in real time — before you have to ask.',
+    title: 'About Benefique Intelligence | From the Tax Return to the Referrer',
+    h1: 'We started at the tax return. We ended up at the referrer.',
+    description: 'We started at the tax return and walked back up the line: the books, the billing company, profit per scan, and finally scheduling and referrers. Accounting, tax and fractional CFO for multi-center imaging groups.',
     // /about carries the Who We Serve block. It was 40 crawlable words, so the
     // firm's own definition of its client was invisible to search and to agents.
     body: [
-      { p: 'Most accounting firms hand you a tax return and a year-old P&L. We give you the cash answer, the tax answer, and the operational answer in real time — before you have to ask.' },
+      { p: 'Every patient an imaging center sees travels one line, from the referring provider to the bank. Most accounting firms sit at the very end of it and never leave. We started there too, then kept walking back up the line, one stop at a time, until we reached the decisions that make or lose the money.' },
+      { h2: 'How we walked the line backwards', links: [{ href: LINE_PATH, text: `The ${LINE_NAME}` }] },
+      { h3: '1. Where we started: the tax return (F6)', p: 'Benefique began in 2002 preparing tax returns for South Florida businesses. A return is the last stop on the line. By the time it is filed, every decision that produced the number is a year old.' },
+      { h3: '2. Back to the books (F4, F3, F1)', p: "We stopped preparing returns from someone else's books. We keep the books, close them by the 7th and review them by the 10th, and the tax return comes off that same ledger. That is where the gap between profit and cash showed up, and most of it was sitting in collections and the billing company." },
+      { h3: '3. Back to the unit (F5, F2, F7, F8)', p: 'A total P&L hides the center, the modality and the payer that lose money. We read each one, then read the same numbers the way a lender and a buyer will.' },
+      { h3: '4. Into operations (O5 to O1)', p: "In imaging, most of the money is decided before a claim exists: which patient gets which magnet-hour, whether the patient shows, whether the scan should be taken at that payer's rate, and whether the referrer keeps sending. So we joined the scheduling and billing data to the ledger." },
+      { h2: 'What we learned in imaging' },
+      { p: "Every stop hits its number, and the business still loses money. Scheduling is scored on slots booked, but a 9am slot isn't worth the same as 5pm on a Friday. The front desk is scored on check-ins, but booked isn't scanned. The billing company is paid on what it collects, not on what it leaves behind." },
+      { p: "Software doesn't fix a process nobody has mapped. We map how a referral becomes a collection, in the straightest line possible, before anyone buys anything." },
+      { h2: "We don't do your tax unless we keep your books." },
+      { p: 'One ledger produces the monthly close, the CFO analysis and the tax return. Tax compliance and planning are part of the engagement, not a separate fee. Books closed by the 7th, review call by the 10th, answers within 24 hours, flat fee, never billed by the hour.' },
       { h2: whoWeServe.heading },
       { p: whoWeServe.body },
       ...whoWeServe.columns.map((col) => ({

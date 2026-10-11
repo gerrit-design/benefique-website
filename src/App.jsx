@@ -3,6 +3,7 @@ import { Routes, Route, Link, useLocation, Navigate, useSearchParams, useNavigat
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import BlogPost, { blogPosts } from './BlogPost';
 import { ReferralLinePage, LineOverview } from './components/ReferralLine';
+import { LINE_PATH, LINE_NAME, stopFor } from './data/referral-line';
 import ConciergeSimulator from './components/ConciergeSimulator';
 import BusinessSimulator from './components/BusinessSimulator';
 import RadiologySimulator from './components/RadiologySimulator';
@@ -1126,247 +1127,184 @@ function Testimonials() {
 // ============================================================
 // ABOUT PAGE - With Dashboard Links
 // ============================================================
+// The firm's history is the Patient Referral-to-Cash Line walked backwards:
+// it started at F6 (the tax return) and kept going up the line to O1.
+const ABOUT_CHAPTERS = [
+  {
+    label: 'Where we started',
+    title: 'The tax return',
+    stops: ['F6'],
+    body: 'Benefique began in 2002 preparing tax returns for South Florida businesses. A return is the last stop on the line. By the time it is filed, every decision that produced the number is a year old.',
+  },
+  {
+    label: 'Back to the books',
+    title: 'One ledger, closed by the 7th',
+    stops: ['F4', 'F3', 'F1'],
+    body: 'We stopped preparing returns from someone else\'s books. We keep the books, close them by the 7th and review them by the 10th, and the tax return comes off that same ledger. That is where the gap between profit and cash showed up, and most of it was sitting in collections and the billing company.',
+  },
+  {
+    label: 'Back to the unit',
+    title: 'Profit per center, modality, payer and claim',
+    stops: ['F5', 'F2', 'F7', 'F8'],
+    body: 'A total P&L hides the center, the modality and the payer that lose money. We read each one, then read the same numbers the way a lender and a buyer will.',
+  },
+  {
+    label: 'Into operations',
+    title: 'Where the money is made or lost',
+    stops: ['O5', 'O4', 'O3', 'O2', 'O1'],
+    body: 'In imaging, most of the money is decided before a claim exists: which patient gets which magnet-hour, whether the patient shows, whether the scan should be taken at that payer\'s rate, and whether the referrer keeps sending. So we joined the scheduling and billing data to the ledger.',
+  },
+];
+
+const ABOUT_CASES = [
+  { stop: 'O1', slug: 'referring-doctor-relationship-myth-medical-imaging', title: 'The Relationship Myth', text: '433 encounters, $142,000 in losses absorbed to keep referrers happy. None of the 21 doctors justified it.' },
+  { stop: 'O2', slug: 'revenue-per-available-magnet-hour', title: 'The Magnet-Hour', text: 'We protected the best-paying slots. They lost more bookings than the rest, 15% against 10%. A slot is only worth what shows up.' },
+  { stop: 'F2', slug: 'toxic-payers-losing-money-medical-practice', title: '7 Payers, $80,593 Lost', text: 'We graded every payer A to F. Seven got an F and lost money on every one of 41 procedures.' },
+  { stop: 'F3', slug: 'radiology-collections-dashboard-case-study', title: 'Not Seasonality', text: 'A six-center imaging group\'s 30% revenue decline was blamed on the season. The collections data showed what it really was.' },
+  { stop: 'F4', slug: 'ai-cash-flow-waterfall-explained', title: '$1.07M EBITDA, –$41K Cash', text: 'A $5M imaging center, line by line: where every dollar of profit went before it reached the bank.' },
+  { stop: 'F5', slug: 'radiology-cost-per-scan-1d-2d-3d', title: 'The $253 Kill Line', text: 'A partner priced his cut-off at fully loaded cost per scan and nearly halved operating profit.' },
+];
+
+function StopChip({ code }) {
+  const stop = stopFor(code);
+  const ops = stop.line.key === 'ops';
+  return (
+    <Link
+      to={`${LINE_PATH}#${code}`}
+      title={stop.name}
+      className={`inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-semibold transition ${
+        ops ? 'bg-benefique-navy/10 text-benefique-navy hover:bg-benefique-navy hover:text-white' : 'bg-benefique-orange/10 text-benefique-orange hover:bg-benefique-orange hover:text-white'
+      }`}
+    >
+      {code} {stop.name}
+    </Link>
+  );
+}
+
 function About() {
   return (
     <div>
       <Helmet>
-        <title>From Tax Returns to Data Intelligence | About Benefique Tax & Accounting</title>
-        <meta name="description" content="Most accounting firms hand you a tax return and a year-old P&amp;L. We give you the cash answer, the tax answer, and the operational answer in real time — before you have to ask." />
+        <title>About Benefique Intelligence | From the Tax Return to the Referrer</title>
+        <meta name="description" content="We started at the tax return and walked back up the line: the books, the billing company, profit per scan, and finally scheduling and referrers. Accounting, tax and fractional CFO for multi-center imaging groups." />
         <link rel="canonical" href="https://www.benefique.com/about" />
       </Helmet>
 
-      {/* Hero — Pain + Promise */}
+      {/* Hero */}
       <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto px-4">
           <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
-            About Benefique
+            About Benefique Intelligence
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-benefique-navy mb-4">We didn&apos;t set out to become a data intelligence firm.</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mb-4">
-            We just kept solving the next problem.
-          </p>
-          <p className="text-lg text-gray-500 max-w-3xl">
-            Every business runs on five phases: marketing, selling, operations, financial reporting, and taxes.
-            Most accounting firms sit at the end of that chain — reporting on history and filing returns. They never leave.
-            We started there too. But we kept walking forward.
+          <h1 className="text-4xl md:text-5xl font-bold text-benefique-navy leading-tight mb-4">
+            We started at the tax return. We ended up at the referrer.
+          </h1>
+          <p className="text-xl text-gray-600 max-w-3xl">
+            Every patient an imaging center sees travels one line, from the referring provider to the bank. Most
+            accounting firms sit at the very end of it and never leave. We started there too, then kept walking
+            back up the line, one stop at a time, until we reached the decisions that make or lose the money.
           </p>
         </div>
       </section>
 
-      {/* The Progression — Cost Center → Break-Even → ROI Center */}
+      {/* The walk back up the line */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-benefique-navy mb-3 text-center">The Accounting Evolution</h2>
-          <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-            We started at the end of the business — taxes — and worked backward through financial reporting,
-            into operations, and all the way to the decisions owners make every day. Most accounting firms never leave Stage 1.
+          <h2 className="text-3xl font-bold text-benefique-navy mb-3">How we walked the line backwards</h2>
+          <p className="text-gray-600 mb-10 max-w-2xl">
+            Each step below uses the stops on the{' '}
+            <Link to={LINE_PATH} className="text-benefique-orange font-semibold hover:underline">{LINE_NAME}</Link>.
           </p>
-
-          <div className="space-y-0">
-            {/* Stage 1 */}
-            <div className="relative pl-12 pb-12 border-l-2 border-gray-200 ml-4">
-              <div className="absolute -left-4 top-0 w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center text-white font-bold text-sm">1</div>
-              <div className="bg-white rounded-2xl p-6 border border-gray-100">
-                <div className="inline-block bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-semibold mb-3 uppercase tracking-wide">Before Benefique</div>
-                <h3 className="text-xl font-bold text-benefique-navy mb-2">Cost Center</h3>
-                <p className="text-gray-600 text-sm">
-                  You pay someone to record what already happened. Your P&L arrives 3-4 weeks after the month ends.
-                  Tax strategy is a sentence in a cover letter. You make cash decisions on gut feel because the data
-                  arrives too late. Accounting feels like a bill you pay to stay compliant.
-                </p>
-              </div>
-            </div>
-
-            {/* Stage 2 */}
-            <div className="relative pl-12 pb-12 border-l-2 border-benefique-orange/30 ml-4">
-              <div className="absolute -left-4 top-0 w-8 h-8 rounded-full bg-benefique-orange/60 flex items-center justify-center text-white font-bold text-sm">2</div>
-              <div className="bg-white rounded-2xl p-6 border border-gray-100">
-                <div className="inline-block bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-xs font-semibold mb-3 uppercase tracking-wide">Month 1-3</div>
-                <h3 className="text-xl font-bold text-benefique-navy mb-2">Break-Even Center</h3>
-                <p className="text-gray-600 text-sm">
-                  We take over the accounting function and build a real-time foundation. Books closed by the 7th.
-                  Review calls by the 10th. Your QuickBooks data flows through our AI analysis engine via direct API
-                  integration. Proactive tax planning begins immediately — because when your books are clean in real time,
-                  tax savings become visible any day of the year. The tax savings alone offset the cost of the engagement.
-                </p>
-              </div>
-            </div>
-
-            {/* Stage 3 */}
-            <div className="relative pl-12 pb-12 border-l-2 border-benefique-orange/60 ml-4">
-              <div className="absolute -left-4 top-0 w-8 h-8 rounded-full bg-benefique-orange flex items-center justify-center text-white font-bold text-sm">3</div>
-              <div className="bg-white rounded-2xl p-6 border-2 border-benefique-orange/30 shadow-sm">
-                <div className="inline-block bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs font-semibold mb-3 uppercase tracking-wide">Ongoing</div>
-                <h3 className="text-xl font-bold text-benefique-navy mb-2">ROI Center</h3>
-                <p className="text-gray-600 text-sm mb-4">
-                  This is where it gets interesting. AI analyzes the operational data already sitting in your QuickBooks
-                  that you don&apos;t have time to mine. We find cash trapped in receivables, identify where profit disappears
-                  between the P&amp;L and the bank account, and surface insights that directly improve operations and profitability.
-                  The accounting function isn&apos;t just paying for itself — it&apos;s generating returns.
-                </p>
-                <div className="bg-gray-50 rounded-lg p-4">
-                  <p className="text-xs text-gray-500 font-semibold uppercase tracking-wide mb-2">Real findings from client engagements</p>
-                  <ul className="text-sm text-gray-600 space-y-1.5">
-                    <li className="flex items-start gap-2"><span className="text-benefique-orange font-bold mt-0.5">-</span> $353K in cash trapped in slow-paying receivables — freeable by reducing DSO 15 days</li>
-                    <li className="flex items-start gap-2"><span className="text-benefique-orange font-bold mt-0.5">-</span> $900K bank balance that was actually trust funds, not firm cash — real cash was $493K</li>
-                    <li className="flex items-start gap-2"><span className="text-benefique-orange font-bold mt-0.5">-</span> $1M in EBITDA that left zero cash in the bank — the waterfall showed exactly where it went</li>
-                    <li className="flex items-start gap-2"><span className="text-benefique-orange font-bold mt-0.5">-</span> 30% revenue decline masked as "seasonality" — collections dashboard exposed the real trend</li>
-                  </ul>
+          <ol className="space-y-0">
+            {ABOUT_CHAPTERS.map((ch, i) => (
+              <li key={ch.title} className={`relative pl-12 ${i < ABOUT_CHAPTERS.length - 1 ? 'pb-10 border-l-2 border-gray-200' : ''} ml-4`}>
+                <span className="absolute -left-4 top-0 w-8 h-8 rounded-full bg-benefique-navy text-white flex items-center justify-center font-bold text-sm">{i + 1}</span>
+                <div className="bg-white rounded-2xl p-6 border border-gray-100">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-benefique-orange mb-1">{ch.label}</p>
+                  <h3 className="text-xl font-bold text-benefique-navy mb-2">{ch.title}</h3>
+                  <p className="text-gray-600 mb-3">{ch.body}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {ch.stops.map((code) => <StopChip key={code} code={code} />)}
+                  </div>
                 </div>
-              </div>
-            </div>
-
-            {/* Stage 4 */}
-            <div className="relative pl-12 ml-4">
-              <div className="absolute -left-4 top-0 w-8 h-8 rounded-full bg-benefique-navy flex items-center justify-center text-white font-bold text-sm">4</div>
-              <div className="bg-gradient-to-br from-benefique-navy to-slate-800 rounded-2xl p-6 text-white">
-                <div className="inline-block bg-white/20 text-white px-3 py-1 rounded-full text-xs font-semibold mb-3 uppercase tracking-wide">Where We Are Now</div>
-                <h3 className="text-xl font-bold mb-2">Data Intelligence Center</h3>
-                <p className="text-blue-100 text-sm mb-4">
-                  Accounting is our entry point. Intelligence is our product. We followed the cash forward — past financial
-                  reporting, into operations, volume, payer mix, distribution habits, breakeven gaps, and collection cycles.
-                  We pointed AI at the front of the business and found what no one else was looking for: the operational
-                  decisions that create &mdash; or destroy &mdash; enterprise value.
-                </p>
-                <p className="text-white font-medium text-sm">
-                  We&apos;ve become a data intelligence center for SMBs. To our knowledge, this does not exist
-                  in the accounting space &mdash; and especially not for small and mid-sized businesses.
-                </p>
-              </div>
-            </div>
+              </li>
+            ))}
+          </ol>
+          <div className="mt-10">
+            <Link to="/radiology#line" className="inline-flex items-center gap-2 bg-benefique-navy text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#2D4A6F] transition">
+              See the whole line &rarr;
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* How We Do It */}
+      {/* What we learned */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-benefique-navy mb-8">How it works</h2>
-          <div className="space-y-6">
-            <div className="border-l-4 border-benefique-orange pl-6">
-              <h3 className="font-bold text-benefique-navy text-lg mb-2">Real-time books = proactive tax planning</h3>
-              <p className="text-gray-600 text-sm">
-                Our accounting base is exceptionally strong — and that&apos;s by design. When your books are clean and
-                current every day, not just at quarter-end, tax planning becomes proactive instead of reactive.
-                We don&apos;t wait for year-end to find deductions. We see them as they happen.
-                That&apos;s why our motto is &quot;Real-time accounting. Tax-ready any day.&quot;
-              </p>
-            </div>
-            <div className="border-l-4 border-benefique-orange pl-6">
-              <h3 className="font-bold text-benefique-navy text-lg mb-2">AI does the monitoring. Humans do the interpreting.</h3>
-              <p className="text-gray-600 text-sm">
-                AI spots that your cash position dropped 22% while revenue grew 8%. The Enrolled Agent
-                knows that means your collections process broke down and $353K is recoverable.
-                AI calculates a 3.8% operating margin on $7M in revenue. The human knows that means the owner
-                earned nothing despite a seven-figure capital investment. The machine monitors continuously.
-                The human interprets and acts.
-              </p>
-            </div>
-            <div className="border-l-4 border-benefique-orange pl-6">
-              <h3 className="font-bold text-benefique-navy text-lg mb-2">Tax + cash flow under one roof</h3>
-              <p className="text-gray-600 text-sm">
-                Most fractional CFOs don&apos;t do tax. Most tax professionals don&apos;t build cash flow models.
-                We do both — which means every cash decision considers the tax consequence, and every tax
-                strategy considers whether you actually have the cash to execute it. That dual lens is how
-                accounting stops being a cost and starts generating ROI.
-              </p>
-            </div>
-            <div className="border-l-4 border-benefique-orange pl-6">
-              <h3 className="font-bold text-benefique-navy text-lg mb-2">Books closed by the 7th. Review calls by the 10th.</h3>
-              <p className="text-gray-600 text-sm">
-                Questions answered within 24 hours. Always. When your accounting team is ahead of the problem
-                instead of catching up to it, you stop looking for alternatives.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Building in Public */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="bg-white rounded-2xl p-8 border border-gray-100">
-            <h2 className="text-2xl font-bold text-benefique-navy mb-3">We build in public. Proof over promise.</h2>
-            <p className="text-gray-600 mb-6">
-              We don&apos;t ask you to take our word for it. We publish exactly what our AI finds, how we analyze it,
-              and the dollar impact it has — using real client data (anonymized). These are the case studies:
+          <h2 className="text-3xl font-bold text-benefique-navy mb-6">What we learned in imaging</h2>
+          <div className="space-y-6 text-gray-600 text-lg">
+            <p>
+              <strong className="text-benefique-navy">Every stop hits its number, and the business still loses money.</strong>{' '}
+              Scheduling is scored on slots booked, but a 9am slot isn&apos;t worth the same as 5pm on a Friday. The
+              front desk is scored on check-ins, but booked isn&apos;t scanned. The billing company is paid on what it
+              collects, not on what it leaves behind. Each team does its job. The money leaks between them.
             </p>
-            <div className="grid md:grid-cols-2 gap-4">
-              <Link to="/blog/accountant-cost-center-roi-center" className="block bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
-                <p className="text-xs text-benefique-orange font-semibold uppercase tracking-wide mb-2">The Full Arc</p>
-                <h3 className="font-bold text-benefique-navy text-sm mb-1">Cost Center vs. ROI Center</h3>
-                <p className="text-gray-500 text-xs">We found $1.5M in actionable findings across a multi-location healthcare group — from the same QuickBooks data their previous accountant had for years.</p>
-              </Link>
-              <Link to="/blog/three-views-one-business" className="block bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
-                <p className="text-xs text-benefique-orange font-semibold uppercase tracking-wide mb-2">Three Lenses</p>
-                <h3 className="font-bold text-benefique-navy text-sm mb-1">Same Business, Three Verdicts</h3>
-                <p className="text-gray-500 text-xs">A $3.8M practice was &quot;doing fine&quot; to the operator, &quot;fragile&quot; to a banker, and a &quot;distressed asset&quot; to a PE buyer. Same data, three conclusions.</p>
-              </Link>
-              <Link to="/blog/fixer-upper-or-walk-in-ready" className="block bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
-                <p className="text-xs text-benefique-orange font-semibold uppercase tracking-wide mb-2">Exit Readiness</p>
-                <h3 className="font-bold text-benefique-navy text-sm mb-1">Fixer Upper or Walk-In Ready?</h3>
-                <p className="text-gray-500 text-xs">A $5.2M offer became $1.8M after due diligence. We show clients the buyer&apos;s inspection report before the buyer does.</p>
-              </Link>
-              <Link to="/blog/ai-cash-flow-waterfall-explained" className="block bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
-                <p className="text-xs text-benefique-orange font-semibold uppercase tracking-wide mb-2">Case Study</p>
-                <h3 className="font-bold text-benefique-navy text-sm mb-1">$1M Profit, Zero Cash</h3>
-                <p className="text-gray-500 text-xs">A $5M imaging center earned $1.07M in EBITDA but its bank account shrank. The AI-powered waterfall showed exactly where every dollar went.</p>
-              </Link>
-              <Link to="/blog/ai-found-353k-trapped-cash" className="block bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
-                <p className="text-xs text-benefique-orange font-semibold uppercase tracking-wide mb-2">Case Study</p>
-                <h3 className="font-bold text-benefique-navy text-sm mb-1">AI Found $353K in Trapped Cash</h3>
-                <p className="text-gray-500 text-xs">A professional services firm had $353K stuck in receivables and a bank balance that overstated real cash by $900K. All found in QuickBooks data.</p>
-              </Link>
-              <Link to="/blog/stealth-debt-balance-sheet-hidden" className="block bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
-                <p className="text-xs text-benefique-orange font-semibold uppercase tracking-wide mb-2">Case Study</p>
-                <h3 className="font-bold text-benefique-navy text-sm mb-1">$961K in Hidden Debt</h3>
-                <p className="text-gray-500 text-xs">The balance sheet showed $399K in debt. Our AI pulled 12 months of snapshots and found $961K more — vendor credit quietly replacing formal loans.</p>
-              </Link>
-            </div>
-            <div className="mt-6 text-center">
-              <Link to="/blog" className="text-benefique-orange font-semibold hover:underline">
-                Read all insights on our blog →
-              </Link>
-            </div>
+            <p>
+              <strong className="text-benefique-navy">Software doesn&apos;t fix a process nobody has mapped.</strong>{' '}
+              A new system on top of an unmapped process automates the leak. We map how a referral becomes a
+              collection, in the straightest line possible, before anyone buys anything.
+            </p>
+            <p>
+              <strong className="text-benefique-navy">The answers are already in your data.</strong>{' '}
+              Scheduling, billing and the bank each hold part of the story. Read together, they show which stop is
+              costing you. Read apart, each one looks fine.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Decision-Ready Dashboards */}
+      {/* One ledger */}
+      <section className="py-16 bg-benefique-navy text-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-4">We don&apos;t do your tax unless we keep your books.</h2>
+          <p className="text-blue-100 text-lg mb-6">
+            That is a rule, not a restriction. One ledger produces the monthly close, the CFO analysis and the tax
+            return, so nothing is re-keyed and no one else&apos;s numbers sit between the data and the advice. Tax
+            compliance and planning are part of the engagement, not a separate fee.
+          </p>
+          <ul className="grid sm:grid-cols-3 gap-4 text-sm">
+            <li className="bg-white/10 rounded-xl p-4"><strong className="block text-white text-base mb-1">Books closed by the 7th</strong><span className="text-blue-100">Review call by the 10th.</span></li>
+            <li className="bg-white/10 rounded-xl p-4"><strong className="block text-white text-base mb-1">Answers within 24 hours</strong><span className="text-blue-100">Every question. Always.</span></li>
+            <li className="bg-white/10 rounded-xl p-4"><strong className="block text-white text-base mb-1">Flat fee</strong><span className="text-blue-100">Never billed by the hour.</span></li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Case studies */}
       <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="bg-gradient-to-br from-benefique-navy to-slate-800 rounded-2xl p-8 text-white">
-            <h2 className="text-2xl font-bold mb-4">Decision-Ready Dashboards</h2>
-            <p className="text-blue-100 mb-6">
-              Every Fractional CFO client receives reports that make complex data simple.
-              See your business health at a glance, understand trends, and know exactly what to do next.
-            </p>
-            <div className="grid md:grid-cols-2 gap-4 mb-6">
-              <div className="bg-white/10 rounded-xl p-5 hover:bg-white/20 transition">
-                <h3 className="font-bold text-lg mb-2">CFO Report</h3>
-                <p className="text-blue-100 text-sm mb-3">
-                  Cash health, revenue trends, profitability metrics, cash waterfall, and action items with dollar impact.
-                  Written in owner terms, not accountant-speak.
-                </p>
-              </div>
-              <div className="bg-white/10 rounded-xl p-5 hover:bg-white/20 transition">
-                <h3 className="font-bold text-lg mb-2">CFO Weekly Pulse</h3>
-                <p className="text-blue-100 text-sm mb-3">
-                  Every Monday: cash position, revenue against target, margin alerts, and anything that moved
-                  more than 5% since last week. Scanned in two minutes, not read for an hour.
-                </p>
-              </div>
-            </div>
-            <div className="text-center">
-              <Link to="/radiology/intelligence-pack" className="inline-flex items-center gap-2 bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition">
-                See a Sample Intelligence Pack
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-benefique-navy mb-3">Proof, stop by stop</h2>
+          <p className="text-gray-600 mb-8 max-w-2xl">
+            We publish what we find, with client data anonymized. Each case below sits at one stop on the line.
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {ABOUT_CASES.map((c) => (
+              <Link key={c.slug} to={`/blog/${c.slug}`} className="block bg-gray-50 rounded-xl p-5 border border-gray-100 hover:border-benefique-orange hover:shadow-md transition">
+                <p className="text-xs font-semibold text-gray-400 mb-1">{c.stop} {stopFor(c.stop).name}</p>
+                <h3 className="font-bold text-benefique-navy mb-1">{c.title}</h3>
+                <p className="text-gray-600 text-sm">{c.text}</p>
               </Link>
-            </div>
+            ))}
+          </div>
+          <div className="mt-6">
+            <Link to={LINE_PATH} className="text-benefique-orange font-semibold hover:underline">
+              All radiology articles, stop by stop &rarr;
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* The Founder — Credibility (shorter) */}
+      {/* Founder, who we serve, location */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4">
           <div className="bg-white rounded-2xl p-8 border border-gray-100 mb-8">
@@ -1377,19 +1315,13 @@ function About() {
               technology IPOs and M&A transactions. That world — institutional finance, capital markets,
               complex deal structures — shaped how he reads business numbers.
             </p>
-            <p className="text-gray-600 mb-4">
-              After emigrating to the United States, Gerrit made a deliberate choice: apply institutional-grade
-              financial expertise to the businesses that need it most — small and mid-sized companies where
-              the founder wears every hat and the financial function is always the most neglected.
-            </p>
             <p className="text-gray-600">
-              Benefique was built on a simple belief: accounting should take pain away, not create it.
-              When your books are strong and your data flows in real time, proactive tax planning pays for
-              the entire engagement — and the insights that come out of it improve operations well beyond the books.
+              After emigrating to the United States, Gerrit made a deliberate choice: apply institutional-grade
+              financial expertise to owner-run businesses where the financial function is always the most
+              neglected. Today that work is focused on independent, multi-center imaging groups in Florida and Texas.
             </p>
           </div>
 
-          {/* Who We Serve */}
           <div className="bg-white rounded-2xl p-8 border border-gray-100 mb-8">
             <h2 className="text-2xl font-bold text-benefique-navy mb-4">{whoWeServe.heading}</h2>
             <p className="text-gray-600 mb-6">{whoWeServe.body}</p>
@@ -1414,13 +1346,11 @@ function About() {
             </div>
           </div>
 
-          {/* Location */}
           <div className="bg-white rounded-2xl p-8 border border-gray-100">
-            <h2 className="text-2xl font-bold text-benefique-navy mb-4">Based in Davie, FL. Built for Anywhere.</h2>
+            <h2 className="text-2xl font-bold text-benefique-navy mb-4">Based in Davie, FL. Working Wherever Your Centers Are.</h2>
             <p className="text-gray-600 mb-4">
-              Our office is in Davie, Florida, and we serve clients throughout South Florida and across the country.
-              Because our system is built on direct API integration and real-time dashboards, geography
-              is never a barrier. Your data is where we are — always.
+              Our office is in Davie, Florida. Our imaging work spans Florida and Texas, and engagements run
+              remotely off the scheduling, billing and accounting systems you already have.
             </p>
             <Link to="/contact" className="text-benefique-orange font-semibold hover:underline">
               Get in touch →
@@ -1432,9 +1362,9 @@ function About() {
       {/* CTA */}
       <section className="py-16 bg-benefique-navy text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold mb-4">Your accounting should do more than document history.</h2>
+          <h2 className="text-2xl font-bold mb-4">Which stop is costing you?</h2>
           <p className="text-blue-100 mb-8">
-            Let&apos;s talk about turning yours into an ROI center.
+            We read your scheduling, billing and bank data together and show you where the money goes missing.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
