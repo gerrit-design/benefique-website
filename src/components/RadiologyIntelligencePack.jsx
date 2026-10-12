@@ -32,10 +32,10 @@ export default function RadiologyIntelligencePack() {
   return (
     <div>
       <Helmet>
-        <title>The Radiology Intelligence Pack | What a Benefique Imaging Engagement Delivers</title>
+        <title>Radiology Intelligence Pack: A Worked Engagement | Benefique</title>
         <meta
           name="description"
-          content="A worked, fully illustrative example of the reporting an independent imaging group gets from Benefique: net revenue per scan by center, DSO by payer rail, and the full report library. Synthetic data, real method."
+          content="A worked example, on synthetic data, of the reporting a multi-center imaging group gets: net revenue per scan, days to cash by payer, the full report library."
         />
         <link rel="canonical" href="https://www.benefique.com/radiology/intelligence-pack" />
         <script type="application/ld+json">{JSON.stringify(packSchema)}</script>

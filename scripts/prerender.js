@@ -455,7 +455,7 @@ for (const slug of blogSlugs) {
     : '';
 
   const ogImage = meta.featuredImage ? `${SITE}${meta.featuredImage}` : DEFAULT_OG_IMAGE;
-  const pageTitle = `${meta.title} - Benefique Tax & Accounting`;
+  const pageTitle = `${meta.title} | Benefique`;
 
   const html = generateHTML({
     title: pageTitle,

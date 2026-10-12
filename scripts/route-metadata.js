@@ -562,10 +562,10 @@ const routes = [
   },
   {
     path: '/radiology',
-    title: 'Radiology CFO Intelligence | PET Tracer Economics, Collections & Multi-Center Operations | Benefique',
+    title: 'Radiology CFO: Imaging Revenue, Cash & Valuation | Benefique',
     body: radiologyBody,
     h1: 'Your Volume Is Up. Your Cash Isn\'t.',
-    description: 'Strategic financial intelligence for multi-center radiology groups. PET Tracer economics, per-payer DSO, payer mix risk, per-claim profitability, COO scorecards. Start with a Strategic Radiology Review.',
+    description: 'Fractional CFO for multi-center imaging groups: profit and cash by center, modality and payer, from referral to cash, and what it does to valuation.',
     schema: {
       '@context': 'https://schema.org',
       '@graph': [
@@ -612,10 +612,10 @@ const routes = [
   },
   {
     path: '/radiology/intelligence-pack',
-    title: 'The Radiology Intelligence Pack | What a Benefique Imaging Engagement Delivers | Benefique',
+    title: 'Radiology Intelligence Pack: A Worked Engagement | Benefique',
     h1: packHeadline,
     description:
-      'A worked, fully illustrative example of the reporting an independent multi-center imaging group receives from Benefique: net revenue per scan by center, days to cash by payer rail, and the complete report library. Synthetic data, real method.',
+      'A worked example, on synthetic data, of the reporting a multi-center imaging group gets: net revenue per scan, days to cash by payer, the full report library.',
     body: packBody,
     // packSchema already contains the FAQPage node for these questions.
     // Setting `faq` here as well would emit a second, duplicate FAQPage.

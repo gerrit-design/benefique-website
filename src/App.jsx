@@ -3772,8 +3772,8 @@ function RadiologyLandingPage() {
   return (
     <div>
       <Helmet>
-        <title>Radiology CFO Intelligence | PET Tracer Economics, Collections & Multi-Center Operations | Benefique</title>
-        <meta name="description" content="Strategic financial intelligence for multi-center radiology groups. PET Tracer economics, per-payer DSO, payer mix risk, per-claim profitability, COO scorecards. Start with a Strategic Radiology Review." />
+        <title>Radiology CFO: Imaging Revenue, Cash & Valuation | Benefique</title>
+        <meta name="description" content="Fractional CFO for multi-center imaging groups: profit and cash by center, modality and payer, from referral to cash, and what it does to valuation." />
         <link rel="canonical" href="https://www.benefique.com/radiology" />
         <script type="application/ld+json">{JSON.stringify(radiologySchema)}</script>
       </Helmet>

@@ -1795,7 +1795,7 @@ function BlogPost() {
     <>
       {/* Dynamic Meta Tags for SEO/GEO */}
       <Helmet>
-        <title>{post.title} - Benefique Tax & Accounting</title>
+        <title>{post.title} | Benefique</title>
         <meta name="description" content={post.excerpt} />
         
         {/* Open Graph */}
