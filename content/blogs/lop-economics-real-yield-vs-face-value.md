@@ -167,7 +167,7 @@ The bank renewed the line at a higher advance rate than the prior year, because 
 
 We keep the books for multi-center imaging groups, close them by the 7th, and tie them to your operational data, so the LOP yield-adjusted reserve described in this article is produced every month, not once. One flat monthly fee, with tax compliance and planning part of the engagement.
 
-**[Start an engagement →](/services/radiology/intake?ref=blog)**
+**[Start the conversation →](/services/radiology/intake?ref=blog)**
 
 ## Frequently Asked Questions
 

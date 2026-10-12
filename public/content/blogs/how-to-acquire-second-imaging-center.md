@@ -164,7 +164,7 @@ The Monday after the deal closed, he told us the most useful artifact wasn't the
 
 We keep the books for multi-center imaging groups, close them by the 7th, and run the buyer-side normalization, valuation modeling, debt-stack work and post-close integration described in this article off that ledger. One flat monthly fee, with tax compliance and planning part of the engagement.
 
-**[Start an engagement →](/services/radiology/intake?ref=blog)**
+**[Start the conversation →](/services/radiology/intake?ref=blog)**
 
 ## Frequently Asked Questions
 

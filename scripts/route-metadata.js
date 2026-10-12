@@ -152,7 +152,7 @@ const packBody = [
   { p: packProse.ctaBody },
   {
     links: [
-      { href: '/services/radiology/intake?ref=pack', text: 'Start an Engagement' },
+      { href: '/services/radiology/intake?ref=pack', text: 'Start the Conversation' },
       { href: '/radiology', text: 'Back to Radiology CFO Intelligence' },
     ],
   },

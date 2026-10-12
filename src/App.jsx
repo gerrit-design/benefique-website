@@ -3804,7 +3804,7 @@ function RadiologyLandingPage() {
               to="/services/radiology/intake?ref=hero"
               className="bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition inline-flex items-center gap-2"
             >
-              Start an Engagement <span>→</span>
+              Start the Conversation <span>→</span>
             </Link>
             <Link
               to="/radiology/intelligence-pack"
@@ -3947,7 +3947,7 @@ function RadiologyLandingPage() {
                 to="/services/radiology/intake?ref=engage"
                 className="block text-center bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
               >
-                Start an Engagement →
+                Start the Conversation →
               </Link>
             </div>
 
@@ -4044,7 +4044,7 @@ function RadiologyLandingPage() {
             to="/services/radiology/intake?ref=final"
             className="inline-block bg-benefique-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
           >
-            Start an Engagement
+            Start the Conversation
           </Link>
         </div>
       </section>
@@ -4065,7 +4065,7 @@ function RadiologyIntake() {
   return (
     <div>
       <Helmet>
-        <title>Start an Engagement | Benefique Intelligence</title>
+        <title>Start the Conversation | Benefique Intelligence</title>
         <meta name="description" content="Accounting and fractional CFO for independent, multi-center imaging groups. Tell us about your centers; we reply within 24 hours." />
         <meta name="robots" content="noindex" />
         <link rel="canonical" href="https://www.benefique.com/services/radiology/intake" />
@@ -4076,7 +4076,7 @@ function RadiologyIntake() {
           <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
             Imaging Groups
           </div>
-          <h1 className="text-4xl font-bold text-benefique-navy mb-4">Start an Engagement</h1>
+          <h1 className="text-4xl font-bold text-benefique-navy mb-4">Start the Conversation</h1>
           <p className="text-lg text-gray-600 max-w-2xl">
             We keep the books for independent, multi-center imaging groups doing {REVENUE_BAND} in revenue, and run the fractional CFO work off that ledger. Tell us about your centers. We reply within 24 hours with a call, then a flat-fee proposal.
           </p>
@@ -4222,7 +4222,7 @@ function RadiologyIntake() {
               </div>
 
               <button type="submit" disabled={intakeForm.submitting} className="w-full bg-benefique-orange text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition disabled:opacity-60">
-                {intakeForm.submitting ? 'Submitting…' : 'Start the Conversation'}
+                {intakeForm.submitting ? 'Sending…' : 'Send'}
               </button>
 
               {intakeForm.error && (

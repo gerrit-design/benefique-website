@@ -176,7 +176,7 @@ The Monday after the income decomposition hit the operator's desk, he told us it
 
 We keep the books for multi-center imaging groups, close them by the 7th, and tie them to your operational data, so the four-line owner-income stack described in this article is produced every month, not once. One flat monthly fee, with tax compliance and planning part of the engagement.
 
-**[Start an engagement →](/services/radiology/intake?ref=blog)**
+**[Start the conversation →](/services/radiology/intake?ref=blog)**
 
 ## Frequently Asked Questions
 

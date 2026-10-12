@@ -225,7 +225,7 @@ export default function RadiologyIntelligencePack() {
               to="/services/radiology/intake?ref=pack"
               className="bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
             >
-              Start an Engagement &rarr;
+              Start the Conversation &rarr;
             </Link>
             <Link
               to="/radiology"
