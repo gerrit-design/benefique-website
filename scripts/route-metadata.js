@@ -152,7 +152,7 @@ const packBody = [
   { p: packProse.ctaBody },
   {
     links: [
-      { href: '/services/radiology/intake?ref=pack', text: 'Book a Strategic Radiology Review' },
+      { href: '/services/radiology/intake?ref=pack', text: 'Start an Engagement' },
       { href: '/radiology', text: 'Back to Radiology CFO Intelligence' },
     ],
   },
@@ -603,12 +603,7 @@ const routes = [
         },
       ],
     },
-    faq: [
-      { q: 'Who is the Strategic Radiology Review for?', a: 'Imaging center operators, CFOs, and medical directors running one or more centers with $5M+ in revenue who suspect their accountant and billing company cannot answer per-payer, per-tracer, or per-claim profitability questions. Typical profile: growing but cash-constrained, unclear on PET Tracer Scan economics, preparing for a lender conversation, or renegotiating payer contracts.' },
-      { q: 'What are PET Tracer Scans, and why do you separate them?', a: 'PET Tracer Scans refers to high-reimbursement specialty tracers with radiopharmaceutical input costs of $2,000-$3,000 per dose and payer reimbursement that varies as much as 9x depending on payer mix. Their economics are structurally different from general radiology. Blending them into one imaging line hides the single largest profit-and-loss driver in a modern center -- which is exactly what most accounting systems do.' },
-      { q: 'What does the Strategic Radiology Review deliver?', a: 'A banker-grade Intelligence PDF covering Two Business Unit decomposition, PET Tracer economics with toxic-combination detection, per-claim profitability stack, DSO by payer, payer mix risk analysis, and a prioritized action plan with quantified dollar impact. Turnaround is two weeks from data access. A 90-minute executive readout is included.' },
-      { q: 'What is the investment for ongoing CFO work?', a: 'It depends on center count, complexity, and scope. We propose specific scope and pricing on the Strategic Review readout -- after we have seen your data, not before. This avoids the common trap of buying generic CFO services priced by hour or headcount rather than by the problems actually worth solving.' },
-    ],
+    faq: radiologyFaqs.map((f) => ({ q: f.q, a: f.a })),
   },
   {
     path: '/radiology/intelligence-pack',

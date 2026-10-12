@@ -164,7 +164,7 @@ A four-center operator at $3.0M EBITDA and a 5.5x multiple is sitting on a ~$16.
 
 Your accountant has every number this article requires. Your billing company has every number this article requires. The question is whether anyone is integrating the operating P&L, the debt service stack, and the distribution discipline into a single owner-income view that tells you what's actually reaching your personal account — and what would reach it under different policy choices.
 
-The three-center operator from the opening of this article ran the income decomposition during a Strategic Radiology Review. The analysis revealed two things he didn't know: his distribution ratio was sitting at 71% (well above the 60% lender threshold), and his W-2 was 30% below market for the operational role he was actually playing. The combination was producing a current take-home that looked acceptable but was simultaneously depressing his lendability and shifting payroll-tax burden onto next year's earnings.
+The three-center operator from the opening of this article ran the income decomposition with us. The analysis revealed two things he didn't know: his distribution ratio was sitting at 71% (well above the 60% lender threshold), and his W-2 was 30% below market for the operational role he was actually playing. The combination was producing a current take-home that looked acceptable but was simultaneously depressing his lendability and shifting payroll-tax burden onto next year's earnings.
 
 He restructured both within 60 days. W-2 moved to market. Distributions came down to a 58% ratio. Total take-home dropped about $40K in year one — and his next debt refinancing came in 60 basis points tighter than the previous round, which by year three more than recovered the year-one gap. The right answer was visible only when the income stack was decomposed into its actual components.
 
@@ -174,9 +174,9 @@ The Monday after the income decomposition hit the operator's desk, he told us it
 
 ## Ready to Run the Owner-Income Decomposition?
 
-A [Strategic Radiology Review](/services/radiology) is a fixed-fee, two-week engagement that produces the four-line owner-income stack described in this article — alongside Two Business Unit P&L decomposition, per-payer-class DSO benchmarking, and a banker-grade Intelligence PDF built specifically for multi-center SE Florida imaging operators preparing for capital, partner, or buyer conversations.
+We keep the books for multi-center imaging groups, close them by the 7th, and tie them to your operational data, so the four-line owner-income stack described in this article is produced every month, not once. One flat monthly fee, with tax compliance and planning part of the engagement.
 
-**[Book a Strategic Radiology Review →](/services/radiology/intake?ref=review)**
+**[Start an engagement →](/services/radiology/intake?ref=blog)**
 
 ## Frequently Asked Questions
 
@@ -197,6 +197,6 @@ SE Florida multi-center platforms in 2026 trade in bands of roughly 3.5x–5.0x 
 
 ---
 
-**Owner income is the residual - and the residual is decided per center.** The [Radiology Intelligence Pack](/radiology/intelligence-pack) shows how four centers on the same payer terms produce materially different cash, and where the difference is created. Synthetic figures, real method. A [Strategic Radiology Review](/radiology) reconstructs the picture from your own numbers.
+**Owner income is the residual - and the residual is decided per center.** The [Radiology Intelligence Pack](/radiology/intelligence-pack) shows how four centers on the same payer terms produce materially different cash, and where the difference is created. Synthetic figures, real method. In an [engagement](/radiology) we reconstruct the picture from your own numbers.
 
 *Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances. Practice examples are anonymized composites based on real client data; identifying details have been changed.*

@@ -156,8 +156,8 @@ export const radiologyClusters = [
 
 export const radiologyFaqs = [
   {
-    q: 'Who is the Strategic Radiology Review for?',
-    a: 'Imaging center operators, CFOs, and medical directors running one or more centers with $5M+ in revenue who suspect their accountant and billing company cannot answer per-payer, per-tracer, or per-claim profitability questions. Typical profile: growing but cash-constrained, unclear on PET Tracer Scan economics, preparing for a lender conversation, or renegotiating payer contracts.',
+    q: 'Who do you work with?',
+    a: 'Owners, CFOs and medical directors of independent imaging groups running two or more centers with $5M+ in revenue, who suspect their accountant and billing company cannot answer per-payer, per-tracer or per-claim profitability questions between them. Typical profile: growing but cash-constrained, unclear on PET Tracer Scan economics, preparing for a lender conversation, or renegotiating payer contracts.',
   },
   {
     q: 'What are PET Tracer Scans, and why do you separate them?',
@@ -168,12 +168,12 @@ export const radiologyFaqs = [
     a: 'We replace the bookkeeping, not the biller. We keep the books and close them by the 7th, because per-payer, per-tracer, per-facility and per-claim answers are only as good as the ledger under them. Your billing company keeps processing claims; we tie its data to the ledger and measure what it collects against what it should. Tax is part of the engagement, and we only do it when we keep the books.',
   },
   {
-    q: 'What does the Strategic Radiology Review deliver?',
-    a: 'A banker-grade Intelligence PDF covering Two Business Unit decomposition, PET Tracer economics with toxic-combination detection, per-claim profitability stack, DSO by payer, payer mix risk analysis, and a prioritized action plan with quantified dollar impact. Turnaround is two weeks from data access. A 90-minute executive readout is included.',
+    q: 'What does an engagement include?',
+    a: 'Your books, closed by the 7th of every month, and a monthly CFO report built on them: Two Business Unit decomposition, PET Tracer economics with toxic-combination detection, the per-claim profitability stack, DSO by payer, and payer mix risk, each with a dollar-quantified action list. Every stop on the Patient Referral-to-Cash Line is measured, your billing company is measured against the ledger, and tax compliance and planning come off the same books.',
   },
   {
-    q: 'What is the investment for ongoing CFO work?',
-    a: 'It depends on center count, complexity, and scope. We propose specific scope and pricing on the Strategic Review readout — after we have seen your data, not before. This avoids the common trap of buying generic "CFO services" priced by hour or headcount rather than by the problems actually worth solving.',
+    q: 'What does it cost?',
+    a: 'One flat monthly fee, set by center count, modalities and complexity, and proposed after the first call. Never billed by the hour, and tax is part of the engagement rather than a separate fee. This avoids the common trap of buying generic CFO services priced by hour or headcount rather than by the problems actually worth solving.',
   },
   {
     q: 'Can you help us prepare for a lender or line-of-credit conversation?',

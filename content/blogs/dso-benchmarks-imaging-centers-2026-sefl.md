@@ -23,7 +23,7 @@ The number was technically accurate. It was also operationally useless.
 
 Once we decomposed the A/R into its actual payer-class buckets, the picture broke open: Tier-1 commercial was collecting in 36 days (in range). Medicare was collecting in 22 days (in range). But Florida PIP was sitting at 138 days, LOP-backed receivables were at 412 days concentrated in three referring attorneys, and the patient self-pay bucket had a 96-day median with a 38% never-collected rate. The 53-day "DSO" was a weighted average of clean money and trapped money — and it told the operator nothing about which problem to solve first.
 
-This article is the per-payer DSO benchmark framework we use inside Strategic Radiology Reviews — built specifically for SE Florida imaging in 2026, where rising volume, payer compression, PIP delays, and LOP collateral risk make aggregate DSO worse than useless. The framework applies whether you're running a $3M single-center operation or a $20M multi-center group — the math just scales.
+This article is the per-payer DSO benchmark framework we use inside every engagement — built specifically for SE Florida imaging in 2026, where rising volume, payer compression, PIP delays, and LOP collateral risk make aggregate DSO worse than useless. The framework applies whether you're running a $3M single-center operation or a $20M multi-center group — the math just scales.
 
 > **Key Takeaway:** Aggregate DSO is a vanity number. The five payer-class DSO benchmarks below — Tier-1 commercial (32–42d), Tier-2 commercial (42–55d), Medicare/MA (18–28d), Florida PIP (90–150d), and LOP/attorney-driven (270–540d, yield-adjusted) — are target medians for well-managed operations, measured from date of service. Industry medians often run materially above these targets; the gap between target and reality is the management opportunity. At a $4M-revenue center, every day of weighted DSO represents roughly $11K in cash. Compress weighted DSO by 10 days and you free $110K — without raising fees, signing a contract, or scanning one more patient.
 
@@ -215,7 +215,7 @@ Your accountant has every number this article requires. Your billing company has
 
 Most accounting firms see a 53-day DSO and move on. The operator sees a healthy headline. Both are looking at the same number — and both are missing the same problem. This is what happens when accounting stops looking backward and starts looking forward. (Read how accounting becomes an [ROI center, not a cost center](/about).)
 
-The single-center operator from the opening of this article ran the decomposition during a [Strategic Radiology Review](/services/radiology). Within 30 days, they had per-payer-class aging being produced weekly, a PIP reconciliation cadence that closed three statutory windows that had been quietly drifting, and a Tier-1 claim audit that cleared $68K of receivables aged 45–90 days inside a single billing cycle.
+The single-center operator from the opening of this article ran the decomposition with us. Within 30 days, they had per-payer-class aging being produced weekly, a PIP reconciliation cadence that closed three statutory windows that had been quietly drifting, and a Tier-1 claim audit that cleared $68K of receivables aged 45–90 days inside a single billing cycle.
 
 By day 90, weighted DSO had compressed 4.6 days. On their $4.2M revenue base, that was approximately $53K of cash released — without raising fees, renegotiating one contract, or scanning one additional patient. The CFO ran the next lender renewal conversation with three months of payer-class trend data instead of a single aggregate number, and the bank tightened the advance rate on the line of credit by four percentage points.
 
@@ -223,9 +223,9 @@ The Monday after that lender meeting, the CFO told us the conversation felt diff
 
 ## Ready to Decompose Your DSO?
 
-A [Strategic Radiology Review](/services/radiology) is a fixed-fee, two-week engagement that produces the per-payer-class aging decomposition, weighted DSO baseline, and prioritized action plan described in this article — alongside Two Business Unit P&L decomposition, per-claim profitability, and a banker-grade Intelligence PDF. Built specifically for multi-center imaging operators who suspect their accountant and billing company cannot answer per-payer profitability questions.
+We keep the books for multi-center imaging groups, close them by the 7th, and tie them to your operational data, so the per-payer-class aging decomposition and weighted DSO baseline described in this article is produced every month, not once. One flat monthly fee, with tax compliance and planning part of the engagement.
 
-**[Book a Strategic Radiology Review →](/services/radiology/intake?ref=review)**
+**[Start an engagement →](/services/radiology/intake?ref=blog)**
 
 ## Frequently Asked Questions
 
@@ -246,6 +246,6 @@ A focused 90-day program targeting Tier-1 audit, PIP reconciliation, and weighte
 
 ---
 
-**Benchmarks tell you where you should be; your own payer rails tell you where you are.** Our [worked four-center example](/radiology/intelligence-pack) shows days-to-cash split by rail alongside net revenue per scan, so the collection cycle sits next to the margin it is funding. Fictional group, synthetic figures, real method. A [Strategic Radiology Review](/radiology) produces the same views from your billing data.
+**Benchmarks tell you where you should be; your own payer rails tell you where you are.** Our [worked four-center example](/radiology/intelligence-pack) shows days-to-cash split by rail alongside net revenue per scan, so the collection cycle sits next to the margin it is funding. Fictional group, synthetic figures, real method. In an [engagement](/radiology) we produce the same views from your own books and billing data.
 
 *Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances. Practice examples are anonymized composites based on real client data; identifying details have been changed.*

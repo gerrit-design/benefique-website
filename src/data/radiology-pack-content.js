@@ -86,7 +86,7 @@ export const packProse = {
 
   ctaHeading: 'See this built on your own centers',
   ctaBody:
-    'A Strategic Radiology Review produces the real version of everything above from the systems you already run. Fixed fee, scoped on intake, two weeks from data access.',
+    'In an engagement we keep your books and produce the real version of everything above, every month, from your own ledger and the systems you already run. One flat monthly fee.',
 };
 
 // The engagement report library, arranged as the journey of a single scan —

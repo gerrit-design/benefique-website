@@ -129,7 +129,7 @@ The first 90 days post-close determine whether the deal compounds or compromises
 
 **Day 1–14:** **Stabilize without disrupting.** Retain key staff, reassure key referrers, run the existing schedule unchanged, and meet every team member individually. Do not implement any operational changes in the first two weeks except those legally required.
 
-**Day 15–45:** **Run a Strategic Radiology Review on the acquired center.** Per-payer DSO decomposition (see [DSO Benchmarks for Imaging Centers](/blog/dso-benchmarks-imaging-centers-2026-sefl)), per-modality contribution analysis (see [Per-Modality Profitability](/blog/per-modality-profitability-imaging-center)), and LOP yield-adjusted A/R review (see [LOP Economics: Real Yield vs Face Value](/blog/lop-economics-real-yield-vs-face-value)). The review confirms or refutes the buyer-side normalization assumptions used to value the deal.
+**Day 15–45:** **Bring the acquired center onto the same books and run the full decomposition.** Per-payer DSO decomposition (see [DSO Benchmarks for Imaging Centers](/blog/dso-benchmarks-imaging-centers-2026-sefl)), per-modality contribution analysis (see [Per-Modality Profitability](/blog/per-modality-profitability-imaging-center)), and LOP yield-adjusted A/R review (see [LOP Economics: Real Yield vs Face Value](/blog/lop-economics-real-yield-vs-face-value)). That work confirms or refutes the buyer-side normalization assumptions used to value the deal.
 
 **Day 30–60:** **Identify the top three operational improvements that don't require capital.** These are typically: tightening front-end demographic and authorization capture, working aged Tier-1 claims that the prior owner's operation had let drift, and PIP reconciliation cadence. Each of these typically returns $50K–$200K of cash with no capex.
 
@@ -162,9 +162,9 @@ The Monday after the deal closed, he told us the most useful artifact wasn't the
 
 ## Ready to Run Your Acquisition Framework?
 
-A [Strategic Radiology Review](/services/radiology) is a fixed-fee, two-week engagement that produces buyer-side normalization, valuation modeling, debt-stack engineering, and post-close integration roadmap described in this article — alongside Two Business Unit P&L decomposition, per-payer-class DSO benchmarking, and a banker-grade Intelligence PDF. Built specifically for SE Florida imaging operators evaluating a second-center acquisition, refinancing toward a deal, or preparing for due diligence on an inbound LOI.
+We keep the books for multi-center imaging groups, close them by the 7th, and run the buyer-side normalization, valuation modeling, debt-stack work and post-close integration described in this article off that ledger. One flat monthly fee, with tax compliance and planning part of the engagement.
 
-**[Book a Strategic Radiology Review →](/services/radiology/intake?ref=review)**
+**[Start an engagement →](/services/radiology/intake?ref=blog)**
 
 ## Frequently Asked Questions
 
@@ -185,6 +185,6 @@ The 90-day playbook is the active-management window. Full operational integratio
 
 ---
 
-**Before you underwrite a second center, you need the first one measured properly.** The [Radiology Intelligence Pack](/radiology/intelligence-pack) shows the per-center, per-modality and per-rail views that make a target's economics comparable to your own rather than merely adjacent. Illustrative data. A [Strategic Radiology Review](/radiology) produces the version you can take to a lender.
+**Before you underwrite a second center, you need the first one measured properly.** The [Radiology Intelligence Pack](/radiology/intelligence-pack) shows the per-center, per-modality and per-rail views that make a target's economics comparable to your own rather than merely adjacent. Illustrative data. In an [engagement](/radiology) we produce the version you can take to a lender.
 
 *Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances. Practice examples are anonymized composites based on real client data; identifying details have been changed.*

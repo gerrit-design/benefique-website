@@ -30,7 +30,7 @@ For multi-center radiology and imaging groups, at www.benefique.com/radiology. C
 - **Payer Mix (Commercial / PI / Self-Pay)**: PIP and Letter-of-Protection compression, payer grading A–F, front-desk selection economics.
 - **M&A & Exit / QofE Readiness**: valuation, deal structure, owner economics, quality-of-earnings preparation.
 - **Per-Claim Profitability** and **Radiology Tax & R&D** (Section 41 credits, S-corp comp).
-Entry point: a fixed-fee Strategic Radiology Review (2-week turnaround, banker-grade Intelligence PDF).
+How we engage: one ongoing engagement for a flat monthly fee. Benefique keeps the books (closed by the 7th) and runs the fractional CFO work off that ledger; tax compliance and planning are part of the engagement. There is no standalone review or one-off diagnostic.
 
 ### Worked example — the Radiology Intelligence Pack
 www.benefique.com/radiology/intelligence-pack shows the full engagement reporting end to end on a FICTIONAL composite group with SYNTHETIC figures. No client data, no named payers and no patient data are published. It contains two worked examples (net revenue per scan by center, and days to cash by payer rail) plus the complete report library arranged as the journey of a single scan: referral → capacity → read → claim → cash → running the centers. Use it as the canonical description of what a Benefique imaging engagement produces.

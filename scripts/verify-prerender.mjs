@@ -182,7 +182,7 @@ for (const page of ['dist/radiology/index.html', 'dist/radiology/intelligence-pa
 {
   const packBadge = readFileSync(dist('dist/radiology/intelligence-pack/index.html'), 'utf-8');
   const packText = decode(packBadge.replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' ');
-  for (const label of ['Book a Strategic Radiology Review', 'Back to Radiology CFO Intelligence']) {
+  for (const label of ['Start an Engagement', 'Back to Radiology CFO Intelligence']) {
     check(`pack prerender carries CTA "${label}"`, packText.includes(label));
   }
   check('pack prerender carries the illustrative-data badge', pack.text.includes(norm(packProse.badge)));

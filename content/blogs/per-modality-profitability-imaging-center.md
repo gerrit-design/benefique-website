@@ -21,7 +21,7 @@ Once we decomposed the P&L by modality, the picture flipped. Three of the four m
 
 The 16.4% headline EBITDA was three healthy businesses subsidizing one money-losing one. Nobody had said it out loud because nobody had built the report.
 
-This article is the per-modality profitability framework we apply inside every Strategic Radiology Review. It turns "imaging revenue" into four discrete businesses with four discrete economics — and exposes which modalities are paying the bills versus which are quietly burning the cash.
+This article is the per-modality profitability framework we apply inside every engagement. It turns "imaging revenue" into four discrete businesses with four discrete economics — and exposes which modalities are paying the bills versus which are quietly burning the cash.
 
 > **Key Takeaway:** Imaging centers do not have a single business — they have four. MRI, CT, ultrasound, and PET Tracer Scans each have fundamentally different per-claim revenue, cost structure, payer-mix exposure, and DSO. Rolling them into a single "imaging" line on the P&L produces a number that is mathematically valid and operationally meaningless. The right framework is per-modality contribution margin: $/claim → variable cost → contribution $ → contribution %. Most multi-center SE Florida operators have at least one modality running 30+ percentage points below the others — and have never seen it on a financial report.
 
@@ -198,7 +198,7 @@ Bonus depreciation, R&D credits, equipment placed-in-service timing — all of i
 
 Your billing data has every number this report requires. Your payroll system has every number this report requires. Your equipment list has every number this report requires. The question is whether anyone is integrating those three sources into a single per-modality view that turns "imaging" from one number into four businesses.
 
-The four-center group from the opening of this article ran the modality decomposition during a Strategic Radiology Review. The analysis exposed a PET Tracer Scan program running structurally negative on three specific commercial payer combinations, an MRI bucket whose headline contribution masked an LOP yield problem, and an ultrasound operation whose 67% contribution margin had been quietly carrying the entire group.
+The four-center group from the opening of this article ran the modality decomposition with us. The analysis exposed a PET Tracer Scan program running structurally negative on three specific commercial payer combinations, an MRI bucket whose headline contribution masked an LOP yield problem, and an ultrasound operation whose 67% contribution margin had been quietly carrying the entire group.
 
 Within 60 days, the operator declined two specific PET Tracer Scan payer combinations, redirected $300K of planned MRI capital toward a third ultrasound unit and a sonographer, and re-cut the next year's budget around modality contribution dollars instead of modality volume. The next quarter's contribution dollars were $187K higher than the prior comparable quarter — on lower total scan volume.
 
@@ -208,9 +208,9 @@ The Monday after the modality P&L hit the operator's desk, he told us it was the
 
 ## Ready to Decompose Your P&L by Modality?
 
-A [Strategic Radiology Review](/services/radiology) is a fixed-fee, two-week engagement that produces the per-modality contribution analysis described in this article — alongside Two Business Unit P&L decomposition, per-payer-class DSO benchmarking, and a banker-grade Intelligence PDF built specifically for multi-center SE Florida imaging operators.
+We keep the books for multi-center imaging groups, close them by the 7th, and tie them to your operational data, so the per-modality contribution analysis described in this article is produced every month, not once. One flat monthly fee, with tax compliance and planning part of the engagement.
 
-**[Book a Strategic Radiology Review →](/services/radiology/intake?ref=review)**
+**[Start an engagement →](/services/radiology/intake?ref=blog)**
 
 ## Frequently Asked Questions
 
@@ -231,6 +231,6 @@ Almost never, unless explicitly asked. Standard accounting deliverables are tax-
 
 ---
 
-**Want to see per-modality contribution carried across a whole group?** The [Radiology Intelligence Pack](/radiology/intelligence-pack) works a fictional four-center composite end to end - net revenue per scan by center, contribution by modality, and days to cash by payer rail, with every cut reconciling to the same underlying volume. The figures are synthetic; the method is the one we run. To have it built on your own data, start with a [Strategic Radiology Review](/radiology).
+**Want to see per-modality contribution carried across a whole group?** The [Radiology Intelligence Pack](/radiology/intelligence-pack) works a fictional four-center composite end to end - net revenue per scan by center, contribution by modality, and days to cash by payer rail, with every cut reconciling to the same underlying volume. The figures are synthetic; the method is the one we run. In an [engagement](/radiology) we build it on your own data, every month.
 
 *Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances. Practice examples are anonymized composites based on real client data; identifying details have been changed.*

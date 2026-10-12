@@ -282,4 +282,4 @@ The entire pipeline from data pull to live, deployed dashboards takes under 30 m
 
 Hardcoded data provides reliability (no API failures or expired tokens), speed (instant page loads with no loading spinners), offline capability, auditability (the data cannot silently change after analysis), and archival value since each month's source file is saved as a permanent record.
 
-**What the reporting looks like when it is finished.** The [Radiology Intelligence Pack](/radiology/intelligence-pack) walks the complete report library - every stage from scan to cash - on a fictional four-center group, so you can read the method before sharing a single file. To scope the same build for your group, start with a [Strategic Radiology Review](/radiology).
+**What the reporting looks like when it is finished.** The [Radiology Intelligence Pack](/radiology/intelligence-pack) walks the complete report library - every stage from scan to cash - on a fictional four-center group, so you can read the method before sharing a single file. In an [engagement](/radiology) we build the same library for your group.

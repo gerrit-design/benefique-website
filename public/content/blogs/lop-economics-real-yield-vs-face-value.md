@@ -21,7 +21,7 @@ It is a contingent legal claim with a 280-day median settlement timeline and a 6
 
 Most SE Florida imaging operators run their books on the first version. Most lenders, when they finally diligence the asset, run their analysis on the second. The gap between those two numbers is where covenant problems get born.
 
-This article is the LOP yield framework we apply inside every Strategic Radiology Review — built specifically for SE Florida multi-center imaging operators where attorney-driven volume is structurally embedded in the payer mix.
+This article is the LOP yield framework we apply inside every engagement — built specifically for SE Florida multi-center imaging operators where attorney-driven volume is structurally embedded in the payer mix.
 
 > **Key Takeaway:** Letter of Protection receivables behave like contingent claims on legal settlements, not commercial A/R. The four variables that determine real yield — settlement timeline, negotiated final percentage, attorney/firm concentration, and statute exposure — produce expected-value markdowns of 35–50% against face value at most SE Florida imaging centers. Operators carrying LOP at gross face value are not committing fraud — they are signing up for an avoidable surprise the next time a lender runs their own diligence. The yield-adjusted reserve framework below is how to run the conversation before the bank does.
 
@@ -155,7 +155,7 @@ If MRI is growing as a share of volume and your LOP yield is unfavorable in the 
 
 Your billing company can pull the data. Your accountant can model the tax implications. Your lender already knows the answer. The question is whether anyone is integrating those three views into a single yield-adjusted picture you can act on.
 
-A multi-center SE Florida imaging operator we worked with came into a Strategic Radiology Review carrying $4.6M of LOP A/R at face value. The owner believed, correctly, that the receivables would eventually convert. He believed, incorrectly, that they would convert at face value. The yield analysis dropped the real expected value to $2.81M — a 39% markdown. Two of the top-five referring attorneys were Tier-3, with sub-50% historical realization, accounting for $890K of the gap by themselves.
+A multi-center SE Florida imaging operator we worked with came to us carrying $4.6M of LOP A/R at face value. The owner believed, correctly, that the receivables would eventually convert. He believed, incorrectly, that they would convert at face value. The yield analysis dropped the real expected value to $2.81M — a 39% markdown. Two of the top-five referring attorneys were Tier-3, with sub-50% historical realization, accounting for $890K of the gap by themselves.
 
 The operator did not panic. He did three things in 30 days. He shifted referral cultivation effort toward the Tier-1 firms with documented 75%+ realization. He renegotiated billing protocols on Tier-3 cases to require partial point-of-service collection. And he walked into his next lender review with the yield-adjusted number on slide three of the deck.
 
@@ -165,9 +165,9 @@ The bank renewed the line at a higher advance rate than the prior year, because 
 
 ## Ready to Run Your Own LOP Yield Analysis?
 
-A [Strategic Radiology Review](/services/radiology) is a fixed-fee, two-week engagement that produces the LOP yield-adjusted reserve methodology described in this article — alongside per-payer-class DSO benchmarking, Two Business Unit P&L decomposition, and a banker-grade Intelligence PDF built specifically for multi-center SE Florida imaging operators preparing for capital, partner, or buyer conversations.
+We keep the books for multi-center imaging groups, close them by the 7th, and tie them to your operational data, so the LOP yield-adjusted reserve described in this article is produced every month, not once. One flat monthly fee, with tax compliance and planning part of the engagement.
 
-**[Book a Strategic Radiology Review →](/services/radiology/intake?ref=review)**
+**[Start an engagement →](/services/radiology/intake?ref=blog)**
 
 ## Frequently Asked Questions
 
@@ -188,6 +188,6 @@ Accrual-basis imaging centers can establish a documented bad-debt reserve method
 
 ---
 
-**LOP is a rail, not a receivable line.** In the [Radiology Intelligence Pack](/radiology/intelligence-pack) the PI / letter-of-protection rail is carried as its own rail - priced, aged, and set against the commercial and government rails so the yield trade-off is visible rather than buried in a blended A/R number. Illustrative data throughout. If you want your own LOP book measured this way, that is a [Strategic Radiology Review](/radiology).
+**LOP is a rail, not a receivable line.** In the [Radiology Intelligence Pack](/radiology/intelligence-pack) the PI / letter-of-protection rail is carried as its own rail - priced, aged, and set against the commercial and government rails so the yield trade-off is visible rather than buried in a blended A/R number. Illustrative data throughout. If you want your own LOP book measured this way, that is part of an [engagement](/radiology).
 
 *Disclaimer: This article is for informational purposes only and does not constitute tax, legal, or financial advice. Tax situations vary — consult a qualified tax professional for advice specific to your circumstances. Practice examples are anonymized composites based on real client data; identifying details have been changed.*

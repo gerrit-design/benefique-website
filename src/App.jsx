@@ -3,7 +3,7 @@ import { Routes, Route, Link, useLocation, Navigate, useSearchParams, useNavigat
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import BlogPost, { blogPosts } from './BlogPost';
 import { ReferralLinePage, LineOverview } from './components/ReferralLine';
-import { LINE_PATH, LINE_NAME, stopFor } from './data/referral-line';
+import { LINE_PATH, LINE_NAME, LINES, stopFor } from './data/referral-line';
 import ConciergeSimulator from './components/ConciergeSimulator';
 import BusinessSimulator from './components/BusinessSimulator';
 import RadiologySimulator from './components/RadiologySimulator';
@@ -3801,10 +3801,10 @@ function RadiologyLandingPage() {
 
           <div className="flex flex-wrap gap-4 mb-6">
             <Link
-              to="/services/radiology/intake?ref=review"
+              to="/services/radiology/intake?ref=hero"
               className="bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition inline-flex items-center gap-2"
             >
-              Book a Strategic Radiology Review <span>→</span>
+              Start an Engagement <span>→</span>
             </Link>
             <Link
               to="/radiology/intelligence-pack"
@@ -3917,27 +3917,25 @@ function RadiologyLandingPage() {
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-benefique-navy text-center mb-4">How We Engage</h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-            One fixed-fee entry point. Everything else is scoped on the readout — because pricing ongoing CFO work before seeing your data is how radiology operators get commoditized.
+            One engagement, one flat monthly fee. We keep the books, because every answer on this page is only as good as the ledger under it.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white rounded-2xl p-8 border-2 border-benefique-orange">
-              <div className="text-xs uppercase tracking-wider text-benefique-orange font-semibold mb-2">Start Here</div>
-              <h3 className="text-2xl font-bold text-benefique-navy mb-2">Strategic Radiology Review</h3>
-              <div className="text-3xl font-bold text-benefique-navy mb-1">Fixed Fee</div>
-              <div className="text-sm text-gray-500 mb-6">Scoped on intake &middot; 2-week turnaround</div>
-              <p className="text-gray-700 mb-4">
-                A board-grade diagnostic the CEO can hand to partners, lenders, or the investment committee.
-              </p>
+          <div className="grid md:grid-cols-5 gap-6">
+            <div className="md:col-span-3 bg-white rounded-2xl p-8 border-2 border-benefique-orange">
+              <div className="text-xs uppercase tracking-wider text-benefique-orange font-semibold mb-2">The Engagement</div>
+              <h3 className="text-2xl font-bold text-benefique-navy mb-2">Accounting and Fractional CFO</h3>
+              <div className="text-3xl font-bold text-benefique-navy mb-1">Flat Monthly Fee</div>
+              <div className="text-sm text-gray-500 mb-6">Scoped to your centers &middot; never billed by the hour</div>
               <ul className="space-y-2 mb-6">
                 {[
-                  'Two Business Unit P&L decomposition',
-                  'PET Tracer Scan toxic-combination analysis',
-                  'Per-Claim profitability stack ($/Claim → GP$ → NOI)',
-                  'DSO by payer and aging decomposition',
-                  'Payer mix risk and PIP compression modeling',
-                  'Banker-grade Intelligence PDF',
-                  '90-minute executive readout',
+                  'Your books, closed by the 7th of every month',
+                  'Monthly CFO report: profit and cash by center, modality and payer',
+                  `Every stop on the ${LINE_NAME} measured, from referrer to bank`,
+                  'Your billing company measured against the ledger: collections, denials and days to cash by payer',
+                  'Quarterly COO scorecard with gated bonus design',
+                  'Lender reporting and covenant tracking',
+                  'Tax compliance and planning, off the same ledger',
+                  'Answers within 24 hours, directly from Benefique leadership',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2 text-gray-700 text-sm">
                     <span className="text-benefique-orange mt-0.5">✓</span>
@@ -3946,43 +3944,30 @@ function RadiologyLandingPage() {
                 ))}
               </ul>
               <Link
-                to="/services/radiology/intake?ref=review"
+                to="/services/radiology/intake?ref=engage"
                 className="block text-center bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
               >
-                Book the Review →
+                Start an Engagement →
               </Link>
             </div>
 
-            <div className="bg-white rounded-2xl p-8 border border-gray-200">
-              <div className="text-xs uppercase tracking-wider text-gray-500 font-semibold mb-2">Ongoing</div>
-              <h3 className="text-2xl font-bold text-benefique-navy mb-2">Radiology CFO Engagement</h3>
-              <div className="text-3xl font-bold text-benefique-navy mb-1">Bespoke</div>
-              <div className="text-sm text-gray-500 mb-6">Scope &amp; investment proposed on Review readout</div>
-              <p className="text-gray-700 mb-4">
-                Monthly financial intelligence for multi-center groups serious about knowing which center, which payer, and which tracer is making — or costing — money.
-              </p>
-              <ul className="space-y-2 mb-6">
+            <div className="md:col-span-2 bg-white rounded-2xl p-8 border border-gray-200">
+              <div className="text-xs uppercase tracking-wider text-gray-500 font-semibold mb-2">How It Starts</div>
+              <ol className="space-y-5">
                 {[
-                  'Monthly branded CFO report (Two Business Unit framework)',
-                  'Quarterly COO scorecard with gated bonus design',
-                  'Collections optimization reviews',
-                  'Per-payer and per-tracer profitability tracking',
-                  'Lender-readiness & triple reconciliation methodology',
-                  'R&D tax credit screening',
-                  'Direct access to Benefique leadership',
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-gray-700 text-sm">
-                    <span className="text-benefique-orange mt-0.5">✓</span>
-                    <span>{item}</span>
+                  ['Tell us about your centers', 'The intake form takes five minutes. We reply within 24 hours.'],
+                  ['A call, then a flat-fee proposal', 'Scoped on center count, modalities and the systems you run.'],
+                  ['We take over the books', 'Your ledger moves to us and closes by the 7th. Your billing company and your systems stay where they are.'],
+                ].map(([t, d], i) => (
+                  <li key={t} className="flex gap-3">
+                    <span className="flex-shrink-0 w-7 h-7 rounded-full bg-benefique-navy text-white text-sm font-bold flex items-center justify-center">{i + 1}</span>
+                    <div>
+                      <div className="font-semibold text-benefique-navy">{t}</div>
+                      <div className="text-sm text-gray-600">{d}</div>
+                    </div>
                   </li>
                 ))}
-              </ul>
-              <Link
-                to="/services/radiology/intake?ref=cfo"
-                className="block text-center border-2 border-benefique-navy text-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-benefique-navy hover:text-white transition"
-              >
-                Start with a Review →
-              </Link>
+              </ol>
             </div>
           </div>
         </div>
@@ -4053,13 +4038,13 @@ function RadiologyLandingPage() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">See Your Centers the Way Your Lender Wants To</h2>
           <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
-            Two weeks from data access to a board-grade Intelligence PDF. Fixed fee. The readout defines what ongoing CFO work, if any, is worth the investment.
+            We keep the books, close them by the 7th, and tie them to your operations, so every number traces back to a center, a payer and a stop on the line. One flat monthly fee.
           </p>
           <Link
-            to="/services/radiology/intake?ref=review"
+            to="/services/radiology/intake?ref=final"
             className="inline-block bg-benefique-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
           >
-            Book a Strategic Radiology Review
+            Start an Engagement
           </Link>
         </div>
       </section>
@@ -4073,14 +4058,15 @@ function RadiologyLandingPage() {
 function RadiologyIntake() {
   const [params] = [new URLSearchParams(typeof window !== 'undefined' ? window.location.search : '')];
   const ref = params.get('ref') || 'direct';
-  const isReview = ref === 'review';
   const intakeForm = useFormspreeAjax('https://formspree.io/f/mzdjjprp', 'radiology-intake', `/thank-you?form=radiology-${ref}`, { intake_ref: ref });
+  const field = 'w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent';
+  const select = `${field} text-gray-700`;
 
   return (
     <div>
       <Helmet>
-        <title>Radiology CFO Intake | Benefique</title>
-        <meta name="description" content="Request a Strategic Radiology Review or discuss ongoing CFO engagement. Multi-center imaging operators only. 24-hour response." />
+        <title>Start an Engagement | Benefique Intelligence</title>
+        <meta name="description" content="Accounting and fractional CFO for independent, multi-center imaging groups. Tell us about your centers; we reply within 24 hours." />
         <meta name="robots" content="noindex" />
         <link rel="canonical" href="https://www.benefique.com/services/radiology/intake" />
       </Helmet>
@@ -4088,15 +4074,11 @@ function RadiologyIntake() {
       <section className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-4">
           <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
-            <span>🔬</span> Radiology CFO Intake
+            Imaging Groups
           </div>
-          <h1 className="text-4xl font-bold text-benefique-navy mb-4">
-            {isReview ? 'Book a Strategic Radiology Review' : 'Talk to Us About Radiology CFO Work'}
-          </h1>
+          <h1 className="text-4xl font-bold text-benefique-navy mb-4">Start an Engagement</h1>
           <p className="text-lg text-gray-600 max-w-2xl">
-            {isReview
-              ? 'Fixed fee, 2-week turnaround, banker-grade Intelligence PDF. Tell us a little about your operation so we can confirm fit before the kickoff call.'
-              : 'Ongoing CFO scope is proposed after a Strategic Review. Tell us about your operation and we will route this to the right starting point.'}
+            We keep the books for independent, multi-center imaging groups doing {REVENUE_BAND} in revenue, and run the fractional CFO work off that ledger. Tell us about your centers. We reply within 24 hours with a call, then a flat-fee proposal.
           </p>
         </div>
       </section>
@@ -4105,18 +4087,18 @@ function RadiologyIntake() {
         <div className="max-w-3xl mx-auto px-4">
           <div className="bg-white rounded-2xl p-8 border border-gray-100">
             <form onSubmit={intakeForm.onSubmit} className="space-y-5">
-              <input type="hidden" name="_subject" value="New Radiology CFO Intake" />
+              <input type="hidden" name="_subject" value="New Radiology Engagement Intake" />
               <input type="hidden" name="source" value={`radiology-intake-${ref}`} />
               <input type="text" name="_gotcha" style={{ display: 'none' }} />
 
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
-                  <input type="text" name="name" required className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
+                  <input type="text" name="name" required className={field} />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Role</label>
-                  <select name="role" required className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent text-gray-700">
+                  <select name="role" required className={select}>
                     <option value="">Select...</option>
                     <option>CEO / Owner</option>
                     <option>CFO</option>
@@ -4131,23 +4113,23 @@ function RadiologyIntake() {
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                  <input type="email" name="email" required className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
+                  <input type="email" name="email" required className={field} />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Phone</label>
-                  <input type="tel" name="phone" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
+                  <input type="tel" name="phone" className={field} />
                 </div>
               </div>
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Group / Practice Name</label>
-                <input type="text" name="business" required className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
+                <input type="text" name="business" required className={field} />
               </div>
 
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Number of Centers</label>
-                  <select name="centers" required className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent text-gray-700">
+                  <select name="centers" required className={select}>
                     <option value="">Select...</option>
                     <option>1</option>
                     <option>2–3</option>
@@ -4157,13 +4139,11 @@ function RadiologyIntake() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Annual Revenue</label>
-                  <select name="revenue" required className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent text-gray-700">
+                  <select name="revenue" required className={select}>
                     <option value="">Select...</option>
-                    <option>Under $2M</option>
-                    <option>$2M–$5M</option>
-                    <option>$5M–$10M</option>
-                    <option>$10M–$25M</option>
-                    <option>$25M+</option>
+                    {REVENUE_BANDS.map((band) => (
+                      <option key={band}>{band}</option>
+                    ))}
                   </select>
                 </div>
               </div>
@@ -4180,42 +4160,55 @@ function RadiologyIntake() {
                 </div>
               </div>
 
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Do You Run High-Reimbursement PET Tracer Scans?</label>
-                <select name="pet_tracer" required className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent text-gray-700">
-                  <option value="">Select...</option>
-                  <option>Yes — actively scanning</option>
-                  <option>Yes — but volume is low</option>
-                  <option>No — but exploring</option>
-                  <option>No</option>
-                </select>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Who Keeps Your Books Today?</label>
+                  <select name="books_today" required className={select}>
+                    <option value="">Select...</option>
+                    <option>In-house bookkeeper or controller</option>
+                    <option>Outside accountant or CPA firm</option>
+                    <option>Our billing company</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Accounting System</label>
+                  <input type="text" name="accounting_system" placeholder="e.g., QuickBooks Online" className={field} />
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">RIS / Scheduling System</label>
+                  <input type="text" name="ris_system" placeholder="Optional" className={field} />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Billing Company</label>
+                  <input type="text" name="billing_company" placeholder="Optional, or in-house" className={field} />
+                </div>
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Billing Company (if outsourced)</label>
-                <input type="text" name="billing_company" placeholder="Optional — e.g., in-house, Forena, other" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Top Priority</label>
-                <select name="priority" required className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent text-gray-700">
+                <label className="block text-sm font-medium text-gray-700 mb-1">Which Stop Is Costing You?</label>
+                <select name="stop" required className={select}>
                   <option value="">Select...</option>
-                  <option>Cash flow visibility</option>
-                  <option>Payer mix / PIP compression</option>
-                  <option>PET Tracer profitability</option>
-                  <option>Collections &amp; DSO</option>
-                  <option>COO scorecard / performance accountability</option>
-                  <option>Lender / line-of-credit readiness</option>
-                  <option>Multi-center consolidation</option>
-                  <option>Tax planning &amp; R&amp;D credits</option>
-                  <option>M&amp;A / transaction support</option>
-                  <option>Other</option>
+                  {LINES.map((line) => (
+                    <optgroup key={line.key} label={line.name}>
+                      {line.stops.map((s) => (
+                        <option key={s.code} value={`${s.code} ${s.name}`}>{s.code} {s.name}: {s.what}</option>
+                      ))}
+                    </optgroup>
+                  ))}
+                  <option>Not sure yet</option>
                 </select>
+                <p className="text-xs text-gray-500 mt-1">
+                  The stops on the <Link to={LINE_PATH} className="text-benefique-orange hover:underline">{LINE_NAME}</Link>.
+                </p>
               </div>
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Timing</label>
-                <select name="timing" required className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent text-gray-700">
+                <select name="timing" required className={select}>
                   <option value="">Select...</option>
                   <option>Urgent — within 30 days</option>
                   <option>Next quarter</option>
@@ -4225,11 +4218,11 @@ function RadiologyIntake() {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Brief Context</label>
-                <textarea name="context" rows={4} placeholder="What is driving this conversation? What have you tried already?" className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-benefique-orange focus:border-transparent" />
+                <textarea name="context" rows={4} placeholder="What is driving this conversation? What have you tried already?" className={field} />
               </div>
 
               <button type="submit" disabled={intakeForm.submitting} className="w-full bg-benefique-orange text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition disabled:opacity-60">
-                {intakeForm.submitting ? 'Submitting…' : isReview ? 'Request Strategic Review' : 'Submit Intake'}
+                {intakeForm.submitting ? 'Submitting…' : 'Start the Conversation'}
               </button>
 
               {intakeForm.error && (
