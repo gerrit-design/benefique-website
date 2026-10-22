@@ -24,7 +24,7 @@ export const industries = {
     tool: {
       link: '/tools/radiology-profit-simulator',
       title: 'The Radiology Profit Simulator',
-      desc: 'Slide volume and price and watch fixed cost per scan, contribution margin, and operating profit recompute in real time — and see why cutting "below-cost" scans can halve your profit.',
+      desc: 'Move volume, price, variable and fixed cost per scan, and DSO, and watch contribution, operating profit and cash collected recompute in real time. See why cutting "below-cost" scans can halve your profit.',
       cta: 'Try the Simulator',
     },
   },

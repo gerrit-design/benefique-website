@@ -508,12 +508,12 @@ const routes = [
   {
     path: '/tools/radiology-profit-simulator',
     title: 'Radiology Profit Simulator | Benefique Tax & Accounting',
-    description: 'Interactive contribution-margin simulator for outpatient imaging centers. Slide volume and price to see why cutting "below-cost" scans can halve your profit — and what the real keep-or-cut floor is.',
+    description: 'Interactive contribution-margin and cash-timing simulator for outpatient imaging centers. Move volume, price, cost per scan and DSO to see why cutting "below-cost" scans can halve your profit, and whether that profit turns into cash.',
     schema: {
       '@context': 'https://schema.org',
       '@type': 'WebApplication',
       name: 'Radiology Profit Simulator',
-      description: 'Interactive contribution-margin and cost-per-scan simulator for outpatient imaging centers',
+      description: 'Interactive contribution-margin, cost-per-scan and DSO cash-timing simulator for outpatient imaging centers',
       url: `${SITE}/tools/radiology-profit-simulator`,
       applicationCategory: 'FinanceApplication',
       operatingSystem: 'Web',
