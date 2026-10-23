@@ -1,33 +1,9 @@
 {
-  "generated_at": "2026-10-21T20:26:22.289961-04:00",
+  "generated_at": "2026-10-22T20:23:59.617856-04:00",
   "window_start_hour": 12,
   "window_end_hour": 14,
   "slot_minutes": 30,
   "slots": [
-    {
-      "date": "Thursday, October 22",
-      "day": "thu",
-      "iso": "2026-10-22T12:00:00-04:00",
-      "display": "12:00 PM ET"
-    },
-    {
-      "date": "Thursday, October 22",
-      "day": "thu",
-      "iso": "2026-10-22T12:30:00-04:00",
-      "display": "12:30 PM ET"
-    },
-    {
-      "date": "Thursday, October 22",
-      "day": "thu",
-      "iso": "2026-10-22T13:00:00-04:00",
-      "display": "1:00 PM ET"
-    },
-    {
-      "date": "Thursday, October 22",
-      "day": "thu",
-      "iso": "2026-10-22T13:30:00-04:00",
-      "display": "1:30 PM ET"
-    },
     {
       "date": "Monday, October 26",
       "day": "mon",
@@ -50,6 +26,30 @@
       "date": "Monday, October 26",
       "day": "mon",
       "iso": "2026-10-26T13:30:00-04:00",
+      "display": "1:30 PM ET"
+    },
+    {
+      "date": "Tuesday, October 27",
+      "day": "tue",
+      "iso": "2026-10-27T12:00:00-04:00",
+      "display": "12:00 PM ET"
+    },
+    {
+      "date": "Tuesday, October 27",
+      "day": "tue",
+      "iso": "2026-10-27T12:30:00-04:00",
+      "display": "12:30 PM ET"
+    },
+    {
+      "date": "Tuesday, October 27",
+      "day": "tue",
+      "iso": "2026-10-27T13:00:00-04:00",
+      "display": "1:00 PM ET"
+    },
+    {
+      "date": "Tuesday, October 27",
+      "day": "tue",
+      "iso": "2026-10-27T13:30:00-04:00",
       "display": "1:30 PM ET"
     }
   ]
