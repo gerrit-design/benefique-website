@@ -1,21 +1,9 @@
 {
-  "generated_at": "2026-10-22T20:23:59.617856-04:00",
+  "generated_at": "2026-10-23T20:16:48.591819-04:00",
   "window_start_hour": 12,
   "window_end_hour": 14,
   "slot_minutes": 30,
   "slots": [
-    {
-      "date": "Monday, October 26",
-      "day": "mon",
-      "iso": "2026-10-26T12:00:00-04:00",
-      "display": "12:00 PM ET"
-    },
-    {
-      "date": "Monday, October 26",
-      "day": "mon",
-      "iso": "2026-10-26T12:30:00-04:00",
-      "display": "12:30 PM ET"
-    },
     {
       "date": "Monday, October 26",
       "day": "mon",
