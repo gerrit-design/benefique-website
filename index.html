@@ -3,12 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     
-    <!-- Google Analytics -->
+    <!-- Google Analytics (GA4:begin; scripts/prerender.js copies this block onto every route) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9LNR3JCNWS"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+      // Staff traffic: ?internal=1 sets a 2-year flag, ?internal=0 clears it.
+      // GA4 Admin > Data filters > "Internal Traffic" excludes traffic_type=internal.
+      (function () {
+        var k = 'bq_internal', q = null, on = false;
+        try { q = new URLSearchParams(location.search).get('internal'); } catch (e) {}
+        try { if (q === '1') localStorage.setItem(k, '1'); if (q === '0') localStorage.removeItem(k); } catch (e) {}
+        try { if (q === '1' || q === '0') document.cookie = k + (q === '1' ? '=1; max-age=63072000' : '=; max-age=0') + '; path=/; SameSite=Lax'; } catch (e) {}
+        try { on = localStorage.getItem(k) === '1'; } catch (e) {}
+        try { on = on || /(?:^|;\s*)bq_internal=1(?:;|$)/.test(document.cookie); } catch (e) {}
+        if (q === '1') on = true; if (q === '0') on = false;
+        if (on) gtag('set', { traffic_type: 'internal' });
+      })();
       gtag('config', 'G-9LNR3JCNWS', {
         page_location: window.location.href,
         campaign_source: new URLSearchParams(window.location.search).get('utm_source') || undefined,
@@ -16,6 +28,7 @@
         campaign_name: new URLSearchParams(window.location.search).get('utm_campaign') || undefined
       });
     </script>
+    <!-- GA4:end -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     

@@ -8,7 +8,7 @@ import ConciergeSimulator from './components/ConciergeSimulator';
 import BusinessSimulator from './components/BusinessSimulator';
 import RadiologySimulator from './components/RadiologySimulator';
 import RadiologyIntelligencePack from './components/RadiologyIntelligencePack';
-import { trackFormSubmit, trackEvent } from './analytics';
+import { trackFormSubmit, trackFormStart, trackEvent, trackOnce, attributionParams, newSubmissionId, useAnalyticsRoute } from './analytics';
 import BOOKING_DATA from './booking-slots.json';
 import { radiologyHero, radiologyServices, radiologyClusters, radiologyFaqs, radiologyPackPromo, radiologyProof } from './data/radiology';
 import { industries as industriesData } from './data/industries';
@@ -40,11 +40,23 @@ function useFormspreeAjax(endpoint, formId, nextPath, extra = {}) {
   const navigate = useNavigate();
   const [submitting, setSubmitting] = React.useState(false);
   const [error, setError] = React.useState(null);
+  // GA: form_start once per form per page view; one form_submit per attempt.
+  const started = React.useRef(false);
+  const inFlight = React.useRef(false);
+
+  const onFocus = () => {
+    if (started.current) return;
+    started.current = true;
+    trackFormStart(formId, extra);
+  };
 
   const onSubmit = async (e) => {
     e.preventDefault();
+    if (inFlight.current) return;
+    inFlight.current = true;
     const form = e.currentTarget;
-    trackFormSubmit(formId, extra)();
+    const submissionId = newSubmissionId();
+    trackFormSubmit(formId, { ...extra, submission_id: submissionId })();
     setSubmitting(true);
     setError(null);
     try {
@@ -54,14 +66,28 @@ function useFormspreeAjax(endpoint, formId, nextPath, extra = {}) {
         headers: { Accept: 'application/json' },
       });
       if (!resp.ok) throw new Error('Formspree returned ' + resp.status);
+      // Fired here, on Formspree's 200, not on /thank-you mount: a reload,
+      // restored tab or direct visit to /thank-you is not an application.
+      trackOnce(`application_confirmed:${submissionId}`, 'application_confirmed', {
+        form_source: formSourceOf(nextPath),
+        form_id: formId,
+        submission_id: submissionId,
+        ...attributionParams(),
+        ...extra,
+      });
       navigate(nextPath);
     } catch (err) {
+      inFlight.current = false;
       setSubmitting(false);
       setError("Something went wrong submitting the form. Please email hello@benefique.com and we'll follow up.");
     }
   };
 
-  return { onSubmit, submitting, error };
+  return { onSubmit, onFocus, submitting, error };
+}
+
+function formSourceOf(path) {
+  try { return new URLSearchParams(path.split('?')[1] || '').get('form') || 'unknown'; } catch (e) { return 'unknown'; }
 }
 
 // Navigation Component
@@ -618,7 +644,7 @@ function Home() {
               <h3 className="text-xl font-bold text-benefique-navy mb-2">Quick Application</h3>
               <p className="text-gray-600 text-sm mb-6">Takes 60 seconds. We'll reach out within 24 hours.</p>
               
-              <form onSubmit={homeForm.onSubmit} className="space-y-4">
+              <form onSubmit={homeForm.onSubmit} onFocus={homeForm.onFocus} className="space-y-4">
                 <input type="hidden" name="_subject" value="New Benefique Application" />
                 <input type="text" name="_gotcha" style={{display: 'none'}} />
                 <div>
@@ -1793,7 +1819,7 @@ function Contact() {
               <h3 className="text-xl font-bold text-benefique-navy mb-2">Quick Application</h3>
               <p className="text-gray-600 text-sm mb-6">Takes 60 seconds. We'll reach out within 24 hours.</p>
               
-              <form onSubmit={contactForm.onSubmit} className="space-y-4">
+              <form onSubmit={contactForm.onSubmit} onFocus={contactForm.onFocus} className="space-y-4">
                 <input type="hidden" name="_subject" value="New Benefique Contact Application" />
                 <input type="text" name="_gotcha" style={{display: 'none'}} />
                 <div>
@@ -4086,7 +4112,7 @@ function RadiologyIntake() {
       <section className="py-12 bg-gray-50">
         <div className="max-w-3xl mx-auto px-4">
           <div className="bg-white rounded-2xl p-8 border border-gray-100">
-            <form onSubmit={intakeForm.onSubmit} className="space-y-5">
+            <form onSubmit={intakeForm.onSubmit} onFocus={intakeForm.onFocus} className="space-y-5">
               <input type="hidden" name="_subject" value="New Radiology Engagement Intake" />
               <input type="hidden" name="source" value={`radiology-intake-${ref}`} />
               <input type="text" name="_gotcha" style={{ display: 'none' }} />
@@ -4278,14 +4304,15 @@ function ThankYou() {
 
   const [booking, setBooking] = React.useState(false);
   const [bookingError, setBookingError] = React.useState(null);
-
-  React.useEffect(() => {
-    if (booked) {
-      trackEvent('slot_booked', { form_source: formSource, slot_iso: slotIso });
-    } else {
-      trackEvent('application_confirmed', { form_source: formSource });
-    }
-  }, []);
+  const bookingStarted = React.useRef(false);
+  const bookingInFlight = React.useRef(false);
+  // application_confirmed now fires in useFormspreeAjax on a successful submit;
+  // slot_booked fires below on the booking API's success, deduped by eventId.
+  const onBookingFocus = () => {
+    if (bookingStarted.current) return;
+    bookingStarted.current = true;
+    trackFormStart('thank-you-slot-booking', { form_source: formSource });
+  };
 
   async function handleBookingSubmit(e) {
     e.preventDefault();
@@ -4302,6 +4329,8 @@ function ThankYou() {
       return;
     }
 
+    if (bookingInFlight.current) return;
+    bookingInFlight.current = true;
     trackEvent('slot_booking_attempt', { form_source: formSource, slot_iso: slot });
 
     try {
@@ -4314,8 +4343,16 @@ function ThankYou() {
         const data = await resp.json().catch(() => ({}));
         throw new Error(data.detail || data.error || `Server returned ${resp.status}`);
       }
+      const data = await resp.json().catch(() => ({}));
+      trackOnce(`slot_booked:${data.eventId || slot}`, 'slot_booked', {
+        form_source: formSource,
+        slot_iso: slot,
+        booking_id: data.eventId || '',
+        ...attributionParams(),
+      });
       navigate(`/thank-you?booked=1&slot=${encodeURIComponent(slot)}&form=${encodeURIComponent(formSource)}`);
     } catch (err) {
+      bookingInFlight.current = false;
       setBookingError(err?.message || 'Booking failed');
       setBooking(false);
     }
@@ -4396,6 +4433,7 @@ function ThankYou() {
               <form
                 className="space-y-6"
                 onSubmit={handleBookingSubmit}
+                onFocus={onBookingFocus}
               >
                 <input type="text" name="_gotcha" style={{ display: 'none' }} />
 
@@ -4798,6 +4836,7 @@ function Careers() {
 // MAIN APP
 // ============================================================
 export default function App() {
+  useAnalyticsRoute();
   return (
     <HelmetProvider>
       <div className="min-h-screen flex flex-col bg-white">

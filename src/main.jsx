@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import App from './App'
 import './index.css'
-import { initCTATracking, initScrollDepthTracking } from './analytics'
+import { initCTATracking, initScrollDepthTracking, captureAttribution } from './analytics'
 
+captureAttribution()
 initCTATracking()
 initScrollDepthTracking()
 

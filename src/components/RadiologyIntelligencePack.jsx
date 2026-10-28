@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { trackEvent, attributionParams } from '../analytics';
 import { Helmet } from 'react-helmet-async';
 import {
   packCenterRows,
@@ -223,6 +224,7 @@ export default function RadiologyIntelligencePack() {
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
               to="/services/radiology/intake?ref=pack"
+              onClick={() => trackEvent('pack_request', { pack: 'radiology_intelligence_pack', ...attributionParams() })}
               className="bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
             >
               Start the Conversation &rarr;

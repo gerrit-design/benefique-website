@@ -1,6 +1,7 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import { trackEvent, attributionParams } from '../analytics';
 
 // ============================================================
 // RADIOLOGY PROFIT SIMULATOR (3-D: volume x price x cash timing)
@@ -108,6 +109,25 @@ export default function RadiologySimulator() {
   const set = (key) => (value) => setLevers((l) => ({ ...l, [key]: value }));
   const calc = useMemo(() => calculate(levers), [levers]);
   const base = useMemo(() => calculate(BASE_LEVERS), []);
+
+  // GA: tool_start on the first lever change; tool_complete once a changed
+  // scenario has stayed on screen for 2s (results recompute live, no button).
+  const ga = useRef({ started: false, completed: false });
+  useEffect(() => {
+    const changed = Object.keys(BASE_LEVERS).filter((k) => levers[k] !== BASE_LEVERS[k]);
+    if (!changed.length) return undefined;
+    const params = { tool_name: 'radiology_profit_simulator' };
+    if (!ga.current.started) {
+      ga.current.started = true;
+      trackEvent('tool_start', { ...params, ...attributionParams() });
+    }
+    if (ga.current.completed) return undefined;
+    const t = setTimeout(() => {
+      ga.current.completed = true;
+      trackEvent('tool_complete', { ...params, levers_changed: changed.join(','), ...attributionParams() });
+    }, 2000);
+    return () => clearTimeout(t);
+  }, [levers]);
 
   const { yOf, ticks } = yScale(calc);
   const youX = xOf(calc.volume);

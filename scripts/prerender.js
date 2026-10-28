@@ -46,14 +46,13 @@ const moduleScripts = moduleScriptMatches
   .filter(s => !s.includes('googletagmanager') && !s.includes('dataLayer'))
   .join('\n    ');
 
-// Google Analytics snippet (preserve from original)
-const gaSnippet = `<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LNR3JCNWS"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-9LNR3JCNWS');
-    </script>`;
+// Google Analytics snippet: copied verbatim from index.html (one source of
+// truth for the GA4 config + internal-traffic flag). Fail the build if absent.
+const gaBlockMatch = indexHtml.match(/<!-- Google Analytics \(GA4:begin[^>]*-->\s*([\s\S]*?)\s*<!-- GA4:end -->/);
+if (!gaBlockMatch || !gaBlockMatch[1].includes("gtag('config'")) {
+  throw new Error('[prerender] GA4 block (GA4:begin ... GA4:end) not found in dist/index.html');
+}
+const gaSnippet = gaBlockMatch[1];
 
 // ---------------------------------------------------------------------------
 // 2. Extract blog post slugs from BlogPost.jsx
