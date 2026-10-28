@@ -28,7 +28,7 @@ This post breaks down exactly what changed, what it means for your specific situ
 
 ### 1. 100% Bonus Depreciation Is Back -- Permanently
 
-**What changed:** Under the original Tax Cuts and Jobs Act, bonus depreciation was phasing down: 80% in 2023, 60% in 2024, 40% in early 2025. The OBBBA restored it to **100% for property placed in service after January 19, 2025** -- and made it permanent.
+**What changed:** Under the original Tax Cuts and Jobs Act, bonus depreciation was phasing down: 80% in 2023, 60% in 2024, 40% in early 2025. The OBBBA restored it to **100% for property acquired after January 19, 2025** -- and made it permanent.
 
 **Why this matters for healthcare practices:**
 
@@ -273,7 +273,7 @@ If you're filing jointly and your taxable income is above $548,400, your QBI ded
 
 **When did bonus depreciation go back to 100%?**
 
-For property placed in service after **January 19, 2025**. Property placed in service from January 1-19, 2025 remains at 40%. This is permanent -- no more phase-downs.
+For property acquired after **January 19, 2025**. Property acquired on or before that date (including under a binding contract signed by then) and placed in service in 2025 stays at 40%. The 100% rate is permanent -- no more phase-downs.
 
 **Can I use Section 179 and bonus depreciation together?**
 

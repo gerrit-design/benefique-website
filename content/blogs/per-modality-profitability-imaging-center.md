@@ -1,5 +1,5 @@
 ---
-title: "Per-Modality Profitability: MRI vs CT vs Ultrasound vs PET"
+title: "MRI vs Ultrasound vs CT vs PET: Profit Margins"
 description: "MRI, CT, ultrasound, and PET each have wildly different per-claim economics. Here is the per-modality profitability framework most imaging operators never run."
 date: "2026-04-29"
 author: "Gerrit Disbergen, EA"
@@ -8,12 +8,12 @@ categories: ["Healthcare Finance", "Cash Flow Advisory"]
 readTime: "15 min read"
 featuredImage: "/images/blog/per-modality-profitability-imaging-center.jpg"
 slug: "per-modality-profitability-imaging-center"
-metaTitle: "Per-Modality Profitability for Imaging Centers | Benefique"
-metaDescription: "MRI vs CT vs ultrasound vs PET — per-claim profitability decomposed for SE Florida multi-center imaging operators. The framework your accountant never built."
+metaTitle: "MRI vs Ultrasound vs CT vs PET: Profit Margins | Benefique"
+metaDescription: "Profit by modality at an $11.8M imaging group: contribution margins from 28% (PET) to 85% (CT), the MRI and ultrasound math, and the tax planning angle."
 keywords: "per-modality profitability imaging, MRI vs CT margin, ultrasound profitability, PET tracer economics, imaging center per-claim profitability, modality-level P&L, radiology per-procedure margin"
 ---
 
-# Per-Modality Profitability: MRI vs CT vs Ultrasound vs PET
+# MRI vs Ultrasound vs CT vs PET: Profit Margins
 
 A four-center imaging group in SE Florida posted $11.8M of revenue and $1.94M of EBITDA last year. On paper, a 16.4% margin. The CFO was satisfied. The lender was satisfied. The owner was not — because the cash story told a different version, and nobody could explain why.
 
@@ -171,7 +171,7 @@ These are not theoretical questions. They are the four questions every SE Florid
 
 Modality-level segmentation has tax-planning implications that compound the management-reporting benefits:
 
-- **Bonus depreciation and Section 179 ([IRS Pub 946](https://www.irs.gov/publications/p946))** elections can be modeled by modality, letting the operator stack depreciation against the modalities producing the highest taxable income. Bonus depreciation in 2026 continues to phase down, making the year-over-year planning more important, not less.
+- **Bonus depreciation and Section 179 ([IRS Pub 946](https://www.irs.gov/publications/p946))** elections can be modeled by modality, letting the operator stack depreciation against the modalities producing the highest taxable income. The One Big Beautiful Bill Act (July 2025) permanently restored 100% bonus depreciation for property acquired after January 19, 2025, so a new MRI or PET/CT can be written off in the year it is placed in service. That makes the timing, and which modality's income the deduction lands against, a planning decision rather than an afterthought.
 - **R&D credits ([IRC Section 41 / Form 6765](https://www.irs.gov/pub/irs-pdf/f6765.pdf))** for radiology often live disproportionately in the higher-tech modalities (PET Tracer Scans, advanced CT protocols, AI-assisted MRI workflows). Without modality segmentation, the credit study lumps everything into "imaging" and underestimates the qualified research expenses.
 - **Entity-structure decisions** for multi-modality operators sometimes argue for segregating high-margin modalities into separate entities, particularly when partner economics or future-sale optionality favor distinct legal structures. This is a year-over-year planning conversation, not a one-time election.
 

@@ -16,7 +16,9 @@ export const radiologyHero = {
     { t: 'PET Tracer Unit', b: true },
     { t: ' from your ' },
     { t: 'Radiology Unit', b: true },
-    { t: ', and turn billing-company activity into economic outcomes your lender will fund — profit and cash read by center, by modality, by payer, by tracer and by claim. Engagements run remotely off the systems you already have; our current imaging work spans Florida and Texas. This is the intelligence your accountant and your billing company will not build for you.' },
+    { t: ', and turn billing-company activity into economic outcomes your lender will fund — profit and cash read by center, by modality, by payer, by tracer and by claim. Engagements run remotely off the systems you already have; our current imaging work spans Florida and Texas. This is the intelligence your accountant and your billing company will not build for you. It is also what a buyer\'s quality-of-earnings team tests in a PE process, and what your ' },
+    { t: 'imaging center valuation', href: '/blog/selling-imaging-center-what-buyers-pay' },
+    { t: ' rests on once the LOI turns into diligence.' },
   ],
 };
 
@@ -87,7 +89,7 @@ export const radiologyClusters = [
     posts: [
       { slug: 'referring-doctor-relationship-myth-medical-imaging', title: 'The Relationship Myth: When Taking One For The Team Costs $142,000' },
       { slug: 'high-cost-procedure-economics-medical-practice', title: '$2,940 Out the Door Before You Know If You\'ll Get Paid' },
-      { slug: 'per-modality-profitability-imaging-center', title: 'Per-Modality Profitability: MRI vs CT vs Ultrasound vs PET' },
+      { slug: 'per-modality-profitability-imaging-center', title: 'MRI vs Ultrasound vs CT vs PET: Profit Margins' },
       { slug: 'expensive-2-minute-decision-medical-practice', title: 'The Most Expensive 2-Minute Decision in Your Medical Practice' },
     ],
   },
@@ -123,7 +125,7 @@ export const radiologyClusters = [
     anchor: 'per-claim',
     blurb: 'The $/Claim → GP$/Claim → NOI/Claim stack. Which procedures lose money on which payers — a 9:1 profitability gap on identical work.',
     posts: [
-      { slug: 'per-modality-profitability-imaging-center', title: 'Per-Modality Profitability: MRI vs CT vs Ultrasound vs PET' },
+      { slug: 'per-modality-profitability-imaging-center', title: 'MRI vs Ultrasound vs CT vs PET: Profit Margins' },
       { slug: 'high-cost-procedure-economics-medical-practice', title: '$2,940 Out the Door Before You Know If You\'ll Get Paid' },
       { slug: 'cash-flow-breakeven-per-patient-activity-units', title: 'Your Practice Is Profitable — So Why Do You Need 922 Patients?' },
       { slug: 'fixed-cost-breakeven-volume-problem', title: 'Your Practice Doesn\'t Have a Profit Problem — It Has a Volume Problem' },

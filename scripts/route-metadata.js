@@ -3,7 +3,6 @@
 
 import {
   radiologyHero,
-  radiologyIntroText,
   radiologyServices,
   radiologyClusters,
   radiologyFaqs,
@@ -48,7 +47,7 @@ const LINE_LEDE = 'Scheduling, the front desk, the billing company and the bank 
 
 const radiologyBody = [
   { p: radiologyHero.lede },
-  { p: radiologyIntroText },
+  { segs: radiologyHero.intro },
   { h2: `The ${LINE_NAME}: every stop hits its number. The business still loses money.` },
   { p: LINE_LEDE },
   ...LINES.flatMap((line) => [
@@ -593,7 +592,7 @@ const routes = [
           itemListElement: [
             { '@type': 'ListItem', position: 1, name: 'Net Collection Rate for Imaging Centers: Formula & 2026 Benchmarks', url: `${SITE}/blog/net-collection-rate-imaging-centers` },
             { '@type': 'ListItem', position: 2, name: 'Multi-Center Imaging Owner Income: 2026 SE Florida Benchmarks', url: `${SITE}/blog/multi-center-imaging-owner-income-2026-sefl` },
-            { '@type': 'ListItem', position: 3, name: 'Per-Modality Profitability: MRI vs CT vs Ultrasound vs PET', url: `${SITE}/blog/per-modality-profitability-imaging-center` },
+            { '@type': 'ListItem', position: 3, name: 'MRI vs Ultrasound vs CT vs PET: Profit Margins', url: `${SITE}/blog/per-modality-profitability-imaging-center` },
             { '@type': 'ListItem', position: 4, name: 'DSO Benchmarks for Imaging Centers: 2026 SE Florida Data', url: `${SITE}/blog/dso-benchmarks-imaging-centers-2026-sefl` },
             { '@type': 'ListItem', position: 5, name: 'LOP Economics in Texas: Why Imaging A/R Works Differently Than Florida', url: `${SITE}/blog/texas-lop-imaging-accounts-receivable` },
             { '@type': 'ListItem', position: 6, name: 'The Imaging RCM Glossary: 16 Terms That Decide Whether Your Center Gets Paid', url: `${SITE}/blog/imaging-rcm-glossary` },

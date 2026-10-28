@@ -97,7 +97,7 @@ Industry medians run materially below the adjudicated-class targets at operators
 
 ## Five Actions to Move NCR This Quarter
 
-1. **Split the report by payer class before you do anything else.** One blended NCR hides exactly the leak you're looking for — the same averaging failure that makes [aggregate DSO a vanity number](/blog/dso-benchmarks-imaging-centers-2026-sefl).
+1. **Split the report by payer class before you do anything else.** One blended NCR hides exactly the leak you're looking for — the same averaging failure that makes [aggregate DSO a vanity number](/blog/dso-benchmarks-imaging-centers-2026-sefl). It is also the first step if you want to [reduce radiology accounts receivable](/blog/radiology-accounts-receivable-line-of-credit) rather than just watch it age.
 2. **Reconcile adjustments monthly.** "Contractual adjustment" is where lazy write-offs hide. Every adjustment should map to a contract term, a statute, or a documented yield policy — anything else is a collections failure being re-labeled.
 3. **Start cohort tracking on PIP and LOP now.** Even a simple date-of-service × collection-month grid in a spreadsheet builds the vintage curves you'll want in every future lender and buyer conversation.
 4. **Work the denial queue by dollars, not date.** A 96% NCR operation is usually distinguished from a 91% one by whether six-week-old high-dollar denials get reworked before timely-filing kills them.

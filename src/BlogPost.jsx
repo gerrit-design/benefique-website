@@ -332,7 +332,7 @@ export const blogPosts = {
   },
   'per-modality-profitability-imaging-center': {
     file: '/content/blogs/per-modality-profitability-imaging-center.md',
-    title: 'Per-Modality Profitability: MRI vs CT vs Ultrasound vs PET',
+    title: 'MRI vs Ultrasound vs CT vs PET: Profit Margins',
     date: '2026-04-29',
     author: 'Gerrit Disbergen, EA',
     excerpt: 'MRI, CT, ultrasound, and PET Tracer Scans each have wildly different cost structures, payer-mix exposures, and per-claim yields — but most imaging-center P&Ls roll them into a single \'imaging revenue\' line. Here is the per-modality profitability framework that turns one number into four businesses, and shows you which of them is actually paying the bills.',

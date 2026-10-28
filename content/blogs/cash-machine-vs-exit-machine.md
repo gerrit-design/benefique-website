@@ -54,7 +54,7 @@ Key characteristics of a well-run Cash Machine:
 
 ### The Exit Machine
 
-The Exit Machine is optimized to maximize enterprise value at a specific sale date 3–7 years in the future. The goal is the highest possible EBITDA × multiple at exit — a single large liquidity event rather than a long stream of smaller distributions. The general tax treatment of that liquidity event is governed by [IRS Publication 544](https://www.irs.gov/publications/p544) on sales and other dispositions of assets, and is worth reading before you commit to a sale timeline.
+The Exit Machine is optimized to maximize enterprise value at a specific sale date 3–7 years in the future. The goal is the highest possible EBITDA × multiple at exit — a single large liquidity event rather than a long stream of smaller distributions. (For imaging centers, we walk through [what buyers actually pay](/blog/selling-imaging-center-what-buyers-pay) and how much of the headline multiple survives diligence.) The general tax treatment of that liquidity event is governed by [IRS Publication 544](https://www.irs.gov/publications/p544) on sales and other dispositions of assets, and is worth reading before you commit to a sale timeline.
 
 Key characteristics of a well-run Exit Machine:
 - Reinvestment tilted toward growth in years 1–2 of the sale runway

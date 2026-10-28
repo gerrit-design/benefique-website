@@ -324,6 +324,11 @@ function renderBody(blocks) {
     if (block.h2) out.push(`<h2>${escapeHtml(block.h2)}</h2>`);
     if (block.h3) out.push(`<h3>${escapeHtml(block.h3)}</h3>`);
     if (block.p) out.push(`<p>${escapeHtml(block.p)}</p>`);
+    if (Array.isArray(block.segs) && block.segs.length) {
+      out.push(`<p>${block.segs
+        .map((seg) => (seg.href ? `<a href="${escapeHtml(safeHref(seg.href))}">${escapeHtml(seg.t)}</a>` : escapeHtml(seg.t)))
+        .join('')}</p>`);
+    }
     if (Array.isArray(block.ul) && block.ul.length) {
       out.push(`<ul>${block.ul.map((li) => `<li>${escapeHtml(li)}</li>`).join('')}</ul>`);
     }

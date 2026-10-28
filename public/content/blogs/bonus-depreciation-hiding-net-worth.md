@@ -60,7 +60,7 @@ Here is how bonus depreciation works in plain terms.
 
 When you buy a $500K MRI machine and elect Section 168(k) bonus depreciation, you deduct the entire $500,000 purchase price in Year One. Without bonus depreciation, you would spread that deduction over 5 to 7 years using MACRS depreciation schedules. With bonus depreciation, you take it all upfront. Your taxable income drops by $500K in the year of purchase. At a 30% combined tax rate, that is $150K in immediate tax savings.
 
-The tax benefit is real and substantial. No argument there. Every competent tax advisor recommended bonus depreciation when it was available at 100% (2017-2022 under the Tax Cuts and Jobs Act, phasing down 20% per year through 2026).
+The tax benefit is real and substantial. No argument there. Every competent tax advisor recommended bonus depreciation when it was available at 100% (2017-2022 under the Tax Cuts and Jobs Act, then phasing down 20% per year until the One Big Beautiful Bill Act restored it to 100%, permanently, for property acquired after January 19, 2025).
 
 But here is what happens on the balance sheet: the equipment's book value drops to zero. The machine is still sitting in your imaging suite. It still powers on every morning. It still generates $800K in annual scan revenue. Patients are still being scheduled on it through next quarter. But according to your balance sheet, it is worth nothing.
 

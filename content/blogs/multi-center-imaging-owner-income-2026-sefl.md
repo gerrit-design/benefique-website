@@ -143,7 +143,7 @@ Florida imaging-center owners enjoy three structural tax advantages that operato
 
 1. **No state personal income tax.** A 5%–10% structural advantage at every scale, every year. At the four-center scale, this is worth $50K–$110K of permanent take-home advantage relative to a comparable operator in a high-tax state.
 2. **Section 199A QBI deduction** — imaging centers are typically not "Specified Service Trade or Business" (SSTB) under [IRC Section 199A](https://www.irs.gov/newsroom/qualified-business-income-deduction), depending on entity classification, which preserves the 20% deduction at higher income levels. Confirm classification with a tax preparer who understands the SSTB tests.
-3. **Bonus depreciation / Section 179** continues to phase down in 2026 but remains meaningful for equipment refresh cycles. Modality-level capital allocation discipline (see [Per-Modality Profitability](/blog/per-modality-profitability-imaging-center)) directly drives bonus-depreciation planning.
+3. **Bonus depreciation / Section 179** is back at 100%, permanently, for property acquired after January 19, 2025 (One Big Beautiful Bill Act, July 2025), which makes it central to equipment refresh cycles. Modality-level capital allocation discipline (see [Per-Modality Profitability](/blog/per-modality-profitability-imaging-center)) directly drives bonus-depreciation planning.
 
 Operators who optimize all three layers can produce a 4–7 percentage point net-net advantage over operators who don't — at a four-center scale, that's $50K–$120K of additional take-home per year.
 

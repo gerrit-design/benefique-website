@@ -85,14 +85,14 @@ A banker looking at this report without the payer-class overlay will see "58% ov
 
 The LOP segment is where most of a credit team's unease comes from, and it is almost always based on a single misread: the assumption that LOP paper is sitting against unknown or fly-by-night law firms. In the Florida market, nothing could be further from reality.
 
-The top LOP counterparties on most South Florida and Jacksonville radiology practices include:
+The top LOP counterparties on most Florida radiology practices include:
 
 - **Morgan & Morgan, P.A.** — the largest personal injury law firm in the United States, 1,000+ attorneys across 50+ offices, $2 billion+ in annual revenue, and a multi-decade track record of settling cases and paying medical providers on executed letters of protection.
 - **Farah & Farah** — one of the oldest and largest personal injury firms in the Southeast.
 - **Steinger, Greene & Feiner** — long-operating high-volume Florida personal injury practice.
 - **Pelosi Injury Law, Rubenstein Law, and similar established Florida PI firms**, each with multi-decade settlement histories and well-documented payment practices.
 
-We recently worked with a Jacksonville imaging center carrying a **$13.78 million gross A/R portfolio** against a monthly realized cash run rate of approximately **$418,000 per month**. The LOP tail alone delivered **$1.25 million in realized cash over the trailing twelve months** — roughly $104,000 a month, every month, for twelve consecutive months. Not theoretical. Not "eventual." Actual deposits, reconciled from QuickBooks, across a diversified counterparty base led by the top five names in the Florida plaintiffs' bar. When we laid that out for the credit committee, the underwriter's concern about "stale LOP paper" evaporated inside a single paragraph.
+We recently worked with a Florida imaging center carrying **roughly $14 million in gross A/R** against a monthly realized cash run rate of about **$400,000**. The LOP tail alone delivered **more than $1 million in realized cash over the trailing twelve months** — roughly $100,000 a month, every month, for twelve consecutive months. Not theoretical. Not "eventual." Actual deposits, reconciled from QuickBooks, across a diversified counterparty base led by the top five names in the Florida plaintiffs' bar. When we laid that out for the credit committee, the underwriter's concern about "stale LOP paper" evaporated inside a single paragraph.
 
 A Broward-area center we reviewed in the same month was carrying **41% of its gross A/R in LOP**, with top counterparties from the same tier-1 firm list. The aging report looked alarming on its face. The monthly cash collections, once normalized for deposit timing, were running above $400,000 with coefficient of variation under 25%. The paper was fine. The translation was missing.
 
@@ -100,7 +100,7 @@ A Broward-area center we reviewed in the same month was carrying **41% of its gr
 
 If your practice does any clinical trial or pharmaceutical research work, you probably have another asset class buried inside your aging report that your banker almost certainly has never noticed.
 
-A Miami Beach imaging center we reviewed carried **$413,000 in accounts receivable from pharmaceutical research sponsors** — names like Lynx Medical, Gentera Medicine, Advanced Pharma CR, and ADRC Clinical Research. These are not insurance claims. They are contracted B2B receivables from pharmaceutical companies running clinical trials, sitting on conventional 30-to-60-day commercial credit terms.
+One imaging center we reviewed carried **several hundred thousand dollars in accounts receivable from pharmaceutical research sponsors** — trial sponsors and contract research organizations, not patients or insurers. These are not insurance claims. They are contracted B2B receivables from companies running clinical trials, sitting on conventional 30-to-60-day commercial credit terms.
 
 On the aging report, they appeared indistinguishable from medical paper. In reality, they were a structurally superior asset — investment-grade counterparty credit, contracted payment terms, no chargemaster spread, no contractual allowances. If that same center wanted a receivable-backed facility specifically for the research book, a specialty lender would price it at 80–90% advance rates, dramatically better than the blanket borrowing base a commercial bank would apply to the whole A/R lump.
 
@@ -120,6 +120,17 @@ Pull the last twelve months of operating-account deposits. Compute the standard 
 | **Over 40%** | Real question worth investigating |
 
 A practice running at 21% CV on its monthly cash has a more predictable revenue line than most commercial businesses. A line of credit sized against that cash stream — at any reasonable multiple — is a much cleaner credit decision than a borrowing-base formula applied to a long-tailed receivable. If the credit team has not asked for monthly cash CV, hand it to them anyway.
+
+## Six Ways to Bring Radiology A/R Down
+
+Reducing radiology medical accounts receivable is mostly not about chasing harder. A large share of the gross balance was never going to be cash, and most of the rest sits on payer calendars you can measure. These are the steps, in the order we run them:
+
+1. **Book the contractual allowance when the claim goes out, not when the payment posts.** The $1,200 MRI that Medicare will settle at $290 sits on the aging at $1,200 until the remit arrives. Carry it at the expected contract amount and gross A/R shrinks toward the cash you will actually see, without a single extra dollar collected.
+2. **Split the aging by payer class before you judge it.** Commercial, Medicare and PIP clear in 30 to 60 days; LOP takes 12 to 36 months. A blended 120+ bucket says nothing until each class is read against its own clock, using the payer-class table above.
+3. **Run LOP and personal-injury A/R as its own book.** Track it by law-firm counterparty and judge it on realized cash, not on age. An imaging center with 40% LOP in its A/R will show 55 to 60% in 120+ days however well billing runs; what matters is whether the tail pays, as the more than $1 million of trailing-twelve-month LOP cash from the center above did.
+4. **Pull research and other B2B receivables out of the medical aging.** Sponsor receivables on 30-to-60-day contract terms are a different asset, collected and financed differently, and they should not sit in the same buckets as claims.
+5. **Work the denial queue by dollars, not by date.** This is where radiology payment collection actually leaks: claims a payer owed and never paid because a high-dollar denial was not reworked before timely filing ran out. Our [net collection rate guide](/blog/net-collection-rate-imaging-centers) sets out the per-payer-class targets to measure it against.
+6. **Measure the result in cash, not in the aging total.** Track twelve months of deposits and their coefficient of variation alongside days in A/R by payer class. If the aging falls but deposits do not rise, you have written receivables off, not collected them.
 
 ## What to Send Your Bank When They Ask for A/R
 
@@ -157,7 +168,7 @@ Yes, when it sits against tier-1 Florida personal injury firms, which is where m
 Send the aging report with a one-page translation memo covering six things: a chargemaster explainer, a payer-class breakdown, an LOP counterparty table, a twelve-month cash run rate with coefficient of variation, any specialty receivables segmented out, and raw enough data for the credit team to run their own DSCR calculation. Do not compute the DSCR for them — they prefer to run it themselves on inputs they trust.
 
 **Should I include LOP receivables in my borrowing base?**
-Usually yes, but with a separate advance rate reflecting the longer duration. A flat commercial borrowing base that either fully includes or fully excludes LOP paper will mispricethe facility in both directions. The right conversation to have with the credit team is a tiered advance rate — higher on commercial and PIP, moderate on LOP against tier-1 firms, excluded on self-pay and unknown counterparties.
+Usually yes, but with a separate advance rate reflecting the longer duration. A flat commercial borrowing base that either fully includes or fully excludes LOP paper will misprice the facility in both directions. The right conversation to have with the credit team is a tiered advance rate — higher on commercial and PIP, moderate on LOP against tier-1 firms, excluded on self-pay and unknown counterparties.
 
 ---
 

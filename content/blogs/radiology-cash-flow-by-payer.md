@@ -79,7 +79,7 @@ No accountant reading either P&L in isolation could tell you which center was wh
 
 The good news: every input already exists in your billing system. The work is translating it from a static A/R report into a flow you can actually steer. That means four things:
 
-1. **Segment A/R by pipe, not by age alone.** A 90-day commercial balance and a 90-day LOP balance are completely different animals — one is a follow-up problem, the other is structural.
+1. **Segment A/R by pipe, not by age alone.** A 90-day commercial balance and a 90-day LOP balance are completely different animals — one is a follow-up problem, the other is structural. (The full sequence to [reduce radiology accounts receivable](/blog/radiology-accounts-receivable-line-of-credit) starts here.)
 2. **Put a live number on the LOP book.** How much earned revenue is frozen in unsettled cases right now? Track it monthly. The trend matters more than the snapshot.
 3. **Flag PIP-cap exhaustion at the point of care**, so the pipe-switch is a decision, not a surprise on next quarter's aging report.
 4. **Manage the release.** Some LOP exposure can be factored; some cases should be triaged; some volume mixes need a conscious ceiling. The lever is not "stop taking PI work" — it is sizing and financing it on purpose.

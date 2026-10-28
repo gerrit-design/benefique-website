@@ -55,7 +55,7 @@ The multiple is always a band, not a number. The right multiple inside the band 
 - **Real-estate situation** — owned vs leased, lease terms, whether the seller also owns the building
 - **Location density** — overlap with the buyer's existing patient draw can be either dilutive or accretive depending on referral patterns
 
-For a longer treatment of the underlying multiple drivers across SE Florida imaging, see [Multi-Center Imaging Owner Income: 2026 SE Florida Benchmarks](/blog/multi-center-imaging-owner-income-2026-sefl).
+For a longer treatment of the underlying multiple drivers across SE Florida imaging, see [Multi-Center Imaging Owner Income: 2026 SE Florida Benchmarks](/blog/multi-center-imaging-owner-income-2026-sefl). For the same question from the seller's side of the table, including how the LOI-to-diligence reset moves the number, see [what buyers actually pay for an imaging center](/blog/selling-imaging-center-what-buyers-pay).
 
 ## Decision 3 — Asset Deal vs Stock Deal vs Hybrid
 
@@ -141,7 +141,7 @@ The first 90 days post-close determine whether the deal compounds or compromises
 
 Second-center acquisitions create year-of-acquisition tax planning opportunities that operators should integrate into the deal-structure conversation, not bolt on after close:
 
-- **Bonus depreciation and Section 179** — equipment acquired in the deal is eligible for accelerated depreciation, often dramatically reducing year-of-acquisition taxable income. Bonus depreciation continues to phase down in 2026 ([IRS Pub 946 / Section 168(k)](https://www.irs.gov/publications/p946)), so timing decisions matter.
+- **Bonus depreciation and Section 179** — equipment acquired in the deal is eligible for accelerated depreciation, often dramatically reducing year-of-acquisition taxable income. Since the One Big Beautiful Bill Act (July 2025), 100% bonus depreciation is permanent for property acquired after January 19, 2025 ([IRS Pub 946 / Section 168(k)](https://www.irs.gov/publications/p946)), so how the purchase price is allocated to equipment matters.
 - **Cost segregation studies** — for any acquired real estate (or significant tenant improvements), a cost-seg study can reclassify portions of the building basis into shorter recovery periods, accelerating depreciation deductions. The economics typically justify the study at acquisition prices above $1M of building/TI cost.
 - **Goodwill amortization** — under [IRC Section 197](https://www.irs.gov/publications/p535), goodwill is amortized straight-line over 15 years. This is the principal post-close tax shield in most asset-deal acquisitions.
 - **Section 199A QBI** — the buyer's flow-through deduction position improves with acquired EBITDA, but the SSTB rules have nuances at the imaging-center level that should be confirmed with a tax preparer who understands the relevant Treasury regulations.

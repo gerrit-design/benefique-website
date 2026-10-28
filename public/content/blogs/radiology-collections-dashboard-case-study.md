@@ -226,7 +226,7 @@ The entire pipeline now runs as a structured monthly process:
 
 ### 1. **Data Without Methodology Is Noise**
 
-Medical imaging financials are counterintuitive. High A/R is normal (providers overbill and recover a fraction). Collection % below 30% isn't automatically alarming. $/Claim matters more than total revenue. Without methodology transparency, stakeholders either can't interpret the data or misinterpret it. **Every chart earns trust by showing its work.**
+Medical imaging financials are counterintuitive. High A/R is normal (providers overbill and recover a fraction), and the way to [reduce radiology accounts receivable](/blog/radiology-accounts-receivable-line-of-credit) starts with reading it by payer class. Collection % below 30% isn't automatically alarming. $/Claim matters more than total revenue. Without methodology transparency, stakeholders either can't interpret the data or misinterpret it. **Every chart earns trust by showing its work.**
 
 ### 2. **Blended Numbers Mask Regional Realities**
 
