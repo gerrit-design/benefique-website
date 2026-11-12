@@ -33,6 +33,58 @@ import {
   packProse,
   packFlatten,
 } from '../src/data/radiology-pack-content.js';
+import {
+  homeHero,
+  homeH1,
+  layerSection,
+  differenceSection,
+  journeySection,
+  decisionSection,
+  caseSection,
+  foundationSection,
+  homeFaqs,
+  radiologyOpening,
+  intelligencePageCopy,
+  aboutIntelligenceSection,
+} from '../src/data/connected-intelligence.js';
+
+// Crawlable body for the homepage, from the same copy the React page renders.
+const homeBody = [
+  { p: homeHero.eyebrow },
+  { p: homeHero.subhead },
+  ...homeHero.paras.map((t) => ({ p: t })),
+  { p: homeHero.audience },
+  { links: [{ href: homeHero.primaryCta.href, text: homeHero.primaryCta.label }, { href: homeHero.secondaryCta.href, text: homeHero.secondaryCta.label }] },
+  { h2: layerSection.headingLines.join(' ') },
+  ...layerSection.intro.map((t) => ({ p: t })),
+  { h3: layerSection.sourcesLabel, ul: layerSection.sources },
+  { h3: `${layerSection.coreName}: ${layerSection.coreSub}`, ul: layerSection.capabilities },
+  { h3: layerSection.outcomesLabel, ul: layerSection.outcomes },
+  ...layerSection.closing.map((t) => ({ p: t })),
+  { h2: differenceSection.heading },
+  ...differenceSection.intro.map((t) => ({ p: t })),
+  ...differenceSection.cards.map((c) => ({ h3: c.title, p: `Question answered: ${c.question} ${c.body}` })),
+  { p: differenceSection.line },
+  { h2: journeySection.heading },
+  ...journeySection.intro.map((t) => ({ p: t })),
+  { p: journeySection.steps.join(' → ') },
+  { ul: journeySection.questions.map((q) => `${q.stage}: ${q.q}`) },
+  { p: journeySection.closing, links: [{ href: journeySection.cta.href, text: journeySection.cta.label }] },
+  { h2: decisionSection.heading },
+  ...decisionSection.steps.map((st, i) => ({ h3: `Step ${i + 1} — ${st.title}`, p: st.body })),
+  { p: decisionSection.closing },
+  { p: decisionSection.example },
+  { p: decisionSection.honesty },
+  { h2: caseSection.heading },
+  ...caseSection.intro.map((t) => ({ p: t })),
+  { p: caseSection.footnote },
+  { h2: foundationSection.heading },
+  { p: foundationSection.intro },
+  ...foundationSection.capabilities.map((c) => ({ h3: c.title, p: c.body })),
+  { p: foundationSection.closing },
+  { h2: 'Frequently Asked Questions' },
+  ...homeFaqs.map((f) => ({ h3: f.q, p: f.a })),
+];
 
 // The crawlable body for /radiology, assembled from the SAME arrays the React
 // page imports. Editing src/data/radiology.js updates the page and this at once.
@@ -46,6 +98,13 @@ const stopAnswers = (stop) => [
 const LINE_LEDE = 'Scheduling, the front desk, the billing company and the bank each run their own stop, scored on their own number. Every stop can hit its number while the business loses money between them. We tie the operations data to the ledger and follow every patient from the referrer to the bank.';
 
 const radiologyBody = [
+  { p: radiologyOpening.subtitle },
+  ...radiologyOpening.paras.map((t) => ({ p: t })),
+  { p: radiologyOpening.differentiation },
+  { links: [{ href: '/intelligence', text: 'How Benefique Intelligence works' }] },
+  { h2: radiologyOpening.bridgeHeading },
+  ...radiologyOpening.bridge.map((t) => ({ p: t })),
+  { h2: "Your volume is up. Your cash isn't." },
   { p: radiologyHero.lede },
   { segs: radiologyHero.intro },
   { h2: `The ${LINE_NAME}: every stop hits its number. The business still loses money.` },
@@ -185,11 +244,38 @@ function industryBody(key) {
 
 // Crawlable body for /intelligence, generated from the same `methods` array the
 // React page renders as cards.
+const ic = intelligencePageCopy;
 const intelligenceBody = [
-  { h2: intelligenceIntro.heading },
   { p: intelligenceIntro.body },
-  { h2: 'The frameworks' },
+  { p: ic.lede },
+  { h2: `1. ${ic.problem.heading}` },
+  ...ic.problem.paras.map((t) => ({ p: t })),
+  { h2: `2. ${ic.howHeading}` },
+  { h3: layerSection.sourcesLabel, ul: layerSection.sources },
+  { h3: `${layerSection.coreName}: ${layerSection.coreSub}`, ul: layerSection.capabilities },
+  { h3: layerSection.outcomesLabel, ul: layerSection.outcomes },
+  { h2: `3. ${ic.systems.heading}` },
+  { p: ic.systems.intro, ul: ic.systems.items },
+  { h2: `4. ${ic.toIntelHeading}` },
+  ...decisionSection.steps.map((st, i) => ({ h3: `Step ${i + 1} — ${st.title}`, p: st.body })),
+  { p: ic.methodsIntro },
   ...intelligenceMethods.map((m) => ({ h3: m.name, p: m.desc })),
+  { p: decisionSection.honesty },
+  { h2: `5. ${ic.radiology.heading}` },
+  ...ic.radiology.paras.map((t) => ({ p: t })),
+  { links: ic.radiology.links },
+  { h2: `6. ${ic.questionsHeading}`, ul: ic.questions },
+  { h2: `7. ${ic.foundation.heading}` },
+  ...ic.foundation.paras.map((t) => ({ p: t })),
+  { h2: `8. ${ic.action.heading}` },
+  ...ic.action.paras.map((t) => ({ p: t })),
+  { p: decisionSection.example },
+  { h2: `9. ${ic.engagement.heading}` },
+  ...ic.engagement.paras.map((t) => ({ p: t })),
+  { h2: '10. Frequently Asked Questions' },
+  ...homeFaqs.slice(0, 7).map((f) => ({ h3: f.q, p: f.a })),
+  { h2: `11. ${ic.ctaHeading}` },
+  { p: ic.ctaBody, links: [{ href: '/contact', text: 'Apply to Work With Benefique' }, { href: '/radiology', text: 'Explore Radiology Intelligence' }, { href: '/about', text: 'About Benefique' }] },
 ];
 
 // The React IndustryPage and LocationPage headline is
@@ -229,8 +315,11 @@ const routes = [
   // Core pages
   {
     path: '/',
-    title: 'Benefique Tax & Accounting | Fractional CFO Services | Davie FL',
-    description: `You stop watching your bank balance shrink while your P&L says you are profitable. We tell you exactly which dollar is leaking and how to plug it. Fractional CFO, accounting and tax for ${AUDIENCE_ONE_LINE}.`,
+    title: 'Benefique | Healthcare Financial & Operational Intelligence',
+    h1: homeH1,
+    description: 'Benefique connects operational, billing and financial data for independent radiology and healthcare groups. Outsourced accounting, tax and fractional CFO expertise.',
+    body: homeBody,
+    faq: homeFaqs.map((f) => ({ q: f.q, a: f.a })),
   },
   {
     path: '/services',
@@ -251,6 +340,8 @@ const routes = [
       { h3: '2. Back to the books (F4, F3, F1)', p: "We stopped preparing returns from someone else's books. We keep the books, close them by the 7th and review them by the 10th, and the tax return comes off that same ledger. That is where the gap between profit and cash showed up, and most of it was sitting in collections and the billing company." },
       { h3: '3. Back to the unit (F5, F2, F7, F8)', p: 'A total P&L hides the center, the modality and the payer that lose money. We read each one, then read the same numbers the way a lender and a buyer will.' },
       { h3: '4. Into operations (O5 to O1)', p: "In imaging, most of the money is decided before a claim exists: which patient gets which magnet-hour, whether the patient shows, whether the scan should be taken at that payer's rate, and whether the referrer keeps sending. So we joined the scheduling and billing data to the ledger." },
+      { h2: aboutIntelligenceSection.heading },
+      ...aboutIntelligenceSection.paras.map((t) => ({ p: t })),
       { h2: 'What we learned in imaging' },
       { p: "Every stop hits its number, and the business still loses money. Scheduling is scored on slots booked, but a 9am slot isn't worth the same as 5pm on a Friday. The front desk is scored on check-ins, but booked isn't scanned. The billing company is paid on what it collects, not on what it leaves behind." },
       { p: "Software doesn't fix a process nobody has mapped. We map how a referral becomes a collection, in the straightest line possible, before anyone buys anything." },
@@ -561,10 +652,10 @@ const routes = [
   },
   {
     path: '/radiology',
-    title: 'Radiology CFO: Imaging Revenue, Cash & Valuation | Benefique',
+    title: 'Radiology Financial Intelligence & Fractional CFO | Benefique',
     body: radiologyBody,
-    h1: 'Your Volume Is Up. Your Cash Isn\'t.',
-    description: 'Fractional CFO for multi-center imaging groups: profit and cash by center, modality and payer, from referral to cash, and what it does to valuation.',
+    h1: radiologyOpening.h1,
+    description: 'Financial and operational intelligence for independent imaging groups. Analyze profitability, payer economics, collections and cash flow from referral to payment.',
     schema: {
       '@context': 'https://schema.org',
       '@graph': [
@@ -655,9 +746,10 @@ const routes = [
   {
     path: '/intelligence',
     body: intelligenceBody,
-    title: 'Benefique Intelligence | The Financial Methodology Behind Benefique',
-    h1: 'The Intelligence Layer Above Your Accounting.',
-    description: 'Benefique Intelligence is the accounting and fractional CFO firm for multi-center imaging groups. We keep the books, tie them to your operational data, and read them through named methods: the Benefique Matrix, Three Views, Per-Unit Economics, the Cash Flow Waterfall and more.',
+    title: ic.title,
+    h1: ic.h1,
+    description: ic.description,
+    faq: [...homeFaqs.slice(0, 7), { q: 'Who is Benefique Intelligence for?', a: AUDIENCE_FAQ_ANSWER }],
     schema: {
       '@context': 'https://schema.org',
       '@graph': [
@@ -665,8 +757,8 @@ const routes = [
           '@type': 'WebPage',
           '@id': `${SITE}/intelligence`,
           url: `${SITE}/intelligence`,
-          name: 'Benefique Intelligence — The Methodology',
-          description: 'Benefique Intelligence is the accounting and fractional CFO firm for multi-center imaging groups. Its named methods: the Benefique Matrix, Three Views, the Two Business Unit Framework, Activity-Based Decomposition, Per-Unit Economics, the Cash Flow Waterfall, the Cash Conversion Cycle at target ARR, and Toxic-Combination Detection.',
+          name: ic.h1,
+          description: ic.description,
           isPartOf: { '@type': 'WebSite', name: 'Benefique Tax & Accounting', url: SITE },
           about: { '@type': 'Thing', name: 'Benefique Intelligence' },
         },
@@ -681,11 +773,10 @@ const routes = [
           '@type': 'Service',
           '@id': `${SITE}/intelligence#service`,
           name: 'Benefique Intelligence',
-          serviceType: 'Financial intelligence and fractional CFO analytics',
-          description: 'A proprietary financial-analysis methodology that turns the operational data already in a business\'s books into cash, tax, and operational answers, delivered as a flat-fee engagement.',
+          serviceType: 'Financial and operational intelligence within an accounting, tax and fractional CFO engagement',
+          description: ic.lede,
           provider: { '@type': 'Organization', name: 'Benefique Tax & Accounting', url: SITE },
-          areaServed: { '@type': 'State', name: 'Florida' },
-          audience: { '@type': 'BusinessAudience', name: 'Healthcare practices and service businesses' },
+          audience: { '@type': 'BusinessAudience', name: 'Independent, multi-center imaging and healthcare groups' },
         },
         {
           '@type': 'DefinedTermSet',

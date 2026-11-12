@@ -1,7 +1,13 @@
 # Benefique Tax & Accounting
 
 ## Overview
-Benefique is a radiology and imaging finance practice: fractional CFO, revenue-cycle analytics and tax for independent, multi-center imaging groups doing $5M-$50M in revenue. The work reads profit and cash per center, per modality, per payer and per claim, built from the client's own operating data (RIS/scheduling, billing, general ledger, payroll), not from summary financial statements.
+Benefique is a financial and operational intelligence firm for independent radiology and healthcare groups doing $5M-$50M in revenue. It connects scheduling, imaging, billing, collections, accounting and tax information to show where money is earned, where it is lost and what management should do next. Benefique also runs the accounting, tax and fractional CFO functions itself, so its analysis is grounded in reconciled books rather than summary statements. Benefique Intelligence(TM) is that capability, delivered inside one ongoing flat-fee engagement; it is not a separately licensed software product.
+
+## How Benefique differs
+- A conventional accountant reports historical results; a billing company reports claims and collections; an operations team reports volume and scheduling; an analytics provider builds dashboards. Benefique connects those perspectives and ties them to the general ledger, cash movement and owner economics.
+- The work follows the Patient Referral-to-Cash Line (www.benefique.com/radiology/line): fourteen stops from the referring provider to cash, margin, owner pay and enterprise value.
+- Process: Connect, Reconcile, Analyze, Recommend, Measure. Each recommendation has an owner at the business, a measure and a re-check date. Analysis is technology-assisted (including AI-assisted analysis) and reviewed by Benefique's team; decisions stay with management.
+- Results are labelled as measured (found in the client's own records) or modeled (projected, with stated assumptions); modeled opportunities are not realized results.
 
 ## What Benefique measures that others do not
 - **Net revenue per scan by modality and center**: what an MRI, CT, PET or X-ray slot actually earns after payer mix, denials and drug cost.

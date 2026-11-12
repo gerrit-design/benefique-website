@@ -17,6 +17,7 @@ import { industries } from '../src/data/industries.js';
 import { locations } from '../src/data/locations.js';
 import { intelligenceIntro, intelligenceMethods } from '../src/data/intelligence.js';
 import { REVENUE_BAND, REVENUE_FLOOR, whoWeServe } from '../src/data/positioning.js';
+import { homeH1, homeHero, differenceSection, radiologyOpening, intelligencePageCopy, aboutIntelligenceSection } from '../src/data/connected-intelligence.js';
 
 const decode = (s) =>
   s.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
@@ -196,6 +197,33 @@ for (const page of ['dist/radiology/index.html', 'dist/radiology/intelligence-pa
   check('intelligence prerender carries the page intro', intel.text.includes(norm(intelligenceIntro.body)));
   for (const m of intelligenceMethods) {
     check(`intelligence prerender carries "${m.name}"`, intel.text.includes(norm(m.name)));
+  }
+}
+
+
+// --- connected-intelligence positioning (Nov 2026) reaches crawlers ----------
+{
+  const h1Of = (page) => {
+    const html = readFileSync(dist(page), 'utf-8');
+    const m = html.match(/<h1>([\s\S]*?)<\/h1>/);
+    return m ? decode(m[1]).replace(/\s+/g, ' ').trim() : null;
+  };
+  check('homepage H1 == homeH1', h1Of('dist/index.html') === norm(homeH1), h1Of('dist/index.html'));
+  check('/radiology H1 == radiologyOpening.h1', h1Of('dist/radiology/index.html') === norm(radiologyOpening.h1), h1Of('dist/radiology/index.html'));
+  check('/intelligence H1 == intelligencePageCopy.h1', h1Of('dist/intelligence/index.html') === norm(intelligencePageCopy.h1), h1Of('dist/intelligence/index.html'));
+  const home = rootText('dist/index.html');
+  for (const t of [...homeHero.paras, differenceSection.line]) {
+    check(`homepage prerender carries "${t.slice(0, 40)}…"`, home.text.includes(norm(t)));
+  }
+  const radT = rootText('dist/radiology/index.html');
+  check('/radiology prerender carries differentiation line', radT.text.includes(norm(radiologyOpening.differentiation)));
+  const intelT = rootText('dist/intelligence/index.html');
+  check('/intelligence says it is not software', intelT.text.includes(norm(intelligencePageCopy.lede)));
+  const aboutT = rootText('dist/about/index.html');
+  check('/about carries the intelligence-business section', aboutT.text.includes(norm(aboutIntelligenceSection.heading)));
+  // Public-wording guardrail: never Palantir on a rendered page.
+  for (const page of ['dist/index.html', 'dist/radiology/index.html', 'dist/intelligence/index.html', 'dist/about/index.html']) {
+    check(`no "Palantir" in ${page}`, !/palantir/i.test(readFileSync(dist(page), 'utf-8')));
   }
 }
 

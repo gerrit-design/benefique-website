@@ -8,6 +8,8 @@ import ConciergeSimulator from './components/ConciergeSimulator';
 import BusinessSimulator from './components/BusinessSimulator';
 import RadiologySimulator from './components/RadiologySimulator';
 import RadiologyIntelligencePack from './components/RadiologyIntelligencePack';
+import { IntelligenceLayerSection, IntelligenceLayerDiagram, BeyondDashboardsSection, ExamJourneySection, DecisionToActionSection } from './components/ConnectedIntelligence';
+import { homeHero, caseSection, foundationSection, homeFaqs, radiologyOpening, intelligencePageCopy, aboutIntelligenceSection, decisionSection, journeySection } from './data/connected-intelligence';
 import { trackFormSubmit, trackFormStart, trackEvent, trackOnce, attributionParams, newSubmissionId, useAnalyticsRoute } from './analytics';
 import BOOKING_DATA from './booking-slots.json';
 import { radiologyHero, radiologyServices, radiologyClusters, radiologyFaqs, radiologyPackPromo, radiologyProof } from './data/radiology';
@@ -278,6 +280,29 @@ function Footer() {
 // ============================================================
 // HOME PAGE
 // ============================================================
+// Homepage case studies, told in the connected-intelligence structure.
+// kind: 'measured' = found in the business's own records; 'modeled' = projected
+// effect of recommended actions (not a realized result). Figures are unchanged
+// from the published posts.
+const HOME_CASES = [
+  { slug: 'ai-cash-flow-waterfall-explained', figure: '$1M → $0', kind: 'measured', title: '$1M Profit, Zero Cash Growth',
+    problem: 'The P&L showed about $1M of profit, but cash was not growing.',
+    data: 'EBITDA, owner distributions and debt service, laid out as one waterfall.',
+    found: 'Distributions plus debt consumed 100.9% of EBITDA. The owner did not know until the waterfall was built.' },
+  { slug: 'ai-cfo-three-actions', figure: '+$337K/yr', kind: 'modeled', title: '3 Actions, $3K to Implement',
+    problem: 'A failing leverage ratio and cash leaving faster than it was earned.',
+    data: 'Balance sheet, payroll detail and the distribution pattern.',
+    found: 'An appraisal, a payroll decomposition and a distribution cap, modeled to turn −$41K into +$294K retained.' },
+  { slug: 'stealth-debt-balance-sheet-hidden', figure: '$961K Hidden', kind: 'measured', title: 'The Debt That Didn’t Look Like Debt',
+    problem: 'Formal debt was shrinking, so leverage looked under control.',
+    data: 'Twelve monthly balance sheets, read side by side.',
+    found: 'AP and credit cards replaced formal loans. Total leverage grew $410K while the balance sheet said it shrank.' },
+  { slug: 'three-views-one-business', figure: '3 Verdicts', kind: 'measured', title: 'Same Business, Three Answers',
+    problem: 'The owner believed the business was doing fine.',
+    data: 'The same financials read as an operator, a lender and a buyer would read them.',
+    found: '“Doing fine” to the operator, “fragile” to a banker, “distressed asset” to a buyer.' },
+];
+
 function Home() {
   const homeForm = useFormspreeAjax('https://formspree.io/f/mzdjjprp', 'homepage-quick-application', '/thank-you?form=homepage');
   const localBusinessSchema = {
@@ -336,51 +361,48 @@ function Home() {
   return (
     <div>
       <Helmet>
+        <title>Benefique | Healthcare Financial &amp; Operational Intelligence</title>
+        <meta name="description" content="Benefique connects operational, billing and financial data for independent radiology and healthcare groups. Outsourced accounting, tax and fractional CFO expertise." />
+        <link rel="canonical" href="https://www.benefique.com/" />
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
       </Helmet>
-      {/* Hero */}
-      <section className="bg-white py-16 md:py-20">
+      {/* Hero — connected intelligence positioning (Nov 2026) */}
+      <section className="bg-white py-14 md:py-20">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="max-w-3xl">
-            {/* Location Badge */}
-            <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
-              <span aria-hidden="true">📍</span> Serving South Florida
-            </div>
-
-            <h1 className="text-4xl md:text-5xl font-bold text-benefique-navy leading-tight mb-6">
-              Your Accounting Should Tell You<br />What to Do &mdash; Not Just What Happened
+          <div className="max-w-4xl">
+            <p className="text-xs md:text-sm font-semibold uppercase tracking-wider text-benefique-orange mb-5">
+              {homeHero.eyebrow}
+            </p>
+            <h1 className="text-4xl md:text-6xl font-bold text-benefique-navy leading-tight mb-6">
+              {homeHero.h1Lines[0]}<br />{homeHero.h1Lines[1]}
             </h1>
-            <p className="text-base md:text-lg font-semibold text-benefique-navy mb-5">
-              Financial intelligence, accounting, and tax strategy for {AUDIENCE_ONE_LINE}.
-            </p>
-            <p className="text-lg text-gray-600 mb-4">
-              You stop watching your bank balance shrink while your P&amp;L says you&apos;re profitable. We tell you exactly which dollar is leaking &mdash; and how to plug it.
-            </p>
-            <p className="text-gray-600 mb-8">
-              One client had $1M in profit and zero cash growth &mdash; all of it sitting in their QuickBooks, none of it mined. That gap, between what your books say and what your bank account does, is what we close.
-            </p>
-
-            <div className="flex flex-wrap gap-4 mb-6">
+            <p className="text-lg md:text-xl font-semibold text-benefique-navy mb-5">{homeHero.subhead}</p>
+            {homeHero.paras.map((para) => (
+              <p key={para} className="text-gray-600 md:text-lg mb-3">{para}</p>
+            ))}
+            <p className="text-sm font-semibold text-gray-700 mt-5 mb-7">{homeHero.audience}</p>
+            <div className="flex flex-wrap gap-4">
               <Link
-                to="/contact"
+                to={homeHero.primaryCta.href}
                 className="bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition inline-flex items-center gap-2"
               >
-                Apply to Work With Us <span aria-hidden="true">→</span>
+                {homeHero.primaryCta.label} <span aria-hidden="true">→</span>
               </Link>
               <Link
-                to="/radiology/intelligence-pack"
+                to={homeHero.secondaryCta.href}
                 className="border-2 border-benefique-navy text-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-benefique-navy hover:text-white transition"
               >
-                See a Sample Intelligence Pack
+                {homeHero.secondaryCta.label}
               </Link>
             </div>
-
-            <p className="text-sm text-gray-500">
-              No obligation. We&apos;ll tell you honestly if we can help &mdash; and how.
-            </p>
           </div>
         </div>
       </section>
+
+      <IntelligenceLayerSection />
+      <BeyondDashboardsSection />
+      <ExamJourneySection />
+      <DecisionToActionSection />
 
       {/* Sound Familiar? */}
       <section className="py-16 bg-white">
@@ -402,27 +424,6 @@ function Home() {
                 <span className="text-gray-700">{item.text}</span>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Why Not Just a Regular CPA? */}
-      <section className="py-12 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-benefique-navy text-center mb-6">Why Not Just a Regular CPA?</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-xl p-5 border border-gray-100">
-              <h3 className="font-bold text-benefique-navy mb-2">A CPA files your taxes.</h3>
-              <p className="text-gray-600 text-sm">We do that too &mdash; but we also find $20K-$350K in trapped cash, hidden debt, and missed savings before they become problems.</p>
-            </div>
-            <div className="bg-white rounded-xl p-5 border border-gray-100">
-              <h3 className="font-bold text-benefique-navy mb-2">A bookkeeper records history.</h3>
-              <p className="text-gray-600 text-sm">We close books by the 7th, then run AI analysis on your QuickBooks data to show what to do next &mdash; not just what happened.</p>
-            </div>
-            <div className="bg-white rounded-xl p-5 border border-gray-100">
-              <h3 className="font-bold text-benefique-navy mb-2">A fractional CFO costs $5K-$15K/mo.</h3>
-              <p className="text-gray-600 text-sm">You get the same caliber of cash flow analysis, prescriptive actions, and banker-ready reporting &mdash; bundled into your accounting fee.</p>
-            </div>
           </div>
         </div>
       </section>
@@ -455,7 +456,7 @@ function Home() {
               <ul className="space-y-3 text-blue-100 text-sm">
                 <li className="flex items-start gap-2"><span className="text-benefique-orange">✓</span> Books closed by the 7th, review call by the 10th</li>
                 <li className="flex items-start gap-2"><span className="text-benefique-orange">✓</span> Tax savings found proactively &mdash; not at year-end</li>
-                <li className="flex items-start gap-2"><span className="text-benefique-orange">✓</span> AI mines your QuickBooks for cash insights you didn&apos;t know existed</li>
+                <li className="flex items-start gap-2"><span className="text-benefique-orange">✓</span> Scheduling, billing and bank data read together with the books &mdash; not in separate reports</li>
                 <li className="flex items-start gap-2"><span className="text-benefique-orange">✓</span> Every report comes with 3 prescriptive actions, backed by math</li>
                 <li className="flex items-start gap-2"><span className="text-benefique-orange">✓</span> Accounting pays for itself &mdash; and then some</li>
               </ul>
@@ -470,32 +471,43 @@ function Home() {
         </div>
       </section>
 
-      {/* Proof — Case Studies */}
+      {/* Proof — Case Studies (reframed: what connected intelligence reveals) */}
       <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-benefique-navy mb-8 text-center">We publish exactly what our AI finds. Proof over promise.</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <Link to="/blog/ai-cash-flow-waterfall-explained" className="block bg-gray-50 rounded-xl p-6 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
-              <p className="text-2xl font-bold text-benefique-orange mb-2">$1M → $0</p>
-              <h3 className="font-bold text-benefique-navy mb-2">$1M Profit, Zero Cash Growth</h3>
-              <p className="text-gray-500 text-sm">Distributions + debt consumed 100.9% of EBITDA. The owner didn&apos;t know until we built the waterfall.</p>
-            </Link>
-            <Link to="/blog/ai-cfo-three-actions" className="block bg-gray-50 rounded-xl p-6 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
-              <p className="text-2xl font-bold text-benefique-orange mb-2">+$337K/yr</p>
-              <h3 className="font-bold text-benefique-navy mb-2">3 Actions, $3K to Implement</h3>
-              <p className="text-gray-500 text-sm">An appraisal, a payroll decomposition, and a distribution cap turned -$41K into +$294K retained.</p>
-            </Link>
-            <Link to="/blog/stealth-debt-balance-sheet-hidden" className="block bg-gray-50 rounded-xl p-6 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
-              <p className="text-2xl font-bold text-benefique-orange mb-2">$961K Hidden</p>
-              <h3 className="font-bold text-benefique-navy mb-2">The Debt That Didn&apos;t Look Like Debt</h3>
-              <p className="text-gray-500 text-sm">Formal debt shrank. AP and credit cards exploded. Total leverage grew $410K while the balance sheet said it shrank.</p>
-            </Link>
-            <Link to="/blog/three-views-one-business" className="block bg-gray-50 rounded-xl p-6 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
-              <p className="text-2xl font-bold text-benefique-orange mb-2">3 Verdicts</p>
-              <h3 className="font-bold text-benefique-navy mb-2">Same Business, Three Answers</h3>
-              <p className="text-gray-500 text-sm">&quot;Doing fine&quot; to the operator. &quot;Fragile&quot; to a banker. &quot;Distressed asset&quot; to a buyer. Same data.</p>
-            </Link>
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-benefique-navy mb-4 text-center">{caseSection.heading}</h2>
+          <div className="max-w-3xl mx-auto text-center text-gray-600 space-y-2 mb-8">
+            {caseSection.intro.map((para) => <p key={para}>{para}</p>)}
           </div>
+          <div className="bg-gray-50 rounded-xl border border-gray-100 p-5 mb-8">
+            <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">{caseSection.structureLabel}</p>
+            <ol className="grid sm:grid-cols-5 gap-3 text-sm">
+              {caseSection.structure.map((st, i) => (
+                <li key={st.t}><span className="font-bold text-benefique-navy">{i + 1}. {st.t}</span><span className="block text-gray-600">{st.d}</span></li>
+              ))}
+            </ol>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {HOME_CASES.map((c) => (
+              <Link key={c.slug} to={`/blog/${c.slug}`} className="block bg-gray-50 rounded-xl p-6 border border-gray-100 hover:border-benefique-orange/30 hover:shadow-sm transition">
+                <div className="flex items-center justify-between gap-3 mb-2">
+                  <p className="text-2xl font-bold text-benefique-orange">{c.figure}</p>
+                  <span className={`text-xs font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full ${c.kind === 'modeled' ? 'bg-amber-100 text-amber-800' : 'bg-emerald-100 text-emerald-800'}`}>
+                    {c.kind === 'modeled' ? 'Modeled' : 'Measured'}
+                  </span>
+                </div>
+                <h3 className="font-bold text-benefique-navy mb-3">{c.title}</h3>
+                <dl className="text-sm text-gray-600 space-y-1">
+                  <div><dt className="inline font-semibold text-gray-700">Problem: </dt><dd className="inline">{c.problem}</dd></div>
+                  <div><dt className="inline font-semibold text-gray-700">Connected: </dt><dd className="inline">{c.data}</dd></div>
+                  <div><dt className="inline font-semibold text-gray-700">Revealed: </dt><dd className="inline">{c.found}</dd></div>
+                </dl>
+              </Link>
+            ))}
+          </div>
+          <ul className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-xs text-gray-500 mt-6">
+            {caseSection.legend.map((l) => <li key={l.key}><strong>{l.label}:</strong> {l.d}</li>)}
+          </ul>
+          <p className="text-xs text-gray-500 text-center mt-2">{caseSection.footnote}</p>
           <div className="text-center mt-8">
             <Link to="/blog" className="text-benefique-orange font-semibold hover:underline">
               Read all case studies on our blog →
@@ -507,19 +519,26 @@ function Home() {
       {/* The Foundation */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
-          <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide text-center mb-2">The Foundation That Makes It Possible</p>
-          <h2 className="text-3xl font-bold text-benefique-navy text-center mb-4">A Complete Accounting Department</h2>
-          <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-            Intelligence requires clean data. That starts with bulletproof accounting &mdash; books, taxes, payroll, all handled, so the AI has something real to analyze.
-          </p>
+          <h2 className="text-3xl font-bold text-benefique-navy text-center mb-4">{foundationSection.heading}</h2>
+          <p className="text-gray-600 text-center mb-10 max-w-3xl mx-auto">{foundationSection.intro}</p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            {foundationSection.capabilities.map((cap) => (
+              <div key={cap.title} className="bg-white rounded-xl p-6 border border-gray-100">
+                <h3 className="text-lg font-bold text-benefique-navy mb-2">{cap.title}</h3>
+                <p className="text-gray-600 text-sm">{cap.body}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-xl font-semibold text-benefique-navy mb-12">{foundationSection.closing}</p>
 
+          <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide text-center mb-6">What that takes off your desk</p>
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { icon: '📚', title: 'You Stop Touching QuickBooks', desc: 'The numbers are clean before you look. You stop wondering whether the bank balance is real.', link: '/blog/why-monthly-reports-too-late', linkLabel: 'Read: Why Monthly Reports Are Too Late' },
               { icon: '🎯', title: 'April Stops Being a Surprise', desc: 'By December you know what you\'re writing — and what you\'re not. No more April-surprise phone calls.', link: '/blog/tax-strategies-concierge-physicians', linkLabel: 'Read: Tax Strategies in Action' },
               { icon: '💰', title: 'Payroll Disappears from Your Calendar', desc: 'Sales-tax filings, 1099 January, contractor pay — none of it lands on your desk again.', link: '/blog/1099-vs-w2-worker-classification-healthcare-service-businesses-broward-county', linkLabel: 'Read: 1099 vs W-2 Classification' },
               { icon: '📊', title: 'You Stop Guessing About Cash', desc: 'Whether next quarter is a crunch. Which location is actually making money. The number is in your inbox before you ask.', link: '/blog/three-views-one-business', linkLabel: 'Read: Three Views, One Business' },
-              { icon: '📱', title: 'Real-Time Dashboard', desc: 'See your numbers anytime. No waiting. No asking. Just log in and know.', link: '/blog/real-time-financial-dashboards-healthcare-practices', linkLabel: 'Read: Real-Time Dashboards' },
+              { icon: '📱', title: 'Real-Time Dashboard', desc: 'Your numbers are there whenever you want them — and the ones that need a decision are sent to you, so you never have to go looking.', link: '/blog/real-time-financial-dashboards-healthcare-practices', linkLabel: 'Read: Real-Time Dashboards' },
               { icon: '📞', title: 'Ask. Get On With Your Day.', desc: 'Send the question. The answer comes back the same business day. The thing in your head can leave it.', link: null },
             ].map((service) => (
               <div key={service.title} className="bg-white rounded-xl p-6 border border-gray-100 flex flex-col">
@@ -580,27 +599,17 @@ function Home() {
         </div>
       </section>
 
-      {/* FAQ — AI-Citation Ready */}
+      {/* FAQ */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-benefique-navy text-center mb-10">Frequently Asked Questions</h2>
-          <div className="space-y-6">
-            <div className="bg-white rounded-xl p-6 border border-gray-100">
-              <h3 className="font-bold text-benefique-navy mb-2">What does Benefique do?</h3>
-              <p className="text-gray-600 text-sm">Benefique is a full-service accounting firm that uses AI to turn QuickBooks data into financial intelligence. We handle bookkeeping, tax planning, payroll, and fractional CFO reporting for {AUDIENCE_ONE_LINE}. Every client gets clean books, proactive tax strategy, and prescriptive cash flow analysis &mdash; not just backward-looking reports.</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border border-gray-100">
-              <h3 className="font-bold text-benefique-navy mb-2">How does AI improve accounting?</h3>
-              <p className="text-gray-600 text-sm">Most small businesses have enough data in QuickBooks to make Fortune 500-level decisions &mdash; nobody is mining it. Our AI reads 12&ndash;36 months of transactions to build cash flow waterfalls, detect hidden debt, calculate per-unit economics, and generate the three highest-ROI actions for your business each quarter. The data was always there. We just extract it.</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border border-gray-100">
-              <h3 className="font-bold text-benefique-navy mb-2">What industries do you specialize in?</h3>
-              <p className="text-gray-600 text-sm">We serve healthcare practices (radiology, concierge medicine, medical groups), marine services, legal firms, and service-based businesses across South Florida. Our AI models include industry-specific benchmarks so your metrics are compared to peers, not generic averages.</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 border border-gray-100">
-              <h3 className="font-bold text-benefique-navy mb-2">How much does it cost?</h3>
-              <p className="text-gray-600 text-sm">Pricing depends on entity count and complexity, but most clients pay a flat monthly fee that covers bookkeeping, tax planning, payroll, and CFO-grade reporting. There are no hourly surprises. Clients typically discover $20K&ndash;$350K in trapped cash, tax savings, or operational improvements in the first 90 days &mdash; the service pays for itself.</p>
-            </div>
+          <div className="space-y-4">
+            {homeFaqs.map((faq) => (
+              <div key={faq.q} className="bg-white rounded-xl p-6 border border-gray-100">
+                <h3 className="font-bold text-benefique-navy mb-2">{faq.q}</h3>
+                <p className="text-gray-600 text-sm">{faq.a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -618,7 +627,7 @@ function Home() {
               <ul className="space-y-3 mb-8">
                 {[
                   'Books, payroll, taxes — the entire accounting function, handled',
-                  'AI-powered cash flow intelligence from your existing QuickBooks data',
+                  'Operational and financial data connected and reconciled to the books',
                   'Proactive tax planning that finds savings before year-end',
                   '"If We Were the CEO" — 3 actions, backed by math, every quarter',
                   'One team, one relationship — no handoffs, no runaround',
@@ -631,9 +640,9 @@ function Home() {
               </ul>
 
               <div className="bg-gray-50 rounded-xl p-6 border border-gray-100">
-                <p className="text-sm text-gray-500 font-semibold uppercase tracking-wide mb-3">What clients typically discover in the first 90 days</p>
+                <p className="text-sm text-gray-500 font-semibold uppercase tracking-wide mb-3">What the first months usually surface</p>
                 <div className="space-y-2 text-sm text-gray-600">
-                  <p>→ $20K-$350K in trapped cash, tax savings, or operational improvements</p>
+                  <p>→ Which centers, modalities and payers actually produce cash</p>
                   <p>→ The gap between their P&amp;L break-even and their cash flow break-even</p>
                   <p>→ What their banker sees &mdash; before they sit down across from them</p>
                 </div>
@@ -1261,6 +1270,17 @@ function About() {
               See the whole line &rarr;
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Why we became an intelligence business (Nov 2026) */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-benefique-navy mb-6">{aboutIntelligenceSection.heading}</h2>
+          <div className="space-y-4 text-gray-600 text-lg">
+            {aboutIntelligenceSection.paras.map((para) => <p key={para}>{para}</p>)}
+          </div>
+          <p className="mt-6"><Link to="/intelligence" className="text-benefique-orange font-semibold hover:underline">How Benefique Intelligence works &rarr;</Link></p>
         </div>
       </section>
 
@@ -3520,56 +3540,11 @@ function KnowledgeMap() {
 }
 
 function IntelligencePage() {
-  // The named methods that make up Benefique Intelligence. Each is a framework we
-  // run inside engagements — named on purpose so owners (and the AI assistants they
-  // ask) can cite the method, not just the output.
+  // The named methods are kept from the earlier page (they are published and cited);
+  // everything else follows the Nov 2026 connected-intelligence structure.
   const methods = intelligenceMethods;
-
-  const engine = [
-    {
-      step: '1',
-      title: 'Ingest what you already have',
-      desc: 'We pull the operational data already sitting in your QuickBooks and activity systems — no new software, no migration. The data a busy owner never has time to mine.',
-    },
-    {
-      step: '2',
-      title: 'Decompose the business',
-      desc: 'We break the business into assembly-line stages and separate structurally different profit engines, so the analysis maps to how the business actually runs — not to how the books happen to be coded.',
-    },
-    {
-      step: '3',
-      title: 'Run the named frameworks',
-      desc: 'The Matrix, Three Views, per-unit economics, the cash-flow waterfall, and the cash conversion cycle run on your numbers — turning raw ledgers into the cash answer, the tax answer, and the operational answer.',
-    },
-    {
-      step: '4',
-      title: 'Pressure-test, then deliver',
-      desc: 'Every recommendation is stress-tested by an adversarial panel of specialist reviewers before it reaches you. The output is a single branded Benefique Intelligence™ report with a prioritized, dollar-quantified action plan.',
-    },
-  ];
-
-  const faqs = [
-    {
-      q: 'What is Benefique Intelligence?',
-      a: 'Benefique Intelligence is the accounting and fractional CFO firm for multi-center imaging groups, and the name of the method we use. We keep the books ourselves and tie them to your operational data, then read them through a named set of frameworks — the Benefique Matrix, Three Views, the Two Business Unit Framework, Activity-Based Decomposition, Per-Unit Economics, the Cash Flow Waterfall, and the Cash Conversion Cycle at target ARR — to answer the cash, profit and exit questions a CFO would.',
-    },
-    {
-      q: 'How is this different from regular accounting or bookkeeping?',
-      a: 'A bookkeeper records what happened. A CPA files the return. We do both, from one ledger, and then read that ledger forward, per unit and per engine, to tell you which dollar is leaking, which payer or product loses money, how much working capital growth will need, and what the business is worth at exit. Most accounting systems blend those answers into invisibility; the named frameworks pull them back apart.',
-    },
-    {
-      q: 'Do you replace our accountant or our software?',
-      a: 'We replace the bookkeeping, not your software. We keep the books in your QuickBooks and close them by the 7th, because the analysis is only as good as the ledger under it. Your billing company and your RIS stay; we read their data and measure it against the ledger. Tax is part of the engagement, and we only do it when we keep the books.',
-    },
-    {
-      q: 'Which frameworks make up Benefique Intelligence?',
-      a: 'Eight named methods: the Benefique Matrix (four-state strategic classification), Three Views (operator / banker / buyer), the Two Business Unit Framework (separating structurally different profit engines), Activity-Based Decomposition (assembly-line stages with triple break-even), Per-Unit Economics (per-claim, per-job, per-location profitability), the Cash Flow Waterfall (net income to ending cash), the Cash Conversion Cycle at target ARR (working-capital need at scale), and Toxic-Combination Detection (payer / product grading A–F).',
-    },
-    {
-      q: 'Who is Benefique Intelligence for?',
-      a: AUDIENCE_FAQ_ANSWER,
-    },
-  ];
+  const c = intelligencePageCopy;
+  const faqs = [...homeFaqs.slice(0, 7), { q: 'Who is Benefique Intelligence for?', a: AUDIENCE_FAQ_ANSWER }];
 
   const SITE = 'https://www.benefique.com';
   const intelligenceSchema = {
@@ -3579,8 +3554,8 @@ function IntelligencePage() {
         '@type': 'WebPage',
         '@id': `${SITE}/intelligence`,
         url: `${SITE}/intelligence`,
-        name: 'Benefique Intelligence — The Methodology',
-        description: 'Benefique Intelligence is the accounting and fractional CFO firm for multi-center imaging groups. Its named methods: the Benefique Matrix, Three Views, the Two Business Unit Framework, Activity-Based Decomposition, Per-Unit Economics, the Cash Flow Waterfall, the Cash Conversion Cycle at target ARR, and Toxic-Combination Detection.',
+        name: c.h1,
+        description: c.description,
         isPartOf: { '@type': 'WebSite', name: 'Benefique Tax & Accounting', url: SITE },
         about: { '@type': 'Thing', name: 'Benefique Intelligence' },
       },
@@ -3595,17 +3570,16 @@ function IntelligencePage() {
         '@type': 'Service',
         '@id': `${SITE}/intelligence#service`,
         name: 'Benefique Intelligence',
-        serviceType: 'Financial intelligence and fractional CFO analytics',
-        description: 'A proprietary financial-analysis methodology that turns the operational data already in a business’s books into cash, tax, and operational answers, delivered as a flat-fee engagement.',
+        serviceType: 'Financial and operational intelligence within an accounting, tax and fractional CFO engagement',
+        description: c.lede,
         provider: { '@type': 'Organization', name: 'Benefique Tax & Accounting', url: SITE },
-        areaServed: { '@type': 'State', name: 'Florida' },
-        audience: { '@type': 'BusinessAudience', name: 'Healthcare practices and service businesses' },
+        audience: { '@type': 'BusinessAudience', name: 'Independent, multi-center imaging and healthcare groups' },
       },
       {
         '@type': 'DefinedTermSet',
         '@id': `${SITE}/intelligence#methodology`,
         name: 'Benefique Intelligence Methodology',
-        description: 'The named financial frameworks that make up Benefique Intelligence.',
+        description: 'The named financial frameworks used inside Benefique engagements.',
         hasDefinedTerm: methods.map((mth) => ({
           '@type': 'DefinedTerm',
           name: mth.name.replace('™', ''),
@@ -3616,117 +3590,146 @@ function IntelligencePage() {
     ],
   };
 
+  const H2 = ({ n, children }) => (
+    <h2 className="text-3xl font-bold text-benefique-navy mb-4">
+      <span className="text-benefique-orange/60 mr-2 text-2xl align-middle">{n}</span>{children}
+    </h2>
+  );
+
   return (
     <div>
       <Helmet>
-        <title>Benefique Intelligence | The Financial Methodology Behind Benefique</title>
-        <meta name="description" content="Benefique Intelligence is the accounting and fractional CFO firm for multi-center imaging groups. We keep the books, tie them to your operational data, and read them through named methods: the Benefique Matrix, Three Views, Per-Unit Economics, the Cash Flow Waterfall and more." />
+        <title>{c.title}</title>
+        <meta name="description" content={c.description} />
         <link rel="canonical" href="https://www.benefique.com/intelligence" />
         <script type="application/ld+json">{JSON.stringify(intelligenceSchema)}</script>
       </Helmet>
 
       {/* Hero */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-14 md:py-16">
         <div className="max-w-6xl mx-auto px-4">
           <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
             <span className="font-bold">Benefique Intelligence<span className="align-super text-[0.6em]">™</span></span>
           </div>
-
-          <h1 className="text-4xl md:text-5xl font-bold text-benefique-navy leading-tight mb-3">
-            The Intelligence Layer Above Your Accounting.
-          </h1>
-
-          <p className="text-xl text-gray-600 mb-6 max-w-3xl">
-            Benefique Intelligence&trade; is the named methodology that turns the data already in your books into the cash answer, the tax answer, and the operational answer — before you have to ask.
-          </p>
-
-          <div className="bg-gray-50 border-l-4 border-benefique-orange p-6 rounded-r-xl mb-8 max-w-3xl">
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Most firms hand you a tax return and a year-old P&amp;L. We are not an accounting shop — we are a <strong>financial intelligence firm</strong>. Benefique Intelligence is the set of frameworks we run inside every engagement to find <strong>which dollar is leaking, which unit loses money, how much cash growth will eat, and what the business is worth at exit</strong>. Named on purpose, so you can point to the method — not just the result.
-            </p>
-          </div>
-
-          <div className="flex flex-wrap gap-4 mb-6">
-            <Link
-              to="/contact"
-              className="bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition inline-flex items-center gap-2"
-            >
-              Get a Diagnostic <span>→</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-benefique-navy leading-tight mb-5 max-w-4xl">{c.h1}</h1>
+          <p className="text-xl text-gray-600 mb-4 max-w-3xl">{intelligenceIntro.body}</p>
+          <p className="max-w-3xl bg-gray-50 border-l-4 border-benefique-orange px-5 py-4 rounded-r-xl text-gray-700 mb-8">{c.lede}</p>
+          <div className="flex flex-wrap gap-4">
+            <Link to="/contact" className="bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition inline-flex items-center gap-2">
+              Apply to Work With Benefique <span aria-hidden="true">→</span>
             </Link>
-            <a
-              href="#methods"
-              className="border-2 border-benefique-navy text-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-benefique-navy hover:text-white transition"
-            >
-              See the Frameworks
-            </a>
+            <Link to="/radiology" className="border-2 border-benefique-navy text-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-benefique-navy hover:text-white transition">
+              Explore Radiology Intelligence
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* What it is — definition strip for AI/GEO citeability */}
-      <section className="py-12 bg-benefique-navy text-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold text-benefique-orange mb-3">{intelligenceIntro.heading}</h2>
-          <p className="text-blue-100 leading-relaxed">{intelligenceIntro.body}</p>
+      {/* 1. Problem */}
+      <section className="py-14 bg-gray-50">
+        <div className="max-w-3xl mx-auto px-4">
+          <H2 n="1">{c.problem.heading}</H2>
+          <div className="space-y-3 text-gray-600 text-lg">{c.problem.paras.map((para) => <p key={para}>{para}</p>)}</div>
         </div>
       </section>
 
-      {/* The Methods */}
-      <section id="methods" className="py-16 bg-white scroll-mt-24">
+      {/* 2. How the layer works */}
+      <section className="py-14 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-benefique-navy text-center mb-4">The Frameworks</h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-            Eight named methods. Each answers a question generic accounting reports cannot — and each one is published, so you can read the thinking before you ever engage us.
-          </p>
+          <div className="max-w-3xl mx-auto"><H2 n="2">{c.howHeading}</H2></div>
+          <IntelligenceLayerDiagram />
+        </div>
+      </section>
 
+      {/* 3. Systems */}
+      <section className="py-14 bg-gray-50">
+        <div className="max-w-3xl mx-auto px-4">
+          <H2 n="3">{c.systems.heading}</H2>
+          <p className="text-gray-600 mb-4">{c.systems.intro}</p>
+          <ul className="grid sm:grid-cols-2 gap-3">
+            {c.systems.items.map((it) => <li key={it} className="bg-white rounded-lg border border-gray-100 px-4 py-3 text-gray-700">{it}</li>)}
+          </ul>
+        </div>
+      </section>
+
+      {/* 4. Data to intelligence: process + named methods */}
+      <section id="methods" className="py-14 bg-white scroll-mt-24">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="max-w-3xl mx-auto"><H2 n="4">{c.toIntelHeading}</H2></div>
+        </div>
+        <DecisionToActionSection showExample={false} />
+        <div className="max-w-6xl mx-auto px-4">
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-8">{c.methodsIntro}</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {methods.map((mth) => (
               <div key={mth.name} className="bg-gray-50 rounded-xl p-6 border border-gray-100 flex flex-col">
-                <div className="text-3xl mb-3">{mth.icon}</div>
                 <h3 className="text-lg font-bold text-benefique-navy mb-1">{mth.name}</h3>
                 <p className="text-benefique-orange text-sm font-medium italic mb-3">{mth.answers}</p>
                 <p className="text-gray-600 text-sm flex-1 mb-4">{mth.desc}</p>
-                <Link to={mth.link} className="text-benefique-orange text-sm font-semibold hover:underline">
-                  {mth.linkLabel} →
-                </Link>
+                <Link to={mth.link} className="text-benefique-orange text-sm font-semibold hover:underline">{mth.linkLabel} →</Link>
               </div>
             ))}
           </div>
+          <p className="text-xs text-gray-500 text-center max-w-3xl mx-auto mt-8">{decisionSection.honesty}</p>
         </div>
       </section>
 
-      {/* The Engine — how it works */}
-      <section className="py-16 bg-gray-50">
+      {/* 5. Radiology */}
+      <section className="py-14 bg-gray-50">
+        <div className="max-w-3xl mx-auto px-4">
+          <H2 n="5">{c.radiology.heading}</H2>
+          {c.radiology.paras.map((para) => <p key={para} className="text-gray-600 text-lg mb-4">{para}</p>)}
+          <ul className="flex flex-wrap gap-x-6 gap-y-2">
+            {c.radiology.links.map((l) => <li key={l.href}><Link to={l.href} className="text-benefique-orange font-semibold hover:underline">{l.text} →</Link></li>)}
+          </ul>
+        </div>
+      </section>
+
+      {/* 6. Questions */}
+      <section className="py-14 bg-white">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-benefique-navy text-center mb-4">How the Engine Works</h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12">
-            From the data you already have to a board-grade answer — four steps, every engagement.
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {engine.map((e) => (
-              <div key={e.step} className="bg-white rounded-2xl p-8 border border-gray-200 flex gap-5">
-                <div className="text-3xl font-black text-benefique-orange/30 leading-none">{e.step}</div>
-                <div>
-                  <h3 className="text-lg font-bold text-benefique-navy mb-2">{e.title}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{e.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+          <div className="max-w-3xl mx-auto"><H2 n="6">{c.questionsHeading}</H2></div>
+          <ul className="grid md:grid-cols-3 gap-4 mt-6">
+            {c.questions.map((q) => <li key={q} className="bg-gray-50 rounded-xl border border-gray-100 p-5 text-gray-700 font-medium">{q}</li>)}
+          </ul>
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="py-16 bg-white">
+      {/* 7. Foundation */}
+      <section className="py-14 bg-benefique-navy text-white">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-4"><span className="text-orange-300 mr-2 text-2xl align-middle">7</span>{c.foundation.heading}</h2>
+          {c.foundation.paras.map((para) => <p key={para} className="text-blue-100 text-lg mb-3">{para}</p>)}
+        </div>
+      </section>
+
+      {/* 8. Action */}
+      <section className="py-14 bg-white">
+        <div className="max-w-3xl mx-auto px-4">
+          <H2 n="8">{c.action.heading}</H2>
+          {c.action.paras.map((para) => <p key={para} className="text-gray-600 text-lg mb-3">{para}</p>)}
+          <p className="text-gray-600">{decisionSection.example}</p>
+        </div>
+      </section>
+
+      {/* 9. Engagement */}
+      <section className="py-14 bg-gray-50">
+        <div className="max-w-3xl mx-auto px-4">
+          <H2 n="9">{c.engagement.heading}</H2>
+          {c.engagement.paras.map((para) => <p key={para} className="text-gray-600 text-lg mb-3">{para}</p>)}
+        </div>
+      </section>
+
+      {/* 10. FAQ */}
+      <section className="py-14 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-benefique-navy text-center mb-12">Frequently Asked Questions</h2>
-          <div className="space-y-4">
-            {faqs.map((faq, i) => (
-              <details key={i} className="bg-gray-50 rounded-xl border border-gray-200 group">
+          <H2 n="10">Frequently Asked Questions</H2>
+          <div className="space-y-4 mt-6">
+            {faqs.map((faq) => (
+              <details key={faq.q} className="bg-gray-50 rounded-xl border border-gray-200 group">
                 <summary className="px-6 py-4 cursor-pointer font-semibold text-benefique-navy hover:text-benefique-orange transition list-none flex justify-between items-center">
                   {faq.q}
-                  <span className="text-gray-400 group-open:rotate-180 transition-transform">▼</span>
+                  <span className="text-gray-400 group-open:rotate-180 transition-transform" aria-hidden="true">▼</span>
                 </summary>
                 <div className="px-6 pb-4 text-gray-600">{faq.a}</div>
               </details>
@@ -3735,19 +3738,15 @@ function IntelligencePage() {
         </div>
       </section>
 
-      {/* Final CTA */}
+      {/* 11. Apply */}
       <section className="py-16 bg-benefique-navy text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">See What Your Own Data Already Knows</h2>
-          <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
-            We run Benefique Intelligence&trade; against the books you already keep and hand you the cash, tax, and operational answers — on a flat fee, never by the hour.
-          </p>
-          <Link
-            to="/contact"
-            className="inline-block bg-benefique-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition"
-          >
-            Start With a Diagnostic
-          </Link>
+          <h2 className="text-3xl font-bold mb-4">{c.ctaHeading}</h2>
+          <p className="text-blue-100 mb-8 max-w-2xl mx-auto">{c.ctaBody}</p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link to="/contact" className="inline-block bg-benefique-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition">Apply to Work With Benefique</Link>
+            <Link to="/about" className="inline-block bg-white/10 text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/20 transition">About Benefique</Link>
+          </div>
         </div>
       </section>
     </div>
@@ -3798,58 +3797,89 @@ function RadiologyLandingPage() {
   return (
     <div>
       <Helmet>
-        <title>Radiology CFO: Imaging Revenue, Cash & Valuation | Benefique</title>
-        <meta name="description" content="Fractional CFO for multi-center imaging groups: profit and cash by center, modality and payer, from referral to cash, and what it does to valuation." />
+        <title>Radiology Financial Intelligence & Fractional CFO | Benefique</title>
+        <meta name="description" content="Financial and operational intelligence for independent imaging groups. Analyze profitability, payer economics, collections and cash flow from referral to payment." />
         <link rel="canonical" href="https://www.benefique.com/radiology" />
         <script type="application/ld+json">{JSON.stringify(radiologySchema)}</script>
       </Helmet>
 
-      {/* Hero */}
-      <section className="bg-white py-16">
+      {/* Hero — connected intelligence opening (Nov 2026) */}
+      <section className="bg-white py-14 md:py-16">
         <div className="max-w-6xl mx-auto px-4">
           <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
-            <span>🔬</span> For Multi-Center Radiology &amp; Imaging Groups
+            For Multi-Center Radiology &amp; Imaging Groups
           </div>
-
-          <h1 className="text-4xl md:text-5xl font-bold text-benefique-navy leading-tight mb-3">
-            Your Volume Is Up. Your Cash Isn&apos;t.
+          <h1 className="text-4xl md:text-5xl font-bold text-benefique-navy leading-tight mb-4 max-w-4xl">
+            {radiologyOpening.h1}
           </h1>
-
-          <p className="text-xl text-gray-600 mb-6 max-w-3xl">
-            {radiologyHero.lede}
-          </p>
-
-          <div className="bg-gray-50 border-l-4 border-benefique-orange p-6 rounded-r-xl mb-8 max-w-3xl">
-            <p className="text-lg text-gray-700 leading-relaxed">
-              {radiologyHero.intro.map((seg, i) => (seg.href ? <Link key={i} to={seg.href} className="underline hover:text-benefique-orange">{seg.t}</Link> : seg.b ? <strong key={i}>{seg.t}</strong> : <React.Fragment key={i}>{seg.t}</React.Fragment>))}
-            </p>
+          <p className="text-xl text-gray-700 font-semibold mb-6 max-w-3xl">{radiologyOpening.subtitle}</p>
+          <div className="max-w-3xl space-y-3 text-gray-600 md:text-lg mb-6">
+            {radiologyOpening.paras.map((para) => <p key={para}>{para}</p>)}
           </div>
-
+          <p className="max-w-3xl bg-gray-50 border-l-4 border-benefique-orange px-5 py-4 rounded-r-xl text-lg font-semibold text-benefique-navy mb-8">
+            {radiologyOpening.differentiation}
+          </p>
           <div className="flex flex-wrap gap-4 mb-6">
-            <Link
-              to="/services/radiology/intake?ref=hero"
+            <a
+              href={radiologyOpening.cta.href}
               className="bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition inline-flex items-center gap-2"
             >
-              Start the Conversation <span>→</span>
+              {radiologyOpening.cta.label} <span aria-hidden="true">→</span>
+            </a>
+            <Link
+              to="/services/radiology/intake?ref=hero"
+              className="border-2 border-benefique-navy text-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-benefique-navy hover:text-white transition"
+            >
+              Start the Conversation
             </Link>
             <Link
               to="/radiology/intelligence-pack"
-              className="border-2 border-benefique-navy text-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-benefique-navy hover:text-white transition"
+              className="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-semibold hover:border-benefique-navy hover:text-benefique-navy transition"
             >
               See a Sample Intelligence Pack
             </Link>
-            <a
-              href="#intelligence-library"
-              className="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-semibold hover:border-benefique-navy hover:text-benefique-navy transition"
-            >
-              Browse the Intelligence Library
-            </a>
           </div>
         </div>
       </section>
 
-      {/* The Patient Referral-to-Cash Line */}
-      <LineOverview />
+      {/* Short visual introduction — same diagram as the homepage, compact */}
+      <section className="py-12 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-6xl mx-auto px-4">
+          <IntelligenceLayerDiagram compact />
+          <p className="text-center mt-8">
+            <Link to="/intelligence" className="text-benefique-orange font-semibold hover:underline">How Benefique Intelligence works &rarr;</Link>
+          </p>
+        </div>
+      </section>
+
+      {/* Bridge into the 14-stage line */}
+      <section className="py-12 bg-white">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-benefique-navy mb-4">{radiologyOpening.bridgeHeading}</h2>
+          <div className="space-y-3 text-gray-600 text-lg">
+            {radiologyOpening.bridge.map((para) => <p key={para}>{para}</p>)}
+          </div>
+        </div>
+      </section>
+
+      {/* The Patient Referral-to-Cash Line (stable anchor: #referral-to-cash, legacy #line kept) */}
+      <div id="referral-to-cash" className="scroll-mt-24">
+        <LineOverview />
+      </div>
+
+      {/* Context kept from the previous hero: the cash question and valuation */}
+      <section className="py-12 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-benefique-navy mb-3">Your volume is up. Your cash isn&apos;t.</h2>
+          <p className="text-lg text-gray-600 mb-4">{radiologyHero.lede}</p>
+          <p className="text-gray-700 leading-relaxed">
+            {radiologyHero.intro.map((seg, i) => (seg.href ? <Link key={i} to={seg.href} className="underline hover:text-benefique-orange">{seg.t}</Link> : seg.b ? <strong key={i}>{seg.t}</strong> : <React.Fragment key={i}>{seg.t}</React.Fragment>))}
+          </p>
+          <p className="mt-4">
+            <a href="#intelligence-library" className="text-benefique-orange font-semibold hover:underline">Browse the Intelligence Library &darr;</a>
+          </p>
+        </div>
+      </section>
 
       {/* Featured Tool — Radiology Profit Simulator */}
       <section className="py-8 bg-white">
