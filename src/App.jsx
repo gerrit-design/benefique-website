@@ -3803,41 +3803,51 @@ function RadiologyLandingPage() {
         <script type="application/ld+json">{JSON.stringify(radiologySchema)}</script>
       </Helmet>
 
-      {/* Hero — connected intelligence opening (Nov 2026) */}
+      {/* Hero — connected intelligence opening (Nov 2026; CTA-first layout 27 Nov) */}
       <section className="bg-white py-14 md:py-16">
         <div className="max-w-6xl mx-auto px-4">
           <div className="inline-flex items-center gap-2 bg-benefique-orange/10 text-benefique-orange px-3 py-1 rounded-full text-sm font-medium mb-6">
-            For Multi-Center Radiology &amp; Imaging Groups
+            For Independent Radiology Centers &amp; Imaging Groups
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-benefique-navy leading-tight mb-4 max-w-4xl">
             {radiologyOpening.h1}
           </h1>
-          <p className="text-xl text-gray-700 font-semibold mb-6 max-w-3xl">{radiologyOpening.subtitle}</p>
-          <div className="max-w-3xl space-y-3 text-gray-600 md:text-lg mb-6">
-            {radiologyOpening.paras.map((para) => <p key={para}>{para}</p>)}
-          </div>
-          <p className="max-w-3xl bg-gray-50 border-l-4 border-benefique-orange px-5 py-4 rounded-r-xl text-lg font-semibold text-benefique-navy mb-8">
-            {radiologyOpening.differentiation}
-          </p>
-          <div className="flex flex-wrap gap-4 mb-6">
-            <a
-              href={radiologyOpening.cta.href}
-              className="bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition inline-flex items-center gap-2"
-            >
-              {radiologyOpening.cta.label} <span aria-hidden="true">→</span>
-            </a>
+          <p className="text-xl text-gray-700 font-semibold mb-8 max-w-3xl">{radiologyOpening.subtitle}</p>
+          <div className="flex flex-wrap gap-4 mb-4">
             <Link
               to="/services/radiology/intake?ref=hero"
-              className="border-2 border-benefique-navy text-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-benefique-navy hover:text-white transition"
+              className="bg-benefique-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition inline-flex items-center gap-2"
             >
-              Start the Conversation
+              Book a 20-Minute Call <span aria-hidden="true">→</span>
             </Link>
             <Link
               to="/radiology/intelligence-pack"
-              className="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-semibold hover:border-benefique-navy hover:text-benefique-navy transition"
+              className="border-2 border-benefique-navy text-benefique-navy px-6 py-3 rounded-lg font-semibold hover:bg-benefique-navy hover:text-white transition"
             >
               See a Sample Intelligence Pack
             </Link>
+          </div>
+          <p className="mb-8">
+            <a href={radiologyOpening.cta.href} className="text-benefique-orange font-semibold hover:underline">
+              {radiologyOpening.cta.label} &darr;
+            </a>
+          </p>
+          <div className="max-w-4xl bg-benefique-navy rounded-xl px-5 py-5 mb-8 text-white">
+            <div className="grid sm:grid-cols-3 gap-4">
+              {radiologyProof.stats.map((s) => (
+                <div key={s.value}>
+                  <div className="text-2xl font-bold text-benefique-orange">{s.value}</div>
+                  <div className="text-sm text-blue-100">{s.label}</div>
+                </div>
+              ))}
+            </div>
+            <p className="text-xs text-blue-200 mt-3">{radiologyProof.caption}</p>
+          </div>
+          <p className="max-w-3xl bg-gray-50 border-l-4 border-benefique-orange px-5 py-4 rounded-r-xl text-lg font-semibold text-benefique-navy mb-6">
+            {radiologyOpening.differentiation}
+          </p>
+          <div className="max-w-3xl space-y-3 text-gray-600">
+            {radiologyOpening.paras.map((para) => <p key={para}>{para}</p>)}
           </div>
         </div>
       </section>
@@ -3900,23 +3910,6 @@ function RadiologyLandingPage() {
               </span>
             </div>
           </Link>
-        </div>
-      </section>
-
-      {/* Proof Strip */}
-      <section className="py-12 bg-benefique-navy text-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            {radiologyProof.stats.map((s) => (
-              <div key={s.value}>
-                <div className="text-3xl font-bold text-benefique-orange mb-2">{s.value}</div>
-                <div className="text-sm text-blue-100">{s.label}</div>
-              </div>
-            ))}
-          </div>
-          <p className="text-xs text-blue-200 text-center mt-6">
-            {radiologyProof.caption}
-          </p>
         </div>
       </section>
 

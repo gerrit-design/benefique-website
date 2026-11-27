@@ -214,8 +214,8 @@ export const homeFaqs = [
 ];
 
 export const radiologyOpening = {
-  h1: 'Financial & Operational Intelligence for Independent Radiology Groups.',
-  subtitle: 'Understand the economics of every center, modality, payer and examination — from referral to cash.',
+  h1: 'Financial & Operational Intelligence for Independent Radiology Centers and Groups.',
+  subtitle: 'See the profit and cash behind every center, modality, payer and exam, with your books closed by the 7th.',
   paras: [
     'Your RIS, PACS, scheduling, billing and accounting systems each contain part of the truth.',
     'Benefique connects the operational and financial information across these systems to reveal how your imaging business actually generates — or loses — profit and cash.',
